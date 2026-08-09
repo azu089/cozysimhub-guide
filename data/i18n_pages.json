@@ -1,0 +1,78 @@
+{
+  "sovereign-tower/knights": {
+    "ja": {
+      "title": "全24人の騎士：ステータスと特性",
+      "metaTitle": "ソブリンタワー 全24人の騎士：六属性・隠し特性・好きな料理・雇用条件",
+      "metaDescription": "ソブリンタワーの全24人の騎士：六属性（STR/AGI/CHA/MAG/WIT/LCK）、既知と隠し特性、好きな料理、雇用条件とクエストの好み。",
+      "intro": "ソブリンタワーの24人の騎士は全員雇用可能。各騎士には六属性（0-15）、既知の特性、初日から効果のある隠し特性、好きな料理とクエストの好みがあります。完全名簿です。",
+      "table_head": ["騎士", "出身", "Lv", "鎧", "属性 (STR/AGI/CHA/MAG/WIT/LCK)", "好きな料理", "備考"],
+      "note_title": "騎士ファイルの読み方",
+      "note_items": ["属性は0-15。レベル1-15、各レベルで15未満の属性に1ポイント。", "既知特性は雇用直後に見えます。隠し特性は初日から計算に影響しますが、会話・クエスト・ストーリーで判明するまで見えません。", "†は Alwena の Intendant 噂で判明する特性。一度に1つ、まだ知らないものだけ。", "好きなクエストは割当ごとに+1.33好感、嫌いは-0.75。好きな料理は+1.5好感+0.5クエストスコア。"],
+      "faq_title": "FAQ",
+      "faq_items": [["一番強い騎士は？", "Daguez は初期STR15。Edith と Epicrate は得意ステータスが12（MAG/WIT）。Chester は完全ランダムで判定ごとに振り直し。"], ["辞めない騎士は？", "Alwena と Ari は辞任閾値-1500——絶対に辞めません。他は好感-7で辞任。"], ["隠し特性の解放方法は？", "主に自由時間の会話・クエスト結果・ストーリーイベント。Alwena の Intendant 噂が特定の隠し特性を1つずつ明かします。"]]
+    },
+    "ko": {
+      "title": "전체 24명 기사: 스탯과 특성",
+      "metaTitle": "소버린 타워 전체 24명 기사: 6종 스탯·숨은 특성·좋아하는 요리·고용 조건",
+      "metaDescription": "소버린 타워 전체 24명 기사: 6종 스탯(STR/AGI/CHA/MAG/WIT/LCK), 알려진·숨은 특성, 좋아하는 요리, 고용 조건과 퀘스트 선호.",
+      "intro": "소버린 타워의 24명 기사는 전원 고용 가능. 각 기사는 6종 스탯(0-15), 알려진 특성, 첫날부터 적용되는 숨은 특성, 좋아하는 요리, 퀘스트 선호가 있습니다. 전체 명단입니다.",
+      "table_head": ["기사", "출신", "Lv", "갑옷", "스탯 (STR/AGI/CHA/MAG/WIT/LCK)", "좋아하는 요리", "비고"],
+      "note_title": "기사 파일 읽는 법",
+      "note_items": ["스탯은 0-15. 레벨 1-15, 레벨업마다 15 미만 스탯에 1포인트.", "알려진 특성은 고용 즉시 보임. 숨은 특성은 첫날부터 수치에 적용되지만 대화·퀘스트·스토리로 밝혀질 때까지 안 보임.", "†는 Alwena의 Intendant 소문으로 밝혀지는 특성. 한 번에 하나, 아직 모르는 것만.", "좋아하는 퀘스트는 배정마다 +1.33 호감, 싫어하는 건 -0.75. 좋아하는 요리는 +1.5 호감 +0.5 퀘스트 점수."],
+      "faq_title": "FAQ",
+      "faq_items": [["가장 강한 기사는?", "Daguez는 초기 STR 15. Edith와 Epicrate는 최고 스탯 12(MAG/WIT). Chester는 완전 랜덤, 판정마다 리롤."], ["사임하지 않는 기사는?", "Alwena와 Ari는 사임 임계값 -1500 — 절대 떠나지 않음. 나머지는 호감 -7에서 사임."], ["숨은 특성 해금 방법은?", "주로 자유 시간 대화·퀘스트 결과·스토리 이벤트. Alwena의 Intendant 소문이 특정 숨은 특성을 하나씩 밝힘."]]
+    },
+    "fr": {
+      "title": "Les 24 chevaliers : stats et traits",
+      "metaTitle": "Sovereign Tower : les 24 chevaliers — stats, traits cachés, plats favoris et recrutement",
+      "metaDescription": "Les 24 chevaliers de Sovereign Tower : six stats (STR/AGI/CHA/MAG/WIT/LCK), traits connus et cachés, plats favoris, conditions de recrutement.",
+      "intro": "Les 24 chevaliers de Sovereign Tower sont tous recrutables. Chacun a six stats (0-15), des traits connus, des traits cachés actifs dès le premier jour, des plats favoris et des préférences de quête. Voici la liste complète.",
+      "table_head": ["Chevalier", "Origine", "Nv", "Armure", "Stats (STR/AGI/CHA/MAG/WIT/LCK)", "Plats favoris", "Notes"],
+      "note_title": "Lire une fiche chevalier",
+      "note_items": ["Stats sur 0-15. Niveau 1-15 ; chaque montée ajoute un point dans une stat < 15.", "Les traits connus sont visibles dès le recrutement. Les traits cachés agissent dès le jour 1 mais restent invisibles jusqu'à révélation.", "† = rumeur d'Intendant que Alwena peut révéler, une à la fois, uniquement celles que vous ignorez.", "Quête aimée : +1,33 d'affinité ; détestée : -0,75. Plat favori : +1,5 d'affinité et +0,5 de score."],
+      "faq_title": "FAQ",
+      "faq_items": [["Quel chevalier est le plus fort ?", "Daguez commence avec 15 en Force ; Edith et Epicrate ont 12 dans leur meilleure stat (MAG/WIT). Chester est aléatoire, relancé à chaque jet."], ["Qui ne démissionne jamais ?", "Alwena et Ari ont un seuil de -1500 — ils ne partent jamais. Les autres partent à -7 d'affinité."], ["Comment débloquer les traits cachés ?", "Surtout via conversations, résultats de quêtes et événements. Les rumeurs d'Alwena révèlent des traits cachés un à un."]]
+    },
+    "de": {
+      "title": "Alle 24 Ritter: Werte und Eigenschaften",
+      "metaTitle": "Sovereign Tower: alle 24 Ritter — Werte, versteckte Eigenschaften, Lieblingsgerichte, Rekrutierung",
+      "metaDescription": "Alle 24 Sovereign-Tower-Ritter: sechs Werte (STR/AGI/CHA/MAG/WIT/LCK), bekannte und versteckte Eigenschaften, Lieblingsgerichte und Rekrutierungsbedingungen.",
+      "intro": "Alle 24 Ritter in Sovereign Tower sind rekrutierbar. Jeder hat sechs Werte (0-15), bekannte Eigenschaften, versteckte Eigenschaften, die ab Tag 1 wirken, Lieblingsgerichte und Quest-Vorlieben. Die komplette Liste.",
+      "table_head": ["Ritter", "Herkunft", "Lv", "Rüstung", "Werte (STR/AGI/CHA/MAG/WIT/LCK)", "Lieblingsgerichte", "Hinweise"],
+      "note_title": "Ritterakte lesen",
+      "note_items": ["Werte 0-15. Level 1-15; jeder Aufstieg gibt 1 Punkt in einen Wert unter 15.", "Bekannte Eigenschaften sind sofort sichtbar. Versteckte wirken ab Tag 1, bleiben aber unsichtbar, bis sie enthüllt werden.", "† = Intendant-Gerücht, das Alwena enthüllen kann — eines nach dem anderen, nur unbekannte.", "Geliebte Quest: +1,33 Sympathie; verhasste: -0,75. Lieblingsgericht: +1,5 Sympathie und +0,5 Punkte."],
+      "faq_title": "FAQ",
+      "faq_items": [["Welcher Ritter ist am stärksten?", "Daguez startet mit 15 Stärke; Edith und Epicrate haben 12 in ihrem besten Wert (MAG/WIT). Chester ist zufällig, wird bei jedem Wurf neu gewürfelt."], ["Welche Ritter kündigen nie?", "Alwena und Ari haben eine Schwelle von -1500 — sie gehen nie. Andere gehen bei -7 Sympathie."], ["Wie schaltet man versteckte Eigenschaften frei?", "Hauptsächlich durch Gespräche, Quest-Ergebnisse und Story-Events. Alwenas Intendant-Gerüchte enthüllen versteckte Eigenschaften einzeln."]]
+    }
+  },
+  "sovereign-tower/quest-mechanics": {
+    "ja": {
+      "title": "クエスト仕組みと得点計算式",
+      "metaTitle": "ソブリンタワー クエスト仕組み：得点計算式・閾値・経験値・好感度",
+      "metaDescription": "ソブリンタワーのクエスト得点計算：(騎士属性-クエスト要求)×0.66、成功閾値、経験値表、好感度、11種のクエストタイプと21の条件。",
+      "intro": "ソブリンタワーの各クエストは1つ以上の属性を要求します。正しい騎士を正しいクエストに送るかが成功と全滅の分かれ目——ここに正確な計算式があります。",
+      "sections": []
+    },
+    "ko": {
+      "title": "퀘스트 메커니즘과 점수 공식",
+      "metaTitle": "소버린 타워 퀘스트 메커니즘: 점수 공식·임계값·경험치·호감도",
+      "metaDescription": "소버린 타워 퀘스트 점수 계산: (기사 스탯-퀘스트 요구)×0.66, 성공 임계값, 경험치 표, 호감도, 11종 퀘스트 타입과 21개 조건.",
+      "intro": "소버린 타워의 각 퀘스트는 하나 이상의 스탯을 요구합니다. 올바른 기사를 올바른 퀘스트에 보내는 것이 대성공과 전멸을 가릅니다 — 여기 정확한 수학이 있습니다.",
+      "sections": []
+    },
+    "fr": {
+      "title": "Mécaniques de quête et formule de score",
+      "metaTitle": "Sovereign Tower : mécaniques de quête — formule de score, seuils, XP et affinité",
+      "metaDescription": "Comment fonctionne le score de quête dans Sovereign Tower : la formule (stat − exigence) × 0,66, les seuils, l'XP, l'affinité, les types et conditions de quête.",
+      "intro": "Chaque quête de Sovereign Tower exige une ou plusieurs stats. Envoyer le bon chevalier sur la bonne quête fait la différence entre un succès critique et un échec total — voici exactement le calcul.",
+      "sections": []
+    },
+    "de": {
+      "title": "Quest-Mechaniken und Punktformel",
+      "metaTitle": "Sovereign Tower: Quest-Mechaniken — Punktformel, Schwellen, XP und Sympathie",
+      "metaDescription": "Wie die Quest-Punktwertung in Sovereign Tower funktioniert: die Formel (Wert − Anforderung) × 0,66, Schwellen, XP, Sympathie, Questtypen und -bedingungen.",
+      "intro": "Jede Quest in Sovereign Tower verlangt einen oder mehrere Werte. Den richtigen Ritter auf die richtige Quest zu schicken, unterscheidet Kritischen Erfolg von Totalausfall — hier ist die exakte Rechnung.",
+      "sections": []
+    }
+  }
+}

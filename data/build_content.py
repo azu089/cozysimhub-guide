@@ -610,6 +610,25 @@ ALL_PAGES = [
     build_tool_affinity(),
 ]
 
+# ja/ko/fr/de 页面翻译（data/i18n_pages.json）
+import json as _j2
+_i18n_pages = _j2.loads((ROOT / "i18n_pages.json").read_text(encoding="utf8"))
+for _page in ALL_PAGES:
+    _tr = _i18n_pages.get(_page["slug"])
+    if not _tr:
+        continue
+    for _lang, _t in _tr.items():
+        _secs = _t.get("sections") or []
+        # knights 页：表头翻译（若有 table_head，构造翻译表格）
+        if _t.get("table_head") and _page["slug"] == "sovereign-tower/knights":
+            _src = [s for s in _page["sections"] if s.get("type") == "table" and s.get("headers") and s["headers"][0] == "Knight"]
+            if _src:
+                _secs = [{"type": "table", "tag": "DATA", "heading": "", "body": "", "headers": _t["table_head"], "rows": _src[0]["rows"]}] + _secs
+        _page.setdefault("i18n", {})[_lang] = {
+            "title": _t.get("title"), "metaTitle": _t.get("metaTitle"), "metaDescription": _t.get("metaDescription"), "intro": _t.get("intro"),
+            "sections": _secs,
+        }
+
 existing = {p["slug"]: i for i, p in enumerate(d["pages"])}
 for page in ALL_PAGES:
     if page["slug"] in existing:
