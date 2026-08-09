@@ -46,8 +46,8 @@
   {
    "slug": "sovereign-tower/how-to-play",
    "title": "How to Play Sovereign Tower",
-   "metaTitle": "How to Play Sovereign Tower: Core Loop, Systems & Beginner Tips",
-   "metaDescription": "New to Sovereign Tower? Learn the court-audience → Round Table → quest result loop, the five factions, time rewind, annex building and the quest score formula.",
+   "metaTitle": "How to Play Sovereign Tower: Core Loop, Systems & Begi…",
+   "metaDescription": "Sovereign Tower is a story-rich Round Table management RPG: you rule a magical tower, recruit eccentric knights, assign quests and balance five factions — an…",
    "intro": "Sovereign Tower is a story-rich Round Table management RPG: you rule a magical tower, recruit eccentric knights, assign quests and balance five factions — and when fate turns against you, you turn back time and rewrite it.",
    "sections": [
     {
@@ -235,13 +235,219 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "ソブリンタワー 初心者ガイド",
+     "metaTitle": "ソブリンタワーの遊び方：コアサイクルと初心者向けヒント",
+     "metaDescription": "ソブリンタワー初心者向け：五つのコアサイクル、五派閥、得点計算式と初心者の失敗例。",
+     "intro": "『ソブリンタワー』はストーリー重視の円卓管理RPG。魔法の塔を統治し、個性豊かな騎士を雇い、クエストを割り当て、五派閥のバランスを取る——運命が悪ければ時間を巻き戻して書き換えよう。",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "五つのコアサイクル",
+       "body": "",
+       "items": [
+        [
+         "早朝の朝会",
+         "各サイクルは朝会から始まる。市民が園芸から悪魔退治まで要望を持ち込む。答え方で派閥満足度と騎士の評価が変わる。"
+        ],
+        [
+         "円卓の割り当て",
+         "騎士をクエストに派遣。騎士のステータスをクエスト要求に合わせて成功へ導く（得点式は下記）。"
+        ],
+        [
+         "結果の確認",
+         "クエストは Critical Success / Success / Failure / Unexpected Outcome で返る。Great と Critical は報酬が倍増。"
+        ],
+        [
+         "時間を巻き戻す",
+         "サイクルが悪ければ、地下の悪魔が時間を巻き戻して再判断させてくれる。これがゲームの核心的な安全網。"
+        ],
+        [
+         "塔の拡張",
+         "Annexes（Carina's Forge 鍛冶場、Witch's Alchemy Room 錬金室）を建設・アップグレードして騎士・道具・ストーリーを解放。"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "資源",
+        "役割"
+       ],
+       "rows": [
+        [
+         "国庫 Treasury",
+         "召喚・装備・建設のための金。クエスト報酬と派閥選択で増える。"
+        ],
+        [
+         "商人 / 秘術師 / 学者 / 貴族 / 平民",
+         "五つの派閥メーター。バランスを取るか、全部使い切って皆を裏切るか——ゲームはそれを許す。"
+        ],
+        [
+         "円卓容量",
+         "ストーリーで増加：Act 1 = 6人、Act 2 = 8人、Act 3 = 10人。"
+        ],
+        [
+         "Annexes 附属建築",
+         "システムを追加する建築：鍛冶場は装備の修理/製作、錬金室は消耗品を作る。"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "初心者の失敗例",
+       "body": "",
+       "items": [
+        "嫌いなクエストに派遣する：嫌いなタイプは好感度-0.75、-7で辞任する。",
+        "派閥バランスを無視する：満足度0で危機イベントが発生しうる。",
+        "得点式を忘れる：要求を上回るステータスの騎士を送る（誰でもいいわけではない）。",
+        "48時間の早期窓を逃す：ストーリー騎士（Dulahan、Arron、Brunhilda）は特定ストーリーの進行が必要。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "時間制限はある？",
+         "ない。Sovereign Tower は「制限時間なし入力」対応（公式）。巻き戻しで再判断できるので、永久に失うものはない。"
+        ],
+        [
+         "騎士は永久的に死ぬ？",
+         "多くの騎士はクエストで死亡し、その周回では戻らない。Ursula は Immortal（死亡後再雇用可）。Alwena と Ari は辞任しない。"
+        ],
+        [
+         "五派閥とは？",
+         "商人・秘術師・学者・貴族・平民。クエストと朝政判断で動き、騎士の中には派閥バランスで好感度が上下する者もいる。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "소버린 타워 입문 가이드",
+     "metaTitle": "소버린 타워 하는 법: 핵심 루프와 초보자 팁",
+     "metaDescription": "소버린 타워 초보자용: 5단계 핵심 루프, 5개 파벌, 점수 공식과 초보자 실수.",
+     "intro": "『소버린 타워』는 스토리 중심의 원탁 경영 RPG. 마법 탑을 통치하고, 개성 넘치는 기사를 고용하고, 퀘스트를 배정하고, 5개 파벌의 균형을 맞추세요 — 운명이 나쁘면 시간을 되돌려 다시 씁니다.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "5단계 핵심 루프",
+       "body": "",
+       "items": [
+        [
+         "아침 조회",
+         "각 사이클은 아침 조회로 시작. 시민들이 정원 가꾸기부터 악마 사냥까지 요청을 가져온다. 답변 방식이 파벌 만족도와 기사 평가를 바꾼다."
+        ],
+        [
+         "원탁 배정",
+         "기사를 퀘스트에 파견. 기사 스탯을 퀘스트 요구에 맞춰 성공으로 이끈다(점수 공식은 아래)."
+        ],
+        [
+         "결과 확인",
+         "퀘스트는 Critical Success / Success / Failure / Unexpected Outcome으로 돌아온다. Great와 Critical은 보상이 배가된다."
+        ],
+        [
+         "시간 되돌리기",
+         "사이클이 나쁘면 지하실의 악마가 시간을 되돌려 재판단하게 해준다. 이것이 게임의 핵심 안전망."
+        ],
+        [
+         "탑 확장",
+         "Annexes(Carina's Forge 대장간, Witch's Alchemy Room 연금실)를 건설·업그레이드해 기사·도구·스토리를 해금."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "자원",
+        "역할"
+       ],
+       "rows": [
+        [
+         "국고 Treasury",
+         "소환·장비·건설용 금. 퀘스트 보상과 파벌 선택으로 늘어난다."
+        ],
+        [
+         "상인 / 비술사 / 학자 / 귀족 / 평민",
+         "5개 파벌 게이지. 균형을 맞추거나, 전부 써버리고 모두를 배신하거나——게임이 허락한다."
+        ],
+        [
+         "원탁 용량",
+         "스토리로 증가: Act 1 = 6명, Act 2 = 8명, Act 3 = 10명."
+        ],
+        [
+         "Annexes 부속 건물",
+         "시스템을 추가하는 건물: 대장간은 장비 수리/제작, 연금실은 소모품 제작."
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "초보자 실수",
+       "body": "",
+       "items": [
+        "싫어하는 퀘스트에 파견: 싫어하는 타입은 호감도 -0.75, -7이면 사임한다.",
+        "파벌 균형 무시: 만족도 0이면 위기 이벤트가 발생할 수 있다.",
+        "점수 공식 망각: 요구를 넘는 스탯의 기사를 보낸다(아무나 아님).",
+        "48시간 초기 창을 놓침: 스토리 기사(Dulahan, Arron, Brunhilda)는 특정 스토리 진행 필요."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "시간 제한이 있나요?",
+         "없습니다. Sovereign Tower는 '시간 제한 없는 입력' 지원(공식). 되돌리기로 재판단 가능하니 영구 손실이 없습니다."
+        ],
+        [
+         "기사는 영구히 죽나요?",
+         "대부분의 기사는 퀘스트에서 죽고 그 회차에서는 돌아오지 않습니다. Ursula는 Immortal(사후 재고용 가능). Alwena와 Ari는 사임하지 않습니다."
+        ],
+        [
+         "5개 파벌은?",
+         "상인·비술사·학자·귀족·평민. 퀘스트와 아침 조회 결정으로 움직이며, 일부 기사는 파벌 균형에 따라 호감도가 오르내립니다."
+        ]
+       ]
+      }
+     ]
+    },
+    "fr": {
+     "title": "Guide de démarrage de Sovereign Tower",
+     "metaTitle": "Guide de démarrage de Sovereign Tower",
+     "metaDescription": "Nouveau sur Sovereign Tower ? Boucle de jeu en cinq étapes, cinq factions, formule de score et erreurs de débutant.",
+     "intro": "Sovereign Tower est un RPG de gestion à la Table Ronde : régnez sur une tour magique, recrutez des chevaliers excentriques, assignez des quêtes et équilibrez cinq factions — si le destin tourne mal, remontez le temps et réécrivez-le.",
+     "sections": []
+    },
+    "de": {
+     "title": "Sovereign Tower Einsteiger-Guide",
+     "metaTitle": "Sovereign Tower Einsteiger-Guide",
+     "metaDescription": "Neu bei Sovereign Tower? Fünf-Schritte-Kernloop, fünf Fraktionen, Punkteformel und Anfängerfehler.",
+     "intro": "Sovereign Tower ist ein geschichtsreiches Table-Runde-Management-RPG: Regiere einen magischen Turm, rekrutiere exzentrische Ritter, weise Quests zu und balanciere fünf Fraktionen — wenn das Schicksal sich gegen dich wendet, drehe die Zeit zurück und schreibe es neu.",
+     "sections": []
     }
    }
   },
   {
    "slug": "sovereign-tower/knights",
    "title": "All Knights, Stats & Traits",
-   "metaTitle": "Sovereign Tower All 24 Knights: Stats, Hidden Traits, Favorite Meals & Recruit",
+   "metaTitle": "Sovereign Tower All 24 Knights: Stats, Hidden Traits,…",
    "metaDescription": "Every Sovereign Tower knight: the full 24-knight roster with six stats, known and hidden traits, favorite meals, recruit conditions and quest preferences.",
    "intro": "All 24 knights in Sovereign Tower are recruitable. Every knight has six stats (STR/AGI/CHA/MAG/WIT/LCK, all 0–15), a set of known traits, hidden traits that are active from day one, favorite meals and quest preferences. This is the complete roster.",
    "sections": [
@@ -1028,8 +1234,8 @@
     },
     "ko": {
      "title": "전체 24명 기사: 스탯과 특성",
-     "metaTitle": "소버린 타워 전체 24명 기사: 6종 스탯·숨은 특성·좋아하는 요리·고용 조건",
-     "metaDescription": "소버린 타워 전체 24명 기사: 6종 스탯(STR/AGI/CHA/MAG/WIT/LCK), 알려진·숨은 특성, 좋아하는 요리, 고용 조건과 퀘스트 선호.",
+     "metaTitle": "전체 24명 기사: 스탯과 특성",
+     "metaDescription": "소버린 타워의 24명 기사는 전원 고용 가능. 각 기사는 6종 스탯(0-15), 알려진 특성, 첫날부터 적용되는 숨은 특성, 좋아하는 요리…",
      "intro": "소버린 타워의 24명 기사는 전원 고용 가능. 각 기사는 6종 스탯(0-15), 알려진 특성, 첫날부터 적용되는 숨은 특성, 좋아하는 요리, 퀘스트 선호가 있습니다. 전체 명단입니다.",
      "sections": [
       {
@@ -1269,7 +1475,7 @@
     },
     "fr": {
      "title": "Les 24 chevaliers : stats et traits",
-     "metaTitle": "Sovereign Tower : les 24 chevaliers — stats, traits cachés, plats favoris et recrutement",
+     "metaTitle": "Les 24 chevaliers : stats et traits",
      "metaDescription": "Les 24 chevaliers de Sovereign Tower : six stats (STR/AGI/CHA/MAG/WIT/LCK), traits connus et cachés, plats favoris, conditions de recrutement.",
      "intro": "Les 24 chevaliers de Sovereign Tower sont tous recrutables. Chacun a six stats (0-15), des traits connus, des traits cachés actifs dès le premier jour, des plats favoris et des préférences de quête. Voici la liste complète.",
      "sections": [
@@ -1510,7 +1716,7 @@
     },
     "de": {
      "title": "Alle 24 Ritter: Werte und Eigenschaften",
-     "metaTitle": "Sovereign Tower: alle 24 Ritter — Werte, versteckte Eigenschaften, Lieblingsgerichte, Rekrutierung",
+     "metaTitle": "Alle 24 Ritter: Werte und Eigenschaften",
      "metaDescription": "Alle 24 Sovereign-Tower-Ritter: sechs Werte (STR/AGI/CHA/MAG/WIT/LCK), bekannte und versteckte Eigenschaften, Lieblingsgerichte und Rekrutierungsbedingungen.",
      "intro": "Alle 24 Ritter in Sovereign Tower sind rekrutierbar. Jeder hat sechs Werte (0-15), bekannte Eigenschaften, versteckte Eigenschaften, die ab Tag 1 wirken, Lieblingsgerichte und Quest-Vorlieben. Die komplette Liste.",
      "sections": [
@@ -1754,7 +1960,7 @@
   {
    "slug": "sovereign-tower/secret-knights",
    "title": "Secret Knights & How to Recruit Them",
-   "metaTitle": "Sovereign Tower Secret Knights: Dulahan, Chester, Alwena & Special Recruit Conditions",
+   "metaTitle": "Sovereign Tower Secret Knights: Dulahan, Chester, Alwe…",
    "metaDescription": "How to recruit Sovereign Tower's special knights: Dulahan (after Goberto dies), Chester (goose quest), Alwena (emergency), Ari, Arron and Brunhilda.",
    "intro": "Several knights in Sovereign Tower don't join through a normal candidacy audience. Their recruit conditions are tied to specific storylines, deaths or emergency events — miss the window and you lose them that run.",
    "sections": [
@@ -1836,8 +2042,8 @@
    "i18n": {
     "zh-CN": {
      "title": "隐藏骑士与招募方法",
-     "metaTitle": "君王之塔 隐藏骑士招募：Dulahan、Chester、Alwena 与特殊条件",
-     "metaDescription": "君王之塔特殊骑士招募方法：Dulahan（Goberto 死后）、Chester（鹅任务）、Alwena（紧急事件）、Ari、Arron、Brunhilda。",
+     "metaTitle": "隐藏骑士与招募方法",
+     "metaDescription": "君王之塔中有几位骑士不通过普通候选朝会加入。他们的招募条件绑定特定剧情、死亡事件或紧急事件——错过窗口，本周目就再也拿不到。",
      "intro": "君王之塔中有几位骑士不通过普通候选朝会加入。他们的招募条件绑定特定剧情、死亡事件或紧急事件——错过窗口，本周目就再也拿不到。",
      "sections": [
       {
@@ -1915,14 +2121,192 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "隠し騎士と雇用方法",
+     "metaTitle": "隠し騎士と雇用方法",
+     "metaDescription": "ソブリンタワーの特殊騎士の雇い方：Dulahan（Goberto死亡後）、Chester（ガチョウクエスト）、Alwena（緊急イベント）など。",
+     "intro": "ソブリンタワーの一部の騎士は通常の候補朝会では加入しません。特定ストーリー・死亡イベント・緊急イベントに紐づく雇用条件——窓を逃すと今周回では手に入りません。",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "騎士",
+        "雇用条件",
+        "窓"
+       ],
+       "rows": [
+        [
+         "Dulahan",
+         "Goberto の死亡ルート完了——悪魔騎士としてそのルート4日目に出現。",
+         "ストーリー限定；1周回1回"
+        ],
+        [
+         "Chester",
+         "Clean Keeper Goose Part 2 の特殊結果（チーズ/馬/Gwendan のいずれか、各1金）を完了。本当の賞品は Chester。",
+         "ガチョウクエスト線"
+        ],
+        [
+         "Alwena",
+         "一回限りの緊急：Act 2以降に円卓の利用可能騎士が0の時に自動志願。任意で発動不可、二度目の機会なし。",
+         "Act 2+ 緊急時のみ"
+        ],
+        [
+         "Ari",
+         "25金で召喚（Basalt 兄弟の弟）。",
+         "ストーリー解放後いつでも"
+        ],
+        [
+         "Arron",
+         "Drakovic ストーリーで加入（候補朝会なし）。",
+         "ストーリー限定"
+        ],
+        [
+         "Brunhilda",
+         "Gavault ストーリー娘側ブランチ。",
+         "ストーリー限定"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "なぜ重要か",
+       "body": "",
+       "items": [
+        "Dulahan は唯一の悪魔騎士：Intangible（被ダメ半減）+全6種の好きな料理——Goberto の死亡ルートを完走できれば最強のクエストエンジン。",
+        "Alwena は他の騎士の噂特性を暴ける——失うと偵察ツールを失う。",
+        "Chester はランダム属性の万能枠：必須クエストは任せられないが、何を割り当てても気にしない。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Goberto を殺さずに Dulahan を雇える？",
+         "ファンwikiデータでは Dulahan は Goberto の死亡ルートでのみ出現。確認済みの代替ルートはまだない（未検証は待補）。"
+        ],
+        [
+         "Alwena は取り逃す？",
+         "はい——緊急勧誘は Act 2以降に円卓の利用可能騎士が0の時のみ、一度だけ。その状態にならなければ永遠に得られない。"
+        ],
+        [
+         "他にも隠し騎士は？",
+         "The Bard / Hildegard がファンwikiの隠し騎士リストに。正確な手順は確認中。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "숨은 기사와 고용 방법",
+     "metaTitle": "숨은 기사와 고용 방법",
+     "metaDescription": "소버린 타워 특수 기사 고용법: Dulahan(Goberto 사후), Chester(거위 퀘스트), Alwena(긴급 이벤트) 등.",
+     "intro": "소버린 타워의 일부 기사는 일반 후보 조회로는 합류하지 않습니다. 특정 스토리·사망 이벤트·긴급 이벤트에 묶인 고용 조건 — 기회를 놓치면 이번 회차에서는 얻을 수 없습니다.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "기사",
+        "고용 조건",
+        "기회"
+       ],
+       "rows": [
+        [
+         "Dulahan",
+         "Goberto 사망 루트 완료 — 악마 기사로서 그 루트 4일차에 등장.",
+         "스토리 한정; 1회차 1회"
+        ],
+        [
+         "Chester",
+         "Clean Keeper Goose Part 2 특수 결과(치즈/말/Gwendan 중 하나, 각 1골드) 완료. 진짜 상품은 Chester.",
+         "거위 퀘스트 라인"
+        ],
+        [
+         "Alwena",
+         "일회성 비상: Act 2 이후 원탁 가용 기사 0명일 때 자동 자원. 임의 발동 불가, 두 번 기회 없음.",
+         "Act 2+ 비상 시에만"
+        ],
+        [
+         "Ari",
+         "25골드 소환(Basalt 형제의 동생).",
+         "스토리 해금 후 언제든"
+        ],
+        [
+         "Arron",
+         "Drakovic 스토리로 합류(후보 조회 없음).",
+         "스토리 한정"
+        ],
+        [
+         "Brunhilda",
+         "Gavault 스토리 딸 쪽 브랜치.",
+         "스토리 한정"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "왜 중요한가",
+       "body": "",
+       "items": [
+        "Dulahan은 유일한 악마 기사: Intangible(피해 절반) + 전 6종 선호 요리 — Goberto 사망 루트를 완주하면 최강 퀘스트 엔진.",
+        "Alwena는 다른 기사의 루머 특성을 캘 수 있다 — 잃으면 정찰 도구를 잃는다.",
+        "Chester는 랜덤 스탯의 만능 자리: 필수 퀘스트는 맡기지 말 것, 하지만 뭘 배정해도 신경 쓰지 않는다."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Goberto를 죽이지 않고 Dulahan을 고용할 수 있나요?",
+         "팬 위키 데이터에 따르면 Dulahan은 Goberto 사망 루트에서만 등장합니다. 확인된 대체 루트는 아직 없습니다(미검증은待補)."
+        ],
+        [
+         "Alwena를 놓칠 수 있나요?",
+         "네 — 비상 고용은 Act 2 이후 원탁 가용 기사 0명일 때만 한 번 발생합니다. 그 상태가 되지 않으면 영원히 얻지 못합니다."
+        ],
+        [
+         "다른 숨은 기사는?",
+         "The Bard / Hildegard가 팬 위키 숨은 기사 목록에 있습니다. 정확한 절차는 확인 중입니다."
+        ]
+       ]
+      }
+     ]
+    },
+    "fr": {
+     "title": "Chevaliers secrets et recrutement",
+     "metaTitle": "Chevaliers secrets et recrutement",
+     "metaDescription": "Comment recruter les chevaliers spéciaux : Dulahan (après la mort de Goberto), Chester (quête de l'oie), Alwena (urgence).",
+     "intro": "Plusieurs chevaliers de Sovereign Tower ne rejoignent pas par une audience normale. Leurs conditions sont liées à des histoires, des morts ou des urgences — manquez la fenêtre et vous les perdez pour cette partie.",
+     "sections": []
+    },
+    "de": {
+     "title": "Geheimritter und Rekrutierung",
+     "metaTitle": "Geheimritter und Rekrutierung",
+     "metaDescription": "Wie man Sovereign Towers Spezialritter rekrutiert: Dulahan (nach Gobertos Tod), Chester (Gänsequest), Alwena (Notfall).",
+     "intro": "Mehrere Ritter in Sovereign Tower kommen nicht über eine normale Audienz. Ihre Bedingungen hängen an bestimmten Storys, Toden oder Notfällen — verpasst du das Fenster, verlierst du sie in diesem Lauf.",
+     "sections": []
     }
    }
   },
   {
    "slug": "sovereign-tower/romance",
    "title": "Romance Guide & Hidden Conditions",
-   "metaTitle": "Sovereign Tower Romance Guide: Hidden Conditions, Lady of the Tower & Arthur",
-   "metaDescription": "Sovereign Tower romance guide: hidden conditions, the Lady of the Tower stone statue line, Angelica's route, the Arthur marriage ending and how affinity gates romance.",
+   "metaTitle": "Sovereign Tower Romance Guide: Hidden Conditions, Lady…",
+   "metaDescription": "Romance in Sovereign Tower is gated by affinity, free-time conversations and specific story choices — and several routes have hidden conditions the game neve…",
    "intro": "Romance in Sovereign Tower is gated by affinity, free-time conversations and specific story choices — and several routes have hidden conditions the game never tells you about.",
    "sections": [
     {
@@ -2062,13 +2446,171 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "恋愛ガイドと隠し条件",
+     "metaTitle": "ソブリンタワー 恋愛：隠し条件・石像レディ・アーサー王",
+     "metaDescription": "ソブリンタワー恋愛ガイド：好感度で解放、石像レディ、Angelicaルート、アーサー王結婚エンドと隠し条件。",
+     "intro": "ソブリンタワーの恋愛は好感度・自由時間の会話・特定のストーリー選択で解放されます。いくつかのルートにはゲームが教えてくれない隠し条件があります。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "恋愛の仕組み",
+       "body": "",
+       "items": [
+        "好感度が自由時間の会話を開き、会話が騎士のストーリー（恋愛シーン含む）を解禁する。",
+        "好きなクエスト（各+1.33）、好きな料理（+1.5）、騎士が好む君主スタイルで安全に好感度を上げる。",
+        "ストーリーが十分進むと会話に恋愛選択肢が出現。好感度だけ上げてもルートは進まない。"
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "ルート",
+        "判明している条件",
+        "状態"
+       ],
+       "rows": [
+        [
+         "塔の石像 Lady of the Tower",
+         "公式セールスポイント——塔の秘密と繋がる恋愛可能な石像。",
+         "コンセプト確認（Steam L0）；全手順待補"
+        ],
+        [
+         "Angelica",
+         "オープニングで加入；Kind-Hearted ルート、Kind 君主スタイルを好む。",
+         "ルート確認；隠し手順待補"
+        ],
+        [
+         "アーサー王（結婚エンディング）",
+         "コミュニティ動画でアーサー王と結婚するエンドを確認。",
+         "存在（Bilibili L0）；正確な条件待補"
+        ],
+        [
+         "Gideon / その他",
+         "Steamコミュニティで「狼騎士との恋愛方法」と隠し条件が頻繁に質問される。",
+         "コミュニティ報告；待補"
+        ]
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "恋愛が進まない理由は？",
+         "最も多いのは好感度かストーリーの停滞。好感度が詰まっていないか確認し、好きなクエストを送り続け、自由時間の会話でストーリーを進めよう。"
+        ],
+        [
+         "複数人を同時攻略できる？",
+         "ルートにより異なるという報告あり。一部は互いに排他と思われる（ゲーム内確認まで待補）。"
+        ],
+        [
+         "アーサー王結婚には特定の派閥バランスが必要？",
+         "コミュニティ動画はあるが正確な前提は未検証——待補。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "연애 가이드와 숨은 조건",
+     "metaTitle": "소버린 타워 연애: 숨은 조건·석상 레이디·아서 왕",
+     "metaDescription": "소버린 타워 연애 가이드: 호감도 해금, 석상 레이디, Angelica 루트, 아서 왕 결혼 엔딩과 숨은 조건.",
+     "intro": "소버린 타워의 연애는 호감도·자유 시간 대화·특정 스토리 선택으로 해금됩니다. 일부 루트에는 게임이 알려주지 않는 숨은 조건이 있습니다.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "연애 진행 방식",
+       "body": "",
+       "items": [
+        "호감도가 자유 시간 대화를 열고, 대화가 기사 스토리(연애 장면 포함)를 해금.",
+        "좋아하는 퀘스트(+1.33마다), 좋아하는 요리(+1.5), 기사가 선호하는 군주 스타일로 안전하게 호감도 상승.",
+        "스토리 진행이 충분하면 대화에 연애 선택지 등장. 호감도만 높으면 루트가 막힌다."
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "루트",
+        "알려진 조건",
+        "상태"
+       ],
+       "rows": [
+        [
+         "탑 석상 Lady of the Tower",
+         "공식 판매 포인트 — 탑의 비밀과 연결된 연애 가능 석상.",
+         "개념 확인(Steam L0); 전체 절차待補"
+        ],
+        [
+         "Angelica",
+         "오프닝 스토리 고용; Kind-Hearted 루트, Kind 군주 스타일 선호.",
+         "루트 확인; 숨은 절차待補"
+        ],
+        [
+         "아서 왕(결혼 엔딩)",
+         "커뮤니티 영상에서 아서 왕과 결혼 엔딩 확인.",
+         "존재(Bilibili L0); 정확한 조건待補"
+        ],
+        [
+         "Gideon / 기타",
+         "Steam 커뮤니티에서 '늑대 기사 연애법'과 숨은 조건을 자주 질문.",
+         "커뮤니티 보고;待補"
+        ]
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "연애가 진행되지 않는 이유는?",
+         "가장 흔한 원인은 호감도나 스토리 정체. 호감도가 막혔는지 확인하고, 좋아하는 퀘스트를 계속 보내고, 자유 시간 대화로 스토리를 진행하세요."
+        ],
+        [
+         "여러 명을 동시에 공략할 수 있나요?",
+         "커뮤니티 보고는 루트마다 다릅니다. 일부 루트는 상호 배타적인 것으로 보입니다(게임 내 확인 전待補)."
+        ],
+        [
+         "아서 왕 결혼 엔딩에 특정 파벌 균형이 필요한가요?",
+         "커뮤니티 영상은 존재하지만 정확한 선행 조건은 미검증 —待補."
+        ]
+       ]
+      }
+     ]
+    },
+    "fr": {
+     "title": "Guide de romance et conditions cachées",
+     "metaTitle": "Guide de romance et conditions cachées",
+     "metaDescription": "Guide de romance : l'affinité, la Dame de pierre, la route d'Angelica, le mariage avec Arthur et les conditions cachées.",
+     "intro": "La romance dans Sovereign Tower est liée à l'affinité, aux conversations et aux choix d'histoire — plusieurs routes ont des conditions cachées.",
+     "sections": []
+    },
+    "de": {
+     "title": "Romantik-Guide und versteckte Bedingungen",
+     "metaTitle": "Romantik-Guide und versteckte Bedingungen",
+     "metaDescription": "Romantik-Guide: Sympathie, die Steinerne Lady, Angelicas Route, das Arthur-Ende und versteckte Bedingungen.",
+     "intro": "Romantik in Sovereign Tower hängt an Sympathie, Gesprächen und Story-Entscheidungen — einige Routen haben versteckte Bedingungen.",
+     "sections": []
     }
    }
   },
   {
    "slug": "sovereign-tower/endings",
    "title": "All Endings & Hidden Ending",
-   "metaTitle": "Sovereign Tower All Endings: Conquest, King Slayer, Hidden & Alt Endings",
+   "metaTitle": "Sovereign Tower All Endings: Conquest, King Slayer, Hi…",
    "metaDescription": "Sovereign Tower endings guide: conquest ending, King Slayer resolution, hidden/alt endings, and the branching structure that decides your fate.",
    "intro": "Sovereign Tower is a branching game with multiple endings. Some are simple route outcomes; others are hidden behind specific decisions, faction balances or romance lines.",
    "sections": [
@@ -2219,13 +2761,181 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "全エンディングと隠しエンディング",
+     "metaTitle": "ソブリンタワー 全エンディング：征服・King Slayer・隠し",
+     "metaDescription": "ソブリンタワー全エンディング：征服エンド、King Slayer決議、隠し/代替エンド、分岐構造。",
+     "intro": "ソブリンタワーは多分岐マルチエンディング。シンプルなルート結果もあれば、特定の決断・派閥バランス・恋愛線の背後に隠されたものもあります。",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "エンディング / ルート",
+        "判明していること",
+        "状態"
+       ],
+       "rows": [
+        [
+         "征服エンディング（一周目）",
+         "コミュニティのBilibili動画で一周目征服エンドを確認。",
+         "存在（L0動画）；条件待補"
+        ],
+        [
+         "King Slayer 決議",
+         "King Slayer に関わる決議パス、ファンサイトがカバー。",
+         "whisperofthehouse カバー（L0）；手順待補"
+        ],
+        [
+         "隠し / 代替エンディング",
+         "Steamコミュニティ：「How to get the secret alt ending」（7コメント）。",
+         "コミュニティ報告；手順待補"
+        ],
+        [
+         "アーサー王結婚エンディング",
+         "コミュニティ動画でアーサー王と結婚するエンドを確認。",
+         "存在（L0）；条件待補"
+        ],
+        [
+         "Gwendan 殺人ルート",
+         "Act 2 殺人調査が生存者とエンディング解禁を変える。",
+         "first casualty 達成率72.3%——大多数が未完了（L0）"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "エンディングの分岐",
+       "body": "",
+       "items": [
+        "主要決断（Cycle 4 ドラゴンナイト最後通牒、Act 2 殺人、Kutnar の去就、アーサー王同盟）がエンディングパスを固定/解放する。",
+        "時間巻き戻しで周回内に再判断できるが、一部の分岐は互いに排他。",
+        "終盤の派閥バランスと生存騎士がどのエンドになるかを決める。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "エンディングは全部でいくつ？",
+         "検証済みの総数は待補。コミュニティ動画で少なくとも征服、King Slayer、隠し/代替、アーサー王結婚のエンドを確認。"
+        ],
+        [
+         "一周目で全部見られる？",
+         "いいえ——複数のルートが互いに排他。New Game+ と巻き戻しで分岐を探索しよう。"
+        ],
+        [
+         "Act 2 殺人はエンディングに影響？",
+         "はい——殺人調査（Gwendan クエストライン）が生存者を変え、どの決議が解禁されるかを決める。達成率72.3%で大多数が未完了。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "전체 엔딩과 숨은 엔딩",
+     "metaTitle": "소버린 타워 전체 엔딩: 정복·King Slayer·숨은 엔딩",
+     "metaDescription": "소버린 타워 전체 엔딩: 정복 엔딩, King Slayer 결의, 숨은/대체 엔딩, 분기 구조.",
+     "intro": "소버린 타워는 다분기 멀티엔딩. 단순한 루트 결과도 있지만, 특정 결정·파벌 균형·연애선 뒤에 숨은 것도 있습니다.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "엔딩 / 루트",
+        "알려진 정보",
+        "상태"
+       ],
+       "rows": [
+        [
+         "정복 엔딩(1회차)",
+         "커뮤니티 Bilibili 영상에서 1회차 정복 엔딩 확인.",
+         "존재(L0 영상); 조건待補"
+        ],
+        [
+         "King Slayer 결의",
+         "King Slayer와 관련된 결의 경로, 팬 사이트에서 다룸.",
+         "whisperofthehouse 커버(L0); 절차待補"
+        ],
+        [
+         "숨은 / 대체 엔딩",
+         "Steam 커뮤니티: 'How to get the secret alt ending'(7댓글).",
+         "커뮤니티 보고; 절차待補"
+        ],
+        [
+         "아서 왕 결혼 엔딩",
+         "커뮤니티 영상에서 아서 왕과 결혼 엔딩 확인.",
+         "존재(L0); 조건待補"
+        ],
+        [
+         "Gwendan 살인 루트",
+         "Act 2 살인 조사가 생존/사망과 엔딩 해금을 바꿈.",
+         "first casualty 달성률 72.3% — 대부분 미완료(L0)"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "엔딩 분기 방식",
+       "body": "",
+       "items": [
+        "핵심 결정(Cycle 4 용기사 최후통첩, Act 2 살인, Kutnar 거취, 아서 왕 동맹)이 엔딩 경로를 잠그거나 해금.",
+        "시간 되돌리기로 한 회차 내 재판단 가능하지만 일부 분기는 상호 배타.",
+        "결말의 파벌 균형과 생존 기사 명단이 최종 엔딩을 결정."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "엔딩은 총 몇 개인가요?",
+         "검증된 전체 수는待補. 커뮤니티 영상으로 최소 정복, King Slayer, 숨은/대체, 아서 왕 결혼 엔딩 확인."
+        ],
+        [
+         "한 회차로 모든 엔딩을 볼 수 있나요?",
+         "아니요 — 여러 루트가 상호 배타적입니다. New Game+와 되돌리기로 분기를 탐색하세요."
+        ],
+        [
+         "Act 2 살인이 엔딩에 영향을 주나요?",
+         "네 — 살인 조사(Gwendan 퀘스트라인)가 생존자를 바꾸고 어떤 결의가 해금되는지 결정합니다. 달성률 72.3%로 대부분 미완료."
+        ]
+       ]
+      }
+     ]
+    },
+    "fr": {
+     "title": "Toutes les fins et la fin cachée",
+     "metaTitle": "Toutes les fins et la fin cachée",
+     "metaDescription": "Guide des fins : conquête, résolution King Slayer, fins cachées/alternatives et structure des branches.",
+     "intro": "Sovereign Tower est un jeu à embranchements multiples. Certaines fins sont simples, d'autres cachées derrière des choix, l'équilibre des factions ou des lignes romantiques.",
+     "sections": []
+    },
+    "de": {
+     "title": "Alle Enden und das versteckte Ende",
+     "metaTitle": "Alle Enden und das versteckte Ende",
+     "metaDescription": "Enden-Guide: Eroberungs-Ende, King-Slayer-Resolution, versteckte/alternative Enden und die Verzweigungsstruktur.",
+     "intro": "Sovereign Tower ist ein verzweigtes Spiel mit mehreren Enden. Manche sind einfache Routenergebnisse, andere verstecken sich hinter Entscheidungen, Fraktionsgleichgewicht oder Romanzen.",
+     "sections": []
     }
    }
   },
   {
    "slug": "sovereign-tower/recipes",
    "title": "All Recipes & Each Knight's Favorite Meal",
-   "metaTitle": "Sovereign Tower All 6 Recipes & Knight Favorite Meals (+1.5 Affinity Guide)",
+   "metaTitle": "Sovereign Tower All 6 Recipes & Knight Favorite Meals…",
    "metaDescription": "All six Sovereign Tower dishes and which knight loves each meal. Feeding a favourite meal gives +1.5 affinity and +0.5 quest score.",
    "intro": "There are exactly six dishes in Sovereign Tower. Feeding a knight a favourite meal gives +1.5 affinity and +0.5 quest score, and permanently records their taste — so the meal table is worth learning by heart.",
    "sections": [
@@ -2602,13 +3312,303 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "全レシピと騎士の好きな料理",
+     "metaTitle": "ソブリンタワー 全6レシピと騎士の好きな料理（+1.5好感）",
+     "metaDescription": "ソブリンタワーの全6料理と各騎士の好きな料理。好きな料理は+1.5好感+0.5得点。",
+     "intro": "ソブリンタワーの料理は全6種のみ。好きな料理を食べさせると+1.5好感+0.5クエスト得点、味を永久記録——この表は覚える価値があります。",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "料理（EN）",
+        "料理（中文）",
+        "説明"
+       ],
+       "rows": [
+        [
+         "Galette-Saucisse",
+         "香肠荞麦饼",
+         "ブリズの街角定番のソーセージ蕎麦粉ガレット。"
+        ],
+        [
+         "Croque-Monsieur",
+         "法式三明治",
+         "ハム&チーズのトーストサンド、定番の癒し。"
+        ],
+        [
+         "Préfou",
+         "蒜香面包",
+         "バターで焼いたガーリックブレッド——酒場の人気者。"
+        ],
+        [
+         "Crêpe",
+         "可丽饼",
+         "薄い仏式パンケーキ、甘くても塩味でも。"
+        ],
+        [
+         "Brizhian Butter Shortbread",
+         "布里兹黄油酥饼",
+         "ブリズの濃厚バターショートブレッド。"
+        ],
+        [
+         "Lion's Taco",
+         "狮子玉米饼",
+         "具だくさんの大胆なタコス。"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "騎士",
+        "好きな料理"
+       ],
+       "rows": [
+        [
+         "Alwena",
+         "Brizhian Butter Shortbread、Crêpe"
+        ],
+        [
+         "Angelica",
+         "Préfou、Crêpe"
+        ],
+        [
+         "Ari",
+         "Brizhian Butter Shortbread、Crêpe"
+        ],
+        [
+         "Arron",
+         "Crêpe、Brizhian Butter Shortbread"
+        ],
+        [
+         "Brunhilda",
+         "Galette-Saucisse、Lion's Taco"
+        ],
+        [
+         "Chester",
+         "全6種"
+        ],
+        [
+         "Childeric",
+         "Crêpe、Croque-Monsieur"
+        ],
+        [
+         "Daguez",
+         "Crêpe、Galette-Saucisse、Préfou"
+        ],
+        [
+         "Dulahan",
+         "全6種"
+        ],
+        [
+         "Edith",
+         "Croque-Monsieur、Brizhian Butter Shortbread"
+        ],
+        [
+         "その他",
+         "待補"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "食事ルール",
+       "body": "",
+       "items": [
+        "各騎士は好きな料理1〜2種（ChesterとDulahanは全6種）。",
+        "好きな料理=+1.5好感+0.5得点、永久記録。",
+        "食事は自由時間に——好感度が会話を開くので、好きなクエストを送り続けよう。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "全料理を好む騎士は？",
+         "Chester と Dulahan は6種すべてが好きな料理。"
+        ],
+        [
+         "食事は得点に影響？",
+         "はい——好きな料理1つにつき+0.5得点（+1.5好感に加えて）。"
+        ],
+        [
+         "騎士の好みは変わる？",
+         "Arron の暴力進化ルートで好きな料理と辞任シーンが変化。他は固定。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "전체 레시피와 기사가 좋아하는 요리",
+     "metaTitle": "소버린 타워 전체 6개 레시피와 기사 선호 요리(+1.5 호감)",
+     "metaDescription": "소버린 타워의 6개 요리와 각 기사의 좋아하는 요리. 선호 요리는 +1.5 호감 +0.5 점수.",
+     "intro": "소버린 타워의 요리는 총 6개뿐입니다. 좋아하는 요리를 먹이면 +1.5 호감 +0.5 퀘스트 점수, 맛을 영구 기록 — 이 표를 외울 가치가 있습니다.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "요리(EN)",
+        "요리(중문)",
+        "설명"
+       ],
+       "rows": [
+        [
+         "Galette-Saucisse",
+         "香肠荞麦饼",
+         "브리즈 길거리 정석 소시지 메밀 갈레트."
+        ],
+        [
+         "Croque-Monsieur",
+         "法式三明治",
+         "햄&치즈 토스트 샌드위치, 정석 힐링."
+        ],
+        [
+         "Préfou",
+         "蒜香面包",
+         "버터에 구운 마늘빵 — 선술집 인기."
+        ],
+        [
+         "Crêpe",
+         "可丽饼",
+         "얇은 프랑스 팬케이크, 달게도 짜게도."
+        ],
+        [
+         "Brizhian Butter Shortbread",
+         "布里兹黄油酥饼",
+         "브리즈의 진한 버터 쇼트브레드."
+        ],
+        [
+         "Lion's Taco",
+         "狮子玉米饼",
+         "소담한 속이 가득한 대담한 타코."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "기사",
+        "좋아하는 요리"
+       ],
+       "rows": [
+        [
+         "Alwena",
+         "Brizhian Butter Shortbread、Crêpe"
+        ],
+        [
+         "Angelica",
+         "Préfou、Crêpe"
+        ],
+        [
+         "Ari",
+         "Brizhian Butter Shortbread、Crêpe"
+        ],
+        [
+         "Arron",
+         "Crêpe、Brizhian Butter Shortbread"
+        ],
+        [
+         "Brunhilda",
+         "Galette-Saucisse、Lion's Taco"
+        ],
+        [
+         "Chester",
+         "전 6종"
+        ],
+        [
+         "Childeric",
+         "Crêpe、Croque-Monsieur"
+        ],
+        [
+         "Daguez",
+         "Crêpe、Galette-Saucisse、Préfou"
+        ],
+        [
+         "Dulahan",
+         "전 6종"
+        ],
+        [
+         "Edith",
+         "Croque-Monsieur、Brizhian Butter Shortbread"
+        ],
+        [
+         "기타",
+         "待補"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "식사 규칙",
+       "body": "",
+       "items": [
+        "각 기사는 선호 요리 1~2종(Chester와 Dulahan은 전 6종).",
+        "선호 요리 = +1.5 호감 +0.5 점수, 영구 기록.",
+        "식사는 자유 시간에 — 호감도가 대화를 여니 선호 퀘스트를 계속 보내세요."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "모든 요리를 좋아하는 기사는?",
+         "Chester와 Dulahan은 6종 모두를 좋아합니다."
+        ],
+        [
+         "식사가 점수에 영향?",
+         "네 — 선호 요리 하나당 +0.5 점수(+1.5 호감에 더해)."
+        ],
+        [
+         "기사 취향이 바뀌나요?",
+         "Arron의 폭력 진화 루트에서 선호 요리와 사임 장면이 바뀝니다. 나머지는 고정."
+        ]
+       ]
+      }
+     ]
+    },
+    "fr": {
+     "title": "Toutes les recettes et plats favoris",
+     "metaTitle": "Toutes les recettes et plats favoris",
+     "metaDescription": "Les six plats de Sovereign Tower et le plat favori de chaque chevalier. Plat favori : +1,5 affinité et +0,5 de score.",
+     "intro": "Il n'y a que six plats dans Sovereign Tower. Donner un plat favori donne +1,5 d'affinité et +0,5 de score, et enregistre le goût — ce tableau vaut la peine d'être appris.",
+     "sections": []
+    },
+    "de": {
+     "title": "Alle Rezepte und Lieblingsgerichte",
+     "metaTitle": "Alle Rezepte und Lieblingsgerichte",
+     "metaDescription": "Alle sechs Gerichte und das Lieblingsgericht jedes Ritters. Lieblingsgericht: +1,5 Sympathie und +0,5 Punkte.",
+     "intro": "Es gibt genau sechs Gerichte in Sovereign Tower. Ein Lieblingsgericht gibt +1,5 Sympathie und +0,5 Questpunkte und zeichnet den Geschmack dauerhaft auf.",
+     "sections": []
     }
    }
   },
   {
    "slug": "sovereign-tower/quest-mechanics",
    "title": "Quest Mechanics & Score Formula",
-   "metaTitle": "Sovereign Tower Quest Mechanics: Score Formula, Thresholds, XP & Affinity",
+   "metaTitle": "Sovereign Tower Quest Mechanics: Score Formula, Thresh…",
    "metaDescription": "How quest scoring works in Sovereign Tower: the (stat − requirement) × 0.66 formula, success thresholds, XP table, affinity, quest types and conditions.",
    "intro": "Every quest in Sovereign Tower asks for one or more stats. Matching the right knight to the right quest is the difference between a critical success and a total wipe — here is exactly how the maths works.",
    "sections": [
@@ -3239,25 +4239,421 @@
      "metaTitle": "ソブリンタワー クエスト仕組み：得点計算式・閾値・経験値・好感度",
      "metaDescription": "ソブリンタワーのクエスト得点計算：(騎士属性-クエスト要求)×0.66、成功閾値、経験値表、好感度、11種のクエストタイプと21の条件。",
      "intro": "ソブリンタワーの各クエストは1つ以上の属性を要求します。正しい騎士を正しいクエストに送るかが成功と全滅の分かれ目——ここに正確な計算式があります。",
-     "sections": []
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "仕組み",
+        "ルール"
+       ],
+       "rows": [
+        [
+         "ステータス貢献",
+         "各要求ステータス：概算 (騎士ステータス - クエスト要求) × 0.66、パーティで分配、要求の難度でスケール。ちょうど一致で+0.22の基礎値。"
+        ],
+        [
+         "ステータス上限",
+         "得点に使う値は常に0-15にクランプ（装備ボーナス含む）。"
+        ],
+        [
+         "好感度の影響",
+         "好きなタイプ/条件：各+1.33好感。嫌い：各-0.75。累積——タイプ一致+好きな条件2つで約+4好感。"
+        ],
+        [
+         "食事ボーナス",
+         "好きな料理：+1.5好感+0.5得点、味を永久記録。"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "得点",
+        "閾値",
+        "報酬"
+       ],
+       "rows": [
+        [
+         "Critical Success",
+         "+10",
+         "報酬×2"
+        ],
+        [
+         "Great Success",
+         "+5",
+         "報酬×1.5"
+        ],
+        [
+         "Success",
+         "0",
+         "報酬×1"
+        ],
+        [
+         "Major Failure",
+         "-5",
+         "報酬なし"
+        ],
+        [
+         "Critical Failure",
+         "-10",
+         "報酬なし"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "レベル",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+       ],
+       "rows": [
+        [
+         "累計XP",
+         "0",
+         "12",
+         "25",
+         "40",
+         "58",
+         "77",
+         "97",
+         "117",
+         "138",
+         "160",
+         "183",
+         "207",
+         "235",
+         "265",
+         "300"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "XPの入手",
+       "body": "",
+       "items": [
+        "クエスト結果：失敗=0、通常成功=1×、Great=1.5×、Critical=2×。",
+        "1サイクルを訓練場（Training Ground）に使う。",
+        "レベルアップごとに15未満のステータスへ1ポイント。"
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "クエストタイプ",
+        ""
+       ],
+       "rows": [
+        [
+         "Hunt",
+         "狩猟"
+        ],
+        [
+         "Assassination",
+         "暗殺"
+        ],
+        [
+         "Relic Recovery",
+         "聖物回収"
+        ],
+        [
+         "Diplomacy",
+         "外交"
+        ],
+        [
+         "Scouting",
+         "偵察"
+        ],
+        [
+         "Confrontation",
+         "対峙"
+        ],
+        [
+         "Duel",
+         "決闘"
+        ],
+        [
+         "Competition",
+         "競技"
+        ],
+        [
+         "Research",
+         "調査"
+        ],
+        [
+         "Rescue",
+         "救出"
+        ],
+        [
+         "Knight Quest",
+         "騎士クエスト"
+        ]
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Critical Success に必要な得点は？",
+         "+10以上。+5=Great（報酬1.5倍）、0=通常成功、-5=Major Failure、-10=Critical Failure。"
+        ],
+        [
+         "好感度が下がると騎士は去る？",
+         "はい——好感度-7で多くの騎士が辞任の謁見を申し出て去る。AlwenaとAriは閾値-1500で絶対に辞めない。"
+        ],
+        [
+         "クエストタイプは何種類？",
+         "11タイプ+21条件（ファンwikiデータ）。タイプと複数条件を組み合わせ可能。"
+        ]
+       ]
+      }
+     ]
     },
     "ko": {
      "title": "퀘스트 메커니즘과 점수 공식",
      "metaTitle": "소버린 타워 퀘스트 메커니즘: 점수 공식·임계값·경험치·호감도",
      "metaDescription": "소버린 타워 퀘스트 점수 계산: (기사 스탯-퀘스트 요구)×0.66, 성공 임계값, 경험치 표, 호감도, 11종 퀘스트 타입과 21개 조건.",
      "intro": "소버린 타워의 각 퀘스트는 하나 이상의 스탯을 요구합니다. 올바른 기사를 올바른 퀘스트에 보내는 것이 대성공과 전멸을 가릅니다 — 여기 정확한 수학이 있습니다.",
-     "sections": []
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "메커니즘",
+        "규칙"
+       ],
+       "rows": [
+        [
+         "스탯 기여",
+         "각 요구 스탯: 대략 (기사 스탯 - 퀘스트 요구) × 0.66, 파티 분배, 요구 난이도로 스케일. 정확히 일치 시 +0.22 기본값."
+        ],
+        [
+         "스탯 상한",
+         "점수에 쓰는 값은 항상 0-15로 클램프(장비 보너스 포함)."
+        ],
+        [
+         "호감도 영향",
+         "좋아하는 타입/조건: 각 +1.33 호감. 싫어하는: 각 -0.75. 누적 — 타입 일치 + 좋아하는 조건 2개면 약 +4 호감."
+        ],
+        [
+         "식사 보너스",
+         "좋아하는 요리: +1.5 호감 +0.5 점수, 맛 영구 기록."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "점수",
+        "임계값",
+        "보상"
+       ],
+       "rows": [
+        [
+         "Critical Success",
+         "+10",
+         "보상×2"
+        ],
+        [
+         "Great Success",
+         "+5",
+         "보상×1.5"
+        ],
+        [
+         "Success",
+         "0",
+         "보상×1"
+        ],
+        [
+         "Major Failure",
+         "-5",
+         "보상 없음"
+        ],
+        [
+         "Critical Failure",
+         "-10",
+         "보상 없음"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "레벨",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+       ],
+       "rows": [
+        [
+         "누적 XP",
+         "0",
+         "12",
+         "25",
+         "40",
+         "58",
+         "77",
+         "97",
+         "117",
+         "138",
+         "160",
+         "183",
+         "207",
+         "235",
+         "265",
+         "300"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "XP 획득",
+       "body": "",
+       "items": [
+        "퀘스트 결과: 실패=0, 일반 성공=1×, Great=1.5×, Critical=2×.",
+        "한 사이클을 훈련장(Training Ground)에 사용.",
+        "레벨업마다 15 미만 스탯에 1포인트."
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "퀘스트 타입",
+        ""
+       ],
+       "rows": [
+        [
+         "Hunt",
+         "사냥"
+        ],
+        [
+         "Assassination",
+         "암살"
+        ],
+        [
+         "Relic Recovery",
+         "성물 회수"
+        ],
+        [
+         "Diplomacy",
+         "외교"
+        ],
+        [
+         "Scouting",
+         "정찰"
+        ],
+        [
+         "Confrontation",
+         "대치"
+        ],
+        [
+         "Duel",
+         "결투"
+        ],
+        [
+         "Competition",
+         "경기"
+        ],
+        [
+         "Research",
+         "조사"
+        ],
+        [
+         "Rescue",
+         "구출"
+        ],
+        [
+         "Knight Quest",
+         "기사 퀘스트"
+        ]
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Critical Success에 필요한 점수는?",
+         "+10 이상. +5=Great(보상 1.5배), 0=일반 성공, -5=Major Failure, -10=Critical Failure."
+        ],
+        [
+         "호감도가 낮아지면 기사가 떠나나요?",
+         "네 — 호감도 -7에서 대부분의 기사가 사임 청원 후 떠납니다. Alwena와 Ari는 임계값 -1500으로 절대 사임하지 않습니다."
+        ],
+        [
+         "퀘스트 타입은 몇 종류?",
+         "11종 + 21조건(팬 위키 데이터). 타입과 여러 조건을 조합 가능."
+        ]
+       ]
+      }
+     ]
     },
     "fr": {
      "title": "Mécaniques de quête et formule de score",
-     "metaTitle": "Sovereign Tower : mécaniques de quête — formule de score, seuils, XP et affinité",
-     "metaDescription": "Comment fonctionne le score de quête dans Sovereign Tower : la formule (stat − exigence) × 0,66, les seuils, l'XP, l'affinité, les types et conditions de quête.",
+     "metaTitle": "Mécaniques de quête et formule de score",
+     "metaDescription": "Chaque quête de Sovereign Tower exige une ou plusieurs stats. Envoyer le bon chevalier sur la bonne quête fait la différence entre un succès critique et un é…",
      "intro": "Chaque quête de Sovereign Tower exige une ou plusieurs stats. Envoyer le bon chevalier sur la bonne quête fait la différence entre un succès critique et un échec total — voici exactement le calcul.",
      "sections": []
     },
     "de": {
      "title": "Quest-Mechaniken und Punktformel",
-     "metaTitle": "Sovereign Tower: Quest-Mechaniken — Punktformel, Schwellen, XP und Sympathie",
+     "metaTitle": "Quest-Mechaniken und Punktformel",
      "metaDescription": "Wie die Quest-Punktwertung in Sovereign Tower funktioniert: die Formel (Wert − Anforderung) × 0,66, Schwellen, XP, Sympathie, Questtypen und -bedingungen.",
      "intro": "Jede Quest in Sovereign Tower verlangt einen oder mehrere Werte. Den richtigen Ritter auf die richtige Quest zu schicken, unterscheidet Kritischen Erfolg von Totalausfall — hier ist die exakte Rechnung.",
      "sections": []
@@ -3267,7 +4663,7 @@
   {
    "slug": "sovereign-tower/achievements",
    "title": "All 75 Achievements",
-   "metaTitle": "Sovereign Tower All 75 Achievements: Full List & Roadmap (How Cute Guide)",
+   "metaTitle": "Sovereign Tower All 75 Achievements: Full List & Roadm…",
    "metaDescription": "Sovereign Tower has 75 Steam achievements. See the highlighted 10, the How Cute route and what the achievement data says about the game's hardest content.",
    "intro": "Sovereign Tower ships with 75 Steam achievements. The full list is still being verified from Steam Community data (待补), but the highlighted 10 and several important ones are confirmed.",
    "sections": [
@@ -3358,7 +4754,7 @@
    "i18n": {
     "zh-CN": {
      "title": "全部 75 个成就",
-     "metaTitle": "君王之塔 全部 75 个成就：完整列表与路线图（How Cute 攻略）",
+     "metaTitle": "全部 75 个成就",
      "metaDescription": "君王之塔共有 75 个 Steam 成就。查看重点 10 个、How Cute 路线，以及成就率数据揭示的游戏最难内容。",
      "intro": "君王之塔共 75 个 Steam 成就。完整列表仍在从 Steam 社区数据核实中（待补），但重点 10 个和几个关键成就已确认。",
      "sections": [
@@ -3446,13 +4842,209 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "全75実績",
+     "metaTitle": "ソブリンタワー 全75実績：リストとHow Cuteガイド",
+     "metaDescription": "ソブリンタワーはSteam実績75個。ハイライト10個、How Cuteルート、実績率データ。",
+     "intro": "ソブリンタワーはSteam実績75個。完全リストはSteamコミュニティから確認中（待補）ですが、ハイライト10個と重要実績は確認済みです。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "重要な事実",
+       "body": "",
+       "items": [
+        "実績は全部で75個（Steam L0）。10個がハイライト（Steam L0）。",
+        "first casualty（殺人線クリア）達成率72.3%——殺人調査は最もスキップされる重要ブランチ。",
+        "How Cute：ドラゴンの心臓を食べていない Arron + 共感ルート + Act III。Moonvale の3番目のミッションで EMPATHY ROUTE（子ドラゴンを殺さない）を選ぶ → 別のクエストを受け入れる → Dragon Knight 特性獲得。"
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "ハイライト実績",
+        "意味"
+       ],
+       "rows": [
+        [
+         "A New Sovereign",
+         "ゲームが示す進捗ノードの1つ"
+        ],
+        [
+         "That's One Thing Sorted",
+         "同上"
+        ],
+        [
+         "Good Things Come In Three",
+         "同上"
+        ],
+        [
+         "A Successful Hunt",
+         "同上"
+        ],
+        [
+         "And Thus, the Revolution Came to an End",
+         "同上"
+        ],
+        [
+         "How to Deal With Dragons",
+         "同上"
+        ],
+        [
+         "HURRAY! HURRAY!",
+         "同上"
+        ],
+        [
+         "The Grand Derby",
+         "同上"
+        ],
+        [
+         "It's a Mess",
+         "同上"
+        ],
+        [
+         "How to Train Your Griffin",
+         "同上"
+        ]
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "How Cute の取り方は？",
+         "Arron を仁善ルートに保ち（竜の心臓を食べない）、Moonvale の3番目のミッションで EMPATHY ROUTE を選び、共感ルートで Act III へ。"
+        ],
+        [
+         "最難関の実績は？",
+         "達成率データによると殺人線クリア（first casualty、72.3%）が最もスキップされる——有力候補。"
+        ],
+        [
+         "完全リストはどこ？",
+         "完全75実績表は待補（Steamコミュニティがレート制限；SteamDB/コミュニティソースで確認中）。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "전체 75개 업적",
+     "metaTitle": "소버린 타워 전체 75개 업적: 목록과 How Cute 가이드",
+     "metaDescription": "소버린 타워 Steam 업적 75개. 하이라이트 10개, How Cute 루트, 업적률 데이터.",
+     "intro": "소버린 타워는 Steam 업적 75개. 전체 목록은 Steam 커뮤니티에서 확인 중(待補)이지만, 하이라이트 10개와 주요 업적은 확인됐습니다.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "중요한 사실",
+       "body": "",
+       "items": [
+        "업적 총 75개(Steam L0). 10개 하이라이트(Steam L0).",
+        "first casualty(살인 루트 클리어) 달성률 72.3% — 살인 조사는 가장 많이 건너뛰는 주요 브랜치.",
+        "How Cute: 용 심장을 먹지 않은 Arron + 공감 루트 + Act III. Moonvale 3번째 미션에서 EMPATHY ROUTE(새끼 용을 죽이지 않음) 선택 → 다른 퀘스트 수락 → Dragon Knight 특성 획득."
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "하이라이트 업적",
+        "의미"
+       ],
+       "rows": [
+        [
+         "A New Sovereign",
+         "게임이 보여주는 진행 노드 중 하나"
+        ],
+        [
+         "That's One Thing Sorted",
+         "동일"
+        ],
+        [
+         "Good Things Come In Three",
+         "동일"
+        ],
+        [
+         "A Successful Hunt",
+         "동일"
+        ],
+        [
+         "And Thus, the Revolution Came to an End",
+         "동일"
+        ],
+        [
+         "How to Deal With Dragons",
+         "동일"
+        ],
+        [
+         "HURRAY! HURRAY!",
+         "동일"
+        ],
+        [
+         "The Grand Derby",
+         "동일"
+        ],
+        [
+         "It's a Mess",
+         "동일"
+        ],
+        [
+         "How to Train Your Griffin",
+         "동일"
+        ]
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "How Cute는 어떻게 얻나요?",
+         "Arron을 인선 루트로 유지(용 심장 미섭취), Moonvale 3번째 미션에서 EMPATHY ROUTE 선택, 공감 루트로 Act III 진행."
+        ],
+        [
+         "가장 어려운 업적은?",
+         "달성률 데이터상 살인 루트 클리어(first casualty, 72.3%)가 가장 많이 건너뛰어짐 — 유력 후보."
+        ],
+        [
+         "전체 목록은?",
+         "전체 75업적 표는待補(Steam 커뮤니티 레이트 제한; SteamDB/커뮤니티 소스로 확인 중)."
+        ]
+       ]
+      }
+     ]
+    },
+    "fr": {
+     "title": "Les 75 succès",
+     "metaTitle": "Les 75 succès",
+     "metaDescription": "Sovereign Tower a 75 succès Steam. Les 10 en avant, la route How Cute et les données de taux.",
+     "intro": "Sovereign Tower a 75 succès Steam. La liste complète est en cours de vérification (待补), mais les 10 en avant et plusieurs importants sont confirmés.",
+     "sections": []
+    },
+    "de": {
+     "title": "Alle 75 Erfolge",
+     "metaTitle": "Alle 75 Erfolge",
+     "metaDescription": "Sovereign Tower hat 75 Steam-Erfolge. Die Top 10, die How-Cute-Route und Erfolgsraten-Daten.",
+     "intro": "Sovereign Tower hat 75 Steam-Erfolge. Die vollständige Liste wird noch verifiziert (待补), aber die Top 10 und mehrere wichtige sind bestätigt.",
+     "sections": []
     }
    }
   },
   {
    "slug": "sovereign-tower/tools/quest-matcher",
    "title": "Knight Quest Matcher",
-   "metaTitle": "Sovereign Tower Knight Quest Matcher — Pick the Best Knight for Any Quest",
+   "metaTitle": "Sovereign Tower Knight Quest Matcher — Pick the Best K…",
    "metaDescription": "Interactive tool: match Sovereign Tower knights to quest types and conditions, see who likes the quest and who dislikes it before you assign.",
    "intro": "Pick a quest type (and optionally a condition) to see which knights are a good fit — based on their liked/disliked quest preferences and key traits. All data is from the fan wiki roster.",
    "sections": [
@@ -3501,14 +5093,66 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "騎士クエストマッチャー",
+     "metaTitle": "ソブリンタワー 騎士クエストマッチャー",
+     "metaDescription": "クエストタイプを選んで騎士の適合を確認する対話ツール。好感反応と特性を表示。",
+     "intro": "クエストタイプ（任意で条件）を選んで、どの騎士が最適か確認——好き/嫌いのクエストと主要特性に基づく。データはファンwikiから。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "使い方",
+       "body": "",
+       "items": [
+        "ドロップダウンからクエストタイプを選択。全騎士のそのタイプへの好感反応と特質が表示される。",
+        "好きなタイプは+1.33好感、嫌いは-0.75。好きな条件を重ねると約+4好感まで。",
+        "特質を確認：Dulahan は被ダメ半減だが失敗時+2（Clumsy）。Gwendan は聖物回収を嫌う。"
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "기사 퀘스트 매처",
+     "metaTitle": "소버린 타워 기사 퀘스트 매처",
+     "metaDescription": "퀘스트 타입을 선택해 기사 적합도를 확인하는 대화형 도구. 호감 반응과 특성 표시.",
+     "intro": "퀘스트 타입(선택적으로 조건)을 골라 어떤 기사가 가장 적합한지 확인 — 선호/비선호 퀘스트와 주요 특성 기반. 데이터는 팬 위키 출처.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "사용법",
+       "body": "",
+       "items": [
+        "드롭다운에서 퀘스트 타입 선택. 전체 기사의 해당 타입 호감 반응과 특성이 표시됩니다.",
+        "좋아하는 타입은 +1.33 호감, 싫어하는 건 -0.75. 좋아하는 조건을 겹치면 약 +4 호감까지.",
+        "특성 확인: Dulahan은 피해 절반이지만 실패 시 +2(Clumsy). Gwendan은 성물 회수를 싫어합니다."
+       ]
+      }
+     ]
+    },
+    "fr": {
+     "title": "Matcheur chevalier-quête",
+     "metaTitle": "Sovereign Tower : matcheur chevalier-quête",
+     "metaDescription": "Outil interactif : choisissez un type de quête pour voir quels chevaliers conviennent.",
+     "intro": "Choisissez un type de quête (et une condition) pour voir quels chevaliers conviennent — selon leurs préférences et traits clés. Données du wiki de fans.",
+     "sections": []
+    },
+    "de": {
+     "title": "Ritter-Quest-Matcher",
+     "metaTitle": "Sovereign Tower: Ritter-Quest-Matcher",
+     "metaDescription": "Interaktives Tool: Quest-Typ wählen, um passende Ritter anzuzeigen.",
+     "intro": "Wähle einen Quest-Typ (und optional eine Bedingung), um zu sehen, welche Ritter passen — basierend auf Vorlieben und Schlüsseleigenschaften. Daten aus dem Fan-Wiki.",
+     "sections": []
     }
    }
   },
   {
    "slug": "sovereign-tower/tools/affinity-calc",
    "title": "Affinity Calculator",
-   "metaTitle": "Sovereign Tower Affinity Calculator — Track Knight Affinity & Resignation Risk",
-   "metaDescription": "Interactive tool: estimate a knight's affinity change from quest assignments, favourite meals and sovereign style choices, and see how close they are to resigning.",
+   "metaTitle": "Sovereign Tower Affinity Calculator — Track Knight Aff…",
+   "metaDescription": "Estimate how a knight's affinity moves: +1.33 per liked quest type, −0.75 per disliked, +1.5 per favourite meal, plus sovereign-style bonuses. At −7 most kni…",
    "intro": "Estimate how a knight's affinity moves: +1.33 per liked quest type, −0.75 per disliked, +1.5 per favourite meal, plus sovereign-style bonuses. At −7 most knights resign.",
    "sections": [
     {
@@ -3558,13 +5202,67 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "好感度計算機",
+     "metaTitle": "ソブリンタワー 好感度計算機",
+     "metaDescription": "クエスト割当・好きな料理・君主スタイルによる好感度変化と辞任リスクを計算。",
+     "intro": "騎士の好感度変化を推定：好きなクエスト+1.33、嫌い-0.75、好きな料理+1.5、君主スタイル。好感度-7で辞任。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "組み込まれたルール",
+       "body": "",
+       "items": [
+        "好きなクエストタイプ/条件：各+1.33好感。嫌い：各-0.75。",
+        "好きな料理：+1.5好感+0.5得点。",
+        "辞任閾値：ほぼ全員-7。AlwenaとAriは-1500で絶対に辞めない。",
+        "計画の補助——実際のゲーム内数値は変わる可能性あり（未検証ルールは待補）。"
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "호감도 계산기",
+     "metaTitle": "소버린 타워 호감도 계산기",
+     "metaDescription": "퀘스트 배정·좋아하는 요리·군주 스타일에 따른 호감도 변화와 사임 위험 계산.",
+     "intro": "기사 호감도 변화 추정: 좋아하는 퀘스트 +1.33, 싫어하는 -0.75, 좋아하는 요리 +1.5, 군주 스타일. -7이면 사임.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "내장 규칙",
+       "body": "",
+       "items": [
+        "좋아하는 퀘스트 타입/조건: 각 +1.33 호감. 싫어하는: 각 -0.75.",
+        "좋아하는 요리: +1.5 호감 +0.5 점수.",
+        "사임 임계값: 거의 전원 -7. Alwena와 Ari는 -1500으로 절대 사임 없음.",
+        "계획 보조 도구 — 실제 게임 내 수치는 다를 수 있음(미검증 규칙은待補)."
+       ]
+      }
+     ]
+    },
+    "fr": {
+     "title": "Calculateur d'affinité",
+     "metaTitle": "Sovereign Tower : calculateur d'affinité",
+     "metaDescription": "Estimez l'affinité d'un chevalier : quêtes, plats favoris, style du souverain.",
+     "intro": "Estimez l'affinité : quête aimée +1,33, détestée -0,75, plat favori +1,5, style du souverain. À -7, le chevalier démissionne.",
+     "sections": []
+    },
+    "de": {
+     "title": "Sympathie-Rechner",
+     "metaTitle": "Sovereign Tower: Sympathie-Rechner",
+     "metaDescription": "Sympathie-Änderung durch Quests, Lieblingsgerichte und Herrscherstil berechnen.",
+     "intro": "Sympathie schätzen: geliebte Quest +1,33, verhasste -0,75, Lieblingsgericht +1,5, Herrscherstil. Bei -7 kündigt der Ritter.",
+     "sections": []
     }
    }
   },
   {
    "slug": "index",
    "title": "Sovereign Tower Guide Hub",
-   "metaTitle": "Sovereign Tower (君王之塔) Guide: All Knights, Recipes, Endings & Tools",
+   "metaTitle": "Sovereign Tower (君王之塔) Guide: All Knights, Recipes, En…",
    "metaDescription": "Complete Sovereign Tower guides: all 24 knights with stats and hidden traits, the 6 recipes, every ending, quest mechanics, romance and interactive tools.",
    "intro": "A fan-made guide hub for Sovereign Tower (君王之塔), the Round Table management RPG by WILD WITS GAMES / Curve Games. Start with the knights roster, then dive into recipes, endings and our interactive tools.",
    "sections": [
@@ -3606,7 +5304,7 @@
    "i18n": {
     "zh-CN": {
      "title": "君王之塔 攻略中心",
-     "metaTitle": "君王之塔 Sovereign Tower 攻略：全部骑士、菜谱、结局与工具",
+     "metaTitle": "君王之塔 攻略中心",
      "metaDescription": "君王之塔完整攻略：全部 24 位骑士属性与隐藏特质、6 种菜谱、全结局、任务机制、恋爱攻略与交互工具。",
      "intro": "《君王之塔》（Sovereign Tower）圆桌管理 RPG 的非官方攻略中心，开发者 WILD WITS GAMES / 发行 Curve Games。从骑士名单开始，再深入菜谱、结局与交互工具。",
      "sections": [
@@ -3732,8 +5430,8 @@
     },
     "fr": {
      "title": "Guide Hub de Sovereign Tower",
-     "metaTitle": "Sovereign Tower (君王之塔) : guide complet — chevaliers, recettes, fins et outils",
-     "metaDescription": "Guides complets de Sovereign Tower : les 24 chevaliers avec stats et traits cachés, les 6 recettes, toutes les fins, les mécaniques de quêtes, l'amour et des outils interactifs.",
+     "metaTitle": "Guide Hub de Sovereign Tower",
+     "metaDescription": "Hub de guides non officiel pour Sovereign Tower (君王之塔), le RPG de gestion à la Table Ronde de WILD WITS GAMES / Curve Games. Commencez par la liste des cheva…",
      "intro": "Hub de guides non officiel pour Sovereign Tower (君王之塔), le RPG de gestion à la Table Ronde de WILD WITS GAMES / Curve Games. Commencez par la liste des chevaliers, puis plongez dans les recettes, les fins et nos outils interactifs.",
      "sections": [
       {
@@ -3774,8 +5472,8 @@
     },
     "de": {
      "title": "Sovereign Tower Guide-Hub",
-     "metaTitle": "Sovereign Tower (君王之塔): kompletter Guide — Ritter, Rezepte, Enden und Tools",
-     "metaDescription": "Komplette Sovereign-Tower-Guides: alle 24 Ritter mit Stats und versteckten Eigenschaften, die 6 Rezepte, alle Enden, Quest-Mechaniken, Romantik und interaktive Tools.",
+     "metaTitle": "Sovereign Tower Guide-Hub",
+     "metaDescription": "Ein inoffizieller Guide-Hub für Sovereign Tower (君王之塔), das Table-Runde-Management-RPG von WILD WITS GAMES / Curve Games. Beginne mit der Ritterliste, dann R…",
      "intro": "Ein inoffizieller Guide-Hub für Sovereign Tower (君王之塔), das Table-Runde-Management-RPG von WILD WITS GAMES / Curve Games. Beginne mit der Ritterliste, dann Rezepte, Enden und unsere interaktiven Tools.",
      "sections": [
       {

@@ -19,6 +19,12 @@ const LANGS = DATA.site.languages || ["en"];
 const DEF = DATA.site.defaultLanguage || "en";
 const CSS_V = crypto.createHash("md5").update(fs.readFileSync(path.join(ROOT, "templates", "style.css"), "utf8")).digest("hex").slice(0, 8);
 const urlOf = KIT.createUrl({ domain: DATA.site.domain, defaultLang: DEF });
+// 内部链接用相对路径（审计识别 inbound + 不依赖域名）；canonical/hreflang 仍用绝对 urlOf
+const linkOf = (slug, lang) => {
+  const p = String(slug).replace(/\.html$/, "").replace(/^\//, "");
+  if (p === "" || p === "index") return lang === DEF ? "/" : `/${lang}/`;
+  return lang === DEF ? `/${p}` : `/${lang}/${p}`;
+};
 const TODAY = new Date().toISOString().slice(0, 10);
 const LM = KIT.createLastmod({ manifestPath: path.join(ROOT, "data", ".lastmod.json"), today: TODAY });
 
@@ -79,7 +85,7 @@ const NAV_I18N = {
              footerNote: "비공식 팬 사이트. 게임 및 관련 자산은 WILD WITS GAMES / Curve Games에 귀속됩니다.",
              footerSource: "정보는 Steam 공식 스토어, 팬 위키, 커뮤니티 보고로 확인했습니다.", updated: "업데이트" },
   "fr":    { home: "Accueil", guides: "Guides", ledgers: "Registre", tools: "Outils", search: "Rechercher des guides…", searchLabel: "Rechercher des guides", langLabel: "Langue",
-             p0: "Guides principaux", p1: "Analyses", p2: "Réponses rapides", about: "À propos", privacy: "Confidentialité", contact: "Contact",
+             p0: "Guides principaux", p1: "Analyses", p2: "Réponses rapides", about: "À propos", privacy: "Confidentialité", contact: "Contactez-nous",
              footerNote: "Site de fans non officiel — le jeu et ses ressources appartiennent à WILD WITS GAMES / Curve Games.",
              footerSource: "Informations vérifiées sur la page Steam officielle, les wikis de fans et les rapports de la communauté.", updated: "Mis à jour" },
   "de":    { home: "Start", guides: "Guides", ledgers: "Register", tools: "Werkzeuge", search: "Guides suchen…", searchLabel: "Guides suchen", langLabel: "Sprache",
@@ -148,7 +154,7 @@ ${DATA.site.gaId ? `<script async src="https://www.googletagmanager.com/gtag/js?
 /* ---------- 语言切换器（含 SVG 国旗，修复下拉溢出） ---------- */
 function langSwitcher(lang, slug) {
   const items = LANGS.map(l =>
-    `<a href="${urlOf(slug, l)}" class="${l === lang ? "active" : ""}"><span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span></a>`
+    `<a href="${linkOf(slug, l)}" class="${l === lang ? "active" : ""}"><span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span></a>`
   ).join("");
   return `<details class="lang-dd">
     <summary aria-label="${navI18n(lang).langLabel}"><span class="flag svg-flag">${flagOf(lang)}</span><span class="lang-name">${LANG_META[lang]?.name || lang}</span><span class="caret">▾</span></summary>
@@ -166,7 +172,7 @@ function header(lang, active) {
   const gameSlug = "sovereign-tower";
   const G = GUIDE_GROUPS.en;
   const link = (slug, label, icon, act) =>
-    `<a href="${urlOf(slug, lang)}" class="${act ? "active" : ""}"><span class="nav-ic">${ICON[icon] || ""}</span><span>${esc(label)}</span></a>`;
+    `<a href="${linkOf(slug, lang)}" class="${act ? "active" : ""}"><span class="nav-ic">${ICON[icon] || ""}</span><span>${esc(label)}</span></a>`;
   const drop = (title, slugs) => `<div class="dd-group"><b class="dd-title">${esc(title)}</b>${slugs.map(s => {
     const p = DATA.pages.find(x => x.slug === s);
     if (!p) return "";
@@ -177,14 +183,14 @@ function header(lang, active) {
   const manual = `${drop(n.p0, G.p0)}${drop(n.p1, G.p1)}${drop(n.p2, G.p2)}`;
   return `<header class="site-header">
   <div class="container header-inner">
-    <a class="logo" href="${urlOf("index", lang)}"><span class="logo-badge">${ICON.crown}</span><span class="logo-txt">${esc(siteI18n(lang).name)}</span></a>
+    <a class="logo" href="${linkOf("index", lang)}"><span class="logo-badge">${ICON.crown}</span><span class="logo-txt">${esc(siteI18n(lang).name)}</span></a>
     <nav class="nav" aria-label="Main">
-      <a href="${urlOf("index", lang)}" class="${active === "index" || active === "" ? "active" : ""}">${esc(n.home)}</a>
+      <a href="${linkOf("index", lang)}" class="${active === "index" || active === "" ? "active" : ""}">${esc(n.home)}</a>
       <details class="dd">
         <summary>${esc(n.guides)} <span class="caret">▾</span></summary>
         <div class="dd-menu dd-manual">${manual}</div>
       </details>
-      <a href="${urlOf(gameSlug + "/tools/quest-matcher", lang)}">${esc(n.tools)}</a>
+      <a href="${linkOf(gameSlug + "/tools/quest-matcher", lang)}">${esc(n.tools)}</a>
     </nav>
     <form class="site-search" action="https://www.google.com/search" method="get" target="_blank" rel="noopener" role="search">
       <input type="search" name="q" placeholder="${esc(n.search)}" aria-label="${esc(n.searchLabel)}" />
@@ -199,13 +205,13 @@ function header(lang, active) {
 function footer(lang) {
   const n = navI18n(lang);
   const prefix = lang === DEF ? "" : `/${lang}`;
-  const links = DATA.pages.slice(0, 10).map(p => `<a href="${urlOf(p.slug, lang)}">${esc(pageOf(p, lang).title)}</a>`).join("");
+  const links = DATA.pages.slice(0, 10).map(p => `<a href="${linkOf(p.slug, lang)}">${esc(pageOf(p, lang).title)}</a>`).join("");
   return `<footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-brand-row">
       <div class="footer-brand"><span class="logo-badge small">${ICON.crown}</span><span>${esc(siteI18n(lang).name)}</span></div>
       <div class="footer-links">
-        <a href="${urlOf("about", lang)}">${esc(n.about)}</a><a href="${urlOf("privacy", lang)}">${esc(n.privacy)}</a><a href="${urlOf("contact", lang)}">${esc(n.contact)}</a>
+        <a href="${linkOf("about", lang)}">${esc(n.about)}</a><a href="${linkOf("privacy", lang)}">${esc(n.privacy)}</a><a href="${linkOf("contact", lang)}">${esc(n.contact)}</a>
         <a href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">Steam ↗</a>
       </div>
     </div>
@@ -324,11 +330,11 @@ function renderHome(lang) {
   const cards = gamePages.map(p => {
     const pt = pageOf(p, lang);
     const ic = p.slug.includes("knights") ? "shield" : p.slug.includes("romance") ? "heart" : p.slug.includes("recipes") ? "chef" : p.slug.includes("endings") ? "crown" : p.slug.includes("secret") ? "fist" : p.slug.includes("achievement") ? "trophy" : p.slug.includes("quest") ? "scales" : "book";
-    return `<a class="ledger-card reveal" href="${urlOf(p.slug, lang)}"><span class="card-ic">${ICON[ic]}</span><span class="card-txt"><b>${esc(pt.title)}</b><small>${esc((pt.metaDescription || "").slice(0, 70))}…</small></span></a>`;
+    return `<a class="ledger-card reveal" href="${linkOf(p.slug, lang)}"><span class="card-ic">${ICON[ic]}</span><span class="card-txt"><b>${esc(pt.title)}</b><small>${esc((pt.metaDescription || "").slice(0, 70))}…</small></span></a>`;
   }).join("");
   const toolCards = toolPages.map(p => {
     const pt = pageOf(p, lang);
-    return `<a class="ledger-card tool reveal" href="${urlOf(p.slug, lang)}"><span class="card-ic">${ICON.calc}</span><span class="card-txt"><b>${esc(pt.title)}</b><small>${lang === "zh-CN" ? "交互工具" : "Interactive tool"}</small></span></a>`;
+    return `<a class="ledger-card tool reveal" href="${linkOf(p.slug, lang)}"><span class="card-ic">${ICON.calc}</span><span class="card-txt"><b>${esc(pt.title)}</b><small>${lang === "zh-CN" ? "交互工具" : "Interactive tool"}</small></span></a>`;
   }).join("");
   const body = `<main class="home-main">
   <section class="hero-parchment reveal">
@@ -337,7 +343,7 @@ function renderHome(lang) {
     <h1>${isZh ? "君王之塔 · 圆桌手账" : "Sovereign Tower · The Round Table Ledger"}</h1>
     <p class="hero-intro">${esc(intro)}</p>
     <div class="hero-cta">
-      <a class="btn btn-primary" href="${urlOf("sovereign-tower/knights", lang)}">${isZh ? "开始：全部骑士" : "Start: All Knights"}</a>
+      <a class="btn btn-primary" href="${linkOf("sovereign-tower/knights", lang)}">${isZh ? "开始：全部骑士" : "Start: All Knights"}</a>
       <a class="btn btn-ghost" href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">Steam ↗</a>
     </div>
   </section>
@@ -382,14 +388,49 @@ function renderStatic(slug, lang) {
   const titleMap = {
     "about": n.about, "privacy": n.privacy, "contact": n.contact
   };
-  const bodyMap = {
-    "about": `${esc(siteI18n(lang).name)} is an unofficial fan resource for Sovereign Tower (君王之塔). We research every page against the official Steam store page, fan wiki data and community reports, and clearly mark anything still being verified.`,
-    "privacy": "This site does not collect personal data beyond what hosting and analytics providers (e.g. Google Analytics if enabled) record. See your ad/analytics provider's policy for details.",
-    "contact": "Corrections or questions? Contact us via the site's GitHub repository or email.",
-    "404": "The page you are looking for was not found. Return to the guide hub."
+  const BODY_I18N = {
+    "en": {
+      "about": `${esc(siteI18n(lang).name)} is an unofficial fan resource for Sovereign Tower (君王之塔). We research every page against the official Steam store page, fan wiki data and community reports, and clearly mark anything still being verified.`,
+      "privacy": "This site does not collect personal data beyond what hosting and analytics providers (e.g. Google Analytics if enabled) record. See your ad/analytics provider's policy for details.",
+      "contact": "Corrections or questions? Contact us via the site's GitHub repository or email.",
+      "404": "The page you are looking for was not found. Return to the guide hub."
+    },
+    "zh-CN": {
+      "about": "本站是非官方粉丝资源站，服务于《君王之塔》(Sovereign Tower)。我们逐页核对 Steam 官方商店页、粉丝 wiki 数据与社区报告，未核实的部分明确标注。",
+      "privacy": "本站除托管与统计服务商（如启用时的 Google Analytics）记录的常规数据外，不收集个人数据。详见对应服务商的隐私政策。",
+      "contact": "勘误或疑问？请通过本站 GitHub 仓库或邮箱联系。",
+      "404": "未找到您访问的页面。返回攻略中心。"
+    },
+    "ja": {
+      "about": "当サイトは『ソブリンタワー』(Sovereign Tower) の非公式ファンサイトです。Steam公式ストア・ファンwiki・コミュニティ報告を基準に各ページを調査し、未検証の内容は明記しています。",
+      "privacy": "当サイトは、ホスティング・分析事業者（有効時は Google Analytics 等）が記録する通常のデータ以外、個人データを収集しません。",
+      "contact": "誤りや質問は、GitHub リポジトリまたはメールでご連絡ください。",
+      "404": "お探しのページは見つかりませんでした。攻略センターへ戻る。"
+    },
+    "ko": {
+      "about": "이 사이트는 『소버린 타워』(Sovereign Tower)의 비공식 팬 리소스입니다. Steam 공식 스토어, 팬 위키, 커뮤니티 보고를 기준으로 조사하며, 검증되지 않은 내용은 명확히 표시합니다.",
+      "privacy": "이 사이트는 호스팅·분석 제공자(활성화 시 Google Analytics 등)가 기록하는 일반 데이터 외에 개인 데이터를 수집하지 않습니다.",
+      "contact": "오류나 문의는 GitHub 리포지토리 또는 이메일로 연락해 주세요.",
+      "404": "요청하신 페이지를 찾을 수 없습니다. 가이드 허브로 돌아가기."
+    },
+    "fr": {
+      "about": "Ce site est une ressource de fans non officielle pour Sovereign Tower (君王之塔). Nous vérifions chaque page sur la page Steam officielle, les wikis de fans et les rapports de la communauté.",
+      "privacy": "Ce site ne collecte pas de données personnelles au-delà de ce que les hébergeurs et outils d'analyse (ex. Google Analytics) enregistrent.",
+      "contact": "Corrections ou questions ? Contactez-nous via le dépôt GitHub ou par e-mail.",
+      "404": "Page introuvable. Retour au hub de guides."
+    },
+    "de": {
+      "about": "Diese Seite ist eine inoffizielle Fan-Ressource für Sovereign Tower (君王之塔). Wir prüfen jede Seite gegen den offiziellen Steam-Store, Fan-Wikis und Community-Berichte.",
+      "privacy": "Diese Seite erhebt keine personenbezogenen Daten über das hinaus, was Hosting- und Analyseanbieter (z. B. Google Analytics) aufzeichnen.",
+      "contact": "Korrekturen oder Fragen? Kontakt über das GitHub-Repository oder per E-Mail.",
+      "404": "Seite nicht gefunden. Zurück zum Guide-Hub."
+    }
   };
+  const bodyMap = BODY_I18N[lang] || BODY_I18N.en;
   const body = `<main class="page-main"><article class="ledger-article"><div class="page-head"><h1>${esc(titleMap[slug])}</h1></div><p>${bodyMap[slug]}</p></article></main>`;
-  return head(titleMap[slug], bodyMap[slug].slice(0, 150), [], slug, lang) + header(lang, slug) + body + footer(lang);
+  const dhi = lang.startsWith("zh") || lang.startsWith("ja") || lang.startsWith("ko") ? 78 : 158;
+  const desc = bodyMap[slug].length > dhi ? bodyMap[slug].slice(0, dhi - 1).trimEnd() + "…" : bodyMap[slug];
+  return head(titleMap[slug], desc, [], slug, lang) + header(lang, slug) + body + footer(lang);
 }
 
 /* ---------- 工具交互 JS（渐进增强） ---------- */
@@ -478,6 +519,10 @@ function build() {
   // 复制静态资源
   fs.mkdirSync(path.join(OUT, "css"), { recursive: true });
   fs.copyFileSync(path.join(ROOT, "templates", "style.css"), path.join(OUT, "css", "style.css"));
+  for (const f of ["_headers", "llms.txt"]) {
+    const src = path.join(ROOT, "templates", f);
+    if (fs.existsSync(src)) fs.copyFileSync(src, path.join(OUT, f));
+  }
   const assetsSrc = path.join(ROOT, "assets");
   if (fs.existsSync(assetsSrc)) {
     const cp = (src, dst) => { if (fs.existsSync(src)) { fs.mkdirSync(path.dirname(dst), { recursive: true }); fs.copyFileSync(src, dst); } };

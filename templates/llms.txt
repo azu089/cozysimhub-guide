@@ -1,0 +1,16 @@
+# Sovereign Tower Guide Hub
+
+Sovereign Tower (君王之塔) is a story-rich Round Table management RPG by WILD WITS GAMES / Curve Games. This hub provides complete fan guides: all 24 knights with stats and hidden traits, secret knight recruitment, romance conditions, all endings, the 6 recipes, quest mechanics and interactive tools.
+
+## Pages
+- [Home](https://cozysimhub.com/) — guide hub overview
+- [How to Play](https://cozysimhub.com/sovereign-tower/how-to-play) — core loop, factions, beginner tips
+- [All Knights](https://cozysimhub.com/sovereign-tower/knights) — 24-knight roster with stats and traits
+- [Secret Knights](https://cozysimhub.com/sovereign-tower/secret-knights) — Dulahan, Chester, Alwena and more
+- [Romance](https://cozysimhub.com/sovereign-tower/romance) — hidden conditions and routes
+- [All Endings](https://cozysimhub.com/sovereign-tower/endings) — conquest, King Slayer, hidden endings
+- [Recipes](https://cozysimhub.com/sovereign-tower/recipes) — all 6 dishes and knight favorites
+- [Quest Mechanics](https://cozysimhub.com/sovereign-tower/quest-mechanics) — score formula, XP, affinity
+- [Achievements](https://cozysimhub.com/sovereign-tower/achievements) — all 75 achievements
+- [Knight Quest Matcher](https://cozysimhub.com/sovereign-tower/tools/quest-matcher) — interactive tool
+- [Affinity Calculator](https://cozysimhub.com/sovereign-tower/tools/affinity-calc) — interactive tool

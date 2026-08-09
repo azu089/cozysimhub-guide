@@ -636,6 +636,47 @@ for page in ALL_PAGES:
     else:
         d["pages"].append(page)
 
+# --- ja/ko sections 翻译合并（data/i18n_sections.json）---
+import json as _j3
+_i18n_sec = _j3.loads((ROOT / "i18n_sections.json").read_text(encoding="utf8"))
+for _sp, _langs in _i18n_sec.items():
+    for _pp in d["pages"]:
+        if _pp.get("slug") != _sp: continue
+        for _lg, _secs in _langs.items():
+            if _lg in _pp.get("i18n", {}):
+                _pp["i18n"][_lg]["sections"] = _secs
+
+# --- meta 自动补全（ja/ko/fr/de 缺 metaTitle/metaDescription 时从 title/intro 生成并截断）---
+def _clip(s, n):
+    s = (s or "").strip()
+    return s if len(s) <= n else s[: n - 1].rstrip() + "…"
+
+# 默认语言页面 meta 截断（en/fr/de 60 字符）
+for _p in d["pages"]:
+    _lim0 = 35 if _p.get("slug", "").startswith(("zh", "ja", "ko")) else 55
+    if _p.get("metaTitle") and len(_p["metaTitle"]) > _lim0:
+        _p["metaTitle"] = _clip(_p["metaTitle"], _lim0)
+    _dhi0 = 78 if _p.get("slug", "").startswith(("zh", "ja", "ko")) else 158
+    if _p.get("metaDescription") and len(_p["metaDescription"]) > _dhi0:
+        _p["metaDescription"] = _clip(_p.get("intro") or _p["title"], _dhi0)
+
+for _p in d["pages"]:
+    _i18n = _p.get("i18n") or {}
+    for _lang, _t in _i18n.items():
+        _base = _p
+        _title = _t.get("title") or _p.get("title") or ""
+        _intro = _t.get("intro") or _p.get("intro") or ""
+        # metaTitle：若无或超长则生成
+        _mt = _t.get("metaTitle")
+        _lim = 35 if _lang.startswith(("zh", "ja", "ko")) else 55
+        if not _mt or len(_mt) > _lim:
+            _t["metaTitle"] = _clip(_title, _lim)
+        # metaDescription：若无或超长则从 intro 生成
+        _md = _t.get("metaDescription")
+        _dhi = 78 if _lang.startswith(("zh", "ja", "ko")) else 158
+        if not _md or len(_md) > _dhi:
+            _t["metaDescription"] = _clip(_intro or _title, _dhi)
+
 # 输出
 (ROOT / "site.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf8")
 print(f"langs: {d['site']['languages']}")
