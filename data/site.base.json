@@ -1,0 +1,97 @@
+{
+ "site": {
+  "name": "Sovereign Tower Guide Hub",
+  "domain": "cozysimhub.com",
+  "tagline": "中文全量攻略 · 24 骑士档案 · 菜谱 · 结局 · 交互工具",
+  "description": "君王之塔 Sovereign Tower 中文攻略 Hub：24 位骑士全量档案、隐藏骑士招募、恋爱隐藏条件、全结局、菜谱对照、任务机制与好感计算器。",
+  "language": "en",
+  "gaId": "",
+  "gscVerification": "",
+  "adsenseId": "",
+  "indexNowKey": "",
+  "ogImage": "/images/hero.jpg",
+  "languages": [
+   "en",
+   "zh-CN",
+   "ja",
+   "ko",
+   "fr",
+   "de"
+  ],
+  "defaultLanguage": "en",
+  "affiliates": {},
+  "i18n": {}
+ },
+ "game": {
+  "name": "Sovereign Tower",
+  "nameZh": "君王之塔",
+  "intro": "Play as the Sovereign of a magical tower in this story-rich, Round Table management RPG. Recruit eccentric Knights, assign quests and balance egos whilst carving out your kingdom's destiny.",
+  "steamUrl": "https://store.steampowered.com/app/4113940/",
+  "genre": "Indie / RPG (Round Table Management)",
+  "price": "¥68 (¥57.80 during launch sale)",
+  "releaseDate": "2026-08-06",
+  "developer": "WILD WITS GAMES",
+  "publisher": "Curve Games",
+  "appid": 4113940,
+  "nameI18n": {
+   "en": "Sovereign Tower",
+   "zh-CN": "君王之塔",
+   "ja": "ソブリンタワー",
+   "ko": "소버린 타워",
+   "fr": "Sovereign Tower",
+   "de": "Sovereign Tower"
+  }
+ },
+ "pages": [
+  {
+   "slug": "sovereign-tower/how-to-play",
+   "title": "How to Play Sovereign Tower",
+   "priority": "P1"
+  },
+  {
+   "slug": "sovereign-tower/knights",
+   "title": "All Knights & Stats",
+   "priority": "P0"
+  },
+  {
+   "slug": "sovereign-tower/secret-knights",
+   "title": "Secret Knights & Recruit Guide",
+   "priority": "P0"
+  },
+  {
+   "slug": "sovereign-tower/romance",
+   "title": "Romance Guide & Hidden Conditions",
+   "priority": "P0"
+  },
+  {
+   "slug": "sovereign-tower/endings",
+   "title": "All Endings & Hidden Ending",
+   "priority": "P0"
+  },
+  {
+   "slug": "sovereign-tower/recipes",
+   "title": "All Recipes & Favorite Meals",
+   "priority": "P0"
+  },
+  {
+   "slug": "sovereign-tower/quest-mechanics",
+   "title": "Quest Mechanics & Score Formula",
+   "priority": "P0"
+  },
+  {
+   "slug": "sovereign-tower/achievements",
+   "title": "All 75 Achievements",
+   "priority": "P1"
+  },
+  {
+   "slug": "sovereign-tower/tools/quest-matcher",
+   "title": "Knight Quest Matcher",
+   "priority": "P1"
+  },
+  {
+   "slug": "sovereign-tower/tools/affinity-calc",
+   "title": "Affinity Calculator",
+   "priority": "P1"
+  }
+ ]
+}
