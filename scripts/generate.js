@@ -546,6 +546,7 @@ function build() {
   fs.writeFileSync(path.join(OUT, "sitemap.xml"), sitemap);
   // robots.txt
   fs.writeFileSync(path.join(OUT, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: https://${DATA.site.domain}/sitemap.xml\n`);
+  KIT.writeIndexNowKey(OUT, DATA.site.indexNowKey);
   // 404
   fs.writeFileSync(path.join(OUT, "404.html"), renderStatic("404", DEF) + "</body></html>");
   console.log(`✓ built ${all.length} files (${LANGS.length} langs, ${DATA.pages.length + 4} pages)`);
