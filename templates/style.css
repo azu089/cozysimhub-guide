@@ -271,7 +271,7 @@ details.dd { position: relative; }
 .footer-brand { display: flex; align-items: center; gap: 8px; font-family: "Caveat", cursive; font-size: 20px; font-weight: 700; }
 .footer-links { display: flex; gap: 16px; font-size: 14px; }
 .footer-cols { display: grid; grid-template-columns: 1fr 1.4fr; gap: 24px; }
-.footer-col { display: flex; flex-direction: column; gap: 6px; font-size: 14px; }
+.footer-col { display: grid; grid-template-columns: 1fr; gap: 6px 20px; font-size: 14px; }
 .footer-meta { font-size: 13px; color: var(--ink-soft); display: grid; gap: 6px; }
 
 /* ---------- 响应式 ---------- */
@@ -282,7 +282,7 @@ details.dd { position: relative; }
   .lang-dd { margin-left: 0; }
   .hero-parchment { padding: 28px 18px; }
   .footer-cols { grid-template-columns: 1fr; }
-  .footer-col { display: grid; grid-template-columns: 1fr 1fr; column-gap: 16px; }
+  .footer-col { grid-template-columns: 1fr 1fr; column-gap: 16px; }
   .ledger-grid { grid-template-columns: 1fr; }
   .dd-menu { position: static; width: 100%; box-shadow: none; }
 }
