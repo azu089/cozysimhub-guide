@@ -44,7 +44,8 @@ img { max-width: 100%; height: auto; }
 
 /* ============ 布局：左侧卷宗目录 + 右侧内容（桌面） ============ */
 .app-shell { display: grid; grid-template-columns: 252px 1fr; min-height: 100vh; }
-.app-main { min-width: 0; }
+.app-main { min-width: 0; padding: 0; }
+.page-main { min-width: 0; }
 
 /* ---------- 左侧卷宗目录栏（书目录形态） ---------- */
 .tome-nav {
@@ -95,7 +96,13 @@ img { max-width: 100%; height: auto; }
 .tome-lang a:hover { background: rgba(237,227,206,0.08); text-decoration: none; }
 .tome-lang a.active { color: #fff; background: rgba(201,162,39,0.16); }
 .tome-lang .flag svg { width: 20px; height: 13px; border-radius: 2px; display: block; }
-.tome-nav-toggle { display: none; }
+.tome-nav-toggle {
+  display: none;
+  align-items: center; gap: 8px; width: 100%;
+  background: var(--leather); color: #EDE3CE; border: 0; padding: 13px 16px;
+  font-family: "Caveat", cursive; font-size: 19px; cursor: pointer;
+}
+.tome-nav-toggle svg { width: 20px; height: 20px; }
 
 /* ---------- 顶部迷你栏（移动端显示，含搜索） ---------- */
 .topbar { display: none; }

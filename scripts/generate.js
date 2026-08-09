@@ -184,17 +184,14 @@ function header(lang, active) {
   const langItems = LANGS.map(l =>
     `<a href="${linkOf(active || "index", l)}" class="${l === lang ? "active" : ""}"><span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span></a>`
   ).join("");
-  return `<button class="tome-nav-toggle" type="button" aria-label="Toggle ledger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
-<div class="tome-nav-overlay"></div>
-<aside class="tome-nav" aria-label="Ledger index">
+  return `<aside class="tome-nav" aria-label="Ledger index">
   <a class="tome-brand" href="${linkOf("index", lang)}">
     <span class="brand-seal">${ICON.crown}</span>
     <span class="brand-name">${esc(siteI18n(lang).name)}<small>${lang === "zh-CN" ? "圆桌手账" : "Round Table Ledger"}</small></span>
   </a>
   ${chapters}
   <div class="tome-lang"><div class="lang-label">${esc(n.langLabel)}</div>${langItems}</div>
-</aside>
-<div class="topbar"></div>`;
+</aside>`;
 }
 function footer(lang) {
   const n = navI18n(lang);
@@ -326,7 +323,9 @@ function renderHome(lang) {
     const pt = pageOf(p, lang);
     return `<a href="${linkOf(p.slug, lang)}"><span class="idx-no">${String(gamePages.length + i + 1).padStart(2, "0")}</span><span class="idx-ic">${ICON.calc}</span><span class="idx-txt"><b>${esc(pt.title)}</b><small>${lang === "zh-CN" ? "交互工具" : "Interactive tool"}</small></span></a>`;
   }).join("");
-  const body = `<main class="app-main">
+  const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
+<div class="tome-nav-overlay"></div>
+<main class="page-main">
   <section class="ledger-cover reveal">
     <span class="cover-seal">${ICON.crown}</span>
     <h1>${isZh ? "君王之塔 · 圆桌手账" : "Sovereign Tower · The Round Table Ledger"}</h1>
@@ -378,7 +377,9 @@ function renderPage(p, lang) {
   const imgMap = { "sovereign-tower/how-to-play": "how-to-play", "sovereign-tower/knights": "knights", "sovereign-tower/secret-knights": "secret-knights", "sovereign-tower/romance": "romance", "sovereign-tower/endings": "endings", "sovereign-tower/recipes": "recipes", "sovereign-tower/quest-mechanics": "quest-mechanics", "sovereign-tower/achievements": "achievements" };
   const pageImg = imgMap[p.slug];
   const art = pageImg ? `<img class="page-art reveal" src="/images/${pageImg}-640.jpg" srcset="/images/${pageImg}-640.jpg 640w, /images/${pageImg}-1280.jpg 1280w, /images/${pageImg}.jpg 1600w" sizes="(max-width: 720px) 640px, 1280px" alt="${esc(t.title)}" width="900" height="506" loading="lazy" />` : "";
-  const body = `<main class="app-main"><div class="page-shell">
+  const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
+<div class="tome-nav-overlay"></div>
+<main class="page-main"><div class="page-shell">
   <aside class="page-folio reveal">
     <div class="folio-cap">${isTool ? (lang === "zh-CN" ? "工具" : "Tools") : (lang === "zh-CN" ? "章回" : "Folio")}</div>
     <div class="toc-search"><input type="search" placeholder="${esc(navI18n(lang).search)}" aria-label="${esc(navI18n(lang).searchLabel)}" onkeyup="var q=this.value.toLowerCase();document.querySelectorAll('.page-folio nav a').forEach(function(a){a.style.display=a.textContent.toLowerCase().includes(q)?'':'none';});" /></div>
@@ -441,7 +442,9 @@ function renderStatic(slug, lang) {
     }
   };
   const bodyMap = BODY_I18N[lang] || BODY_I18N.en;
-  const body = `<main class="app-main"><div class="page-shell"><article class="page-leaf"><div class="page-head"><h1>${esc(titleMap[slug])}</h1></div><p>${bodyMap[slug]}</p></article></div></main>`;
+  const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
+<div class="tome-nav-overlay"></div>
+<main class="page-main"><div class="page-shell"><article class="page-leaf"><div class="page-head"><h1>${esc(titleMap[slug])}</h1></div><p>${bodyMap[slug]}</p></article></div></main>`;
   const dhi = lang.startsWith("zh") || lang.startsWith("ja") || lang.startsWith("ko") ? 78 : 158;
   const desc = bodyMap[slug].length > dhi ? bodyMap[slug].slice(0, dhi - 1).trimEnd() + "…" : bodyMap[slug];
   return head(titleMap[slug], desc, [], slug, lang) + header(lang, slug) + body + footer(lang);
