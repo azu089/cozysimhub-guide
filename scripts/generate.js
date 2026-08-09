@@ -332,6 +332,7 @@ function renderHome(lang) {
   }).join("");
   const body = `<main class="home-main">
   <section class="hero-parchment reveal">
+    <div class="hero-art"><img src="/images/hero-640.jpg" srcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 1600w" sizes="(max-width: 720px) 640px, 1280px" alt="${isZh ? "烛光下的圆桌骑士议会" : "Round table of knights in a candlelit tower hall"}" width="900" height="506" loading="eager" /></div>
     <span class="hero-seal">${ICON.crown}</span>
     <h1>${isZh ? "君王之塔 · 圆桌手账" : "Sovereign Tower · The Round Table Ledger"}</h1>
     <p class="hero-intro">${esc(intro)}</p>
@@ -361,9 +362,13 @@ function renderPage(p, lang) {
     KIT.ld.breadcrumb({ page, lang, urlOf, homeName: navI18n(lang).home })
   ];
   const sections = (t.sections || []).map(s => renderSection(s, lang)).join("");
+  const imgMap = { "sovereign-tower/how-to-play": "how-to-play", "sovereign-tower/knights": "knights", "sovereign-tower/secret-knights": "secret-knights", "sovereign-tower/romance": "romance", "sovereign-tower/endings": "endings", "sovereign-tower/recipes": "recipes", "sovereign-tower/quest-mechanics": "quest-mechanics", "sovereign-tower/achievements": "achievements" };
+  const pageImg = imgMap[p.slug];
+  const art = pageImg ? `<img class="page-art reveal" src="/images/${pageImg}-640.jpg" srcset="/images/${pageImg}-640.jpg 640w, /images/${pageImg}-1280.jpg 1280w, /images/${pageImg}.jpg 1600w" sizes="(max-width: 720px) 640px, 1280px" alt="${esc(t.title)}" width="900" height="506" loading="lazy" />` : "";
   const body = `<main class="page-main"><article class="ledger-article">
     <div class="page-head reveal"><span class="tag">${isTool ? (lang === "zh-CN" ? "工具" : "TOOL") : (lang === "zh-CN" ? "手账" : "LEDGER")}</span>
       <h1>${esc(t.title)}</h1>
+      ${art}
       <p class="page-intro">${esc(t.intro || "")}</p>
     </div>
     ${sections}
