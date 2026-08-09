@@ -397,6 +397,622 @@
      ]
     ]
    }
+  ],
+  "fr": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Mécanique",
+     "Règle"
+    ],
+    "rows": [
+     [
+      "Contribution de stat",
+      "Pour chaque stat requise : environ (stat du chevalier − exigence de la quête) × 0,66, réparti dans l'équipe, ajusté selon la difficulté de l'exigence. Une correspondance exacte donne une base de +0,22."
+     ],
+     [
+      "Plafond de stat",
+      "La valeur utilisée pour le score est toujours plafonnée à 0–15, bonus d'équipement inclus."
+     ],
+     [
+      "Effet d'affinité",
+      "Type/condition de quête aimé : +1,33 d'affinité chacun. Détesté : −0,75 chacun. Ça se cumule — une quête du bon type avec deux conditions aimées vaut près de +4 d'affinité."
+     ],
+     [
+      "Bonus repas",
+      "Donner un plat favori : +1,5 d'affinité et +0,5 de score de quête, en enregistrant son goût définitivement."
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Score",
+     "Seuil",
+     "Récompense"
+    ],
+    "rows": [
+     [
+      "Critical Success",
+      "+10",
+      "Récompense ×2"
+     ],
+     [
+      "Great Success",
+      "+5",
+      "Récompense ×1,5"
+     ],
+     [
+      "Success",
+      "0",
+      "Récompense ×1"
+     ],
+     [
+      "Major Failure",
+      "−5",
+      "Aucune récompense"
+     ],
+     [
+      "Critical Failure",
+      "−10",
+      "Aucune récompense"
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Niveau",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "15"
+    ],
+    "rows": [
+     [
+      "XP total",
+      "0",
+      "12",
+      "25",
+      "40",
+      "58",
+      "77",
+      "97",
+      "117",
+      "138",
+      "160",
+      "183",
+      "207",
+      "235",
+      "265",
+      "300"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "D'où vient l'XP",
+    "body": "",
+    "items": [
+     "Résultats de quête : échec = 0, succès simple = 1×, great = 1,5×, critical = 2×.",
+     "Envoyer un chevalier au Terrain d'entraînement pendant un cycle au lieu d'une quête.",
+     "Chaque niveau permet de dépenser un point dans n'importe quelle stat inférieure à 15."
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Type de quête",
+     ""
+    ],
+    "rows": [
+     [
+      "Hunt",
+      "Chasse"
+     ],
+     [
+      "Assassination",
+      "Assassinat"
+     ],
+     [
+      "Relic Recovery",
+      "Récupération de relique"
+     ],
+     [
+      "Diplomacy",
+      "Diplomatie"
+     ],
+     [
+      "Scouting",
+      "Reconnaissance"
+     ],
+     [
+      "Confrontation",
+      "Confrontation"
+     ],
+     [
+      "Duel",
+      "Duel"
+     ],
+     [
+      "Competition",
+      "Compétition"
+     ],
+     [
+      "Research",
+      "Recherche"
+     ],
+     [
+      "Rescue",
+      "Sauvetage"
+     ],
+     [
+      "Knight Quest",
+      "Quête de chevalier"
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Condition de quête",
+     ""
+    ],
+    "rows": [
+     [
+      "Flying Creature",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Water",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Cute Creature",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Climbing",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Woods",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Crowd",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Cave",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Ghost",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Track",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Big Creature",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Magic Ritual",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Heavy Lifting",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Investigation",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Help",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "At Night",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Musical",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Unethical",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Dragon",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Need Flying Mount",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "Intimidation",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ],
+     [
+      "People Involved",
+      "Un modificateur qui ajoute des exigences de score ou change les résultats"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Archétypes de souverain",
+    "body": "",
+    "items": [
+     "Tyrannic : certains chevaliers approuvent ou désapprouvent votre style de règne ; les décisions d'audience appliquent ces étiquettes.",
+     "Wise : certains chevaliers approuvent ou désapprouvent votre style de règne ; les décisions d'audience appliquent ces étiquettes.",
+     "Kind : certains chevaliers approuvent ou désapprouvent votre style de règne ; les décisions d'audience appliquent ces étiquettes.",
+     "Audacious : certains chevaliers approuvent ou désapprouvent votre style de règne ; les décisions d'audience appliquent ces étiquettes.",
+     "Omniscient : certains chevaliers approuvent ou désapprouvent votre style de règne ; les décisions d'audience appliquent ces étiquettes."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Quel score pour un succès critique ?",
+      "+10 ou plus. +5 est un great success (récompenses ×1,5), 0 un succès simple, −5 un échec majeur et −10 un échec critique."
+     ],
+     [
+      "L'affinité peut-elle chuter au point qu'un chevalier parte ?",
+      "Oui — à −7 d'affinité, la plupart des chevaliers demandent une audience de démission et s'en vont. Alwena et Ari ont un seuil de −1500 : ils ne démissionnent jamais."
+     ],
+     [
+      "Combien de types de quêtes ?",
+      "11 types et 21 conditions, d'après les données du wiki de fans. Une quête peut combiner un type et plusieurs conditions."
+     ]
+    ]
+   }
+  ],
+  "de": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Mechanik",
+     "Regel"
+    ],
+    "rows": [
+     [
+      "Wert-Beitrag",
+      "Pro benötigtem Wert: grob (Ritter-Wert − Quest-Anforderung) × 0,66, auf die Gruppe verteilt, nach Anforderungsschwierigkeit skaliert. Exakte Übereinstimmung gibt eine kleine +0,22-Basis."
+     ],
+     [
+      "Wert-Obergrenze",
+      "Der für die Wertung verwendete Wert ist immer auf 0–15 begrenzt, inklusive Ausrüstungsboni."
+     ],
+     [
+      "Sympathie-Effekt",
+      "Geliebter Quest-Typ/Bedingung: je +1,33 Sympathie. Verhasst: je −0,75. Sie stapeln sich — eine Quest des richtigen Typs mit zwei geliebten Bedingungen bringt fast +4 Sympathie."
+     ],
+     [
+      "Essens-Bonus",
+      "Ein Lieblingsgericht füttern: +1,5 Sympathie und +0,5 Quest-Punkte, Geschmack dauerhaft vermerkt."
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Wertung",
+     "Schwelle",
+     "Belohnung"
+    ],
+    "rows": [
+     [
+      "Critical Success",
+      "+10",
+      "Belohnung ×2"
+     ],
+     [
+      "Great Success",
+      "+5",
+      "Belohnung ×1,5"
+     ],
+     [
+      "Success",
+      "0",
+      "Belohnung ×1"
+     ],
+     [
+      "Major Failure",
+      "−5",
+      "Keine Belohnung"
+     ],
+     [
+      "Critical Failure",
+      "−10",
+      "Keine Belohnung"
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Level",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "15"
+    ],
+    "rows": [
+     [
+      "Gesamt-XP",
+      "0",
+      "12",
+      "25",
+      "40",
+      "58",
+      "77",
+      "97",
+      "117",
+      "138",
+      "160",
+      "183",
+      "207",
+      "235",
+      "265",
+      "300"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Woher XP kommt",
+    "body": "",
+    "items": [
+     "Quest-Ergebnisse: Fehlschlag = 0, einfacher Erfolg = 1×, Great = 1,5×, Critical = 2×.",
+     "Einen Ritter für einen Zyklus statt auf eine Quest zum Trainingsgelände schicken.",
+     "Jeder Levelaufstieg erlaubt einen Punkt in einen beliebigen Wert unter 15."
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Quest-Typ",
+     ""
+    ],
+    "rows": [
+     [
+      "Hunt",
+      "Jagd"
+     ],
+     [
+      "Assassination",
+      "Attentat"
+     ],
+     [
+      "Relic Recovery",
+      "Reliktrückholung"
+     ],
+     [
+      "Diplomacy",
+      "Diplomatie"
+     ],
+     [
+      "Scouting",
+      "Aufklärung"
+     ],
+     [
+      "Confrontation",
+      "Konfrontation"
+     ],
+     [
+      "Duel",
+      "Duell"
+     ],
+     [
+      "Competition",
+      "Wettbewerb"
+     ],
+     [
+      "Research",
+      "Forschung"
+     ],
+     [
+      "Rescue",
+      "Rettung"
+     ],
+     [
+      "Knight Quest",
+      "Ritter-Quest"
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Quest-Bedingung",
+     ""
+    ],
+    "rows": [
+     [
+      "Flying Creature",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Water",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Cute Creature",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Climbing",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Woods",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Crowd",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Cave",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Ghost",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Track",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Big Creature",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Magic Ritual",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Heavy Lifting",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Investigation",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Help",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "At Night",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Musical",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Unethical",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Dragon",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Need Flying Mount",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "Intimidation",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ],
+     [
+      "People Involved",
+      "Ein Modifikator, der Score-Anforderungen hinzufügt oder Ergebnisse verändert"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Herrscher-Archetypen",
+    "body": "",
+    "items": [
+     "Tyrannic: manche Ritter billigen oder missbilligen deinen Herrscherstil; Entscheidungen in Audienzen wenden diese Tags an.",
+     "Wise: manche Ritter billigen oder missbilligen deinen Herrscherstil; Entscheidungen in Audienzen wenden diese Tags an.",
+     "Kind: manche Ritter billigen oder missbilligen deinen Herrscherstil; Entscheidungen in Audienzen wenden diese Tags an.",
+     "Audacious: manche Ritter billigen oder missbilligen deinen Herrscherstil; Entscheidungen in Audienzen wenden diese Tags an.",
+     "Omniscient: manche Ritter billigen oder missbilligen deinen Herrscherstil; Entscheidungen in Audienzen wenden diese Tags an."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Welche Wertung brauche ich für einen kritischen Erfolg?",
+      "+10 oder mehr. +5 ist ein Great Success (1,5× Belohnung), 0 ein einfacher Erfolg, −5 ein Major Failure und −10 ein Critical Failure."
+     ],
+     [
+      "Kann Sympathie so weit fallen, dass ein Ritter geht?",
+      "Ja — bei −7 Sympathie kündigen die meisten Ritter per Audienz und gehen. Alwena und Ari haben eine Schwelle von −1500: Sie kündigen nie."
+     ],
+     [
+      "Wie viele Quest-Typen gibt es?",
+      "11 Typen und 21 Bedingungen laut Fan-Wiki-Daten. Eine Quest kann einen Typ mit mehreren Bedingungen kombinieren."
+     ]
+    ]
+   }
   ]
  },
  "sovereign-tower/secret-knights": {
@@ -548,6 +1164,158 @@
      [
       "다른 숨은 기사는?",
       "The Bard / Hildegard가 팬 위키 숨은 기사 목록에 있습니다. 정확한 절차는 확인 중입니다."
+     ]
+    ]
+   }
+  ],
+  "fr": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Chevalier",
+     "Condition de recrutement",
+     "Fenêtre"
+    ],
+    "rows": [
+     [
+      "Dulahan",
+      "Terminez la voie de mort de Goberto — Dulahan apparaît comme le chevalier démon dès le jour 4 de cette voie.",
+      "Lié à l'histoire ; une fois par partie"
+     ],
+     [
+      "Chester",
+      "Terminez n'importe quelle issue spéciale de Clean Keeper Goose Partie 2 (fromage, un cheval ou Gwendan ; chacune rapporte 1 or). Chester est le vrai trésor.",
+      "Quête de l'oie"
+     ],
+     [
+      "Alwena",
+      "Urgence unique : ouvrez la Table Ronde avec zéro chevalier disponible à l'Acte 2 ou plus. Impossible à déclencher à la demande ; pas de seconde chance.",
+      "Urgence Acte 2+ uniquement"
+     ],
+     [
+      "Ari",
+      "Invoquez-le pour 25 or, le frère cadet des frères Basalt.",
+      "Toujours disponible une fois l'histoire débloquée"
+     ],
+     [
+      "Arron",
+      "Arrive via la trame Drakovic (sans audience de candidature).",
+      "Lié à l'histoire"
+     ],
+     [
+      "Brunhilda",
+      "Trame Gavault, branche du côté de la fille.",
+      "Lié à l'histoire"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Pourquoi ils comptent",
+    "body": "",
+    "items": [
+     "Dulahan est le seul chevalier démon : Intangible (dégâts réduits de moitié), plus la liste complète des 6 plats favoris — une machine à quêtes redoutable si vous gardez Goberto en vie jusqu'au bout de sa voie de mort.",
+     "Alwena révèle les traits supposés des autres chevaliers — la perdre, c'est perdre cet outil de renseignement pour toute la partie.",
+     "Les stats aléatoires de Chester en font un joker : ne comptez jamais sur lui pour une quête à réussir à tout prix, mais il ne rechigne jamais à une affectation."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Puis-je recruter Dulahan sans tuer Goberto ?",
+      "Selon les données du wiki de fans, Dulahan n'apparaît que sur la voie de mort de Goberto. Aucune voie alternative confirmée pour l'instant (待补 si non vérifié)."
+     ],
+     [
+      "Alwena est-elle manquable ?",
+      "Oui — l'offre d'urgence n'arrive qu'une fois, quand la Table Ronde a zéro chevalier disponible à l'Acte 2 ou plus. Si vous n'atteignez jamais cet état, vous ne l'obtenez jamais."
+     ],
+     [
+      "Y a-t-il d'autres chevaliers secrets ?",
+      "The Bard / Hildegard apparaît dans le wiki de fans comme chevalier secret ; les étapes exactes restent à vérifier."
+     ]
+    ]
+   }
+  ],
+  "de": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Ritter",
+     "Rekrutierungsbedingung",
+     "Fenster"
+    ],
+    "rows": [
+     [
+      "Dulahan",
+      "Schließe Gobertos Todesweg ab — Dulahan erscheint als Dämonenritter ab Tag 4 dieser Route.",
+      "Story-gebunden; einmal pro Lauf"
+     ],
+     [
+      "Chester",
+      "Schließe ein beliebiges Sonderergebnis von Clean Keeper Goose Teil 2 ab (Käse, ein Pferd oder Gwendan; jedes zahlt 1 Gold). Chester ist der eigentliche Preis.",
+      "Gänse-Questlinie"
+     ],
+     [
+      "Alwena",
+      "Einmaliger Notfall: Öffne die Tafelrunde mit null verfügbaren Rittern in Akt 2 oder später. Nicht auf Abruf auslösbar; keine zweite Chance.",
+      "Nur Notfall ab Akt 2"
+     ],
+     [
+      "Ari",
+      "Beschwöre ihn für 25 Gold als jüngeren Bruder der Basalt-Brüder.",
+      "Immer verfügbar, sobald die Story es erlaubt"
+     ],
+     [
+      "Arron",
+      "Kommt über den Drakovic-Handlungsstrang (ohne Kandidatenaudienz).",
+      "Story-gebunden"
+     ],
+     [
+      "Brunhilda",
+      "Gavault-Handlungsstrang, Zweig der Tochter.",
+      "Story-gebunden"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Warum sie wichtig sind",
+    "body": "",
+    "items": [
+     "Dulahan ist der einzige Dämonenritter: Intangible (halber Schaden) plus die komplette 6-Gerichte-Liste — eine erstklassige Quest-Maschine, wenn du Goberto durch seinen Todesweg am Leben hältst.",
+     "Alwena deckt die vermuteten Eigenschaften anderer Ritter auf — verlierst du sie, verlierst du dieses Aufklärungs-Werkzeug für den ganzen Lauf.",
+     "Chester ist mit zufälligen Werten ein Joker: verlass dich nie bei Pflicht-Quests auf ihn, aber er nimmt jede Zuweisung klaglos an."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Kann ich Dulahan rekrutieren, ohne Goberto zu töten?",
+      "Laut Fan-Wiki-Daten erscheint Dulahan nur auf Gobertos Todesweg. Eine bestätigte Alternative gibt es noch nicht (待补, falls unverifiziert)."
+     ],
+     [
+      "Kann man Alwena verpassen?",
+      "Ja — das Notfallangebot erscheint nur einmal, wenn die Tafelrunde in Akt 2 oder später null verfügbare Ritter hat. Erreichst du diesen Zustand nie, bekommst du sie nie."
+     ],
+     [
+      "Gibt es weitere Geheimritter?",
+      "The Bard / Hildegard taucht im Fan-Wiki als Geheimritter auf; die genauen Schritte werden noch verifiziert."
      ]
     ]
    }
@@ -723,6 +1491,176 @@
      ]
     ]
    }
+  ],
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Faits clés",
+    "body": "",
+    "items": [
+     "75 succès au total (Steam L0) ; 10 sont « mis en avant » (Steam L0).",
+     "First casualty (fin de la ligne meurtre) est à 72,3 % de taux — l'enquête de meurtre est la grande branche la plus ignorée.",
+     "How Cute : exige un Arron qui n'a jamais mangé de cœur de dragon + la route de l'empathie + Acte III. Choisissez EMPATHY ROUTE lors de la 3e mission de Moonvale (ne tuez pas le bébé dragon) → acceptez d'autres quêtes → gagnez la compétence Dragon Knight."
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Succès mis en avant",
+     "Ce qu'il suggère"
+    ],
+    "rows": [
+     [
+      "A New Sovereign",
+      "Part de la progression mise en avant du jeu"
+     ],
+     [
+      "That's One Thing Sorted",
+      "Part de la progression mise en avant du jeu"
+     ],
+     [
+      "Good Things Come In Three",
+      "Part de la progression mise en avant du jeu"
+     ],
+     [
+      "A Successful Hunt",
+      "Part de la progression mise en avant du jeu"
+     ],
+     [
+      "And Thus, the Revolution Came to an End",
+      "Part de la progression mise en avant du jeu"
+     ],
+     [
+      "How to Deal With Dragons",
+      "Part de la progression mise en avant du jeu"
+     ],
+     [
+      "HURRAY! HURRAY!",
+      "Part de la progression mise en avant du jeu"
+     ],
+     [
+      "The Grand Derby",
+      "Part de la progression mise en avant du jeu"
+     ],
+     [
+      "It's a Mess",
+      "Part de la progression mise en avant du jeu"
+     ],
+     [
+      "How to Train Your Griffin",
+      "Part de la progression mise en avant du jeu"
+     ]
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Comment obtenir How Cute ?",
+      "Gardez Arron sur la voie bienveillante (ne mangez jamais de cœur de dragon), choisissez EMPATHY ROUTE lors de la 3e mission de Moonvale, puis continuez en Acte III sur la route de l'empathie."
+     ],
+     [
+      "Quel est le succès le plus difficile ?",
+      "D'après les taux de réussite, la ligne meurtre (first casualty, 72,3 %) est la plus ignorée — un sérieux candidat."
+     ],
+     [
+      "La liste complète est-elle disponible ?",
+      "Le tableau complet des 75 succès est 待补 (Steam Community est limité en requêtes ; nous vérifions via SteamDB/sources communautaires)."
+     ]
+    ]
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Wichtige Fakten",
+    "body": "",
+    "items": [
+     "75 Erfolge insgesamt (Steam L0); 10 sind hervorgehoben (Steam L0).",
+     "First casualty (Mordlinie abgeschlossen) liegt bei 72,3 % Erfolgsrate — die Mordermittlung ist der meistübersprungene große Zweig.",
+     "How Cute: verlangt einen Arron, der nie ein Drachenherz gegessen hat + den Empathie-Weg + Akt III. Wähle bei Moonvales 3. Mission EMPATHY ROUTE (töte den Baby-Drachen nicht) → nimm andere Quests an → erhalte den Drachenritter-Vorteil."
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Hervorgehobener Erfolg",
+     "Worauf er hindeutet"
+    ],
+    "rows": [
+     [
+      "A New Sovereign",
+      "Teil der hervorgehobenen Fortschritts-Meilensteine des Spiels"
+     ],
+     [
+      "That's One Thing Sorted",
+      "Teil der hervorgehobenen Fortschritts-Meilensteine des Spiels"
+     ],
+     [
+      "Good Things Come In Three",
+      "Teil der hervorgehobenen Fortschritts-Meilensteine des Spiels"
+     ],
+     [
+      "A Successful Hunt",
+      "Teil der hervorgehobenen Fortschritts-Meilensteine des Spiels"
+     ],
+     [
+      "And Thus, the Revolution Came to an End",
+      "Teil der hervorgehobenen Fortschritts-Meilensteine des Spiels"
+     ],
+     [
+      "How to Deal With Dragons",
+      "Teil der hervorgehobenen Fortschritts-Meilensteine des Spiels"
+     ],
+     [
+      "HURRAY! HURRAY!",
+      "Teil der hervorgehobenen Fortschritts-Meilensteine des Spiels"
+     ],
+     [
+      "The Grand Derby",
+      "Teil der hervorgehobenen Fortschritts-Meilensteine des Spiels"
+     ],
+     [
+      "It's a Mess",
+      "Teil der hervorgehobenen Fortschritts-Meilensteine des Spiels"
+     ],
+     [
+      "How to Train Your Griffin",
+      "Teil der hervorgehobenen Fortschritts-Meilensteine des Spiels"
+     ]
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Wie bekomme ich How Cute?",
+      "Halte Arron auf dem gütigen Weg (iss nie ein Drachenherz), wähle bei Moonvales 3. Mission EMPATHY ROUTE und fahre dann in Akt III auf dem Empathie-Weg fort."
+     ],
+     [
+      "Was ist der schwerste Erfolg?",
+      "Laut Erfolgsraten-Daten ist die Mordlinie (first casualty, 72,3 %) der meistübersprungene — ein starker Kandidat."
+     ],
+     [
+      "Ist die vollständige Liste verfügbar?",
+      "Die komplette 75er-Tabelle ist 待补 (Steam Community ist ratenlimitiert; wir verifizieren über SteamDB/Community-Quellen)."
+     ]
+    ]
+   }
   ]
  },
  "sovereign-tower/endings": {
@@ -867,6 +1805,148 @@
      ]
     ]
    }
+  ],
+  "fr": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Fin / route",
+     "Ce qu'on sait",
+     "Statut"
+    ],
+    "rows": [
+     [
+      "Fin de conquête (一周目征服结局)",
+      "Une vidéo Bilibili communautaire montre une fin de conquête dès la première partie.",
+      "Existe (vidéo L0) ; conditions 待补"
+     ],
+     [
+      "Résolution King Slayer",
+      "Un chemin de résolution autour du King Slayer, couvert par des sites de fans.",
+      "Couvert par whisperofthehouse (L0) ; étapes 待补"
+     ],
+     [
+      "Fin cachée / alternative",
+      "Steam Community : « How to get the secret alt ending » (7 réponses).",
+      "Rapport communautaire ; étapes 待补"
+     ],
+     [
+      "Fin mariage avec Arthur",
+      "Fin de mariage avec Arthur montrée dans des vidéos communautaires.",
+      "Existe (L0) ; conditions 待补"
+     ],
+     [
+      "Route du meurtre de Gwendan",
+      "L'enquête de l'Acte 2 influence qui vit/meurt et quelles fins se débloquent.",
+      "Succès first casualty 72,3 % — la majorité des joueurs ne l'ont pas terminée (L0)"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Comment les fins se ramifient",
+    "body": "",
+    "items": [
+     "Des décisions clés (l'ultimatum du Chevalier Dragon au Cycle 4, le meurtre de l'Acte 2, le sort de Kutnar, l'alliance avec Arthur) verrouillent ou débloquent des chemins de fin.",
+     "Le système de remontée du temps permet de relancer les décisions au sein d'une partie, mais certaines branches s'excluent mutuellement.",
+     "L'équilibre des factions au final et les chevaliers survivants déterminent la fin obtenue."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Combien y a-t-il de fins ?",
+      "Un compte complet vérifié est 待补. Les vidéos communautaires confirment au moins les fins conquête, King Slayer, cachée/alternative et mariage avec Arthur."
+     ],
+     [
+      "Puis-je voir toutes les fins en une partie ?",
+      "Non — plusieurs routes s'excluent mutuellement. Utilisez New Game+ et la remontée du temps pour explorer les branches sur plusieurs parties."
+     ],
+     [
+      "Le meurtre de l'Acte 2 affecte-t-il les fins ?",
+      "Oui — l'enquête (la quête de Gwendan) change qui survit et quelles résolutions se débloquent ; seulement ~27,7 % des joueurs l'ont terminée (taux de succès)."
+     ]
+    ]
+   }
+  ],
+  "de": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Ende / Route",
+     "Was bekannt ist",
+     "Status"
+    ],
+    "rows": [
+     [
+      "Eroberungsende (一周目征服结局)",
+      "Ein Community-Bilibili-Video zeigt ein Eroberungsende im ersten Lauf.",
+      "Existiert (L0-Video); Bedingungen 待补"
+     ],
+     [
+      "King-Slayer-Auflösung",
+      "Ein Auflösungspfad rund um den King Slayer, von Fan-Seiten abgedeckt.",
+      "Von whisperofthehouse abgedeckt (L0); Schritte 待补"
+     ],
+     [
+      "Verstecktes / alternatives Ende",
+      "Steam-Community: „How to get the secret alt ending“ (7 Antworten).",
+      "Community-bekundet; Schritte 待补"
+     ],
+     [
+      "Arthur-Heiratsende",
+      "Heiratsende mit Arthur in Community-Videos gezeigt.",
+      "Existiert (L0); Bedingungen 待补"
+     ],
+     [
+      "Gwendan-Mordroute",
+      "Die Mordermittlung in Akt 2 beeinflusst, wer lebt/stirbt und welche Enden freigeschaltet werden.",
+      "First-casualty-Erfolg 72,3 % — die meisten Spieler haben ihn nicht geschafft (L0)"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Wie sich Enden verzweigen",
+    "body": "",
+    "items": [
+     "Schlüsselentscheidungen (das Drachenritter-Ultimatum in Zyklus 4, der Mord in Akt 2, Kutnars Schicksal, das Arthur-Bündnis) sperren oder öffnen Endpfade.",
+     "Das Zeitrückspul-System erlaubt es, Entscheidungen innerhalb eines Laufs neu zu würfeln, aber einige Zweige schließen sich gegenseitig aus.",
+     "Fraktionsgleichgewicht am Finale und die überlebenden Ritter bestimmen, welches Ende du bekommst."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Wie viele Enden gibt es?",
+      "Eine vollständig verifizierte Zahl ist 待补. Community-Videos bestätigen mindestens Eroberung, King Slayer, verstecktes/alternatives und Arthur-Heiratsende."
+     ],
+     [
+      "Kann ich alle Enden in einem Lauf sehen?",
+      "Nein — mehrere Routen schließen sich gegenseitig aus. Nutze New Game+ und das Zeitrückspulen, um Zweige über Läufe hinweg zu erkunden."
+     ],
+     [
+      "Beeinflusst der Mord in Akt 2 die Enden?",
+      "Ja — die Mordermittlung (Gwendans Questlinie) ändert, wer überlebt und welche Auflösungen freigeschaltet werden; nur ~27,7 % der Spieler haben sie abgeschlossen (Erfolgsrate)."
+     ]
+    ]
+   }
   ]
  },
  "sovereign-tower/romance": {
@@ -998,6 +2078,138 @@
      [
       "アーサー王結婚には特定の派閥バランスが必要？",
       "コミュニティ動画はあるが正確な前提は未検証——待補。"
+     ]
+    ]
+   }
+  ],
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Comment fonctionne la romance",
+    "body": "",
+    "items": [
+     "L'affinité débloque les conversations de temps libre, c'est ainsi que se débloque la majeure partie de l'histoire d'un chevalier — y compris les scènes de romance.",
+     "Affectez des quêtes appréciées (+1,33 chacune), offrez les plats favoris (+1,5) et collez à l'archétype de souverain apprécié pour monter l'affinité sans risque.",
+     "Les options de romance apparaissent dans le dialogue une fois l'histoire du chevalier assez avancée ; forcer l'affinité sans avancer l'histoire bloque la route."
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Route",
+     "Conditions connues",
+     "Statut"
+    ],
+    "rows": [
+     [
+      "Lady of the Tower (statue de pierre)",
+      "Argument de vente officiel — une statue de pierre à conquérir, liée aux secrets de la tour.",
+      "Concept vérifié (Steam L0) ; étapes complètes 待补"
+     ],
+     [
+      "Angelica",
+      "Recrue de l'histoire d'ouverture ; route Cœur-Bienveillant, aime le style de souverain Kind.",
+      "Route confirmée ; étapes cachées 待补"
+     ],
+     [
+      "Arthur (fin mariage)",
+      "Des vidéos communautaires montrent une fin de mariage avec Arthur.",
+      "Existe (Bilibili L0) ; conditions exactes 待补"
+     ],
+     [
+      "Gideon / autres",
+      "Les discussions Steam demandent comment séduire le chevalier-loup et évoquent des conditions secrètes.",
+      "Rapport communautaire ; 待补"
+     ]
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Pourquoi ma romance ne progresse-t-elle pas ?",
+      "La cause la plus fréquente est une affinité ou une histoire bloquée. Vérifiez que l'affinité n'est pas coincée, continuez les affectations appréciées et faites avancer l'histoire via les conversations de temps libre."
+     ],
+     [
+      "Puis-je séduire plusieurs chevaliers ?",
+      "Les retours communautaires divergent selon les routes ; certaines semblent mutuellement exclusives (待补 tant que non vérifié en jeu)."
+     ],
+     [
+      "La fin mariage avec Arthur exige-t-elle un équilibre de factions précis ?",
+      "Des vidéos communautaires existent mais les prérequis exacts ne sont pas vérifiés — à traiter comme 待补."
+     ]
+    ]
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Wie Romantik funktioniert",
+    "body": "",
+    "items": [
+     "Sympathie öffnet die Freizeit-Gespräche — darüber läuft der Großteil der Ritter-Story, inklusive Romanszenen.",
+     "Schicke geliebte Quests (je +1,33), füttere Lieblingsgerichte (+1,5) und passe den bevorzugten Herrscherstil des Ritters an, um Sympathie sicher zu steigern.",
+     "Romanze-Optionen erscheinen im Dialog, sobald die Story weit genug fortgeschritten ist; nur Sympathie zu pushen, ohne die Story voranzutreiben, stoppt die Route."
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Route",
+     "Bekannte Bedingungen",
+     "Status"
+    ],
+    "rows": [
+     [
+      "Lady of the Tower (Steinstatue)",
+      "Offizielles Verkaufsargument — eine romantisierbare Steinfigur, verbunden mit den Geheimnissen des Turms.",
+      "Konzept verifiziert (Steam L0); volle Schritte 待补"
+     ],
+     [
+      "Angelica",
+      "Rekrutin der Eröffnungs-Story; Kind-Hearted-Route, mag Herrscherstil Kind.",
+      "Route bestätigt; versteckte Schritte 待补"
+     ],
+     [
+      "Arthur (Heiratsende)",
+      "Community-Videos zeigen ein Heiratsende mit Arthur.",
+      "Existiert (Bilibili L0); genaue Bedingungen 待补"
+     ],
+     [
+      "Gideon / andere",
+      "Steam-Community-Threads fragen nach der Romanze mit dem Werwolf-Ritter und geheimen Bedingungen.",
+      "Community-bekundet; 待补"
+     ]
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Warum kommt meine Romanze nicht voran?",
+      "Meistens liegt es an stockender Sympathie oder Story. Prüfe, ob die Sympathie festhängt, halte geliebte Zuweisungen am Laufen und treibe die Story über Freizeit-Gespräche voran."
+     ],
+     [
+      "Kann ich mehrere Ritter gleichzeitig romantisieren?",
+      "Die Community-Berichte unterscheiden sich je nach Route; einige Routen scheinen sich gegenseitig auszuschließen (待补, bis im Spiel verifiziert)."
+     ],
+     [
+      "Braucht das Arthur-Heiratsende ein bestimmtes Fraktionsgleichgewicht?",
+      "Es gibt Community-Videos, aber die genauen Voraussetzungen sind unverifiziert — als 待补 behandeln."
      ]
     ]
    }
@@ -1267,6 +2479,270 @@
      ]
     ]
    }
+  ],
+  "fr": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Plat (EN)",
+     "Plat (中文)",
+     "Description"
+    ],
+    "rows": [
+     [
+      "Galette-Saucisse",
+      "香肠荞麦饼",
+      "Galette de sarrasin à la saucisse — le plat de rue de Brizh."
+     ],
+     [
+      "Croque-Monsieur",
+      "法式三明治",
+      "Toast jambon-fromage grillé, classique réconfortant."
+     ],
+     [
+      "Préfou",
+      "蒜香面包",
+      "Pain à l'ail doré au beurre — le favori des tavernes."
+     ],
+     [
+      "Crêpe",
+      "可丽饼",
+      "Crêpe fine, sucrée ou salée."
+     ],
+     [
+      "Brizhian Butter Shortbread",
+      "布里兹黄油酥饼",
+      "Un sablé au beurre riche, signature de Brizh."
+     ],
+     [
+      "Lion's Taco",
+      "狮子玉米饼",
+      "Un taco généreux et audacieux."
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Chevalier",
+     "Plats favoris"
+    ],
+    "rows": [
+     [
+      "Alwena",
+      "Brizhian Butter Shortbread、Crêpe"
+     ],
+     [
+      "Angelica",
+      "Préfou、Crêpe"
+     ],
+     [
+      "Ari",
+      "Brizhian Butter Shortbread、Crêpe"
+     ],
+     [
+      "Arron",
+      "Crêpe、Brizhian Butter Shortbread"
+     ],
+     [
+      "Brunhilda",
+      "Galette-Saucisse、Lion's Taco"
+     ],
+     [
+      "Chester",
+      "Les 6 plats"
+     ],
+     [
+      "Childeric",
+      "Crêpe、Croque-Monsieur"
+     ],
+     [
+      "Daguez",
+      "Crêpe、Galette-Saucisse、Préfou"
+     ],
+     [
+      "Dulahan",
+      "Les 6 plats"
+     ],
+     [
+      "Edith",
+      "Croque-Monsieur、Brizhian Butter Shortbread"
+     ],
+     [
+      "Autres chevaliers",
+      "待补"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Règles de nourriture",
+    "body": "",
+    "items": [
+     "Chaque chevalier a 1–2 plats favoris (Chester et Dulahan aiment les six).",
+     "Un plat aimé = +1,5 d'affinité et +0,5 de score de quête, enregistré définitivement.",
+     "Le repas se fait pendant le temps libre — l'affinité débloque ces conversations, alors continuez à envoyer les affectations appréciées."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Quels chevaliers aiment tous les plats ?",
+      "Chester et Dulahan ont les six plats en favoris."
+     ],
+     [
+      "Le repas affecte-t-il le score de quête ?",
+      "Oui — +0,5 de score par plat aimé, en plus des +1,5 d'affinité."
+     ],
+     [
+      "Un chevalier peut-il changer de plat favori ?",
+      "La voie d'évolution violente d'Arron change ses plats aimés et sa scène de démission ; les goûts des autres sont fixes."
+     ]
+    ]
+   }
+  ],
+  "de": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Gericht (EN)",
+     "Gericht (中文)",
+     "Beschreibung"
+    ],
+    "rows": [
+     [
+      "Galette-Saucisse",
+      "香肠荞麦饼",
+      "Buchweizen-Galette mit Wurst — Brizhs Straßenklassiker."
+     ],
+     [
+      "Croque-Monsieur",
+      "法式三明治",
+      "Gegrilltes Schinken-Käse-Sandwich, der Klassiker zum Wohlfühlen."
+     ],
+     [
+      "Préfou",
+      "蒜香面包",
+      "Mit Butter geröstetes Knoblauchbrot — der Favorit der Tavernen."
+     ],
+     [
+      "Crêpe",
+      "可丽饼",
+      "Dünner französischer Eierkuchen, süß oder herzhaft."
+     ],
+     [
+      "Brizhian Butter Shortbread",
+      "布里兹黄油酥饼",
+      "Reichhaltiger Butterkeks, eine Spezialität Brizhs."
+     ],
+     [
+      "Lion's Taco",
+      "狮子玉米饼",
+      "Ein großzügig gefüllter, kühner Taco."
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Ritter",
+     "Lieblingsgerichte"
+    ],
+    "rows": [
+     [
+      "Alwena",
+      "Brizhian Butter Shortbread、Crêpe"
+     ],
+     [
+      "Angelica",
+      "Préfou、Crêpe"
+     ],
+     [
+      "Ari",
+      "Brizhian Butter Shortbread、Crêpe"
+     ],
+     [
+      "Arron",
+      "Crêpe、Brizhian Butter Shortbread"
+     ],
+     [
+      "Brunhilda",
+      "Galette-Saucisse、Lion's Taco"
+     ],
+     [
+      "Chester",
+      "Alle 6 Gerichte"
+     ],
+     [
+      "Childeric",
+      "Crêpe、Croque-Monsieur"
+     ],
+     [
+      "Daguez",
+      "Crêpe、Galette-Saucisse、Préfou"
+     ],
+     [
+      "Dulahan",
+      "Alle 6 Gerichte"
+     ],
+     [
+      "Edith",
+      "Croque-Monsieur、Brizhian Butter Shortbread"
+     ],
+     [
+      "Andere Ritter",
+      "待补"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Fütterungsregeln",
+    "body": "",
+    "items": [
+     "Jeder Ritter hat 1–2 Lieblingsgerichte (Chester und Dulahan lieben alle sechs).",
+     "Ein geliebtes Gericht = +1,5 Sympathie und +0,5 Quest-Punkte, dauerhaft vermerkt.",
+     "Füttern passiert in der Freizeit — Sympathie öffnet diese Gespräche, also halte geliebte Zuweisungen am Laufen."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Welche Ritter lieben jedes Gericht?",
+      "Chester und Dulahan haben alle sechs Gerichte als Favoriten."
+     ],
+     [
+      "Beeinflusst Füttern den Quest-Score?",
+      "Ja — +0,5 Quest-Punkte pro geliebtem Gericht, zusätzlich zu den +1,5 Sympathie."
+     ],
+     [
+      "Kann ein Ritter sein Lieblingsgericht ändern?",
+      "Arrons gewaltsamer Evolutionspfad ändert seine Lieblingsgerichte und die Kündigungsszene; die Geschmäcker der anderen sind fest."
+     ]
+    ]
+   }
   ]
  },
  "sovereign-tower/tools/quest-matcher": {
@@ -1293,6 +2769,32 @@
      "드롭다운에서 퀘스트 타입 선택. 전체 기사의 해당 타입 호감 반응과 특성이 표시됩니다.",
      "좋아하는 타입은 +1.33 호감, 싫어하는 건 -0.75. 좋아하는 조건을 겹치면 약 +4 호감까지.",
      "특성 확인: Dulahan은 피해 절반이지만 실패 시 +2(Clumsy). Gwendan은 성물 회수를 싫어합니다."
+    ]
+   }
+  ],
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Comment l'utiliser",
+    "body": "",
+    "items": [
+     "Choisissez un type de quête dans la liste déroulante. Le tableau montre chaque chevalier, sa réaction d'affinité pour ce type et ses traits spéciaux.",
+     "Les types aimés donnent +1,33 d'affinité ; les détestés −0,75. Cumuler des conditions aimées peut pousser une quête à environ +4 d'affinité.",
+     "Recoupez les traits : p. ex. Dulahan encaisse la moitié des dégâts mais prend +2 en cas d'échec (Clumsy) ; Gwendan déteste la Récupération de relique."
+    ]
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "So nutzt du es",
+    "body": "",
+    "items": [
+     "Wähle einen Quest-Typ aus dem Dropdown. Die Tabelle zeigt jeden Ritter, seine Sympathie-Reaktion auf diesen Typ und besondere Eigenschaften.",
+     "Geliebte Quest-Typen geben +1,33 Sympathie; verhasste −0,75. Geliebte Bedingungen stapeln sich auf etwa +4 Sympathie pro Quest.",
+     "Prüfe die Eigenschaften: z. B. halbiert Dulahan Schaden, bekommt aber +2 bei Fehlschlag (Clumsy); Gwendan mag Reliktrückholung nicht."
     ]
    }
   ]
@@ -1323,6 +2825,34 @@
      "좋아하는 요리: +1.5 호감 +0.5 점수.",
      "사임 임계값: 거의 전원 -7. Alwena와 Ari는 -1500으로 절대 사임 없음.",
      "계획 보조 도구 — 실제 게임 내 수치는 다를 수 있음(미검증 규칙은待補)."
+    ]
+   }
+  ],
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Règles intégrées au calculateur",
+    "body": "",
+    "items": [
+     "Type ou condition de quête aimé : +1,33 d'affinité chacun. Détesté : −0,75 chacun.",
+     "Plat favori : +1,5 d'affinité et +0,5 de score de quête.",
+     "Seuil de démission : −7 pour presque tout le monde ; Alwena et Ari ne démissionnent jamais (−1500).",
+     "C'est un outil d'aide à la planification — les valeurs réelles en jeu peuvent varier (待补 si une règle n'est pas vérifiée)."
+    ]
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Im Rechner eingebaute Regeln",
+    "body": "",
+    "items": [
+     "Geliebter Quest-Typ oder Bedingung: je +1,33 Sympathie. Verhasst: je −0,75.",
+     "Lieblingsgericht: +1,5 Sympathie und +0,5 Quest-Punkte.",
+     "Kündigungsschwelle: −7 für fast alle; Alwena und Ari kündigen nie (−1500).",
+     "Das ist eine Planungshilfe — tatsächliche Spielwerte können abweichen (待补, falls eine Regel unverifiziert ist)."
     ]
    }
   ]
@@ -1504,6 +3034,186 @@
      [
       "5개 파벌은?",
       "상인·비술사·학자·귀족·평민. 퀘스트와 아침 조회 결정으로 움직이며, 일부 기사는 파벌 균형에 따라 호감도가 오르내립니다."
+     ]
+    ]
+   }
+  ],
+  "fr": [
+   {
+    "type": "steps",
+    "tag": "STEP",
+    "heading": "La boucle de jeu en 5 étapes",
+    "body": "",
+    "items": [
+     [
+      "Le conseil du matin",
+      "Chaque cycle commence par une audience. Les citoyens apportent leurs demandes — du jardinage à la chasse aux démons. Vos réponses influencent la satisfaction des factions et l'opinion des chevaliers."
+     ],
+     [
+      "Affecter la Table Ronde",
+      "Envoyez des chevaliers en quête. Faites correspondre les stats des chevaliers aux exigences de la quête pour pousser le résultat vers le succès (voir la formule de score ci-dessous)."
+     ],
+     [
+      "Lire le résultat",
+      "Les quêtes renvoient Critical Success / Success / Failure / Unexpected Outcome. Les réussites great et critical multiplient les récompenses."
+     ],
+     [
+      "Remonter le temps",
+      "Si un cycle se passe mal, le Démon de la cave vous laisse remonter le temps et relancer vos décisions. C'est le filet de sécurité central du jeu."
+     ],
+     [
+      "Agrandir la Tour",
+      "Construisez des Annexes (la Forge de Carina, la Salle d'alchimie de la Sorcière) et améliorez-les pour débloquer chevaliers, outils et histoire."
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Ressource",
+     "Rôle"
+    ],
+    "rows": [
+     [
+      "Trésor",
+      "Or pour les invocations, l'équipement et la construction. Les récompenses de quête et les choix de faction l'alimentent."
+     ],
+     [
+      "Marchands / Mystiques / Érudits / Nobles / Peuple",
+      "Cinq jauges de faction. Équilibrez-les — ou dépensez tout et trahissez tout le monde, le jeu vous le permet."
+     ],
+     [
+      "Capacité de la Table Ronde",
+      "Augmente avec l'histoire : Acte 1 = 6 chevaliers, Acte 2 = 8, Acte 3 = 10."
+     ],
+     [
+      "Annexes",
+      "Des bâtiments qui ajoutent des systèmes : la Forge répare/fabrique l'équipement, la Salle d'alchimie crée des consommables."
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Les erreurs de débutant à éviter",
+    "body": "",
+    "items": [
+     "Affecter des chevaliers à des quêtes qu'ils détestent : les types de quête détestés drainent l'affinité (−0,75 chacun), et à −7 d'affinité un chevalier démissionne.",
+     "Ignorer l'équilibre des factions : une faction à zéro de satisfaction peut déclencher des événements de crise.",
+     "Oublier la formule de score : envoyez un chevalier dont les stats dépassent les exigences de la quête, pas n'importe quel chevalier disponible.",
+     "Rater la fenêtre des 48 heures : recrutez les chevaliers d'histoire (Dulahan, Arron, Brunhilda) en progressant dans leurs arcs dédiés."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Faut-il s'inquiéter des limites de temps ?",
+      "Non — Sovereign Tower se joue sans contrainte de temps (fonctionnalité Steam officielle). Vous pouvez remonter le temps pour relancer vos décisions, rien n'est perdu définitivement."
+     ],
+     [
+      "Les chevaliers peuvent-ils mourir définitivement ?",
+      "La plupart des chevaliers peuvent mourir en quête et rester morts pour cette partie. Ursula est Immortelle (rérecrutable après la mort) ; Alwena et Ari ne démissionnent jamais."
+     ],
+     [
+      "Quelles sont les cinq jauges de faction ?",
+      "Marchands, Mystiques, Érudits, Nobles et Peuple. Les quêtes et les décisions de cour les font bouger ; certains chevaliers gagnent ou perdent de l'affinité selon votre équilibrage."
+     ]
+    ]
+   }
+  ],
+  "de": [
+   {
+    "type": "steps",
+    "tag": "STEP",
+    "heading": "Die 5-Schritte-Kernschleife",
+    "body": "",
+    "items": [
+     [
+      "Morgenaudienz",
+      "Jeder Zyklus beginnt mit einer Audienz. Bürger bringen Anliegen — von Gartenarbeit bis Dämonenjagd. Deine Antworten prägen Fraktionszufriedenheit und die Meinung der Ritter."
+     ],
+     [
+      "Die Tafelrunde besetzen",
+      "Schicke Ritter auf Quests. Gleiche Ritter-Werte mit den Quest-Anforderungen ab, um das Ergebnis zum Erfolg zu treiben (siehe Punkteformel unten)."
+     ],
+     [
+      "Ergebnis ablesen",
+      "Quests enden mit Critical Success / Success / Failure / Unexpected Outcome. Great- und Critical-Erfolge vervielfachen die Belohnungen."
+     ],
+     [
+      "Zeit zurückdrehen",
+      "Läuft ein Zyklus schlecht, lässt dich der Dämon im Keller die Zeit zurückdrehen und Entscheidungen neu würfeln. Das ist das zentrale Sicherheitsnetz des Spiels."
+     ],
+     [
+      "Den Turm erweitern",
+      "Baue Annexe (Carinas Schmiede, die Alchemiekammer der Hexe) und verbessere sie, um mehr Ritter, Werkzeuge und Story freizuschalten."
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "Ressource",
+     "Funktion"
+    ],
+    "rows": [
+     [
+      "Schatzkammer",
+      "Gold für Beschwörungen, Ausrüstung und Bau. Questbelohnungen und Fraktionsentscheidungen füllen sie."
+     ],
+     [
+      "Händler / Mystiker / Gelehrte / Adel / Volk",
+      "Fünf Fraktionsanzeigen. Balanciere sie — oder gib alles aus und verrate alle; das Spiel lässt dich."
+     ],
+     [
+      "Kapazität der Tafelrunde",
+      "Wächst mit der Story: Akt 1 = 6 Ritter, Akt 2 = 8, Akt 3 = 10."
+     ],
+     [
+      "Annexe",
+      "Gebäude, die Systeme hinzufügen: die Schmiede repariert/fertigt Ausrüstung, die Alchemiekammer stellt Verbrauchsgüter her."
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Anfängerfehler, die du vermeiden solltest",
+    "body": "",
+    "items": [
+     "Ritter auf verhasste Quests schicken: verhasste Quest-Typen senken die Sympathie (−0,75 pro Stück), und bei −7 Sympathie kündigt ein Ritter.",
+     "Fraktionsbalance ignorieren: eine Fraktion bei null Zufriedenheit kann Krisenereignisse auslösen.",
+     "Die Punkteformel vergessen: schicke einen Ritter, dessen Werte die Quest-Anforderungen übertreffen — nicht irgendeinen verfügbaren.",
+     "Das 48-Stunden-Fenster verpassen: rekrutiere Story-Ritter (Dulahan, Arron, Brunhilda), indem du ihre jeweiligen Handlungsstränge vorantreibst."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Muss ich mir wegen Zeitlimits Sorgen machen?",
+      "Nein — Sovereign Tower ist ohne Zeiteingabe spielbar (offizielles Steam-Feature). Du kannst die Zeit zurückdrehen und Entscheidungen neu würfeln; nichts geht endgültig verloren."
+     ],
+     [
+      "Können Ritter dauerhaft sterben?",
+      "Die meisten Ritter können auf Quests sterben und bleiben in diesem Lauf tot. Ursula ist unsterblich (nach dem Tod erneut rekrutierbar); Alwena und Ari kündigen nie."
+     ],
+     [
+      "Was sind die fünf Fraktionsanzeigen?",
+      "Händler, Mystiker, Gelehrte, Adel und Volk. Quests und Hofentscheidungen bewegen sie; manche Ritter gewinnen oder verlieren je nach Balance Sympathie."
      ]
     ]
    }
