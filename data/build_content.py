@@ -519,6 +519,17 @@ def build_home():
             ],
         }},
     }
+    # ja/ko/fr/de 翻译（data/i18n_home.json）
+    import json as _json
+    _i18n_home = _json.loads((ROOT / "i18n_home.json").read_text(encoding="utf8"))
+    for lang, t in _i18n_home.items():
+        en.setdefault("i18n", {})[lang] = {
+            "title": t["title"], "metaTitle": t["metaTitle"], "metaDescription": t["metaDescription"], "intro": t["intro"],
+            "sections": [
+                {"type": "list", "tag": "NOTE", "heading": t["note_title"], "body": "", "items": t["note_items"]},
+                {"type": "faq", "tag": "FAQ", "heading": t["faq_title"], "body": "", "items": t["faq_items"]},
+            ],
+        }
     return en
 
 # ---------- 页面：工具页（quest-matcher / affinity-calc）----------
