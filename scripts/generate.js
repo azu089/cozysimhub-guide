@@ -143,6 +143,7 @@ ${gsc}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/css/style.css?v=${CSS_V}" />
+${slug === "index" && lang === DEF ? `<link rel="preload" as="image" type="image/webp" imagesrcset="/images/hero-640.webp 640w, /images/hero-1280.webp 1280w, /images/hero.webp 1600w" imagesizes="(max-width: 720px) 640px, 1280px" fetchpriority="high" />` : ""}
 <script type="application/ld+json">${ld}</script>
 ${DATA.site.gaId ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(DATA.site.gaId)}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${esc(DATA.site.gaId)}');</script>` : ""}
@@ -338,7 +339,7 @@ function renderHome(lang) {
   }).join("");
   const body = `<main class="home-main">
   <section class="hero-parchment reveal">
-    <div class="hero-art"><img src="/images/hero-640.jpg" srcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 1600w" sizes="(max-width: 720px) 640px, 1280px" alt="${isZh ? "烛光下的圆桌骑士议会" : "Round table of knights in a candlelit tower hall"}" width="900" height="506" loading="eager" /></div>
+    <div class="hero-art"><picture><source type="image/webp" srcset="/images/hero-640.webp 640w, /images/hero-1280.webp 1280w, /images/hero.webp 1600w" sizes="(max-width: 720px) 640px, 1280px" /><img src="/images/hero-640.jpg" srcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 1600w" sizes="(max-width: 720px) 640px, 1280px" alt="${isZh ? "烛光下的圆桌骑士议会" : "Round table of knights in a candlelit tower hall"}" width="900" height="506" loading="eager" /></picture></div>
     <span class="hero-seal">${ICON.crown}</span>
     <h1>${isZh ? "君王之塔 · 圆桌手账" : "Sovereign Tower · The Round Table Ledger"}</h1>
     <p class="hero-intro">${esc(intro)}</p>
@@ -370,7 +371,7 @@ function renderPage(p, lang) {
   const sections = (t.sections || []).map(s => renderSection(s, lang)).join("");
   const imgMap = { "sovereign-tower/how-to-play": "how-to-play", "sovereign-tower/knights": "knights", "sovereign-tower/secret-knights": "secret-knights", "sovereign-tower/romance": "romance", "sovereign-tower/endings": "endings", "sovereign-tower/recipes": "recipes", "sovereign-tower/quest-mechanics": "quest-mechanics", "sovereign-tower/achievements": "achievements" };
   const pageImg = imgMap[p.slug];
-  const art = pageImg ? `<img class="page-art reveal" src="/images/${pageImg}-640.jpg" srcset="/images/${pageImg}-640.jpg 640w, /images/${pageImg}-1280.jpg 1280w, /images/${pageImg}.jpg 1600w" sizes="(max-width: 720px) 640px, 1280px" alt="${esc(t.title)}" width="900" height="506" loading="lazy" />` : "";
+  const art = pageImg ? `<picture><source type="image/webp" srcset="/images/${pageImg}-640.webp 640w, /images/${pageImg}-1280.webp 1280w, /images/${pageImg}.webp 1600w" sizes="(max-width: 720px) 640px, 1280px" /><img class="page-art reveal" src="/images/${pageImg}-640.jpg" srcset="/images/${pageImg}-640.jpg 640w, /images/${pageImg}-1280.jpg 1280w, /images/${pageImg}.jpg 1600w" sizes="(max-width: 720px) 640px, 1280px" alt="${esc(t.title)}" width="900" height="506" loading="lazy" /></picture>` : "";
   const body = `<main class="page-main"><article class="ledger-article">
     <div class="page-head reveal"><span class="tag">${isTool ? (lang === "zh-CN" ? "工具" : "TOOL") : (lang === "zh-CN" ? "手账" : "LEDGER")}</span>
       <h1>${esc(t.title)}</h1>
