@@ -149,6 +149,7 @@ ${DATA.site.gaId ? `<script async src="https://www.googletagmanager.com/gtag/js?
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${esc(DATA.site.gaId)}');</script>` : ""}
 </head>
 <body>
+<div class="app-shell">
 `;
 }
 
@@ -169,79 +170,69 @@ const GUIDE_GROUPS = {
 };
 function header(lang, active) {
   const n = navI18n(lang);
-  const prefix = lang === DEF ? "" : `/${lang}`;
-  const gameSlug = "sovereign-tower";
   const G = GUIDE_GROUPS.en;
-  const link = (slug, label, icon, act) =>
-    `<a href="${linkOf(slug, lang)}" class="${act ? "active" : ""}"><span class="nav-ic">${ICON[icon] || ""}</span><span>${esc(label)}</span></a>`;
-  const drop = (title, slugs) => `<div class="dd-group"><b class="dd-title">${esc(title)}</b>${slugs.map(s => {
+  const link = (slug, label, icon, folio, act) =>
+    `<a href="${linkOf(slug, lang)}" class="${act ? "active" : ""}"><span class="folio-no">${folio}</span><span class="nav-ic">${ICON[icon] || ""}</span><span>${esc(label)}</span></a>`;
+  const chap = (title, slugs) => `<div class="tome-chapter"><b>${esc(title)}</b>${slugs.map((s, i) => {
     const p = DATA.pages.find(x => x.slug === s);
     if (!p) return "";
     const t = pageOf(p, lang).title.replace(/\s*(Sovereign Tower|Sovereign|君王之塔)\s*/g, " ").replace(/\s+/g, " ").trim();
-    const ic = s.includes("knights") ? "shield" : s.includes("romance") ? "heart" : s.includes("recipes") ? "chef" : s.includes("endings") ? "crown" : s.includes("quest") ? "scales" : s.includes("achievement") ? "trophy" : s.includes("tools") ? "calc" : "book";
-    return link(s, t, ic, s === active);
+    const ic = s.includes("knights") ? "shield" : s.includes("romance") ? "heart" : s.includes("recipes") ? "chef" : s.includes("endings") ? "crown" : s.includes("secret") ? "fist" : s.includes("quest") && s.includes("mech") ? "scales" : s.includes("achievement") ? "trophy" : s.includes("tools") ? "calc" : s.includes("how-to-play") ? "book" : "wand";
+    return link(s, t, ic, String(i + 1).padStart(2, "0"), s === active);
   }).join("")}</div>`;
-  const manual = `${drop(n.p0, G.p0)}${drop(n.p1, G.p1)}${drop(n.p2, G.p2)}`;
-  return `<header class="site-header">
-  <div class="container header-inner">
-    <a class="logo" href="${linkOf("index", lang)}"><span class="logo-badge">${ICON.crown}</span><span class="logo-txt">${esc(siteI18n(lang).name)}</span></a>
-    <nav class="nav" aria-label="Main">
-      <a href="${linkOf("index", lang)}" class="${active === "index" || active === "" ? "active" : ""}">${esc(n.home)}</a>
-      <details class="dd">
-        <summary>${esc(n.guides)} <span class="caret">▾</span></summary>
-        <div class="dd-menu dd-manual">${manual}</div>
-      </details>
-      <a href="${linkOf(gameSlug + "/tools/quest-matcher", lang)}">${esc(n.tools)}</a>
-    </nav>
-    <form class="site-search" action="https://www.google.com/search" method="get" target="_blank" rel="noopener" role="search">
-      <input type="search" name="q" placeholder="${esc(n.search)}" aria-label="${esc(n.searchLabel)}" />
-      <input type="hidden" name="as_sitesearch" value="${esc(DATA.site.domain)}" />
-      <span class="search-ic" aria-hidden="true">${ICON.search}</span>
-    </form>
-    ${langSwitcher(lang, active || "index")}
-  </div>
-</header>`;
+  const chapters = `${chap(n.p0, G.p0)}${chap(n.p1, G.p1)}${chap(n.p2, G.p2)}`;
+  const langItems = LANGS.map(l =>
+    `<a href="${linkOf(active || "index", l)}" class="${l === lang ? "active" : ""}"><span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span></a>`
+  ).join("");
+  return `<button class="tome-nav-toggle" type="button" aria-label="Toggle ledger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
+<div class="tome-nav-overlay"></div>
+<aside class="tome-nav" aria-label="Ledger index">
+  <a class="tome-brand" href="${linkOf("index", lang)}">
+    <span class="brand-seal">${ICON.crown}</span>
+    <span class="brand-name">${esc(siteI18n(lang).name)}<small>${lang === "zh-CN" ? "圆桌手账" : "Round Table Ledger"}</small></span>
+  </a>
+  ${chapters}
+  <div class="tome-lang"><div class="lang-label">${esc(n.langLabel)}</div>${langItems}</div>
+</aside>
+<div class="topbar"></div>`;
 }
-
 function footer(lang) {
   const n = navI18n(lang);
-  const prefix = lang === DEF ? "" : `/${lang}`;
-  const links = DATA.pages.slice(0, 10).map(p => `<a href="${linkOf(p.slug, lang)}">${esc(pageOf(p, lang).title)}</a>`).join("");
-  return `<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-brand-row">
-      <div class="footer-brand"><span class="logo-badge small">${ICON.crown}</span><span>${esc(siteI18n(lang).name)}</span></div>
-      <div class="footer-links">
-        <a href="${linkOf("about", lang)}">${esc(n.about)}</a><a href="${linkOf("privacy", lang)}">${esc(n.privacy)}</a><a href="${linkOf("contact", lang)}">${esc(n.contact)}</a>
-        <a href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">Steam ↗</a>
-      </div>
-    </div>
-    <div class="footer-cols">
-      <nav class="footer-col">${links}</nav>
-      <div class="footer-meta">
-        <p>${esc(DATA.site.tagline)}</p>
-        <p>${esc(n.footerNote)}</p>
-        <p>${esc(n.footerSource)} · ${esc(n.updated)} ${TODAY}</p>
-      </div>
-    </div>
-    ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}
-    ${DATA.site.adsterra ? DATA.site.adsterra : ""}
+  const key = DATA.pages.slice(0, 8).map(p => `<a href="${linkOf(p.slug, lang)}">${esc(pageOf(p, lang).title)}</a>`).join("");
+  return `<footer class="colophon">
+  <div>
+    <h3>${esc(siteI18n(lang).name)}</h3>
+    <p>${esc(n.footerNote)}</p>
+    <p>${esc(n.footerSource)} · ${esc(n.updated)} ${TODAY}</p>
   </div>
+  <div>
+    <div class="colophon-links">
+      <a href="${linkOf("about", lang)}">${esc(n.about)}</a>
+      <a href="${linkOf("privacy", lang)}">${esc(n.privacy)}</a>
+      <a href="${linkOf("contact", lang)}">${esc(n.contact)}</a>
+      <a href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">Steam ↗</a>
+      ${key}
+    </div>
+    <p class="colophon-legal">© ${new Date().getFullYear()} ${esc(DATA.site.domain)} · ${lang === "zh-CN" ? "非官方粉丝站" : "Unofficial fan site"}</p>
+  </div>
+  ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}
+  ${DATA.site.adsterra ? DATA.site.adsterra : ""}
+</footer>
 <script>
-document.addEventListener('click', function(e){
-  document.querySelectorAll('details.dd[open], details.lang-dd[open]').forEach(function(d){
-    if (!d.contains(e.target)) d.removeAttribute('open');
-  });
-});
-document.addEventListener('keydown', function(e){
-  if (e.key === 'Escape') document.querySelectorAll('details[open]').forEach(function(d){ d.removeAttribute('open'); });
-});
 document.addEventListener('DOMContentLoaded', function(){
+  var toggle = document.querySelector('.tome-nav-toggle');
+  var nav = document.querySelector('.tome-nav');
+  var overlay = document.querySelector('.tome-nav-overlay');
+  if (toggle && nav && overlay) {
+    toggle.addEventListener('click', function(){ nav.classList.toggle('open'); overlay.classList.toggle('show'); });
+    overlay.addEventListener('click', function(){ nav.classList.remove('open'); overlay.classList.remove('show'); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') { nav.classList.remove('open'); overlay.classList.remove('show'); } });
+  }
   var obs = new IntersectionObserver(function(es){
     es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); obs.unobserve(en.target); } });
   }, {threshold:.08});
   document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
-  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.page-folio nav a'));
   if (tocLinks.length) {
     var tocTargets = tocLinks.map(function(a){ return document.querySelector(a.getAttribute('href')); });
     var tocObs = new IntersectionObserver(function(es){
@@ -255,13 +246,12 @@ document.addEventListener('DOMContentLoaded', function(){
     tocTargets.forEach(function(s){ if (s) tocObs.observe(s); });
   }
 });
-</script>
-</footer>`;
+</script>`;
 }
-
 /* ---------- Section 渲染（手账组件语言） ---------- */
 function renderSection(s, lang) {
   const escTxt = esc(s.heading || "");
+  const secId = s._tocId ? ` id="${s._tocId}"` : "";
   const tag = s.tag ? `<span class="tag">${esc(s.tag)}</span>` : "";
   switch (s.type) {
     case "steps": {
@@ -270,21 +260,21 @@ function renderSection(s, lang) {
           <span class="ticket-no">№ ${String(i + 1).padStart(2, "0")}</span>
           <div class="ticket-body"><h3>${esc(it[0])}</h3><p>${esc(it[1])}</p></div>
         </li>`).join("");
-      return `<section class="ledger-section"><div class="section-head">${tag}<h2>${escTxt}</h2></div><ol class="work-tickets">${items}</ol></section>`;
+      return `<section class="ledger-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><ol class="work-tickets">${items}</ol></section>`;
     }
     case "list": {
       const items = (s.items || []).map(it => `<li>${esc(it)}</li>`).join("");
-      return `<section class="ledger-section"><div class="section-head">${tag}<h2>${escTxt}</h2></div><ul class="ledger-notes">${items}</ul></section>`;
+      return `<section class="ledger-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><ul class="ledger-notes">${items}</ul></section>`;
     }
     case "table": {
       const th = (s.headers || []).map(h => `<th scope="col">${esc(h)}</th>`).join("");
       const tr = (s.rows || []).map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join("")}</tr>`).join("");
-      return `<section class="ledger-section"><div class="section-head">${tag}<h2>${escTxt}</h2></div><div class="ledger-table-wrap"><table class="ledger-table"><thead><tr>${th}</tr></thead><tbody>${tr}</tbody></table></div></section>`;
+      return `<section class="ledger-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><div class="ledger-table-wrap"><table class="ledger-table"><thead><tr>${th}</tr></thead><tbody>${tr}</tbody></table></div></section>`;
     }
     case "faq": {
       const items = (s.items || []).map((qa, i) =>
         `<details class="faq-item" ${i === 0 ? "open" : ""}><summary>${esc(qa[0])}</summary><p>${esc(qa[1])}</p></details>`).join("");
-      return `<section class="ledger-section"><div class="section-head">${tag}<h2>${escTxt}</h2></div><div class="faq-list">${items}</div></section>`;
+      return `<section class="ledger-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><div class="faq-list">${items}</div></section>`;
     }
     case "note": {
       return `<aside class="marginalia reveal">${tag}<p>${esc(s.body || "")}</p></aside>`;
@@ -322,43 +312,49 @@ function renderSection(s, lang) {
 
 /* ---------- 首页（手账总览） ---------- */
 function renderHome(lang) {
-  const n = navI18n(lang);
   const isZh = lang === "zh-CN";
   const t = pageOf(DATA.pages.find(p => p.slug === "index"), lang);
   const intro = t.intro || "";
   const gamePages = DATA.pages.filter(p => p.slug.startsWith("sovereign-tower/") && p.slug !== "sovereign-tower/tools/quest-matcher" && p.slug !== "sovereign-tower/tools/affinity-calc");
   const toolPages = DATA.pages.filter(p => p.slug.startsWith("sovereign-tower/tools/"));
-  const cards = gamePages.map(p => {
+  const idx = (p, i) => {
     const pt = pageOf(p, lang);
     const ic = p.slug.includes("knights") ? "shield" : p.slug.includes("romance") ? "heart" : p.slug.includes("recipes") ? "chef" : p.slug.includes("endings") ? "crown" : p.slug.includes("secret") ? "fist" : p.slug.includes("achievement") ? "trophy" : p.slug.includes("quest") ? "scales" : "book";
-    return `<a class="ledger-card reveal" href="${linkOf(p.slug, lang)}"><span class="card-ic">${ICON[ic]}</span><span class="card-txt"><b>${esc(pt.title)}</b><small>${esc((pt.metaDescription || "").slice(0, 70))}…</small></span></a>`;
-  }).join("");
-  const toolCards = toolPages.map(p => {
+    return `<a href="${linkOf(p.slug, lang)}"><span class="idx-no">${String(i + 1).padStart(2, "0")}</span><span class="idx-ic">${ICON[ic]}</span><span class="idx-txt"><b>${esc(pt.title)}</b><small>${esc((pt.metaDescription || "").slice(0, 48))}…</small></span></a>`;
+  };
+  const toolIdx = toolPages.map((p, i) => {
     const pt = pageOf(p, lang);
-    return `<a class="ledger-card tool reveal" href="${linkOf(p.slug, lang)}"><span class="card-ic">${ICON.calc}</span><span class="card-txt"><b>${esc(pt.title)}</b><small>${lang === "zh-CN" ? "交互工具" : "Interactive tool"}</small></span></a>`;
+    return `<a href="${linkOf(p.slug, lang)}"><span class="idx-no">${String(gamePages.length + i + 1).padStart(2, "0")}</span><span class="idx-ic">${ICON.calc}</span><span class="idx-txt"><b>${esc(pt.title)}</b><small>${lang === "zh-CN" ? "交互工具" : "Interactive tool"}</small></span></a>`;
   }).join("");
-  const body = `<main class="home-main">
-  <section class="hero-parchment reveal">
-    <div class="hero-art"><picture><source type="image/webp" srcset="/images/hero-640.webp 640w, /images/hero-1280.webp 1280w, /images/hero.webp 1600w" sizes="(max-width: 720px) 640px, 1280px" /><img src="/images/hero-640.jpg" srcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 1600w" sizes="(max-width: 720px) 640px, 1280px" alt="${isZh ? "烛光下的圆桌骑士议会" : "Round table of knights in a candlelit tower hall"}" width="900" height="506" loading="eager" /></picture></div>
-    <span class="hero-seal">${ICON.crown}</span>
+  const body = `<main class="app-main">
+  <section class="ledger-cover reveal">
+    <span class="cover-seal">${ICON.crown}</span>
     <h1>${isZh ? "君王之塔 · 圆桌手账" : "Sovereign Tower · The Round Table Ledger"}</h1>
-    <p class="hero-intro">${esc(intro)}</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="${linkOf("sovereign-tower/knights", lang)}">${isZh ? "开始：全部骑士" : "Start: All Knights"}</a>
+    <p class="cover-intro">${esc(intro)}</p>
+    <div class="cover-cta">
+      <a class="btn btn-primary" href="${linkOf("sovereign-tower/knights", lang)}">${isZh ? "翻开：全部骑士" : "Open: All Knights"}</a>
       <a class="btn btn-ghost" href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">Steam ↗</a>
     </div>
   </section>
-  <section class="hub-section"><div class="section-head"><span class="tag">${isZh ? "卷宗" : "THE LEDGER"}</span><h2>${isZh ? "攻略目录" : "Guide Collection"}</h2></div>
-    <div class="ledger-grid">${cards}${toolCards}</div>
-  </section>
-  <section class="hub-section"><div class="section-head"><span class="tag">${isZh ? "预告" : "COMING NEXT"}</span><h2>${isZh ? "更多 cozy / sim 游戏即将收录" : "More cozy & sim game hubs on the way"}</h2></div>
-    <p class="hub-note">${isZh ? "这是第一个游戏子目录——后续会持续加入更多 cozy/模拟经营游戏的完整攻略与工具。" : "This is the first game hub — more cozy & simulation game guides and tools are being added over time."}</p>
+  <section class="spread reveal">
+    <div class="spread-col left">
+      <div class="folio-head"><span class="folio-mark">✦</span><h2>${isZh ? "卷宗目录" : "Index"}</h2></div>
+      <div class="tome-index">${gamePages.map(idx).join("")}${toolIdx}</div>
+    </div>
+    <div class="spread-col right">
+      <div class="folio-head"><span class="folio-mark">✎</span><h2>${isZh ? "最新批注" : "Latest Notes"}</h2></div>
+      <div class="ledger-notes">
+        <div class="note-entry"><b>${isZh ? "24 位骑士全档案已收录" : "All 24 knights documented"}</b><p>${isZh ? "六维属性、隐藏特质、最爱菜、招募条件一次看全。" : "Six stats, hidden traits, favourite meals and recruit conditions."}</p></div>
+        <div class="note-entry"><b>${isZh ? "隐藏骑士招募方法" : "Secret knight recruitment"}</b><p>${isZh ? "Dulahan / Chester / Alwena 的触发条件与窗口。" : "Dulahan / Chester / Alwena triggers and windows."}</p></div>
+        <div class="note-entry"><b>${isZh ? "任务得分公式已核对" : "Quest score formula verified"}</b><p>${isZh ? "阈值、经验表、好感规则全部标注来源。" : "Thresholds, XP table and affinity rules with sources."}</p></div>
+        <div class="note-entry"><b>${isZh ? "交互工具上线" : "Interactive tools live"}</b><p>${isZh ? "骑士-任务匹配器与好感计算器可用。" : "Knight Quest Matcher and Affinity Calculator ready."}</p></div>
+      </div>
+    </div>
   </section>
 </main>`;
   const ld = [KIT.ld.article({ page: { ...t, slug: "index" }, lang, urlOf, siteName: siteI18n(lang).name, datePublished: TODAY, dateModified: KIT.LASTMOD_TOKEN })];
   return head(t.metaTitle || t.title, t.metaDescription, ld, "index", lang) + header(lang, "index") + body + footer(lang);
 }
-
 /* ---------- 普通页 ---------- */
 function renderPage(p, lang) {
   const t = pageOf(p, lang);
@@ -368,21 +364,38 @@ function renderPage(p, lang) {
     KIT.ld.article({ page, lang, urlOf, siteName: siteI18n(lang).name, datePublished: TODAY, dateModified: KIT.LASTMOD_TOKEN }),
     KIT.ld.breadcrumb({ page, lang, urlOf, homeName: navI18n(lang).home })
   ];
-  const sections = (t.sections || []).map(s => renderSection(s, lang)).join("");
+  // 章回目录（sections 的 heading 生成 TOC）
+  const secs = t.sections || [];
+  const tocItems = secs.map((s, i) => {
+    if (!s.heading) return "";
+    const id = `sec-${i}`;
+    return `<a href="#${id}"><span class="toc-no">${String(i + 1).padStart(2, "0")}</span><span>${esc(s.heading)}</span></a>`;
+  }).join("");
+  const sections = secs.map((s, i) => {
+    const withId = { ...s, _tocId: `sec-${i}` };
+    return renderSection(withId, lang);
+  }).join("");
   const imgMap = { "sovereign-tower/how-to-play": "how-to-play", "sovereign-tower/knights": "knights", "sovereign-tower/secret-knights": "secret-knights", "sovereign-tower/romance": "romance", "sovereign-tower/endings": "endings", "sovereign-tower/recipes": "recipes", "sovereign-tower/quest-mechanics": "quest-mechanics", "sovereign-tower/achievements": "achievements" };
   const pageImg = imgMap[p.slug];
-  const art = pageImg ? `<picture><source type="image/webp" srcset="/images/${pageImg}-640.webp 640w, /images/${pageImg}-1280.webp 1280w, /images/${pageImg}.webp 1600w" sizes="(max-width: 720px) 640px, 1280px" /><img class="page-art reveal" src="/images/${pageImg}-640.jpg" srcset="/images/${pageImg}-640.jpg 640w, /images/${pageImg}-1280.jpg 1280w, /images/${pageImg}.jpg 1600w" sizes="(max-width: 720px) 640px, 1280px" alt="${esc(t.title)}" width="900" height="506" loading="lazy" /></picture>` : "";
-  const body = `<main class="page-main"><article class="ledger-article">
-    <div class="page-head reveal"><span class="tag">${isTool ? (lang === "zh-CN" ? "工具" : "TOOL") : (lang === "zh-CN" ? "手账" : "LEDGER")}</span>
+  const art = pageImg ? `<img class="page-art reveal" src="/images/${pageImg}-640.jpg" srcset="/images/${pageImg}-640.jpg 640w, /images/${pageImg}-1280.jpg 1280w, /images/${pageImg}.jpg 1600w" sizes="(max-width: 720px) 640px, 1280px" alt="${esc(t.title)}" width="900" height="506" loading="lazy" />` : "";
+  const body = `<main class="app-main"><div class="page-shell">
+  <aside class="page-folio reveal">
+    <div class="folio-cap">${isTool ? (lang === "zh-CN" ? "工具" : "Tools") : (lang === "zh-CN" ? "章回" : "Folio")}</div>
+    <div class="toc-search"><input type="search" placeholder="${esc(navI18n(lang).search)}" aria-label="${esc(navI18n(lang).searchLabel)}" onkeyup="var q=this.value.toLowerCase();document.querySelectorAll('.page-folio nav a').forEach(function(a){a.style.display=a.textContent.toLowerCase().includes(q)?'':'none';});" /></div>
+    <nav>${tocItems}</nav>
+  </aside>
+  <article class="page-leaf">
+    <div class="page-head reveal">
+      <span class="leaf-tag">${isTool ? (lang === "zh-CN" ? "工具" : "Tool") : (lang === "zh-CN" ? "圆桌手账" : "Ledger")}</span>
       <h1>${esc(t.title)}</h1>
       ${art}
       <p class="page-intro">${esc(t.intro || "")}</p>
     </div>
     ${sections}
-  </article></main>`;
+  </article>
+  </div></main>`;
   return head(t.metaTitle || t.title, t.metaDescription, ld, p.slug, lang) + header(lang, p.slug) + body + footer(lang);
 }
-
 /* ---------- 静态页（about/privacy/contact） ---------- */
 function renderStatic(slug, lang) {
   const n = navI18n(lang);
@@ -428,12 +441,11 @@ function renderStatic(slug, lang) {
     }
   };
   const bodyMap = BODY_I18N[lang] || BODY_I18N.en;
-  const body = `<main class="page-main"><article class="ledger-article"><div class="page-head"><h1>${esc(titleMap[slug])}</h1></div><p>${bodyMap[slug]}</p></article></main>`;
+  const body = `<main class="app-main"><div class="page-shell"><article class="page-leaf"><div class="page-head"><h1>${esc(titleMap[slug])}</h1></div><p>${bodyMap[slug]}</p></article></div></main>`;
   const dhi = lang.startsWith("zh") || lang.startsWith("ja") || lang.startsWith("ko") ? 78 : 158;
   const desc = bodyMap[slug].length > dhi ? bodyMap[slug].slice(0, dhi - 1).trimEnd() + "…" : bodyMap[slug];
   return head(titleMap[slug], desc, [], slug, lang) + header(lang, slug) + body + footer(lang);
 }
-
 /* ---------- 工具交互 JS（渐进增强） ---------- */
 const TOOL_JS = `<script>
 (function(){
@@ -499,7 +511,7 @@ function build() {
   for (const p of DATA.pages) {
     if (p.slug === "index") continue;
     for (const lang of LANGS) {
-      const html = renderPage(p, lang) + (p.slug.startsWith("sovereign-tower/tools/") ? TOOL_JS : "") + "</body></html>";
+      const html = renderPage(p, lang) + (p.slug.startsWith("sovereign-tower/tools/") ? TOOL_JS : "") + "</div></body></html>";
       const base = lang === DEF ? `${p.slug}` : `${lang}/${p.slug}`;
       all.push({ html, path: `${base}.html` });
     }
@@ -507,7 +519,7 @@ function build() {
   // 静态页
   for (const slug of ["about", "privacy", "contact"]) {
     for (const lang of LANGS) {
-      const html = renderStatic(slug, lang) + "</body></html>";
+      const html = renderStatic(slug, lang) + "</div></body></html>";
       all.push({ html, path: lang === DEF ? `${slug}.html` : `${lang}/${slug}.html` });
     }
   }
