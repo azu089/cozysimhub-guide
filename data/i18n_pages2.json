@@ -1,0 +1,110 @@
+{
+  "sovereign-tower/knights/roster": {
+    "ja": {"title": "騎士名簿：全24人", "intro": "ソブリンタワーの24人の騎士は全員雇用可能。出身・初期レベル・鎧・クエスト得点を左右する6属性を一覧で。"},
+    "ko": {"title": "기사 명부: 전체 24명", "intro": "소버린 타워의 24명 기사는 전원 고용 가능. 출신·초기 레벨·갑옷·퀘스트 점수를 좌우하는 6종 스탯을 한눈에."},
+    "fr": {"title": "Effectif des chevaliers — les 24", "intro": "Les 24 chevaliers de Sovereign Tower sont tous recrutables. Origine, niveau, armure et les six stats."},
+    "de": {"title": "Ritterkader — alle 24", "intro": "Alle 24 Ritter in Sovereign Tower sind rekrutierbar. Herkunft, Stufe, Rüstung und die sechs Werte."}
+  },
+  "sovereign-tower/knights/tier-list": {
+    "ja": {"title": "騎士ティアリスト（初期ステータス）", "intro": "初期ステータスと特質に基づく実用的なティアリスト——ストーリー条件と好感度が数値と同じくらい重要。"},
+    "ko": {"title": "기사 티어 목록(초기 스탯)", "intro": "초기 스탯과 특성 기반의 실용 티어 목록 — 스토리 조건과 호감도가 수치만큼 중요."},
+    "fr": {"title": "Classement des chevaliers", "intro": "Un classement pratique basé sur les stats de départ — les conditions d'histoire comptent autant que les chiffres."},
+    "de": {"title": "Ritter-Tierliste", "intro": "Eine praktische Tierliste nach Startwerten — Story-Bedingungen zählen so viel wie Zahlen."}
+  },
+  "sovereign-tower/guides/factions": {
+    "ja": {"title": "派閥ガイド：五派閥の均衡", "intro": "商人・秘術師・学者・貴族・平民の五派閥を均衡させる。各クエストと朝政判断が影響し、0にすると危機イベント。"},
+    "ko": {"title": "파벌 가이드: 5개 파벌 균형", "intro": "상인·비술사·학자·귀족·평민 5개 파벌 균형. 모든 퀘스트와 조회 결정이 영향을 주며, 0이면 위기 이벤트."},
+    "fr": {"title": "Guide des factions", "intro": "Équilibrez les cinq factions : marchands, mystiques, érudits, nobles et peuple. Chaque quête les fait bouger."},
+    "de": {"title": "Fraktionen-Guide", "intro": "Balanciere die fünf Fraktionen: Händler, Mystiker, Gelehrte, Adel und Volk. Jede Quest bewegt sie."}
+  },
+  "sovereign-tower/guides/recruit-knights": {
+    "ja": {"title": "全騎士の雇用方法", "intro": "24人の騎士は全員雇用可能だが方法は様々——ストーリー、金、死亡ルート、緊急イベント。判明している雇用条件を網羅。"},
+    "ko": {"title": "전체 기사 고용 방법", "intro": "24명 기사는 전원 고용 가능하지만 방식은 다양 — 스토리, 돈, 사망 루트, 비상 이벤트. 알려진 고용 조건 총망라."},
+    "fr": {"title": "Recruter chaque chevalier", "intro": "Les 24 chevaliers sont recrutables, mais de façons variées — histoire, argent, morts ou urgences."},
+    "de": {"title": "Jeden Ritter rekrutieren", "intro": "Alle 24 Ritter sind rekrutierbar, aber unterschiedlich — Story, Geld, Tod oder Notfälle."}
+  },
+  "sovereign-tower/guides/time-rewind": {
+    "ja": {"title": "時間巻き戻しの仕組み", "intro": "運命が悪ければ地窖の悪魔が時間を巻き戻して再判断させる。ゲームの核心的安全網の仕組みと使い時。"},
+    "ko": {"title": "시간 되돌리기 메커니즘", "intro": "운명이 나쁘면 지하실의 악마가 시간을 되돌려 재판단하게 한다. 핵심 안전망의 작동 방식과 사용 시기."},
+    "fr": {"title": "Le retour dans le temps", "intro": "Quand le destin tourne mal, le démon de la cave remonte le temps. Le filet de sécurité du jeu."},
+    "de": {"title": "Zeit zurückdrehen erklärt", "intro": "Wenn das Schicksal sich wendet, lässt der Dämon im Keller die Zeit zurückdrehen. Das Sicherheitsnetz des Spiels."}
+  },
+  "sovereign-tower/guides/quest-success": {
+    "ja": {"title": "クエスト成功の戦略", "intro": "クエストはソブリンタワーの核心。正しい騎士を正しいクエストに送るかが大成功と全滅を分ける。"},
+    "ko": {"title": "퀘스트 성공 전략", "intro": "퀘스트는 소버린 타워의 핵심. 올바른 기사를 올바른 퀘스트에 보내는 것이 대성공과 전멸을 가른다."},
+    "fr": {"title": "Réussir ses quêtes", "intro": "Les quêtes sont le cœur du jeu. Envoyer le bon chevalier fait la différence entre succès critique et échec."},
+    "de": {"title": "Quest-Erfolg Strategien", "intro": "Quests sind das Herz des Spiels. Den richtigen Ritter zu schicken, macht den Unterschied."}
+  },
+  "sovereign-tower/walkthrough/act-0": {
+    "ja": {"title": "第0幕：プロローグ攻略", "intro": "ソブリンタワーの冒頭——アーリン顧問の導きで即位、最初の騎士と円卓の循環を学ぶ。"},
+    "ko": {"title": "0장: 프롤로그 공략", "intro": "소버린 타워의 서막 — 아린 고문의 안내로 즉위, 첫 기사와 원탁 루프를 배운다."},
+    "fr": {"title": "Acte 0 : prologue", "intro": "L'ouverture du jeu : le conseiller Arlin vous guide, votre premier chevalier et la boucle de la Table Ronde."},
+    "de": {"title": "Akt 0: Prolog", "intro": "Der Auftakt: Berater Arlin führt dich, dein erster Ritter und die Tafelrunde."}
+  },
+  "sovereign-tower/walkthrough/act-1-gavault": {
+    "ja": {"title": "第1幕：ガヴォー攻略", "intro": "第1幕のガヴォー鎖は娘側——ガヴォー公女ブルンヒルダを仲間にし、彼女のハント好みを知る。"},
+    "ko": {"title": "1장: 가볼트 공략", "intro": "1장의 가볼트 사슬은 딸 쪽 — 가볼트 공주 브룬힐다를 고용하고 그녀의 사냥 선호를 안다."},
+    "fr": {"title": "Acte 1 : Gavault", "intro": "La chaîne de Gavault côté fille : recrutez Brunhilda et apprenez ses préférences de chasse."},
+    "de": {"title": "Akt 1: Gavault", "intro": "Die Gavault-Kette auf der Tochter-Seite: Rekrutiere Brunhilda und ihre Jagd-Vorlieben."}
+  },
+  "sovereign-tower/walkthrough/act-1-groveshire": {
+    "ja": {"title": "第1幕：グローヴシャー攻略", "intro": "アンジェリカの故郷グローヴシャーとガチョウ/獣クエスト線——チェスターの雇用につながる。"},
+    "ko": {"title": "1장: 그로브셔 공략", "intro": "안젤리카의 고향 그로브셔와 거위/짐승 퀘스트 라인 — 체스터 고용으로 이어진다."},
+    "fr": {"title": "Acte 1 : Groveshire", "intro": "Le comté d'Angelica et la ligne de l'oie — qui mène au recrutement de Chester."},
+    "de": {"title": "Akt 1: Groveshire", "intro": "Angelicas Heimat und die Gänselinie — die zu Chesters Rekrutierung führt."}
+  },
+  "sovereign-tower/walkthrough/beast-hunt": {
+    "ja": {"title": "ビーストハント攻略", "intro": "アリと狼に関わるビーストハントのルート。適切な騎士と狼ルートの知識。"},
+    "ko": {"title": "비스트 헌트 공략", "intro": "아리와 늑대와 관련된 비스트 헌트 루트. 적절한 기사와 늑대 루트 지식."},
+    "fr": {"title": "La chasse aux bêtes", "intro": "Les routes de chasse liées à Ari et au Loup. Les bons chevaliers et les routes du loup."},
+    "de": {"title": "Biestjagd", "intro": "Die Jagdrouten um Ari und den Wolf. Die richtigen Ritter und Wolfsrouten."}
+  },
+  "sovereign-tower/walkthrough/goose-quest": {
+    "ja": {"title": "ガチョウクエスト攻略", "intro": "Clean Keeper Goose のクエスト線はチェスターを仲間にする。特殊結果と入手ルート。"},
+    "ko": {"title": "거위 퀘스트 공략", "intro": "Clean Keeper Goose 퀘스트 라인은 체스터를 얻는다. 특수 결과와 획득 루트."},
+    "fr": {"title": "La quête de l'oie", "intro": "La quête de l'oie mène à Chester. Les résultats spéciaux et la route."},
+    "de": {"title": "Gänsequest", "intro": "Die Gänsequest führt zu Chester. Sonderergebnisse und die Route."}
+  },
+  "sovereign-tower/walkthrough/rebellion": {
+    "ja": {"title": "反乱攻略", "intro": "ブリムウッドのエピクラテに関わる反乱線。人民と貴族の均衡で彼女の得点を最大化。"},
+    "ko": {"title": "반란 공략", "intro": "브림우드의 에피크라테와 관련된 반란선. 평민과 귀족 균형으로 그녀의 점수 극대화."},
+    "fr": {"title": "La rébellion", "intro": "La chaîne liée à Epicrate de Brimwood. Équilibrez peuple et noblesse."},
+    "de": {"title": "Rebellion", "intro": "Die Kette um Epicrate von Brimwood. Balanciere Volk und Adel."}
+  },
+  "sovereign-tower/systems/annexes": {
+    "ja": {"title": "附属建築ガイド", "intro": "塔のシステムを広げる建築物——鍛冶場は装備、錬金室は消耗品、どちらも新機能を解放。"},
+    "ko": {"title": "부속 건물 가이드", "intro": "탑의 시스템을 넓히는 건물 — 대장간은 장비, 연금실은 소모품, 모두 새 기능 해금."},
+    "fr": {"title": "Guide des annexes", "intro": "Les bâtiments qui étendent les systèmes : la forge pour l'équipement, l'alchimie pour les consommables."},
+    "de": {"title": "Anbauten-Guide", "intro": "Gebäude, die Systeme erweitern: Schmiede für Ausrüstung, Alchemie für Verbrauchsgüter."}
+  },
+  "sovereign-tower/systems/round-table": {
+    "ja": {"title": "円卓システムガイド", "intro": "ソブリンタワーの心臓——毎サイクル騎士をクエストに派遣。幕ごとの容量と緊急採用。"},
+    "ko": {"title": "원탁 시스템 가이드", "intro": "소버린 타워의 심장 — 매 사이클 기사를 퀘스트에 파견. 막별 용량과 비상 고용."},
+    "fr": {"title": "La Table Ronde", "intro": "Le cœur du jeu : assignez des chevaliers chaque cycle. Capacité par acte et recrutement d'urgence."},
+    "de": {"title": "Tafelrunde-System", "intro": "Das Herz des Spiels: Ritter pro Zyklus zuweisen. Kapazität pro Akt und Notfall-Rekrutierung."}
+  },
+  "sovereign-tower/systems/quest-outcomes": {
+    "ja": {"title": "クエスト結果の仕組み", "intro": "6種類の結果——Critical/Greater/Success/FailureとUnexpected。閾値・報酬倍率・特殊結果。"},
+    "ko": {"title": "퀘스트 결과 메커니즘", "intro": "6종 결과 — Critical/Great/Success/Failure와 Unexpected. 임계값·보상 배율·특수 결과."},
+    "fr": {"title": "Résultats de quête", "intro": "Six résultats : critique, grand, succès, échec et inattendu. Seuils, multiplicateurs et spéciaux."},
+    "de": {"title": "Quest-Ergebnisse", "intro": "Sechs Ergebnisse: kritisch, groß, Erfolg, Fehlschlag und unerwartet. Schwellen und Multiplikatoren."}
+  },
+  "sovereign-tower/systems/kingdom-map": {
+    "ja": {"title": "王国地図と地域", "intro": "王国内の地域——ブリズ、グローヴシャー、ガヴォーなど。騎士の故郷と地域ボーナス。"},
+    "ko": {"title": "왕국 지도와 지역", "intro": "왕국의 지역 — 브리즈, 그로브셔, 가볼트 등. 기사의 고향과 지역 보너스."},
+    "fr": {"title": "Carte du royaume", "intro": "Les régions : Brizh, Groveshire, Gavault… Les terres natales et bonus régionaux."},
+    "de": {"title": "Königreichkarte", "intro": "Die Regionen: Brizh, Groveshire, Gavault… Heimaten und Regionsboni."}
+  },
+  "sovereign-tower/systems/audience": {
+    "ja": {"title": "朝会ガイド", "intro": "毎サイクルの朝会——市民の請願に答え、派閥と君主タグを動かす。"},
+    "ko": {"title": "조회 가이드", "intro": "매 사이클의 조회 — 시민 청원에 답하고 파벌과 군주 태그를 움직인다."},
+    "fr": {"title": "L'audience du matin", "intro": "Chaque cycle s'ouvre sur l'audience. Vos réponses font bouger factions et étiquettes du souverain."},
+    "de": {"title": "Morgenaudienz", "intro": "Jeder Zyklus beginnt mit der Audienz. Deine Antworten bewegen Fraktionen und Herrscher-Tags."}
+  },
+  "sovereign-tower/updates": {
+    "ja": {"title": "発売・更新情報", "intro": "ソブリンタワーの発売情報と当サイトの攻略更新ログ——v1.0発売、セール、DLC状況。"},
+    "ko": {"title": "출시·업데이트", "intro": "소버린 타워 출시 정보와 가이드 업데이트 로그 — v1.0 출시, 세일, DLC 현황."},
+    "fr": {"title": "Sortie et mises à jour", "intro": "Sortie du jeu et journal de mises à jour de nos guides — v1.0, promo et DLC."},
+    "de": {"title": "Veröffentlichung & Updates", "intro": "Release-Infos und Update-Log unserer Guides — v1.0, Sale und DLC."}
+  }
+}

@@ -7650,6 +7650,96 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "騎士名簿：全24人",
+     "intro": "ソブリンタワーの24人の騎士は全員雇用可能。出身・初期レベル・鎧・クエスト得点を左右する6属性を一覧で。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "名簿の見方",
+       "body": "",
+       "items": [
+        "属性は0-15。レベル1-15、各レベルで15未満の属性に1ポイント。",
+        "Chesterの属性は完全ランダムで判定ごとに振り直し。",
+        "AlwenaとAriは絶対に辞めず、他は好感度-7で辞任。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "初期ステータスが一番高いのは？",
+         "DaguezはSTR15。EdithとEpicrateは得意値12（MAG/WIT）。"
+        ],
+        [
+         "一周目で24人全員雇える？",
+         "はい——全員雇用可能。ただしDulahan・Alwena・Arron・Brunhildaは特定ストーリーや緊急イベントに紐づく。"
+        ],
+        [
+         "属性の意味は？",
+         "各クエストが1つ以上の属性を要求。上回ると成功に近づく。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "騎士名簿：全24人",
+     "metaDescription": "ソブリンタワーの24人の騎士は全員雇用可能。出身・初期レベル・鎧・クエスト得点を左右する6属性を一覧で。"
+    },
+    "ko": {
+     "title": "기사 명부: 전체 24명",
+     "intro": "소버린 타워의 24명 기사는 전원 고용 가능. 출신·초기 레벨·갑옷·퀘스트 점수를 좌우하는 6종 스탯을 한눈에.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "명부 읽는 법",
+       "body": "",
+       "items": [
+        "스탯은 0-15. 레벨 1-15, 레벨업마다 15 미만 스탯에 1포인트.",
+        "Chester 스탯은 완전 랜덤, 판정마다 리롤.",
+        "Alwena와 Ari는 절대 사임 없고, 나머지는 호감도 -7에서 사임."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "초기 스탯이 가장 높은 기사는?",
+         "Daguez는 STR 15. Edith와 Epicrate는 최고값 12(MAG/WIT)."
+        ],
+        [
+         "1회차에 24명 전원 고용 가능?",
+         "네 — 전원 가능. 단 Dulahan·Alwena·Arron·Brunhilda는 특정 스토리·비상 이벤트에 묶임."
+        ],
+        [
+         "스탯의 의미는?",
+         "각 퀘스트가 1개 이상 스탯을 요구. 초과하면 성공에 가까워진다."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "기사 명부: 전체 24명",
+     "metaDescription": "소버린 타워의 24명 기사는 전원 고용 가능. 출신·초기 레벨·갑옷·퀘스트 점수를 좌우하는 6종 스탯을 한눈에."
+    },
+    "fr": {
+     "title": "Effectif des chevaliers — les 24",
+     "intro": "Les 24 chevaliers de Sovereign Tower sont tous recrutables. Origine, niveau, armure et les six stats.",
+     "metaTitle": "Effectif des chevaliers — les 24",
+     "metaDescription": "Les 24 chevaliers de Sovereign Tower sont tous recrutables. Origine, niveau, armure et les six stats."
+    },
+    "de": {
+     "title": "Ritterkader — alle 24",
+     "intro": "Alle 24 Ritter in Sovereign Tower sind rekrutierbar. Herkunft, Stufe, Rüstung und die sechs Werte.",
+     "metaTitle": "Ritterkader — alle 24",
+     "metaDescription": "Alle 24 Ritter in Sovereign Tower sind rekrutierbar. Herkunft, Stufe, Rüstung und die sechs Werte."
     }
    }
   },
@@ -7797,6 +7887,96 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "騎士ティアリスト（初期ステータス）",
+     "intro": "初期ステータスと特質に基づく実用的なティアリスト——ストーリー条件と好感度が数値と同じくらい重要。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "ティアの注意",
+       "body": "",
+       "items": [
+        "L0初期ステータス基準。隠し特質とストーリーで上昇しうる。",
+        "Chesterのランダム属性は状況依存——必須クエストは任せない。",
+        "ArronのDragon Knight進化（仁善線）は最強の後期強化。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "最強の騎士は？",
+         "初期値でDaguez(15 STR)、Edith(12 MAG)、Childeric(12 WIT/鎧9)。機能でAlwenaが隠し特性を暴く。"
+        ],
+        [
+         "ベスト編成はある？",
+         "ない——クエストは異なる属性を要求。STR/AGI/MAG/WITを均衡させるのが最善。"
+        ],
+        [
+         "隠し特質でティアは変わる？",
+         "変わる——Speedster、Dragon Knight、Time Perceptionは強力。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "騎士ティアリスト（初期ステータス）",
+     "metaDescription": "初期ステータスと特質に基づく実用的なティアリスト——ストーリー条件と好感度が数値と同じくらい重要。"
+    },
+    "ko": {
+     "title": "기사 티어 목록(초기 스탯)",
+     "intro": "초기 스탯과 특성 기반의 실용 티어 목록 — 스토리 조건과 호감도가 수치만큼 중요.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "티어 주의",
+       "body": "",
+       "items": [
+        "L0 초기 스탯 기준. 숨은 특성과 스토리로 상승 가능.",
+        "Chester 랜덤 스탯은 상황 의존 — 필수 퀘스트는 맡기지 말 것.",
+        "Arron의 Dragon Knight 진화(인선 루트)는 최강 후반 강화."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "가장 강한 기사는?",
+         "초기값으로 Daguez(15 STR), Edith(12 MAG), Childeric(12 WIT/갑옷9). 기능으로 Alwena가 숨은 특성 공개."
+        ],
+        [
+         "베스트 조합이 있나요?",
+         "없음 — 퀘스트가 다른 스탯 요구. STR/AGI/MAG/WIT 균형이 최선."
+        ],
+        [
+         "숨은 특성이 티어를 바꾸나요?",
+         "바뀝니다 — Speedster, Dragon Knight, Time Perception이 강력."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "기사 티어 목록(초기 스탯)",
+     "metaDescription": "초기 스탯과 특성 기반의 실용 티어 목록 — 스토리 조건과 호감도가 수치만큼 중요."
+    },
+    "fr": {
+     "title": "Classement des chevaliers",
+     "intro": "Un classement pratique basé sur les stats de départ — les conditions d'histoire comptent autant que les chiffres.",
+     "metaTitle": "Classement des chevaliers",
+     "metaDescription": "Un classement pratique basé sur les stats de départ — les conditions d'histoire comptent autant que les chiffres."
+    },
+    "de": {
+     "title": "Ritter-Tierliste",
+     "intro": "Eine praktische Tierliste nach Startwerten — Story-Bedingungen zählen so viel wie Zahlen.",
+     "metaTitle": "Ritter-Tierliste",
+     "metaDescription": "Eine praktische Tierliste nach Startwerten — Story-Bedingungen zählen so viel wie Zahlen."
     }
    }
   },
@@ -7942,6 +8122,96 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "派閥ガイド：五派閥の均衡",
+     "intro": "商人・秘術師・学者・貴族・平民の五派閥を均衡させる。各クエストと朝政判断が影響し、0にすると危機イベント。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "均衡戦略",
+       "body": "",
+       "items": [
+        "満足度0の派閥は危機イベント——5つ全部を正に保つ。",
+        "一部騎士は派閥バランスで好感度が変動（Epicrate・Tarcusは人民/貴族差）。",
+        "全部使い切って裏切る手もあるが、特定エンドがロックされる。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "どの派閥を優先？",
+         "序盤は人民と商人を健康に。その後は現在のストーリーが求める派閥へ。"
+        ],
+        [
+         "派閥はエンドに影響？",
+         "はい——終盤のバランスが解禁エンドを決める。"
+        ],
+        [
+         "0にした派閥は回復できる？",
+         "はい——喜ぶクエストと仁善な朝政で数サイクルで回復。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "派閥ガイド：五派閥の均衡",
+     "metaDescription": "商人・秘術師・学者・貴族・平民の五派閥を均衡させる。各クエストと朝政判断が影響し、0にすると危機イベント。"
+    },
+    "ko": {
+     "title": "파벌 가이드: 5개 파벌 균형",
+     "intro": "상인·비술사·학자·귀족·평민 5개 파벌 균형. 모든 퀘스트와 조회 결정이 영향을 주며, 0이면 위기 이벤트.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "균형 전략",
+       "body": "",
+       "items": [
+        "만족도 0 파벌은 위기 이벤트 — 5개 모두 양수 유지.",
+        "일부 기사는 파벌 균형으로 호감도 변동(Epicrate·Tarcus는 평민/귀족 차이).",
+        "전부 써버리고 배신하는 방법도 있지만 특정 엔딩이 잠긴다."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "어느 파벌 우선?",
+         "초반은 평민·상인 건강 유지. 이후 현재 스토리가 요구하는 파벌로."
+        ],
+        [
+         "파벌이 엔딩에 영향?",
+         "네 — 막판 균형이 해금 엔딩을 결정."
+        ],
+        [
+         "0이 된 파벌 회복?",
+         "네 — 좋아하는 퀘스트와 인선 조회로 몇 사이클이면 회복."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "파벌 가이드: 5개 파벌 균형",
+     "metaDescription": "상인·비술사·학자·귀족·평민 5개 파벌 균형. 모든 퀘스트와 조회 결정이 영향을 주며, 0이면 위기 이벤트."
+    },
+    "fr": {
+     "title": "Guide des factions",
+     "intro": "Équilibrez les cinq factions : marchands, mystiques, érudits, nobles et peuple. Chaque quête les fait bouger.",
+     "metaTitle": "Guide des factions",
+     "metaDescription": "Équilibrez les cinq factions : marchands, mystiques, érudits, nobles et peuple. Chaque quête les fait bouger."
+    },
+    "de": {
+     "title": "Fraktionen-Guide",
+     "intro": "Balanciere die fünf Fraktionen: Händler, Mystiker, Gelehrte, Adel und Volk. Jede Quest bewegt sie.",
+     "metaTitle": "Fraktionen-Guide",
+     "metaDescription": "Balanciere die fünf Fraktionen: Händler, Mystiker, Gelehrte, Adel und Volk. Jede Quest bewegt sie."
     }
    }
   },
@@ -8239,6 +8509,96 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "全騎士の雇用方法",
+     "intro": "24人の騎士は全員雇用可能だが方法は様々——ストーリー、金、死亡ルート、緊急イベント。判明している雇用条件を網羅。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "雇用のコツ",
+       "body": "",
+       "items": [
+        "複数の騎士がストーリー限定：Dulahan（Goberto死亡線）、Arron（Drakovic）、Brunhilda（Gavault娘側）。",
+        "AlwenaはAct2+で円卓の可用騎士が0の時のみ一度だけ。",
+        "ChesterはClean Keeper Goose Part2の特殊結果の本当の賞品。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "24人全員雇える？",
+         "はい——ただし複数は特定ストーリー・死亡・緊急イベントが必要。"
+        ],
+        [
+         "騎士を取り逃す？",
+         "はい——Alwenaは一度きり。ストーリー騎士は分岐が閉じる前に進めないと失う。"
+        ],
+        [
+         "最初に雇えるのは？",
+         "Angelicaは冒頭で加入。Ariは25金で早期に召喚可能。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "全騎士の雇用方法",
+     "metaDescription": "24人の騎士は全員雇用可能だが方法は様々——ストーリー、金、死亡ルート、緊急イベント。判明している雇用条件を網羅。"
+    },
+    "ko": {
+     "title": "전체 기사 고용 방법",
+     "intro": "24명 기사는 전원 고용 가능하지만 방식은 다양 — 스토리, 돈, 사망 루트, 비상 이벤트. 알려진 고용 조건 총망라.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "고용 팁",
+       "body": "",
+       "items": [
+        "여러 기사가 스토리 한정: Dulahan(Goberto 사망선), Arron(Drakovic), Brunhilda(Gavault 딸 쪽).",
+        "Alwena는 Act2+ 원탁 가용 기사 0명일 때 한 번만.",
+        "Chester는 Clean Keeper Goose Part2 특수 결과의 진짜 상품."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "24명 전원 고용 가능?",
+         "네 — 단 여러 명은 특정 스토리·사망·비상 이벤트 필요."
+        ],
+        [
+         "기사를 놓치나요?",
+         "네 — Alwena는 한 번뿐. 스토리 기사는 분기가 닫히기 전에 진행해야."
+        ],
+        [
+         "가장 먼저 고용할 기사는?",
+         "Angelica는 시작에 합류. Ari는 25골드로 조기 소환."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "전체 기사 고용 방법",
+     "metaDescription": "24명 기사는 전원 고용 가능하지만 방식은 다양 — 스토리, 돈, 사망 루트, 비상 이벤트. 알려진 고용 조건 총망라."
+    },
+    "fr": {
+     "title": "Recruter chaque chevalier",
+     "intro": "Les 24 chevaliers sont recrutables, mais de façons variées — histoire, argent, morts ou urgences.",
+     "metaTitle": "Recruter chaque chevalier",
+     "metaDescription": "Les 24 chevaliers sont recrutables, mais de façons variées — histoire, argent, morts ou urgences."
+    },
+    "de": {
+     "title": "Jeden Ritter rekrutieren",
+     "intro": "Alle 24 Ritter sind rekrutierbar, aber unterschiedlich — Story, Geld, Tod oder Notfälle.",
+     "metaTitle": "Jeden Ritter rekrutieren",
+     "metaDescription": "Alle 24 Ritter sind rekrutierbar, aber unterschiedlich — Story, Geld, Tod oder Notfälle."
     }
    }
   },
@@ -8342,6 +8702,118 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "時間巻き戻しの仕組み",
+     "intro": "運命が悪ければ地窖の悪魔が時間を巻き戻して再判断させる。ゲームの核心的安全網の仕組みと使い時。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "巻き戻しの仕組み",
+       "body": "",
+       "items": [
+        "地窖の悪魔がサイクル失敗時に時間を巻き戻して再判断させる。",
+        "ゲームの核心的安全網——巻き戻せば永久損失なし。",
+        "単周回内で分岐を探れるが、一部は巻き戻しても排他。"
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "いつ巻き戻すか",
+       "body": "",
+       "items": [
+        "騎士を失う大失敗や派閥危機の後。",
+        "違う分岐を試したい時（Act2殺人調査など）。",
+        "派閥バランスのミスが拡大する前。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "巻き戻しにコストは？",
+         "本作では自由式——安全網として設計（正確な上限は待補）。"
+        ],
+        [
+         "無限に巻き戻せる？",
+         "サイクルを跨いで再判断可能。正確な制限は確認中。"
+        ],
+        [
+         "巻き戻しでエンドは変わる？",
+         "はい——重要決定（竜騎士通牒・殺人調査・アーサー同盟）を再rollすると変わる。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "時間巻き戻しの仕組み",
+     "metaDescription": "運命が悪ければ地窖の悪魔が時間を巻き戻して再判断させる。ゲームの核心的安全網の仕組みと使い時。"
+    },
+    "ko": {
+     "title": "시간 되돌리기 메커니즘",
+     "intro": "운명이 나쁘면 지하실의 악마가 시간을 되돌려 재판단하게 한다. 핵심 안전망의 작동 방식과 사용 시기.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "되돌리기 작동",
+       "body": "",
+       "items": [
+        "지하실의 악마가 사이클 실패 시 시간을 되돌려 재판단하게 한다.",
+        "게임의 핵심 안전망 — 되돌릴 수 있으면 영구 손실 없음.",
+        "한 회차 내 분기 탐색 가능하지만 일부는 되돌려도 배타."
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "언제 되돌릴까",
+       "body": "",
+       "items": [
+        "기사를 잃는 대실패나 파벌 위기 후.",
+        "다른 분기를 시도할 때(Act2 살인 조사 등).",
+        "파벌 균형 실수가 커지기 전."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "되돌리기 비용이 있나요?",
+         "본작은 자유식 — 안전망으로 설계(정확한 상한은待補)."
+        ],
+        [
+         "무한히 되돌릴 수 있나요?",
+         "사이클을 넘어 재판단 가능. 정확한 제한은 확인 중."
+        ],
+        [
+         "되돌리기로 엔딩이 바뀌나요?",
+         "네 — 핵심 결정(용기사 통첩·살인 조사·아서 동맹)을 재롤하면 바뀝니다."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "시간 되돌리기 메커니즘",
+     "metaDescription": "운명이 나쁘면 지하실의 악마가 시간을 되돌려 재판단하게 한다. 핵심 안전망의 작동 방식과 사용 시기."
+    },
+    "fr": {
+     "title": "Le retour dans le temps",
+     "intro": "Quand le destin tourne mal, le démon de la cave remonte le temps. Le filet de sécurité du jeu.",
+     "metaTitle": "Le retour dans le temps",
+     "metaDescription": "Quand le destin tourne mal, le démon de la cave remonte le temps. Le filet de sécurité du jeu."
+    },
+    "de": {
+     "title": "Zeit zurückdrehen erklärt",
+     "intro": "Wenn das Schicksal sich wendet, lässt der Dämon im Keller die Zeit zurückdrehen. Das Sicherheitsnetz des Spiels.",
+     "metaTitle": "Zeit zurückdrehen erklärt",
+     "metaDescription": "Wenn das Schicksal sich wendet, lässt der Dämon im Keller die Zeit zurückdrehen. Das Sicherheitsnetz des Spiels."
     }
    }
   },
@@ -8501,6 +8973,98 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "クエスト成功の戦略",
+     "intro": "クエストはソブリンタワーの核心。正しい騎士を正しいクエストに送るかが大成功と全滅を分ける。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "成功に導くコツ",
+       "body": "",
+       "items": [
+        "騎士のステータスをクエスト要求に合わせる。",
+        "好きなタイプと条件を重ねて好感を健康に保つ。",
+        "危険なクエスト前に好きな料理を（+1.5好感+0.5得点）。",
+        "よく使うクエストの要求属性にレベルを振る。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Critical Successに必要な点数は？",
+         "+10以上。+5=Great（報酬1.5倍）、0=普通成功。"
+        ],
+        [
+         "どの騎士を送る？",
+         "要求を上回るステータスを持つ騎士——好きなタイプと料理があれば尚良。"
+        ],
+        [
+         "失敗は永久的？",
+         "失敗結果が返るだけ。巻き戻すか次サイクルで再指派。本当の代償は騎士の死亡。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "クエスト成功の戦略",
+     "metaDescription": "クエストはソブリンタワーの核心。正しい騎士を正しいクエストに送るかが大成功と全滅を分ける。"
+    },
+    "ko": {
+     "title": "퀘스트 성공 전략",
+     "intro": "퀘스트는 소버린 타워의 핵심. 올바른 기사를 올바른 퀘스트에 보내는 것이 대성공과 전멸을 가른다.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "성공으로 이끄는 팁",
+       "body": "",
+       "items": [
+        "기사 스탯을 퀘스트 요구에 맞춘다.",
+        "좋아하는 타입·조건을 겹쳐 호감도를 건강하게.",
+        "위험한 퀘스트 전 좋아하는 요리(+1.5 호감 +0.5 점수).",
+        "자주 쓰는 퀘스트 요구 스탯에 레벨을 투자."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Critical Success에 필요한 점수는?",
+         "+10 이상. +5=Great(보상 1.5배), 0=일반 성공."
+        ],
+        [
+         "어느 기사를 보낼까?",
+         "요구를 초과하는 스탯의 기사 — 좋아하는 타입·요리면 더 좋음."
+        ],
+        [
+         "실패는 영구적인가요?",
+         "실패 결과가 반환될 뿐. 되돌리거나 다음 사이클에 재배정. 진짜 대가는 기사 사망."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "퀘스트 성공 전략",
+     "metaDescription": "퀘스트는 소버린 타워의 핵심. 올바른 기사를 올바른 퀘스트에 보내는 것이 대성공과 전멸을 가른다."
+    },
+    "fr": {
+     "title": "Réussir ses quêtes",
+     "intro": "Les quêtes sont le cœur du jeu. Envoyer le bon chevalier fait la différence entre succès critique et échec.",
+     "metaTitle": "Réussir ses quêtes",
+     "metaDescription": "Les quêtes sont le cœur du jeu. Envoyer le bon chevalier fait la différence entre succès critique et échec."
+    },
+    "de": {
+     "title": "Quest-Erfolg Strategien",
+     "intro": "Quests sind das Herz des Spiels. Den richtigen Ritter zu schicken, macht den Unterschied.",
+     "metaTitle": "Quest-Erfolg Strategien",
+     "metaDescription": "Quests sind das Herz des Spiels. Den richtigen Ritter zu schicken, macht den Unterschied."
     }
    }
   },
@@ -8592,6 +9156,106 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "第0幕：プロローグ攻略",
+     "intro": "ソブリンタワーの冒頭——アーリン顧問の導きで即位、最初の騎士と円卓の循環を学ぶ。",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "プロローグ攻略",
+       "body": "",
+       "items": [
+        [
+         "冒頭の朝会",
+         "アーリン顧問が即位初日を導く。最初の請願に答える——初期回答が最初の派閥行動を形作る。"
+        ],
+        [
+         "最初の騎士",
+         "アンジェリカが冒頭ストーリーで加入（アーリンの姪）。"
+        ],
+        [
+         "最初のクエスト",
+         "アンジェリカを初期クエストに派遣して円卓ループを学ぶ。"
+        ]
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "プロローグはどのくらい？",
+         "最初の1〜2サイクル——朝会→クエスト→巻き戻しのループを学ぶ（正確な長さは待補）。"
+        ],
+        [
+         "プロローグで失敗する？",
+         "永久的にはしない——巻き戻しで初期決定を再rollできる。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "第0幕：プロローグ攻略",
+     "metaDescription": "ソブリンタワーの冒頭——アーリン顧問の導きで即位、最初の騎士と円卓の循環を学ぶ。"
+    },
+    "ko": {
+     "title": "0장: 프롤로그 공략",
+     "intro": "소버린 타워의 서막 — 아린 고문의 안내로 즉위, 첫 기사와 원탁 루프를 배운다.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "프롤로그 공략",
+       "body": "",
+       "items": [
+        [
+         "서막 조회",
+         "아린 고문이 즉위 첫날을 안내. 첫 청원에 답한다 — 초기 답변이 첫 파벌 행동을 만든다."
+        ],
+        [
+         "첫 기사",
+         "안젤리카가 오프닝 스토리에서 합류(아린의 조카)."
+        ],
+        [
+         "첫 퀘스트",
+         "안젤리카를 초기 퀘스트에 파견해 원탁 루프를 배운다."
+        ]
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "프롤로그는 얼마나?",
+         "첫 1~2 사이클 — 조회→퀘스트→되돌리기 루프 학습(정확한 길이는待補)."
+        ],
+        [
+         "프롤로그에서 실패하나요?",
+         "영구적이진 않음 — 되돌리기로 초기 결정을 재롤 가능."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "0장: 프롤로그 공략",
+     "metaDescription": "소버린 타워의 서막 — 아린 고문의 안내로 즉위, 첫 기사와 원탁 루프를 배운다."
+    },
+    "fr": {
+     "title": "Acte 0 : prologue",
+     "intro": "L'ouverture du jeu : le conseiller Arlin vous guide, votre premier chevalier et la boucle de la Table Ronde.",
+     "metaTitle": "Acte 0 : prologue",
+     "metaDescription": "L'ouverture du jeu : le conseiller Arlin vous guide, votre premier chevalier et la boucle de la Table Ronde."
+    },
+    "de": {
+     "title": "Akt 0: Prolog",
+     "intro": "Der Auftakt: Berater Arlin führt dich, dein erster Ritter und die Tafelrunde.",
+     "metaTitle": "Akt 0: Prolog",
+     "metaDescription": "Der Auftakt: Berater Arlin führt dich, dein erster Ritter und die Tafelrunde."
     }
    }
   },
@@ -8665,6 +9329,88 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "第1幕：ガヴォー攻略",
+     "intro": "第1幕のガヴォー鎖は娘側——ガヴォー公女ブルンヒルダを仲間にし、彼女のハント好みを知る。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "ガヴォーストーリー（娘側）",
+       "body": "",
+       "items": [
+        "第1幕のガヴォー鎖は娘側：ガヴォー公女ブルンヒルダがこの鎖に登場（county_quest_gavault_2_daughter_side 以降）。",
+        "ブルンヒルダはガヴォーストーリー経由で加入（候補朝会なし）。",
+        "彼女はHuntを好み、DiplomacyとWaterを嫌う——指派を合わせて好感を保つ。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "ブルンヒルダをどう雇う？",
+         "ガヴォーストーリーの娘側ブランチを進める——その鎖に登場する。"
+        ],
+        [
+         "ブルンヒルダの得意は？",
+         "Huntクエスト。Fire Lady特質で林地では+1被ダメ。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "第1幕：ガヴォー攻略",
+     "metaDescription": "第1幕のガヴォー鎖は娘側——ガヴォー公女ブルンヒルダを仲間にし、彼女のハント好みを知る。"
+    },
+    "ko": {
+     "title": "1장: 가볼트 공략",
+     "intro": "1장의 가볼트 사슬은 딸 쪽 — 가볼트 공주 브룬힐다를 고용하고 그녀의 사냥 선호를 안다.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "가볼트 스토리(딸 쪽)",
+       "body": "",
+       "items": [
+        "1장 가볼트 사슬은 딸 쪽: 가볼트 공주 브룬힐다가 이 사슬에 등장(county_quest_gavault_2_daughter_side 이후).",
+        "브룬힐다는 가볼트 스토리로 합류(후보 조회 없음).",
+        "그녀는 Hunt를 좋아하고 Diplomacy·Water를 싫어함 — 배정을 맞춰 호감 유지."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "브룬힐다는 어떻게 고용?",
+         "가볼트 스토리 딸 쪽 브랜치 진행 — 그 사슬에 등장."
+        ],
+        [
+         "브룬힐다의 강점은?",
+         "Hunt 퀘스트. Fire Lady 특성으로 숲에서 +1 피해."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "1장: 가볼트 공략",
+     "metaDescription": "1장의 가볼트 사슬은 딸 쪽 — 가볼트 공주 브룬힐다를 고용하고 그녀의 사냥 선호를 안다."
+    },
+    "fr": {
+     "title": "Acte 1 : Gavault",
+     "intro": "La chaîne de Gavault côté fille : recrutez Brunhilda et apprenez ses préférences de chasse.",
+     "metaTitle": "Acte 1 : Gavault",
+     "metaDescription": "La chaîne de Gavault côté fille : recrutez Brunhilda et apprenez ses préférences de chasse."
+    },
+    "de": {
+     "title": "Akt 1: Gavault",
+     "intro": "Die Gavault-Kette auf der Tochter-Seite: Rekrutiere Brunhilda und ihre Jagd-Vorlieben.",
+     "metaTitle": "Akt 1: Gavault",
+     "metaDescription": "Die Gavault-Kette auf der Tochter-Seite: Rekrutiere Brunhilda und ihre Jagd-Vorlieben."
     }
    }
   },
@@ -8738,6 +9484,88 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "第1幕：グローヴシャー攻略",
+     "intro": "アンジェリカの故郷グローヴシャーとガチョウ/獣クエスト線——チェスターの雇用につながる。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "グローヴシャーストーリー",
+       "body": "",
+       "items": [
+        "アンジェリカの故郷を中心に、ガチョウ/獣クエスト線につながる。",
+        "アンジェリカはKind君主決定を好み、Tyrannicを嫌う。Assassination・Ghostクエストも嫌う。",
+        "Clean Keeper Goose Part2の特殊結果（チーズ/馬/Gwendan）が本当の賞品チェスターへ。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "グローヴシャーでは何が？",
+         "アンジェリカの故郷とガチョウ/獣クエスト線——チェスターの雇用につながる。"
+        ],
+        [
+         "チェスターをどう得る？",
+         "Clean Keeper Goose Part2の特殊結果を完了——本当の賞品はチェスター。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "第1幕：グローヴシャー攻略",
+     "metaDescription": "アンジェリカの故郷グローヴシャーとガチョウ/獣クエスト線——チェスターの雇用につながる。"
+    },
+    "ko": {
+     "title": "1장: 그로브셔 공략",
+     "intro": "안젤리카의 고향 그로브셔와 거위/짐승 퀘스트 라인 — 체스터 고용으로 이어진다.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "그로브셔 스토리",
+       "body": "",
+       "items": [
+        "안젤리카의 고향을 중심으로 거위/짐승 퀘스트 라인으로 연결.",
+        "안젤리카는 Kind 군주 결정을 좋아하고 Tyrannic을 싫어함. Assassination·Ghost 퀘스트도 싫어함.",
+        "Clean Keeper Goose Part2 특수 결과(치즈/말/Gwendan)가 진짜 상품 체스터로."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "그로브셔에서 무엇이?",
+         "안젤리카의 고향과 거위/짐승 퀘스트 라인 — 체스터 고용으로 연결."
+        ],
+        [
+         "체스터를 어떻게 얻나?",
+         "Clean Keeper Goose Part2 특수 결과 완료 — 진짜 상품은 체스터."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "1장: 그로브셔 공략",
+     "metaDescription": "안젤리카의 고향 그로브셔와 거위/짐승 퀘스트 라인 — 체스터 고용으로 이어진다."
+    },
+    "fr": {
+     "title": "Acte 1 : Groveshire",
+     "intro": "Le comté d'Angelica et la ligne de l'oie — qui mène au recrutement de Chester.",
+     "metaTitle": "Acte 1 : Groveshire",
+     "metaDescription": "Le comté d'Angelica et la ligne de l'oie — qui mène au recrutement de Chester."
+    },
+    "de": {
+     "title": "Akt 1: Groveshire",
+     "intro": "Angelicas Heimat und die Gänselinie — die zu Chesters Rekrutierung führt.",
+     "metaTitle": "Akt 1: Groveshire",
+     "metaDescription": "Angelicas Heimat und die Gänselinie — die zu Chesters Rekrutierung führt."
     }
    }
   },
@@ -8813,6 +9641,90 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "ビーストハント攻略",
+     "intro": "アリと狼に関わるビーストハントのルート。適切な騎士と狼ルートの知識。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "ビーストハントガイド",
+       "body": "",
+       "items": [
+        "アリと狼（The Wolf）に関わる獣/狼クエスト線。",
+        "アリはGriffin Rider（坐騎固定）で強力なScout。Huntは嫌い。",
+        "The WolfはWolf特質（坐騎固定）とLoyal——得点はパーティ平均好感で変化。",
+        "ビーストハントルートの詳細は確認中（待補）。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "ビーストハントに最適な騎士は？",
+         "Goberto・Rufus・Silgurは狩りを好む。Angelicaは嫌う。"
+        ],
+        [
+         "The Wolfをどう得る？",
+         "獣/狼ルート経由と報告。正確な手順は確認中（待補）。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "ビーストハント攻略",
+     "metaDescription": "アリと狼に関わるビーストハントのルート。適切な騎士と狼ルートの知識。"
+    },
+    "ko": {
+     "title": "비스트 헌트 공략",
+     "intro": "아리와 늑대와 관련된 비스트 헌트 루트. 적절한 기사와 늑대 루트 지식.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "비스트 헌트 가이드",
+       "body": "",
+       "items": [
+        "아리와 늑대(The Wolf)와 관련된 짐승/늑대 퀘스트 라인.",
+        "아리는 Griffin Rider(마운트 고정)에 강한 Scout. Hunt는 싫어함.",
+        "The Wolf는 Wolf 특성(마운트 고정)과 Loyal — 점수는 파티 평균 호감도로 변화.",
+        "비스트 헌트 루트 상세는 확인 중(待補)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "비스트 헌트 최적 기사는?",
+         "Goberto·Rufus·Silgur가 사냥 선호. Angelica는 싫어함."
+        ],
+        [
+         "The Wolf를 어떻게 얻나?",
+         "짐승/늑대 루트 경유로 보고. 정확한 절차는 확인 중(待補)."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "비스트 헌트 공략",
+     "metaDescription": "아리와 늑대와 관련된 비스트 헌트 루트. 적절한 기사와 늑대 루트 지식."
+    },
+    "fr": {
+     "title": "La chasse aux bêtes",
+     "intro": "Les routes de chasse liées à Ari et au Loup. Les bons chevaliers et les routes du loup.",
+     "metaTitle": "La chasse aux bêtes",
+     "metaDescription": "Les routes de chasse liées à Ari et au Loup. Les bons chevaliers et les routes du loup."
+    },
+    "de": {
+     "title": "Biestjagd",
+     "intro": "Die Jagdrouten um Ari und den Wolf. Die richtigen Ritter und Wolfsrouten.",
+     "metaTitle": "Biestjagd",
+     "metaDescription": "Die Jagdrouten um Ari und den Wolf. Die richtigen Ritter und Wolfsrouten."
     }
    }
   },
@@ -8886,6 +9798,88 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "ガチョウクエスト攻略",
+     "intro": "Clean Keeper Goose のクエスト線はチェスターを仲間にする。特殊結果と入手ルート。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "ガチョウクエストガイド",
+       "body": "",
+       "items": [
+        "Clean Keeper Gooseのクエストは特殊結果（チーズ/馬/Gwendan）——各1金だが、本当の賞品はチェスター。",
+        "チェスターは完全ランダム属性で全クエストタイプを好む（各指派+1.0好感）。",
+        "ガチョウルートは現時点で唯一のチェスター入手経路。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "ガチョウクエストをどう始める？",
+         "Clean Keeper Goose線として出現。Part2の特殊結果がチェスターをトリガー（正確な条件は待補）。"
+        ],
+        [
+         "チェスターは価値ある？",
+         "はい——何を割り当てても気にしない（全タイプ好感）。ランダム属性の万能枠。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "ガチョウクエスト攻略",
+     "metaDescription": "Clean Keeper Goose のクエスト線はチェスターを仲間にする。特殊結果と入手ルート。"
+    },
+    "ko": {
+     "title": "거위 퀘스트 공략",
+     "intro": "Clean Keeper Goose 퀘스트 라인은 체스터를 얻는다. 특수 결과와 획득 루트.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "거위 퀘스트 가이드",
+       "body": "",
+       "items": [
+        "Clean Keeper Goose 퀘스트는 특수 결과(치즈/말/Gwendan) — 각 1골드지만 진짜 상품은 체스터.",
+        "체스터는 완전 랜덤 스탯에 모든 퀘스트 타입 선호(배정마다 +1.0 호감).",
+        "거위 루트는 현재 유일한 체스터 획득 경로."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "거위 퀘스트 시작법?",
+         "Clean Keeper Goose 라인으로 등장. Part2 특수 결과가 체스터 트리거(정확한 조건은待補)."
+        ],
+        [
+         "체스터는 가치 있나요?",
+         "네 — 뭘 배정해도 신경 안 씀(전 타입 호감). 랜덤 스탯의 만능 자리."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "거위 퀘스트 공략",
+     "metaDescription": "Clean Keeper Goose 퀘스트 라인은 체스터를 얻는다. 특수 결과와 획득 루트."
+    },
+    "fr": {
+     "title": "La quête de l'oie",
+     "intro": "La quête de l'oie mène à Chester. Les résultats spéciaux et la route.",
+     "metaTitle": "La quête de l'oie",
+     "metaDescription": "La quête de l'oie mène à Chester. Les résultats spéciaux et la route."
+    },
+    "de": {
+     "title": "Gänsequest",
+     "intro": "Die Gänsequest führt zu Chester. Sonderergebnisse und die Route.",
+     "metaTitle": "Gänsequest",
+     "metaDescription": "Die Gänsequest führt zu Chester. Sonderergebnisse und die Route."
     }
    }
   },
@@ -8959,6 +9953,88 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "反乱攻略",
+     "intro": "ブリムウッドのエピクラテに関わる反乱線。人民と貴族の均衡で彼女の得点を最大化。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "反乱ストーリー",
+       "body": "",
+       "items": [
+        "ブリムウッド教団の革命家エピクラテに関わる反乱線。",
+        "エピクラテのRevolutionar特質は人民と貴族の満足度差で得点——両者を均衡させる。",
+        "隠しTime Perception：別時間線で既にクエストをやっていれば得点ボーナス（巻き戻しで活用）。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "反乱とは？",
+         "エピクラテとブリムウッドに関わるストーリー線。正確な分岐手順は確認中（待補）。"
+        ],
+        [
+         "エピクラテをどう使う？",
+         "人民と貴族を均衡させてRevolutionarの得点を正に保つ。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "反乱攻略",
+     "metaDescription": "ブリムウッドのエピクラテに関わる反乱線。人民と貴族の均衡で彼女の得点を最大化。"
+    },
+    "ko": {
+     "title": "반란 공략",
+     "intro": "브림우드의 에피크라테와 관련된 반란선. 평민과 귀족 균형으로 그녀의 점수 극대화.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "반란 스토리",
+       "body": "",
+       "items": [
+        "브림우드 교단의 혁명가 에피크라테와 관련된 반란선.",
+        "에피크라테의 Revolutionar 특성은 평민·귀족 만족도 차이로 점수 — 양쪽 균형 유지.",
+        "숨은 Time Perception: 다른 타임라인에서 이미 퀘스트를 했으면 점수 보너스(되돌리기 활용)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "반란은 무엇인가요?",
+         "에피크라테와 브림우드 관련 스토리선. 정확한 분기 절차는 확인 중(待補)."
+        ],
+        [
+         "에피크라테 활용법?",
+         "평민·귀족 균형을 유지해 Revolutionar 점수를 양수로."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "반란 공략",
+     "metaDescription": "브림우드의 에피크라테와 관련된 반란선. 평민과 귀족 균형으로 그녀의 점수 극대화."
+    },
+    "fr": {
+     "title": "La rébellion",
+     "intro": "La chaîne liée à Epicrate de Brimwood. Équilibrez peuple et noblesse.",
+     "metaTitle": "La rébellion",
+     "metaDescription": "La chaîne liée à Epicrate de Brimwood. Équilibrez peuple et noblesse."
+    },
+    "de": {
+     "title": "Rebellion",
+     "intro": "Die Kette um Epicrate von Brimwood. Balanciere Volk und Adel.",
+     "metaTitle": "Rebellion",
+     "metaDescription": "Die Kette um Epicrate von Brimwood. Balanciere Volk und Adel."
     }
    }
   },
@@ -9032,6 +10108,88 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "附属建築ガイド",
+     "intro": "塔のシステムを広げる建築物——鍛冶場は装備、錬金室は消耗品、どちらも新機能を解放。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "附属建築と拡張",
+       "body": "",
+       "items": [
+        "Annexesは塔にシステムを追加する建築：Carina's Forgeは装備の修理/製作、Witch's Alchemy Roomは消耗品。",
+        "建造・アップグレードで騎士・道具・ストーリーが解放される。",
+        "正確な附属建築リストとコストは確認中（待補）。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Annexesの効果は？",
+         "システムを追加——鍛冶場は装備、錬金室は消耗品——そして進行を解放。"
+        ],
+        [
+         "最初に建てるべきは？",
+         "騎士の鎧修理を保つため鍛冶場が優先と報告（正確な解放は待補）。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "附属建築ガイド",
+     "metaDescription": "塔のシステムを広げる建築物——鍛冶場は装備、錬金室は消耗品、どちらも新機能を解放。"
+    },
+    "ko": {
+     "title": "부속 건물 가이드",
+     "intro": "탑의 시스템을 넓히는 건물 — 대장간은 장비, 연금실은 소모품, 모두 새 기능 해금.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "부속 건물과 확장",
+       "body": "",
+       "items": [
+        "Annexes는 탑에 시스템을 추가하는 건물: Carina's Forge는 장비 수리/제작, Witch's Alchemy Room은 소모품.",
+        "건설·업그레이드로 기사·도구·스토리 해금.",
+        "정확한 부속 건물 목록과 비용은 확인 중(待補)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Annexes 효과는?",
+         "시스템 추가 — 대장간은 장비, 연금실은 소모품 — 그리고 진행 해금."
+        ],
+        [
+         "먼저 지을 건물은?",
+         "기사 갑옷 수리를 위해 대장간 우선으로 보고(정확한 해금은待補)."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "부속 건물 가이드",
+     "metaDescription": "탑의 시스템을 넓히는 건물 — 대장간은 장비, 연금실은 소모품, 모두 새 기능 해금."
+    },
+    "fr": {
+     "title": "Guide des annexes",
+     "intro": "Les bâtiments qui étendent les systèmes : la forge pour l'équipement, l'alchimie pour les consommables.",
+     "metaTitle": "Guide des annexes",
+     "metaDescription": "Les bâtiments qui étendent les systèmes : la forge pour l'équipement, l'alchimie pour les consommables."
+    },
+    "de": {
+     "title": "Anbauten-Guide",
+     "intro": "Gebäude, die Systeme erweitern: Schmiede für Ausrüstung, Alchemie für Verbrauchsgüter.",
+     "metaTitle": "Anbauten-Guide",
+     "metaDescription": "Gebäude, die Systeme erweitern: Schmiede für Ausrüstung, Alchemie für Verbrauchsgüter."
     }
    }
   },
@@ -9105,6 +10263,88 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "円卓システムガイド",
+     "intro": "ソブリンタワーの心臓——毎サイクル騎士をクエストに派遣。幕ごとの容量と緊急採用。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "円卓システム",
+       "body": "",
+       "items": [
+        "円卓は毎サイクル騎士をクエストに指派する場所。",
+        "容量はストーリーで増加：Act1=6、Act2=8、Act3=10。",
+        "正しい騎士を正しいクエストに——属性・好きなタイプ・好きな料理が得点に効く。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "円卓はどう動く？",
+         "毎サイクル利用可能な騎士をクエストに指派。結果はCritical/Success/Failureで返る。"
+        ],
+        [
+         "円卓は空になる？",
+         "なる——Act2+で可用騎士0ならAlwenaが一度だけ緊急自薦。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "円卓システムガイド",
+     "metaDescription": "ソブリンタワーの心臓——毎サイクル騎士をクエストに派遣。幕ごとの容量と緊急採用。"
+    },
+    "ko": {
+     "title": "원탁 시스템 가이드",
+     "intro": "소버린 타워의 심장 — 매 사이클 기사를 퀘스트에 파견. 막별 용량과 비상 고용.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "원탁 시스템",
+       "body": "",
+       "items": [
+        "원탁은 매 사이클 기사를 퀘스트에 배정하는 곳.",
+        "용량은 스토리로 증가: Act1=6, Act2=8, Act3=10.",
+        "올바른 기사를 올바른 퀘스트에 — 스탯·선호 타입·선호 요리가 점수에 작용."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "원탁은 어떻게 작동?",
+         "매 사이클 가용 기사를 퀘스트에 배정. 결과는 Critical/Success/Failure로 반환."
+        ],
+        [
+         "원탁이 비나요?",
+         "네 — Act2+ 가용 기사 0이면 Alwena가 한 번 비상 자원."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "원탁 시스템 가이드",
+     "metaDescription": "소버린 타워의 심장 — 매 사이클 기사를 퀘스트에 파견. 막별 용량과 비상 고용."
+    },
+    "fr": {
+     "title": "La Table Ronde",
+     "intro": "Le cœur du jeu : assignez des chevaliers chaque cycle. Capacité par acte et recrutement d'urgence.",
+     "metaTitle": "La Table Ronde",
+     "metaDescription": "Le cœur du jeu : assignez des chevaliers chaque cycle. Capacité par acte et recrutement d'urgence."
+    },
+    "de": {
+     "title": "Tafelrunde-System",
+     "intro": "Das Herz des Spiels: Ritter pro Zyklus zuweisen. Kapazität pro Akt und Notfall-Rekrutierung.",
+     "metaTitle": "Tafelrunde-System",
+     "metaDescription": "Das Herz des Spiels: Ritter pro Zyklus zuweisen. Kapazität pro Akt und Notfall-Rekrutierung."
     }
    }
   },
@@ -9180,6 +10420,87 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "クエスト結果の仕組み",
+     "intro": "6種類の結果——Critical/Greater/Success/FailureとUnexpected。閾値・報酬倍率・特殊結果。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "クエスト結果の説明",
+       "body": "",
+       "items": [
+        "結果はCritical Success/Great Success/Success/Major Failure/Critical Failure/Unexpected Outcome。",
+        "得点閾値：+10 critical、+5 great、0 success、-5 major failure、-10 critical failure。",
+        "GreatとCriticalは報酬を1.5倍・2倍に。",
+        "Unexpected Outcomeは特質やストーリーキーで発生する特殊イベント。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Unexpected Outcomeとは？",
+         "特定の特質やストーリー条件で発生する特殊結果。",
+         "どのようにGreat/Criticalを得る？"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "クエスト結果の仕組み",
+     "metaDescription": "6種類の結果——Critical/Greater/Success/FailureとUnexpected。閾値・報酬倍率・特殊結果。"
+    },
+    "ko": {
+     "title": "퀘스트 결과 메커니즘",
+     "intro": "6종 결과 — Critical/Great/Success/Failure와 Unexpected. 임계값·보상 배율·특수 결과.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "퀘스트 결과 설명",
+       "body": "",
+       "items": [
+        "결과는 Critical Success/Great Success/Success/Major Failure/Critical Failure/Unexpected Outcome.",
+        "점수 임계값: +10 critical, +5 great, 0 success, -5 major failure, -10 critical failure.",
+        "Great와 Critical은 보상 1.5배·2배.",
+        "Unexpected Outcome은 특성·스토리 키로 발생하는 특수 이벤트."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Unexpected Outcome이란?",
+         "특정 특성·스토리 조건으로 발생하는 특수 결과."
+        ],
+        [
+         "Great/Critical 얻는 법?",
+         "기사 스탯을 요구보다 크게 초과하고 선호 조건을 쌓는다."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "퀘스트 결과 메커니즘",
+     "metaDescription": "6종 결과 — Critical/Great/Success/Failure와 Unexpected. 임계값·보상 배율·특수 결과."
+    },
+    "fr": {
+     "title": "Résultats de quête",
+     "intro": "Six résultats : critique, grand, succès, échec et inattendu. Seuils, multiplicateurs et spéciaux.",
+     "metaTitle": "Résultats de quête",
+     "metaDescription": "Six résultats : critique, grand, succès, échec et inattendu. Seuils, multiplicateurs et spéciaux."
+    },
+    "de": {
+     "title": "Quest-Ergebnisse",
+     "intro": "Sechs Ergebnisse: kritisch, groß, Erfolg, Fehlschlag und unerwartet. Schwellen und Multiplikatoren.",
+     "metaTitle": "Quest-Ergebnisse",
+     "metaDescription": "Sechs Ergebnisse: kritisch, groß, Erfolg, Fehlschlag und unerwartet. Schwellen und Multiplikatoren."
     }
    }
   },
@@ -9253,6 +10574,88 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "王国地図と地域",
+     "intro": "王国内の地域——ブリズ、グローヴシャー、ガヴォーなど。騎士の故郷と地域ボーナス。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "王国の地域",
+       "body": "",
+       "items": [
+        "王国はブリズ、クローバーモント/グローヴシャー、フォート・ガヴォー、ドラコヴィッチ城、アヴァロン、アルモラ、ブリムウッドなど複数地域にまたがる。",
+        "地域名は騎士の出身から——各騎士の故郷はクエスト地点になり、フレーバーボーナス（AlwenaのBrizh Connoisseur等）が付く。",
+        "完全なインタラクティブ王国地図は未確認（待補）。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "地域が重要な理由は？",
+         "一部特質は地域で得点ボーナス（Brizh Connoisseur等）。故郷のクエストに騎士を送ると有利。"
+        ],
+        [
+         "地図はある？",
+         "ゲーム内に王国地図（kingdom-map）はあるが正確なレイアウトは確認中（待補）。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "王国地図と地域",
+     "metaDescription": "王国内の地域——ブリズ、グローヴシャー、ガヴォーなど。騎士の故郷と地域ボーナス。"
+    },
+    "ko": {
+     "title": "왕국 지도와 지역",
+     "intro": "왕국의 지역 — 브리즈, 그로브셔, 가볼트 등. 기사의 고향과 지역 보너스.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "왕국의 지역",
+       "body": "",
+       "items": [
+        "왕국은 브리즈, 클로버몬트/그로브셔, 포트 가볼트, 드라코비치 성, 아발론, 알모라, 브림우드 등 여러 지역에 걸침.",
+        "지역명은 기사 출신에서 — 각 기사의 고향은 퀘스트 장소가 되고 풍미 보너스(Alwena의 Brizh Connoisseur 등)가 붙음.",
+        "완전한 인터랙티브 왕국 지도는 미확인(待補)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "지역이 중요한 이유?",
+         "일부 특성은 지역별 점수 보너스(Brizh Connoisseur 등). 고향 퀘스트에 기사를 보내면 유리."
+        ],
+        [
+         "지도가 있나요?",
+         "게임 내 왕국 지도(kingdom-map)는 있지만 정확한 레이아웃은 확인 중(待補)."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "왕국 지도와 지역",
+     "metaDescription": "왕국의 지역 — 브리즈, 그로브셔, 가볼트 등. 기사의 고향과 지역 보너스."
+    },
+    "fr": {
+     "title": "Carte du royaume",
+     "intro": "Les régions : Brizh, Groveshire, Gavault… Les terres natales et bonus régionaux.",
+     "metaTitle": "Carte du royaume",
+     "metaDescription": "Les régions : Brizh, Groveshire, Gavault… Les terres natales et bonus régionaux."
+    },
+    "de": {
+     "title": "Königreichkarte",
+     "intro": "Die Regionen: Brizh, Groveshire, Gavault… Heimaten und Regionsboni.",
+     "metaTitle": "Königreichkarte",
+     "metaDescription": "Die Regionen: Brizh, Groveshire, Gavault… Heimaten und Regionsboni."
     }
    }
   },
@@ -9326,6 +10729,88 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "朝会ガイド",
+     "intro": "毎サイクルの朝会——市民の請願に答え、派閥と君主タグを動かす。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "朝会（モーニングコート）",
+       "body": "",
+       "items": [
+        "各サイクルは朝会から始まる：市民が園芸から悪魔退治まで請願を持ち込む。",
+        "答え方が派閥満足度と騎士の評価を変える。",
+        "朝政判断は君主タグ（Tyrannic、Wise、Kind、Audacious、Omniscient）を適用し、騎士が反応する。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "朝会では何をすべき？",
+         "誠実に答える——各決定が派閥を動かし騎士が反応する君主タグを適用する。"
+        ],
+        [
+         "朝会の回答は何かをロック？",
+         "派閥表と騎士好感に効く。極端な選択は危機イベントや特殊エンドを設定しうる。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "朝会ガイド",
+     "metaDescription": "毎サイクルの朝会——市民の請願に答え、派閥と君主タグを動かす。"
+    },
+    "ko": {
+     "title": "조회 가이드",
+     "intro": "매 사이클의 조회 — 시민 청원에 답하고 파벌과 군주 태그를 움직인다.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "조회(모닝 코트)",
+       "body": "",
+       "items": [
+        "각 사이클은 조회로 시작: 시민이 정원 가꾸기부터 악마 사냥까지 청원을 가져온다.",
+        "답변 방식이 파벌 만족도와 기사 평가를 바꾼다.",
+        "조정 결정은 군주 태그(Tyrannic, Wise, Kind, Audacious, Omniscient)를 적용하고 기사가 반응한다."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "조회에서 무엇을 해야?",
+         "성실히 답한다 — 각 결정이 파벌을 움직이고 기사가 반응하는 군주 태그를 적용."
+        ],
+        [
+         "조회 답변이 뭘 잠그나요?",
+         "파벌 게이지와 기사 호감에 작용. 극단 선택은 위기 이벤트나 특수 엔딩을 설정할 수 있음."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "조회 가이드",
+     "metaDescription": "매 사이클의 조회 — 시민 청원에 답하고 파벌과 군주 태그를 움직인다."
+    },
+    "fr": {
+     "title": "L'audience du matin",
+     "intro": "Chaque cycle s'ouvre sur l'audience. Vos réponses font bouger factions et étiquettes du souverain.",
+     "metaTitle": "L'audience du matin",
+     "metaDescription": "Chaque cycle s'ouvre sur l'audience. Vos réponses font bouger factions et étiquettes du souverain."
+    },
+    "de": {
+     "title": "Morgenaudienz",
+     "intro": "Jeder Zyklus beginnt mit der Audienz. Deine Antworten bewegen Fraktionen und Herrscher-Tags.",
+     "metaTitle": "Morgenaudienz",
+     "metaDescription": "Jeder Zyklus beginnt mit der Audienz. Deine Antworten bewegen Fraktionen und Herrscher-Tags."
     }
    }
   },
@@ -9401,6 +10886,90 @@
        ]
       }
      ]
+    },
+    "ja": {
+     "title": "発売・更新情報",
+     "intro": "ソブリンタワーの発売情報と当サイトの攻略更新ログ——v1.0発売、セール、DLC状況。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "発売と更新",
+       "body": "",
+       "items": [
+        "2026-08-06 発売（v1.0、早期アクセスではない）。",
+        "ローンチセール：2026-08-20まで15%OFF（国内¥57.80）。",
+        "DLCが2つ付属（appid 4870280 / 4911710）——内容は確認中（待補）。",
+        "本ページは当サイトの攻略更新ログ。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "ソブリンタワーはいつ発売？",
+         "2026-08-06、正式版（早期アクセスではない）。"
+        ],
+        [
+         "DLCには何が？",
+         "SteamにDLCが2つ——内容は確認中（待補）。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "発売・更新情報",
+     "metaDescription": "ソブリンタワーの発売情報と当サイトの攻略更新ログ——v1.0発売、セール、DLC状況。"
+    },
+    "ko": {
+     "title": "출시·업데이트",
+     "intro": "소버린 타워 출시 정보와 가이드 업데이트 로그 — v1.0 출시, 세일, DLC 현황.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "출시와 업데이트",
+       "body": "",
+       "items": [
+        "2026-08-06 출시(v1.0, 얼리 액세스 아님).",
+        "출시 세일: 2026-08-20까지 15% OFF(한국가 미확인).",
+        "DLC 2개 첨부(appid 4870280 / 4911710) — 내용 확인 중(待補).",
+        "본 페이지는 가이드 업데이트 로그."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "소버린 타워는 언제 출시?",
+         "2026-08-06, 정식판(얼리 액세스 아님)."
+        ],
+        [
+         "DLC 내용은?",
+         "Steam에 DLC 2개 — 내용 확인 중(待補)."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "출시·업데이트",
+     "metaDescription": "소버린 타워 출시 정보와 가이드 업데이트 로그 — v1.0 출시, 세일, DLC 현황."
+    },
+    "fr": {
+     "title": "Sortie et mises à jour",
+     "intro": "Sortie du jeu et journal de mises à jour de nos guides — v1.0, promo et DLC.",
+     "metaTitle": "Sortie et mises à jour",
+     "metaDescription": "Sortie du jeu et journal de mises à jour de nos guides — v1.0, promo et DLC."
+    },
+    "de": {
+     "title": "Veröffentlichung & Updates",
+     "intro": "Release-Infos und Update-Log unserer Guides — v1.0, Sale und DLC.",
+     "metaTitle": "Veröffentlichung & Updates",
+     "metaDescription": "Release-Infos und Update-Log unserer Guides — v1.0, Sale und DLC."
     }
    }
   }

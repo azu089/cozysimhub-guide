@@ -655,6 +655,18 @@ for page in ALL_PAGES:
     else:
         d["pages"].append(page)
 
+# ja/ko/fr/de 页面 title/intro 翻译（data/i18n_pages2.json，内容补齐新页面）
+import json as _j4
+_i18n_pages2 = _j4.loads((ROOT / "i18n_pages2.json").read_text(encoding="utf8"))
+for _page in ALL_PAGES:
+    _tr2 = _i18n_pages2.get(_page["slug"])
+    if not _tr2:
+        continue
+    for _lang2, _t2 in _tr2.items():
+        _page.setdefault("i18n", {})[_lang2] = {
+            "title": _t2.get("title"), "intro": _t2.get("intro"),
+        }
+
 # --- ja/ko sections 翻译合并（data/i18n_sections.json）---
 import json as _j3
 _i18n_sec = _j3.loads((ROOT / "i18n_sections.json").read_text(encoding="utf8"))
@@ -664,6 +676,17 @@ for _sp, _langs in _i18n_sec.items():
         for _lg, _secs in _langs.items():
             if _lg in _pp.get("i18n", {}):
                 _pp["i18n"][_lg]["sections"] = _secs
+
+# ja/ko sections 翻译合并2（data/i18n_sections2.json，内容补齐新页面）
+import json as _j5
+_i18n_sec2 = _j5.loads((ROOT / "i18n_sections2.json").read_text(encoding="utf8"))
+for _sp2, _langs2 in _i18n_sec2.items():
+    for _pp2 in d["pages"]:
+        if _pp2.get("slug") != _sp2:
+            continue
+        for _lg2, _secs2 in _langs2.items():
+            if _lg2 in _pp2.get("i18n", {}):
+                _pp2["i18n"][_lg2]["sections"] = _secs2
 
 # --- meta 自动补全（ja/ko/fr/de 缺 metaTitle/metaDescription 时从 title/intro 生成并截断）---
 def _clip(s, n):
