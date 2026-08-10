@@ -240,8 +240,8 @@ def build_guides_questsuccess():
     zh_secs = [table(["得分", "阈值", "奖励"], SCORE_THRESHOLDS), notes("怎么把任务推向成功", zh_note), faq_block(zh_faq)]
     return {"slug": "sovereign-tower/guides/quest-success", "title": "Quest Success Strategies", "metaTitle": "Sovereign Tower: How to Succeed at Quests — Score Formula & Strategy", "metaDescription": "Push Sovereign Tower quests to success: stat matching, liked quest stacking, favourite meals and levelling — with the full score thresholds.", "intro": "Quests are the heart of Sovereign Tower. Matching the right knight to the right quest is the difference between critical success and a total wipe.", "sections": en_secs, "i18n": {"zh-CN": {"title": "任务成功策略", "metaTitle": "君王之塔 任务怎么成功：得分公式与策略", "metaDescription": "把君王之塔任务推向成功：属性匹配、叠加喜欢任务、最爱菜与升级——含完整得分阈值。", "intro": "任务是君王之塔的核心。把正确的骑士派到正确的任务，是 Critical Success 和全军覆没的区别。", "sections": zh_secs}}}
 
-def _wt(slug, title, metaT, metaD, intro, en_secs, zh_secs):
-    return {"slug": slug, "title": title, "metaTitle": metaT, "metaDescription": metaD, "intro": intro, "sections": en_secs, "i18n": {"zh-CN": {"title": title, "metaTitle": metaT, "metaDescription": metaD, "intro": intro, "sections": zh_secs}}}
+def _wt(slug, title, metaT, metaD, intro, en_secs, zh_secs, zh_intro=None):
+    return {"slug": slug, "title": title, "metaTitle": metaT, "metaDescription": metaD, "intro": intro, "sections": en_secs, "i18n": {"zh-CN": {"title": title, "metaTitle": metaT, "metaDescription": metaD, "intro": zh_intro or intro, "sections": zh_secs}}}
 
 def build_walkthrough_act0():
     en_steps = [
@@ -524,3 +524,182 @@ def build_updates_log():
     en_secs = [notes("Release & updates", en_note), faq_block(en_faq)]
     zh_secs = [notes("发售与更新", zh_note), faq_block(zh_faq)]
     return _wt("sovereign-tower/updates", "Release & Update Log", "Sovereign Tower Release & Update Log", "Sovereign Tower release info and our guide update log: v1.0 launch, sale and DLC status.", "The Sovereign Tower changelog: release date, sale status, DLC and what we are verifying next.", en_secs, zh_secs)
+
+# ================= review + items 板块 =================
+
+def build_review_sysreq():
+    en_rows = [
+        ["Minimum", "Windows 10 / i5-4670K / 4GB RAM / GT 1030 2GB / DX12 / 3GB"],
+        ["Recommended", "Windows 11 / i5-9600K / 8GB RAM / GTX 1060 6GB / DX12 / 3GB"],
+        ["Linux / Steam Deck", "SteamOS 3.8.10 / Zen2 4c8t / 4-8GB / RDNA2 8CU (Deck Verified)"],
+    ]
+    en_faq = [
+        ["Does it run on Mac?", "No official macOS support — Windows and Linux/SteamOS only."],
+        ["Is it Steam Deck verified?", "Yes, per the official store page (Steam Deck Verified)."],
+    ]
+    zh_rows = [
+        ["最低配置", "Windows 10 / i5-4670K / 4GB 内存 / GT 1030 2GB / DX12 / 3GB"],
+        ["推荐配置", "Windows 11 / i5-9600K / 8GB 内存 / GTX 1060 6GB / DX12 / 3GB"],
+        ["Linux / Steam Deck", "SteamOS 3.8.10 / Zen2 4c8t / 4-8GB / RDNA2 8CU（Deck Verified）"],
+    ]
+    zh_faq = [
+        ["支持 Mac 吗？", "官方不支持 macOS——仅 Windows 和 Linux/SteamOS。"],
+        ["Steam Deck 验证了吗？", "验证了（官方商店页 Steam Deck Verified）。"],
+    ]
+    en_secs = [table(["", "Requirements"], en_rows), faq_block(en_faq)]
+    zh_secs = [table(["", "配置要求"], zh_rows), faq_block(zh_faq)]
+    return _wt("sovereign-tower/review/system-requirements", "System Requirements", "Sovereign Tower System Requirements — Min, Recommended & Steam Deck", "Sovereign Tower system requirements: minimum, recommended and Steam Deck specs from the official store page.", "Sovereign Tower runs on Windows and Linux/SteamOS. Here are the official minimum, recommended and Steam Deck specs.", en_secs, zh_secs, "君王之塔支持 Windows 和 Linux/SteamOS。这里是官方最低、推荐与 Steam Deck 配置。")
+
+def build_review_overview():
+    en_rows = [
+        ["Metacritic", "86 (store-page field)"],
+        ["Steam rating", "Very Positive — 90% of 700+ reviews"],
+        ["Release", "2026-08-06 (full release, not early access)"],
+        ["Genre", "Indie / RPG — Round Table management"],
+        ["Publisher", "Curve Games"],
+    ]
+    en_note = [
+        "Reviews praise the witty, sharp writing, the Round Table quest loop and the time-rewind safety net.",
+        "Some players find the rewind mechanic's learning curve steep (per a Chinese hands-on review).",
+        "Unexpected outcomes and hidden traits keep replays interesting.",
+    ]
+    en_faq = [
+        ["Is Sovereign Tower worth it?", "Strong reviews (Metacritic 86, 90% positive on Steam) for a management-RPG crowd that likes narrative and rewind mechanics."],
+        ["Is it like Reigns?", "It has a similar 'assign and see' court rhythm, but with deeper knight stats, quest scoring and story branches."],
+    ]
+    zh_rows = [
+        ["Metacritic", "86（商店页字段）"],
+        ["Steam 评价", "特别好评——700+ 评测中 90% 好评"],
+        ["发售", "2026-08-06（正式版，非抢先体验）"],
+        ["类型", "独立 / RPG——圆桌管理"],
+        ["发行商", "Curve Games"],
+    ]
+    zh_note = [
+        "评测称赞毒舌而敏锐的文案、圆桌任务循环和时间回溯安全网。",
+        "部分玩家觉得回溯机制的入门曲线陡（中文体验文）。",
+        "Unexpected Outcome 和隐藏特质让重玩更有趣。",
+    ]
+    zh_faq = [
+        ["君王之塔值得买吗？", "评测很强（Metacritic 86、Steam 90% 好评）——适合喜欢叙事和回溯机制的管理 RPG 玩家。"],
+        ["像 Reigns 吗？", "有类似的「指派与查看」宫廷节奏，但骑士属性、任务得分和剧情分支更深。"],
+    ]
+    en_secs = [table(["Metric", "Value"], en_rows), notes("What reviews say", en_note), faq_block(en_faq)]
+    zh_secs = [table(["指标", "数值"], zh_rows), notes("评测说了什么", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/review/overview", "Review Overview", "Sovereign Tower Review — Metacritic 86, Steam 90% Positive", "Sovereign Tower review overview: Metacritic 86, Steam 90% positive, what critics and players praise.", "Sovereign Tower landed strong reviews at launch. Here is the overview — scores, what's praised and who it's for.", en_secs, zh_secs)
+
+def build_review_releasedemo():
+    en_note = [
+        "Released 2026-08-06 as a full v1.0 (not early access).",
+        "A demo was available before launch (official Demo Trailer exists).",
+        "Launch sale: 15% off until 2026-08-20.",
+        "Two DLCs are attached (待补 contents).",
+    ]
+    en_faq = [
+        ["Is there a demo?", "Yes — a demo was available pre-launch; check the Steam page for current demo status."],
+        ["When is the next update?", "Follow the in-game updates and our update log; patch cadence is still being tracked (待补)."],
+    ]
+    zh_note = [
+        "2026-08-06 作为完整 v1.0 发售（非抢先体验）。",
+        "发售前有 demo（官方 Demo Trailer 存在）。",
+        "首发特惠：-15% 至 2026-08-20。",
+        "已挂 2 个 DLC（内容待补）。",
+    ]
+    zh_faq = [
+        ["有 demo 吗？", "有——发售前开放过 demo；当前 demo 状态看 Steam 页。"],
+        ["下次更新什么时候？", "关注游戏内更新和我们的更新日志；补丁节奏仍在追踪（待补）。"],
+    ]
+    en_secs = [notes("Release & demo", en_note), faq_block(en_faq)]
+    zh_secs = [notes("发售与 demo", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/review/release-demo", "Release & Demo Info", "Sovereign Tower Release, Demo & Availability", "Sovereign Tower release and demo info: v1.0 date, demo availability, sale and DLC status.", "When did Sovereign Tower come out, is there a demo, and what's the DLC situation? Everything about availability.", en_secs, zh_secs)
+
+def build_review_soundtrack():
+    en_note = [
+        "The game's official tags include soundtrack-adjacent qualities; the launch trailer features original music (待补 exact composer/album).",
+        "Soundtrack details (composer, track list, availability on streaming) are still being verified (待补).",
+        "Check the Steam store page and the game's official channels for soundtrack news.",
+    ]
+    en_faq = [
+        ["Is there an official soundtrack?", "Not yet confirmed publicly (待补) — check the Steam page and developer channels."],
+        ["Who composed the music?", "Still being verified (待补)."],
+    ]
+    zh_note = [
+        "游戏官方标签包含原声相关的品质；启动预告片带有原创音乐（确切作曲人/专辑待补）。",
+        "原声细节（作曲人、曲目、流媒体上架）仍在核实（待补）。",
+        "查看 Steam 商店页和官方渠道获取原声消息。",
+    ]
+    zh_faq = [
+        ["有官方原声吗？", "尚未公开确认（待补）——查看 Steam 页和开发者渠道。"],
+        ["音乐谁作曲？", "仍在核实（待补）。"],
+    ]
+    en_secs = [notes("Soundtrack status", en_note), faq_block(en_faq)]
+    zh_secs = [notes("原声状态", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/review/soundtrack", "Soundtrack Info", "Sovereign Tower Soundtrack — Music & Composer", "Sovereign Tower soundtrack status: what's known about the music, composer and availability.", "The music of Sovereign Tower adds a lot to its tone. Here is what we know so far about the soundtrack.", en_secs, zh_secs)
+
+def build_items_overview():
+    en_note = [
+        "Sovereign Tower has consumables and crafting gear across the tower's systems (Forge, Alchemy Room).",
+        "Item lists are still being verified in-game (待补) — this overview will grow as we confirm items.",
+        "Key item families reported: consumables (potions, food) and crafting gear (weapons, armour materials).",
+    ]
+    en_faq = [
+        ["What items exist in the game?", "Consumables and crafting gear are confirmed families; the full list is still being verified (待补)."],
+        ["Where do I get items?", "The Forge crafts gear and the Alchemy Room makes consumables (exact recipes 待补)."],
+    ]
+    zh_note = [
+        "君王之塔在塔的系统（锻炉、炼金室）里有消耗品和锻造装备。",
+        "物品清单仍在游戏内核实（待补）——本总览会随确认增长。",
+        "已报告的关键物品族：消耗品（药水、食物）和锻造装备（武器、护甲材料）。",
+    ]
+    zh_faq = [
+        ["游戏里有什么物品？", "已确认消耗品和锻造装备两类；完整清单仍在核实（待补）。"],
+        ["物品从哪来？", "锻炉做装备、炼金室做消耗品（确切配方待补）。"],
+    ]
+    en_secs = [notes("Items overview", en_note), faq_block(en_faq)]
+    zh_secs = [notes("物品总览", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/items/overview", "Items Overview", "Sovereign Tower Items Overview — Consumables & Crafting Gear", "Sovereign Tower items overview: consumables and crafting gear families, where to get them and what we're verifying.", "An overview of Sovereign Tower's items — consumables and crafting gear — with what we've confirmed so far.", en_secs, zh_secs)
+
+def build_items_consumables():
+    en_note = [
+        "The Witch's Alchemy Room makes consumables (potions, food) for quests and recovery.",
+        "Consumable recipes and effects are still being verified (待补).",
+        "Favourite meals give +1.5 affinity and +0.5 quest score — food is the most confirmed consumable family.",
+    ]
+    en_faq = [
+        ["What consumables are there?", "Potions and food are reported; the full list is still being verified (待补)."],
+        ["Are meals consumables?", "Yes — the 6 dishes are food consumables; feeding favourites boosts affinity and score."],
+    ]
+    zh_note = [
+        "炼金室制作消耗品（药水、食物），用于任务和恢复。",
+        "消耗品配方和效果仍在核实（待补）。",
+        "最爱菜给 +1.5 好感和 +0.5 任务分——食物是最确认的消耗品族。",
+    ]
+    zh_faq = [
+        ["有什么消耗品？", "已报告药水和食物；完整清单仍在核实（待补）。"],
+        ["菜算消耗品吗？", "算——6 种菜是食物消耗品；喂最爱菜加好感与得分。"],
+    ]
+    en_secs = [notes("Consumables guide", en_note), faq_block(en_faq)]
+    zh_secs = [notes("消耗品攻略", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/items/consumables", "Consumables Guide", "Sovereign Tower Consumables — Potions & Food", "Sovereign Tower consumables: potions and food from the Alchemy Room, effects and the favourite-meal bonus.", "Consumables in Sovereign Tower come from the Alchemy Room. Here is what we know about potions and food.", en_secs, zh_secs)
+
+def build_items_craftinggear():
+    en_note = [
+        "Carina's Forge repairs and crafts gear; armour acts as hit points for quest damage.",
+        "Gear crafting recipes and upgrade paths are still being verified (待补).",
+        "Childeric starts with armour 9 (highest) — a strong tank for damage-heavy quests.",
+    ]
+    en_faq = [
+        ["How does the Forge work?", "It repairs and crafts gear; exact recipes and slots are still being verified (待补)."],
+        ["What does armour do?", "It is the hit points for quest damage — keep knights' armour repaired before risky quests."],
+    ]
+    zh_note = [
+        "Carina's Forge 锻炉修理/制作装备；护甲是任务伤害的生命值。",
+        "装备制作配方和升级路线仍在核实（待补）。",
+        "Childeric 起始护甲 9（全游最高）——是伤害型任务的强力坦克。",
+    ]
+    zh_faq = [
+        ["锻炉怎么运作？", "它修理/制作装备；确切配方和槽位仍在核实（待补）。"],
+        ["护甲有什么用？", "它是任务伤害的生命值——高风险任务前保持骑士护甲维修。"],
+    ]
+    en_secs = [notes("Crafting & gear", en_note), faq_block(en_faq)]
+    zh_secs = [notes("锻造与装备", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/items/crafting-gear", "Crafting & Gear Guide", "Sovereign Tower Crafting Gear — Forge, Armour & Upgrades", "Sovereign Tower crafting and gear: Carina's Forge, armour as quest hit points and what we know about recipes.", "Crafting and gear in Sovereign Tower revolve around the Forge. Armour is your knights' hit points for quest damage.", en_secs, zh_secs)

@@ -10972,6 +10972,1165 @@
      "metaDescription": "Release-Infos und Update-Log unserer Guides — v1.0, Sale und DLC."
     }
    }
+  },
+  {
+   "slug": "sovereign-tower/review/system-requirements",
+   "title": "System Requirements",
+   "metaTitle": "Sovereign Tower System Requirements — Min, Recommended…",
+   "metaDescription": "Sovereign Tower system requirements: minimum, recommended and Steam Deck specs from the official store page.",
+   "intro": "Sovereign Tower runs on Windows and Linux/SteamOS. Here are the official minimum, recommended and Steam Deck specs.",
+   "sections": [
+    {
+     "type": "table",
+     "tag": "DATA",
+     "heading": "",
+     "body": "",
+     "headers": [
+      "",
+      "Requirements"
+     ],
+     "rows": [
+      [
+       "Minimum",
+       "Windows 10 / i5-4670K / 4GB RAM / GT 1030 2GB / DX12 / 3GB"
+      ],
+      [
+       "Recommended",
+       "Windows 11 / i5-9600K / 8GB RAM / GTX 1060 6GB / DX12 / 3GB"
+      ],
+      [
+       "Linux / Steam Deck",
+       "SteamOS 3.8.10 / Zen2 4c8t / 4-8GB / RDNA2 8CU (Deck Verified)"
+      ]
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "Does it run on Mac?",
+       "No official macOS support — Windows and Linux/SteamOS only."
+      ],
+      [
+       "Is it Steam Deck verified?",
+       "Yes, per the official store page (Steam Deck Verified)."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "System Requirements",
+     "metaTitle": "System Requirements",
+     "metaDescription": "君王之塔支持 Windows 和 Linux/SteamOS。这里是官方最低、推荐与 Steam Deck 配置。",
+     "intro": "君王之塔支持 Windows 和 Linux/SteamOS。这里是官方最低、推荐与 Steam Deck 配置。",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "",
+        "配置要求"
+       ],
+       "rows": [
+        [
+         "最低配置",
+         "Windows 10 / i5-4670K / 4GB 内存 / GT 1030 2GB / DX12 / 3GB"
+        ],
+        [
+         "推荐配置",
+         "Windows 11 / i5-9600K / 8GB 内存 / GTX 1060 6GB / DX12 / 3GB"
+        ],
+        [
+         "Linux / Steam Deck",
+         "SteamOS 3.8.10 / Zen2 4c8t / 4-8GB / RDNA2 8CU（Deck Verified）"
+        ]
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "支持 Mac 吗？",
+         "官方不支持 macOS——仅 Windows 和 Linux/SteamOS。"
+        ],
+        [
+         "Steam Deck 验证了吗？",
+         "验证了（官方商店页 Steam Deck Verified）。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "システム要件",
+     "intro": "ソブリンタワーはWindowsとLinux/SteamOSで動作。公式の最低・推奨・Steam Deck仕様。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "要件の説明",
+       "body": "",
+       "items": [
+        "WindowsとLinux/SteamOSで動作（macOS非対応）。",
+        "Steam Deck Verified（公式）。",
+        "DX12必須。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Macで動く？",
+         "公式非対応——WindowsとLinux/SteamOSのみ。"
+        ],
+        [
+         "Steam Deck対応？",
+         "はい（公式のDeck Verified）。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "システム要件",
+     "metaDescription": "ソブリンタワーはWindowsとLinux/SteamOSで動作。公式の最低・推奨・Steam Deck仕様。"
+    },
+    "ko": {
+     "title": "시스템 요구 사항",
+     "intro": "소버린 타워는 Windows와 Linux/SteamOS에서 동작. 공식 최소·권장·Steam Deck 사양.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "사양 설명",
+       "body": "",
+       "items": [
+        "Windows와 Linux/SteamOS에서 동작(macOS 미지원).",
+        "Steam Deck Verified(공식).",
+        "DX12 필수."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Mac에서 되나요?",
+         "공식 미지원 — Windows와 Linux/SteamOS만."
+        ],
+        [
+         "Steam Deck 지원?",
+         "네(공식 Deck Verified)."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "시스템 요구 사항",
+     "metaDescription": "소버린 타워는 Windows와 Linux/SteamOS에서 동작. 공식 최소·권장·Steam Deck 사양."
+    },
+    "fr": {
+     "title": "Configuration requise",
+     "intro": "Sovereign Tower tourne sur Windows et Linux/SteamOS. Specs minimales, recommandées et Deck.",
+     "metaTitle": "Configuration requise",
+     "metaDescription": "Sovereign Tower tourne sur Windows et Linux/SteamOS. Specs minimales, recommandées et Deck."
+    },
+    "de": {
+     "title": "Systemanforderungen",
+     "intro": "Sovereign Tower läuft auf Windows und Linux/SteamOS. Offizielle Mindest-, Empfohlen- und Deck-Specs.",
+     "metaTitle": "Systemanforderungen",
+     "metaDescription": "Sovereign Tower läuft auf Windows und Linux/SteamOS. Offizielle Mindest-, Empfohlen- und Deck-Specs."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/review/overview",
+   "title": "Review Overview",
+   "metaTitle": "Sovereign Tower Review — Metacritic 86, Steam 90% Posi…",
+   "metaDescription": "Sovereign Tower review overview: Metacritic 86, Steam 90% positive, what critics and players praise.",
+   "intro": "Sovereign Tower landed strong reviews at launch. Here is the overview — scores, what's praised and who it's for.",
+   "sections": [
+    {
+     "type": "table",
+     "tag": "DATA",
+     "heading": "",
+     "body": "",
+     "headers": [
+      "Metric",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Metacritic",
+       "86 (store-page field)"
+      ],
+      [
+       "Steam rating",
+       "Very Positive — 90% of 700+ reviews"
+      ],
+      [
+       "Release",
+       "2026-08-06 (full release, not early access)"
+      ],
+      [
+       "Genre",
+       "Indie / RPG — Round Table management"
+      ],
+      [
+       "Publisher",
+       "Curve Games"
+      ]
+     ]
+    },
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "What reviews say",
+     "body": "",
+     "items": [
+      "Reviews praise the witty, sharp writing, the Round Table quest loop and the time-rewind safety net.",
+      "Some players find the rewind mechanic's learning curve steep (per a Chinese hands-on review).",
+      "Unexpected outcomes and hidden traits keep replays interesting."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "Is Sovereign Tower worth it?",
+       "Strong reviews (Metacritic 86, 90% positive on Steam) for a management-RPG crowd that likes narrative and rewind mechanics."
+      ],
+      [
+       "Is it like Reigns?",
+       "It has a similar 'assign and see' court rhythm, but with deeper knight stats, quest scoring and story branches."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "Review Overview",
+     "metaTitle": "Review Overview",
+     "metaDescription": "Sovereign Tower landed strong reviews at launch. Here is the overview — score…",
+     "intro": "Sovereign Tower landed strong reviews at launch. Here is the overview — scores, what's praised and who it's for.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "指标",
+        "数值"
+       ],
+       "rows": [
+        [
+         "Metacritic",
+         "86（商店页字段）"
+        ],
+        [
+         "Steam 评价",
+         "特别好评——700+ 评测中 90% 好评"
+        ],
+        [
+         "发售",
+         "2026-08-06（正式版，非抢先体验）"
+        ],
+        [
+         "类型",
+         "独立 / RPG——圆桌管理"
+        ],
+        [
+         "发行商",
+         "Curve Games"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "评测说了什么",
+       "body": "",
+       "items": [
+        "评测称赞毒舌而敏锐的文案、圆桌任务循环和时间回溯安全网。",
+        "部分玩家觉得回溯机制的入门曲线陡（中文体验文）。",
+        "Unexpected Outcome 和隐藏特质让重玩更有趣。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "君王之塔值得买吗？",
+         "评测很强（Metacritic 86、Steam 90% 好评）——适合喜欢叙事和回溯机制的管理 RPG 玩家。"
+        ],
+        [
+         "像 Reigns 吗？",
+         "有类似的「指派与查看」宫廷节奏，但骑士属性、任务得分和剧情分支更深。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "レビュー概要",
+     "intro": "ソブリンタワーの発売時レビュー概要——Metacritic 86、Steam 90%好評、何が評価されたか。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "レビューが評価する点",
+       "body": "",
+       "items": [
+        "毒舌で鋭い文、円卓クエストループ、時間巻き戻しの安全網を評価。",
+        "一部は巻き戻しの学習曲線が急だと指摘。",
+        "Unexpected Outcomeと隠し特質が再プレイを面白くする。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "買う価値ある？",
+         "Metacritic 86・Steam 90%好評——管理RPGと巻き戻しが好きな人向け。"
+        ],
+        [
+         "Reignsに似てる？",
+         "同様の宮廷リズムだが、騎士属性・クエスト得点・分岐が深い。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "レビュー概要",
+     "metaDescription": "ソブリンタワーの発売時レビュー概要——Metacritic 86、Steam 90%好評、何が評価されたか。"
+    },
+    "ko": {
+     "title": "리뷰 개요",
+     "intro": "소버린 타워 출시 리뷰 개요 — Metacritic 86, Steam 90% 긍정, 무엇이 평가받았는가.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "리뷰가 평가하는 점",
+       "body": "",
+       "items": [
+        "독설·예리한 문장, 원탁 퀘스트 루프, 시간 되돌리기 안전망을 평가.",
+        "일부는 되돌리기 학습 곡선이 가파르다고 지적.",
+        "Unexpected Outcome과 숨은 특성이 재플레이를 흥미롭게."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "살 가치 있나요?",
+         "Metacritic 86·Steam 90% 긍정 — 관리 RPG와 되돌리기를 좋아하는 분."
+        ],
+        [
+         "Reigns와 비슷?",
+         "비슷한 궁정 리듬이지만 기사 스탯·퀘스트 점수·분기가 깊음."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "리뷰 개요",
+     "metaDescription": "소버린 타워 출시 리뷰 개요 — Metacritic 86, Steam 90% 긍정, 무엇이 평가받았는가."
+    },
+    "fr": {
+     "title": "Aperçu des critiques",
+     "intro": "Aperçu des critiques : Metacritic 86, 90% positifs sur Steam, ce qui est loué.",
+     "metaTitle": "Aperçu des critiques",
+     "metaDescription": "Aperçu des critiques : Metacritic 86, 90% positifs sur Steam, ce qui est loué."
+    },
+    "de": {
+     "title": "Review-Überblick",
+     "intro": "Release-Überblick: Metacritic 86, 90% positiv auf Steam, was gelobt wird.",
+     "metaTitle": "Review-Überblick",
+     "metaDescription": "Release-Überblick: Metacritic 86, 90% positiv auf Steam, was gelobt wird."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/review/release-demo",
+   "title": "Release & Demo Info",
+   "metaTitle": "Sovereign Tower Release, Demo & Availability",
+   "metaDescription": "Sovereign Tower release and demo info: v1.0 date, demo availability, sale and DLC status.",
+   "intro": "When did Sovereign Tower come out, is there a demo, and what's the DLC situation? Everything about availability.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Release & demo",
+     "body": "",
+     "items": [
+      "Released 2026-08-06 as a full v1.0 (not early access).",
+      "A demo was available before launch (official Demo Trailer exists).",
+      "Launch sale: 15% off until 2026-08-20.",
+      "Two DLCs are attached (待补 contents)."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "Is there a demo?",
+       "Yes — a demo was available pre-launch; check the Steam page for current demo status."
+      ],
+      [
+       "When is the next update?",
+       "Follow the in-game updates and our update log; patch cadence is still being tracked (待补)."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "Release & Demo Info",
+     "metaTitle": "Release & Demo Info",
+     "metaDescription": "When did Sovereign Tower come out, is there a demo, and what's the DLC situat…",
+     "intro": "When did Sovereign Tower come out, is there a demo, and what's the DLC situation? Everything about availability.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "发售与 demo",
+       "body": "",
+       "items": [
+        "2026-08-06 作为完整 v1.0 发售（非抢先体验）。",
+        "发售前有 demo（官方 Demo Trailer 存在）。",
+        "首发特惠：-15% 至 2026-08-20。",
+        "已挂 2 个 DLC（内容待补）。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "有 demo 吗？",
+         "有——发售前开放过 demo；当前 demo 状态看 Steam 页。"
+        ],
+        [
+         "下次更新什么时候？",
+         "关注游戏内更新和我们的更新日志；补丁节奏仍在追踪（待补）。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "発売とデモ情報",
+     "intro": "ソブリンタワーの発売・デモ情報——v1.0日付、デモ有無、セールとDLC状況。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "発売とデモ",
+       "body": "",
+       "items": [
+        "2026-08-06 正式版（早期アクセスではない）。",
+        "発売前にデモあり（公式Demo Trailer）。",
+        "ローンチセール15%OFFは2026-08-20まで。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "デモはある？",
+         "はい——発売前に公開。現在の状態はSteamページを確認。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "発売とデモ情報",
+     "metaDescription": "ソブリンタワーの発売・デモ情報——v1.0日付、デモ有無、セールとDLC状況。"
+    },
+    "ko": {
+     "title": "출시·데모 정보",
+     "intro": "소버린 타워 출시·데모 정보 — v1.0 날짜, 데모 유무, 세일과 DLC 현황.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "출시와 데모",
+       "body": "",
+       "items": [
+        "2026-08-06 정식판(얼리 액세스 아님).",
+        "출시 전 데모 있음(공식 Demo Trailer).",
+        "출시 세일 15% OFF는 2026-08-20까지."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "데모 있나요?",
+         "네 — 출시 전 공개. 현재 상태는 Steam 페이지 확인."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "출시·데모 정보",
+     "metaDescription": "소버린 타워 출시·데모 정보 — v1.0 날짜, 데모 유무, 세일과 DLC 현황."
+    },
+    "fr": {
+     "title": "Sortie et démo",
+     "intro": "Date de sortie, démo, promo et DLC de Sovereign Tower.",
+     "metaTitle": "Sortie et démo",
+     "metaDescription": "Date de sortie, démo, promo et DLC de Sovereign Tower."
+    },
+    "de": {
+     "title": "Release & Demo",
+     "intro": "Release-Datum, Demo, Sale und DLC von Sovereign Tower.",
+     "metaTitle": "Release & Demo",
+     "metaDescription": "Release-Datum, Demo, Sale und DLC von Sovereign Tower."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/review/soundtrack",
+   "title": "Soundtrack Info",
+   "metaTitle": "Sovereign Tower Soundtrack — Music & Composer",
+   "metaDescription": "Sovereign Tower soundtrack status: what's known about the music, composer and availability.",
+   "intro": "The music of Sovereign Tower adds a lot to its tone. Here is what we know so far about the soundtrack.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Soundtrack status",
+     "body": "",
+     "items": [
+      "The game's official tags include soundtrack-adjacent qualities; the launch trailer features original music (待补 exact composer/album).",
+      "Soundtrack details (composer, track list, availability on streaming) are still being verified (待补).",
+      "Check the Steam store page and the game's official channels for soundtrack news."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "Is there an official soundtrack?",
+       "Not yet confirmed publicly (待补) — check the Steam page and developer channels."
+      ],
+      [
+       "Who composed the music?",
+       "Still being verified (待补)."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "Soundtrack Info",
+     "metaTitle": "Soundtrack Info",
+     "metaDescription": "The music of Sovereign Tower adds a lot to its tone. Here is what we know so…",
+     "intro": "The music of Sovereign Tower adds a lot to its tone. Here is what we know so far about the soundtrack.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "原声状态",
+       "body": "",
+       "items": [
+        "游戏官方标签包含原声相关的品质；启动预告片带有原创音乐（确切作曲人/专辑待补）。",
+        "原声细节（作曲人、曲目、流媒体上架）仍在核实（待补）。",
+        "查看 Steam 商店页和官方渠道获取原声消息。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "有官方原声吗？",
+         "尚未公开确认（待补）——查看 Steam 页和开发者渠道。"
+        ],
+        [
+         "音乐谁作曲？",
+         "仍在核实（待补）。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "サウンドトラック情報",
+     "intro": "ソブリンタワーの音楽——判明していること、作曲者、配信状況（待補）。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "サウンドトラック状況",
+       "body": "",
+       "items": [
+        "公式タグに原風景質を含む。ランチトレーラーはオリジナル音楽（作曲者・アルバムは待補）。",
+        "作曲者・曲目・配信状況は確認中（待補）。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "公式サントラは？",
+         "未公開確認（待補）。Steamページと開発者チャンネルを確認。"
+        ],
+        [
+         "作曲者は？",
+         "確認中（待補）。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "サウンドトラック情報",
+     "metaDescription": "ソブリンタワーの音楽——判明していること、作曲者、配信状況（待補）。"
+    },
+    "ko": {
+     "title": "사운드트랙 정보",
+     "intro": "소버린 타워의 음악 — 확인된 것, 작곡가, 스트리밍 현황(待補).",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "사운드트랙 현황",
+       "body": "",
+       "items": [
+        "공식 태그에 오리지널 퀄리티 포함. 런치 트레일러는 오리지널 음악(작곡가·앨범은待補).",
+        "작곡가·곡 목록·스트리밍 현황 확인 중(待補)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "공식 사운드트랙?",
+         "미공개 확인(待補). Steam 페이지와 개발자 채널 확인."
+        ],
+        [
+         "작곡가는?",
+         "확인 중(待補)."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "사운드트랙 정보",
+     "metaDescription": "소버린 타워의 음악 — 확인된 것, 작곡가, 스트리밍 현황(待補)."
+    },
+    "fr": {
+     "title": "Bande-son",
+     "intro": "La musique de Sovereign Tower : ce qu'on sait, le compositeur, la disponibilité.",
+     "metaTitle": "Bande-son",
+     "metaDescription": "La musique de Sovereign Tower : ce qu'on sait, le compositeur, la disponibilité."
+    },
+    "de": {
+     "title": "Soundtrack",
+     "intro": "Die Musik von Sovereign Tower: was bekannt ist, Komponist, Verfügbarkeit.",
+     "metaTitle": "Soundtrack",
+     "metaDescription": "Die Musik von Sovereign Tower: was bekannt ist, Komponist, Verfügbarkeit."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/items/overview",
+   "title": "Items Overview",
+   "metaTitle": "Sovereign Tower Items Overview — Consumables & Craftin…",
+   "metaDescription": "Sovereign Tower items overview: consumables and crafting gear families, where to get them and what we're verifying.",
+   "intro": "An overview of Sovereign Tower's items — consumables and crafting gear — with what we've confirmed so far.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Items overview",
+     "body": "",
+     "items": [
+      "Sovereign Tower has consumables and crafting gear across the tower's systems (Forge, Alchemy Room).",
+      "Item lists are still being verified in-game (待补) — this overview will grow as we confirm items.",
+      "Key item families reported: consumables (potions, food) and crafting gear (weapons, armour materials)."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "What items exist in the game?",
+       "Consumables and crafting gear are confirmed families; the full list is still being verified (待补)."
+      ],
+      [
+       "Where do I get items?",
+       "The Forge crafts gear and the Alchemy Room makes consumables (exact recipes 待补)."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "Items Overview",
+     "metaTitle": "Items Overview",
+     "metaDescription": "An overview of Sovereign Tower's items — consumables and crafting gear — with…",
+     "intro": "An overview of Sovereign Tower's items — consumables and crafting gear — with what we've confirmed so far.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "物品总览",
+       "body": "",
+       "items": [
+        "君王之塔在塔的系统（锻炉、炼金室）里有消耗品和锻造装备。",
+        "物品清单仍在游戏内核实（待补）——本总览会随确认增长。",
+        "已报告的关键物品族：消耗品（药水、食物）和锻造装备（武器、护甲材料）。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "游戏里有什么物品？",
+         "已确认消耗品和锻造装备两类；完整清单仍在核实（待补）。"
+        ],
+        [
+         "物品从哪来？",
+         "锻炉做装备、炼金室做消耗品（确切配方待补）。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "アイテム概要",
+     "intro": "消耗品と鍛造装備の概要。どこで入手するか、確認中の内容。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "アイテム概要",
+       "body": "",
+       "items": [
+        "消耗品と鍛造装備の2系統を確認。",
+        "完全なリストはゲーム内で確認中（待補）。",
+        "薬・食料（消耗品）と武器・防具素材（装備）が報告されている。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "どんなアイテムがある？",
+         "消耗品と鍛造装備を確認。完全リストは確認中（待補）。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "アイテム概要",
+     "metaDescription": "消耗品と鍛造装備の概要。どこで入手するか、確認中の内容。"
+    },
+    "ko": {
+     "title": "아이템 개요",
+     "intro": "소모품과 제작 장비 개요. 획득처와 확인 중인 내용.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "아이템 개요",
+       "body": "",
+       "items": [
+        "소모품과 제작 장비 두 계열 확인.",
+        "전체 목록은 게임 내 확인 중(待補).",
+        "물약·음식(소모품)과 무기·방어구 재료(장비) 보고."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "어떤 아이템이 있나요?",
+         "소모품과 제작 장비 확인. 전체 목록은 확인 중(待補)."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "아이템 개요",
+     "metaDescription": "소모품과 제작 장비 개요. 획득처와 확인 중인 내용."
+    },
+    "fr": {
+     "title": "Aperçu des objets",
+     "intro": "Consommables et équipement d'artisanat, où les obtenir et ce qu'on vérifie.",
+     "metaTitle": "Aperçu des objets",
+     "metaDescription": "Consommables et équipement d'artisanat, où les obtenir et ce qu'on vérifie."
+    },
+    "de": {
+     "title": "Gegenstände Überblick",
+     "intro": "Verbrauchsgüter und Ausrüstung, wo man sie bekommt und was wir prüfen.",
+     "metaTitle": "Gegenstände Überblick",
+     "metaDescription": "Verbrauchsgüter und Ausrüstung, wo man sie bekommt und was wir prüfen."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/items/consumables",
+   "title": "Consumables Guide",
+   "metaTitle": "Sovereign Tower Consumables — Potions & Food",
+   "metaDescription": "Sovereign Tower consumables: potions and food from the Alchemy Room, effects and the favourite-meal bonus.",
+   "intro": "Consumables in Sovereign Tower come from the Alchemy Room. Here is what we know about potions and food.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Consumables guide",
+     "body": "",
+     "items": [
+      "The Witch's Alchemy Room makes consumables (potions, food) for quests and recovery.",
+      "Consumable recipes and effects are still being verified (待补).",
+      "Favourite meals give +1.5 affinity and +0.5 quest score — food is the most confirmed consumable family."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "What consumables are there?",
+       "Potions and food are reported; the full list is still being verified (待补)."
+      ],
+      [
+       "Are meals consumables?",
+       "Yes — the 6 dishes are food consumables; feeding favourites boosts affinity and score."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "Consumables Guide",
+     "metaTitle": "Consumables Guide",
+     "metaDescription": "Consumables in Sovereign Tower come from the Alchemy Room. Here is what we kn…",
+     "intro": "Consumables in Sovereign Tower come from the Alchemy Room. Here is what we know about potions and food.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "消耗品攻略",
+       "body": "",
+       "items": [
+        "炼金室制作消耗品（药水、食物），用于任务和恢复。",
+        "消耗品配方和效果仍在核实（待补）。",
+        "最爱菜给 +1.5 好感和 +0.5 任务分——食物是最确认的消耗品族。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "有什么消耗品？",
+         "已报告药水和食物；完整清单仍在核实（待补）。"
+        ],
+        [
+         "菜算消耗品吗？",
+         "算——6 种菜是食物消耗品；喂最爱菜加好感与得分。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "消耗品ガイド",
+     "intro": "錬金室の消耗品——薬と食べ物、効果、好きな料理ボーナス。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "消耗品ガイド",
+       "body": "",
+       "items": [
+        "錬金室で消耗品（薬・食料）を制作。",
+        "レシピと効果は確認中（待補）。",
+        "好きな料理は+1.5好感+0.5得点——食料が最も確認済みの消耗品族。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "どんな消耗品？",
+         "薬と食料を報告。完全リストは確認中（待補）。"
+        ],
+        [
+         "料理は消耗品？",
+         "はい——6種の料理は食料。好きな物で好感と得点アップ。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "消耗品ガイド",
+     "metaDescription": "錬金室の消耗品——薬と食べ物、効果、好きな料理ボーナス。"
+    },
+    "ko": {
+     "title": "소모품 가이드",
+     "intro": "연금실의 소모품 — 물약과 음식, 효과, 선호 요리 보너스.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "소모품 가이드",
+       "body": "",
+       "items": [
+        "연금실에서 소모품(물약·음식) 제작.",
+        "레시피와 효과는 확인 중(待補).",
+        "선호 요리는 +1.5 호감 +0.5 점수 — 음식이 가장 확인된 소모품 계열."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "어떤 소모품?",
+         "물약과 음식 보고. 전체 목록은 확인 중(待補)."
+        ],
+        [
+         "요리가 소모품인가요?",
+         "네 — 6종 요리는 음식. 선호하는 것으로 호감·점수 상승."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "소모품 가이드",
+     "metaDescription": "연금실의 소모품 — 물약과 음식, 효과, 선호 요리 보너스."
+    },
+    "fr": {
+     "title": "Guide des consommables",
+     "intro": "Potions et nourriture de l'Alchimie, effets et bonus de plat favori.",
+     "metaTitle": "Guide des consommables",
+     "metaDescription": "Potions et nourriture de l'Alchimie, effets et bonus de plat favori."
+    },
+    "de": {
+     "title": "Verbrauchsgüter-Guide",
+     "intro": "Tränke und Essen aus der Alchemie, Effekte und Lieblingsgericht-Bonus.",
+     "metaTitle": "Verbrauchsgüter-Guide",
+     "metaDescription": "Tränke und Essen aus der Alchemie, Effekte und Lieblingsgericht-Bonus."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/items/crafting-gear",
+   "title": "Crafting & Gear Guide",
+   "metaTitle": "Sovereign Tower Crafting Gear — Forge, Armour & Upgrad…",
+   "metaDescription": "Sovereign Tower crafting and gear: Carina's Forge, armour as quest hit points and what we know about recipes.",
+   "intro": "Crafting and gear in Sovereign Tower revolve around the Forge. Armour is your knights' hit points for quest damage.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Crafting & gear",
+     "body": "",
+     "items": [
+      "Carina's Forge repairs and crafts gear; armour acts as hit points for quest damage.",
+      "Gear crafting recipes and upgrade paths are still being verified (待补).",
+      "Childeric starts with armour 9 (highest) — a strong tank for damage-heavy quests."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "How does the Forge work?",
+       "It repairs and crafts gear; exact recipes and slots are still being verified (待补)."
+      ],
+      [
+       "What does armour do?",
+       "It is the hit points for quest damage — keep knights' armour repaired before risky quests."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "Crafting & Gear Guide",
+     "metaTitle": "Crafting & Gear Guide",
+     "metaDescription": "Crafting and gear in Sovereign Tower revolve around the Forge. Armour is your…",
+     "intro": "Crafting and gear in Sovereign Tower revolve around the Forge. Armour is your knights' hit points for quest damage.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "锻造与装备",
+       "body": "",
+       "items": [
+        "Carina's Forge 锻炉修理/制作装备；护甲是任务伤害的生命值。",
+        "装备制作配方和升级路线仍在核实（待补）。",
+        "Childeric 起始护甲 9（全游最高）——是伤害型任务的强力坦克。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "锻炉怎么运作？",
+         "它修理/制作装备；确切配方和槽位仍在核实（待补）。"
+        ],
+        [
+         "护甲有什么用？",
+         "它是任务伤害的生命值——高风险任务前保持骑士护甲维修。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "鍛造と装備ガイド",
+     "intro": "鍛冶場の装備——護甲はクエストダメージのHP。レシピと強化。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "鍛造と装備",
+       "body": "",
+       "items": [
+        "鍛冶場で装備を修理・制作。護甲はクエストダメージのHP。",
+        "レシピと強化経路は確認中（待補）。",
+        "Childericの初期護甲9（全遊最高）は強力なタンク。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "鍛冶場の仕組みは？",
+         "修理・制作。正確なレシピとスロットは確認中（待補）。"
+        ],
+        [
+         "護甲の役割？",
+         "クエストダメージのHP——危険なクエスト前に修理を。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "鍛造と装備ガイド",
+     "metaDescription": "鍛冶場の装備——護甲はクエストダメージのHP。レシピと強化。"
+    },
+    "ko": {
+     "title": "제작과 장비 가이드",
+     "intro": "대장간의 장비 — 갑옷은 퀘스트 피해의 HP. 레시피와 강화.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "제작과 장비",
+       "body": "",
+       "items": [
+        "대장간에서 장비 수리·제작. 갑옷은 퀘스트 피해의 HP.",
+        "레시피와 강화 경로는 확인 중(待補).",
+        "Childeric 초기 갑옷 9(최고)는 강력한 탱커."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "대장간 작동?",
+         "수리·제작. 정확한 레시피·슬롯은 확인 중(待補)."
+        ],
+        [
+         "갑옷 역할?",
+         "퀘스트 피해의 HP — 위험 퀘스트 전 수리."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "제작과 장비 가이드",
+     "metaDescription": "대장간의 장비 — 갑옷은 퀘스트 피해의 HP. 레시피와 강화."
+    },
+    "fr": {
+     "title": "Artisanat et équipement",
+     "intro": "La forge : l'armure est les PV des quêtes, recettes et améliorations.",
+     "metaTitle": "Artisanat et équipement",
+     "metaDescription": "La forge : l'armure est les PV des quêtes, recettes et améliorations."
+    },
+    "de": {
+     "title": "Handwerk & Ausrüstung",
+     "intro": "Die Schmiede: Rüstung ist die LP von Quests, Rezepte und Upgrades.",
+     "metaTitle": "Handwerk & Ausrüstung",
+     "metaDescription": "Die Schmiede: Rüstung ist die LP von Quests, Rezepte und Upgrades."
+    }
+   }
   }
  ]
 }
