@@ -136,6 +136,7 @@ img { max-width: 100%; height: auto; }
   transition: transform 0.15s var(--ease), box-shadow 0.15s var(--ease);
 }
 .btn:hover { text-decoration: none; transform: translateY(-2px); }
+.btn:active { transform: translateY(0) scale(0.97); transition-duration: 0.08s; }
 .btn-primary { background: linear-gradient(135deg, var(--gold-soft), var(--gold)); color: #fff; box-shadow: 0 6px 20px rgba(0,0,0,0.25); }
 .btn-primary:hover { box-shadow: 0 8px 26px rgba(0,0,0,0.32); }
 .btn-ghost { border: 1.5px solid rgba(237,227,206,0.4); color: #EDE3CE; background: transparent; }
@@ -165,7 +166,7 @@ img { max-width: 100%; height: auto; }
   border-radius: 10px; border: 1px solid transparent; color: var(--ink);
   transition: all 0.18s var(--ease);
 }
-.tome-index a:hover { border-color: var(--line); background: rgba(184,134,11,0.07); text-decoration: none; transform: translateX(3px); }
+.tome-index a:hover { border-color: rgba(184,134,11,0.35); background: rgba(184,134,11,0.07); text-decoration: none; transform: translateX(3px); box-shadow: var(--shadow-sm); }
 .tome-index .idx-no { font-family: "Cormorant Garamond", serif; font-size: 17px; color: var(--gold); flex: 0 0 auto; font-weight: 700; }
 .tome-index .idx-ic { display: inline-flex; color: var(--terra); }
 .tome-index .idx-ic svg { width: 18px; height: 18px; }
@@ -178,7 +179,7 @@ img { max-width: 100%; height: auto; }
   border-left: 3px solid var(--gold); background: rgba(184,134,11,0.06); position: relative;
   box-shadow: var(--shadow-sm);
 }
-.note-entry::before { content: "✎"; position: absolute; left: 9px; top: 12px; color: var(--gold); font-size: 13px; font-family: "Caveat", cursive; }
+.note-entry::before { content: ""; position: absolute; left: 9px; top: 15px; width: 10px; height: 10px; background: var(--gold); -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 20l4-1L20 7a2 2 0 0 0-3-3L5 16l-1 4z'/%3E%3C/svg%3E") no-repeat center; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 20l4-1L20 7a2 2 0 0 0-3-3L5 16l-1 4z'/%3E%3C/svg%3E") no-repeat center; -webkit-mask-size: contain; mask-size: contain; }
 .note-entry b { font-family: "Cormorant Garamond", serif; font-size: 19px; color: var(--deep); }
 .note-entry p { color: var(--ink-soft); font-size: 14px; }
 
@@ -267,7 +268,7 @@ img { max-width: 100%; height: auto; }
   cursor: pointer; padding: 15px 18px 15px 28px; font-weight: 600; font-size: 15.5px;
   list-style: none; position: relative; color: var(--ink); font-family: "Inter", sans-serif;
 }
-.faq-item summary::before { content: "❧"; position: absolute; left: 10px; top: 14px; color: var(--gold); font-size: 14px; font-family: "Cormorant Garamond", serif; }
+.faq-item summary::before { content: ""; position: absolute; left: 11px; top: 18px; width: 8px; height: 8px; border: 1.5px solid var(--gold); border-radius: 50%; }
 .faq-item summary::after {
   content: "+"; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);
   font-size: 22px; color: var(--terra); transition: transform 0.2s var(--ease); font-weight: 300;

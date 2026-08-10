@@ -337,11 +337,11 @@ function renderHome(lang) {
   </section>
   <section class="spread reveal">
     <div class="spread-col left">
-      <div class="folio-head"><span class="folio-mark">✦</span><h2>${isZh ? "卷宗目录" : "Index"}</h2></div>
+      <div class="folio-head"><span class="folio-mark"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></span><h2>${isZh ? "卷宗目录" : "Index"}</h2></div>
       <div class="tome-index">${gamePages.map(idx).join("")}${toolIdx}</div>
     </div>
     <div class="spread-col right">
-      <div class="folio-head"><span class="folio-mark">✎</span><h2>${isZh ? "最新批注" : "Latest Notes"}</h2></div>
+      <div class="folio-head"><span class="folio-mark"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l4-1L20 7a2 2 0 0 0-3-3L5 16l-1 4z"/><path d="M14 6l4 4"/></svg></span><h2>${isZh ? "最新批注" : "Latest Notes"}</h2></div>
       <div class="ledger-notes">
         <div class="note-entry"><b>${isZh ? "24 位骑士全档案已收录" : "All 24 knights documented"}</b><p>${isZh ? "六维属性、隐藏特质、最爱菜、招募条件一次看全。" : "Six stats, hidden traits, favourite meals and recruit conditions."}</p></div>
         <div class="note-entry"><b>${isZh ? "隐藏骑士招募方法" : "Secret knight recruitment"}</b><p>${isZh ? "Dulahan / Chester / Alwena 的触发条件与窗口。" : "Dulahan / Chester / Alwena triggers and windows."}</p></div>
