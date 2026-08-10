@@ -703,3 +703,280 @@ def build_items_craftinggear():
     en_secs = [notes("Crafting & gear", en_note), faq_block(en_faq)]
     zh_secs = [notes("锻造与装备", zh_note), faq_block(zh_faq)]
     return _wt("sovereign-tower/items/crafting-gear", "Crafting & Gear Guide", "Sovereign Tower Crafting Gear — Forge, Armour & Upgrades", "Sovereign Tower crafting and gear: Carina's Forge, armour as quest hit points and what we know about recipes.", "Crafting and gear in Sovereign Tower revolve around the Forge. Armour is your knights' hit points for quest damage.", en_secs, zh_secs)
+
+# ================= guides 深页 + knights 深页 =================
+
+def build_guides_bestopening():
+    en_note = [
+        "Start by keeping People and Merchants healthy — most early quests and audiences touch them.",
+        "Recruit Ari early (25 gold) for a strong Scout; keep Angelica on Help/Diplomacy quests she likes.",
+        "Push the Gavault (Brunhilda) or Groveshire (goose→Chester) line early for extra knights.",
+        "Don't let any faction hit zero — crisis events cost more than the effort to avoid them.",
+    ]
+    en_faq = [
+        ["What is the best opening strategy?", "Balance the early factions, recruit Ari early and progress a storyline for an extra knight before Act 2."],
+        ["Should I spend gold early?", "Keep some treasury for summons (Ari) and repairs; avoid bankrupting the treasury before Act 2."],
+    ]
+    zh_note = [
+        "开局保持平民和商人健康——大多数早期任务和朝会涉及它们。",
+        "早期花 25 金币招 Ari（强力 Scout）；让 Angelica 做她喜欢的 Help/Diplomacy 任务。",
+        "早期推进 Gavault（Brunhilda）或 Groveshire（鹅→Chester）线获取额外骑士。",
+        "别让任何派系归零——危机事件的代价高于避免它的努力。",
+    ]
+    zh_faq = [
+        ["最佳开局策略是什么？", "平衡早期派系、早招 Ari、Act 2 前推进一条剧情线获取额外骑士。"],
+        ["早期该花金币吗？", "留一些国库用于召唤（Ari）和修理；避免在 Act 2 前掏空国库。"],
+    ]
+    en_secs = [notes("Best opening moves", en_note), faq_block(en_faq)]
+    zh_secs = [notes("最佳开局动作", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/guides/best-opening", "Best Opening Strategy", "Sovereign Tower Best Opening — Early Factions, Knights & Moves", "The best Sovereign Tower opening: early faction balance, Ari recruitment and storyline priority before Act 2.", "Your first cycles set the tone. Balance factions early, grab Ari and push a storyline for a stronger Act 2.", en_secs, zh_secs, "开局几个 cycle 决定基调：早期平衡派系、招到 Ari、推进剧情线让 Act 2 更强。")
+
+def build_guides_controls():
+    en_note = [
+        "Full controller support (Xbox and PlayStation) plus mouse and keyboard.",
+        "Official feature: playable without timed input — no pressure to rush decisions.",
+        "The game supports save-anytime and Steam Cloud.",
+        "Exact key bindings and controller mapping are still being compiled (待补).",
+    ]
+    en_faq = [
+        ["Does it support controllers?", "Yes — full controller support for Xbox and PlayStation controllers."],
+        ["Is it playable without timed input?", "Yes — official feature; you can take your time and rewind freely."],
+    ]
+    zh_note = [
+        "完全支持手柄（Xbox 和 PlayStation）以及键鼠。",
+        "官方特性：无需限时输入——不赶时间做决定。",
+        "支持随时保存和 Steam Cloud。",
+        "确切的键位和手柄映射仍在整理（待补）。",
+    ]
+    zh_faq = [
+        ["支持手柄吗？", "支持——Xbox 和 PlayStation 手柄完全支持。"],
+        ["无需限时输入吗？", "对——官方特性；可以从容决策并自由回溯。"],
+    ]
+    en_secs = [notes("Controls & input", en_note), faq_block(en_faq)]
+    zh_secs = [notes("操作与输入", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/guides/controls", "Controls & Input Guide", "Sovereign Tower Controls — Controller, Keyboard & Timed Input", "Sovereign Tower controls: full controller support, keyboard/mouse and the no-timed-input feature.", "Sovereign Tower supports controllers and keyboard/mouse, and is officially playable without timed input.", en_secs, zh_secs, "君王之塔支持手柄和键鼠，官方特性是无需限时输入。")
+
+def build_guides_difficultytips():
+    en_note = [
+        "Use the rewind system as your safety net — replay a bad cycle instead of living with it.",
+        "Keep a balanced roster: cover STR/AGI/MAG/WIT so any quest has a matched knight.",
+        "Feed favourite meals before risky quests for the +0.5 score edge.",
+        "Repair armour at the Forge before damage-heavy quests — armour is your knights' HP.",
+    ]
+    en_faq = [
+        ["How do I handle hard quests?", "Match stats, stack liked conditions, feed a favourite meal and rewind if it fails."],
+        ["What's the biggest mistake?", "Ignoring faction balance until a crisis, or sending knights to quests they hate."],
+    ]
+    zh_note = [
+        "用回溯系统当安全网——重打糟糕的 cycle，而不是忍受它。",
+        "保持均衡阵容：覆盖 STR/AGI/MAG/WIT，任何任务都有匹配骑士。",
+        "高风险任务前喂最爱菜，拿到 +0.5 分优势。",
+        "伤害型任务前在锻炉修理护甲——护甲是骑士的 HP。",
+    ]
+    zh_faq = [
+        ["怎么应对高难任务？", "匹配属性、叠加喜欢条件、喂最爱菜，失败就回溯。"],
+        ["最大的错误是什么？", "忽视派系平衡直到危机，或派骑士做他们讨厌的任务。"],
+    ]
+    en_secs = [notes("Difficulty tips", en_note), faq_block(en_faq)]
+    zh_secs = [notes("难度技巧", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/guides/difficulty-tips", "Difficulty Tips", "Sovereign Tower Difficulty Tips — Survive Harder Cycles", "Sovereign Tower difficulty tips: rewind as a safety net, balanced rosters, meals and armour management.", "Harder cycles punish rushed play. Use rewind, balance your roster and manage meals and armour.", en_secs, zh_secs, "更难的 cycle 惩罚仓促。善用回溯、均衡阵容、管理菜与护甲。")
+
+def build_guides_knightloyalty():
+    en_note = [
+        "Affinity runs −10 to +10; most knights resign at −7.",
+        "Liked quest types give +1.33 affinity each; disliked −0.75. Favourite meals give +1.5.",
+        "Alwena and Ari never resign (threshold −1500).",
+        "Keep liked assignments coming and feed favourites to hold loyal knights.",
+    ]
+    en_faq = [
+        ["How do I keep a knight from resigning?", "Keep affinity above −7: assign liked quests, feed favourite meals and match their sovereign style."],
+        ["Can a resigned knight come back?", "Not in the same run — they're struck off the roster (待补 any exception)."],
+    ]
+    zh_note = [
+        "好感 −10 到 +10；多数骑士在 −7 辞职。",
+        "喜欢的任务类型每个 +1.33 好感；厌恶的 −0.75。最爱菜 +1.5。",
+        "Alwena 和 Ari 永不辞职（阈值 −1500）。",
+        "持续派喜欢的任务并喂最爱菜，留住忠诚骑士。",
+    ]
+    zh_faq = [
+        ["怎么防止骑士辞职？", "保持好感高于 −7：派喜欢的任务、喂最爱菜、匹配他们的君主风格。"],
+        ["辞职的骑士能回来吗？", "本周目不能——他们从名单划掉（例外待补）。"],
+    ]
+    en_secs = [notes("Knight loyalty & affinity", en_note), faq_block(en_faq)]
+    zh_secs = [notes("骑士忠诚与好感", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/guides/knight-loyalty", "Knight Loyalty & Affinity", "Sovereign Tower Knight Loyalty — Affinity, Resignation & How to Keep Them", "Keep Sovereign Tower knights loyal: affinity rules, the −7 resignation threshold and who never leaves.", "Knights resign at −7 affinity unless they're Alwena or Ari. Here is how to keep your roster intact.", en_secs, zh_secs, "骑士在好感 −7 时辞职，除非是 Alwena 或 Ari。这里教你保住阵容。")
+
+def build_guides_newgameplus():
+    en_note = [
+        "New Game Plus is available after a completed run (per fan sources; exact unlock 待补).",
+        "It carries over progression so you can explore mutually exclusive branches and endings.",
+        "Use it to chase endings you locked out in run one (Arthur marriage, hidden endings, other faction outcomes).",
+    ]
+    en_faq = [
+        ["What carries over in NG+?", "Exact carry-over is still being verified (待补)."],
+        ["Why play NG+?", "Several routes and endings are mutually exclusive — NG+ is the clean way to see them."],
+    ]
+    zh_note = [
+        "通关后可用 New Game Plus（据粉丝来源；确切解锁条件待补）。",
+        "它继承进度，让你探索互斥的分支和结局。",
+        "用它去追第一周目锁掉的结局（亚瑟王联姻、隐藏结局、其他派系结果）。",
+    ]
+    zh_faq = [
+        ["NG+ 继承什么？", "确切的继承内容仍在核实（待补）。"],
+        ["为什么要玩 NG+？", "多条路线和结局互斥——NG+ 是看全它们的干净方式。"],
+    ]
+    en_secs = [notes("New Game Plus", en_note), faq_block(en_faq)]
+    zh_secs = [notes("新游戏+", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/guides/new-game-plus", "New Game Plus Guide", "Sovereign Tower New Game Plus — Carry-over & Endings", "Sovereign Tower New Game Plus: what carries over and why it's the way to see every ending.", "New Game Plus lets you explore the branches and endings you locked out in run one.", en_secs, zh_secs, "新游戏+ 让你探索第一周目锁掉的分支和结局。")
+
+def build_guides_alliances():
+    en_note = [
+        "The Cycle 4 Dragon Knight ultimatum offers alliance paths: rally the people, ally with nobles, or use mystic forces — each with faction and gold requirements.",
+        "Alliances unlock alternate endings and change faction dynamics.",
+        "Exact alliance branches beyond Cycle 4 are still being verified (待补).",
+    ]
+    en_faq = [
+        ["How do alliances work?", "Key decisions (e.g. the Cycle 4 ultimatum) let you side with a faction group; each requires specific faction and gold thresholds."],
+        ["Do alliances change the ending?", "Yes — allying with different groups feeds into different ending paths."],
+    ]
+    zh_note = [
+        "Cycle 4 龙骑士最后通牒提供结盟路径：联合人民、与贵族结盟、或使用秘术势力——各有派系和金币要求。",
+        "结盟解锁替代结局并改变派系动态。",
+        "Cycle 4 之后的结盟分支仍在核实（待补）。",
+    ]
+    zh_faq = [
+        ["结盟怎么运作？", "关键决策（如 Cycle 4 通牒）让你站在某个派系一边；各有派系和金币阈值要求。"],
+        ["结盟改变结局吗？", "会——与不同团体结盟通向不同结局路径。"],
+    ]
+    en_secs = [notes("Alliances & rival rulers", en_note), faq_block(en_faq)]
+    zh_secs = [notes("结盟与邻国君主", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/guides/alliances", "Alliances & Rival Rulers", "Sovereign Tower Alliances — Rival Rulers & Faction Sides", "Sovereign Tower alliances: the Cycle 4 ultimatum, faction sides and how alliances change endings.", "Sovereign Tower lets you side with different faction groups at key decisions — here is how alliances work.", en_secs, zh_secs, "君王之塔在关键决策时让你站在不同派系一边——这里解释结盟机制。")
+
+def build_guides_beatdragonknight():
+    en_note = [
+        "The Dragon Knight ultimatum arrives at Cycle 4 with three options, each requiring faction and gold.",
+        "Option 1 (rally people): Merchants 8+ / People 14+ / 300G + an ally.",
+        "Option 2 (noble allies): Merchants 10+ / Nobles 8+ / 400G + an ally.",
+        "Option 3 (mystic forces): Scholars 12+ / People 10+ / 300G + an ally.",
+        "How you resolve it locks or unlocks ending paths.",
+    ]
+    en_faq = [
+        ["Which option is best?", "Depends on your faction strengths — pick the one you can already meet, then recover the others."],
+        ["Can I avoid the ultimatum?", "It's a fixed Cycle 4 story beat; you can rewind to re-roll your choice within it."],
+    ]
+    zh_note = [
+        "龙骑士最后通牒在 Cycle 4 到来，有三个选项，各有派系和金币要求。",
+        "选项1（联合人民）：商人 8+ / 平民 14+ / 300G + 一个盟国。",
+        "选项2（贵族结盟）：商人 10+ / 贵族 8+ / 400G + 盟国。",
+        "选项3（秘术势力）：学者 12+ / 平民 10+ / 300G + 盟国。",
+        "你的解法会锁定或解锁结局路径。",
+    ]
+    zh_faq = [
+        ["哪个选项最好？", "取决于你的派系优势——选你已能满足的，再恢复其他。"],
+        ["能避开通牒吗？", "它是 Cycle 4 的固定剧情节点；可以回溯重 roll 选择。"],
+    ]
+    en_secs = [notes("Dragon Knight ultimatum (Cycle 4)", en_note), faq_block(en_faq)]
+    zh_secs = [notes("龙骑士最后通牒（Cycle 4）", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/guides/beat-dragon-knight", "Beat the Dragon Knight (Cycle 4)", "Sovereign Tower Cycle 4 Dragon Knight — Three Options & Requirements", "The Sovereign Tower Cycle 4 Dragon Knight ultimatum: all three options with faction and gold requirements.", "At Cycle 4 the Dragon Knight issues an ultimatum with three faction-and-gold paths. Here is how to beat it.", en_secs, zh_secs, "Cycle 4 龙骑士发出通牒，有三条派系+金币路径。这里教你应对。")
+
+def build_guides_archetypes():
+    en_note = [
+        "Five sovereign archetypes: Tyrannic, Wise, Kind, Audacious, Omniscient — applied to your decisions in audiences.",
+        "Knights who like a tag gain affinity when you act that way; those who dislike it lose affinity.",
+        "Examples: Angelica likes Kind and dislikes Tyrannic; Brunhilda likes Audacious and dislikes Wise.",
+        "Balance your archetype choices against the knights you want to keep happy.",
+    ]
+    en_faq = [
+        ["Do archetypes affect gameplay?", "Yes — they move knight affinity via audience decisions; some knights strongly prefer or reject a style."],
+        ["Which archetype is best?", "No single best — pick the style your core knights approve of, or split decisions to balance."],
+    ]
+    zh_note = [
+        "五种君主风格：Tyrannic、Wise、Kind、Audacious、Omniscient——应用于朝会决策。",
+        "喜欢某标签的骑士在你那样行事时加好感；反感的掉好感。",
+        "例：Angelica 喜欢 Kind 厌恶 Tyrannic；Brunhilda 喜欢 Audacious 厌恶 Wise。",
+        "把风格选择和你想留住的骑士匹配。",
+    ]
+    zh_faq = [
+        ["风格影响玩法吗？", "影响——通过朝会决策移动骑士好感；部分骑士强烈偏好或反感某种风格。"],
+        ["哪种风格最好？", "没有唯一最佳——选你核心骑士认可的风格，或拆分决策来平衡。"],
+    ]
+    en_secs = [notes("Sovereign archetypes", en_note), faq_block(en_faq)]
+    zh_secs = [notes("君主风格", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/guides/sovereign-archetypes", "Sovereign Archetypes Explained", "Sovereign Tower Archetypes — Tyrannic, Wise, Kind, Audacious, Omniscient", "Sovereign Tower's five sovereign archetypes, which knights approve each, and how to use them.", "Your ruling style is defined by five archetypes. Knights react to them — here is how to play the court.", en_secs, zh_secs, "你的统治风格由五种君主风格定义。骑士会对此反应——这里教你玩转朝堂。")
+
+def build_guides_towerservants():
+    en_note = [
+        "The Tower has servants and staff beyond the knights (reported; exact roster 待补).",
+        "Intendant Alwena is the key staff figure — she manages the Tower and reveals knight rumours.",
+        "Tower servants likely include court roles and maintenance staff; exact list is still being verified (待补).",
+    ]
+    en_faq = [
+        ["Who are the tower servants?", "Reported as support staff; the exact list is still being verified (待补)."],
+        ["What does the Intendant do?", "Alwena manages the Tower and reveals other knights' hidden traits one at a time."],
+    ]
+    zh_note = [
+        "高塔有骑士之外的仆从和职员（已报告；确切名单待补）。",
+        "总管 Alwena 是关键职员——管理高塔并揭示骑士流言。",
+        "塔仆可能包括宫廷角色和后勤人员；确切名单仍在核实（待补）。",
+    ]
+    zh_faq = [
+        ["塔仆是谁？", "已报告为后勤人员；确切名单仍在核实（待补）。"],
+        ["总管做什么？", "Alwena 管理高塔，并逐个揭示其他骑士的隐藏特质。"],
+    ]
+    en_secs = [notes("Tower servants & staff", en_note), faq_block(en_faq)]
+    zh_secs = [notes("塔仆与职员", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/guides/tower-servants", "Tower Servants & Staff", "Sovereign Tower Tower Servants — Staff, Intendant & Roles", "Sovereign Tower's tower servants and staff: the Intendant's role and what we know about the rest.", "Beyond the knights, the Tower has servants and staff — with the Intendant Alwena as the key figure.", en_secs, zh_secs, "除了骑士，高塔还有仆从和职员——总管 Alwena 是关键人物。")
+
+def build_knights_stats():
+    en_rows = [
+        ["Strength", "Raw physical power for combat, hunting and heavy tasks."],
+        ["Agility", "Speed, dexterity, mobility — scouts and duellists lean on it."],
+        ["Charisma", "Persuasion and social presence — diplomacy and public quests."],
+        ["Magic", "Arcane aptitude — rituals and magical quests."],
+        ["Wit", "Intelligence, perception, deduction — research and investigation."],
+        ["Luck", "Fortune — small bonuses and better outcomes."],
+    ]
+    en_note = [
+        "All stats run 0–15; the value used in scoring is clamped to 0–15 including equipment bonuses.",
+        "Each quest requires one or more stats; a knight whose stat beats the requirement contributes positive score.",
+        "Level-ups add one point to any stat below 15 — invest in the stats your favourite quests demand.",
+    ]
+    zh_rows = [
+        ["力量 Strength", "战斗、狩猎和重物任务的物理力量。"],
+        ["敏捷 Agility", "速度、灵巧、机动——侦察和决斗者依赖它。"],
+        ["魅力 Charisma", "说服与社交存在——外交和公众任务。"],
+        ["魔法 Magic", "秘术才能——仪式和魔法任务。"],
+        ["智慧 Wit", "智力、洞察、推理——调查与研究。"],
+        ["幸运 Luck", "运气——小加成和更好的结果。"],
+    ]
+    zh_note = [
+        "所有属性 0–15；参与得分的值钳制在 0–15（含装备加成）。",
+        "每个任务要求一种或多种属性；属性压过需求的骑士贡献正分。",
+        "升级给未满 15 的属性投 1 点——投在你常用任务要求的属性上。",
+    ]
+    en_secs = [table(["Stat", "What it does"], en_rows), notes("How stats work", en_note)]
+    zh_secs = [table(["属性", "作用"], zh_rows), notes("属性怎么运作", zh_note)]
+    return _wt("sovereign-tower/knights/stats", "Knight Stats Explained", "Sovereign Tower Knight Stats — STR, AGI, CHA, MAG, WIT, LCK", "Sovereign Tower knight stats: what Strength, Agility, Charisma, Magic, Wit and Luck do, and how scoring works.", "Every knight has six stats. Here is what each one does and how they feed quest scoring.", en_secs, zh_secs, "每位骑士有六维属性。这里说明每一项的作用以及它们如何喂给任务得分。")
+
+def build_knights_thebard():
+    en_note = [
+        "The Bard (Hildegard) appears in fan wiki data as a secret knight.",
+        "Exact recruit steps and stats are still being verified (待补).",
+        "Watch for story events tied to music or performances — musical conditions appear in quest data.",
+    ]
+    en_faq = [
+        ["Who is The Bard?", "A secret knight reported in fan wiki data; exact details are still being verified (待补)."],
+        ["How do I recruit The Bard?", "Recruit steps are not yet confirmed (待补)."],
+    ]
+    zh_note = [
+        "The Bard（Hildegard）出现在粉丝 wiki 数据的隐藏骑士里。",
+        "确切的招募步骤和属性仍在核实（待补）。",
+        "留意与音乐或表演相关的剧情事件——任务数据里有 Musical 条件。",
+    ]
+    zh_faq = [
+        ["The Bard 是谁？", "粉丝 wiki 数据中的隐藏骑士；确切细节仍在核实（待补）。"],
+        ["怎么招募 The Bard？", "招募步骤尚未确认（待补）。"],
+    ]
+    en_secs = [notes("The Bard (Hildegard)", en_note), faq_block(en_faq)]
+    zh_secs = [notes("吟游诗人（Hildegard）", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/knights/the-bard", "The Bard (Secret Knight)", "Sovereign Tower The Bard — Secret Knight & Recruit Status", "Sovereign Tower's The Bard (Hildegard): what's known about the secret knight and recruit status.", "The Bard appears in fan data as a secret knight. Here is what we know so far.", en_secs, zh_secs, "吟游诗人出现在粉丝数据中作为隐藏骑士。这里是目前已知信息。")

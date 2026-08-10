@@ -12131,6 +12131,1757 @@
      "metaDescription": "Die Schmiede: Rüstung ist die LP von Quests, Rezepte und Upgrades."
     }
    }
+  },
+  {
+   "slug": "sovereign-tower/guides/best-opening",
+   "title": "Best Opening Strategy",
+   "metaTitle": "Sovereign Tower Best Opening — Early Factions, Knights…",
+   "metaDescription": "The best Sovereign Tower opening: early faction balance, Ari recruitment and storyline priority before Act 2.",
+   "intro": "Your first cycles set the tone. Balance factions early, grab Ari and push a storyline for a stronger Act 2.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Best opening moves",
+     "body": "",
+     "items": [
+      "Start by keeping People and Merchants healthy — most early quests and audiences touch them.",
+      "Recruit Ari early (25 gold) for a strong Scout; keep Angelica on Help/Diplomacy quests she likes.",
+      "Push the Gavault (Brunhilda) or Groveshire (goose→Chester) line early for extra knights.",
+      "Don't let any faction hit zero — crisis events cost more than the effort to avoid them."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "What is the best opening strategy?",
+       "Balance the early factions, recruit Ari early and progress a storyline for an extra knight before Act 2."
+      ],
+      [
+       "Should I spend gold early?",
+       "Keep some treasury for summons (Ari) and repairs; avoid bankrupting the treasury before Act 2."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "Best Opening Strategy",
+     "metaTitle": "Best Opening Strategy",
+     "metaDescription": "开局几个 cycle 决定基调：早期平衡派系、招到 Ari、推进剧情线让 Act 2 更强。",
+     "intro": "开局几个 cycle 决定基调：早期平衡派系、招到 Ari、推进剧情线让 Act 2 更强。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "最佳开局动作",
+       "body": "",
+       "items": [
+        "开局保持平民和商人健康——大多数早期任务和朝会涉及它们。",
+        "早期花 25 金币招 Ari（强力 Scout）；让 Angelica 做她喜欢的 Help/Diplomacy 任务。",
+        "早期推进 Gavault（Brunhilda）或 Groveshire（鹅→Chester）线获取额外骑士。",
+        "别让任何派系归零——危机事件的代价高于避免它的努力。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "最佳开局策略是什么？",
+         "平衡早期派系、早招 Ari、Act 2 前推进一条剧情线获取额外骑士。"
+        ],
+        [
+         "早期该花金币吗？",
+         "留一些国库用于召唤（Ari）和修理；避免在 Act 2 前掏空国库。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "最適なオープニング",
+     "intro": "序盤のサイクルが基調を決める。派閥を早期に均衡させ、アリを獲得し、ストーリー線を進めてAct2を強くする。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "序盤は人民と商人を健康に——初期クエストと朝会の大半が関わる。",
+        "早めにアリを25金で（強力なScout）。アンジェリカは好きなHelp/Diplomacyに。",
+        "早期にガヴォー（ブルンヒルダ）かグローヴシャー（ガチョウ→チェスター）線を進める。",
+        "派閥を0にするな——危機イベントのコストは回避の努力より高い。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "最適なオープニング戦略は？",
+         "初期派閥を均衡させ、アリを早く招き、Act2前にストーリー線で追加騎士を得る。"
+        ],
+        [
+         "序盤は金を使うべき？",
+         "召喚（アリ）と修理用に国庫を残す。Act2前に国庫を空にするな。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "最適なオープニング",
+     "metaDescription": "序盤のサイクルが基調を決める。派閥を早期に均衡させ、アリを獲得し、ストーリー線を進めてAct2を強くする。"
+    },
+    "ko": {
+     "title": "최적의 오프닝",
+     "intro": "초반 사이클이 분위기를 정한다. 파벌을 조기 균형, 아리 획득, 스토리라인 진행으로 Act2를 강하게.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "초반은 평민·상인 건강 유지 — 초기 퀘스트와 조회 대부분이 관련.",
+        "일찍 아리를 25골드로(강한 Scout). 안젤리카는 선호 Help/Diplomacy에.",
+        "일찍 가볼트(브룬힐다)나 그로브셔(거위→체스터) 라인 진행.",
+        "파벌 0 만들지 말 것 — 위기 이벤트 비용이 회피 노력보다 높다."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "최적 오프닝 전략은?",
+         "초기 파벌 균형, 아리 조기 고용, Act2 전 스토리라인으로 추가 기사."
+        ],
+        [
+         "초반에 골드를 써야?",
+         "소환(아리)·수리용 국고 유지. Act2 전에 국고 비우지 말 것."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "최적의 오프닝",
+     "metaDescription": "초반 사이클이 분위기를 정한다. 파벌을 조기 균형, 아리 획득, 스토리라인 진행으로 Act2를 강하게."
+    },
+    "fr": {
+     "title": "meilleure ouverture",
+     "intro": "Vos premiers cycles donnent le ton. Équilibrez les factions, recrutez Ari et avancez une histoire.",
+     "metaTitle": "meilleure ouverture",
+     "metaDescription": "Vos premiers cycles donnent le ton. Équilibrez les factions, recrutez Ari et avancez une histoire."
+    },
+    "de": {
+     "title": "bester Einstieg",
+     "intro": "Deine ersten Zyklen setzen den Ton. Balanciere Fraktionen, hole Ari und treibe eine Story voran.",
+     "metaTitle": "bester Einstieg",
+     "metaDescription": "Deine ersten Zyklen setzen den Ton. Balanciere Fraktionen, hole Ari und treibe eine Story voran."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/guides/controls",
+   "title": "Controls & Input Guide",
+   "metaTitle": "Sovereign Tower Controls — Controller, Keyboard & Time…",
+   "metaDescription": "Sovereign Tower controls: full controller support, keyboard/mouse and the no-timed-input feature.",
+   "intro": "Sovereign Tower supports controllers and keyboard/mouse, and is officially playable without timed input.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Controls & input",
+     "body": "",
+     "items": [
+      "Full controller support (Xbox and PlayStation) plus mouse and keyboard.",
+      "Official feature: playable without timed input — no pressure to rush decisions.",
+      "The game supports save-anytime and Steam Cloud.",
+      "Exact key bindings and controller mapping are still being compiled (待补)."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "Does it support controllers?",
+       "Yes — full controller support for Xbox and PlayStation controllers."
+      ],
+      [
+       "Is it playable without timed input?",
+       "Yes — official feature; you can take your time and rewind freely."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "Controls & Input Guide",
+     "metaTitle": "Controls & Input Guide",
+     "metaDescription": "君王之塔支持手柄和键鼠，官方特性是无需限时输入。",
+     "intro": "君王之塔支持手柄和键鼠，官方特性是无需限时输入。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "操作与输入",
+       "body": "",
+       "items": [
+        "完全支持手柄（Xbox 和 PlayStation）以及键鼠。",
+        "官方特性：无需限时输入——不赶时间做决定。",
+        "支持随时保存和 Steam Cloud。",
+        "确切的键位和手柄映射仍在整理（待补）。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "支持手柄吗？",
+         "支持——Xbox 和 PlayStation 手柄完全支持。"
+        ],
+        [
+         "无需限时输入吗？",
+         "对——官方特性；可以从容决策并自由回溯。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "操作と入力",
+     "intro": "ソブリンタワーはコントローラーとキーボード/マウスに対応し、公式に制限時間なし入力でプレイ可能。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "XboxとPlayStationコントローラーを完全サポート、キーボード/マウスも。",
+        "公式機能：制限時間なし入力——急かされない。",
+        "いつでも保存とSteam Cloud対応。",
+        "正確なキーバインドとコントローラーマップは整理中（待補）。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "コントローラー対応？",
+         "はい——XboxとPlayStationを完全サポート。"
+        ],
+        [
+         "制限時間なしで遊べる？",
+         "はい——公式機能。ゆっくり決めて自由に巻き戻せる。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "操作と入力",
+     "metaDescription": "ソブリンタワーはコントローラーとキーボード/マウスに対応し、公式に制限時間なし入力でプレイ可能。"
+    },
+    "ko": {
+     "title": "조작과 입력",
+     "intro": "소버린 타워는 컨트롤러와 키보드/마우스 지원, 공식적으로 시간 제한 없는 입력으로 플레이 가능.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "Xbox·PlayStation 컨트롤러 완전 지원, 키보드/마우스도.",
+        "공식 기능: 시간 제한 없는 입력 — 서두르지 않아도 됨.",
+        "언제든 저장과 Steam Cloud 지원.",
+        "정확한 키바인딩·컨트롤러 매핑은 정리 중(待補)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "컨트롤러 지원?",
+         "네 — Xbox·PlayStation 완전 지원."
+        ],
+        [
+         "시간 제한 없이 플레이?",
+         "네 — 공식 기능. 천천히 결정하고 자유롭게 되돌리기."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "조작과 입력",
+     "metaDescription": "소버린 타워는 컨트롤러와 키보드/마우스 지원, 공식적으로 시간 제한 없는 입력으로 플레이 가능."
+    },
+    "fr": {
+     "title": "commandes et saisie",
+     "intro": "Sovereign Tower prend en charge manettes et clavier, et se joue sans limite de temps.",
+     "metaTitle": "commandes et saisie",
+     "metaDescription": "Sovereign Tower prend en charge manettes et clavier, et se joue sans limite de temps."
+    },
+    "de": {
+     "title": "Steuerung & Eingabe",
+     "intro": "Sovereign Tower unterstützt Controller und Tastatur und ist offiziell ohne Zeitlimit spielbar.",
+     "metaTitle": "Steuerung & Eingabe",
+     "metaDescription": "Sovereign Tower unterstützt Controller und Tastatur und ist offiziell ohne Zeitlimit spielbar."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/guides/difficulty-tips",
+   "title": "Difficulty Tips",
+   "metaTitle": "Sovereign Tower Difficulty Tips — Survive Harder Cycles",
+   "metaDescription": "Sovereign Tower difficulty tips: rewind as a safety net, balanced rosters, meals and armour management.",
+   "intro": "Harder cycles punish rushed play. Use rewind, balance your roster and manage meals and armour.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Difficulty tips",
+     "body": "",
+     "items": [
+      "Use the rewind system as your safety net — replay a bad cycle instead of living with it.",
+      "Keep a balanced roster: cover STR/AGI/MAG/WIT so any quest has a matched knight.",
+      "Feed favourite meals before risky quests for the +0.5 score edge.",
+      "Repair armour at the Forge before damage-heavy quests — armour is your knights' HP."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "How do I handle hard quests?",
+       "Match stats, stack liked conditions, feed a favourite meal and rewind if it fails."
+      ],
+      [
+       "What's the biggest mistake?",
+       "Ignoring faction balance until a crisis, or sending knights to quests they hate."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "Difficulty Tips",
+     "metaTitle": "Difficulty Tips",
+     "metaDescription": "更难的 cycle 惩罚仓促。善用回溯、均衡阵容、管理菜与护甲。",
+     "intro": "更难的 cycle 惩罚仓促。善用回溯、均衡阵容、管理菜与护甲。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "难度技巧",
+       "body": "",
+       "items": [
+        "用回溯系统当安全网——重打糟糕的 cycle，而不是忍受它。",
+        "保持均衡阵容：覆盖 STR/AGI/MAG/WIT，任何任务都有匹配骑士。",
+        "高风险任务前喂最爱菜，拿到 +0.5 分优势。",
+        "伤害型任务前在锻炉修理护甲——护甲是骑士的 HP。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "怎么应对高难任务？",
+         "匹配属性、叠加喜欢条件、喂最爱菜，失败就回溯。"
+        ],
+        [
+         "最大的错误是什么？",
+         "忽视派系平衡直到危机，或派骑士做他们讨厌的任务。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "難易度のコツ",
+     "intro": "難しいサイクルは急ぎを罰する。巻き戻しを使い、ロスターを均衡させ、料理と鎧を管理する。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "巻き戻しを安全網に——悪いサイクルをやり直す。",
+        "均衡ロスター：STR/AGI/MAG/WITをカバー。",
+        "危険なクエスト前に好きな料理を（+0.5得点）。",
+        "ダメージ系クエスト前に鍛冶場で鎧を修理——鎧は騎士のHP。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "高難度クエストは？",
+         "ステータスを合わせ、好きな条件を重ね、好きな料理を、失敗なら巻き戻し。"
+        ],
+        [
+         "最大のミスは？",
+         "派閥バランスを危機まで無視するか、嫌いなクエストに送ること。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "難易度のコツ",
+     "metaDescription": "難しいサイクルは急ぎを罰する。巻き戻しを使い、ロスターを均衡させ、料理と鎧を管理する。"
+    },
+    "ko": {
+     "title": "난이도 팁",
+     "intro": "어려운 사이클은 서두름을 벌한다. 되돌리기 사용, 로스터 균형, 요리·갑옷 관리.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "되돌리기를 안전망으로 — 나쁜 사이클 재시도.",
+        "균형 로스터: STR/AGI/MAG/WIT 커버.",
+        "위험 퀘스트 전 선호 요리(+0.5 점수).",
+        "피해형 퀘스트 전 대장간에서 갑옷 수리 — 갑옷은 기사 HP."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "고난도 퀘스트는?",
+         "스탯 매칭, 선호 조건 중첩, 선호 요리, 실패 시 되돌리기."
+        ],
+        [
+         "최대 실수는?",
+         "파벌 균형을 위기까지 무시하거나 싫어하는 퀘스트에 파견."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "난이도 팁",
+     "metaDescription": "어려운 사이클은 서두름을 벌한다. 되돌리기 사용, 로스터 균형, 요리·갑옷 관리."
+    },
+    "fr": {
+     "title": "conseils de difficulté",
+     "intro": "Les cycles durs punissent la précipitation. Utilisez le retour, équilibrez l'effectif.",
+     "metaTitle": "conseils de difficulté",
+     "metaDescription": "Les cycles durs punissent la précipitation. Utilisez le retour, équilibrez l'effectif."
+    },
+    "de": {
+     "title": "Schwierigkeits-Tipps",
+     "intro": "Schwere Zyklen bestrafen Eile. Nutze das Zurückdrehen, balanciere den Kader.",
+     "metaTitle": "Schwierigkeits-Tipps",
+     "metaDescription": "Schwere Zyklen bestrafen Eile. Nutze das Zurückdrehen, balanciere den Kader."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/guides/knight-loyalty",
+   "title": "Knight Loyalty & Affinity",
+   "metaTitle": "Sovereign Tower Knight Loyalty — Affinity, Resignation…",
+   "metaDescription": "Keep Sovereign Tower knights loyal: affinity rules, the −7 resignation threshold and who never leaves.",
+   "intro": "Knights resign at −7 affinity unless they're Alwena or Ari. Here is how to keep your roster intact.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Knight loyalty & affinity",
+     "body": "",
+     "items": [
+      "Affinity runs −10 to +10; most knights resign at −7.",
+      "Liked quest types give +1.33 affinity each; disliked −0.75. Favourite meals give +1.5.",
+      "Alwena and Ari never resign (threshold −1500).",
+      "Keep liked assignments coming and feed favourites to hold loyal knights."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "How do I keep a knight from resigning?",
+       "Keep affinity above −7: assign liked quests, feed favourite meals and match their sovereign style."
+      ],
+      [
+       "Can a resigned knight come back?",
+       "Not in the same run — they're struck off the roster (待补 any exception)."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "Knight Loyalty & Affinity",
+     "metaTitle": "Knight Loyalty & Affinity",
+     "metaDescription": "骑士在好感 −7 时辞职，除非是 Alwena 或 Ari。这里教你保住阵容。",
+     "intro": "骑士在好感 −7 时辞职，除非是 Alwena 或 Ari。这里教你保住阵容。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "骑士忠诚与好感",
+       "body": "",
+       "items": [
+        "好感 −10 到 +10；多数骑士在 −7 辞职。",
+        "喜欢的任务类型每个 +1.33 好感；厌恶的 −0.75。最爱菜 +1.5。",
+        "Alwena 和 Ari 永不辞职（阈值 −1500）。",
+        "持续派喜欢的任务并喂最爱菜，留住忠诚骑士。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "怎么防止骑士辞职？",
+         "保持好感高于 −7：派喜欢的任务、喂最爱菜、匹配他们的君主风格。"
+        ],
+        [
+         "辞职的骑士能回来吗？",
+         "本周目不能——他们从名单划掉（例外待补）。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "騎士の忠誠",
+     "intro": "騎士は好感度-7で辞任する（AlwenaとAri以外）。ロスターを守る方法。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "好感度は-10〜+10。多数の騎士は-7で辞任。",
+        "好きなクエストタイプは各+1.33好感、嫌いは-0.75。好きな料理は+1.5。",
+        "AlwenaとAriは絶対に辞めない（閾値-1500）。",
+        "好きなクエストを続けて好きな料理を与え、忠誠を保つ。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "辞任を防ぐには？",
+         "好感度を-7以上に：好きなクエスト、好きな料理、君主スタイルを合わせる。"
+        ],
+        [
+         "辞めた騎士は戻る？",
+         "今周回では戻らない——ロスターから外れる（例外は待補）。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "騎士の忠誠",
+     "metaDescription": "騎士は好感度-7で辞任する（AlwenaとAri以外）。ロスターを守る方法。"
+    },
+    "ko": {
+     "title": "기사의 충성",
+     "intro": "기사는 호감도 -7에서 사임(Alwena·Ari 제외). 로스터를 지키는 법.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "호감도 -10~+10. 대부분 기사는 -7에서 사임.",
+        "선호 퀘스트 타입마다 +1.33 호감, 비선호 -0.75. 선호 요리 +1.5.",
+        "Alwena·Ari는 절대 사임 없음(임계값 -1500).",
+        "선호 퀘스트 유지 + 선호 요리로 충성 유지."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "사임 방지법?",
+         "호감도 -7 이상 유지: 선호 퀘스트·요리·군주 스타일 매칭."
+        ],
+        [
+         "사임한 기사는 복귀?",
+         "이번 회차는 아님 — 로스터에서 제외(예외는待補)."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "기사의 충성",
+     "metaDescription": "기사는 호감도 -7에서 사임(Alwena·Ari 제외). 로스터를 지키는 법."
+    },
+    "fr": {
+     "title": "loyauté des chevaliers",
+     "intro": "Les chevaliers démissionnent à -7 d'affinité (sauf Alwena et Ari).",
+     "metaTitle": "loyauté des chevaliers",
+     "metaDescription": "Les chevaliers démissionnent à -7 d'affinité (sauf Alwena et Ari)."
+    },
+    "de": {
+     "title": "Ritter-Loyalität",
+     "intro": "Ritter kündigen bei -7 Sympathie (außer Alwena und Ari).",
+     "metaTitle": "Ritter-Loyalität",
+     "metaDescription": "Ritter kündigen bei -7 Sympathie (außer Alwena und Ari)."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/guides/new-game-plus",
+   "title": "New Game Plus Guide",
+   "metaTitle": "Sovereign Tower New Game Plus — Carry-over & Endings",
+   "metaDescription": "Sovereign Tower New Game Plus: what carries over and why it's the way to see every ending.",
+   "intro": "New Game Plus lets you explore the branches and endings you locked out in run one.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "New Game Plus",
+     "body": "",
+     "items": [
+      "New Game Plus is available after a completed run (per fan sources; exact unlock 待补).",
+      "It carries over progression so you can explore mutually exclusive branches and endings.",
+      "Use it to chase endings you locked out in run one (Arthur marriage, hidden endings, other faction outcomes)."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "What carries over in NG+?",
+       "Exact carry-over is still being verified (待补)."
+      ],
+      [
+       "Why play NG+?",
+       "Several routes and endings are mutually exclusive — NG+ is the clean way to see them."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "New Game Plus Guide",
+     "metaTitle": "New Game Plus Guide",
+     "metaDescription": "新游戏+ 让你探索第一周目锁掉的分支和结局。",
+     "intro": "新游戏+ 让你探索第一周目锁掉的分支和结局。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "新游戏+",
+       "body": "",
+       "items": [
+        "通关后可用 New Game Plus（据粉丝来源；确切解锁条件待补）。",
+        "它继承进度，让你探索互斥的分支和结局。",
+        "用它去追第一周目锁掉的结局（亚瑟王联姻、隐藏结局、其他派系结果）。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "NG+ 继承什么？",
+         "确切的继承内容仍在核实（待补）。"
+        ],
+        [
+         "为什么要玩 NG+？",
+         "多条路线和结局互斥——NG+ 是看全它们的干净方式。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "ニューゲームプラス",
+     "intro": "ニューゲームプラスで1周目にロックされた分岐とエンディングを探索する。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "クリア後にニューゲームプラスが利用可能（ファン情報；正確な解放は待補）。",
+        "進捗を引き継ぎ、互いに排他な分岐とエンディングを探索できる。",
+        "1周目でロックしたエンド（アーサー結婚、隠しエンド等）を追うのに使う。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "NG+は何を引き継ぐ？",
+         "正確な引き継ぎ内容は確認中（待補）。"
+        ],
+        [
+         "なぜNG+を遊ぶ？",
+         "複数のルートとエンドが排他——NG+が全てを見るきれいな方法。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "ニューゲームプラス",
+     "metaDescription": "ニューゲームプラスで1周目にロックされた分岐とエンディングを探索する。"
+    },
+    "ko": {
+     "title": "뉴 게임 플러스",
+     "intro": "뉴 게임 플러스로 1회차에서 잠긴 분기와 엔딩을 탐색한다.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "클리어 후 뉴 게임 플러스 이용 가능(팬 정보; 정확한 해금은待補).",
+        "진행을 계승해 상호 배타적 분기·엔딩 탐색.",
+        "1회차에서 잠긴 엔딩(아서 결혼, 숨은 엔딩 등) 추적에 사용."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "NG+는 무엇을 계승?",
+         "정확한 계승 내용은 확인 중(待補)."
+        ],
+        [
+         "왜 NG+를?",
+         "여러 루트·엔딩이 배타적 — NG+가 전부 보는 깔끔한 방법."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "뉴 게임 플러스",
+     "metaDescription": "뉴 게임 플러스로 1회차에서 잠긴 분기와 엔딩을 탐색한다."
+    },
+    "fr": {
+     "title": "Nouvelle Partie +",
+     "intro": "La Nouvelle Partie + pour explorer les branches et fins verrouillées.",
+     "metaTitle": "Nouvelle Partie +",
+     "metaDescription": "La Nouvelle Partie + pour explorer les branches et fins verrouillées."
+    },
+    "de": {
+     "title": "Neues Spiel +",
+     "intro": "Neues Spiel + zum Erkunden gesperrter Zweige und Enden.",
+     "metaTitle": "Neues Spiel +",
+     "metaDescription": "Neues Spiel + zum Erkunden gesperrter Zweige und Enden."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/guides/alliances",
+   "title": "Alliances & Rival Rulers",
+   "metaTitle": "Sovereign Tower Alliances — Rival Rulers & Faction Sid…",
+   "metaDescription": "Sovereign Tower alliances: the Cycle 4 ultimatum, faction sides and how alliances change endings.",
+   "intro": "Sovereign Tower lets you side with different faction groups at key decisions — here is how alliances work.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Alliances & rival rulers",
+     "body": "",
+     "items": [
+      "The Cycle 4 Dragon Knight ultimatum offers alliance paths: rally the people, ally with nobles, or use mystic forces — each with faction and gold requirements.",
+      "Alliances unlock alternate endings and change faction dynamics.",
+      "Exact alliance branches beyond Cycle 4 are still being verified (待补)."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "How do alliances work?",
+       "Key decisions (e.g. the Cycle 4 ultimatum) let you side with a faction group; each requires specific faction and gold thresholds."
+      ],
+      [
+       "Do alliances change the ending?",
+       "Yes — allying with different groups feeds into different ending paths."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "Alliances & Rival Rulers",
+     "metaTitle": "Alliances & Rival Rulers",
+     "metaDescription": "君王之塔在关键决策时让你站在不同派系一边——这里解释结盟机制。",
+     "intro": "君王之塔在关键决策时让你站在不同派系一边——这里解释结盟机制。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "结盟与邻国君主",
+       "body": "",
+       "items": [
+        "Cycle 4 龙骑士最后通牒提供结盟路径：联合人民、与贵族结盟、或使用秘术势力——各有派系和金币要求。",
+        "结盟解锁替代结局并改变派系动态。",
+        "Cycle 4 之后的结盟分支仍在核实（待补）。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "结盟怎么运作？",
+         "关键决策（如 Cycle 4 通牒）让你站在某个派系一边；各有派系和金币阈值要求。"
+        ],
+        [
+         "结盟改变结局吗？",
+         "会——与不同团体结盟通向不同结局路径。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "同盟ガイド",
+     "intro": "ソブリンタワーは重要決定で派閥側につける——同盟の仕組み。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "サイクル4の竜騎士最後通牒は同盟パスを提供：人民を動員、貴族と同盟、秘術勢力——各派閥と金要件。",
+        "同盟は代替エンドを解放し派閥ダイナミクスを変える。",
+        "サイクル4以降の同盟分岐は確認中（待補）。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "同盟はどう動く？",
+         "重要決定（サイクル4通牒等）で派閥グループ側につく。各派閥・金閾値が必要。"
+        ],
+        [
+         "同盟はエンドを変える？",
+         "はい——異なるグループと同盟すると異なるエンドパスに。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "同盟ガイド",
+     "metaDescription": "ソブリンタワーは重要決定で派閥側につける——同盟の仕組み。"
+    },
+    "ko": {
+     "title": "동맹 가이드",
+     "intro": "소버린 타워는 핵심 결정에서 파벌 편에 설 수 있다 — 동맹 메커니즘.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "사이클 4 용기사 최후통첩은 동맹 패스 제공: 민중 동원, 귀족 동맹, 비술 세력 — 각 파벌·골드 요구.",
+        "동맹은 대체 엔딩 해금·파벌 역학 변경.",
+        "사이클 4 이후 동맹 분기는 확인 중(待補)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "동맹은 어떻게?",
+         "핵심 결정(사이클 4 통첩 등)에서 파벌 편 선택. 각 파벌·골드 임계값 필요."
+        ],
+        [
+         "동맹이 엔딩을 바꾸나?",
+         "네 — 다른 그룹과 동맹하면 다른 엔딩 패스로."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "동맹 가이드",
+     "metaDescription": "소버린 타워는 핵심 결정에서 파벌 편에 설 수 있다 — 동맹 메커니즘."
+    },
+    "fr": {
+     "title": "guide des alliances",
+     "intro": "Sovereign Tower vous permet de choisir un camp aux décisions clés — les alliances.",
+     "metaTitle": "guide des alliances",
+     "metaDescription": "Sovereign Tower vous permet de choisir un camp aux décisions clés — les alliances."
+    },
+    "de": {
+     "title": "Allianzen-Guide",
+     "intro": "Sovereign Tower lässt dich bei Schlüsselentscheidungen Partei ergreifen — Allianzen.",
+     "metaTitle": "Allianzen-Guide",
+     "metaDescription": "Sovereign Tower lässt dich bei Schlüsselentscheidungen Partei ergreifen — Allianzen."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/guides/beat-dragon-knight",
+   "title": "Beat the Dragon Knight (Cycle 4)",
+   "metaTitle": "Sovereign Tower Cycle 4 Dragon Knight — Three Options…",
+   "metaDescription": "The Sovereign Tower Cycle 4 Dragon Knight ultimatum: all three options with faction and gold requirements.",
+   "intro": "At Cycle 4 the Dragon Knight issues an ultimatum with three faction-and-gold paths. Here is how to beat it.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Dragon Knight ultimatum (Cycle 4)",
+     "body": "",
+     "items": [
+      "The Dragon Knight ultimatum arrives at Cycle 4 with three options, each requiring faction and gold.",
+      "Option 1 (rally people): Merchants 8+ / People 14+ / 300G + an ally.",
+      "Option 2 (noble allies): Merchants 10+ / Nobles 8+ / 400G + an ally.",
+      "Option 3 (mystic forces): Scholars 12+ / People 10+ / 300G + an ally.",
+      "How you resolve it locks or unlocks ending paths."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "Which option is best?",
+       "Depends on your faction strengths — pick the one you can already meet, then recover the others."
+      ],
+      [
+       "Can I avoid the ultimatum?",
+       "It's a fixed Cycle 4 story beat; you can rewind to re-roll your choice within it."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "Beat the Dragon Knight (Cycle 4)",
+     "metaTitle": "Beat the Dragon Knight (Cycle 4)",
+     "metaDescription": "Cycle 4 龙骑士发出通牒，有三条派系+金币路径。这里教你应对。",
+     "intro": "Cycle 4 龙骑士发出通牒，有三条派系+金币路径。这里教你应对。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "龙骑士最后通牒（Cycle 4）",
+       "body": "",
+       "items": [
+        "龙骑士最后通牒在 Cycle 4 到来，有三个选项，各有派系和金币要求。",
+        "选项1（联合人民）：商人 8+ / 平民 14+ / 300G + 一个盟国。",
+        "选项2（贵族结盟）：商人 10+ / 贵族 8+ / 400G + 盟国。",
+        "选项3（秘术势力）：学者 12+ / 平民 10+ / 300G + 盟国。",
+        "你的解法会锁定或解锁结局路径。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "哪个选项最好？",
+         "取决于你的派系优势——选你已能满足的，再恢复其他。"
+        ],
+        [
+         "能避开通牒吗？",
+         "它是 Cycle 4 的固定剧情节点；可以回溯重 roll 选择。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "竜騎士を倒す",
+     "intro": "サイクル4の竜騎士最後通牒——3つの派閥・金ルート。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "竜騎士の最後通牒はサイクル4に到来。3つの選択肢、各派閥と金要件。",
+        "選択肢1（人民動員）：商人8+/人民14+/300G+盟国。",
+        "選択肢2（貴族同盟）：商人10+/貴族8+/400G+盟国。",
+        "選択肢3（秘術勢力）：学者12+/人民10+/300G+盟国。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "どの選択肢が最善？",
+         "自軍の派閥強み次第——既に満たせるものを選び、他を回復。"
+        ],
+        [
+         "通牒を避けられる？",
+         "サイクル4の固定ビート。巻き戻しで選択を再rollできる。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "竜騎士を倒す",
+     "metaDescription": "サイクル4の竜騎士最後通牒——3つの派閥・金ルート。"
+    },
+    "ko": {
+     "title": "용기사 처치",
+     "intro": "사이클 4 용기사 최후통첩 — 3개 파벌·골드 루트.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "용기사 최후통첩은 사이클 4에 도래. 3개 선택지, 각 파벌·골드 요구.",
+        "선택지1(민중 동원): 상인 8+/평민 14+/300G+동맹국.",
+        "선택지2(귀족 동맹): 상인 10+/귀족 8+/400G+동맹국.",
+        "선택지3(비술 세력): 학자 12+/평민 10+/300G+동맹국."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "어느 선택지가 최선?",
+         "자신의 파벌 강점에 따라 — 이미 충족 가능한 것을 고르고 나머지 회복."
+        ],
+        [
+         "통첩을 피할 수 있나?",
+         "사이클 4 고정 비트. 되돌리기로 선택 재롤 가능."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "용기사 처치",
+     "metaDescription": "사이클 4 용기사 최후통첩 — 3개 파벌·골드 루트."
+    },
+    "fr": {
+     "title": "vaincre le chevalier dragon",
+     "intro": "L'ultimatum du chevalier dragon au Cycle 4 — trois routes.",
+     "metaTitle": "vaincre le chevalier dragon",
+     "metaDescription": "L'ultimatum du chevalier dragon au Cycle 4 — trois routes."
+    },
+    "de": {
+     "title": "Drachenritter besiegen",
+     "intro": "Das Drachenritter-Ultimatum in Zyklus 4 — drei Wege.",
+     "metaTitle": "Drachenritter besiegen",
+     "metaDescription": "Das Drachenritter-Ultimatum in Zyklus 4 — drei Wege."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/guides/sovereign-archetypes",
+   "title": "Sovereign Archetypes Explained",
+   "metaTitle": "Sovereign Tower Archetypes — Tyrannic, Wise, Kind, Aud…",
+   "metaDescription": "Sovereign Tower's five sovereign archetypes, which knights approve each, and how to use them.",
+   "intro": "Your ruling style is defined by five archetypes. Knights react to them — here is how to play the court.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Sovereign archetypes",
+     "body": "",
+     "items": [
+      "Five sovereign archetypes: Tyrannic, Wise, Kind, Audacious, Omniscient — applied to your decisions in audiences.",
+      "Knights who like a tag gain affinity when you act that way; those who dislike it lose affinity.",
+      "Examples: Angelica likes Kind and dislikes Tyrannic; Brunhilda likes Audacious and dislikes Wise.",
+      "Balance your archetype choices against the knights you want to keep happy."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "Do archetypes affect gameplay?",
+       "Yes — they move knight affinity via audience decisions; some knights strongly prefer or reject a style."
+      ],
+      [
+       "Which archetype is best?",
+       "No single best — pick the style your core knights approve of, or split decisions to balance."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "Sovereign Archetypes Explained",
+     "metaTitle": "Sovereign Archetypes Explained",
+     "metaDescription": "你的统治风格由五种君主风格定义。骑士会对此反应——这里教你玩转朝堂。",
+     "intro": "你的统治风格由五种君主风格定义。骑士会对此反应——这里教你玩转朝堂。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "君主风格",
+       "body": "",
+       "items": [
+        "五种君主风格：Tyrannic、Wise、Kind、Audacious、Omniscient——应用于朝会决策。",
+        "喜欢某标签的骑士在你那样行事时加好感；反感的掉好感。",
+        "例：Angelica 喜欢 Kind 厌恶 Tyrannic；Brunhilda 喜欢 Audacious 厌恶 Wise。",
+        "把风格选择和你想留住的骑士匹配。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "风格影响玩法吗？",
+         "影响——通过朝会决策移动骑士好感；部分骑士强烈偏好或反感某种风格。"
+        ],
+        [
+         "哪种风格最好？",
+         "没有唯一最佳——选你核心骑士认可的风格，或拆分决策来平衡。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "君主の原型",
+     "intro": "あなたの統治スタイルは5つの原型で定義される。騎士はそれに反応する。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "5つの君主原型：Tyrannic、Wise、Kind、Audacious、Omniscient——朝会の決定に適用。",
+        "タグを好む騎士はその行動で好感上昇、嫌う騎士は減少。",
+        "例：アンジェリカはKind好き・Tyrannic嫌い。ブルンヒルダはAudacious好き・Wise嫌い。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "原型はゲームプレイに影響？",
+         "はい——朝会決定で騎士好感を動かす。"
+        ],
+        [
+         "どの原型が最善？",
+         "唯一の最善なし——核心騎士が認めるスタイルを選ぶか、分割して均衡。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "君主の原型",
+     "metaDescription": "あなたの統治スタイルは5つの原型で定義される。騎士はそれに反応する。"
+    },
+    "ko": {
+     "title": "군주 원형",
+     "intro": "당신의 통치 스타일은 5개 원형으로 정의. 기사가 반응한다.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "5개 군주 원형: Tyrannic, Wise, Kind, Audacious, Omniscient — 조회 결정에 적용.",
+        "태그를 좋아하는 기사는 그 행동으로 호감 상승, 싫어하면 하락.",
+        "예: 안젤리카는 Kind 선호·Tyrannic 비선호. 브룬힐다는 Audacious 선호·Wise 비선호."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "원형이 게임플레이에 영향?",
+         "네 — 조회 결정으로 기사 호감 이동."
+        ],
+        [
+         "어느 원형이 최선?",
+         "유일한 최선 없음 — 핵심 기사가 인정하는 스타일 선택 또는 분할 균형."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "군주 원형",
+     "metaDescription": "당신의 통치 스타일은 5개 원형으로 정의. 기사가 반응한다."
+    },
+    "fr": {
+     "title": "archétypes du souverain",
+     "intro": "Votre style de règne se définit par cinq archétypes auxquels les chevaliers réagissent.",
+     "metaTitle": "archétypes du souverain",
+     "metaDescription": "Votre style de règne se définit par cinq archétypes auxquels les chevaliers réagissent."
+    },
+    "de": {
+     "title": "Herrscher-Archetypen",
+     "intro": "Dein Herrscherstil wird durch fünf Archetypen definiert, auf die Ritter reagieren.",
+     "metaTitle": "Herrscher-Archetypen",
+     "metaDescription": "Dein Herrscherstil wird durch fünf Archetypen definiert, auf die Ritter reagieren."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/guides/tower-servants",
+   "title": "Tower Servants & Staff",
+   "metaTitle": "Sovereign Tower Tower Servants — Staff, Intendant & Ro…",
+   "metaDescription": "Sovereign Tower's tower servants and staff: the Intendant's role and what we know about the rest.",
+   "intro": "Beyond the knights, the Tower has servants and staff — with the Intendant Alwena as the key figure.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Tower servants & staff",
+     "body": "",
+     "items": [
+      "The Tower has servants and staff beyond the knights (reported; exact roster 待补).",
+      "Intendant Alwena is the key staff figure — she manages the Tower and reveals knight rumours.",
+      "Tower servants likely include court roles and maintenance staff; exact list is still being verified (待补)."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "Who are the tower servants?",
+       "Reported as support staff; the exact list is still being verified (待补)."
+      ],
+      [
+       "What does the Intendant do?",
+       "Alwena manages the Tower and reveals other knights' hidden traits one at a time."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "Tower Servants & Staff",
+     "metaTitle": "Tower Servants & Staff",
+     "metaDescription": "除了骑士，高塔还有仆从和职员——总管 Alwena 是关键人物。",
+     "intro": "除了骑士，高塔还有仆从和职员——总管 Alwena 是关键人物。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "塔仆与职员",
+       "body": "",
+       "items": [
+        "高塔有骑士之外的仆从和职员（已报告；确切名单待补）。",
+        "总管 Alwena 是关键职员——管理高塔并揭示骑士流言。",
+        "塔仆可能包括宫廷角色和后勤人员；确切名单仍在核实（待补）。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "塔仆是谁？",
+         "已报告为后勤人员；确切名单仍在核实（待补）。"
+        ],
+        [
+         "总管做什么？",
+         "Alwena 管理高塔，并逐个揭示其他骑士的隐藏特质。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "塔の従者",
+     "intro": "騎士のほかに塔には従者と職員がいる——総管アルウェナが鍵。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "騎士以外にも塔には従者と職員がいる（報告済み；正確な名簿は待補）。",
+        "総管アルウェナが鍵——塔を管理し、騎士の噂を暴く。",
+        "塔の従者には宮廷役や保守スタッフが含まれる可能性。正確なリストは確認中（待補）。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "塔の従者は誰？",
+         "補助スタッフとして報告。正確なリストは確認中（待補）。"
+        ],
+        [
+         "総管の役割？",
+         "アルウェナは塔を管理し、他の騎士の隠し特質を一つずつ明かす。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "塔の従者",
+     "metaDescription": "騎士のほかに塔には従者と職員がいる——総管アルウェナが鍵。"
+    },
+    "ko": {
+     "title": "탑의 하인",
+     "intro": "기사 외에 탑에는 하인과 직원이 있다 — 총관 알웨나가 핵심.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "기사 외에도 탑에는 하인·직원 존재(보고됨; 정확한 명부는待補).",
+        "총관 알웨나가 핵심 — 탑 관리, 기사 루머 폭로.",
+        "탑 하인에는 궁정 역할·유지보수 스태프 포함 가능. 정확한 목록은 확인 중(待補)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "탑 하인은 누구?",
+         "보조 스태프로 보고. 정확한 목록은 확인 중(待補)."
+        ],
+        [
+         "총관 역할?",
+         "알웨나는 탑 관리, 다른 기사 숨은 특성을 하나씩 공개."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "탑의 하인",
+     "metaDescription": "기사 외에 탑에는 하인과 직원이 있다 — 총관 알웨나가 핵심."
+    },
+    "fr": {
+     "title": "serviteurs de la tour",
+     "intro": "Au-delà des chevaliers, la tour a des serviteurs — avec l'Intendante Alwena en figure clé.",
+     "metaTitle": "serviteurs de la tour",
+     "metaDescription": "Au-delà des chevaliers, la tour a des serviteurs — avec l'Intendante Alwena en figure clé."
+    },
+    "de": {
+     "title": "Turm-Diener",
+     "intro": "Neben den Rittern hat der Turm Diener — mit Intendantin Alwena als Schlüsselfigur.",
+     "metaTitle": "Turm-Diener",
+     "metaDescription": "Neben den Rittern hat der Turm Diener — mit Intendantin Alwena als Schlüsselfigur."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/knights/stats",
+   "title": "Knight Stats Explained",
+   "metaTitle": "Sovereign Tower Knight Stats — STR, AGI, CHA, MAG, WIT…",
+   "metaDescription": "Sovereign Tower knight stats: what Strength, Agility, Charisma, Magic, Wit and Luck do, and how scoring works.",
+   "intro": "Every knight has six stats. Here is what each one does and how they feed quest scoring.",
+   "sections": [
+    {
+     "type": "table",
+     "tag": "DATA",
+     "heading": "",
+     "body": "",
+     "headers": [
+      "Stat",
+      "What it does"
+     ],
+     "rows": [
+      [
+       "Strength",
+       "Raw physical power for combat, hunting and heavy tasks."
+      ],
+      [
+       "Agility",
+       "Speed, dexterity, mobility — scouts and duellists lean on it."
+      ],
+      [
+       "Charisma",
+       "Persuasion and social presence — diplomacy and public quests."
+      ],
+      [
+       "Magic",
+       "Arcane aptitude — rituals and magical quests."
+      ],
+      [
+       "Wit",
+       "Intelligence, perception, deduction — research and investigation."
+      ],
+      [
+       "Luck",
+       "Fortune — small bonuses and better outcomes."
+      ]
+     ]
+    },
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "How stats work",
+     "body": "",
+     "items": [
+      "All stats run 0–15; the value used in scoring is clamped to 0–15 including equipment bonuses.",
+      "Each quest requires one or more stats; a knight whose stat beats the requirement contributes positive score.",
+      "Level-ups add one point to any stat below 15 — invest in the stats your favourite quests demand."
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "Knight Stats Explained",
+     "metaTitle": "Knight Stats Explained",
+     "metaDescription": "每位骑士有六维属性。这里说明每一项的作用以及它们如何喂给任务得分。",
+     "intro": "每位骑士有六维属性。这里说明每一项的作用以及它们如何喂给任务得分。",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "属性",
+        "作用"
+       ],
+       "rows": [
+        [
+         "力量 Strength",
+         "战斗、狩猎和重物任务的物理力量。"
+        ],
+        [
+         "敏捷 Agility",
+         "速度、灵巧、机动——侦察和决斗者依赖它。"
+        ],
+        [
+         "魅力 Charisma",
+         "说服与社交存在——外交和公众任务。"
+        ],
+        [
+         "魔法 Magic",
+         "秘术才能——仪式和魔法任务。"
+        ],
+        [
+         "智慧 Wit",
+         "智力、洞察、推理——调查与研究。"
+        ],
+        [
+         "幸运 Luck",
+         "运气——小加成和更好的结果。"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "属性怎么运作",
+       "body": "",
+       "items": [
+        "所有属性 0–15；参与得分的值钳制在 0–15（含装备加成）。",
+        "每个任务要求一种或多种属性；属性压过需求的骑士贡献正分。",
+        "升级给未满 15 的属性投 1 点——投在你常用任务要求的属性上。"
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "騎士ステータス",
+     "intro": "各騎士は6つのステータスを持つ。それぞれの役割とクエスト得点への効き方。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "すべてのステータスは0-15。得点に使う値は装備ボーナス含め0-15にクランプ。",
+        "各クエストは1つ以上のステータスを要求。上回ると正の得点。",
+        "レベルアップで15未満のステータスに1ポイント——好きなクエストの要求属性に投資。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
+     "metaTitle": "騎士ステータス",
+     "metaDescription": "各騎士は6つのステータスを持つ。それぞれの役割とクエスト得点への効き方。"
+    },
+    "ko": {
+     "title": "기사 스탯",
+     "intro": "각 기사는 6종 스탯 보유. 각각의 역할과 퀘스트 점수 작용.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "모든 스탯은 0-15. 점수에 쓰는 값은 장비 보너스 포함 0-15 클램프.",
+        "각 퀘스트는 1개 이상 스탯 요구. 초과하면 양수 점수.",
+        "레벨업마다 15 미만 스탯에 1포인트 — 선호 퀘스트 요구 스탯에 투자."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
+     "metaTitle": "기사 스탯",
+     "metaDescription": "각 기사는 6종 스탯 보유. 각각의 역할과 퀘스트 점수 작용."
+    },
+    "fr": {
+     "title": "stats des chevaliers",
+     "intro": "Chaque chevalier a six stats. Leur rôle et leur effet sur le score de quête.",
+     "metaTitle": "stats des chevaliers",
+     "metaDescription": "Chaque chevalier a six stats. Leur rôle et leur effet sur le score de quête."
+    },
+    "de": {
+     "title": "Ritter-Werte",
+     "intro": "Jeder Ritter hat sechs Werte. Ihre Rolle und Wirkung auf Quest-Punkte.",
+     "metaTitle": "Ritter-Werte",
+     "metaDescription": "Jeder Ritter hat sechs Werte. Ihre Rolle und Wirkung auf Quest-Punkte."
+    }
+   }
+  },
+  {
+   "slug": "sovereign-tower/knights/the-bard",
+   "title": "The Bard (Secret Knight)",
+   "metaTitle": "Sovereign Tower The Bard — Secret Knight & Recruit Sta…",
+   "metaDescription": "Sovereign Tower's The Bard (Hildegard): what's known about the secret knight and recruit status.",
+   "intro": "The Bard appears in fan data as a secret knight. Here is what we know so far.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "The Bard (Hildegard)",
+     "body": "",
+     "items": [
+      "The Bard (Hildegard) appears in fan wiki data as a secret knight.",
+      "Exact recruit steps and stats are still being verified (待补).",
+      "Watch for story events tied to music or performances — musical conditions appear in quest data."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "Who is The Bard?",
+       "A secret knight reported in fan wiki data; exact details are still being verified (待补)."
+      ],
+      [
+       "How do I recruit The Bard?",
+       "Recruit steps are not yet confirmed (待补)."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "The Bard (Secret Knight)",
+     "metaTitle": "The Bard (Secret Knight)",
+     "metaDescription": "吟游诗人出现在粉丝数据中作为隐藏骑士。这里是目前已知信息。",
+     "intro": "吟游诗人出现在粉丝数据中作为隐藏骑士。这里是目前已知信息。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "吟游诗人（Hildegard）",
+       "body": "",
+       "items": [
+        "The Bard（Hildegard）出现在粉丝 wiki 数据的隐藏骑士里。",
+        "确切的招募步骤和属性仍在核实（待补）。",
+        "留意与音乐或表演相关的剧情事件——任务数据里有 Musical 条件。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "The Bard 是谁？",
+         "粉丝 wiki 数据中的隐藏骑士；确切细节仍在核实（待补）。"
+        ],
+        [
+         "怎么招募 The Bard？",
+         "招募步骤尚未确认（待补）。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "吟遊詩人",
+     "intro": "吟遊詩人はファンデータの隠し騎士。判明している情報。",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "吟遊詩人（ヒルデガルト）はファンwikiデータの隠し騎士。",
+        "正確な雇用手順とステータスは確認中（待補）。",
+        "音楽やパフォーマンス関連のストーリーイベントに注目——クエストデータにMusical条件がある。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "吟遊詩人は誰？",
+         "ファンwikiデータの隠し騎士。正確な詳細は確認中（待補）。"
+        ],
+        [
+         "どう雇う？",
+         "雇用手順は未確認（待補）。"
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "吟遊詩人",
+     "metaDescription": "吟遊詩人はファンデータの隠し騎士。判明している情報。"
+    },
+    "ko": {
+     "title": "음유시인",
+     "intro": "음유시인은 팬 데이터의 숨은 기사. 알려진 정보.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "",
+       "items": [
+        "음유시인(힐데가르트)은 팬 위키 데이터의 숨은 기사.",
+        "정확한 고용 절차·스탯은 확인 중(待補).",
+        "음악·공연 관련 스토리 이벤트 주목 — 퀘스트 데이터에 Musical 조건."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "음유시인은 누구?",
+         "팬 위키 데이터의 숨은 기사. 정확한 상세는 확인 중(待補)."
+        ],
+        [
+         "어떻게 고용?",
+         "고용 절차 미확인(待補)."
+        ]
+       ]
+      }
+     ],
+     "metaTitle": "음유시인",
+     "metaDescription": "음유시인은 팬 데이터의 숨은 기사. 알려진 정보."
+    },
+    "fr": {
+     "title": "le Barde",
+     "intro": "Le Barde est un chevalier secret des données de fans. Ce qu'on sait.",
+     "metaTitle": "le Barde",
+     "metaDescription": "Le Barde est un chevalier secret des données de fans. Ce qu'on sait."
+    },
+    "de": {
+     "title": "der Barde",
+     "intro": "Der Barde ist ein Geheimritter aus Fan-Daten. Was wir wissen.",
+     "metaTitle": "der Barde",
+     "metaDescription": "Der Barde ist ein Geheimritter aus Fan-Daten. Was wir wissen."
+    }
+   }
   }
  ]
 }

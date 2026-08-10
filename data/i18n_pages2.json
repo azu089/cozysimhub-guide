@@ -448,5 +448,203 @@
    "title": "Handwerk & Ausrüstung",
    "intro": "Die Schmiede: Rüstung ist die LP von Quests, Rezepte und Upgrades."
   }
+ },
+ "sovereign-tower/guides/best-opening": {
+  "ja": {
+   "title": "最適なオープニング",
+   "intro": "序盤のサイクルが基調を決める。派閥を早期に均衡させ、アリを獲得し、ストーリー線を進めてAct2を強くする。"
+  },
+  "ko": {
+   "title": "최적의 오프닝",
+   "intro": "초반 사이클이 분위기를 정한다. 파벌을 조기 균형, 아리 획득, 스토리라인 진행으로 Act2를 강하게."
+  },
+  "fr": {
+   "title": "meilleure ouverture",
+   "intro": "Vos premiers cycles donnent le ton. Équilibrez les factions, recrutez Ari et avancez une histoire."
+  },
+  "de": {
+   "title": "bester Einstieg",
+   "intro": "Deine ersten Zyklen setzen den Ton. Balanciere Fraktionen, hole Ari und treibe eine Story voran."
+  }
+ },
+ "sovereign-tower/guides/controls": {
+  "ja": {
+   "title": "操作と入力",
+   "intro": "ソブリンタワーはコントローラーとキーボード/マウスに対応し、公式に制限時間なし入力でプレイ可能。"
+  },
+  "ko": {
+   "title": "조작과 입력",
+   "intro": "소버린 타워는 컨트롤러와 키보드/마우스 지원, 공식적으로 시간 제한 없는 입력으로 플레이 가능."
+  },
+  "fr": {
+   "title": "commandes et saisie",
+   "intro": "Sovereign Tower prend en charge manettes et clavier, et se joue sans limite de temps."
+  },
+  "de": {
+   "title": "Steuerung & Eingabe",
+   "intro": "Sovereign Tower unterstützt Controller und Tastatur und ist offiziell ohne Zeitlimit spielbar."
+  }
+ },
+ "sovereign-tower/guides/difficulty-tips": {
+  "ja": {
+   "title": "難易度のコツ",
+   "intro": "難しいサイクルは急ぎを罰する。巻き戻しを使い、ロスターを均衡させ、料理と鎧を管理する。"
+  },
+  "ko": {
+   "title": "난이도 팁",
+   "intro": "어려운 사이클은 서두름을 벌한다. 되돌리기 사용, 로스터 균형, 요리·갑옷 관리."
+  },
+  "fr": {
+   "title": "conseils de difficulté",
+   "intro": "Les cycles durs punissent la précipitation. Utilisez le retour, équilibrez l'effectif."
+  },
+  "de": {
+   "title": "Schwierigkeits-Tipps",
+   "intro": "Schwere Zyklen bestrafen Eile. Nutze das Zurückdrehen, balanciere den Kader."
+  }
+ },
+ "sovereign-tower/guides/knight-loyalty": {
+  "ja": {
+   "title": "騎士の忠誠",
+   "intro": "騎士は好感度-7で辞任する（AlwenaとAri以外）。ロスターを守る方法。"
+  },
+  "ko": {
+   "title": "기사의 충성",
+   "intro": "기사는 호감도 -7에서 사임(Alwena·Ari 제외). 로스터를 지키는 법."
+  },
+  "fr": {
+   "title": "loyauté des chevaliers",
+   "intro": "Les chevaliers démissionnent à -7 d'affinité (sauf Alwena et Ari)."
+  },
+  "de": {
+   "title": "Ritter-Loyalität",
+   "intro": "Ritter kündigen bei -7 Sympathie (außer Alwena und Ari)."
+  }
+ },
+ "sovereign-tower/guides/new-game-plus": {
+  "ja": {
+   "title": "ニューゲームプラス",
+   "intro": "ニューゲームプラスで1周目にロックされた分岐とエンディングを探索する。"
+  },
+  "ko": {
+   "title": "뉴 게임 플러스",
+   "intro": "뉴 게임 플러스로 1회차에서 잠긴 분기와 엔딩을 탐색한다."
+  },
+  "fr": {
+   "title": "Nouvelle Partie +",
+   "intro": "La Nouvelle Partie + pour explorer les branches et fins verrouillées."
+  },
+  "de": {
+   "title": "Neues Spiel +",
+   "intro": "Neues Spiel + zum Erkunden gesperrter Zweige und Enden."
+  }
+ },
+ "sovereign-tower/guides/alliances": {
+  "ja": {
+   "title": "同盟ガイド",
+   "intro": "ソブリンタワーは重要決定で派閥側につける——同盟の仕組み。"
+  },
+  "ko": {
+   "title": "동맹 가이드",
+   "intro": "소버린 타워는 핵심 결정에서 파벌 편에 설 수 있다 — 동맹 메커니즘."
+  },
+  "fr": {
+   "title": "guide des alliances",
+   "intro": "Sovereign Tower vous permet de choisir un camp aux décisions clés — les alliances."
+  },
+  "de": {
+   "title": "Allianzen-Guide",
+   "intro": "Sovereign Tower lässt dich bei Schlüsselentscheidungen Partei ergreifen — Allianzen."
+  }
+ },
+ "sovereign-tower/guides/beat-dragon-knight": {
+  "ja": {
+   "title": "竜騎士を倒す",
+   "intro": "サイクル4の竜騎士最後通牒——3つの派閥・金ルート。"
+  },
+  "ko": {
+   "title": "용기사 처치",
+   "intro": "사이클 4 용기사 최후통첩 — 3개 파벌·골드 루트."
+  },
+  "fr": {
+   "title": "vaincre le chevalier dragon",
+   "intro": "L'ultimatum du chevalier dragon au Cycle 4 — trois routes."
+  },
+  "de": {
+   "title": "Drachenritter besiegen",
+   "intro": "Das Drachenritter-Ultimatum in Zyklus 4 — drei Wege."
+  }
+ },
+ "sovereign-tower/guides/sovereign-archetypes": {
+  "ja": {
+   "title": "君主の原型",
+   "intro": "あなたの統治スタイルは5つの原型で定義される。騎士はそれに反応する。"
+  },
+  "ko": {
+   "title": "군주 원형",
+   "intro": "당신의 통치 스타일은 5개 원형으로 정의. 기사가 반응한다."
+  },
+  "fr": {
+   "title": "archétypes du souverain",
+   "intro": "Votre style de règne se définit par cinq archétypes auxquels les chevaliers réagissent."
+  },
+  "de": {
+   "title": "Herrscher-Archetypen",
+   "intro": "Dein Herrscherstil wird durch fünf Archetypen definiert, auf die Ritter reagieren."
+  }
+ },
+ "sovereign-tower/guides/tower-servants": {
+  "ja": {
+   "title": "塔の従者",
+   "intro": "騎士のほかに塔には従者と職員がいる——総管アルウェナが鍵。"
+  },
+  "ko": {
+   "title": "탑의 하인",
+   "intro": "기사 외에 탑에는 하인과 직원이 있다 — 총관 알웨나가 핵심."
+  },
+  "fr": {
+   "title": "serviteurs de la tour",
+   "intro": "Au-delà des chevaliers, la tour a des serviteurs — avec l'Intendante Alwena en figure clé."
+  },
+  "de": {
+   "title": "Turm-Diener",
+   "intro": "Neben den Rittern hat der Turm Diener — mit Intendantin Alwena als Schlüsselfigur."
+  }
+ },
+ "sovereign-tower/knights/stats": {
+  "ja": {
+   "title": "騎士ステータス",
+   "intro": "各騎士は6つのステータスを持つ。それぞれの役割とクエスト得点への効き方。"
+  },
+  "ko": {
+   "title": "기사 스탯",
+   "intro": "각 기사는 6종 스탯 보유. 각각의 역할과 퀘스트 점수 작용."
+  },
+  "fr": {
+   "title": "stats des chevaliers",
+   "intro": "Chaque chevalier a six stats. Leur rôle et leur effet sur le score de quête."
+  },
+  "de": {
+   "title": "Ritter-Werte",
+   "intro": "Jeder Ritter hat sechs Werte. Ihre Rolle und Wirkung auf Quest-Punkte."
+  }
+ },
+ "sovereign-tower/knights/the-bard": {
+  "ja": {
+   "title": "吟遊詩人",
+   "intro": "吟遊詩人はファンデータの隠し騎士。判明している情報。"
+  },
+  "ko": {
+   "title": "음유시인",
+   "intro": "음유시인은 팬 데이터의 숨은 기사. 알려진 정보."
+  },
+  "fr": {
+   "title": "le Barde",
+   "intro": "Le Barde est un chevalier secret des données de fans. Ce qu'on sait."
+  },
+  "de": {
+   "title": "der Barde",
+   "intro": "Der Barde ist ein Geheimritter aus Fan-Daten. Was wir wissen."
+  }
  }
 }

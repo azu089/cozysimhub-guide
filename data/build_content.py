@@ -5,7 +5,7 @@ en 为默认语言（数据层），zh-CN 为中文翻译；i18n 框架含 ja/ko
 """
 import json, copy
 from pathlib import Path
-from content_pages import build_knights_roster, build_knights_tier, build_guides_factions, build_guides_recruit, build_guides_timerewind, build_guides_questsuccess, build_walkthrough_act0, build_walkthrough_gavault, build_walkthrough_groveshire, build_walkthrough_beasthunt, build_walkthrough_goosequest, build_walkthrough_rebellion, build_systems_annexes, build_systems_roundtable, build_systems_questoutcomes, build_systems_kingdommap, build_systems_audience, build_updates_log, build_review_sysreq, build_review_overview, build_review_releasedemo, build_review_soundtrack, build_items_overview, build_items_consumables, build_items_craftinggear
+from content_pages import build_knights_roster, build_knights_tier, build_guides_factions, build_guides_recruit, build_guides_timerewind, build_guides_questsuccess, build_walkthrough_act0, build_walkthrough_gavault, build_walkthrough_groveshire, build_walkthrough_beasthunt, build_walkthrough_goosequest, build_walkthrough_rebellion, build_systems_annexes, build_systems_roundtable, build_systems_questoutcomes, build_systems_kingdommap, build_systems_audience, build_updates_log, build_review_sysreq, build_review_overview, build_review_releasedemo, build_review_soundtrack, build_items_overview, build_items_consumables, build_items_craftinggear, build_guides_bestopening, build_guides_controls, build_guides_difficultytips, build_guides_knightloyalty, build_guides_newgameplus, build_guides_alliances, build_guides_beatdragonknight, build_guides_archetypes, build_guides_towerservants, build_knights_stats, build_knights_thebard
 from content_data import (
     KNIGHT_NAMES, KNIGHTS, KNIGHTS_BASIC, RECIPES, QUEST_TYPES, QUEST_CONDITIONS,
     SOVEREIGN_TAGS, XP_TABLE, SCORE_THRESHOLDS, FACTIONS,
@@ -634,6 +634,17 @@ ALL_PAGES = [
     build_items_overview(),
     build_items_consumables(),
     build_items_craftinggear(),
+    build_guides_bestopening(),
+    build_guides_controls(),
+    build_guides_difficultytips(),
+    build_guides_knightloyalty(),
+    build_guides_newgameplus(),
+    build_guides_alliances(),
+    build_guides_beatdragonknight(),
+    build_guides_archetypes(),
+    build_guides_towerservants(),
+    build_knights_stats(),
+    build_knights_thebard(),
 ]
 
 # ja/ko/fr/de 页面翻译（data/i18n_pages.json）
