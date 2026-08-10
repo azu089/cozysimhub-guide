@@ -1407,6 +1407,25 @@
          ""
         ]
        ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "騎士の見方",
+       "body": "",
+       "items": [
+        "ステータスは0〜15のスケール。レベル1〜15で、各レベルアップで15未満の任意のステータスに1ポイント加算。",
+        "既知の特性は採用時に見えます。隠し特性は初日から計算に反映されますが、会話・クエスト結果・ストーリーイベントで判明するまで見えません。",
+        "†はAlwenaが管理官の噂として明かせる特性（一度にひとつ、未発見のもののみ）。",
+        "好みのクエストタイプは1回につき+1.33親密度、嫌いは−0.75。好物を食べさせると親密度+1.5、クエストスコア+0.5。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
       }
      ]
     },
@@ -1648,6 +1667,25 @@
          ""
         ]
        ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "기사 보는 법",
+       "body": "",
+       "items": [
+        "스탯은 0~15 척도. 레벨 1~15이며, 레벨업마다 15 미만 스탯 하나에 1포인트가 더해집니다.",
+        "알려진 특성은 고용 즉시 보입니다. 숨은 특성은 첫날부터 계산에 반영되지만, 대화·퀘스트 결과·스토리 이벤트로 밝혀지기 전까지는 보이지 않습니다.",
+        "†는 Alwena가 관리관 소문으로 밝힐 수 있는 특성(한 번에 하나, 아직 모르는 것만).",
+        "좋아하는 퀘스트 유형은 배정마다 친밀도 +1.33, 싫어하는 유형은 −0.75. 좋아하는 식사를 주면 친밀도 +1.5, 퀘스트 점수 +0.5."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
       }
      ]
     },
@@ -1660,16 +1698,14 @@
       {
        "type": "table",
        "tag": "DATA",
-       "heading": "",
+       "heading": "Tableau des chevaliers",
        "body": "",
        "headers": [
         "Chevalier",
         "Origine",
-        "Nv",
+        "Niv.",
         "Armure",
-        "Stats (STR/AGI/CHA/MAG/WIT/LCK)",
-        "Plats favoris",
-        "Notes"
+        "Stats (FOR/AGI/CHA/MAG/ESP/CHA)"
        ],
        "rows": [
         [
@@ -1889,6 +1925,25 @@
          ""
         ]
        ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Comment lire un chevalier",
+       "body": "",
+       "items": [
+        "Les stats sont sur une échelle de 0 à 15. Niveau 1-15 ; chaque montée de niveau ajoute un point à toute stat inférieure à 15.",
+        "Les traits connus sont visibles dès le recrutement. Les traits cachés comptent dans les calculs dès le premier jour mais restent invisibles jusqu'à ce qu'ils soient révélés par des conversations, des résultats de quête ou des événements.",
+        "† marque les traits qu'Alwena peut révéler comme rumeurs d'Intendante — un à la fois, uniquement ceux que vous ne connaissez pas déjà.",
+        "Les types appréciés donnent +1,33 d'affinité par affectation ; les détestés −0,75. Donner un repas favori donne +1,5 d'affinité et +0,5 de score de quête."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
       }
      ]
     },
@@ -1901,16 +1956,14 @@
       {
        "type": "table",
        "tag": "DATA",
-       "heading": "",
+       "heading": "Ritter-Übersicht",
        "body": "",
        "headers": [
         "Ritter",
         "Herkunft",
-        "Lv",
+        "Stufe",
         "Rüstung",
-        "Werte (STR/AGI/CHA/MAG/WIT/LCK)",
-        "Lieblingsgerichte",
-        "Hinweise"
+        "Werte (STR/AGI/CHA/MAG/WIT/GLK)"
        ],
        "rows": [
         [
@@ -2130,6 +2183,25 @@
          ""
         ]
        ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "So liest du einen Ritter",
+       "body": "",
+       "items": [
+        "Werte auf einer 0–15-Skala. Stufe 1–15; jeder Stufenaufstieg gibt einen Punkt auf jeden Wert unter 15.",
+        "Bekannte Eigenschaften sind beim Rekrutieren sichtbar. Versteckte Eigenschaften wirken ab Tag eins in den Berechnungen, bleiben aber unsichtbar, bis sie durch Gespräche, Quest-Ergebnisse oder Story-Ereignisse enthüllt werden.",
+        "† markiert Eigenschaften, die Alwena als Intendanten-Gerüchte enthüllen kann — immer nur eine, und nur solche, die du noch nicht kennst.",
+        "Gemochte Typen geben +1,33 Bindung pro Einsatz; ungemochte −0,75. Ein Lieblingsgericht gibt +1,5 Bindung und +0,5 Quest-Score."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
       }
      ]
     }
@@ -5106,25 +5178,53 @@
        "heading": "",
        "body": "",
        "headers": [
-        "仕組み",
-        "ルール"
+        "クエストタイプ",
+        ""
        ],
        "rows": [
         [
-         "ステータス貢献",
-         "各要求ステータス：概算 (騎士ステータス - クエスト要求) × 0.66、パーティで分配、要求の難度でスケール。ちょうど一致で+0.22の基礎値。"
+         "Hunt",
+         "狩猟"
         ],
         [
-         "ステータス上限",
-         "得点に使う値は常に0-15にクランプ（装備ボーナス含む）。"
+         "Assassination",
+         "暗殺"
         ],
         [
-         "好感度の影響",
-         "好きなタイプ/条件：各+1.33好感。嫌い：各-0.75。累積——タイプ一致+好きな条件2つで約+4好感。"
+         "Relic Recovery",
+         "聖物回収"
         ],
         [
-         "食事ボーナス",
-         "好きな料理：+1.5好感+0.5得点、味を永久記録。"
+         "Diplomacy",
+         "外交"
+        ],
+        [
+         "Scouting",
+         "偵察"
+        ],
+        [
+         "Confrontation",
+         "対峙"
+        ],
+        [
+         "Duel",
+         "決闘"
+        ],
+        [
+         "Competition",
+         "競技"
+        ],
+        [
+         "Research",
+         "調査"
+        ],
+        [
+         "Rescue",
+         "救出"
+        ],
+        [
+         "Knight Quest",
+         "騎士クエスト"
         ]
        ]
       },
@@ -5134,35 +5234,53 @@
        "heading": "",
        "body": "",
        "headers": [
-        "得点",
-        "閾値",
-        "報酬"
+        "クエストタイプ",
+        ""
        ],
        "rows": [
         [
-         "Critical Success",
-         "+10",
-         "報酬×2"
+         "Hunt",
+         "狩猟"
         ],
         [
-         "Great Success",
-         "+5",
-         "報酬×1.5"
+         "Assassination",
+         "暗殺"
         ],
         [
-         "Success",
-         "0",
-         "報酬×1"
+         "Relic Recovery",
+         "聖物回収"
         ],
         [
-         "Major Failure",
-         "-5",
-         "報酬なし"
+         "Diplomacy",
+         "外交"
         ],
         [
-         "Critical Failure",
-         "-10",
-         "報酬なし"
+         "Scouting",
+         "偵察"
+        ],
+        [
+         "Confrontation",
+         "対峙"
+        ],
+        [
+         "Duel",
+         "決闘"
+        ],
+        [
+         "Competition",
+         "競技"
+        ],
+        [
+         "Research",
+         "調査"
+        ],
+        [
+         "Rescue",
+         "救出"
+        ],
+        [
+         "Knight Quest",
+         "騎士クエスト"
         ]
        ]
       },
@@ -5172,41 +5290,53 @@
        "heading": "",
        "body": "",
        "headers": [
-        "レベル",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15"
+        "クエストタイプ",
+        ""
        ],
        "rows": [
         [
-         "累計XP",
-         "0",
-         "12",
-         "25",
-         "40",
-         "58",
-         "77",
-         "97",
-         "117",
-         "138",
-         "160",
-         "183",
-         "207",
-         "235",
-         "265",
-         "300"
+         "Hunt",
+         "狩猟"
+        ],
+        [
+         "Assassination",
+         "暗殺"
+        ],
+        [
+         "Relic Recovery",
+         "聖物回収"
+        ],
+        [
+         "Diplomacy",
+         "外交"
+        ],
+        [
+         "Scouting",
+         "偵察"
+        ],
+        [
+         "Confrontation",
+         "対峙"
+        ],
+        [
+         "Duel",
+         "決闘"
+        ],
+        [
+         "Competition",
+         "競技"
+        ],
+        [
+         "Research",
+         "調査"
+        ],
+        [
+         "Rescue",
+         "救出"
+        ],
+        [
+         "Knight Quest",
+         "騎士クエスト"
         ]
        ]
       },
@@ -5278,6 +5408,73 @@
        ]
       },
       {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "クエストタイプ",
+        ""
+       ],
+       "rows": [
+        [
+         "Hunt",
+         "狩猟"
+        ],
+        [
+         "Assassination",
+         "暗殺"
+        ],
+        [
+         "Relic Recovery",
+         "聖物回収"
+        ],
+        [
+         "Diplomacy",
+         "外交"
+        ],
+        [
+         "Scouting",
+         "偵察"
+        ],
+        [
+         "Confrontation",
+         "対峙"
+        ],
+        [
+         "Duel",
+         "決闘"
+        ],
+        [
+         "Competition",
+         "競技"
+        ],
+        [
+         "Research",
+         "調査"
+        ],
+        [
+         "Rescue",
+         "救出"
+        ],
+        [
+         "Knight Quest",
+         "騎士クエスト"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "XPの入手",
+       "body": "",
+       "items": [
+        "クエスト結果：失敗=0、通常成功=1×、Great=1.5×、Critical=2×。",
+        "1サイクルを訓練場（Training Ground）に使う。",
+        "レベルアップごとに15未満のステータスへ1ポイント。"
+       ]
+      },
+      {
        "type": "faq",
        "tag": "FAQ",
        "heading": "FAQ",
@@ -5311,25 +5508,53 @@
        "heading": "",
        "body": "",
        "headers": [
-        "메커니즘",
-        "규칙"
+        "퀘스트 타입",
+        ""
        ],
        "rows": [
         [
-         "스탯 기여",
-         "각 요구 스탯: 대략 (기사 스탯 - 퀘스트 요구) × 0.66, 파티 분배, 요구 난이도로 스케일. 정확히 일치 시 +0.22 기본값."
+         "Hunt",
+         "사냥"
         ],
         [
-         "스탯 상한",
-         "점수에 쓰는 값은 항상 0-15로 클램프(장비 보너스 포함)."
+         "Assassination",
+         "암살"
         ],
         [
-         "호감도 영향",
-         "좋아하는 타입/조건: 각 +1.33 호감. 싫어하는: 각 -0.75. 누적 — 타입 일치 + 좋아하는 조건 2개면 약 +4 호감."
+         "Relic Recovery",
+         "성물 회수"
         ],
         [
-         "식사 보너스",
-         "좋아하는 요리: +1.5 호감 +0.5 점수, 맛 영구 기록."
+         "Diplomacy",
+         "외교"
+        ],
+        [
+         "Scouting",
+         "정찰"
+        ],
+        [
+         "Confrontation",
+         "대치"
+        ],
+        [
+         "Duel",
+         "결투"
+        ],
+        [
+         "Competition",
+         "경기"
+        ],
+        [
+         "Research",
+         "조사"
+        ],
+        [
+         "Rescue",
+         "구출"
+        ],
+        [
+         "Knight Quest",
+         "기사 퀘스트"
         ]
        ]
       },
@@ -5339,35 +5564,53 @@
        "heading": "",
        "body": "",
        "headers": [
-        "점수",
-        "임계값",
-        "보상"
+        "퀘스트 타입",
+        ""
        ],
        "rows": [
         [
-         "Critical Success",
-         "+10",
-         "보상×2"
+         "Hunt",
+         "사냥"
         ],
         [
-         "Great Success",
-         "+5",
-         "보상×1.5"
+         "Assassination",
+         "암살"
         ],
         [
-         "Success",
-         "0",
-         "보상×1"
+         "Relic Recovery",
+         "성물 회수"
         ],
         [
-         "Major Failure",
-         "-5",
-         "보상 없음"
+         "Diplomacy",
+         "외교"
         ],
         [
-         "Critical Failure",
-         "-10",
-         "보상 없음"
+         "Scouting",
+         "정찰"
+        ],
+        [
+         "Confrontation",
+         "대치"
+        ],
+        [
+         "Duel",
+         "결투"
+        ],
+        [
+         "Competition",
+         "경기"
+        ],
+        [
+         "Research",
+         "조사"
+        ],
+        [
+         "Rescue",
+         "구출"
+        ],
+        [
+         "Knight Quest",
+         "기사 퀘스트"
         ]
        ]
       },
@@ -5377,41 +5620,53 @@
        "heading": "",
        "body": "",
        "headers": [
-        "레벨",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15"
+        "퀘스트 타입",
+        ""
        ],
        "rows": [
         [
-         "누적 XP",
-         "0",
-         "12",
-         "25",
-         "40",
-         "58",
-         "77",
-         "97",
-         "117",
-         "138",
-         "160",
-         "183",
-         "207",
-         "235",
-         "265",
-         "300"
+         "Hunt",
+         "사냥"
+        ],
+        [
+         "Assassination",
+         "암살"
+        ],
+        [
+         "Relic Recovery",
+         "성물 회수"
+        ],
+        [
+         "Diplomacy",
+         "외교"
+        ],
+        [
+         "Scouting",
+         "정찰"
+        ],
+        [
+         "Confrontation",
+         "대치"
+        ],
+        [
+         "Duel",
+         "결투"
+        ],
+        [
+         "Competition",
+         "경기"
+        ],
+        [
+         "Research",
+         "조사"
+        ],
+        [
+         "Rescue",
+         "구출"
+        ],
+        [
+         "Knight Quest",
+         "기사 퀘스트"
         ]
        ]
       },
@@ -5480,6 +5735,73 @@
          "Knight Quest",
          "기사 퀘스트"
         ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "퀘스트 타입",
+        ""
+       ],
+       "rows": [
+        [
+         "Hunt",
+         "사냥"
+        ],
+        [
+         "Assassination",
+         "암살"
+        ],
+        [
+         "Relic Recovery",
+         "성물 회수"
+        ],
+        [
+         "Diplomacy",
+         "외교"
+        ],
+        [
+         "Scouting",
+         "정찰"
+        ],
+        [
+         "Confrontation",
+         "대치"
+        ],
+        [
+         "Duel",
+         "결투"
+        ],
+        [
+         "Competition",
+         "경기"
+        ],
+        [
+         "Research",
+         "조사"
+        ],
+        [
+         "Rescue",
+         "구출"
+        ],
+        [
+         "Knight Quest",
+         "기사 퀘스트"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "XP 획득",
+       "body": "",
+       "items": [
+        "퀘스트 결과: 실패=0, 일반 성공=1×, Great=1.5×, Critical=2×.",
+        "한 사이클을 훈련장(Training Ground)에 사용.",
+        "레벨업마다 15 미만 스탯에 1포인트."
        ]
       },
       {
@@ -6743,6 +7065,13 @@
      "intro": "クエストタイプ（任意で条件）を選んで、どの騎士が最適か確認——好き/嫌いのクエストと主要特性に基づく。データはファンwikiから。",
      "sections": [
       {
+       "type": "questmatcher",
+       "tag": "TOOL",
+       "heading": "騎士クエストマッチャー",
+       "body": "",
+       "items": []
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "使い方",
@@ -6761,6 +7090,13 @@
      "metaDescription": "퀘스트 타입을 선택해 기사 적합도를 확인하는 대화형 도구. 호감 반응과 특성 표시.",
      "intro": "퀘스트 타입(선택적으로 조건)을 골라 어떤 기사가 가장 적합한지 확인 — 선호/비선호 퀘스트와 주요 특성 기반. 데이터는 팬 위키 출처.",
      "sections": [
+      {
+       "type": "questmatcher",
+       "tag": "TOOL",
+       "heading": "기사 퀘스트 매처",
+       "body": "",
+       "items": []
+      },
       {
        "type": "list",
        "tag": "NOTE",
@@ -6781,6 +7117,13 @@
      "intro": "Choisissez un type de quête (et une condition) pour voir quels chevaliers conviennent — selon leurs préférences et traits clés. Données du wiki de fans.",
      "sections": [
       {
+       "type": "questmatcher",
+       "tag": "TOOL",
+       "heading": "Matcheur de quêtes de chevaliers",
+       "body": "",
+       "items": []
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "Comment l'utiliser",
@@ -6799,6 +7142,13 @@
      "metaDescription": "Interaktives Tool: Quest-Typ wählen, um passende Ritter anzuzeigen.",
      "intro": "Wähle einen Quest-Typ (und optional eine Bedingung), um zu sehen, welche Ritter passen — basierend auf Vorlieben und Schlüsseleigenschaften. Daten aus dem Fan-Wiki.",
      "sections": [
+      {
+       "type": "questmatcher",
+       "tag": "TOOL",
+       "heading": "Ritter-Quest-Matcher",
+       "body": "",
+       "items": []
+      },
       {
        "type": "list",
        "tag": "NOTE",
@@ -6876,6 +7226,13 @@
      "intro": "騎士の好感度変化を推定：好きなクエスト+1.33、嫌い-0.75、好きな料理+1.5、君主スタイル。好感度-7で辞任。",
      "sections": [
       {
+       "type": "affinitycalc",
+       "tag": "TOOL",
+       "heading": "親密度計算機",
+       "body": "",
+       "items": []
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "組み込まれたルール",
@@ -6895,6 +7252,13 @@
      "metaDescription": "퀘스트 배정·좋아하는 요리·군주 스타일에 따른 호감도 변화와 사임 위험 계산.",
      "intro": "기사 호감도 변화 추정: 좋아하는 퀘스트 +1.33, 싫어하는 -0.75, 좋아하는 요리 +1.5, 군주 스타일. -7이면 사임.",
      "sections": [
+      {
+       "type": "affinitycalc",
+       "tag": "TOOL",
+       "heading": "친밀도 계산기",
+       "body": "",
+       "items": []
+      },
       {
        "type": "list",
        "tag": "NOTE",
@@ -6916,6 +7280,13 @@
      "intro": "Estimez l'affinité : quête aimée +1,33, détestée -0,75, plat favori +1,5, style du souverain. À -7, le chevalier démissionne.",
      "sections": [
       {
+       "type": "affinitycalc",
+       "tag": "TOOL",
+       "heading": "Calculateur d'affinité",
+       "body": "",
+       "items": []
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "Règles intégrées au calculateur",
@@ -6935,6 +7306,13 @@
      "metaDescription": "Sympathie-Änderung durch Quests, Lieblingsgerichte und Herrscherstil berechnen.",
      "intro": "Sympathie schätzen: geliebte Quest +1,33, verhasste -0,75, Lieblingsgericht +1,5, Herrscherstil. Bei -7 kündigt der Ritter.",
      "sections": [
+      {
+       "type": "affinitycalc",
+       "tag": "TOOL",
+       "heading": "Bindungs-Rechner",
+       "body": "",
+       "items": []
+      },
       {
        "type": "list",
        "tag": "NOTE",
@@ -7656,6 +8034,189 @@
      "intro": "ソブリンタワーの24人の騎士は全員雇用可能。出身・初期レベル・鎧・クエスト得点を左右する6属性を一覧で。",
      "sections": [
       {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "騎士",
+        "出身",
+        "Lv",
+        "防具",
+        "ステータス (STR/AGI/CHA/MAG/WIT/LCK)"
+       ],
+       "rows": [
+        [
+         "Alwena",
+         "Grest (Brizh)",
+         "12",
+         "8",
+         "8 / 9 / 10 / 0 / 12 / 7"
+        ],
+        [
+         "Angelica",
+         "Clovermont (Groveshire)",
+         "1",
+         "5",
+         "4 / 8 / 3 / 0 / 2 / 7"
+        ],
+        [
+         "Ari",
+         "Isle of Basalt",
+         "8",
+         "6",
+         "5 / 13 / 8 / 3 / 8 / 6"
+        ],
+        [
+         "Arron",
+         "Drakovic Castle",
+         "3",
+         "7",
+         "2 / 2 / 3 / 6 / 7 / 8"
+        ],
+        [
+         "Brunhilda",
+         "Fort Gavault",
+         "1",
+         "6",
+         "7 / 2 / 6 / 7 / 3 / 0"
+        ],
+        [
+         "Chester",
+         "Milkford",
+         "15",
+         "6",
+         "随机（Chester 每次判定重 roll 0–15）"
+        ],
+        [
+         "Childeric",
+         "Almora",
+         "6",
+         "9",
+         "7 / 4 / 4 / 0 / 12 / 4"
+        ],
+        [
+         "Daguez",
+         "Grest (Brizh)",
+         "1",
+         "6",
+         "15 / 0 / 0 / 0 / 0 / 9"
+        ],
+        [
+         "Dulahan",
+         "Anveld",
+         "1",
+         "7",
+         "8 / 8 / 0 / 9 / 0 / 0"
+        ],
+        [
+         "Edith",
+         "Avalon",
+         "8",
+         "7",
+         "7 / 10 / 3 / 12 / 7 / 0"
+        ],
+        [
+         "Epicrate",
+         "Brimwood Congregation",
+         "9",
+         "6",
+         "3 / 3 / 9 / 9 / 12 / 3"
+        ],
+        [
+         "Gideon",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Goberto",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Gothild",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Gwendan Villador",
+         "待补",
+         "1",
+         "6",
+         "待补"
+        ],
+        [
+         "Ligia",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Oliver",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Rufus",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Silgur",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Tarcus",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "The Wolf",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Ursula",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Victoria",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Zolta",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ]
+       ]
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "名簿の見方",
@@ -7695,6 +8256,189 @@
      "intro": "소버린 타워의 24명 기사는 전원 고용 가능. 출신·초기 레벨·갑옷·퀘스트 점수를 좌우하는 6종 스탯을 한눈에.",
      "sections": [
       {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "기사",
+        "출신",
+        "Lv",
+        "방어구",
+        "스탯 (STR/AGI/CHA/MAG/WIT/LCK)"
+       ],
+       "rows": [
+        [
+         "Alwena",
+         "Grest (Brizh)",
+         "12",
+         "8",
+         "8 / 9 / 10 / 0 / 12 / 7"
+        ],
+        [
+         "Angelica",
+         "Clovermont (Groveshire)",
+         "1",
+         "5",
+         "4 / 8 / 3 / 0 / 2 / 7"
+        ],
+        [
+         "Ari",
+         "Isle of Basalt",
+         "8",
+         "6",
+         "5 / 13 / 8 / 3 / 8 / 6"
+        ],
+        [
+         "Arron",
+         "Drakovic Castle",
+         "3",
+         "7",
+         "2 / 2 / 3 / 6 / 7 / 8"
+        ],
+        [
+         "Brunhilda",
+         "Fort Gavault",
+         "1",
+         "6",
+         "7 / 2 / 6 / 7 / 3 / 0"
+        ],
+        [
+         "Chester",
+         "Milkford",
+         "15",
+         "6",
+         "随机（Chester 每次判定重 roll 0–15）"
+        ],
+        [
+         "Childeric",
+         "Almora",
+         "6",
+         "9",
+         "7 / 4 / 4 / 0 / 12 / 4"
+        ],
+        [
+         "Daguez",
+         "Grest (Brizh)",
+         "1",
+         "6",
+         "15 / 0 / 0 / 0 / 0 / 9"
+        ],
+        [
+         "Dulahan",
+         "Anveld",
+         "1",
+         "7",
+         "8 / 8 / 0 / 9 / 0 / 0"
+        ],
+        [
+         "Edith",
+         "Avalon",
+         "8",
+         "7",
+         "7 / 10 / 3 / 12 / 7 / 0"
+        ],
+        [
+         "Epicrate",
+         "Brimwood Congregation",
+         "9",
+         "6",
+         "3 / 3 / 9 / 9 / 12 / 3"
+        ],
+        [
+         "Gideon",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Goberto",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Gothild",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Gwendan Villador",
+         "待补",
+         "1",
+         "6",
+         "待补"
+        ],
+        [
+         "Ligia",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Oliver",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Rufus",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Silgur",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Tarcus",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "The Wolf",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Ursula",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Victoria",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ],
+        [
+         "Zolta",
+         "待补",
+         "待补",
+         "待补",
+         "待补"
+        ]
+       ]
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "명부 읽는 법",
@@ -7732,12 +8476,80 @@
     "fr": {
      "title": "Effectif des chevaliers — les 24",
      "intro": "Les 24 chevaliers de Sovereign Tower sont tous recrutables. Origine, niveau, armure et les six stats.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Tableau des chevaliers",
+       "body": "",
+       "headers": [
+        "Chevalier",
+        "Origine",
+        "Niv.",
+        "Armure",
+        "Stats (FOR/AGI/CHA/MAG/ESP/CHA)"
+       ],
+       "rows": []
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Comment lire le tableau",
+       "body": "",
+       "items": [
+        "Les stats vont de 0 à 15. Niveau 1 à 15 : chaque montée de niveau ajoute un point à une stat inférieure à 15.",
+        "Les stats de Chester sont entièrement aléatoires et relancées à chaque vérification.",
+        "Alwena et Ari ne démissionnent jamais ; la plupart des autres partent à −7 d'affinité."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Effectif des chevaliers — les 24",
      "metaDescription": "Les 24 chevaliers de Sovereign Tower sont tous recrutables. Origine, niveau, armure et les six stats."
     },
     "de": {
      "title": "Ritterkader — alle 24",
      "intro": "Alle 24 Ritter in Sovereign Tower sind rekrutierbar. Herkunft, Stufe, Rüstung und die sechs Werte.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Ritter-Übersicht",
+       "body": "",
+       "headers": [
+        "Ritter",
+        "Herkunft",
+        "Stufe",
+        "Rüstung",
+        "Werte (STR/AGI/CHA/MAG/WIT/GLK)"
+       ],
+       "rows": []
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "So liest du die Übersicht",
+       "body": "",
+       "items": [
+        "Werte gehen von 0 bis 15. Stufe 1–15: Jeder Stufenaufstieg gibt einen Punkt auf einen Wert unter 15.",
+        "Chesters Werte sind völlig zufällig und werden bei jeder Prüfung neu gewürfelt.",
+        "Alwena und Ari kündigen nie; die meisten anderen gehen bei −7 Bindung."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Ritterkader — alle 24",
      "metaDescription": "Alle 24 Ritter in Sovereign Tower sind rekrutierbar. Herkunft, Stufe, Rüstung und die sechs Werte."
     }
@@ -7893,6 +8705,39 @@
      "intro": "初期ステータスと特質に基づく実用的なティアリスト——ストーリー条件と好感度が数値と同じくらい重要。",
      "sections": [
       {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "ティア",
+        "騎士",
+        "理由"
+       ],
+       "rows": [
+        [
+         "S",
+         "Daguez, Edith, Childeric, Alwena",
+         "Elite starting stats (15 STR / 12 MAG / 12 WIT), armour 8-9, or unique utility (Alwena's Intendant rumours)."
+        ],
+        [
+         "A",
+         "Ari, Brunhilda, Epicrate, Dulahan, Chester",
+         "Strong stats or powerful traits: Ari 13 AGI, Dulahan half damage, Chester all-type affinity."
+        ],
+        [
+         "B",
+         "Angelica, Arron, Gwendan, Tarcus, Ursula",
+         "Solid with story investment; Ursula's Immortal is niche-useful, Arron becomes Dragon Knight."
+        ],
+        [
+         "C",
+         "Goberto, Gothild, Ligia, Oliver, Rufus, Silgur, The Wolf, Victoria, Zolta, others",
+         "Situation-dependent; many gain value through traits or storylines (data incomplete — 待补)."
+        ]
+       ]
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "ティアの注意",
@@ -7932,6 +8777,39 @@
      "intro": "초기 스탯과 특성 기반의 실용 티어 목록 — 스토리 조건과 호감도가 수치만큼 중요.",
      "sections": [
       {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "티어",
+        "기사",
+        "이유"
+       ],
+       "rows": [
+        [
+         "S",
+         "Daguez, Edith, Childeric, Alwena",
+         "Elite starting stats (15 STR / 12 MAG / 12 WIT), armour 8-9, or unique utility (Alwena's Intendant rumours)."
+        ],
+        [
+         "A",
+         "Ari, Brunhilda, Epicrate, Dulahan, Chester",
+         "Strong stats or powerful traits: Ari 13 AGI, Dulahan half damage, Chester all-type affinity."
+        ],
+        [
+         "B",
+         "Angelica, Arron, Gwendan, Tarcus, Ursula",
+         "Solid with story investment; Ursula's Immortal is niche-useful, Arron becomes Dragon Knight."
+        ],
+        [
+         "C",
+         "Goberto, Gothild, Ligia, Oliver, Rufus, Silgur, The Wolf, Victoria, Zolta, others",
+         "Situation-dependent; many gain value through traits or storylines (data incomplete — 待补)."
+        ]
+       ]
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "티어 주의",
@@ -7969,12 +8847,76 @@
     "fr": {
      "title": "Classement des chevaliers",
      "intro": "Un classement pratique basé sur les stats de départ — les conditions d'histoire comptent autant que les chiffres.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Classement des chevaliers",
+       "body": "",
+       "headers": [
+        "Palier",
+        "Chevaliers",
+        "Pourquoi"
+       ],
+       "rows": []
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Limites du classement",
+       "body": "",
+       "items": [
+        "Ce classement se base sur les stats de départ (niveau 0) ; les traits cachés et les arcs narratifs peuvent faire monter un chevalier.",
+        "Les stats aléatoires de Chester rendent son palier situationnel — ne comptez jamais sur lui pour les quêtes à enjeu.",
+        "L'évolution de Arron en Chevalier Dragon (voie du Bien) est l'un des plus puissants bonus de fin de partie."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Classement des chevaliers",
      "metaDescription": "Un classement pratique basé sur les stats de départ — les conditions d'histoire comptent autant que les chiffres."
     },
     "de": {
      "title": "Ritter-Tierliste",
      "intro": "Eine praktische Tierliste nach Startwerten — Story-Bedingungen zählen so viel wie Zahlen.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Ritter-Tierliste",
+       "body": "",
+       "headers": [
+        "Stufe",
+        "Ritter",
+        "Warum"
+       ],
+       "rows": []
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Einschränkungen der Tierliste",
+       "body": "",
+       "items": [
+        "Basiert auf den Startwerten (Stufe 0); versteckte Eigenschaften und Handlungsstränge können einen Ritter aufwerten.",
+        "Chesters Zufallswerte machen seine Stufe situationsabhängig – verlass dich nie auf ihn für Pflicht-Quests.",
+        "Arrons Drachenritter-Entwicklung (guter Pfad) ist einer der stärksten Spätspiel-Boosts."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Ritter-Tierliste",
      "metaDescription": "Eine praktische Tierliste nach Startwerten — Story-Bedingungen zählen so viel wie Zahlen."
     }
@@ -8128,6 +9070,38 @@
      "intro": "商人・秘術師・学者・貴族・平民の五派閥を均衡させる。各クエストと朝政判断が影響し、0にすると危機イベント。",
      "sections": [
       {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "派閥",
+        "何が影響するか"
+       ],
+       "rows": [
+        [
+         "Merchants",
+         "Trade and wealth; quests and court decisions that boost the economy raise their satisfaction."
+        ],
+        [
+         "Mystics",
+         "Magic and the arcane; rituals and magical quests please them."
+        ],
+        [
+         "Scholars",
+         "Knowledge and research; research and investigation quests align with them."
+        ],
+        [
+         "Nobles",
+         "Nobility and tradition; decisions favouring the aristocracy please them."
+        ],
+        [
+         "People",
+         "The common folk; helping and kind decisions raise their standing."
+        ]
+       ]
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "均衡戦略",
@@ -8167,6 +9141,38 @@
      "intro": "상인·비술사·학자·귀족·평민 5개 파벌 균형. 모든 퀘스트와 조회 결정이 영향을 주며, 0이면 위기 이벤트.",
      "sections": [
       {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "파벌",
+        "무엇이 영향을 주는가"
+       ],
+       "rows": [
+        [
+         "Merchants",
+         "Trade and wealth; quests and court decisions that boost the economy raise their satisfaction."
+        ],
+        [
+         "Mystics",
+         "Magic and the arcane; rituals and magical quests please them."
+        ],
+        [
+         "Scholars",
+         "Knowledge and research; research and investigation quests align with them."
+        ],
+        [
+         "Nobles",
+         "Nobility and tradition; decisions favouring the aristocracy please them."
+        ],
+        [
+         "People",
+         "The common folk; helping and kind decisions raise their standing."
+        ]
+       ]
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "균형 전략",
@@ -8204,12 +9210,74 @@
     "fr": {
      "title": "Guide des factions",
      "intro": "Équilibrez les cinq factions : marchands, mystiques, érudits, nobles et peuple. Chaque quête les fait bouger.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Les cinq factions",
+       "body": "",
+       "headers": [
+        "Faction",
+        "Ce qui la fait évoluer"
+       ],
+       "rows": []
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Stratégies d'équilibre",
+       "body": "",
+       "items": [
+        "Une faction à zéro de satisfaction peut déclencher des crises — gardez les cinq au-dessus de zéro.",
+        "Certains chevaliers gagnent ou perdent de l'affinité selon l'équilibre des factions (ex. Epicrate et Tarcus réagissent à l'écart Peuple/Noblesse).",
+        "Vous pouvez aussi tout dépenser et trahir tout le monde — le jeu l'autorise explicitement, mais verrouille certaines fins."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Guide des factions",
      "metaDescription": "Équilibrez les cinq factions : marchands, mystiques, érudits, nobles et peuple. Chaque quête les fait bouger."
     },
     "de": {
      "title": "Fraktionen-Guide",
      "intro": "Balanciere die fünf Fraktionen: Händler, Mystiker, Gelehrte, Adel und Volk. Jede Quest bewegt sie.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Die fünf Fraktionen",
+       "body": "",
+       "headers": [
+        "Fraktion",
+        "Was sie antreibt"
+       ],
+       "rows": []
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Strategien fürs Gleichgewicht",
+       "body": "",
+       "items": [
+        "Eine Fraktion bei null Zufriedenheit kann Krisen auslösen — halt alle fünf über null.",
+        "Manche Ritter gewinnen oder verlieren Bindung je nach Fraktionsgleichgewicht (z. B. Epicrate und Tarcus reagieren auf die Kluft Volk/Adel).",
+        "Du kannst auch alles ausgeben und alle verraten — das Spiel erlaubt es ausdrücklich, sperrt aber bestimmte Enden."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Fraktionen-Guide",
      "metaDescription": "Balanciere die fünf Fraktionen: Händler, Mystiker, Gelehrte, Adel und Volk. Jede Quest bewegt sie."
     }
@@ -8515,6 +9583,114 @@
      "intro": "24人の騎士は全員雇用可能だが方法は様々——ストーリー、金、死亡ルート、緊急イベント。判明している雇用条件を網羅。",
      "sections": [
       {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "騎士",
+        "雇用条件"
+       ],
+       "rows": [
+        [
+         "Alwena",
+         "一次性紧急事件：Act 2 之后，当圆桌可用骑士为 0 时（在册且不在任务中，死亡/辞职者除外）她会自愿加入。无法主动触发，没有第二次机会。永不死亡/永不辞职。"
+        ],
+        [
+         "Angelica",
+         "开场剧情自动加入。"
+        ],
+        [
+         "Ari",
+         "花 25 金币召唤（Basalt 兄弟的弟弟）。"
+        ],
+        [
+         "Arron",
+         "无候选朝会——通过 Drakovic 剧情线加入。"
+        ],
+        [
+         "Brunhilda",
+         "Gavault 剧情线女儿侧（county_quest_gavault_2_daughter_side 到结局），无候选朝会。"
+        ],
+        [
+         "Chester",
+         "Clean Keeper Goose Part 2 任意特殊结局后出现（奶酪/马/Gwendan 三选一，各付 1 金币）——Chester 才是真正的奖品。"
+        ],
+        [
+         "Childeric",
+         "待补"
+        ],
+        [
+         "Daguez",
+         "待补"
+        ],
+        [
+         "Dulahan",
+         "Goberto 死后才出现（恶魔骑士）。"
+        ],
+        [
+         "Edith",
+         "待补"
+        ],
+        [
+         "Epicrate",
+         "待补"
+        ],
+        [
+         "Gideon",
+         "中文资料：第 6 天可招。"
+        ],
+        [
+         "Goberto",
+         "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+        ],
+        [
+         "Gothild",
+         "待补"
+        ],
+        [
+         "Gwendan Villador",
+         "待补"
+        ],
+        [
+         "Ligia",
+         "待补"
+        ],
+        [
+         "Oliver",
+         "待补"
+        ],
+        [
+         "Rufus",
+         "待补"
+        ],
+        [
+         "Silgur",
+         "待补"
+        ],
+        [
+         "Tarcus",
+         "待补"
+        ],
+        [
+         "The Wolf",
+         "待补"
+        ],
+        [
+         "Ursula",
+         "待补"
+        ],
+        [
+         "Victoria",
+         "待补"
+        ],
+        [
+         "Zolta",
+         "待补"
+        ]
+       ]
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "雇用のコツ",
@@ -8554,6 +9730,114 @@
      "intro": "24명 기사는 전원 고용 가능하지만 방식은 다양 — 스토리, 돈, 사망 루트, 비상 이벤트. 알려진 고용 조건 총망라.",
      "sections": [
       {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "기사",
+        "고용 조건"
+       ],
+       "rows": [
+        [
+         "Alwena",
+         "一次性紧急事件：Act 2 之后，当圆桌可用骑士为 0 时（在册且不在任务中，死亡/辞职者除外）她会自愿加入。无法主动触发，没有第二次机会。永不死亡/永不辞职。"
+        ],
+        [
+         "Angelica",
+         "开场剧情自动加入。"
+        ],
+        [
+         "Ari",
+         "花 25 金币召唤（Basalt 兄弟的弟弟）。"
+        ],
+        [
+         "Arron",
+         "无候选朝会——通过 Drakovic 剧情线加入。"
+        ],
+        [
+         "Brunhilda",
+         "Gavault 剧情线女儿侧（county_quest_gavault_2_daughter_side 到结局），无候选朝会。"
+        ],
+        [
+         "Chester",
+         "Clean Keeper Goose Part 2 任意特殊结局后出现（奶酪/马/Gwendan 三选一，各付 1 金币）——Chester 才是真正的奖品。"
+        ],
+        [
+         "Childeric",
+         "待补"
+        ],
+        [
+         "Daguez",
+         "待补"
+        ],
+        [
+         "Dulahan",
+         "Goberto 死后才出现（恶魔骑士）。"
+        ],
+        [
+         "Edith",
+         "待补"
+        ],
+        [
+         "Epicrate",
+         "待补"
+        ],
+        [
+         "Gideon",
+         "中文资料：第 6 天可招。"
+        ],
+        [
+         "Goberto",
+         "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+        ],
+        [
+         "Gothild",
+         "待补"
+        ],
+        [
+         "Gwendan Villador",
+         "待补"
+        ],
+        [
+         "Ligia",
+         "待补"
+        ],
+        [
+         "Oliver",
+         "待补"
+        ],
+        [
+         "Rufus",
+         "待补"
+        ],
+        [
+         "Silgur",
+         "待补"
+        ],
+        [
+         "Tarcus",
+         "待补"
+        ],
+        [
+         "The Wolf",
+         "待补"
+        ],
+        [
+         "Ursula",
+         "待补"
+        ],
+        [
+         "Victoria",
+         "待补"
+        ],
+        [
+         "Zolta",
+         "待补"
+        ]
+       ]
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "고용 팁",
@@ -8591,12 +9875,74 @@
     "fr": {
      "title": "Recruter chaque chevalier",
      "intro": "Les 24 chevaliers sont recrutables, mais de façons variées — histoire, argent, morts ou urgences.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Recruter chaque chevalier",
+       "body": "",
+       "headers": [
+        "Chevalier",
+        "Condition de recrutement"
+       ],
+       "rows": []
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Conseils de recrutement",
+       "body": "",
+       "items": [
+        "Plusieurs chevaliers sont liés à l'histoire : Dulahan (mort de Goberto), Arron (arc de Drakovic), Brunhilda (fille de Gavault).",
+        "Alwena ne rejoint qu'à travers une offre d'urgence unique, quand la Table Ronde n'a plus de chevalier disponible (Acte 2+).",
+        "Chester est le vrai prix de la quête spéciale de l'Oie, partie 2."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Recruter chaque chevalier",
      "metaDescription": "Les 24 chevaliers sont recrutables, mais de façons variées — histoire, argent, morts ou urgences."
     },
     "de": {
      "title": "Jeden Ritter rekrutieren",
      "intro": "Alle 24 Ritter sind rekrutierbar, aber unterschiedlich — Story, Geld, Tod oder Notfälle.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Alle Ritter rekrutieren",
+       "body": "",
+       "headers": [
+        "Ritter",
+        "Rekrutierungsbedingung"
+       ],
+       "rows": []
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Rekrutierungs-Tipps",
+       "body": "",
+       "items": [
+        "Mehrere Ritter sind an die Story gebunden: Dulahan (Gobertos Tod), Arron (Drakovic-Handlung), Brunhilda (Gavaults Tochter).",
+        "Alwena kommt nur über ein einmaliges Notfall-Angebot, wenn die Tafelrunde ab Akt 2 keine verfügbaren Ritter hat.",
+        "Chester ist der eigentliche Preis der besonderen Gänse-Quest Teil 2."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Jeden Ritter rekrutieren",
      "metaDescription": "Alle 24 Ritter sind rekrutierbar, aber unterschiedlich — Story, Geld, Tod oder Notfälle."
     }
@@ -8806,12 +10152,74 @@
     "fr": {
      "title": "Le retour dans le temps",
      "intro": "Quand le destin tourne mal, le démon de la cave remonte le temps. Le filet de sécurité du jeu.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Comment fonctionne le retour dans le temps",
+       "body": "",
+       "items": [
+        "Le Démon de la cave vous permet de remonter le temps quand un cycle tourne mal — relancez vos décisions et réécrivez le destin.",
+        "C'est le filet de sécurité central du jeu : rien n'est définitivement perdu si vous pouvez remonter.",
+        "Les retours permettent d'explorer des branches dans une partie, mais certains résultats restent mutuellement exclusifs même après un retour."
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Quand remonter le temps",
+       "body": "",
+       "items": [
+        "Après un échec critique qui coûte un chevalier ou déclenche une crise de faction.",
+        "Avant une branche narrative que vous voulez explorer différemment (ex. l'enquête pour meurtre de l'Acte 2).",
+        "Pour corriger une erreur d'équilibre de factions avant qu'elle ne s'aggrave."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Le retour dans le temps",
      "metaDescription": "Quand le destin tourne mal, le démon de la cave remonte le temps. Le filet de sécurité du jeu."
     },
     "de": {
      "title": "Zeit zurückdrehen erklärt",
      "intro": "Wenn das Schicksal sich wendet, lässt der Dämon im Keller die Zeit zurückdrehen. Das Sicherheitsnetz des Spiels.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "So funktioniert die Zeitumkehr",
+       "body": "",
+       "items": [
+        "Der Dämon im Keller lässt dich die Zeit zurückdrehen, wenn ein Zyklus schiefgeht — Entscheidungen neu würfeln und das Schicksal umschreiben.",
+        "Es ist das zentrale Sicherheitsnetz des Spiels: Nichts ist endgültig verloren, solange du zurückdrehen kannst.",
+        "Zeitumkehr lässt dich Zweige innerhalb eines Laufs erkunden, aber manche Ergebnisse schließen sich auch über Umkehrungen hinweg aus."
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Wann zurückspulen?",
+       "body": "",
+       "items": [
+        "Nach einem kritischen Fehlschlag, der einen Ritter oder eine Fraktionskrise kostet.",
+        "Vor einem Story-Zweig, den du anders erkunden willst (z. B. die Mordermittlung in Akt 2).",
+        "Um einen Fraktionsfehler zu korrigieren, bevor er sich ausbreitet."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Zeit zurückdrehen erklärt",
      "metaDescription": "Wenn das Schicksal sich wendet, lässt der Dämon im Keller die Zeit zurückdrehen. Das Sicherheitsnetz des Spiels."
     }
@@ -8979,6 +10387,44 @@
      "intro": "クエストはソブリンタワーの核心。正しい騎士を正しいクエストに送るかが大成功と全滅を分ける。",
      "sections": [
       {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "結果",
+        "閾値",
+        "報酬"
+       ],
+       "rows": [
+        [
+         "Critical Success",
+         "+10",
+         "奖励 ×2"
+        ],
+        [
+         "Great Success",
+         "+5",
+         "奖励 ×1.5"
+        ],
+        [
+         "Success",
+         "0",
+         "奖励 ×1"
+        ],
+        [
+         "Major Failure",
+         "−5",
+         "无奖励"
+        ],
+        [
+         "Critical Failure",
+         "−10",
+         "无奖励"
+        ]
+       ]
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "成功に導くコツ",
@@ -9019,6 +10465,44 @@
      "intro": "퀘스트는 소버린 타워의 핵심. 올바른 기사를 올바른 퀘스트에 보내는 것이 대성공과 전멸을 가른다.",
      "sections": [
       {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "결과",
+        "임계값",
+        "보상"
+       ],
+       "rows": [
+        [
+         "Critical Success",
+         "+10",
+         "奖励 ×2"
+        ],
+        [
+         "Great Success",
+         "+5",
+         "奖励 ×1.5"
+        ],
+        [
+         "Success",
+         "0",
+         "奖励 ×1"
+        ],
+        [
+         "Major Failure",
+         "−5",
+         "无奖励"
+        ],
+        [
+         "Critical Failure",
+         "−10",
+         "无奖励"
+        ]
+       ]
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "성공으로 이끄는 팁",
@@ -9057,12 +10541,78 @@
     "fr": {
      "title": "Réussir ses quêtes",
      "intro": "Les quêtes sont le cœur du jeu. Envoyer le bon chevalier fait la différence entre succès critique et échec.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Seuils de score",
+       "body": "",
+       "headers": [
+        "Score",
+        "Seuil",
+        "Récompense"
+       ],
+       "rows": []
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Comment faire réussir vos quêtes",
+       "body": "",
+       "items": [
+        "Associez les stats du chevalier aux exigences de la quête — un chevalier dont la stat dépasse l'exigence apporte un score positif.",
+        "Cumulez les types de quêtes appréciés et les conditions (+1,33 d'affinité chacun) pour garder une affinité saine, ce qui débloque de meilleures affectations.",
+        "Donnez les repas favoris (+1,5 d'affinité, +0,5 de score) avant les quêtes risquées.",
+        "Montez de niveau les chevaliers dans les stats exigées par leurs quêtes favorites."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Réussir ses quêtes",
      "metaDescription": "Les quêtes sont le cœur du jeu. Envoyer le bon chevalier fait la différence entre succès critique et échec."
     },
     "de": {
      "title": "Quest-Erfolg Strategien",
      "intro": "Quests sind das Herz des Spiels. Den richtigen Ritter zu schicken, macht den Unterschied.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Score-Schwellen",
+       "body": "",
+       "headers": [
+        "Score",
+        "Schwelle",
+        "Belohnung"
+       ],
+       "rows": []
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "So bringst du Quests zum Erfolg",
+       "body": "",
+       "items": [
+        "Passe Ritter-Werte an die Quest-Anforderungen an — ein Ritter, dessen Wert die Anforderung übertrifft, trägt positiven Score bei.",
+        "Staple gemochte Quest-Typen und Bedingungen (+1,33 Bindung je) für gesunde Bindung, was bessere Zuweisungen freischaltet.",
+        "Gib Lieblingsgerichte (+1,5 Bindung, +0,5 Score) vor riskanten Quests.",
+        "Level Ritter in den Werten, die ihre Lieblingsquests verlangen."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Quest-Erfolg Strategien",
      "metaDescription": "Quests sind das Herz des Spiels. Den richtigen Ritter zu schicken, macht den Unterschied."
     }
@@ -9248,12 +10798,44 @@
     "fr": {
      "title": "Acte 0 : prologue",
      "intro": "L'ouverture du jeu : le conseiller Arlin vous guide, votre premier chevalier et la boucle de la Table Ronde.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "WALK",
+       "heading": "Prologue pas à pas",
+       "body": "",
+       "items": []
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Acte 0 : prologue",
      "metaDescription": "L'ouverture du jeu : le conseiller Arlin vous guide, votre premier chevalier et la boucle de la Table Ronde."
     },
     "de": {
      "title": "Akt 0: Prolog",
      "intro": "Der Auftakt: Berater Arlin führt dich, dein erster Ritter und die Tafelrunde.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "WALK",
+       "heading": "Prolog Schritt für Schritt",
+       "body": "",
+       "items": []
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Akt 0: Prolog",
      "metaDescription": "Der Auftakt: Berater Arlin führt dich, dein erster Ritter und die Tafelrunde."
     }
@@ -9403,12 +10985,52 @@
     "fr": {
      "title": "Acte 1 : Gavault",
      "intro": "La chaîne de Gavault côté fille : recrutez Brunhilda et apprenez ses préférences de chasse.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "L'arc de Gavault (côté de la fille)",
+       "body": "",
+       "items": [
+        "L'arc de Gavault de l'Acte 1 suit le côté de la fille : Brunhilda, princesse de Gavault, apparaît dans cette chaîne (county_quest_gavault_2_daughter_side et au-delà).",
+        "Brunhilda rejoint via l'histoire de Gavault, pas via une audience de candidature.",
+        "Elle apprécie la quête de Chasse ; elle n'aime pas Diplomatie et Eau — adaptez ses affectations pour garder l'affinité haute."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Acte 1 : Gavault",
      "metaDescription": "La chaîne de Gavault côté fille : recrutez Brunhilda et apprenez ses préférences de chasse."
     },
     "de": {
      "title": "Akt 1: Gavault",
      "intro": "Die Gavault-Kette auf der Tochter-Seite: Rekrutiere Brunhilda und ihre Jagd-Vorlieben.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Gavault-Handlungsstrang (Seite der Tochter)",
+       "body": "",
+       "items": [
+        "Der Gavault-Strang in Akt 1 folgt der Seite der Tochter: Brunhilda, Prinzessin von Gavault, erscheint in dieser Kette (county_quest_gavault_2_daughter_side und weiter).",
+        "Brunhilda kommt über die Gavault-Geschichte, nicht über eine Kandidaten-Audienz.",
+        "Ihre gemochte Quest ist Jagd; sie mag Diplomatie und Wasser nicht — passe ihre Einsätze an, um die Bindung hoch zu halten."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Akt 1: Gavault",
      "metaDescription": "Die Gavault-Kette auf der Tochter-Seite: Rekrutiere Brunhilda und ihre Jagd-Vorlieben."
     }
@@ -9558,12 +11180,52 @@
     "fr": {
      "title": "Acte 1 : Groveshire",
      "intro": "Le comté d'Angelica et la ligne de l'oie — qui mène au recrutement de Chester.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "L'arc de Groveshire",
+       "body": "",
+       "items": [
+        "L'arc de Groveshire est centré sur Angelica, qui rejoint au début et est liée à la quête de l'Oie.",
+        "Angelica apprécie les décisions souveraines Bienveillantes et n'aime pas les Tyranniques ; elle n'aime pas les quêtes d'Assassinat et de Fantôme.",
+        "Les issues spéciales de la partie 2 de l'Oie (fromage, un cheval ou Gwendan) mènent à Chester, le vrai prix."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Acte 1 : Groveshire",
      "metaDescription": "Le comté d'Angelica et la ligne de l'oie — qui mène au recrutement de Chester."
     },
     "de": {
      "title": "Akt 1: Groveshire",
      "intro": "Angelicas Heimat und die Gänselinie — die zu Chesters Rekrutierung führt.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Groveshire-Handlungsstrang",
+       "body": "",
+       "items": [
+        "Der Groveshire-Strang dreht sich um Angelica, die zu Beginn beitritt und mit der Gänse-Quest verbunden ist.",
+        "Angelica mag gütige Herrscher-Entscheidungen und mag keine tyrannischen; sie mag keine Attentats- und Geister-Quests.",
+        "Die besonderen Ergebnisse von Teil 2 der Gänse-Quest (Käse, ein Pferd oder Gwendan) führen zu Chester, dem eigentlichen Preis."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Akt 1: Groveshire",
      "metaDescription": "Angelicas Heimat und die Gänselinie — die zu Chesters Rekrutierung führt."
     }
@@ -9717,12 +11379,54 @@
     "fr": {
      "title": "La chasse aux bêtes",
      "intro": "Les routes de chasse liées à Ari et au Loup. Les bons chevaliers et les routes du loup.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Guide de la Chasse aux bêtes",
+       "body": "",
+       "items": [
+        "La Chasse aux bêtes est liée à Ari et au Loup — tous deux sont rattachés aux quêtes de loups/bêtes.",
+        "Ari est un Cavalier de griffon (monture verrouillée) et un Éclaireur solide ; il n'aime pas la Chasse.",
+        "Le Loup a le trait Loup (monture verrouillée) et est Loyal — le score évolue avec l'affinité moyenne du groupe.",
+        "Les routes de la Chasse aux bêtes sont encore en cours de vérification (待补 étapes exactes)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "La chasse aux bêtes",
      "metaDescription": "Les routes de chasse liées à Ari et au Loup. Les bons chevaliers et les routes du loup."
     },
     "de": {
      "title": "Biestjagd",
      "intro": "Die Jagdrouten um Ari und den Wolf. Die richtigen Ritter und Wolfsrouten.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Bestienjagd-Leitfaden",
+       "body": "",
+       "items": [
+        "Die Bestienjagd ist mit Ari und dem Wolf verbunden — beide gehören zu den Wolf-/Bestien-Questlinien.",
+        "Ari ist ein Greifenreiter (Reittier gesperrt) und ein starker Späher; er mag Jagd nicht.",
+        "Der Wolf hat das Wolfs-Merkmal (Reittier gesperrt) und ist loyal — der Score skaliert mit der durchschnittlichen Bindung der Gruppe.",
+        "Die Routen der Bestienjagd werden noch im Detail verifiziert (待补 genaue Schritte)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Biestjagd",
      "metaDescription": "Die Jagdrouten um Ari und den Wolf. Die richtigen Ritter und Wolfsrouten."
     }
@@ -9872,12 +11576,52 @@
     "fr": {
      "title": "La quête de l'oie",
      "intro": "La quête de l'oie mène à Chester. Les résultats spéciaux et la route.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Guide de la quête de l'Oie",
+       "body": "",
+       "items": [
+        "La quête de l'Oie a des issues spéciales (fromage, un cheval ou Gwendan) qui rapportent chacune 1 or — mais Chester est le vrai prix.",
+        "Chester a des stats complètement aléatoires et apprécie tous les types de quêtes (+1,0 d'affinité par affectation).",
+        "La route de l'Oie est le seul chemin confirmé vers Chester pour l'instant."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "La quête de l'oie",
      "metaDescription": "La quête de l'oie mène à Chester. Les résultats spéciaux et la route."
     },
     "de": {
      "title": "Gänsequest",
      "intro": "Die Gänsequest führt zu Chester. Sonderergebnisse und die Route.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Gänse-Quest-Leitfaden",
+       "body": "",
+       "items": [
+        "Die Gänse-Quest hat besondere Ergebnisse (Käse, ein Pferd oder Gwendan), die je 1 Gold einbringen — aber Chester ist der eigentliche Preis.",
+        "Chester hat völlig zufällige Werte und mag alle Quest-Typen (+1,0 Bindung pro Einsatz).",
+        "Der Gänse-Pfad ist bisher der einzige bestätigte Weg zu Chester."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Gänsequest",
      "metaDescription": "Die Gänsequest führt zu Chester. Sonderergebnisse und die Route."
     }
@@ -10027,12 +11771,52 @@
     "fr": {
      "title": "La rébellion",
      "intro": "La chaîne liée à Epicrate de Brimwood. Équilibrez peuple et noblesse.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "L'arc de la Rébellion",
+       "body": "",
+       "items": [
+        "L'arc de la Rébellion est lié à Epicrate de Brimwood, figure révolutionnaire de la Congrégation de Brimwood.",
+        "Le trait Révolutionnaire d'Epicrate réagit à l'écart entre satisfaction du Peuple et de la Noblesse — équilibrez-les pour elle.",
+        "Son trait caché Perception du temps donne un bonus de score si elle a déjà la quête dans une autre ligne temporelle (utilisez le retour en arrière)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "La rébellion",
      "metaDescription": "La chaîne liée à Epicrate de Brimwood. Équilibrez peuple et noblesse."
     },
     "de": {
      "title": "Rebellion",
      "intro": "Die Kette um Epicrate von Brimwood. Balanciere Volk und Adel.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Rebellion-Handlungsstrang",
+       "body": "",
+       "items": [
+        "Der Rebellions-Strang ist mit Epicrate von Brimwood verbunden, einer revolutionären Figur der Brimwood-Gemeinschaft.",
+        "Epicrates Merkmal Revolutionär reagiert auf die Differenz zwischen Volk- und Adelszufriedenheit — balanciere sie für sie.",
+        "Ihr verstecktes Merkmal Zeitwahrnehmung gibt einen Score-Bonus, wenn sie die Quest bereits in einer anderen Zeitlinie hat (nutze die Zeitumkehr)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Rebellion",
      "metaDescription": "Die Kette um Epicrate von Brimwood. Balanciere Volk und Adel."
     }
@@ -10182,12 +11966,52 @@
     "fr": {
      "title": "Guide des annexes",
      "intro": "Les bâtiments qui étendent les systèmes : la forge pour l'équipement, l'alchimie pour les consommables.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Annexes et bâtiments",
+       "body": "",
+       "items": [
+        "Les annexes sont des bâtiments qui ajoutent des systèmes à votre tour : la Forge de Carina répare et fabrique l'équipement, la Salle d'alchimie de la Sorcière produit les consommables.",
+        "Construire et améliorer les annexes débloque plus de chevaliers, d'outils et d'histoire.",
+        "Les listes exactes d'annexes et leurs coûts sont encore en cours de vérification (待补)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Guide des annexes",
      "metaDescription": "Les bâtiments qui étendent les systèmes : la forge pour l'équipement, l'alchimie pour les consommables."
     },
     "de": {
      "title": "Anbauten-Guide",
      "intro": "Gebäude, die Systeme erweitern: Schmiede für Ausrüstung, Alchemie für Verbrauchsgüter.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Nebengebäude & Bau",
+       "body": "",
+       "items": [
+        "Nebengebäude erweitern die Systeme deines Turms: Carinas Schmiede repariert und fertigt Ausrüstung, der Alchemieraum der Hexe stellt Verbrauchsgüter her.",
+        "Bauen und Ausbauen von Nebengebäuden schaltet mehr Ritter, Werkzeuge und Story frei.",
+        "Die genauen Listen und Kosten der Nebengebäude werden noch verifiziert (待补)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Anbauten-Guide",
      "metaDescription": "Gebäude, die Systeme erweitern: Schmiede für Ausrüstung, Alchemie für Verbrauchsgüter."
     }
@@ -10337,12 +12161,52 @@
     "fr": {
      "title": "La Table Ronde",
      "intro": "Le cœur du jeu : assignez des chevaliers chaque cycle. Capacité par acte et recrutement d'urgence.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Le système de la Table Ronde",
+       "body": "",
+       "items": [
+        "La Table Ronde est le cœur de Sovereign Tower — c'est là qu'on assigne les chevaliers aux quêtes chaque cycle.",
+        "La capacité augmente avec l'histoire : Acte 1 = 6 chevaliers, Acte 2 = 8, Acte 3 = 10.",
+        "Assignez le bon chevalier à la bonne quête — stats, types de quêtes appréciés et repas favoris nourrissent tous le score."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "La Table Ronde",
      "metaDescription": "Le cœur du jeu : assignez des chevaliers chaque cycle. Capacité par acte et recrutement d'urgence."
     },
     "de": {
      "title": "Tafelrunde-System",
      "intro": "Das Herz des Spiels: Ritter pro Zyklus zuweisen. Kapazität pro Akt und Notfall-Rekrutierung.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Das System der Tafelrunde",
+       "body": "",
+       "items": [
+        "Die Tafelrunde ist das Herz von Sovereign Tower — hier weist du Ritter jeden Zyklus Quests zu.",
+        "Die Kapazität wächst mit der Story: Akt 1 = 6 Ritter, Akt 2 = 8, Akt 3 = 10.",
+        "Weise den richtigen Ritter der richtigen Quest zu — Werte, gemochte Quest-Typen und Lieblingsgerichte fließen alle in den Score ein."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Tafelrunde-System",
      "metaDescription": "Das Herz des Spiels: Ritter pro Zyklus zuweisen. Kapazität pro Akt und Notfall-Rekrutierung."
     }
@@ -10493,12 +12357,54 @@
     "fr": {
      "title": "Résultats de quête",
      "intro": "Six résultats : critique, grand, succès, échec et inattendu. Seuils, multiplicateurs et spéciaux.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Les résultats de quête expliqués",
+       "body": "",
+       "items": [
+        "Chaque quête renvoie l'un des six résultats : Réussite critique / Grande réussite / Réussite / Échec majeur / Échec critique / Résultat inattendu.",
+        "Seuils de score : +10 critique, +5 grande, 0 réussite, −5 échec majeur, −10 échec critique.",
+        "Les grandes réussites et critiques multiplient les récompenses par 1,5× et 2×.",
+        "Les Résultats inattendus sont des événements spéciaux déclenchés par des traits ou des clés d'histoire — à explorer."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Résultats de quête",
      "metaDescription": "Six résultats : critique, grand, succès, échec et inattendu. Seuils, multiplicateurs et spéciaux."
     },
     "de": {
      "title": "Quest-Ergebnisse",
      "intro": "Sechs Ergebnisse: kritisch, groß, Erfolg, Fehlschlag und unerwartet. Schwellen und Multiplikatoren.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Quest-Ergebnisse erklärt",
+       "body": "",
+       "items": [
+        "Jede Quest liefert eines von sechs Ergebnissen: Kritischer Erfolg / Großer Erfolg / Erfolg / Schwerer Fehlschlag / Kritischer Fehlschlag / Unerwartetes Ergebnis.",
+        "Score-Schwellen: +10 kritisch, +5 groß, 0 Erfolg, −5 schwerer Fehlschlag, −10 kritischer Fehlschlag.",
+        "Große und kritische Erfolge vervielfachen die Belohnungen um 1,5× und 2×.",
+        "Unerwartete Ergebnisse sind besondere Ereignisse, die durch Eigenschaften oder Story-Schlüssel ausgelöst werden — einen Blick wert."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Quest-Ergebnisse",
      "metaDescription": "Sechs Ergebnisse: kritisch, groß, Erfolg, Fehlschlag und unerwartet. Schwellen und Multiplikatoren."
     }
@@ -10648,12 +12554,52 @@
     "fr": {
      "title": "Carte du royaume",
      "intro": "Les régions : Brizh, Groveshire, Gavault… Les terres natales et bonus régionaux.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Régions du royaume",
+       "body": "",
+       "items": [
+        "Le royaume s'étend sur plusieurs régions : Brizh, Clovermont/Groveshire, Fort Gavault, Château de Drakovic, Avalon, etc.",
+        "Les noms de régions viennent des origines des chevaliers — la terre natale de chaque chevalier est un lieu de quête qui peut donner des bonus de saveur.",
+        "Une carte interactive complète du royaume n'est pas encore vérifiée (待补)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Carte du royaume",
      "metaDescription": "Les régions : Brizh, Groveshire, Gavault… Les terres natales et bonus régionaux."
     },
     "de": {
      "title": "Königreichkarte",
      "intro": "Die Regionen: Brizh, Groveshire, Gavault… Heimaten und Regionsboni.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Regionen des Königreichs",
+       "body": "",
+       "items": [
+        "Das Königreich erstreckt sich über mehrere Regionen: Brizh, Clovermont/Groveshire, Fort Gavault, Drakovic-Schloss, Avalon usw.",
+        "Die Regionsnamen stammen aus den Herkunftsorten der Ritter — die Heimat jedes Ritters ist ein Quest-Ort, der Geschmacks-Boni geben kann.",
+        "Eine vollständige interaktive Königreichskarte ist noch nicht verifiziert (待补)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Königreichkarte",
      "metaDescription": "Die Regionen: Brizh, Groveshire, Gavault… Heimaten und Regionsboni."
     }
@@ -10803,12 +12749,52 @@
     "fr": {
      "title": "L'audience du matin",
      "intro": "Chaque cycle s'ouvre sur l'audience. Vos réponses font bouger factions et étiquettes du souverain.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Cour du matin / audiences",
+       "body": "",
+       "items": [
+        "Chaque cycle commence par une cour du matin : les citoyens apportent des requêtes, du jardinage à la chasse aux démons.",
+        "Vos réponses façonnent la satisfaction des factions et l'opinion des chevaliers.",
+        "Les décisions de cour appliquent des étiquettes d'archétype souverain (Tyrannique, Sage, Bienveillant, Audacieux, Omniscient) que certains chevaliers approuvent ou n'aiment pas."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "L'audience du matin",
      "metaDescription": "Chaque cycle s'ouvre sur l'audience. Vos réponses font bouger factions et étiquettes du souverain."
     },
     "de": {
      "title": "Morgenaudienz",
      "intro": "Jeder Zyklus beginnt mit der Audienz. Deine Antworten bewegen Fraktionen und Herrscher-Tags.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Morgenhof / Audienzen",
+       "body": "",
+       "items": [
+        "Jeder Zyklus beginnt mit einem Morgenhof: Bürger bringen Bitten vom Gärtnern bis zur Dämonenjagd.",
+        "Deine Antworten formen die Fraktionszufriedenheit und die Meinung der Ritter.",
+        "Hofentscheidungen vergeben Herrscher-Archetyp-Labels (Tyrannisch, Weise, Gütig, Kühn, Allwissend), die manche Ritter gutheißen oder nicht mögen."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Morgenaudienz",
      "metaDescription": "Jeder Zyklus beginnt mit der Audienz. Deine Antworten bewegen Fraktionen und Herrscher-Tags."
     }
@@ -10962,12 +12948,54 @@
     "fr": {
      "title": "Sortie et mises à jour",
      "intro": "Sortie du jeu et journal de mises à jour de nos guides — v1.0, promo et DLC.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Sortie et mises à jour",
+       "body": "",
+       "items": [
+        "Sorti le 2026-08-06 (v1.0, pas en accès anticipé).",
+        "Promo de lancement : −15 % jusqu'au 2026-08-20 (57,80 ¥ en Chine).",
+        "2 DLC sont rattachés (appids 4870280 / 4911710) — contenu encore en cours de vérification (待补).",
+        "Cette page est le journal de mise à jour de nos guides — elle évolue au fil de nos vérifications."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Sortie et mises à jour",
      "metaDescription": "Sortie du jeu et journal de mises à jour de nos guides — v1.0, promo et DLC."
     },
     "de": {
      "title": "Veröffentlichung & Updates",
      "intro": "Release-Infos und Update-Log unserer Guides — v1.0, Sale und DLC.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Veröffentlichung & Updates",
+       "body": "",
+       "items": [
+        "Veröffentlicht am 2026-08-06 (v1.0, kein Early Access).",
+        "Startrabatt: 15 % bis 2026-08-20 (57,80 ¥ in CN).",
+        "2 DLCs sind angehängt (App-IDs 4870280 / 4911710) — Inhalt wird noch verifiziert (待补).",
+        "Diese Seite ist das Änderungsprotokoll unserer Guides — sie wächst, sobald wir neue Mechaniken verifizieren."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Veröffentlichung & Updates",
      "metaDescription": "Release-Infos und Update-Log unserer Guides — v1.0, Sale und DLC."
     }
@@ -11143,12 +13171,52 @@
     "fr": {
      "title": "Configuration requise",
      "intro": "Sovereign Tower tourne sur Windows et Linux/SteamOS. Specs minimales, recommandées et Deck.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Configuration requise",
+       "body": "",
+       "headers": [
+        "",
+        "Configuration"
+       ],
+       "rows": []
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Configuration requise",
      "metaDescription": "Sovereign Tower tourne sur Windows et Linux/SteamOS. Specs minimales, recommandées et Deck."
     },
     "de": {
      "title": "Systemanforderungen",
      "intro": "Sovereign Tower läuft auf Windows und Linux/SteamOS. Offizielle Mindest-, Empfohlen- und Deck-Specs.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Systemanforderungen",
+       "body": "",
+       "headers": [
+        "",
+        "Anforderungen"
+       ],
+       "rows": []
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Systemanforderungen",
      "metaDescription": "Sovereign Tower läuft auf Windows und Linux/SteamOS. Offizielle Mindest-, Empfohlen- und Deck-Specs."
     }
@@ -11294,6 +13362,38 @@
      "intro": "ソブリンタワーの発売時レビュー概要——Metacritic 86、Steam 90%好評、何が評価されたか。",
      "sections": [
       {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "指標",
+        "値"
+       ],
+       "rows": [
+        [
+         "Metacritic",
+         "86 (store-page field)"
+        ],
+        [
+         "Steam rating",
+         "Very Positive — 90% of 700+ reviews"
+        ],
+        [
+         "Release",
+         "2026-08-06 (full release, not early access)"
+        ],
+        [
+         "Genre",
+         "Indie / RPG — Round Table management"
+        ],
+        [
+         "Publisher",
+         "Curve Games"
+        ]
+       ]
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "レビューが評価する点",
@@ -11329,6 +13429,38 @@
      "intro": "소버린 타워 출시 리뷰 개요 — Metacritic 86, Steam 90% 긍정, 무엇이 평가받았는가.",
      "sections": [
       {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "",
+       "body": "",
+       "headers": [
+        "지표",
+        "값"
+       ],
+       "rows": [
+        [
+         "Metacritic",
+         "86 (store-page field)"
+        ],
+        [
+         "Steam rating",
+         "Very Positive — 90% of 700+ reviews"
+        ],
+        [
+         "Release",
+         "2026-08-06 (full release, not early access)"
+        ],
+        [
+         "Genre",
+         "Indie / RPG — Round Table management"
+        ],
+        [
+         "Publisher",
+         "Curve Games"
+        ]
+       ]
+      },
+      {
        "type": "list",
        "tag": "NOTE",
        "heading": "리뷰가 평가하는 점",
@@ -11362,12 +13494,74 @@
     "fr": {
      "title": "Aperçu des critiques",
      "intro": "Aperçu des critiques : Metacritic 86, 90% positifs sur Steam, ce qui est loué.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Aperçu des notes",
+       "body": "",
+       "headers": [
+        "Indicateur",
+        "Valeur"
+       ],
+       "rows": []
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Ce que disent les avis",
+       "body": "",
+       "items": [
+        "Les avis saluent l'écriture spirituelle et ciselée, la boucle de quêtes de la Table Ronde et le filet de sécurité du retour dans le temps.",
+        "Certains joueurs trouvent la courbe d'apprentissage du retour dans le temps raide (selon un test chinois).",
+        "Les résultats inattendus et les traits cachés rendent les rejouabilités intéressantes."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Aperçu des critiques",
      "metaDescription": "Aperçu des critiques : Metacritic 86, 90% positifs sur Steam, ce qui est loué."
     },
     "de": {
      "title": "Review-Überblick",
      "intro": "Release-Überblick: Metacritic 86, 90% positiv auf Steam, was gelobt wird.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Bewertungsübersicht",
+       "body": "",
+       "headers": [
+        "Metrik",
+        "Wert"
+       ],
+       "rows": []
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Was die Reviews sagen",
+       "body": "",
+       "items": [
+        "Die Reviews loben den witzigen, präzisen Schreibstil, die Quest-Schleife der Tafelrunde und das Sicherheitsnetz der Zeitumkehr.",
+        "Manche Spieler empfinden die Lernkurve der Zeitumkehr als steil (laut einem chinesischen Hands-on-Test).",
+        "Unerwartete Ergebnisse und versteckte Eigenschaften halten Replays interessant."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Review-Überblick",
      "metaDescription": "Release-Überblick: Metacritic 86, 90% positiv auf Steam, was gelobt wird."
     }
@@ -11510,15 +13704,57 @@
     },
     "fr": {
      "title": "Sortie et démo",
-     "intro": "Date de sortie, démo, promo et DLC de Sovereign Tower.",
+     "intro": "Date de sortie, démo, promo de lancement et DLC de Sovereign Tower : quand le jeu est sorti, s'il existe une démo et ce qu'on sait des deux DLC.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Sortie et démo",
+       "body": "",
+       "items": [
+        "Sorti le 2026-08-06 en v1.0 complète (pas en accès anticipé).",
+        "Une démo était disponible avant le lancement (trailer officiel de la démo existant).",
+        "Promo de lancement : −15 % jusqu'au 2026-08-20.",
+        "Deux DLC sont rattachés (待补 contenu)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Sortie et démo",
-     "metaDescription": "Date de sortie, démo, promo et DLC de Sovereign Tower."
+     "metaDescription": "Date de sortie, démo, promo de lancement et DLC de Sovereign Tower : quand le jeu est sorti, s'il existe une démo et ce qu'on sait des deux DLC."
     },
     "de": {
      "title": "Release & Demo",
-     "intro": "Release-Datum, Demo, Sale und DLC von Sovereign Tower.",
+     "intro": "Release-Datum, Demo, Launch-Sale und DLC von Sovereign Tower: wann das Spiel erschien, ob es eine Demo gibt und was du über die beiden DLCs weißt.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Veröffentlichung & Demo",
+       "body": "",
+       "items": [
+        "Veröffentlicht am 2026-08-06 als vollständige v1.0 (kein Early Access).",
+        "Vor dem Launch war eine Demo verfügbar (offizieller Demo-Trailer existiert).",
+        "Startrabatt: 15 % bis 2026-08-20.",
+        "Zwei DLCs sind angehängt (待补 Inhalt)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Release & Demo",
-     "metaDescription": "Release-Datum, Demo, Sale und DLC von Sovereign Tower."
+     "metaDescription": "Release-Datum, Demo, Launch-Sale und DLC von Sovereign Tower: wann das Spiel erschien, ob es eine Demo gibt und was du über die beiden DLCs weißt."
     }
    }
   },
@@ -11664,12 +13900,52 @@
     "fr": {
      "title": "Bande-son",
      "intro": "La musique de Sovereign Tower : ce qu'on sait, le compositeur, la disponibilité.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Statut de la bande-son",
+       "body": "",
+       "items": [
+        "Les tags officiels du jeu incluent des qualités proches de la bande-son ; le trailer de lancement contient de la musique originale (待补 compositeur exact).",
+        "Les détails de la bande-son (compositeur, liste des titres, disponibilité en streaming) sont encore en cours de vérification (待补).",
+        "Consultez la page Steam et les canaux officiels pour les nouvelles de la bande-son."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Bande-son",
      "metaDescription": "La musique de Sovereign Tower : ce qu'on sait, le compositeur, la disponibilité."
     },
     "de": {
      "title": "Soundtrack",
      "intro": "Die Musik von Sovereign Tower: was bekannt ist, Komponist, Verfügbarkeit.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Status des Soundtracks",
+       "body": "",
+       "items": [
+        "Die offiziellen Tags des Spiels enthalten soundtrack-nahe Eigenschaften; der Launch-Trailer enthält Originalmusik (待补 genauer Komponist).",
+        "Details zum Soundtrack (Komponist, Titelliste, Streaming-Verfügbarkeit) werden noch verifiziert (待补).",
+        "Checke die Steam-Store-Seite und die offiziellen Kanäle für Soundtrack-News."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Soundtrack",
      "metaDescription": "Die Musik von Sovereign Tower: was bekannt ist, Komponist, Verfügbarkeit."
     }
@@ -11811,12 +14087,52 @@
     "fr": {
      "title": "Aperçu des objets",
      "intro": "Consommables et équipement d'artisanat, où les obtenir et ce qu'on vérifie.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Aperçu des objets",
+       "body": "",
+       "items": [
+        "Sovereign Tower propose des consommables et de l'équipement d'artisanat à travers les systèmes de la tour (Forge, Salle d'alchimie).",
+        "Les listes d'objets sont encore en cours de vérification en jeu (待补) — cet aperçu grandira à mesure que nous confirmons des objets.",
+        "Familles d'objets clés signalées : consommables (potions, nourriture) et équipement d'artisanat (armes, matériaux d'armure)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Aperçu des objets",
      "metaDescription": "Consommables et équipement d'artisanat, où les obtenir et ce qu'on vérifie."
     },
     "de": {
      "title": "Gegenstände Überblick",
      "intro": "Verbrauchsgüter und Ausrüstung, wo man sie bekommt und was wir prüfen.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Gegenstandsübersicht",
+       "body": "",
+       "items": [
+        "Sovereign Tower hat Verbrauchsgüter und Handwerksausrüstung in den Systemen des Turms (Schmiede, Alchemieraum).",
+        "Die Gegenstandslisten werden noch im Spiel verifiziert (待补) — diese Übersicht wächst, sobald wir Gegenstände bestätigen.",
+        "Wichtige Gegenstandsfamilien: Verbrauchsgüter (Tränke, Essen) und Handwerksausrüstung (Waffen, Rüstungsmaterialien)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Gegenstände Überblick",
      "metaDescription": "Verbrauchsgüter und Ausrüstung, wo man sie bekommt und was wir prüfen."
     }
@@ -11966,12 +14282,52 @@
     "fr": {
      "title": "Guide des consommables",
      "intro": "Potions et nourriture de l'Alchimie, effets et bonus de plat favori.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Guide des consommables",
+       "body": "",
+       "items": [
+        "La Salle d'alchimie de la Sorcière fabrique les consommables (potions, nourriture) pour les quêtes et la récupération.",
+        "Les recettes et effets des consommables sont encore en cours de vérification (待补).",
+        "Les repas favoris donnent +1,5 d'affinité et +0,5 de score de quête — la nourriture est la famille de consommables la plus confirmée."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Guide des consommables",
      "metaDescription": "Potions et nourriture de l'Alchimie, effets et bonus de plat favori."
     },
     "de": {
      "title": "Verbrauchsgüter-Guide",
      "intro": "Tränke und Essen aus der Alchemie, Effekte und Lieblingsgericht-Bonus.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Verbrauchsgüter-Leitfaden",
+       "body": "",
+       "items": [
+        "Der Alchemieraum der Hexe stellt Verbrauchsgüter (Tränke, Essen) für Quests und Erholung her.",
+        "Rezepte und Effekte der Verbrauchsgüter werden noch verifiziert (待补).",
+        "Lieblingsgerichte geben +1,5 Bindung und +0,5 Quest-Score — Essen ist die am besten bestätigte Verbrauchsgüter-Familie."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Verbrauchsgüter-Guide",
      "metaDescription": "Tränke und Essen aus der Alchemie, Effekte und Lieblingsgericht-Bonus."
     }
@@ -12121,12 +14477,52 @@
     "fr": {
      "title": "Artisanat et équipement",
      "intro": "La forge : l'armure est les PV des quêtes, recettes et améliorations.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Artisanat et équipement",
+       "body": "",
+       "items": [
+        "La Forge de Carina répare et fabrique l'équipement ; l'armure sert de points de vie pour les dégâts de quête.",
+        "Les recettes d'artisanat et les chemins d'amélioration sont encore en cours de vérification (待补).",
+        "Childeric commence avec une armure de 9 (la plus haute) — un tank solide pour les quêtes à dégâts."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Artisanat et équipement",
      "metaDescription": "La forge : l'armure est les PV des quêtes, recettes et améliorations."
     },
     "de": {
      "title": "Handwerk & Ausrüstung",
      "intro": "Die Schmiede: Rüstung ist die LP von Quests, Rezepte und Upgrades.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Handwerk & Ausrüstung",
+       "body": "",
+       "items": [
+        "Carinas Schmiede repariert und fertigt Ausrüstung; Rüstung dient als Trefferpunkte für Quest-Schaden.",
+        "Handwerksrezepte und Upgrade-Pfade werden noch verifiziert (待补).",
+        "Childeric startet mit Rüstung 9 (höchster Wert) — ein starker Tank für schadenslastige Quests."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Handwerk & Ausrüstung",
      "metaDescription": "Die Schmiede: Rüstung ist die LP von Quests, Rezepte und Upgrades."
     }
@@ -12280,12 +14676,54 @@
     "fr": {
      "title": "meilleure ouverture",
      "intro": "Vos premiers cycles donnent le ton. Équilibrez les factions, recrutez Ari et avancez une histoire.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Meilleurs premiers coups",
+       "body": "",
+       "items": [
+        "Commencez par garder le Peuple et les Marchands en bonne santé — la plupart des premières quêtes et audiences les concernent.",
+        "Recrutez Ari tôt (25 or) pour un Éclaireur solide ; gardez Angelica sur les quêtes Aide/Diplomatie qu'elle apprécie.",
+        "Poussez tôt l'arc de Gavault (Brunhilda) ou de Groveshire (oie→Chester) pour des chevaliers supplémentaires.",
+        "Ne laissez aucune faction tomber à zéro — les crises coûtent plus cher que l'effort pour les éviter."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "meilleure ouverture",
      "metaDescription": "Vos premiers cycles donnent le ton. Équilibrez les factions, recrutez Ari et avancez une histoire."
     },
     "de": {
      "title": "bester Einstieg",
      "intro": "Deine ersten Zyklen setzen den Ton. Balanciere Fraktionen, hole Ari und treibe eine Story voran.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Beste Eröffnungszüge",
+       "body": "",
+       "items": [
+        "Halte Volk und Händler früh gesund — die meisten frühen Quests und Audienzen betreffen sie.",
+        "Rekrutiere Ari früh (25 Gold) für einen starken Späher; halte Angelica bei Hilfe-/Diplomatie-Quests, die sie mag.",
+        "Treibe früh den Gavault-Strang (Brunhilda) oder Groveshire (Gans→Chester) voran für zusätzliche Ritter.",
+        "Lass keine Fraktion auf null fallen — Krisen kosten mehr als die Mühe, sie zu vermeiden."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "bester Einstieg",
      "metaDescription": "Deine ersten Zyklen setzen den Ton. Balanciere Fraktionen, hole Ari und treibe eine Story voran."
     }
@@ -12439,12 +14877,54 @@
     "fr": {
      "title": "commandes et saisie",
      "intro": "Sovereign Tower prend en charge manettes et clavier, et se joue sans limite de temps.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Commandes et saisie",
+       "body": "",
+       "items": [
+        "Prise en charge complète de la manette (Xbox et PlayStation) ainsi que de la souris et du clavier.",
+        "Fonction officielle : jouable sans saisie minutée — aucune pression pour prendre des décisions rapidement.",
+        "Le jeu prend en charge la sauvegarde à tout moment et Steam Cloud.",
+        "Les raccourcis clavier exacts et la correspondance des manettes sont encore en cours de compilation (待补)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "commandes et saisie",
      "metaDescription": "Sovereign Tower prend en charge manettes et clavier, et se joue sans limite de temps."
     },
     "de": {
      "title": "Steuerung & Eingabe",
      "intro": "Sovereign Tower unterstützt Controller und Tastatur und ist offiziell ohne Zeitlimit spielbar.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Steuerung & Eingabe",
+       "body": "",
+       "items": [
+        "Volle Controller-Unterstützung (Xbox und PlayStation) plus Maus und Tastatur.",
+        "Offizielles Feature: spielbar ohne Zeitlimit — kein Druck, Entscheidungen zu überstürzen.",
+        "Das Spiel unterstützt Speichern jederzeit und Steam Cloud.",
+        "Die genauen Tastenbelegungen und Controller-Mappings werden noch zusammengestellt (待补)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Steuerung & Eingabe",
      "metaDescription": "Sovereign Tower unterstützt Controller und Tastatur und ist offiziell ohne Zeitlimit spielbar."
     }
@@ -12598,12 +15078,54 @@
     "fr": {
      "title": "conseils de difficulté",
      "intro": "Les cycles durs punissent la précipitation. Utilisez le retour, équilibrez l'effectif.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Conseils de difficulté",
+       "body": "",
+       "items": [
+        "Utilisez le système de retour en arrière comme filet de sécurité — rejouez un mauvais cycle plutôt que de vivre avec.",
+        "Gardez un effectif équilibré : couvrez FOR/AGI/MAG/ESP pour que chaque quête ait un chevalier adapté.",
+        "Donnez les repas favoris avant les quêtes risquées pour l'avantage de +0,5 de score.",
+        "Réparez l'armure à la Forge avant les quêtes à dégâts — l'armure est les PV de vos chevaliers."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "conseils de difficulté",
      "metaDescription": "Les cycles durs punissent la précipitation. Utilisez le retour, équilibrez l'effectif."
     },
     "de": {
      "title": "Schwierigkeits-Tipps",
      "intro": "Schwere Zyklen bestrafen Eile. Nutze das Zurückdrehen, balanciere den Kader.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Schwierigkeits-Tipps",
+       "body": "",
+       "items": [
+        "Nutze die Zeitumkehr als Sicherheitsnetz — spiele einen schlechten Zyklus neu, statt ihn zu akzeptieren.",
+        "Halte einen ausgewogenen Kader: decke STR/AGI/MAG/WIT ab, damit jede Quest einen passenden Ritter hat.",
+        "Gib Lieblingsgerichte vor riskanten Quests für den +0,5-Score-Vorteil.",
+        "Repariere Rüstung in der Schmiede vor schadenslastigen Quests — Rüstung ist die LP deiner Ritter."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Schwierigkeits-Tipps",
      "metaDescription": "Schwere Zyklen bestrafen Eile. Nutze das Zurückdrehen, balanciere den Kader."
     }
@@ -12757,14 +15279,56 @@
     "fr": {
      "title": "loyauté des chevaliers",
      "intro": "Les chevaliers démissionnent à -7 d'affinité (sauf Alwena et Ari).",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Loyauté et affinité des chevaliers",
+       "body": "",
+       "items": [
+        "L'affinité va de −10 à +10 ; la plupart des chevaliers démissionnent à −7.",
+        "Les types de quêtes appréciés donnent +1,33 d'affinité chacun ; les détestés −0,75. Les repas favoris donnent +1,5.",
+        "Alwena et Ari ne démissionnent jamais (seuil −1500).",
+        "Gardez les affectations appréciées et donnez les repas favoris pour retenir les chevaliers loyaux."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "loyauté des chevaliers",
      "metaDescription": "Les chevaliers démissionnent à -7 d'affinité (sauf Alwena et Ari)."
     },
     "de": {
      "title": "Ritter-Loyalität",
-     "intro": "Ritter kündigen bei -7 Sympathie (außer Alwena und Ari).",
+     "intro": "Ritter kündigen bei -7 Sympathie, außer Alwena und Ari. So hältst du deinen Kader zusammen: gemochte Einsätze, Lieblingsgerichte und die richtige Balance.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Ritter-Loyalität & Bindung",
+       "body": "",
+       "items": [
+        "Bindung reicht von −10 bis +10; die meisten Ritter kündigen bei −7.",
+        "Gemochte Quest-Typen geben je +1,33 Bindung; ungemochte −0,75. Lieblingsgerichte geben +1,5.",
+        "Alwena und Ari kündigen nie (Schwelle −1500).",
+        "Halte gemochte Einsätze und Lieblingsgerichte bei, um loyale Ritter zu behalten."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Ritter-Loyalität",
-     "metaDescription": "Ritter kündigen bei -7 Sympathie (außer Alwena und Ari)."
+     "metaDescription": "Ritter kündigen bei -7 Sympathie, außer Alwena und Ari. So hältst du deinen Kader zusammen: gemochte Einsätze, Lieblingsgerichte und die richtige Balance."
     }
    }
   },
@@ -12807,8 +15371,8 @@
     "zh-CN": {
      "title": "New Game Plus Guide",
      "metaTitle": "New Game Plus Guide",
-     "metaDescription": "新游戏+ 让你探索第一周目锁掉的分支和结局。",
-     "intro": "新游戏+ 让你探索第一周目锁掉的分支和结局。",
+     "metaDescription": "新游戏+ 让你在通关后带着进度重开，专门探索第一周目锁掉的分支路线、隐藏结局与不同派系走向，是看全所有结局的干净方式。",
+     "intro": "新游戏+ 让你在通关后带着进度重开，专门探索第一周目锁掉的分支路线、隐藏结局与不同派系走向，是看全所有结局的干净方式。",
      "sections": [
       {
        "type": "list",
@@ -12912,14 +15476,54 @@
     "fr": {
      "title": "Nouvelle Partie +",
      "intro": "La Nouvelle Partie + pour explorer les branches et fins verrouillées.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Nouvelle partie +",
+       "body": "",
+       "items": [
+        "La Nouvelle partie + est disponible après une partie terminée (selon les sources fans ; déblocage exact 待补).",
+        "Elle conserve la progression pour explorer les branches et fins mutuellement exclusives.",
+        "Servez-vous-en pour viser les fins verrouillées en première partie (mariage d'Arthur, fins cachées, autres issues de factions)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Nouvelle Partie +",
      "metaDescription": "La Nouvelle Partie + pour explorer les branches et fins verrouillées."
     },
     "de": {
      "title": "Neues Spiel +",
-     "intro": "Neues Spiel + zum Erkunden gesperrter Zweige und Enden.",
+     "intro": "Neues Spiel + ist nach einem abgeschlossenen Durchlauf verfügbar und übernimmt deinen Fortschritt, damit du gesperrte Zweige, versteckte Enden und andere Fraktionsausgänge erkunden kannst.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "New Game Plus",
+       "body": "",
+       "items": [
+        "New Game Plus ist nach einem abgeschlossenen Durchlauf verfügbar (laut Fan-Quellen; genaues Freischalten 待补).",
+        "Es übernimmt den Fortschritt, damit du sich gegenseitig ausschließende Zweige und Enden erkunden kannst.",
+        "Nutze es für Enden, die du im ersten Lauf ausgesperrt hast (Arthur-Heirat, versteckte Enden, andere Fraktionsausgänge)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Neues Spiel +",
-     "metaDescription": "Neues Spiel + zum Erkunden gesperrter Zweige und Enden."
+     "metaDescription": "Neues Spiel + ist nach einem abgeschlossenen Durchlauf verfügbar und übernimmt deinen Fortschritt, damit du gesperrte Zweige, versteckte Enden und andere Fra…"
     }
    }
   },
@@ -13067,12 +15671,52 @@
     "fr": {
      "title": "guide des alliances",
      "intro": "Sovereign Tower vous permet de choisir un camp aux décisions clés — les alliances.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Alliances et souverains rivaux",
+       "body": "",
+       "items": [
+        "L'ultimatum du Chevalier Dragon au Cycle 4 offre des chemins d'alliance : rallier le peuple, s'allier aux nobles, ou utiliser les forces mystiques — chacun avec ses exigences.",
+        "Les alliances débloquent des fins alternatives et changent la dynamique des factions.",
+        "Les branches d'alliance au-delà du Cycle 4 sont encore en cours de vérification (待补)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "guide des alliances",
      "metaDescription": "Sovereign Tower vous permet de choisir un camp aux décisions clés — les alliances."
     },
     "de": {
      "title": "Allianzen-Guide",
      "intro": "Sovereign Tower lässt dich bei Schlüsselentscheidungen Partei ergreifen — Allianzen.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Allianzen & rivalisierende Herrscher",
+       "body": "",
+       "items": [
+        "Das Drachenritter-Ultimatum in Zyklus 4 bietet Allianz-Pfade: das Volk sammeln, mit Adligen verbünden oder mystische Kräfte nutzen — jeweils mit eigenen Anforderungen.",
+        "Allianzen schalten alternative Enden frei und verändern die Fraktionsdynamik.",
+        "Die genauen Allianz-Zweige über Zyklus 4 hinaus werden noch verifiziert (待补)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Allianzen-Guide",
      "metaDescription": "Sovereign Tower lässt dich bei Schlüsselentscheidungen Partei ergreifen — Allianzen."
     }
@@ -13227,15 +15871,59 @@
     },
     "fr": {
      "title": "vaincre le chevalier dragon",
-     "intro": "L'ultimatum du chevalier dragon au Cycle 4 — trois routes.",
+     "intro": "L'ultimatum du chevalier dragon au Cycle 4 propose trois routes : rallier le peuple, s'allier aux nobles ou recourir aux forces mystiques. Voici comment le surmonter.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "L'ultimatum du Chevalier Dragon (Cycle 4)",
+       "body": "",
+       "items": [
+        "L'ultimatum du Chevalier Dragon arrive au Cycle 4 avec trois options, chacune exigeant faction et or.",
+        "Option 1 (rallier le peuple) : Marchands 8+ / Peuple 14+ / 300 or + un allié.",
+        "Option 2 (alliés nobles) : Marchands 10+ / Nobles 8+ / 400 or + un allié.",
+        "Option 3 (forces mystiques) : Érudits 12+ / Peuple 10+ / 300 or + un allié.",
+        "La façon dont vous le résolvez verrouille ou débloque des chemins de fin."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "vaincre le chevalier dragon",
-     "metaDescription": "L'ultimatum du chevalier dragon au Cycle 4 — trois routes."
+     "metaDescription": "L'ultimatum du chevalier dragon au Cycle 4 propose trois routes : rallier le peuple, s'allier aux nobles ou recourir aux forces mystiques. Voici comment le s…"
     },
     "de": {
      "title": "Drachenritter besiegen",
-     "intro": "Das Drachenritter-Ultimatum in Zyklus 4 — drei Wege.",
+     "intro": "Das Drachenritter-Ultimatum in Zyklus 4 bietet drei Wege: Volk sammeln, Adelsallianz oder mystische Kräfte. So schaffst du es mit den richtigen Fraktionswerten und Gold.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Drachenritter-Ultimatum (Zyklus 4)",
+       "body": "",
+       "items": [
+        "Das Drachenritter-Ultimatum kommt in Zyklus 4 mit drei Optionen, die jeweils Fraktion und Gold verlangen.",
+        "Option 1 (Volk sammeln): Händler 8+ / Volk 14+ / 300 Gold + ein Verbündeter.",
+        "Option 2 (Adelsallianz): Händler 10+ / Adel 8+ / 400 Gold + ein Verbündeter.",
+        "Option 3 (mystische Kräfte): Gelehrte 12+ / Volk 10+ / 300 Gold + ein Verbündeter.",
+        "Wie du es löst, sperrt oder öffnet End-Pfade."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Drachenritter besiegen",
-     "metaDescription": "Das Drachenritter-Ultimatum in Zyklus 4 — drei Wege."
+     "metaDescription": "Das Drachenritter-Ultimatum in Zyklus 4 bietet drei Wege: Volk sammeln, Adelsallianz oder mystische Kräfte. So schaffst du es mit den richtigen Fraktionswert…"
     }
    }
   },
@@ -13385,12 +16073,54 @@
     "fr": {
      "title": "archétypes du souverain",
      "intro": "Votre style de règne se définit par cinq archétypes auxquels les chevaliers réagissent.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Archétypes souverains",
+       "body": "",
+       "items": [
+        "Cinq archétypes souverains : Tyrannique, Sage, Bienveillant, Audacieux, Omniscient — appliqués à vos décisions en audience.",
+        "Les chevaliers qui aiment une étiquette gagnent de l'affinité quand vous agissez ainsi ; ceux qui la détestent en perdent.",
+        "Exemples : Angelica aime Bienveillant et n'aime pas Tyrannique ; Brunhilda aime Audacieux et n'aime pas Sage.",
+        "Équilibrez vos choix d'archétype avec les chevaliers que vous voulez garder heureux."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "archétypes du souverain",
      "metaDescription": "Votre style de règne se définit par cinq archétypes auxquels les chevaliers réagissent."
     },
     "de": {
      "title": "Herrscher-Archetypen",
      "intro": "Dein Herrscherstil wird durch fünf Archetypen definiert, auf die Ritter reagieren.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Herrscher-Archetypen",
+       "body": "",
+       "items": [
+        "Fünf Herrscher-Archetypen: Tyrannisch, Weise, Gütig, Kühn, Allwissend — vergeben bei deinen Audienz-Entscheidungen.",
+        "Ritter, die ein Label mögen, gewinnen Bindung, wenn du so handelst; die es nicht mögen, verlieren Bindung.",
+        "Beispiele: Angelica mag Gütig und nicht Tyrannisch; Brunhilda mag Kühn und nicht Weise.",
+        "Balances deine Archetyp-Wahl mit den Rittern, die du glücklich halten willst."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Herrscher-Archetypen",
      "metaDescription": "Dein Herrscherstil wird durch fünf Archetypen definiert, auf die Ritter reagieren."
     }
@@ -13540,12 +16270,52 @@
     "fr": {
      "title": "serviteurs de la tour",
      "intro": "Au-delà des chevaliers, la tour a des serviteurs — avec l'Intendante Alwena en figure clé.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Serviteurs et personnel de la tour",
+       "body": "",
+       "items": [
+        "La tour a des serviteurs et du personnel au-delà des chevaliers (signalé ; effectif exact 待补).",
+        "L'Intendante Alwena est la figure clé du personnel — elle gère la tour et révèle les rumeurs sur les chevaliers.",
+        "Les serviteurs de la tour incluent probablement des rôles de cour et du personnel d'entretien ; la liste exacte est encore en cours de vérification (待补)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "serviteurs de la tour",
      "metaDescription": "Au-delà des chevaliers, la tour a des serviteurs — avec l'Intendante Alwena en figure clé."
     },
     "de": {
      "title": "Turm-Diener",
      "intro": "Neben den Rittern hat der Turm Diener — mit Intendantin Alwena als Schlüsselfigur.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Turmbewohner & Personal",
+       "body": "",
+       "items": [
+        "Der Turm hat Diener und Personal über die Ritter hinaus (gemeldet; genaue Liste 待补).",
+        "Intendantin Alwena ist die Schlüsselfigur des Personals — sie verwaltet den Turm und verrät Ritter-Gerüchte.",
+        "Turm-Diener umfassen vermutlich Hofrollen und Instandhaltungspersonal; die genaue Liste wird noch verifiziert (待补)."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "Turm-Diener",
      "metaDescription": "Neben den Rittern hat der Turm Diener — mit Intendantin Alwena als Schlüsselfigur."
     }
@@ -13717,12 +16487,60 @@
     "fr": {
      "title": "stats des chevaliers",
      "intro": "Chaque chevalier a six stats. Leur rôle et leur effet sur le score de quête.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Les stats expliquées",
+       "body": "",
+       "headers": [
+        "Stat",
+        "À quoi elle sert"
+       ],
+       "rows": []
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Comment fonctionnent les stats",
+       "body": "",
+       "items": [
+        "Toutes les stats vont de 0 à 15 ; la valeur utilisée dans le score est plafonnée à 0-15, bonus d'équipement inclus.",
+        "Chaque quête exige une ou plusieurs stats ; un chevalier dont la stat dépasse l'exigence contribue positivement au score.",
+        "Les montées de niveau ajoutent un point à toute stat inférieure à 15 — investissez dans les stats exigées par vos quêtes favorites."
+       ]
+      }
+     ],
      "metaTitle": "stats des chevaliers",
      "metaDescription": "Chaque chevalier a six stats. Leur rôle et leur effet sur le score de quête."
     },
     "de": {
      "title": "Ritter-Werte",
      "intro": "Jeder Ritter hat sechs Werte. Ihre Rolle und Wirkung auf Quest-Punkte.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Werte erklärt",
+       "body": "",
+       "headers": [
+        "Wert",
+        "Was er tut"
+       ],
+       "rows": []
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "So funktionieren Werte",
+       "body": "",
+       "items": [
+        "Alle Werte gehen von 0 bis 15; der für den Score verwendete Wert ist inklusive Ausrüstungsboni auf 0-15 begrenzt.",
+        "Jede Quest verlangt einen oder mehrere Werte; ein Ritter, dessen Wert die Anforderung übertrifft, trägt positiven Score bei.",
+        "Stufenaufstiege geben einen Punkt auf jeden Wert unter 15 — investiere in die Werte, die deine Lieblingsquests verlangen."
+       ]
+      }
+     ],
      "metaTitle": "Ritter-Werte",
      "metaDescription": "Jeder Ritter hat sechs Werte. Ihre Rolle und Wirkung auf Quest-Punkte."
     }
@@ -13872,12 +16690,52 @@
     "fr": {
      "title": "le Barde",
      "intro": "Le Barde est un chevalier secret des données de fans. Ce qu'on sait.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Le Barde (Hildegard)",
+       "body": "",
+       "items": [
+        "Le Barde (Hildegard) apparaît dans les données du fan wiki comme chevalier secret.",
+        "Les étapes exactes de recrutement et les stats sont encore en cours de vérification (待补).",
+        "Surveillez les événements d'histoire liés à la musique ou aux représentations — des conditions musicales apparaissent dans les données de quêtes."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "le Barde",
      "metaDescription": "Le Barde est un chevalier secret des données de fans. Ce qu'on sait."
     },
     "de": {
      "title": "der Barde",
      "intro": "Der Barde ist ein Geheimritter aus Fan-Daten. Was wir wissen.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Der Barde (Hildegard)",
+       "body": "",
+       "items": [
+        "Der Barde (Hildegard) erscheint in Fan-Wiki-Daten als geheimer Ritter.",
+        "Die genauen Rekrutierungsschritte und Werte werden noch verifiziert (待补).",
+        "Achte auf Story-Ereignisse rund um Musik oder Aufführungen — musikalische Bedingungen erscheinen in den Quest-Daten."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": []
+      }
+     ],
      "metaTitle": "der Barde",
      "metaDescription": "Der Barde ist ein Geheimritter aus Fan-Daten. Was wir wissen."
     }

@@ -827,7 +827,7 @@ def build_guides_newgameplus():
     ]
     en_secs = [notes("New Game Plus", en_note), faq_block(en_faq)]
     zh_secs = [notes("新游戏+", zh_note), faq_block(zh_faq)]
-    return _wt("sovereign-tower/guides/new-game-plus", "New Game Plus Guide", "Sovereign Tower New Game Plus — Carry-over & Endings", "Sovereign Tower New Game Plus: what carries over and why it's the way to see every ending.", "New Game Plus lets you explore the branches and endings you locked out in run one.", en_secs, zh_secs, "新游戏+ 让你探索第一周目锁掉的分支和结局。")
+    return _wt("sovereign-tower/guides/new-game-plus", "New Game Plus Guide", "Sovereign Tower New Game Plus — Carry-over & Endings", "Sovereign Tower New Game Plus: what carries over and why it's the way to see every ending.", "New Game Plus lets you explore the branches and endings you locked out in run one.", en_secs, zh_secs, "新游戏+ 让你在通关后带着进度重开，专门探索第一周目锁掉的分支路线、隐藏结局与不同派系走向，是看全所有结局的干净方式。")
 
 def build_guides_alliances():
     en_note = [

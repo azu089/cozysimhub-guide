@@ -370,11 +370,11 @@
   },
   "fr": {
    "title": "Sortie et démo",
-   "intro": "Date de sortie, démo, promo et DLC de Sovereign Tower."
+   "intro": "Date de sortie, démo, promo de lancement et DLC de Sovereign Tower : quand le jeu est sorti, s'il existe une démo et ce qu'on sait des deux DLC."
   },
   "de": {
    "title": "Release & Demo",
-   "intro": "Release-Datum, Demo, Sale und DLC von Sovereign Tower."
+   "intro": "Release-Datum, Demo, Launch-Sale und DLC von Sovereign Tower: wann das Spiel erschien, ob es eine Demo gibt und was du über die beiden DLCs weißt."
   }
  },
  "sovereign-tower/review/soundtrack": {
@@ -518,7 +518,7 @@
   },
   "de": {
    "title": "Ritter-Loyalität",
-   "intro": "Ritter kündigen bei -7 Sympathie (außer Alwena und Ari)."
+   "intro": "Ritter kündigen bei -7 Sympathie, außer Alwena und Ari. So hältst du deinen Kader zusammen: gemochte Einsätze, Lieblingsgerichte und die richtige Balance."
   }
  },
  "sovereign-tower/guides/new-game-plus": {
@@ -536,7 +536,7 @@
   },
   "de": {
    "title": "Neues Spiel +",
-   "intro": "Neues Spiel + zum Erkunden gesperrter Zweige und Enden."
+   "intro": "Neues Spiel + ist nach einem abgeschlossenen Durchlauf verfügbar und übernimmt deinen Fortschritt, damit du gesperrte Zweige, versteckte Enden und andere Fraktionsausgänge erkunden kannst."
   }
  },
  "sovereign-tower/guides/alliances": {
@@ -568,11 +568,11 @@
   },
   "fr": {
    "title": "vaincre le chevalier dragon",
-   "intro": "L'ultimatum du chevalier dragon au Cycle 4 — trois routes."
+   "intro": "L'ultimatum du chevalier dragon au Cycle 4 propose trois routes : rallier le peuple, s'allier aux nobles ou recourir aux forces mystiques. Voici comment le surmonter."
   },
   "de": {
    "title": "Drachenritter besiegen",
-   "intro": "Das Drachenritter-Ultimatum in Zyklus 4 — drei Wege."
+   "intro": "Das Drachenritter-Ultimatum in Zyklus 4 bietet drei Wege: Volk sammeln, Adelsallianz oder mystische Kräfte. So schaffst du es mit den richtigen Fraktionswerten und Gold."
   }
  },
  "sovereign-tower/guides/sovereign-archetypes": {

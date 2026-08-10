@@ -706,6 +706,33 @@ for _sp2, _langs2 in _i18n_sec2.items():
             if _lg2 in _pp2.get("i18n", {}):
                 _pp2["i18n"][_lg2]["sections"] = _secs2
 
+# --- fr/de 完整 sections + ja/ko 补全（data/i18n_sections3.json，2026-08-10 成熟版修复）---
+import json as _j6
+_i18n_sec3 = _j6.loads((ROOT / "i18n_sections3.json").read_text(encoding="utf8"))
+for _sp3, _langs3 in _i18n_sec3.items():
+    for _pp3 in d["pages"]:
+        if _pp3.get("slug") != _sp3:
+            continue
+        for _lg3, _secs3 in _langs3.items():
+            # fr/de：完整覆盖
+            if _lg3 in ("fr", "de"):
+                _pp3.setdefault("i18n", {})[_lg3]["sections"] = _secs3
+            else:
+                # ja/ko：按 EN sections 顺序补全（保留已有翻译，缺失的用新翻译）
+                _en3 = _pp3.get("sections") or []
+                _cur3 = _pp3.get("i18n", {}).get(_lg3, {}).get("sections") or []
+                _merged3 = []
+                _new_by_type = {_s.get("type"): _s for _s in _secs3}
+                _cur_by_type = {_s.get("type"): _s for _s in _cur3}
+                for _es3 in _en3:
+                    _t3 = _es3.get("type")
+                    if _t3 in _cur_by_type:
+                        _merged3.append(_cur_by_type[_t3])
+                    elif _t3 in _new_by_type:
+                        _merged3.append(_new_by_type[_t3])
+                if len(_merged3) == len(_en3):
+                    _pp3.setdefault("i18n", {})[_lg3]["sections"] = _merged3
+
 # --- meta 自动补全（ja/ko/fr/de 缺 metaTitle/metaDescription 时从 title/intro 生成并截断）---
 def _clip(s, n):
     s = (s or "").strip()

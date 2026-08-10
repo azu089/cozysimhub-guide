@@ -1,0 +1,3280 @@
+{
+ "sovereign-tower/knights/roster": {
+  "fr": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Tableau des chevaliers",
+    "body": "",
+    "headers": [
+     "Chevalier",
+     "Origine",
+     "Niv.",
+     "Armure",
+     "Stats (FOR/AGI/CHA/MAG/ESP/CHA)"
+    ],
+    "rows": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Comment lire le tableau",
+    "body": "",
+    "items": [
+     "Les stats vont de 0 à 15. Niveau 1 à 15 : chaque montée de niveau ajoute un point à une stat inférieure à 15.",
+     "Les stats de Chester sont entièrement aléatoires et relancées à chaque vérification.",
+     "Alwena et Ari ne démissionnent jamais ; la plupart des autres partent à −7 d'affinité."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Ritter-Übersicht",
+    "body": "",
+    "headers": [
+     "Ritter",
+     "Herkunft",
+     "Stufe",
+     "Rüstung",
+     "Werte (STR/AGI/CHA/MAG/WIT/GLK)"
+    ],
+    "rows": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "So liest du die Übersicht",
+    "body": "",
+    "items": [
+     "Werte gehen von 0 bis 15. Stufe 1–15: Jeder Stufenaufstieg gibt einen Punkt auf einen Wert unter 15.",
+     "Chesters Werte sind völlig zufällig und werden bei jeder Prüfung neu gewürfelt.",
+     "Alwena und Ari kündigen nie; die meisten anderen gehen bei −7 Bindung."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "ja": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "騎士",
+     "出身",
+     "Lv",
+     "防具",
+     "ステータス (STR/AGI/CHA/MAG/WIT/LCK)"
+    ],
+    "rows": [
+     [
+      "Alwena",
+      "Grest (Brizh)",
+      "12",
+      "8",
+      "8 / 9 / 10 / 0 / 12 / 7"
+     ],
+     [
+      "Angelica",
+      "Clovermont (Groveshire)",
+      "1",
+      "5",
+      "4 / 8 / 3 / 0 / 2 / 7"
+     ],
+     [
+      "Ari",
+      "Isle of Basalt",
+      "8",
+      "6",
+      "5 / 13 / 8 / 3 / 8 / 6"
+     ],
+     [
+      "Arron",
+      "Drakovic Castle",
+      "3",
+      "7",
+      "2 / 2 / 3 / 6 / 7 / 8"
+     ],
+     [
+      "Brunhilda",
+      "Fort Gavault",
+      "1",
+      "6",
+      "7 / 2 / 6 / 7 / 3 / 0"
+     ],
+     [
+      "Chester",
+      "Milkford",
+      "15",
+      "6",
+      "随机（Chester 每次判定重 roll 0–15）"
+     ],
+     [
+      "Childeric",
+      "Almora",
+      "6",
+      "9",
+      "7 / 4 / 4 / 0 / 12 / 4"
+     ],
+     [
+      "Daguez",
+      "Grest (Brizh)",
+      "1",
+      "6",
+      "15 / 0 / 0 / 0 / 0 / 9"
+     ],
+     [
+      "Dulahan",
+      "Anveld",
+      "1",
+      "7",
+      "8 / 8 / 0 / 9 / 0 / 0"
+     ],
+     [
+      "Edith",
+      "Avalon",
+      "8",
+      "7",
+      "7 / 10 / 3 / 12 / 7 / 0"
+     ],
+     [
+      "Epicrate",
+      "Brimwood Congregation",
+      "9",
+      "6",
+      "3 / 3 / 9 / 9 / 12 / 3"
+     ],
+     [
+      "Gideon",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Goberto",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Gothild",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Gwendan Villador",
+      "待补",
+      "1",
+      "6",
+      "待补"
+     ],
+     [
+      "Ligia",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Oliver",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Rufus",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Silgur",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Tarcus",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "The Wolf",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Ursula",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Victoria",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Zolta",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ]
+    ]
+   }
+  ],
+  "ko": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "기사",
+     "출신",
+     "Lv",
+     "방어구",
+     "스탯 (STR/AGI/CHA/MAG/WIT/LCK)"
+    ],
+    "rows": [
+     [
+      "Alwena",
+      "Grest (Brizh)",
+      "12",
+      "8",
+      "8 / 9 / 10 / 0 / 12 / 7"
+     ],
+     [
+      "Angelica",
+      "Clovermont (Groveshire)",
+      "1",
+      "5",
+      "4 / 8 / 3 / 0 / 2 / 7"
+     ],
+     [
+      "Ari",
+      "Isle of Basalt",
+      "8",
+      "6",
+      "5 / 13 / 8 / 3 / 8 / 6"
+     ],
+     [
+      "Arron",
+      "Drakovic Castle",
+      "3",
+      "7",
+      "2 / 2 / 3 / 6 / 7 / 8"
+     ],
+     [
+      "Brunhilda",
+      "Fort Gavault",
+      "1",
+      "6",
+      "7 / 2 / 6 / 7 / 3 / 0"
+     ],
+     [
+      "Chester",
+      "Milkford",
+      "15",
+      "6",
+      "随机（Chester 每次判定重 roll 0–15）"
+     ],
+     [
+      "Childeric",
+      "Almora",
+      "6",
+      "9",
+      "7 / 4 / 4 / 0 / 12 / 4"
+     ],
+     [
+      "Daguez",
+      "Grest (Brizh)",
+      "1",
+      "6",
+      "15 / 0 / 0 / 0 / 0 / 9"
+     ],
+     [
+      "Dulahan",
+      "Anveld",
+      "1",
+      "7",
+      "8 / 8 / 0 / 9 / 0 / 0"
+     ],
+     [
+      "Edith",
+      "Avalon",
+      "8",
+      "7",
+      "7 / 10 / 3 / 12 / 7 / 0"
+     ],
+     [
+      "Epicrate",
+      "Brimwood Congregation",
+      "9",
+      "6",
+      "3 / 3 / 9 / 9 / 12 / 3"
+     ],
+     [
+      "Gideon",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Goberto",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Gothild",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Gwendan Villador",
+      "待补",
+      "1",
+      "6",
+      "待补"
+     ],
+     [
+      "Ligia",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Oliver",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Rufus",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Silgur",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Tarcus",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "The Wolf",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Ursula",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Victoria",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ],
+     [
+      "Zolta",
+      "待补",
+      "待补",
+      "待补",
+      "待补"
+     ]
+    ]
+   }
+  ]
+ },
+ "sovereign-tower/knights/tier-list": {
+  "fr": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Classement des chevaliers",
+    "body": "",
+    "headers": [
+     "Palier",
+     "Chevaliers",
+     "Pourquoi"
+    ],
+    "rows": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Limites du classement",
+    "body": "",
+    "items": [
+     "Ce classement se base sur les stats de départ (niveau 0) ; les traits cachés et les arcs narratifs peuvent faire monter un chevalier.",
+     "Les stats aléatoires de Chester rendent son palier situationnel — ne comptez jamais sur lui pour les quêtes à enjeu.",
+     "L'évolution de Arron en Chevalier Dragon (voie du Bien) est l'un des plus puissants bonus de fin de partie."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Ritter-Tierliste",
+    "body": "",
+    "headers": [
+     "Stufe",
+     "Ritter",
+     "Warum"
+    ],
+    "rows": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Einschränkungen der Tierliste",
+    "body": "",
+    "items": [
+     "Basiert auf den Startwerten (Stufe 0); versteckte Eigenschaften und Handlungsstränge können einen Ritter aufwerten.",
+     "Chesters Zufallswerte machen seine Stufe situationsabhängig – verlass dich nie auf ihn für Pflicht-Quests.",
+     "Arrons Drachenritter-Entwicklung (guter Pfad) ist einer der stärksten Spätspiel-Boosts."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "ja": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "ティア",
+     "騎士",
+     "理由"
+    ],
+    "rows": [
+     [
+      "S",
+      "Daguez, Edith, Childeric, Alwena",
+      "Elite starting stats (15 STR / 12 MAG / 12 WIT), armour 8-9, or unique utility (Alwena's Intendant rumours)."
+     ],
+     [
+      "A",
+      "Ari, Brunhilda, Epicrate, Dulahan, Chester",
+      "Strong stats or powerful traits: Ari 13 AGI, Dulahan half damage, Chester all-type affinity."
+     ],
+     [
+      "B",
+      "Angelica, Arron, Gwendan, Tarcus, Ursula",
+      "Solid with story investment; Ursula's Immortal is niche-useful, Arron becomes Dragon Knight."
+     ],
+     [
+      "C",
+      "Goberto, Gothild, Ligia, Oliver, Rufus, Silgur, The Wolf, Victoria, Zolta, others",
+      "Situation-dependent; many gain value through traits or storylines (data incomplete — 待补)."
+     ]
+    ]
+   }
+  ],
+  "ko": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "티어",
+     "기사",
+     "이유"
+    ],
+    "rows": [
+     [
+      "S",
+      "Daguez, Edith, Childeric, Alwena",
+      "Elite starting stats (15 STR / 12 MAG / 12 WIT), armour 8-9, or unique utility (Alwena's Intendant rumours)."
+     ],
+     [
+      "A",
+      "Ari, Brunhilda, Epicrate, Dulahan, Chester",
+      "Strong stats or powerful traits: Ari 13 AGI, Dulahan half damage, Chester all-type affinity."
+     ],
+     [
+      "B",
+      "Angelica, Arron, Gwendan, Tarcus, Ursula",
+      "Solid with story investment; Ursula's Immortal is niche-useful, Arron becomes Dragon Knight."
+     ],
+     [
+      "C",
+      "Goberto, Gothild, Ligia, Oliver, Rufus, Silgur, The Wolf, Victoria, Zolta, others",
+      "Situation-dependent; many gain value through traits or storylines (data incomplete — 待补)."
+     ]
+    ]
+   }
+  ]
+ },
+ "sovereign-tower/guides/factions": {
+  "fr": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Les cinq factions",
+    "body": "",
+    "headers": [
+     "Faction",
+     "Ce qui la fait évoluer"
+    ],
+    "rows": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Stratégies d'équilibre",
+    "body": "",
+    "items": [
+     "Une faction à zéro de satisfaction peut déclencher des crises — gardez les cinq au-dessus de zéro.",
+     "Certains chevaliers gagnent ou perdent de l'affinité selon l'équilibre des factions (ex. Epicrate et Tarcus réagissent à l'écart Peuple/Noblesse).",
+     "Vous pouvez aussi tout dépenser et trahir tout le monde — le jeu l'autorise explicitement, mais verrouille certaines fins."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Die fünf Fraktionen",
+    "body": "",
+    "headers": [
+     "Fraktion",
+     "Was sie antreibt"
+    ],
+    "rows": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Strategien fürs Gleichgewicht",
+    "body": "",
+    "items": [
+     "Eine Fraktion bei null Zufriedenheit kann Krisen auslösen — halt alle fünf über null.",
+     "Manche Ritter gewinnen oder verlieren Bindung je nach Fraktionsgleichgewicht (z. B. Epicrate und Tarcus reagieren auf die Kluft Volk/Adel).",
+     "Du kannst auch alles ausgeben und alle verraten — das Spiel erlaubt es ausdrücklich, sperrt aber bestimmte Enden."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "ja": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "派閥",
+     "何が影響するか"
+    ],
+    "rows": [
+     [
+      "Merchants",
+      "Trade and wealth; quests and court decisions that boost the economy raise their satisfaction."
+     ],
+     [
+      "Mystics",
+      "Magic and the arcane; rituals and magical quests please them."
+     ],
+     [
+      "Scholars",
+      "Knowledge and research; research and investigation quests align with them."
+     ],
+     [
+      "Nobles",
+      "Nobility and tradition; decisions favouring the aristocracy please them."
+     ],
+     [
+      "People",
+      "The common folk; helping and kind decisions raise their standing."
+     ]
+    ]
+   }
+  ],
+  "ko": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "파벌",
+     "무엇이 영향을 주는가"
+    ],
+    "rows": [
+     [
+      "Merchants",
+      "Trade and wealth; quests and court decisions that boost the economy raise their satisfaction."
+     ],
+     [
+      "Mystics",
+      "Magic and the arcane; rituals and magical quests please them."
+     ],
+     [
+      "Scholars",
+      "Knowledge and research; research and investigation quests align with them."
+     ],
+     [
+      "Nobles",
+      "Nobility and tradition; decisions favouring the aristocracy please them."
+     ],
+     [
+      "People",
+      "The common folk; helping and kind decisions raise their standing."
+     ]
+    ]
+   }
+  ]
+ },
+ "sovereign-tower/guides/recruit-knights": {
+  "fr": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Recruter chaque chevalier",
+    "body": "",
+    "headers": [
+     "Chevalier",
+     "Condition de recrutement"
+    ],
+    "rows": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Conseils de recrutement",
+    "body": "",
+    "items": [
+     "Plusieurs chevaliers sont liés à l'histoire : Dulahan (mort de Goberto), Arron (arc de Drakovic), Brunhilda (fille de Gavault).",
+     "Alwena ne rejoint qu'à travers une offre d'urgence unique, quand la Table Ronde n'a plus de chevalier disponible (Acte 2+).",
+     "Chester est le vrai prix de la quête spéciale de l'Oie, partie 2."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Alle Ritter rekrutieren",
+    "body": "",
+    "headers": [
+     "Ritter",
+     "Rekrutierungsbedingung"
+    ],
+    "rows": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Rekrutierungs-Tipps",
+    "body": "",
+    "items": [
+     "Mehrere Ritter sind an die Story gebunden: Dulahan (Gobertos Tod), Arron (Drakovic-Handlung), Brunhilda (Gavaults Tochter).",
+     "Alwena kommt nur über ein einmaliges Notfall-Angebot, wenn die Tafelrunde ab Akt 2 keine verfügbaren Ritter hat.",
+     "Chester ist der eigentliche Preis der besonderen Gänse-Quest Teil 2."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "ja": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "騎士",
+     "雇用条件"
+    ],
+    "rows": [
+     [
+      "Alwena",
+      "一次性紧急事件：Act 2 之后，当圆桌可用骑士为 0 时（在册且不在任务中，死亡/辞职者除外）她会自愿加入。无法主动触发，没有第二次机会。永不死亡/永不辞职。"
+     ],
+     [
+      "Angelica",
+      "开场剧情自动加入。"
+     ],
+     [
+      "Ari",
+      "花 25 金币召唤（Basalt 兄弟的弟弟）。"
+     ],
+     [
+      "Arron",
+      "无候选朝会——通过 Drakovic 剧情线加入。"
+     ],
+     [
+      "Brunhilda",
+      "Gavault 剧情线女儿侧（county_quest_gavault_2_daughter_side 到结局），无候选朝会。"
+     ],
+     [
+      "Chester",
+      "Clean Keeper Goose Part 2 任意特殊结局后出现（奶酪/马/Gwendan 三选一，各付 1 金币）——Chester 才是真正的奖品。"
+     ],
+     [
+      "Childeric",
+      "待补"
+     ],
+     [
+      "Daguez",
+      "待补"
+     ],
+     [
+      "Dulahan",
+      "Goberto 死后才出现（恶魔骑士）。"
+     ],
+     [
+      "Edith",
+      "待补"
+     ],
+     [
+      "Epicrate",
+      "待补"
+     ],
+     [
+      "Gideon",
+      "中文资料：第 6 天可招。"
+     ],
+     [
+      "Goberto",
+      "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+     ],
+     [
+      "Gothild",
+      "待补"
+     ],
+     [
+      "Gwendan Villador",
+      "待补"
+     ],
+     [
+      "Ligia",
+      "待补"
+     ],
+     [
+      "Oliver",
+      "待补"
+     ],
+     [
+      "Rufus",
+      "待补"
+     ],
+     [
+      "Silgur",
+      "待补"
+     ],
+     [
+      "Tarcus",
+      "待补"
+     ],
+     [
+      "The Wolf",
+      "待补"
+     ],
+     [
+      "Ursula",
+      "待补"
+     ],
+     [
+      "Victoria",
+      "待补"
+     ],
+     [
+      "Zolta",
+      "待补"
+     ]
+    ]
+   }
+  ],
+  "ko": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "기사",
+     "고용 조건"
+    ],
+    "rows": [
+     [
+      "Alwena",
+      "一次性紧急事件：Act 2 之后，当圆桌可用骑士为 0 时（在册且不在任务中，死亡/辞职者除外）她会自愿加入。无法主动触发，没有第二次机会。永不死亡/永不辞职。"
+     ],
+     [
+      "Angelica",
+      "开场剧情自动加入。"
+     ],
+     [
+      "Ari",
+      "花 25 金币召唤（Basalt 兄弟的弟弟）。"
+     ],
+     [
+      "Arron",
+      "无候选朝会——通过 Drakovic 剧情线加入。"
+     ],
+     [
+      "Brunhilda",
+      "Gavault 剧情线女儿侧（county_quest_gavault_2_daughter_side 到结局），无候选朝会。"
+     ],
+     [
+      "Chester",
+      "Clean Keeper Goose Part 2 任意特殊结局后出现（奶酪/马/Gwendan 三选一，各付 1 金币）——Chester 才是真正的奖品。"
+     ],
+     [
+      "Childeric",
+      "待补"
+     ],
+     [
+      "Daguez",
+      "待补"
+     ],
+     [
+      "Dulahan",
+      "Goberto 死后才出现（恶魔骑士）。"
+     ],
+     [
+      "Edith",
+      "待补"
+     ],
+     [
+      "Epicrate",
+      "待补"
+     ],
+     [
+      "Gideon",
+      "中文资料：第 6 天可招。"
+     ],
+     [
+      "Goberto",
+      "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+     ],
+     [
+      "Gothild",
+      "待补"
+     ],
+     [
+      "Gwendan Villador",
+      "待补"
+     ],
+     [
+      "Ligia",
+      "待补"
+     ],
+     [
+      "Oliver",
+      "待补"
+     ],
+     [
+      "Rufus",
+      "待补"
+     ],
+     [
+      "Silgur",
+      "待补"
+     ],
+     [
+      "Tarcus",
+      "待补"
+     ],
+     [
+      "The Wolf",
+      "待补"
+     ],
+     [
+      "Ursula",
+      "待补"
+     ],
+     [
+      "Victoria",
+      "待补"
+     ],
+     [
+      "Zolta",
+      "待补"
+     ]
+    ]
+   }
+  ]
+ },
+ "sovereign-tower/guides/time-rewind": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Comment fonctionne le retour dans le temps",
+    "body": "",
+    "items": [
+     "Le Démon de la cave vous permet de remonter le temps quand un cycle tourne mal — relancez vos décisions et réécrivez le destin.",
+     "C'est le filet de sécurité central du jeu : rien n'est définitivement perdu si vous pouvez remonter.",
+     "Les retours permettent d'explorer des branches dans une partie, mais certains résultats restent mutuellement exclusifs même après un retour."
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Quand remonter le temps",
+    "body": "",
+    "items": [
+     "Après un échec critique qui coûte un chevalier ou déclenche une crise de faction.",
+     "Avant une branche narrative que vous voulez explorer différemment (ex. l'enquête pour meurtre de l'Acte 2).",
+     "Pour corriger une erreur d'équilibre de factions avant qu'elle ne s'aggrave."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "So funktioniert die Zeitumkehr",
+    "body": "",
+    "items": [
+     "Der Dämon im Keller lässt dich die Zeit zurückdrehen, wenn ein Zyklus schiefgeht — Entscheidungen neu würfeln und das Schicksal umschreiben.",
+     "Es ist das zentrale Sicherheitsnetz des Spiels: Nichts ist endgültig verloren, solange du zurückdrehen kannst.",
+     "Zeitumkehr lässt dich Zweige innerhalb eines Laufs erkunden, aber manche Ergebnisse schließen sich auch über Umkehrungen hinweg aus."
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Wann zurückspulen?",
+    "body": "",
+    "items": [
+     "Nach einem kritischen Fehlschlag, der einen Ritter oder eine Fraktionskrise kostet.",
+     "Vor einem Story-Zweig, den du anders erkunden willst (z. B. die Mordermittlung in Akt 2).",
+     "Um einen Fraktionsfehler zu korrigieren, bevor er sich ausbreitet."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/guides/quest-success": {
+  "fr": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Seuils de score",
+    "body": "",
+    "headers": [
+     "Score",
+     "Seuil",
+     "Récompense"
+    ],
+    "rows": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Comment faire réussir vos quêtes",
+    "body": "",
+    "items": [
+     "Associez les stats du chevalier aux exigences de la quête — un chevalier dont la stat dépasse l'exigence apporte un score positif.",
+     "Cumulez les types de quêtes appréciés et les conditions (+1,33 d'affinité chacun) pour garder une affinité saine, ce qui débloque de meilleures affectations.",
+     "Donnez les repas favoris (+1,5 d'affinité, +0,5 de score) avant les quêtes risquées.",
+     "Montez de niveau les chevaliers dans les stats exigées par leurs quêtes favorites."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Score-Schwellen",
+    "body": "",
+    "headers": [
+     "Score",
+     "Schwelle",
+     "Belohnung"
+    ],
+    "rows": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "So bringst du Quests zum Erfolg",
+    "body": "",
+    "items": [
+     "Passe Ritter-Werte an die Quest-Anforderungen an — ein Ritter, dessen Wert die Anforderung übertrifft, trägt positiven Score bei.",
+     "Staple gemochte Quest-Typen und Bedingungen (+1,33 Bindung je) für gesunde Bindung, was bessere Zuweisungen freischaltet.",
+     "Gib Lieblingsgerichte (+1,5 Bindung, +0,5 Score) vor riskanten Quests.",
+     "Level Ritter in den Werten, die ihre Lieblingsquests verlangen."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "ja": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "結果",
+     "閾値",
+     "報酬"
+    ],
+    "rows": [
+     [
+      "Critical Success",
+      "+10",
+      "奖励 ×2"
+     ],
+     [
+      "Great Success",
+      "+5",
+      "奖励 ×1.5"
+     ],
+     [
+      "Success",
+      "0",
+      "奖励 ×1"
+     ],
+     [
+      "Major Failure",
+      "−5",
+      "无奖励"
+     ],
+     [
+      "Critical Failure",
+      "−10",
+      "无奖励"
+     ]
+    ]
+   }
+  ],
+  "ko": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "결과",
+     "임계값",
+     "보상"
+    ],
+    "rows": [
+     [
+      "Critical Success",
+      "+10",
+      "奖励 ×2"
+     ],
+     [
+      "Great Success",
+      "+5",
+      "奖励 ×1.5"
+     ],
+     [
+      "Success",
+      "0",
+      "奖励 ×1"
+     ],
+     [
+      "Major Failure",
+      "−5",
+      "无奖励"
+     ],
+     [
+      "Critical Failure",
+      "−10",
+      "无奖励"
+     ]
+    ]
+   }
+  ]
+ },
+ "sovereign-tower/walkthrough/act-0": {
+  "fr": [
+   {
+    "type": "steps",
+    "tag": "WALK",
+    "heading": "Prologue pas à pas",
+    "body": "",
+    "items": []
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "steps",
+    "tag": "WALK",
+    "heading": "Prolog Schritt für Schritt",
+    "body": "",
+    "items": []
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/walkthrough/act-1-gavault": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "L'arc de Gavault (côté de la fille)",
+    "body": "",
+    "items": [
+     "L'arc de Gavault de l'Acte 1 suit le côté de la fille : Brunhilda, princesse de Gavault, apparaît dans cette chaîne (county_quest_gavault_2_daughter_side et au-delà).",
+     "Brunhilda rejoint via l'histoire de Gavault, pas via une audience de candidature.",
+     "Elle apprécie la quête de Chasse ; elle n'aime pas Diplomatie et Eau — adaptez ses affectations pour garder l'affinité haute."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Gavault-Handlungsstrang (Seite der Tochter)",
+    "body": "",
+    "items": [
+     "Der Gavault-Strang in Akt 1 folgt der Seite der Tochter: Brunhilda, Prinzessin von Gavault, erscheint in dieser Kette (county_quest_gavault_2_daughter_side und weiter).",
+     "Brunhilda kommt über die Gavault-Geschichte, nicht über eine Kandidaten-Audienz.",
+     "Ihre gemochte Quest ist Jagd; sie mag Diplomatie und Wasser nicht — passe ihre Einsätze an, um die Bindung hoch zu halten."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/walkthrough/act-1-groveshire": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "L'arc de Groveshire",
+    "body": "",
+    "items": [
+     "L'arc de Groveshire est centré sur Angelica, qui rejoint au début et est liée à la quête de l'Oie.",
+     "Angelica apprécie les décisions souveraines Bienveillantes et n'aime pas les Tyranniques ; elle n'aime pas les quêtes d'Assassinat et de Fantôme.",
+     "Les issues spéciales de la partie 2 de l'Oie (fromage, un cheval ou Gwendan) mènent à Chester, le vrai prix."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Groveshire-Handlungsstrang",
+    "body": "",
+    "items": [
+     "Der Groveshire-Strang dreht sich um Angelica, die zu Beginn beitritt und mit der Gänse-Quest verbunden ist.",
+     "Angelica mag gütige Herrscher-Entscheidungen und mag keine tyrannischen; sie mag keine Attentats- und Geister-Quests.",
+     "Die besonderen Ergebnisse von Teil 2 der Gänse-Quest (Käse, ein Pferd oder Gwendan) führen zu Chester, dem eigentlichen Preis."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/walkthrough/beast-hunt": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Guide de la Chasse aux bêtes",
+    "body": "",
+    "items": [
+     "La Chasse aux bêtes est liée à Ari et au Loup — tous deux sont rattachés aux quêtes de loups/bêtes.",
+     "Ari est un Cavalier de griffon (monture verrouillée) et un Éclaireur solide ; il n'aime pas la Chasse.",
+     "Le Loup a le trait Loup (monture verrouillée) et est Loyal — le score évolue avec l'affinité moyenne du groupe.",
+     "Les routes de la Chasse aux bêtes sont encore en cours de vérification (待补 étapes exactes)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Bestienjagd-Leitfaden",
+    "body": "",
+    "items": [
+     "Die Bestienjagd ist mit Ari und dem Wolf verbunden — beide gehören zu den Wolf-/Bestien-Questlinien.",
+     "Ari ist ein Greifenreiter (Reittier gesperrt) und ein starker Späher; er mag Jagd nicht.",
+     "Der Wolf hat das Wolfs-Merkmal (Reittier gesperrt) und ist loyal — der Score skaliert mit der durchschnittlichen Bindung der Gruppe.",
+     "Die Routen der Bestienjagd werden noch im Detail verifiziert (待补 genaue Schritte)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/walkthrough/goose-quest": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Guide de la quête de l'Oie",
+    "body": "",
+    "items": [
+     "La quête de l'Oie a des issues spéciales (fromage, un cheval ou Gwendan) qui rapportent chacune 1 or — mais Chester est le vrai prix.",
+     "Chester a des stats complètement aléatoires et apprécie tous les types de quêtes (+1,0 d'affinité par affectation).",
+     "La route de l'Oie est le seul chemin confirmé vers Chester pour l'instant."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Gänse-Quest-Leitfaden",
+    "body": "",
+    "items": [
+     "Die Gänse-Quest hat besondere Ergebnisse (Käse, ein Pferd oder Gwendan), die je 1 Gold einbringen — aber Chester ist der eigentliche Preis.",
+     "Chester hat völlig zufällige Werte und mag alle Quest-Typen (+1,0 Bindung pro Einsatz).",
+     "Der Gänse-Pfad ist bisher der einzige bestätigte Weg zu Chester."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/walkthrough/rebellion": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "L'arc de la Rébellion",
+    "body": "",
+    "items": [
+     "L'arc de la Rébellion est lié à Epicrate de Brimwood, figure révolutionnaire de la Congrégation de Brimwood.",
+     "Le trait Révolutionnaire d'Epicrate réagit à l'écart entre satisfaction du Peuple et de la Noblesse — équilibrez-les pour elle.",
+     "Son trait caché Perception du temps donne un bonus de score si elle a déjà la quête dans une autre ligne temporelle (utilisez le retour en arrière)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Rebellion-Handlungsstrang",
+    "body": "",
+    "items": [
+     "Der Rebellions-Strang ist mit Epicrate von Brimwood verbunden, einer revolutionären Figur der Brimwood-Gemeinschaft.",
+     "Epicrates Merkmal Revolutionär reagiert auf die Differenz zwischen Volk- und Adelszufriedenheit — balanciere sie für sie.",
+     "Ihr verstecktes Merkmal Zeitwahrnehmung gibt einen Score-Bonus, wenn sie die Quest bereits in einer anderen Zeitlinie hat (nutze die Zeitumkehr)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/systems/annexes": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Annexes et bâtiments",
+    "body": "",
+    "items": [
+     "Les annexes sont des bâtiments qui ajoutent des systèmes à votre tour : la Forge de Carina répare et fabrique l'équipement, la Salle d'alchimie de la Sorcière produit les consommables.",
+     "Construire et améliorer les annexes débloque plus de chevaliers, d'outils et d'histoire.",
+     "Les listes exactes d'annexes et leurs coûts sont encore en cours de vérification (待补)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Nebengebäude & Bau",
+    "body": "",
+    "items": [
+     "Nebengebäude erweitern die Systeme deines Turms: Carinas Schmiede repariert und fertigt Ausrüstung, der Alchemieraum der Hexe stellt Verbrauchsgüter her.",
+     "Bauen und Ausbauen von Nebengebäuden schaltet mehr Ritter, Werkzeuge und Story frei.",
+     "Die genauen Listen und Kosten der Nebengebäude werden noch verifiziert (待补)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/systems/round-table": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Le système de la Table Ronde",
+    "body": "",
+    "items": [
+     "La Table Ronde est le cœur de Sovereign Tower — c'est là qu'on assigne les chevaliers aux quêtes chaque cycle.",
+     "La capacité augmente avec l'histoire : Acte 1 = 6 chevaliers, Acte 2 = 8, Acte 3 = 10.",
+     "Assignez le bon chevalier à la bonne quête — stats, types de quêtes appréciés et repas favoris nourrissent tous le score."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Das System der Tafelrunde",
+    "body": "",
+    "items": [
+     "Die Tafelrunde ist das Herz von Sovereign Tower — hier weist du Ritter jeden Zyklus Quests zu.",
+     "Die Kapazität wächst mit der Story: Akt 1 = 6 Ritter, Akt 2 = 8, Akt 3 = 10.",
+     "Weise den richtigen Ritter der richtigen Quest zu — Werte, gemochte Quest-Typen und Lieblingsgerichte fließen alle in den Score ein."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/systems/quest-outcomes": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Les résultats de quête expliqués",
+    "body": "",
+    "items": [
+     "Chaque quête renvoie l'un des six résultats : Réussite critique / Grande réussite / Réussite / Échec majeur / Échec critique / Résultat inattendu.",
+     "Seuils de score : +10 critique, +5 grande, 0 réussite, −5 échec majeur, −10 échec critique.",
+     "Les grandes réussites et critiques multiplient les récompenses par 1,5× et 2×.",
+     "Les Résultats inattendus sont des événements spéciaux déclenchés par des traits ou des clés d'histoire — à explorer."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Quest-Ergebnisse erklärt",
+    "body": "",
+    "items": [
+     "Jede Quest liefert eines von sechs Ergebnissen: Kritischer Erfolg / Großer Erfolg / Erfolg / Schwerer Fehlschlag / Kritischer Fehlschlag / Unerwartetes Ergebnis.",
+     "Score-Schwellen: +10 kritisch, +5 groß, 0 Erfolg, −5 schwerer Fehlschlag, −10 kritischer Fehlschlag.",
+     "Große und kritische Erfolge vervielfachen die Belohnungen um 1,5× und 2×.",
+     "Unerwartete Ergebnisse sind besondere Ereignisse, die durch Eigenschaften oder Story-Schlüssel ausgelöst werden — einen Blick wert."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/systems/kingdom-map": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Régions du royaume",
+    "body": "",
+    "items": [
+     "Le royaume s'étend sur plusieurs régions : Brizh, Clovermont/Groveshire, Fort Gavault, Château de Drakovic, Avalon, etc.",
+     "Les noms de régions viennent des origines des chevaliers — la terre natale de chaque chevalier est un lieu de quête qui peut donner des bonus de saveur.",
+     "Une carte interactive complète du royaume n'est pas encore vérifiée (待补)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Regionen des Königreichs",
+    "body": "",
+    "items": [
+     "Das Königreich erstreckt sich über mehrere Regionen: Brizh, Clovermont/Groveshire, Fort Gavault, Drakovic-Schloss, Avalon usw.",
+     "Die Regionsnamen stammen aus den Herkunftsorten der Ritter — die Heimat jedes Ritters ist ein Quest-Ort, der Geschmacks-Boni geben kann.",
+     "Eine vollständige interaktive Königreichskarte ist noch nicht verifiziert (待补)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/systems/audience": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Cour du matin / audiences",
+    "body": "",
+    "items": [
+     "Chaque cycle commence par une cour du matin : les citoyens apportent des requêtes, du jardinage à la chasse aux démons.",
+     "Vos réponses façonnent la satisfaction des factions et l'opinion des chevaliers.",
+     "Les décisions de cour appliquent des étiquettes d'archétype souverain (Tyrannique, Sage, Bienveillant, Audacieux, Omniscient) que certains chevaliers approuvent ou n'aiment pas."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Morgenhof / Audienzen",
+    "body": "",
+    "items": [
+     "Jeder Zyklus beginnt mit einem Morgenhof: Bürger bringen Bitten vom Gärtnern bis zur Dämonenjagd.",
+     "Deine Antworten formen die Fraktionszufriedenheit und die Meinung der Ritter.",
+     "Hofentscheidungen vergeben Herrscher-Archetyp-Labels (Tyrannisch, Weise, Gütig, Kühn, Allwissend), die manche Ritter gutheißen oder nicht mögen."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/updates": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Sortie et mises à jour",
+    "body": "",
+    "items": [
+     "Sorti le 2026-08-06 (v1.0, pas en accès anticipé).",
+     "Promo de lancement : −15 % jusqu'au 2026-08-20 (57,80 ¥ en Chine).",
+     "2 DLC sont rattachés (appids 4870280 / 4911710) — contenu encore en cours de vérification (待补).",
+     "Cette page est le journal de mise à jour de nos guides — elle évolue au fil de nos vérifications."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Veröffentlichung & Updates",
+    "body": "",
+    "items": [
+     "Veröffentlicht am 2026-08-06 (v1.0, kein Early Access).",
+     "Startrabatt: 15 % bis 2026-08-20 (57,80 ¥ in CN).",
+     "2 DLCs sind angehängt (App-IDs 4870280 / 4911710) — Inhalt wird noch verifiziert (待补).",
+     "Diese Seite ist das Änderungsprotokoll unserer Guides — sie wächst, sobald wir neue Mechaniken verifizieren."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/review/system-requirements": {
+  "fr": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Configuration requise",
+    "body": "",
+    "headers": [
+     "",
+     "Configuration"
+    ],
+    "rows": []
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Systemanforderungen",
+    "body": "",
+    "headers": [
+     "",
+     "Anforderungen"
+    ],
+    "rows": []
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/review/overview": {
+  "fr": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Aperçu des notes",
+    "body": "",
+    "headers": [
+     "Indicateur",
+     "Valeur"
+    ],
+    "rows": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Ce que disent les avis",
+    "body": "",
+    "items": [
+     "Les avis saluent l'écriture spirituelle et ciselée, la boucle de quêtes de la Table Ronde et le filet de sécurité du retour dans le temps.",
+     "Certains joueurs trouvent la courbe d'apprentissage du retour dans le temps raide (selon un test chinois).",
+     "Les résultats inattendus et les traits cachés rendent les rejouabilités intéressantes."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Bewertungsübersicht",
+    "body": "",
+    "headers": [
+     "Metrik",
+     "Wert"
+    ],
+    "rows": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Was die Reviews sagen",
+    "body": "",
+    "items": [
+     "Die Reviews loben den witzigen, präzisen Schreibstil, die Quest-Schleife der Tafelrunde und das Sicherheitsnetz der Zeitumkehr.",
+     "Manche Spieler empfinden die Lernkurve der Zeitumkehr als steil (laut einem chinesischen Hands-on-Test).",
+     "Unerwartete Ergebnisse und versteckte Eigenschaften halten Replays interessant."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "ja": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "指標",
+     "値"
+    ],
+    "rows": [
+     [
+      "Metacritic",
+      "86 (store-page field)"
+     ],
+     [
+      "Steam rating",
+      "Very Positive — 90% of 700+ reviews"
+     ],
+     [
+      "Release",
+      "2026-08-06 (full release, not early access)"
+     ],
+     [
+      "Genre",
+      "Indie / RPG — Round Table management"
+     ],
+     [
+      "Publisher",
+      "Curve Games"
+     ]
+    ]
+   }
+  ],
+  "ko": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "",
+    "body": "",
+    "headers": [
+     "지표",
+     "값"
+    ],
+    "rows": [
+     [
+      "Metacritic",
+      "86 (store-page field)"
+     ],
+     [
+      "Steam rating",
+      "Very Positive — 90% of 700+ reviews"
+     ],
+     [
+      "Release",
+      "2026-08-06 (full release, not early access)"
+     ],
+     [
+      "Genre",
+      "Indie / RPG — Round Table management"
+     ],
+     [
+      "Publisher",
+      "Curve Games"
+     ]
+    ]
+   }
+  ]
+ },
+ "sovereign-tower/review/release-demo": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Sortie et démo",
+    "body": "",
+    "items": [
+     "Sorti le 2026-08-06 en v1.0 complète (pas en accès anticipé).",
+     "Une démo était disponible avant le lancement (trailer officiel de la démo existant).",
+     "Promo de lancement : −15 % jusqu'au 2026-08-20.",
+     "Deux DLC sont rattachés (待补 contenu)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Veröffentlichung & Demo",
+    "body": "",
+    "items": [
+     "Veröffentlicht am 2026-08-06 als vollständige v1.0 (kein Early Access).",
+     "Vor dem Launch war eine Demo verfügbar (offizieller Demo-Trailer existiert).",
+     "Startrabatt: 15 % bis 2026-08-20.",
+     "Zwei DLCs sind angehängt (待补 Inhalt)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/review/soundtrack": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Statut de la bande-son",
+    "body": "",
+    "items": [
+     "Les tags officiels du jeu incluent des qualités proches de la bande-son ; le trailer de lancement contient de la musique originale (待补 compositeur exact).",
+     "Les détails de la bande-son (compositeur, liste des titres, disponibilité en streaming) sont encore en cours de vérification (待补).",
+     "Consultez la page Steam et les canaux officiels pour les nouvelles de la bande-son."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Status des Soundtracks",
+    "body": "",
+    "items": [
+     "Die offiziellen Tags des Spiels enthalten soundtrack-nahe Eigenschaften; der Launch-Trailer enthält Originalmusik (待补 genauer Komponist).",
+     "Details zum Soundtrack (Komponist, Titelliste, Streaming-Verfügbarkeit) werden noch verifiziert (待补).",
+     "Checke die Steam-Store-Seite und die offiziellen Kanäle für Soundtrack-News."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/items/overview": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Aperçu des objets",
+    "body": "",
+    "items": [
+     "Sovereign Tower propose des consommables et de l'équipement d'artisanat à travers les systèmes de la tour (Forge, Salle d'alchimie).",
+     "Les listes d'objets sont encore en cours de vérification en jeu (待补) — cet aperçu grandira à mesure que nous confirmons des objets.",
+     "Familles d'objets clés signalées : consommables (potions, nourriture) et équipement d'artisanat (armes, matériaux d'armure)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Gegenstandsübersicht",
+    "body": "",
+    "items": [
+     "Sovereign Tower hat Verbrauchsgüter und Handwerksausrüstung in den Systemen des Turms (Schmiede, Alchemieraum).",
+     "Die Gegenstandslisten werden noch im Spiel verifiziert (待补) — diese Übersicht wächst, sobald wir Gegenstände bestätigen.",
+     "Wichtige Gegenstandsfamilien: Verbrauchsgüter (Tränke, Essen) und Handwerksausrüstung (Waffen, Rüstungsmaterialien)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/items/consumables": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Guide des consommables",
+    "body": "",
+    "items": [
+     "La Salle d'alchimie de la Sorcière fabrique les consommables (potions, nourriture) pour les quêtes et la récupération.",
+     "Les recettes et effets des consommables sont encore en cours de vérification (待补).",
+     "Les repas favoris donnent +1,5 d'affinité et +0,5 de score de quête — la nourriture est la famille de consommables la plus confirmée."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Verbrauchsgüter-Leitfaden",
+    "body": "",
+    "items": [
+     "Der Alchemieraum der Hexe stellt Verbrauchsgüter (Tränke, Essen) für Quests und Erholung her.",
+     "Rezepte und Effekte der Verbrauchsgüter werden noch verifiziert (待补).",
+     "Lieblingsgerichte geben +1,5 Bindung und +0,5 Quest-Score — Essen ist die am besten bestätigte Verbrauchsgüter-Familie."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/items/crafting-gear": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Artisanat et équipement",
+    "body": "",
+    "items": [
+     "La Forge de Carina répare et fabrique l'équipement ; l'armure sert de points de vie pour les dégâts de quête.",
+     "Les recettes d'artisanat et les chemins d'amélioration sont encore en cours de vérification (待补).",
+     "Childeric commence avec une armure de 9 (la plus haute) — un tank solide pour les quêtes à dégâts."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Handwerk & Ausrüstung",
+    "body": "",
+    "items": [
+     "Carinas Schmiede repariert und fertigt Ausrüstung; Rüstung dient als Trefferpunkte für Quest-Schaden.",
+     "Handwerksrezepte und Upgrade-Pfade werden noch verifiziert (待补).",
+     "Childeric startet mit Rüstung 9 (höchster Wert) — ein starker Tank für schadenslastige Quests."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/guides/best-opening": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Meilleurs premiers coups",
+    "body": "",
+    "items": [
+     "Commencez par garder le Peuple et les Marchands en bonne santé — la plupart des premières quêtes et audiences les concernent.",
+     "Recrutez Ari tôt (25 or) pour un Éclaireur solide ; gardez Angelica sur les quêtes Aide/Diplomatie qu'elle apprécie.",
+     "Poussez tôt l'arc de Gavault (Brunhilda) ou de Groveshire (oie→Chester) pour des chevaliers supplémentaires.",
+     "Ne laissez aucune faction tomber à zéro — les crises coûtent plus cher que l'effort pour les éviter."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Beste Eröffnungszüge",
+    "body": "",
+    "items": [
+     "Halte Volk und Händler früh gesund — die meisten frühen Quests und Audienzen betreffen sie.",
+     "Rekrutiere Ari früh (25 Gold) für einen starken Späher; halte Angelica bei Hilfe-/Diplomatie-Quests, die sie mag.",
+     "Treibe früh den Gavault-Strang (Brunhilda) oder Groveshire (Gans→Chester) voran für zusätzliche Ritter.",
+     "Lass keine Fraktion auf null fallen — Krisen kosten mehr als die Mühe, sie zu vermeiden."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/guides/controls": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Commandes et saisie",
+    "body": "",
+    "items": [
+     "Prise en charge complète de la manette (Xbox et PlayStation) ainsi que de la souris et du clavier.",
+     "Fonction officielle : jouable sans saisie minutée — aucune pression pour prendre des décisions rapidement.",
+     "Le jeu prend en charge la sauvegarde à tout moment et Steam Cloud.",
+     "Les raccourcis clavier exacts et la correspondance des manettes sont encore en cours de compilation (待补)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Steuerung & Eingabe",
+    "body": "",
+    "items": [
+     "Volle Controller-Unterstützung (Xbox und PlayStation) plus Maus und Tastatur.",
+     "Offizielles Feature: spielbar ohne Zeitlimit — kein Druck, Entscheidungen zu überstürzen.",
+     "Das Spiel unterstützt Speichern jederzeit und Steam Cloud.",
+     "Die genauen Tastenbelegungen und Controller-Mappings werden noch zusammengestellt (待补)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/guides/difficulty-tips": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Conseils de difficulté",
+    "body": "",
+    "items": [
+     "Utilisez le système de retour en arrière comme filet de sécurité — rejouez un mauvais cycle plutôt que de vivre avec.",
+     "Gardez un effectif équilibré : couvrez FOR/AGI/MAG/ESP pour que chaque quête ait un chevalier adapté.",
+     "Donnez les repas favoris avant les quêtes risquées pour l'avantage de +0,5 de score.",
+     "Réparez l'armure à la Forge avant les quêtes à dégâts — l'armure est les PV de vos chevaliers."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Schwierigkeits-Tipps",
+    "body": "",
+    "items": [
+     "Nutze die Zeitumkehr als Sicherheitsnetz — spiele einen schlechten Zyklus neu, statt ihn zu akzeptieren.",
+     "Halte einen ausgewogenen Kader: decke STR/AGI/MAG/WIT ab, damit jede Quest einen passenden Ritter hat.",
+     "Gib Lieblingsgerichte vor riskanten Quests für den +0,5-Score-Vorteil.",
+     "Repariere Rüstung in der Schmiede vor schadenslastigen Quests — Rüstung ist die LP deiner Ritter."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/guides/knight-loyalty": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Loyauté et affinité des chevaliers",
+    "body": "",
+    "items": [
+     "L'affinité va de −10 à +10 ; la plupart des chevaliers démissionnent à −7.",
+     "Les types de quêtes appréciés donnent +1,33 d'affinité chacun ; les détestés −0,75. Les repas favoris donnent +1,5.",
+     "Alwena et Ari ne démissionnent jamais (seuil −1500).",
+     "Gardez les affectations appréciées et donnez les repas favoris pour retenir les chevaliers loyaux."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Ritter-Loyalität & Bindung",
+    "body": "",
+    "items": [
+     "Bindung reicht von −10 bis +10; die meisten Ritter kündigen bei −7.",
+     "Gemochte Quest-Typen geben je +1,33 Bindung; ungemochte −0,75. Lieblingsgerichte geben +1,5.",
+     "Alwena und Ari kündigen nie (Schwelle −1500).",
+     "Halte gemochte Einsätze und Lieblingsgerichte bei, um loyale Ritter zu behalten."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/guides/new-game-plus": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Nouvelle partie +",
+    "body": "",
+    "items": [
+     "La Nouvelle partie + est disponible après une partie terminée (selon les sources fans ; déblocage exact 待补).",
+     "Elle conserve la progression pour explorer les branches et fins mutuellement exclusives.",
+     "Servez-vous-en pour viser les fins verrouillées en première partie (mariage d'Arthur, fins cachées, autres issues de factions)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "New Game Plus",
+    "body": "",
+    "items": [
+     "New Game Plus ist nach einem abgeschlossenen Durchlauf verfügbar (laut Fan-Quellen; genaues Freischalten 待补).",
+     "Es übernimmt den Fortschritt, damit du sich gegenseitig ausschließende Zweige und Enden erkunden kannst.",
+     "Nutze es für Enden, die du im ersten Lauf ausgesperrt hast (Arthur-Heirat, versteckte Enden, andere Fraktionsausgänge)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/guides/alliances": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Alliances et souverains rivaux",
+    "body": "",
+    "items": [
+     "L'ultimatum du Chevalier Dragon au Cycle 4 offre des chemins d'alliance : rallier le peuple, s'allier aux nobles, ou utiliser les forces mystiques — chacun avec ses exigences.",
+     "Les alliances débloquent des fins alternatives et changent la dynamique des factions.",
+     "Les branches d'alliance au-delà du Cycle 4 sont encore en cours de vérification (待补)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Allianzen & rivalisierende Herrscher",
+    "body": "",
+    "items": [
+     "Das Drachenritter-Ultimatum in Zyklus 4 bietet Allianz-Pfade: das Volk sammeln, mit Adligen verbünden oder mystische Kräfte nutzen — jeweils mit eigenen Anforderungen.",
+     "Allianzen schalten alternative Enden frei und verändern die Fraktionsdynamik.",
+     "Die genauen Allianz-Zweige über Zyklus 4 hinaus werden noch verifiziert (待补)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/guides/beat-dragon-knight": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "L'ultimatum du Chevalier Dragon (Cycle 4)",
+    "body": "",
+    "items": [
+     "L'ultimatum du Chevalier Dragon arrive au Cycle 4 avec trois options, chacune exigeant faction et or.",
+     "Option 1 (rallier le peuple) : Marchands 8+ / Peuple 14+ / 300 or + un allié.",
+     "Option 2 (alliés nobles) : Marchands 10+ / Nobles 8+ / 400 or + un allié.",
+     "Option 3 (forces mystiques) : Érudits 12+ / Peuple 10+ / 300 or + un allié.",
+     "La façon dont vous le résolvez verrouille ou débloque des chemins de fin."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Drachenritter-Ultimatum (Zyklus 4)",
+    "body": "",
+    "items": [
+     "Das Drachenritter-Ultimatum kommt in Zyklus 4 mit drei Optionen, die jeweils Fraktion und Gold verlangen.",
+     "Option 1 (Volk sammeln): Händler 8+ / Volk 14+ / 300 Gold + ein Verbündeter.",
+     "Option 2 (Adelsallianz): Händler 10+ / Adel 8+ / 400 Gold + ein Verbündeter.",
+     "Option 3 (mystische Kräfte): Gelehrte 12+ / Volk 10+ / 300 Gold + ein Verbündeter.",
+     "Wie du es löst, sperrt oder öffnet End-Pfade."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/guides/sovereign-archetypes": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Archétypes souverains",
+    "body": "",
+    "items": [
+     "Cinq archétypes souverains : Tyrannique, Sage, Bienveillant, Audacieux, Omniscient — appliqués à vos décisions en audience.",
+     "Les chevaliers qui aiment une étiquette gagnent de l'affinité quand vous agissez ainsi ; ceux qui la détestent en perdent.",
+     "Exemples : Angelica aime Bienveillant et n'aime pas Tyrannique ; Brunhilda aime Audacieux et n'aime pas Sage.",
+     "Équilibrez vos choix d'archétype avec les chevaliers que vous voulez garder heureux."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Herrscher-Archetypen",
+    "body": "",
+    "items": [
+     "Fünf Herrscher-Archetypen: Tyrannisch, Weise, Gütig, Kühn, Allwissend — vergeben bei deinen Audienz-Entscheidungen.",
+     "Ritter, die ein Label mögen, gewinnen Bindung, wenn du so handelst; die es nicht mögen, verlieren Bindung.",
+     "Beispiele: Angelica mag Gütig und nicht Tyrannisch; Brunhilda mag Kühn und nicht Weise.",
+     "Balances deine Archetyp-Wahl mit den Rittern, die du glücklich halten willst."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/guides/tower-servants": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Serviteurs et personnel de la tour",
+    "body": "",
+    "items": [
+     "La tour a des serviteurs et du personnel au-delà des chevaliers (signalé ; effectif exact 待补).",
+     "L'Intendante Alwena est la figure clé du personnel — elle gère la tour et révèle les rumeurs sur les chevaliers.",
+     "Les serviteurs de la tour incluent probablement des rôles de cour et du personnel d'entretien ; la liste exacte est encore en cours de vérification (待补)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Turmbewohner & Personal",
+    "body": "",
+    "items": [
+     "Der Turm hat Diener und Personal über die Ritter hinaus (gemeldet; genaue Liste 待补).",
+     "Intendantin Alwena ist die Schlüsselfigur des Personals — sie verwaltet den Turm und verrät Ritter-Gerüchte.",
+     "Turm-Diener umfassen vermutlich Hofrollen und Instandhaltungspersonal; die genaue Liste wird noch verifiziert (待补)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/knights/stats": {
+  "fr": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Les stats expliquées",
+    "body": "",
+    "headers": [
+     "Stat",
+     "À quoi elle sert"
+    ],
+    "rows": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Comment fonctionnent les stats",
+    "body": "",
+    "items": [
+     "Toutes les stats vont de 0 à 15 ; la valeur utilisée dans le score est plafonnée à 0-15, bonus d'équipement inclus.",
+     "Chaque quête exige une ou plusieurs stats ; un chevalier dont la stat dépasse l'exigence contribue positivement au score.",
+     "Les montées de niveau ajoutent un point à toute stat inférieure à 15 — investissez dans les stats exigées par vos quêtes favorites."
+    ]
+   }
+  ],
+  "de": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Werte erklärt",
+    "body": "",
+    "headers": [
+     "Wert",
+     "Was er tut"
+    ],
+    "rows": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "So funktionieren Werte",
+    "body": "",
+    "items": [
+     "Alle Werte gehen von 0 bis 15; der für den Score verwendete Wert ist inklusive Ausrüstungsboni auf 0-15 begrenzt.",
+     "Jede Quest verlangt einen oder mehrere Werte; ein Ritter, dessen Wert die Anforderung übertrifft, trägt positiven Score bei.",
+     "Stufenaufstiege geben einen Punkt auf jeden Wert unter 15 — investiere in die Werte, die deine Lieblingsquests verlangen."
+    ]
+   }
+  ]
+ },
+ "sovereign-tower/knights/the-bard": {
+  "fr": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Le Barde (Hildegard)",
+    "body": "",
+    "items": [
+     "Le Barde (Hildegard) apparaît dans les données du fan wiki comme chevalier secret.",
+     "Les étapes exactes de recrutement et les stats sont encore en cours de vérification (待补).",
+     "Surveillez les événements d'histoire liés à la musique ou aux représentations — des conditions musicales apparaissent dans les données de quêtes."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Der Barde (Hildegard)",
+    "body": "",
+    "items": [
+     "Der Barde (Hildegard) erscheint in Fan-Wiki-Daten als geheimer Ritter.",
+     "Die genauen Rekrutierungsschritte und Werte werden noch verifiziert (待补).",
+     "Achte auf Story-Ereignisse rund um Musik oder Aufführungen — musikalische Bedingungen erscheinen in den Quest-Daten."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/knights": {
+  "ja": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "騎士の見方",
+    "body": "",
+    "items": [
+     "ステータスは0〜15のスケール。レベル1〜15で、各レベルアップで15未満の任意のステータスに1ポイント加算。",
+     "既知の特性は採用時に見えます。隠し特性は初日から計算に反映されますが、会話・クエスト結果・ストーリーイベントで判明するまで見えません。",
+     "†はAlwenaが管理官の噂として明かせる特性（一度にひとつ、未発見のもののみ）。",
+     "好みのクエストタイプは1回につき+1.33親密度、嫌いは−0.75。好物を食べさせると親密度+1.5、クエストスコア+0.5。"
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "ko": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "기사 보는 법",
+    "body": "",
+    "items": [
+     "스탯은 0~15 척도. 레벨 1~15이며, 레벨업마다 15 미만 스탯 하나에 1포인트가 더해집니다.",
+     "알려진 특성은 고용 즉시 보입니다. 숨은 특성은 첫날부터 계산에 반영되지만, 대화·퀘스트 결과·스토리 이벤트로 밝혀지기 전까지는 보이지 않습니다.",
+     "†는 Alwena가 관리관 소문으로 밝힐 수 있는 특성(한 번에 하나, 아직 모르는 것만).",
+     "좋아하는 퀘스트 유형은 배정마다 친밀도 +1.33, 싫어하는 유형은 −0.75. 좋아하는 식사를 주면 친밀도 +1.5, 퀘스트 점수 +0.5."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "fr": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Tableau des chevaliers",
+    "body": "",
+    "headers": [
+     "Chevalier",
+     "Origine",
+     "Niv.",
+     "Armure",
+     "Stats (FOR/AGI/CHA/MAG/ESP/CHA)"
+    ],
+    "rows": [
+     [
+      "Alwena",
+      "Grest (Brizh)",
+      "12",
+      "8",
+      "8 / 9 / 10 / 0 / 12 / 7",
+      "Brizhian Butter Shortbread，Crêpe",
+      "唯一能挖其他骑士流言的人（一次一个，且只挖你不知道的）。"
+     ],
+     [
+      "Angelica",
+      "Clovermont (Groveshire)",
+      "1",
+      "5",
+      "4 / 8 / 3 / 0 / 2 / 7",
+      "Préfou，Crêpe",
+      "君主风格：喜 Kind 恶 Tyrannic；恶 Ghost/Assassination。"
+     ],
+     [
+      "Ari",
+      "Isle of Basalt",
+      "8",
+      "6",
+      "5 / 13 / 8 / 3 / 8 / 6",
+      "Brizhian Butter Shortbread，Crêpe",
+      "永不辞职；坐骑 Columbus 使任务 −4 cycles。"
+     ],
+     [
+      "Arron",
+      "Drakovic Castle",
+      "3",
+      "7",
+      "2 / 2 / 3 / 6 / 7 / 8",
+      "Crêpe，Brizhian Butter Shortbread",
+      "剧情可得 Dragon Knight 特质（任意任务小加成，战斗翻倍）。"
+     ],
+     [
+      "Brunhilda",
+      "Fort Gavault",
+      "1",
+      "6",
+      "7 / 2 / 6 / 7 / 3 / 0",
+      "Galette-Saucisse，Lion's Taco",
+      "君主风格：喜 Audacious 恶 Wise。"
+     ],
+     [
+      "Chester",
+      "Milkford",
+      "15",
+      "6",
+      "随机（Chester 每次判定重 roll 0–15）",
+      "Galette-Saucisse，Croque-Monsieur，Préfou，Crêpe，Brizhian Butter Shortbread，Lion's Taco",
+      "随机属性 + 全类型好感 = 万能补位工具人。"
+     ],
+     [
+      "Childeric",
+      "Almora",
+      "6",
+      "9",
+      "7 / 4 / 4 / 0 / 12 / 4",
+      "Crêpe，Croque-Monsieur",
+      "护甲 9 为全游最高。"
+     ],
+     [
+      "Daguez",
+      "Grest (Brizh)",
+      "1",
+      "6",
+      "15 / 0 / 0 / 0 / 0 / 9",
+      "Crêpe，Galette-Saucisse，Préfou",
+      "满力量 15；巨剑锁定。"
+     ],
+     [
+      "Dulahan",
+      "Anveld",
+      "1",
+      "7",
+      "8 / 8 / 0 / 9 / 0 / 0",
+      "全部 6 种",
+      "Goberto 死后才出现（恶魔骑士）。"
+     ],
+     [
+      "Edith",
+      "Avalon",
+      "8",
+      "7",
+      "7 / 10 / 3 / 12 / 7 / 0",
+      "Croque-Monsieur，Brizhian Butter Shortbread",
+      "MAG 12 并列最高；圣物 Dainself。"
+     ],
+     [
+      "Epicrate",
+      "Brimwood Congregation",
+      "9",
+      "6",
+      "3 / 3 / 9 / 9 / 12 / 3",
+      "待补",
+      "Brimwood 起义历史人物。"
+     ],
+     [
+      "Gideon",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "中文资料：第 6 天可招。"
+     ],
+     [
+      "Goberto",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+     ],
+     [
+      "Gothild",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      ""
+     ],
+     [
+      "Gwendan Villador",
+      "待补",
+      "1",
+      "6",
+      "待补",
+      "待补",
+      "恶 Audacious；谋杀案疑凶（跨周目可变）。"
+     ],
+     [
+      "Ligia",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      ""
+     ],
+     [
+      "Oliver",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      ""
+     ],
+     [
+      "Rufus",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "中文资料：第 6 天；与狼同行。"
+     ],
+     [
+      "Silgur",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "中文资料：第 7 天。"
+     ],
+     [
+      "Tarcus",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      ""
+     ],
+     [
+      "The Wolf",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "中文资料：第 6 天。"
+     ],
+     [
+      "Ursula",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "中文资料：第 5 天。"
+     ],
+     [
+      "Victoria",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      ""
+     ],
+     [
+      "Zolta",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Comment lire un chevalier",
+    "body": "",
+    "items": [
+     "Les stats sont sur une échelle de 0 à 15. Niveau 1-15 ; chaque montée de niveau ajoute un point à toute stat inférieure à 15.",
+     "Les traits connus sont visibles dès le recrutement. Les traits cachés comptent dans les calculs dès le premier jour mais restent invisibles jusqu'à ce qu'ils soient révélés par des conversations, des résultats de quête ou des événements.",
+     "† marque les traits qu'Alwena peut révéler comme rumeurs d'Intendante — un à la fois, uniquement ceux que vous ne connaissez pas déjà.",
+     "Les types appréciés donnent +1,33 d'affinité par affectation ; les détestés −0,75. Donner un repas favori donne +1,5 d'affinité et +0,5 de score de quête."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ],
+  "de": [
+   {
+    "type": "table",
+    "tag": "DATA",
+    "heading": "Ritter-Übersicht",
+    "body": "",
+    "headers": [
+     "Ritter",
+     "Herkunft",
+     "Stufe",
+     "Rüstung",
+     "Werte (STR/AGI/CHA/MAG/WIT/GLK)"
+    ],
+    "rows": [
+     [
+      "Alwena",
+      "Grest (Brizh)",
+      "12",
+      "8",
+      "8 / 9 / 10 / 0 / 12 / 7",
+      "Brizhian Butter Shortbread，Crêpe",
+      "唯一能挖其他骑士流言的人（一次一个，且只挖你不知道的）。"
+     ],
+     [
+      "Angelica",
+      "Clovermont (Groveshire)",
+      "1",
+      "5",
+      "4 / 8 / 3 / 0 / 2 / 7",
+      "Préfou，Crêpe",
+      "君主风格：喜 Kind 恶 Tyrannic；恶 Ghost/Assassination。"
+     ],
+     [
+      "Ari",
+      "Isle of Basalt",
+      "8",
+      "6",
+      "5 / 13 / 8 / 3 / 8 / 6",
+      "Brizhian Butter Shortbread，Crêpe",
+      "永不辞职；坐骑 Columbus 使任务 −4 cycles。"
+     ],
+     [
+      "Arron",
+      "Drakovic Castle",
+      "3",
+      "7",
+      "2 / 2 / 3 / 6 / 7 / 8",
+      "Crêpe，Brizhian Butter Shortbread",
+      "剧情可得 Dragon Knight 特质（任意任务小加成，战斗翻倍）。"
+     ],
+     [
+      "Brunhilda",
+      "Fort Gavault",
+      "1",
+      "6",
+      "7 / 2 / 6 / 7 / 3 / 0",
+      "Galette-Saucisse，Lion's Taco",
+      "君主风格：喜 Audacious 恶 Wise。"
+     ],
+     [
+      "Chester",
+      "Milkford",
+      "15",
+      "6",
+      "随机（Chester 每次判定重 roll 0–15）",
+      "Galette-Saucisse，Croque-Monsieur，Préfou，Crêpe，Brizhian Butter Shortbread，Lion's Taco",
+      "随机属性 + 全类型好感 = 万能补位工具人。"
+     ],
+     [
+      "Childeric",
+      "Almora",
+      "6",
+      "9",
+      "7 / 4 / 4 / 0 / 12 / 4",
+      "Crêpe，Croque-Monsieur",
+      "护甲 9 为全游最高。"
+     ],
+     [
+      "Daguez",
+      "Grest (Brizh)",
+      "1",
+      "6",
+      "15 / 0 / 0 / 0 / 0 / 9",
+      "Crêpe，Galette-Saucisse，Préfou",
+      "满力量 15；巨剑锁定。"
+     ],
+     [
+      "Dulahan",
+      "Anveld",
+      "1",
+      "7",
+      "8 / 8 / 0 / 9 / 0 / 0",
+      "全部 6 种",
+      "Goberto 死后才出现（恶魔骑士）。"
+     ],
+     [
+      "Edith",
+      "Avalon",
+      "8",
+      "7",
+      "7 / 10 / 3 / 12 / 7 / 0",
+      "Croque-Monsieur，Brizhian Butter Shortbread",
+      "MAG 12 并列最高；圣物 Dainself。"
+     ],
+     [
+      "Epicrate",
+      "Brimwood Congregation",
+      "9",
+      "6",
+      "3 / 3 / 9 / 9 / 12 / 3",
+      "待补",
+      "Brimwood 起义历史人物。"
+     ],
+     [
+      "Gideon",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "中文资料：第 6 天可招。"
+     ],
+     [
+      "Goberto",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+     ],
+     [
+      "Gothild",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      ""
+     ],
+     [
+      "Gwendan Villador",
+      "待补",
+      "1",
+      "6",
+      "待补",
+      "待补",
+      "恶 Audacious；谋杀案疑凶（跨周目可变）。"
+     ],
+     [
+      "Ligia",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      ""
+     ],
+     [
+      "Oliver",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      ""
+     ],
+     [
+      "Rufus",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "中文资料：第 6 天；与狼同行。"
+     ],
+     [
+      "Silgur",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "中文资料：第 7 天。"
+     ],
+     [
+      "Tarcus",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      ""
+     ],
+     [
+      "The Wolf",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "中文资料：第 6 天。"
+     ],
+     [
+      "Ursula",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "中文资料：第 5 天。"
+     ],
+     [
+      "Victoria",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      ""
+     ],
+     [
+      "Zolta",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      "待补",
+      ""
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "So liest du einen Ritter",
+    "body": "",
+    "items": [
+     "Werte auf einer 0–15-Skala. Stufe 1–15; jeder Stufenaufstieg gibt einen Punkt auf jeden Wert unter 15.",
+     "Bekannte Eigenschaften sind beim Rekrutieren sichtbar. Versteckte Eigenschaften wirken ab Tag eins in den Berechnungen, bleiben aber unsichtbar, bis sie durch Gespräche, Quest-Ergebnisse oder Story-Ereignisse enthüllt werden.",
+     "† markiert Eigenschaften, die Alwena als Intendanten-Gerüchte enthüllen kann — immer nur eine, und nur solche, die du noch nicht kennst.",
+     "Gemochte Typen geben +1,33 Bindung pro Einsatz; ungemochte −0,75. Ein Lieblingsgericht gibt +1,5 Bindung und +0,5 Quest-Score."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": []
+   }
+  ]
+ },
+ "sovereign-tower/quest-mechanics": {
+  "ja": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "君主のアーキタイプ",
+    "body": "",
+    "items": [
+     "暴虐(Tyrannic)：君主のスタイルを好む・嫌う騎士がいる。謁見での決断がこれらのタグを付与する。",
+     "賢明(Wise)：君主のスタイルを好む・嫌う騎士がいる。謁見での決断がこれらのタグを付与する。",
+     "慈愛(Kind)：君主のスタイルを好む・嫌う騎士がいる。謁見での決断がこれらのタグを付与する。",
+     "大胆(Audacious)：君主のスタイルを好む・嫌う騎士がいる。謁見での決断がこれらのタグを付与する。",
+     "全知(Omniscient)：君主のスタイルを好む・嫌う騎士がいる。謁見での決断がこれらのタグを付与する。"
+    ]
+   }
+  ],
+  "ko": [
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "군주 아키타입",
+    "body": "",
+    "items": [
+     "폭군(Tyrannic): 군주의 스타일을 좋아하거나 싫어하는 기사가 있다. 접견에서의 결정이 이 태그를 부여한다.",
+     "현명(Wise): 군주의 스타일을 좋아하거나 싫어하는 기사가 있다. 접견에서의 결정이 이 태그를 부여한다.",
+     "자애(Kind): 군주의 스타일을 좋아하거나 싫어하는 기사가 있다. 접견에서의 결정이 이 태그를 부여한다.",
+     "대담(Audacious): 군주의 스타일을 좋아하거나 싫어하는 기사가 있다. 접견에서의 결정이 이 태그를 부여한다.",
+     "전지(Omniscient): 군주의 스타일을 좋아하거나 싫어하는 기사가 있다. 접견에서의 결정이 이 태그를 부여한다."
+    ]
+   }
+  ]
+ },
+ "sovereign-tower/tools/quest-matcher": {
+  "ja": [
+   {
+    "type": "questmatcher",
+    "tag": "TOOL",
+    "heading": "騎士クエストマッチャー",
+    "body": "",
+    "items": []
+   }
+  ],
+  "ko": [
+   {
+    "type": "questmatcher",
+    "tag": "TOOL",
+    "heading": "기사 퀘스트 매처",
+    "body": "",
+    "items": []
+   }
+  ],
+  "fr": [
+   {
+    "type": "questmatcher",
+    "tag": "TOOL",
+    "heading": "Matcheur de quêtes de chevaliers",
+    "body": "",
+    "items": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Comment l'utiliser",
+    "body": "",
+    "items": [
+     "Choisissez un type de quête dans la liste déroulante. Le tableau montre chaque chevalier, sa réaction d'affinité pour ce type et ses traits spéciaux.",
+     "Les types aimés donnent +1,33 d'affinité ; les détestés −0,75. Cumuler des conditions aimées peut pousser une quête à environ +4 d'affinité.",
+     "Recoupez les traits : p. ex. Dulahan encaisse la moitié des dégâts mais prend +2 en cas d'échec (Clumsy) ; Gwendan déteste la Récupération de relique."
+    ]
+   }
+  ],
+  "de": [
+   {
+    "type": "questmatcher",
+    "tag": "TOOL",
+    "heading": "Ritter-Quest-Matcher",
+    "body": "",
+    "items": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "So nutzt du es",
+    "body": "",
+    "items": [
+     "Wähle einen Quest-Typ aus dem Dropdown. Die Tabelle zeigt jeden Ritter, seine Sympathie-Reaktion auf diesen Typ und besondere Eigenschaften.",
+     "Geliebte Quest-Typen geben +1,33 Sympathie; verhasste −0,75. Geliebte Bedingungen stapeln sich auf etwa +4 Sympathie pro Quest.",
+     "Prüfe die Eigenschaften: z. B. halbiert Dulahan Schaden, bekommt aber +2 bei Fehlschlag (Clumsy); Gwendan mag Reliktrückholung nicht."
+    ]
+   }
+  ]
+ },
+ "sovereign-tower/tools/affinity-calc": {
+  "ja": [
+   {
+    "type": "affinitycalc",
+    "tag": "TOOL",
+    "heading": "親密度計算機",
+    "body": "",
+    "items": []
+   }
+  ],
+  "ko": [
+   {
+    "type": "affinitycalc",
+    "tag": "TOOL",
+    "heading": "친밀도 계산기",
+    "body": "",
+    "items": []
+   }
+  ],
+  "fr": [
+   {
+    "type": "affinitycalc",
+    "tag": "TOOL",
+    "heading": "Calculateur d'affinité",
+    "body": "",
+    "items": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Règles intégrées au calculateur",
+    "body": "",
+    "items": [
+     "Type ou condition de quête aimé : +1,33 d'affinité chacun. Détesté : −0,75 chacun.",
+     "Plat favori : +1,5 d'affinité et +0,5 de score de quête.",
+     "Seuil de démission : −7 pour presque tout le monde ; Alwena et Ari ne démissionnent jamais (−1500).",
+     "C'est un outil d'aide à la planification — les valeurs réelles en jeu peuvent varier (待补 si une règle n'est pas vérifiée)."
+    ]
+   }
+  ],
+  "de": [
+   {
+    "type": "affinitycalc",
+    "tag": "TOOL",
+    "heading": "Bindungs-Rechner",
+    "body": "",
+    "items": []
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Im Rechner eingebaute Regeln",
+    "body": "",
+    "items": [
+     "Geliebter Quest-Typ oder Bedingung: je +1,33 Sympathie. Verhasst: je −0,75.",
+     "Lieblingsgericht: +1,5 Sympathie und +0,5 Quest-Punkte.",
+     "Kündigungsschwelle: −7 für fast alle; Alwena und Ari kündigen nie (−1500).",
+     "Das ist eine Planungshilfe — tatsächliche Spielwerte können abweichen (待补, falls eine Regel unverifiziert ist)."
+    ]
+   }
+  ]
+ }
+}
