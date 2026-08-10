@@ -8,20 +8,23 @@
    · 配色 = 深皮革 + 羊皮纸 + 金箔 + 橄榄（Nature Distilled 深化）
    ============================================================ */
 :root {
-  --leather: #2E2118;
-  --leather-2: #3D2C20;
-  --parchment: #F2EAD4;
-  --parchment-deep: #E6DABF;
-  --card: #FAF4E4;
-  --terracotta: #C67B5C;
-  --warm-clay: #B5651D;
-  --olive: #6B7B3C;
-  --ink: #3A3226;
-  --ink-soft: #5C5343;
-  --brass: #C9A227;
-  --mist: #8A9A9B;
-  --line: #D3C5A4;
-  --shadow: 0 4px 16px rgba(46, 33, 24, 0.14);
+  /* ui-ux-pro-max 基准：奶油底 + 陶土主色 + 琥珀强调 + 橄榄点缀 + 深墨文字 */
+  --bg: #FBF6EA;            /* 奶油书页底 */
+  --bg-deep: #F2E9D6;       /* 深一档 */
+  --card: #FFFFFF;          /* 白卡片 */
+  --card-warm: #FFFDF6;     /* 暖白 */
+  --primary: #9A3412;       /* 陶土主色 */
+  --primary-2: #C2410C;     /* 亮陶土 */
+  --accent: #D97706;        /* 琥珀金 */
+  --olive: #4D7C0F;         /* 橄榄点缀 */
+  --ink: #1C1917;           /* 深墨 */
+  --ink-soft: #57534E;      /* 次级 */
+  --muted: #8A8680;
+  --line: #E5DCC8;          /* 暖边框 */
+  --nav-bg: #4A3427;        /* 侧栏暖棕（不暗） */
+  --nav-bg-2: #5C4633;
+  --nav-text: #F5EFE2;
+  --shadow: 0 4px 18px rgba(28, 25, 23, 0.10);
   --ease: cubic-bezier(0.33, 1, 0.68, 1);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -32,13 +35,13 @@ body {
   background:
     radial-gradient(1000px 400px at 90% -5%, rgba(198, 123, 92, 0.10), transparent 55%),
     radial-gradient(800px 400px at -5% 30%, rgba(107, 123, 60, 0.08), transparent 50%),
-    var(--parchment);
+    var(--bg);
   line-height: 1.7;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
 h1, h2, h3 { font-family: "Caveat", "PingFang SC", cursive; line-height: 1.15; }
-a { color: var(--warm-clay); text-decoration: none; }
+a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 img { max-width: 100%; height: auto; }
 
@@ -50,21 +53,21 @@ img { max-width: 100%; height: auto; }
 /* ---------- 左侧卷宗目录栏（书目录形态） ---------- */
 .tome-nav {
   position: sticky; top: 0; height: 100vh; overflow-y: auto;
-  background: linear-gradient(180deg, var(--leather), var(--leather-2));
+  background: linear-gradient(180deg, var(--nav-bg), var(--nav-bg-2));
   color: #EDE3CE; padding: 26px 18px 40px;
   display: flex; flex-direction: column; gap: 6px;
   box-shadow: 4px 0 20px rgba(0,0,0,0.25);
 }
 .tome-nav::before {
   content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
-  background: repeating-linear-gradient(180deg, var(--brass) 0 2px, transparent 2px 6px);
+  background: repeating-linear-gradient(180deg, var(--accent) 0 2px, transparent 2px 6px);
   opacity: 0.35;
 }
 .tome-brand { display: flex; align-items: center; gap: 10px; padding: 4px 6px 18px; border-bottom: 1px solid rgba(237,227,206,0.15); margin-bottom: 14px; }
 .tome-brand .brand-seal {
   width: 40px; height: 40px; border-radius: 50%; flex: 0 0 auto;
   display: inline-flex; align-items: center; justify-content: center;
-  background: radial-gradient(circle at 35% 30%, var(--brass), #8a6d12);
+  background: radial-gradient(circle at 35% 30%, var(--accent), #8a6d12);
   color: #fff; box-shadow: 0 0 0 3px rgba(201,162,39,0.3);
 }
 .tome-brand .brand-seal svg { width: 24px; height: 24px; }
@@ -74,7 +77,7 @@ img { max-width: 100%; height: auto; }
 .tome-chapter { margin-bottom: 4px; }
 .tome-chapter > b {
   display: block; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--brass); padding: 12px 8px 4px; font-family: "Nunito", sans-serif;
+  color: var(--accent); padding: 12px 8px 4px; font-family: "Nunito", sans-serif;
 }
 .tome-chapter a {
   display: flex; align-items: center; gap: 9px; padding: 7px 8px 7px 12px;
@@ -82,9 +85,9 @@ img { max-width: 100%; height: auto; }
   border-left: 2px solid transparent; transition: background 0.18s var(--ease), border-color 0.18s var(--ease);
 }
 .tome-chapter a:hover { background: rgba(237,227,206,0.08); text-decoration: none; }
-.tome-chapter a.active { background: rgba(201,162,39,0.16); border-left-color: var(--brass); color: #fff; }
+.tome-chapter a.active { background: rgba(201,162,39,0.16); border-left-color: var(--accent); color: #fff; }
 .tome-chapter .folio-no { font-family: "Caveat", cursive; font-size: 13px; color: rgba(201,162,39,0.8); width: 16px; flex: 0 0 auto; }
-.tome-chapter .nav-ic { display: inline-flex; color: var(--brass); }
+.tome-chapter .nav-ic { display: inline-flex; color: var(--accent); }
 .tome-chapter .nav-ic svg { width: 15px; height: 15px; }
 
 .tome-lang { margin-top: auto; padding-top: 16px; border-top: 1px solid rgba(237,227,206,0.15); }
@@ -99,7 +102,7 @@ img { max-width: 100%; height: auto; }
 .tome-nav-toggle {
   display: none;
   align-items: center; gap: 8px; width: 100%;
-  background: var(--leather); color: #EDE3CE; border: 0; padding: 13px 16px;
+  background: var(--nav-bg); color: #EDE3CE; border: 0; padding: 13px 16px;
   font-family: "Caveat", cursive; font-size: 19px; cursor: pointer;
 }
 .tome-nav-toggle svg { width: 20px; height: 20px; }
@@ -127,11 +130,11 @@ img { max-width: 100%; height: auto; }
 .ledger-cover .cover-seal {
   display: inline-flex; align-items: center; justify-content: center;
   width: 62px; height: 62px; border-radius: 50%; margin-bottom: 14px;
-  background: radial-gradient(circle at 35% 30%, var(--terracotta), #8a4a2f);
+  background: radial-gradient(circle at 35% 30%, var(--primary), #8a4a2f);
   color: #fff; box-shadow: 0 0 0 4px rgba(198,123,92,0.25), 0 4px 14px rgba(0,0,0,0.2);
 }
 .ledger-cover .cover-seal svg { width: 34px; height: 34px; }
-.ledger-cover h1 { font-size: clamp(38px, 5.5vw, 60px); font-weight: 700; color: var(--leather); }
+.ledger-cover h1 { font-size: clamp(38px, 5.5vw, 60px); font-weight: 700; color: var(--nav-bg); }
 .ledger-cover .cover-intro { max-width: 620px; margin-top: 12px; color: var(--ink-soft); font-size: 17px; }
 .ledger-cover .cover-cta { display: flex; gap: 12px; margin-top: 22px; flex-wrap: wrap; }
 .btn {
@@ -140,14 +143,14 @@ img { max-width: 100%; height: auto; }
   transition: transform 0.15s var(--ease), box-shadow 0.15s var(--ease);
 }
 .btn:hover { text-decoration: none; transform: translateY(-2px); }
-.btn-primary { background: linear-gradient(135deg, var(--warm-clay), var(--terracotta)); color: #fff; box-shadow: 0 5px 18px rgba(198,123,92,0.35); }
-.btn-ghost { border: 1.5px solid var(--line); color: var(--ink); background: var(--card); }
+.btn-primary { background: linear-gradient(135deg, var(--accent), var(--primary)); color: #fff; box-shadow: 0 5px 18px rgba(198,123,92,0.35); }
+.btn-ghost { border: 1.5px solid var(--line); color: var(--ink); background: var(--card-warm); }
 
 /* 摊开页：左右分栏 + 中缝书脊 */
 .spread {
   display: grid; grid-template-columns: 1fr 1fr; gap: 0;
   margin: 26px 36px; border: 1px solid var(--line); border-radius: 14px;
-  background: var(--card); box-shadow: var(--shadow); overflow: hidden;
+  background: var(--card-warm); box-shadow: var(--shadow); overflow: hidden;
   position: relative;
 }
 .spread::after { /* 中缝书脊阴影 */
@@ -158,8 +161,8 @@ img { max-width: 100%; height: auto; }
 .spread-col.left { border-right: 1px solid var(--line); background: linear-gradient(180deg, #F7F0DD, var(--card)); }
 .spread-col.right { background: linear-gradient(180deg, #FBF6E9, var(--card)); }
 .folio-head { display: flex; align-items: center; gap: 9px; margin-bottom: 16px; }
-.folio-head .folio-mark { font-family: "Caveat", cursive; font-size: 18px; color: var(--brass); }
-.folio-head h2 { font-size: 28px; font-weight: 700; color: var(--leather); }
+.folio-head .folio-mark { font-family: "Caveat", cursive; font-size: 18px; color: var(--accent); }
+.folio-head h2 { font-size: 28px; font-weight: 700; color: var(--nav-bg); }
 
 /* 目录卷宗（左栏） */
 .tome-index { display: flex; flex-direction: column; gap: 7px; }
@@ -169,7 +172,7 @@ img { max-width: 100%; height: auto; }
   transition: all 0.18s var(--ease);
 }
 .tome-index a:hover { border-color: var(--line); background: rgba(201,162,39,0.08); text-decoration: none; transform: translateX(3px); }
-.tome-index .idx-no { font-family: "Caveat", cursive; font-size: 16px; color: var(--warm-clay); flex: 0 0 auto; }
+.tome-index .idx-no { font-family: "Caveat", cursive; font-size: 16px; color: var(--accent); flex: 0 0 auto; }
 .tome-index .idx-ic { display: inline-flex; color: var(--olive); }
 .tome-index .idx-ic svg { width: 17px; height: 17px; }
 .tome-index .idx-txt b { display: block; font-family: "Caveat", cursive; font-size: 18px; line-height: 1.15; }
@@ -179,11 +182,11 @@ img { max-width: 100%; height: auto; }
 .ledger-notes { display: flex; flex-direction: column; gap: 11px; }
 .ledger-notes .note-entry {
   padding: 12px 14px 12px 22px; border-radius: 8px;
-  border-left: 3px solid var(--terracotta);
+  border-left: 3px solid var(--primary);
   background: rgba(198,123,92,0.07); position: relative;
 }
-.ledger-notes .note-entry::before { content: "✎"; position: absolute; left: 7px; top: 10px; color: var(--terracotta); font-size: 12px; }
-.ledger-notes .note-entry b { font-family: "Caveat", cursive; font-size: 18px; color: var(--leather); }
+.ledger-notes .note-entry::before { content: "✎"; position: absolute; left: 7px; top: 10px; color: var(--primary); font-size: 12px; }
+.ledger-notes .note-entry b { font-family: "Caveat", cursive; font-size: 18px; color: var(--nav-bg); }
 .ledger-notes .note-entry p { color: var(--ink-soft); font-size: 14px; }
 
 /* ============ 内页：双页展开 ============ */
@@ -199,19 +202,19 @@ img { max-width: 100%; height: auto; }
   border: 1px solid var(--line); border-radius: 12px; padding: 20px 18px;
   box-shadow: var(--shadow);
 }
-.page-folio .folio-cap { font-family: "Caveat", cursive; font-size: 19px; color: var(--warm-clay); margin-bottom: 10px; }
+.page-folio .folio-cap { font-family: "Caveat", cursive; font-size: 19px; color: var(--accent); margin-bottom: 10px; }
 .page-folio nav { display: flex; flex-direction: column; gap: 5px; max-height: 62vh; overflow-y: auto; }
 .page-folio nav a {
   display: flex; gap: 8px; padding: 7px 9px; border-radius: 7px;
   font-size: 13.5px; color: var(--ink-soft); border-left: 2px solid transparent;
 }
 .page-folio nav a:hover { background: rgba(201,162,39,0.10); text-decoration: none; }
-.page-folio nav a.active { border-left-color: var(--brass); color: var(--leather); font-weight: 700; }
-.page-folio nav .toc-no { font-family: "Caveat", cursive; color: var(--brass); flex: 0 0 auto; }
+.page-folio nav a.active { border-left-color: var(--accent); color: var(--nav-bg); font-weight: 700; }
+.page-folio nav .toc-no { font-family: "Caveat", cursive; color: var(--accent); flex: 0 0 auto; }
 .page-folio .toc-search { margin-bottom: 10px; }
 .page-folio .toc-search input {
   width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
-  background: var(--card); font-size: 13px; color: var(--ink);
+  background: var(--card-warm); font-size: 13px; color: var(--ink);
 }
 /* 右页：正文 */
 .page-leaf {
@@ -224,13 +227,13 @@ img { max-width: 100%; height: auto; }
   content: ""; position: absolute; left: 12px; top: 20px; bottom: 20px; width: 2px;
   background: repeating-linear-gradient(180deg, transparent 0 18px, var(--line) 18px 22px);
 }
-.page-head { margin-bottom: 26px; padding-bottom: 16px; border-bottom: 2px solid var(--brass); padding-left: 6px; }
+.page-head { margin-bottom: 26px; padding-bottom: 16px; border-bottom: 2px solid var(--accent); padding-left: 6px; }
 .page-head .leaf-tag {
   font-family: "Nunito", sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--olive); background: rgba(107,123,60,0.12);
   padding: 3px 10px; border-radius: 999px; display: inline-block; margin-bottom: 8px;
 }
-.page-head h1 { font-size: clamp(30px, 4vw, 46px); font-weight: 700; color: var(--leather); }
+.page-head h1 { font-size: clamp(30px, 4vw, 46px); font-weight: 700; color: var(--nav-bg); }
 .page-art { width: 100%; max-width: 100%; height: auto; border-radius: 10px; margin: 14px 0 4px; border: 1px solid var(--line); box-shadow: var(--shadow); }
 .page-intro { margin-top: 14px; color: var(--ink-soft); font-size: 17px; padding-left: 6px; }
 
@@ -253,20 +256,20 @@ img { max-width: 100%; height: auto; }
 }
 .work-ticket::before {
   content: ""; position: absolute; left: 10px; top: 12px; bottom: 12px; width: 3px;
-  background: var(--terracotta); border-radius: 2px;
+  background: var(--primary); border-radius: 2px;
 }
-.ticket-no { flex: 0 0 auto; font-family: "Caveat", cursive; font-size: 23px; font-weight: 700; color: var(--brass); padding-top: 1px; }
+.ticket-no { flex: 0 0 auto; font-family: "Caveat", cursive; font-size: 23px; font-weight: 700; color: var(--accent); padding-top: 1px; }
 .ticket-body h3 { font-size: 21px; font-weight: 700; margin-bottom: 2px; }
 .ticket-body p { color: var(--ink-soft); font-size: 15px; }
 
 /* 账册表 */
-.ledger-table-wrap { overflow-x: auto; max-width: 100%; border: 1px solid var(--line); border-radius: 12px; background: var(--card); box-shadow: var(--shadow); }
+.ledger-table-wrap { overflow-x: auto; max-width: 100%; border: 1px solid var(--line); border-radius: 12px; background: var(--card-warm); box-shadow: var(--shadow); }
 .ledger-table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
 .ledger-table thead th {
   background: linear-gradient(135deg, rgba(181,101,29,0.12), rgba(198,123,92,0.10));
-  color: var(--leather); text-align: left; padding: 12px 14px;
+  color: var(--nav-bg); text-align: left; padding: 12px 14px;
   font-family: "Caveat", cursive; font-size: 17px;
-  border-bottom: 2px solid var(--brass); white-space: nowrap;
+  border-bottom: 2px solid var(--accent); white-space: nowrap;
 }
 .ledger-table tbody td { padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink-soft); }
 .ledger-table tbody tr { transition: background 0.15s var(--ease); }
@@ -275,18 +278,18 @@ img { max-width: 100%; height: auto; }
 
 /* FAQ（手写问答卡） */
 .faq-list { display: grid; gap: 10px; }
-.faq-item { background: var(--card); border: 1px solid var(--line); border-radius: 4px 12px 12px 4px; overflow: hidden; }
+.faq-item { background: var(--card-warm); border: 1px solid var(--line); border-radius: 4px 12px 12px 4px; overflow: hidden; }
 .faq-item summary {
   cursor: pointer; padding: 14px 16px 14px 24px; font-weight: 800; font-size: 15.5px;
   list-style: none; position: relative; color: var(--ink);
 }
-.faq-item summary::before { content: "❧"; position: absolute; left: 8px; top: 13px; color: var(--brass); font-size: 13px; }
+.faq-item summary::before { content: "❧"; position: absolute; left: 8px; top: 13px; color: var(--accent); font-size: 13px; }
 .faq-item summary::after {
   content: "+"; position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
-  font-size: 22px; color: var(--terracotta); transition: transform 0.2s var(--ease);
+  font-size: 22px; color: var(--primary); transition: transform 0.2s var(--ease);
 }
 .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
-.faq-item[open] summary { color: var(--warm-clay); }
+.faq-item[open] summary { color: var(--accent); }
 .faq-item p { padding: 0 16px 14px 24px; color: var(--ink-soft); font-size: 15px; }
 
 /* 黄铜工具卡 */
@@ -294,17 +297,17 @@ img { max-width: 100%; height: auto; }
 .tool-body { display: grid; gap: 14px; margin-top: 8px; }
 .tool-label { font-size: 13px; font-weight: 800; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.06em; }
 .tool-select { padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff; font-size: 15px; color: var(--ink); max-width: 320px; }
-.tool-select:focus { outline: 2px solid var(--brass); outline-offset: 1px; }
-.tool-hint { color: var(--mist); font-size: 14px; font-style: italic; }
+.tool-select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.tool-hint { color: var(--muted); font-size: 14px; font-style: italic; }
 .tool-total { font-size: 17px; }
-.tool-total b { font-family: "Caveat", cursive; font-size: 26px; color: var(--warm-clay); }
+.tool-total b { font-family: "Caveat", cursive; font-size: 26px; color: var(--accent); }
 .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 12px; font-weight: 800; }
 .pill-good { background: rgba(107,123,60,0.15); color: var(--olive); }
-.pill-mid { background: rgba(138,154,155,0.15); color: var(--mist); }
+.pill-mid { background: rgba(138,154,155,0.15); color: var(--muted); }
 
 /* 边注（手写批注） */
 .marginalia {
-  border-left: 3px solid var(--brass); background: rgba(201,162,39,0.07);
+  border-left: 3px solid var(--accent); background: rgba(201,162,39,0.07);
   padding: 14px 18px; border-radius: 0 10px 10px 0; color: var(--ink-soft); font-size: 15px;
   font-family: "Caveat", cursive; font-size: 17px;
 }
@@ -312,7 +315,7 @@ img { max-width: 100%; height: auto; }
 /* ============ 封底（版权页） ============ */
 .colophon {
   margin: 40px 36px 30px; padding: 26px 30px;
-  background: linear-gradient(180deg, var(--leather), var(--leather-2));
+  background: linear-gradient(180deg, var(--nav-bg), var(--nav-bg-2));
   color: rgba(237,227,206,0.8); border-radius: 14px;
   display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px;
 }
@@ -343,7 +346,7 @@ img { max-width: 100%; height: auto; }
   .tome-nav-toggle {
     display: inline-flex; align-items: center; gap: 8px;
     position: sticky; top: 0; z-index: 80; width: 100%;
-    background: var(--leather); color: #EDE3CE; border: 0; padding: 13px 16px;
+    background: var(--nav-bg); color: #EDE3CE; border: 0; padding: 13px 16px;
     font-family: "Caveat", cursive; font-size: 19px; cursor: pointer;
   }
   .tome-nav-toggle svg { width: 20px; height: 20px; }
