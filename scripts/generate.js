@@ -71,27 +71,27 @@ const NAV_I18N = {
   "en":    { home: "Home", guides: "Guides", ledgers: "The Ledger", tools: "Tools", search: "Search guides…", searchLabel: "Search guides", langLabel: "Language",
              p0: "Core guides", p1: "Deep dives", p2: "Quick answers", about: "About", privacy: "Privacy", contact: "Contact",
              footerNote: "Unofficial fan site — game and assets belong to WILD WITS GAMES / Curve Games.",
-             footerSource: "Information verified against the official Steam store page, fan wiki data and community reports.", updated: "Updated" },
+             footerSource: "Information verified against the official Steam store page, fan wiki data and community reports.", updated: "Updated", amazonTitle: "Game Gear", amazonNote: "As an Amazon Associate we earn from qualifying purchases. Prices and availability may change.", amazon1: "Gaming Keyboard", amazon2: "Gaming Mouse", amazon3: "Headset", amazon4: "Controller", amazon5: "Monitor" },
   "zh-CN": { home: "首页", guides: "攻略", ledgers: "手账", tools: "工具", search: "搜索攻略…", searchLabel: "搜索攻略", langLabel: "语言",
              p0: "核心攻略", p1: "深度拆解", p2: "快速答案", about: "关于", privacy: "隐私", contact: "联系",
              footerNote: "非官方粉丝站——游戏及相关资产归 WILD WITS GAMES / Curve Games 所有。",
-             footerSource: "信息核对自 Steam 官方商店页、粉丝 wiki 数据与社区报告。", updated: "更新于" },
+             footerSource: "信息核对自 Steam 官方商店页、粉丝 wiki 数据与社区报告。", updated: "更新于", amazonTitle: "游戏装备", amazonNote: "作为亚马逊联盟伙伴，我们会从符合条件的购买中获得佣金。价格与库存可能随时变化。", amazon1: "游戏键盘", amazon2: "游戏鼠标", amazon3: "耳机", amazon4: "手柄", amazon5: "显示器" },
   "ja":    { home: "ホーム", guides: "攻略", ledgers: "手帳", tools: "ツール", search: "攻略を検索…", searchLabel: "攻略を検索", langLabel: "言語",
              p0: "コア攻略", p1: "深掘り", p2: "クイック回答", about: "このサイト", privacy: "プライバシー", contact: "お問い合わせ",
              footerNote: "非公式ファンサイト。ゲームおよび関連アセットは WILD WITS GAMES / Curve Games に帰属します。",
-             footerSource: "情報は Steam 公式ストア・ファン wiki・コミュニティ報告で確認しています。", updated: "更新" },
+             footerSource: "情報は Steam 公式ストア・ファン wiki・コミュニティ報告で確認しています。", updated: "更新", amazonTitle: "ゲームギア", amazonNote: "Amazonアソシエイトとして、適格購入から手数料を得ることがあります。価格と在庫は変動します。", amazon1: "ゲーミングキーボード", amazon2: "ゲーミングマウス", amazon3: "ヘッドセット", amazon4: "コントローラー", amazon5: "モニター" },
   "ko":    { home: "홈", guides: "가이드", ledgers: "수첩", tools: "도구", search: "가이드 검색…", searchLabel: "가이드 검색", langLabel: "언어",
              p0: "핵심 가이드", p1: "심층 분석", p2: "빠른 답변", about: "소개", privacy: "개인정보", contact: "문의",
              footerNote: "비공식 팬 사이트. 게임 및 관련 자산은 WILD WITS GAMES / Curve Games에 귀속됩니다.",
-             footerSource: "정보는 Steam 공식 스토어, 팬 위키, 커뮤니티 보고로 확인했습니다.", updated: "업데이트" },
+             footerSource: "정보는 Steam 공식 스토어, 팬 위키, 커뮤니티 보고로 확인했습니다.", updated: "업데이트", amazonTitle: "게임 장비", amazonNote: "Amazon 어소시에이트로서 적격 구매로부터 수수료를 받습니다. 가격과 재고는 변동될 수 있습니다.", amazon1: "게이밍 키보드", amazon2: "게이밍 마우스", amazon3: "헤드셋", amazon4: "컨트롤러", amazon5: "모니터" },
   "fr":    { home: "Accueil", guides: "Guides", ledgers: "Registre", tools: "Outils", search: "Rechercher des guides…", searchLabel: "Rechercher des guides", langLabel: "Langue",
              p0: "Guides principaux", p1: "Analyses", p2: "Réponses rapides", about: "À propos", privacy: "Confidentialité", contact: "Contactez-nous",
              footerNote: "Site de fans non officiel — le jeu et ses ressources appartiennent à WILD WITS GAMES / Curve Games.",
-             footerSource: "Informations vérifiées sur la page Steam officielle, les wikis de fans et les rapports de la communauté.", updated: "Mis à jour" },
+             footerSource: "Informations vérifiées sur la page Steam officielle, les wikis de fans et les rapports de la communauté.", updated: "Mis à jour", amazonTitle: "Équipement de jeu", amazonNote: "En tant que partenaire Amazon, nous touchons une commission sur les achats éligibles. Prix et disponibilité peuvent changer.", amazon1: "Clavier gamer", amazon2: "Souris gamer", amazon3: "Casque", amazon4: "Manette", amazon5: "Écran" },
   "de":    { home: "Start", guides: "Guides", ledgers: "Register", tools: "Werkzeuge", search: "Guides suchen…", searchLabel: "Guides suchen", langLabel: "Sprache",
              p0: "Kern-Guides", p1: "Tiefe Analysen", p2: "Schnelle Antworten", about: "Über", privacy: "Datenschutz", contact: "Kontakt",
              footerNote: "Inoffizielle Fan-Seite — Spiel und Assets gehören WILD WITS GAMES / Curve Games.",
-             footerSource: "Informationen geprüft gegen den offiziellen Steam-Store, Fan-Wikis und Community-Berichte.", updated: "Aktualisiert" },
+             footerSource: "Informationen geprüft gegen den offiziellen Steam-Store, Fan-Wikis und Community-Berichte.", updated: "Aktualisiert", amazonTitle: "Gaming-Ausrüstung", amazonNote: "Als Amazon-Partner verdienen wir an qualifizierten Käufen. Preise und Verfügbarkeit können sich ändern.", amazon1: "Gaming-Tastatur", amazon2: "Gaming-Maus", amazon3: "Headset", amazon4: "Controller", amazon5: "Monitor" },
 };
 const navI18n = l => NAV_I18N[l] || NAV_I18N.en;
 
@@ -193,6 +193,24 @@ function header(lang, active) {
   <div class="tome-lang"><div class="lang-label">${esc(n.langLabel)}</div>${langItems}</div>
 </aside>`;
 }
+function renderAmazonAffiliate(lang) {
+  const n = navI18n(lang);
+  const tag = "cozysimhub20-20";
+  const items = [
+    { label: n.amazon1, q: "gaming keyboard" },
+    { label: n.amazon2, q: "gaming mouse" },
+    { label: n.amazon3, q: "gaming headset" },
+    { label: n.amazon4, q: "game controller" },
+    { label: n.amazon5, q: "gaming monitor" }
+  ];
+  const links = items.map(it => `<a href="https://www.amazon.com/s?k=${encodeURIComponent(it.q)}&tag=${tag}" target="_blank" rel="sponsored noopener nofollow">${esc(it.label)}</a>`).join("");
+  return `<div class="amazon-gear">
+    <h3>${esc(n.amazonTitle)}</h3>
+    <div class="amazon-gear-links">${links}</div>
+    <p class="aff-note">${esc(n.amazonNote)}</p>
+  </div>`;
+}
+
 function footer(lang) {
   const n = navI18n(lang);
   const key = DATA.pages.slice(0, 8).map(p => `<a href="${linkOf(p.slug, lang)}">${esc(pageOf(p, lang).title)}</a>`).join("");
@@ -212,6 +230,7 @@ function footer(lang) {
     </div>
     <p class="colophon-legal">© ${new Date().getFullYear()} ${esc(DATA.site.domain)} · ${lang === "zh-CN" ? "非官方粉丝站" : "Unofficial fan site"}</p>
   </div>
+  ${renderAmazonAffiliate(lang)}
   ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}
   ${DATA.site.adsterra ? DATA.site.adsterra : ""}
 </footer>
