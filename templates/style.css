@@ -363,3 +363,7 @@ img { max-width: 100%; height: auto; }
   .page-leaf { padding: 26px 18px; }
   .spread-col { padding: 22px 18px; }
 }
+
+/* cover-plate：首页封面板（hero WebP 降级） */
+.cover-plate{max-width:720px;margin:0 auto 18px;border-radius:14px;overflow:hidden;border:1px solid rgba(201,169,98,.35);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.cover-plate img{display:block;width:100%;height:auto}

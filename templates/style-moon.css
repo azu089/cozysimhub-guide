@@ -137,3 +137,13 @@ svg{display:inline-block;vertical-align:middle}
   *{animation:none !important;transition:none !important}
   .moon-entry{opacity:1;transform:none}
 }
+
+/* ---------- 角色档案卡（characters hub / 单页跳转） ---------- */
+.moon-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:6px}
+.char-card{display:flex;flex-direction:column;gap:2px;padding:14px 16px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(150deg,var(--panel),var(--panel-2));color:var(--moon);text-decoration:none;box-shadow:var(--shadow);transition:transform .18s ease-out,border-color .18s ease-out,box-shadow .18s ease-out}
+.char-card:hover{transform:translateY(-2px);border-color:var(--candle-soft);box-shadow:0 8px 24px rgba(240,168,72,.18)}
+.char-card-name{font-family:var(--font-head);font-weight:700;font-size:1.05rem;color:var(--candle)}
+.char-card-sub{font-family:var(--font-label);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--moon-soft)}
+.char-card-note{font-size:.82rem;color:var(--moonbeam)}
+.moon-cards .char-card[data-soon]{opacity:.75}
+@media (max-width:520px){.moon-cards{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}}

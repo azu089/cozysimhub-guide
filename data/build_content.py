@@ -682,6 +682,15 @@ for _mp in build_moon_pages():
     else:
         d["pages"].append(_mp)
 
+# --- Moonlight Peaks 角色单页（P1：hub + 核心角色档案，独立数据层 moon_characters.py）---
+from moon_characters import build_character_pages
+_char_existing = {p["slug"]: i for i, p in enumerate(d["pages"])}
+for _cp in build_character_pages():
+    if _cp["slug"] in _char_existing:
+        d["pages"][_char_existing[_cp["slug"]]] = _cp
+    else:
+        d["pages"].append(_cp)
+
 # ja/ko/fr/de 页面 title/intro 翻译（data/i18n_pages2.json，内容补齐新页面）
 import json as _j4
 _i18n_pages2 = _j4.loads((ROOT / "i18n_pages2.json").read_text(encoding="utf8"))

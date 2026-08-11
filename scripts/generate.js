@@ -353,10 +353,12 @@ function renderHome(lang) {
     const pt = pageOf(p, lang);
     return `<a href="${linkOf(p.slug, lang)}"><span class="idx-no">${String(gamePages.length + i + 1).padStart(2, "0")}</span><span class="idx-ic">${ICON.calc}</span><span class="idx-txt"><b>${esc(pt.title)}</b><small>${lang === "zh-CN" ? "交互工具" : "Interactive tool"}</small></span></a>`;
   }).join("");
+  const heroPlate = `<div class="cover-plate">${KIT.picture({ src: "/images/hero.jpg", srcset: "/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 1600w", sizes: "(max-width: 720px) 92vw, 720px", attrs: `alt="${esc(siteI18n(lang).name)}" loading="eager" width="1600" height="900" fetchpriority="high"` })}</div>`;
   const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
 <div class="tome-nav-overlay"></div>
 <main class="page-main">
   <section class="ledger-cover reveal">
+    ${heroPlate}
     <span class="cover-seal">${ICON.crown}</span>
     <h1>${isZh ? "君王之塔 · 圆桌手账" : "Sovereign Tower · The Round Table Ledger"}</h1>
     <p class="cover-intro">${esc(intro)}</p>
@@ -559,7 +561,7 @@ function moonPhaseIcon(n, cls) {
 }
 
 const MOON_GROUPS = {
-  data: ["moonlight-peaks/how-to-play", "moonlight-peaks/gifts", "moonlight-peaks/romance", "moonlight-peaks/fishing", "moonlight-peaks/flowers", "moonlight-peaks/tools", "moonlight-peaks/achievements"],
+  data: ["moonlight-peaks/characters", "moonlight-peaks/how-to-play", "moonlight-peaks/gifts", "moonlight-peaks/romance", "moonlight-peaks/fishing", "moonlight-peaks/flowers", "moonlight-peaks/tools", "moonlight-peaks/achievements"],
   deep: ["moonlight-peaks/spells", "moonlight-peaks/walkthrough", "moonlight-peaks/relationships", "moonlight-peaks/villagers", "moonlight-peaks/potions", "moonlight-peaks/museum", "moonlight-peaks/breeding"],
   quick: ["moonlight-peaks/updates", "moonlight-peaks/steam-deck", "moonlight-peaks/console", "moonlight-peaks/system-requirements", "moonlight-peaks/faq"],
 };
@@ -641,6 +643,13 @@ function renderMoonSection(s, lang, slug) {
     case "list": {
       const items = (s.items || []).map(it => `<li>${esc(it)}</li>`).join("");
       return `<section class="moon-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><ul class="moon-notes">${items}</ul></section>`;
+    }
+    case "cards": {
+      const items = (s.items || []).map(c => {
+        const href = c.slug ? linkOf(c.slug, lang) : linkOf("moonlight-peaks/romance", lang);
+        return `<a class="char-card" href="${href}"><span class="char-card-name">${esc(c.name)}</span><span class="char-card-sub">${esc(c.sub || "")}</span></a>`;
+      }).join("");
+      return `<section class="moon-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><div class="moon-cards">${items}</div></section>`;
     }
     case "faq": {
       const items = (s.items || []).map((qa, i) =>

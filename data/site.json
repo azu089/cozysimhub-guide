@@ -34670,6 +34670,3725 @@
    },
    "priority": "P0",
    "_moon": true
+  },
+  {
+   "slug": "moonlight-peaks/characters",
+   "title": "Moonlight Peaks Characters: All 23 Romanceable Profiles",
+   "metaTitle": "All 23 Romanceable Characters in Moonlight Peaks (Inde…",
+   "metaDescription": "All 23 romanceable characters in Moonlight Peaks: affiliation, appearance, personality, and links to each gifts & romance profile.",
+   "intro": "Moonlight Peaks has 23 romanceable characters at launch — witches, vampires, werewolves, seers, humans, mermaids and stranger beings. Pick a card to open that character's gifts & romance profile.",
+   "sections": [
+    {
+     "type": "cards",
+     "tag": "CHAR",
+     "heading": "All 23 characters",
+     "body": "",
+     "headers": [],
+     "items": [
+      {
+       "name": "Fiona",
+       "sub": "Witch",
+       "slug": "moonlight-peaks/romance/fiona"
+      },
+      {
+       "name": "Noel",
+       "sub": "Witch",
+       "slug": "moonlight-peaks/romance/noel"
+      },
+      {
+       "name": "Sabrina",
+       "sub": "Witch",
+       "slug": "moonlight-peaks/romance/sabrina"
+      },
+      {
+       "name": "Luna",
+       "sub": "Witch",
+       "slug": "moonlight-peaks/romance/luna"
+      },
+      {
+       "name": "Orlock",
+       "sub": "Vampire",
+       "slug": "moonlight-peaks/romance/orlock"
+      },
+      {
+       "name": "Evan",
+       "sub": "Vampire",
+       "slug": "moonlight-peaks/romance/evan"
+      },
+      {
+       "name": "Mina",
+       "sub": "Vampire",
+       "slug": ""
+      },
+      {
+       "name": "Samael",
+       "sub": "Vampire",
+       "slug": ""
+      },
+      {
+       "name": "Elvira",
+       "sub": "Vampire",
+       "slug": ""
+      },
+      {
+       "name": "Persephone",
+       "sub": "Human",
+       "slug": ""
+      },
+      {
+       "name": "Jada",
+       "sub": "Human",
+       "slug": ""
+      },
+      {
+       "name": "Winston",
+       "sub": "Human",
+       "slug": ""
+      },
+      {
+       "name": "Saga",
+       "sub": "Werewolf",
+       "slug": ""
+      },
+      {
+       "name": "Ridge",
+       "sub": "Werewolf",
+       "slug": ""
+      },
+      {
+       "name": "Ludo",
+       "sub": "Werewolf",
+       "slug": ""
+      },
+      {
+       "name": "Dragan",
+       "sub": "Seer",
+       "slug": ""
+      },
+      {
+       "name": "Alina",
+       "sub": "Seer",
+       "slug": ""
+      },
+      {
+       "name": "Aras",
+       "sub": "Seer",
+       "slug": ""
+      },
+      {
+       "name": "Death",
+       "sub": "Supernatural",
+       "slug": ""
+      },
+      {
+       "name": "Llemi",
+       "sub": "Supernatural",
+       "slug": ""
+      },
+      {
+       "name": "Kim",
+       "sub": "Mermaid",
+       "slug": ""
+      },
+      {
+       "name": "Tae",
+       "sub": "Mermaid",
+       "slug": ""
+      },
+      {
+       "name": "Rei",
+       "sub": "Mermaid",
+       "slug": ""
+      }
+     ]
+    },
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "About the profiles",
+     "body": "",
+     "items": [
+      "Each card links to that character's profile page — gifts, personality and romance notes.",
+      "Characters without a dedicated page yet link to the full romance guide instead."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "How many characters are romanceable?",
+       "23 at launch (July 7, 2026), including secret and hidden candidates."
+      ],
+      [
+       "Why don't all characters have their own page?",
+       "Dedicated pages are being added by priority — every character's full info is already in the romance guide."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "月光小镇 角色全览：23 位可攻略角色档案",
+     "metaTitle": "月光小镇角色大全：23 位可攻略角色",
+     "metaDescription": "《月光小镇》23 位可攻略角色索引：种族、登场时间与性格，点击进入各角色礼物与恋爱档案。",
+     "intro": "《月光小镇》首发共有 23 位可攻略角色——女巫、吸血鬼、狼人、先知、人类、人鱼与更奇特的种族。点击角色卡进入对应的礼物与恋爱档案。",
+     "sections": [
+      {
+       "type": "cards",
+       "tag": "CHAR",
+       "heading": "全部 23 位角色",
+       "body": "",
+       "headers": [],
+       "items": [
+        {
+         "name": "Fiona",
+         "sub": "女巫",
+         "slug": "moonlight-peaks/romance/fiona"
+        },
+        {
+         "name": "Noel",
+         "sub": "女巫",
+         "slug": "moonlight-peaks/romance/noel"
+        },
+        {
+         "name": "Sabrina",
+         "sub": "女巫",
+         "slug": "moonlight-peaks/romance/sabrina"
+        },
+        {
+         "name": "Luna",
+         "sub": "女巫",
+         "slug": "moonlight-peaks/romance/luna"
+        },
+        {
+         "name": "Orlock",
+         "sub": "吸血鬼",
+         "slug": "moonlight-peaks/romance/orlock"
+        },
+        {
+         "name": "Evan",
+         "sub": "吸血鬼",
+         "slug": "moonlight-peaks/romance/evan"
+        },
+        {
+         "name": "Mina",
+         "sub": "吸血鬼",
+         "slug": ""
+        },
+        {
+         "name": "Samael",
+         "sub": "吸血鬼",
+         "slug": ""
+        },
+        {
+         "name": "Elvira",
+         "sub": "吸血鬼",
+         "slug": ""
+        },
+        {
+         "name": "Persephone",
+         "sub": "人类",
+         "slug": ""
+        },
+        {
+         "name": "Jada",
+         "sub": "人类",
+         "slug": ""
+        },
+        {
+         "name": "Winston",
+         "sub": "人类",
+         "slug": ""
+        },
+        {
+         "name": "Saga",
+         "sub": "狼人",
+         "slug": ""
+        },
+        {
+         "name": "Ridge",
+         "sub": "狼人",
+         "slug": ""
+        },
+        {
+         "name": "Ludo",
+         "sub": "狼人",
+         "slug": ""
+        },
+        {
+         "name": "Dragan",
+         "sub": "先知",
+         "slug": ""
+        },
+        {
+         "name": "Alina",
+         "sub": "先知",
+         "slug": ""
+        },
+        {
+         "name": "Aras",
+         "sub": "先知",
+         "slug": ""
+        },
+        {
+         "name": "Death",
+         "sub": "超自然存在",
+         "slug": ""
+        },
+        {
+         "name": "Llemi",
+         "sub": "超自然存在",
+         "slug": ""
+        },
+        {
+         "name": "Kim",
+         "sub": "人鱼",
+         "slug": ""
+        },
+        {
+         "name": "Tae",
+         "sub": "人鱼",
+         "slug": ""
+        },
+        {
+         "name": "Rei",
+         "sub": "人鱼",
+         "slug": ""
+        }
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "角色档案说明",
+       "body": "",
+       "items": [
+        "每个角色卡都会链接到对应的档案页——礼物、性格与恋爱笔记。",
+        "尚未开放单页的角色会链接到完整恋爱指南。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "有多少位可攻略角色？",
+         "首发共 23 位（2026-07-07），含隐藏候选。"
+        ],
+        [
+         "为什么有些角色没有单独档案页？",
+         "单页按优先级逐步补全——没有单页的角色信息都在恋爱指南全表里。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "キャラクター全覧：恋愛対象23人",
+     "metaTitle": "キャラクター大全：恋愛対象23人",
+     "metaDescription": "『Moonlight Peaks』の恋愛対象23人を索引：種族・登場時期・性格。各キャラの贈り物・恋愛ページへ。",
+     "intro": "『Moonlight Peaks』発売時点の恋愛対象は23人——魔女、吸血鬼、狼人、予言者、人間、人魚など。カードから各キャラの贈り物・恋愛ページへ。",
+     "sections": [
+      {
+       "type": "cards",
+       "tag": "CHAR",
+       "heading": "全23人",
+       "body": "",
+       "headers": [],
+       "items": [
+        {
+         "name": "Fiona",
+         "sub": "魔女",
+         "slug": "moonlight-peaks/romance/fiona"
+        },
+        {
+         "name": "Noel",
+         "sub": "魔女",
+         "slug": "moonlight-peaks/romance/noel"
+        },
+        {
+         "name": "Sabrina",
+         "sub": "魔女",
+         "slug": "moonlight-peaks/romance/sabrina"
+        },
+        {
+         "name": "Luna",
+         "sub": "魔女",
+         "slug": "moonlight-peaks/romance/luna"
+        },
+        {
+         "name": "Orlock",
+         "sub": "吸血鬼",
+         "slug": "moonlight-peaks/romance/orlock"
+        },
+        {
+         "name": "Evan",
+         "sub": "吸血鬼",
+         "slug": "moonlight-peaks/romance/evan"
+        },
+        {
+         "name": "Mina",
+         "sub": "吸血鬼",
+         "slug": ""
+        },
+        {
+         "name": "Samael",
+         "sub": "吸血鬼",
+         "slug": ""
+        },
+        {
+         "name": "Elvira",
+         "sub": "吸血鬼",
+         "slug": ""
+        },
+        {
+         "name": "Persephone",
+         "sub": "人間",
+         "slug": ""
+        },
+        {
+         "name": "Jada",
+         "sub": "人間",
+         "slug": ""
+        },
+        {
+         "name": "Winston",
+         "sub": "人間",
+         "slug": ""
+        },
+        {
+         "name": "Saga",
+         "sub": "狼人",
+         "slug": ""
+        },
+        {
+         "name": "Ridge",
+         "sub": "狼人",
+         "slug": ""
+        },
+        {
+         "name": "Ludo",
+         "sub": "狼人",
+         "slug": ""
+        },
+        {
+         "name": "Dragan",
+         "sub": "予言者",
+         "slug": ""
+        },
+        {
+         "name": "Alina",
+         "sub": "予言者",
+         "slug": ""
+        },
+        {
+         "name": "Aras",
+         "sub": "予言者",
+         "slug": ""
+        },
+        {
+         "name": "Death",
+         "sub": "超常存在",
+         "slug": ""
+        },
+        {
+         "name": "Llemi",
+         "sub": "超常存在",
+         "slug": ""
+        },
+        {
+         "name": "Kim",
+         "sub": "人魚",
+         "slug": ""
+        },
+        {
+         "name": "Tae",
+         "sub": "人魚",
+         "slug": ""
+        },
+        {
+         "name": "Rei",
+         "sub": "人魚",
+         "slug": ""
+        }
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "プロフィールについて",
+       "body": "",
+       "items": [
+        "各カードは対応するキャラページへ——贈り物・性格・恋愛ノート。",
+        "単独ページ未作成のキャラは恋愛ガイド全体へリンク。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "恋愛対象は何人？",
+         "発売時点で23人（2026-07-07）、隠し候補含む。"
+        ],
+        [
+         "なぜ単独ページがないキャラも？",
+         "優先度順に順次追加。単独ページがない場合も全情報は恋愛ガイドにあります。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "캐릭터 전체보기: 연애 가능 23명",
+     "metaTitle": "캐릭터 대전: 연애 가능 23명",
+     "metaDescription": "『문라이트 피크스』연애 가능 23명 색인: 종족·등장 시기·성격. 각 캐릭터의 선물·연애 페이지로.",
+     "intro": "『문라이트 피크스』출시 기준 연애 가능 캐릭터는 23명 — 마녀, 뱀파이어, 늑대인간, 예언자, 인간, 인어 등. 카드에서 각 캐릭터 페이지로 이동하세요.",
+     "sections": [
+      {
+       "type": "cards",
+       "tag": "CHAR",
+       "heading": "전체 23명",
+       "body": "",
+       "headers": [],
+       "items": [
+        {
+         "name": "Fiona",
+         "sub": "마녀",
+         "slug": "moonlight-peaks/romance/fiona"
+        },
+        {
+         "name": "Noel",
+         "sub": "마녀",
+         "slug": "moonlight-peaks/romance/noel"
+        },
+        {
+         "name": "Sabrina",
+         "sub": "마녀",
+         "slug": "moonlight-peaks/romance/sabrina"
+        },
+        {
+         "name": "Luna",
+         "sub": "마녀",
+         "slug": "moonlight-peaks/romance/luna"
+        },
+        {
+         "name": "Orlock",
+         "sub": "뱀파이어",
+         "slug": "moonlight-peaks/romance/orlock"
+        },
+        {
+         "name": "Evan",
+         "sub": "뱀파이어",
+         "slug": "moonlight-peaks/romance/evan"
+        },
+        {
+         "name": "Mina",
+         "sub": "뱀파이어",
+         "slug": ""
+        },
+        {
+         "name": "Samael",
+         "sub": "뱀파이어",
+         "slug": ""
+        },
+        {
+         "name": "Elvira",
+         "sub": "뱀파이어",
+         "slug": ""
+        },
+        {
+         "name": "Persephone",
+         "sub": "인간",
+         "slug": ""
+        },
+        {
+         "name": "Jada",
+         "sub": "인간",
+         "slug": ""
+        },
+        {
+         "name": "Winston",
+         "sub": "인간",
+         "slug": ""
+        },
+        {
+         "name": "Saga",
+         "sub": "늑대인간",
+         "slug": ""
+        },
+        {
+         "name": "Ridge",
+         "sub": "늑대인간",
+         "slug": ""
+        },
+        {
+         "name": "Ludo",
+         "sub": "늑대인간",
+         "slug": ""
+        },
+        {
+         "name": "Dragan",
+         "sub": "예언자",
+         "slug": ""
+        },
+        {
+         "name": "Alina",
+         "sub": "예언자",
+         "slug": ""
+        },
+        {
+         "name": "Aras",
+         "sub": "예언자",
+         "slug": ""
+        },
+        {
+         "name": "Death",
+         "sub": "초자연 존재",
+         "slug": ""
+        },
+        {
+         "name": "Llemi",
+         "sub": "초자연 존재",
+         "slug": ""
+        },
+        {
+         "name": "Kim",
+         "sub": "인어",
+         "slug": ""
+        },
+        {
+         "name": "Tae",
+         "sub": "인어",
+         "slug": ""
+        },
+        {
+         "name": "Rei",
+         "sub": "인어",
+         "slug": ""
+        }
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "프로필 안내",
+       "body": "",
+       "items": [
+        "각 카드는 해당 캐릭터 페이지로 연결됩니다 — 선물, 성격, 연애 노트.",
+        "아직 단독 페이지가 없는 캐릭터는 연애 가이드 전체로 연결됩니다."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "연애 가능 캐릭터는 몇 명?",
+         "출시 기준 23명(2026-07-07), 숨은 후보 포함."
+        ],
+        [
+         "단독 페이지가 없는 캐릭터도 있나요?",
+         "우선순위 순으로 추가 중 — 없는 경우도 전체 정보는 연애 가이드에 있습니다."
+        ]
+       ]
+      }
+     ]
+    },
+    "fr": {
+     "title": "Personnages : les 23 candidats romantiques",
+     "metaTitle": "Tous les personnages romantiques de Moonlight Peaks",
+     "metaDescription": "Index des 23 personnages romantiques de Moonlight Peaks : affiliation, apparition, personnalité, et liens vers leurs profils cadeaux/romance.",
+     "intro": "Moonlight Peaks compte 23 personnages romantiques au lancement — sorcières, vampires, loups-garous, voyants, humains, sirènes et plus. Cliquez sur une carte pour le profil cadeaux/romance.",
+     "sections": [
+      {
+       "type": "cards",
+       "tag": "CHAR",
+       "heading": "Les 23 personnages",
+       "body": "",
+       "headers": [],
+       "items": [
+        {
+         "name": "Fiona",
+         "sub": "Sorcière",
+         "slug": "moonlight-peaks/romance/fiona"
+        },
+        {
+         "name": "Noel",
+         "sub": "Sorcière",
+         "slug": "moonlight-peaks/romance/noel"
+        },
+        {
+         "name": "Sabrina",
+         "sub": "Sorcière",
+         "slug": "moonlight-peaks/romance/sabrina"
+        },
+        {
+         "name": "Luna",
+         "sub": "Sorcière",
+         "slug": "moonlight-peaks/romance/luna"
+        },
+        {
+         "name": "Orlock",
+         "sub": "Vampire",
+         "slug": "moonlight-peaks/romance/orlock"
+        },
+        {
+         "name": "Evan",
+         "sub": "Vampire",
+         "slug": "moonlight-peaks/romance/evan"
+        },
+        {
+         "name": "Mina",
+         "sub": "Vampire",
+         "slug": ""
+        },
+        {
+         "name": "Samael",
+         "sub": "Vampire",
+         "slug": ""
+        },
+        {
+         "name": "Elvira",
+         "sub": "Vampire",
+         "slug": ""
+        },
+        {
+         "name": "Persephone",
+         "sub": "Humain",
+         "slug": ""
+        },
+        {
+         "name": "Jada",
+         "sub": "Humain",
+         "slug": ""
+        },
+        {
+         "name": "Winston",
+         "sub": "Humain",
+         "slug": ""
+        },
+        {
+         "name": "Saga",
+         "sub": "Loup-garou",
+         "slug": ""
+        },
+        {
+         "name": "Ridge",
+         "sub": "Loup-garou",
+         "slug": ""
+        },
+        {
+         "name": "Ludo",
+         "sub": "Loup-garou",
+         "slug": ""
+        },
+        {
+         "name": "Dragan",
+         "sub": "Voyant",
+         "slug": ""
+        },
+        {
+         "name": "Alina",
+         "sub": "Voyant",
+         "slug": ""
+        },
+        {
+         "name": "Aras",
+         "sub": "Voyant",
+         "slug": ""
+        },
+        {
+         "name": "Death",
+         "sub": "Surnaturel",
+         "slug": ""
+        },
+        {
+         "name": "Llemi",
+         "sub": "Surnaturel",
+         "slug": ""
+        },
+        {
+         "name": "Kim",
+         "sub": "Sirène",
+         "slug": ""
+        },
+        {
+         "name": "Tae",
+         "sub": "Sirène",
+         "slug": ""
+        },
+        {
+         "name": "Rei",
+         "sub": "Sirène",
+         "slug": ""
+        }
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "À propos des profils",
+       "body": "",
+       "items": [
+        "Chaque carte mène au profil du personnage — cadeaux, personnalité et notes de romance.",
+        "Les personnages sans page dédiée mènent au guide romance complet."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Combien de personnages romantiques ?",
+         "23 au lancement (07/07/2026), candidats cachés inclus."
+        ],
+        [
+         "Pourquoi certains n'ont pas de page ?",
+         "Les pages arrivent par priorité — sinon, tout est dans le guide romance."
+        ]
+       ]
+      }
+     ]
+    },
+    "de": {
+     "title": "Charaktere : alle 23 Liebesoptionen",
+     "metaTitle": "Alle liebbaren Charaktere in Moonlight Peaks",
+     "metaDescription": "Index der 23 liebbaren Charaktere : Zugehörigkeit, Auftritt, Persönlichkeit und Links zu ihren Geschenk-/Romantik-Profilen.",
+     "intro": "Moonlight Peaks hat 23 liebbare Charaktere zum Start — Hexen, Vampire, Werwölfe, Seher, Menschen, Meerjungfrauen und mehr. Klicke eine Karte für das Profil.",
+     "sections": [
+      {
+       "type": "cards",
+       "tag": "CHAR",
+       "heading": "Alle 23 Charaktere",
+       "body": "",
+       "headers": [],
+       "items": [
+        {
+         "name": "Fiona",
+         "sub": "Hexe",
+         "slug": "moonlight-peaks/romance/fiona"
+        },
+        {
+         "name": "Noel",
+         "sub": "Hexe",
+         "slug": "moonlight-peaks/romance/noel"
+        },
+        {
+         "name": "Sabrina",
+         "sub": "Hexe",
+         "slug": "moonlight-peaks/romance/sabrina"
+        },
+        {
+         "name": "Luna",
+         "sub": "Hexe",
+         "slug": "moonlight-peaks/romance/luna"
+        },
+        {
+         "name": "Orlock",
+         "sub": "Vampir",
+         "slug": "moonlight-peaks/romance/orlock"
+        },
+        {
+         "name": "Evan",
+         "sub": "Vampir",
+         "slug": "moonlight-peaks/romance/evan"
+        },
+        {
+         "name": "Mina",
+         "sub": "Vampir",
+         "slug": ""
+        },
+        {
+         "name": "Samael",
+         "sub": "Vampir",
+         "slug": ""
+        },
+        {
+         "name": "Elvira",
+         "sub": "Vampir",
+         "slug": ""
+        },
+        {
+         "name": "Persephone",
+         "sub": "Mensch",
+         "slug": ""
+        },
+        {
+         "name": "Jada",
+         "sub": "Mensch",
+         "slug": ""
+        },
+        {
+         "name": "Winston",
+         "sub": "Mensch",
+         "slug": ""
+        },
+        {
+         "name": "Saga",
+         "sub": "Werwolf",
+         "slug": ""
+        },
+        {
+         "name": "Ridge",
+         "sub": "Werwolf",
+         "slug": ""
+        },
+        {
+         "name": "Ludo",
+         "sub": "Werwolf",
+         "slug": ""
+        },
+        {
+         "name": "Dragan",
+         "sub": "Seher",
+         "slug": ""
+        },
+        {
+         "name": "Alina",
+         "sub": "Seher",
+         "slug": ""
+        },
+        {
+         "name": "Aras",
+         "sub": "Seher",
+         "slug": ""
+        },
+        {
+         "name": "Death",
+         "sub": "Übernatürlich",
+         "slug": ""
+        },
+        {
+         "name": "Llemi",
+         "sub": "Übernatürlich",
+         "slug": ""
+        },
+        {
+         "name": "Kim",
+         "sub": "Meerjungfrau",
+         "slug": ""
+        },
+        {
+         "name": "Tae",
+         "sub": "Meerjungfrau",
+         "slug": ""
+        },
+        {
+         "name": "Rei",
+         "sub": "Meerjungfrau",
+         "slug": ""
+        }
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Über die Profile",
+       "body": "",
+       "items": [
+        "Jede Karte führt zum Profil — Geschenke, Persönlichkeit und Romantik-Notizen.",
+        "Charaktere ohne eigene Seite führen zum kompletten Romantik-Guide."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Wie viele Liebesoptionen?",
+         "23 beim Start (07.07.2026), inkl. versteckter Kandidaten."
+        ],
+        [
+         "Warum haben nicht alle eine Seite?",
+         "Seiten kommen nach Priorität — sonst steht alles im Romantik-Guide."
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "priority": "P0",
+   "_moon": true
+  },
+  {
+   "slug": "moonlight-peaks/romance/fiona",
+   "title": "Moonlight Peaks Fiona: Gifts, Romance & Profile",
+   "metaTitle": "Fiona (Moonlight Peaks): Gifts, Heart Events & How to…",
+   "metaDescription": "Moonlight Peaks Fiona profile: loved gifts, liked gifts, personality, when they appear and how to romance them.",
+   "intro": "Fiona is one of the romanceable characters in Moonlight Peaks. Here is their profile: the gifts they love, what they're like, and how to raise hearts.",
+   "sections": [
+    {
+     "type": "steps",
+     "tag": "STEP",
+     "heading": "Who they are",
+     "body": "",
+     "items": [
+      [
+       "Affiliation",
+       "Witch"
+      ],
+      [
+       "Appears",
+       "Spring 1 Year 1"
+      ],
+      [
+       "Personality",
+       "Aloof and uninterested at first; feuds with Orlock but hides a deeper story."
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "tag": "DATA",
+     "heading": "Gift preferences",
+     "body": "",
+     "headers": [
+      "Loved Gifts",
+      "Liked Gifts",
+      "Disliked Gifts"
+     ],
+     "rows": [
+      [
+       "White Tulips",
+       "Witch Hat, Mana Essence, Desserts, Jam",
+       "Trash, Ore, Wood"
+      ]
+     ]
+    },
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Heart events & romance",
+     "body": "",
+     "items": [
+      "Fiona's heart-event details are still being collected (待补).",
+      "Dating unlocks at Heart Level 4: talk daily and give one liked or loved gift per day."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "What gifts does Fiona love?",
+       "They love: White Tulips."
+      ],
+      [
+       "When can I romance Fiona?",
+       "Fiona appears Spring 1 Year 1; dating unlocks at Heart Level 4."
+      ],
+      [
+       "Is Fiona a secret character?",
+       "No — Fiona is dateable from the start."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "月光小镇 Fiona 角色档案：礼物与恋爱",
+     "metaTitle": "Fiona 攻略：礼物、心动事件与恋爱指南",
+     "metaDescription": "《月光小镇》Fiona 角色档案：最爱/喜欢礼物、性格、登场时间与恋爱攻略。",
+     "intro": "Fiona 是《月光小镇》的可攻略角色之一。本页是 TA 的档案：最爱的礼物、性格，以及如何提升好感。",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "TA 是谁",
+       "body": "",
+       "items": [
+        [
+         "种族",
+         "女巫"
+        ],
+        [
+         "登场时间",
+         "第 1 年春 1 日"
+        ],
+        [
+         "性格",
+         "外表疏离、对教团以外的人不感兴趣，与 Orlock 有宿怨，但隐藏着更深的故事。"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "礼物偏好",
+       "body": "",
+       "headers": [
+        "最爱礼物",
+        "喜欢礼物",
+        "讨厌礼物"
+       ],
+       "rows": [
+        [
+         "White Tulips",
+         "Witch Hat, Mana Essence, Desserts, Jam",
+         "Trash, Ore, Wood"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "心动事件与恋爱",
+       "body": "",
+       "items": [
+        "Fiona 的心动事件细节仍在收集中（待补）。",
+        "恋爱在 TA 的心数达到 4 级后解锁：每天交谈，并送一件喜欢或最爱的礼物。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Fiona 最爱什么礼物？",
+         "TA 最爱：White Tulips。"
+        ],
+        [
+         "什么时候可以和 Fiona 约会？",
+         "TA 在第 1 年春 1 日登场；心数达到 4 级即可约会。"
+        ],
+        [
+         "Fiona 是隐藏角色吗？",
+         "不是——Fiona 是首发即可攻略的角色。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "ムーンライトピークス Fiona キャラクター：贈り物と恋愛",
+     "metaTitle": "Fiona 攻略：贈り物・ハートイベント・恋愛",
+     "metaDescription": "『Moonlight Peaks』Fiona のプロフィール：大好物・好物、性格、登場時期、恋愛のコツ。",
+     "intro": "Fiona は『Moonlight Peaks』の恋愛対象の一人。大好物の贈り物、性格、好感度の上げ方をまとめました。",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "どんなキャラ？",
+       "body": "",
+       "items": [
+        [
+         "種族",
+         "魔女"
+        ],
+        [
+         "登場",
+         "1年目・春1日"
+        ],
+        [
+         "性格",
+         "よそよそしく教団以外に無関心。Orlock と対立しつつも、深い物語を秘めています。"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "贈り物の好み",
+       "body": "",
+       "headers": [
+        "大好物",
+        "好物",
+        "嫌いな物"
+       ],
+       "rows": [
+        [
+         "White Tulips",
+         "Witch Hat, Mana Essence, Desserts, Jam",
+         "Trash, Ore, Wood"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "ハートイベントと恋愛",
+       "body": "",
+       "items": [
+        "Fiona のハートイベント詳細は収集中（待補）。",
+        "ハートレベル4でデートが解放：毎日話しかけ、好物か大好物を1日1つ贈りましょう。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Fiona の大好物は？",
+         "大好物：White Tulips。"
+        ],
+        [
+         "いつから Fiona とデート？",
+         "1年目・春1日に登場。ハートレベル4でデート解放。"
+        ],
+        [
+         "Fiona は隠しキャラ？",
+         "いいえ——Fiona は最初から攻略可能です。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "문라이트 피크스 Fiona 캐릭터: 선물과 연애",
+     "metaTitle": "Fiona 공략: 선물·하트 이벤트·연애",
+     "metaDescription": "『문라이트 피크스』Fiona 프로필: 최애/좋아하는 선물, 성격, 등장 시기, 연애 공략.",
+     "intro": "Fiona은(는) 『문라이트 피크스』의 연애 가능 캐릭터 중 한 명입니다. 최애 선물, 성격, 호감도 올리는 법을 정리했습니다.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "누구인가",
+       "body": "",
+       "items": [
+        [
+         "종족",
+         "마녀"
+        ],
+        [
+         "등장",
+         "1년차 봄 1일"
+        ],
+        [
+         "성격",
+         "냉담하고 마녀단 밖에는 관심이 없지만, Orlock과의 갈등 뒤에 더 깊은 이야기를 숨기고 있습니다."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "선물 취향",
+       "body": "",
+       "headers": [
+        "최애 선물",
+        "좋아하는 선물",
+        "싫어하는 선물"
+       ],
+       "rows": [
+        [
+         "White Tulips",
+         "Witch Hat, Mana Essence, Desserts, Jam",
+         "Trash, Ore, Wood"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "하트 이벤트와 연애",
+       "body": "",
+       "items": [
+        "Fiona의 하트 이벤트 세부 내용은 수집 중(대기).",
+        "하트 레벨 4에서 데이트 해금: 매일 대화하고 좋아하거나 최애인 선물을 하루 1개 주세요."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Fiona의 최애 선물은?",
+         "최애: White Tulips."
+        ],
+        [
+         "Fiona과 언제 데이트?",
+         "1년차 봄 1일에 등장. 하트 레벨 4에서 데이트 해금."
+        ],
+        [
+         "Fiona은 숨은 캐릭터인가요?",
+         "아니요 — Fiona은(는) 처음부터 공략 가능합니다."
+        ]
+       ]
+      }
+     ]
+    },
+    "fr": {
+     "title": "Moonlight Peaks — Fiona : cadeaux et romance",
+     "metaTitle": "Fiona : cadeaux, événements de cœur et romance",
+     "metaDescription": "Profil de Fiona dans Moonlight Peaks : cadeaux adorés/aimés, personnalité, apparition et conseils de romance.",
+     "intro": "Fiona est l'un des personnages romantiques de Moonlight Peaks. Voici son profil : cadeaux adorés, personnalité et comment gagner son cœur.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "Qui est Fiona ?",
+       "body": "",
+       "items": [
+        [
+         "Affiliation",
+         "Sorcière"
+        ],
+        [
+         "Apparition",
+         "Printemps 1, année 1"
+        ],
+        [
+         "Personnalité",
+         "Distante et indifférente hors de son coven, en conflit avec Orlock — mais une histoire bien plus profonde se cache."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Cadeaux préférés",
+       "body": "",
+       "headers": [
+        "Cadeaux adorés",
+        "Cadeaux aimés",
+        "Cadeaux détestés"
+       ],
+       "rows": [
+        [
+         "White Tulips",
+         "Witch Hat, Mana Essence, Desserts, Jam",
+         "Trash, Ore, Wood"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Événements de cœur & romance",
+       "body": "",
+       "items": [
+        "Les détails des événements de cœur de Fiona sont encore en cours de collecte (à compléter).",
+        "Le rendez-vous se débloque au niveau de cœur 4 : parlez-lui chaque jour et offrez un cadeau aimé ou adoré."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Quels cadeaux Fiona adore-t-il ?",
+         "Il/elle adore : White Tulips."
+        ],
+        [
+         "Quand sortir avec Fiona ?",
+         "Apparition : Printemps 1, année 1. Le rendez-vous se débloque au niveau de cœur 4."
+        ],
+        [
+         "Fiona est-il un personnage secret ?",
+         "Non — Fiona est disponible dès le lancement."
+        ]
+       ]
+      }
+     ]
+    },
+    "de": {
+     "title": "Moonlight Peaks — Fiona : Geschenke und Romantik",
+     "metaTitle": "Fiona : Geschenke, Herz-Events und Romantik",
+     "metaDescription": "Profil von Fiona in Moonlight Peaks : geliebte/gemochte Geschenke, Persönlichkeit, Auftritt und Romantik-Tipps.",
+     "intro": "Fiona ist einer der liebbaren Charaktere in Moonlight Peaks. Hier ist das Profil : geliebte Geschenke, Persönlichkeit und wie du die Herzen steigerst.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "Wer ist Fiona ?",
+       "body": "",
+       "items": [
+        [
+         "Zugehörigkeit",
+         "Hexe"
+        ],
+        [
+         "Auftritt",
+         "Frühling 1, Jahr 1"
+        ],
+        [
+         "Persönlichkeit",
+         "Distanziert und desinteressiert außerhalb ihres Covens, im Konflikt mit Orlock — doch dahinter steckt mehr."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Geschenk-Vorlieben",
+       "body": "",
+       "headers": [
+        "Geliebte Geschenke",
+        "Gemochte Geschenke",
+        "Gehasste Geschenke"
+       ],
+       "rows": [
+        [
+         "White Tulips",
+         "Witch Hat, Mana Essence, Desserts, Jam",
+         "Trash, Ore, Wood"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Herz-Events & Romantik",
+       "body": "",
+       "items": [
+        "Die Herz-Event-Details von Fiona werden noch gesammelt (offen).",
+        "Dating schaltet bei Herz-Level 4 frei : täglich reden und ein gemochtes oder geliebtes Geschenk geben."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Welche Geschenke liebt Fiona?",
+         "Geliebt : White Tulips."
+        ],
+        [
+         "Wann mit Fiona daten?",
+         "Auftritt : Frühling 1, Jahr 1. Dating ab Herz-Level 4."
+        ],
+        [
+         "Ist Fiona ein geheimer Charakter?",
+         "Nein — Fiona ist ab dem Start verfügbar."
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "priority": "P0",
+   "_moon": true
+  },
+  {
+   "slug": "moonlight-peaks/romance/noel",
+   "title": "Moonlight Peaks Noel: Gifts, Romance & Profile",
+   "metaTitle": "Noel (Moonlight Peaks): Gifts, Heart Events & How to R…",
+   "metaDescription": "Moonlight Peaks Noel profile: loved gifts, liked gifts, personality, when they appear and how to romance them.",
+   "intro": "Noel is one of the romanceable characters in Moonlight Peaks. Here is their profile: the gifts they love, what they're like, and how to raise hearts.",
+   "sections": [
+    {
+     "type": "steps",
+     "tag": "STEP",
+     "heading": "Who they are",
+     "body": "",
+     "items": [
+      [
+       "Affiliation",
+       "Witch"
+      ],
+      [
+       "Appears",
+       "Spring 1 Year 1"
+      ],
+      [
+       "Personality",
+       "Arrogant, self-interested, prefers fishing — his haughty side hides insecurities."
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "tag": "DATA",
+     "heading": "Gift preferences",
+     "body": "",
+     "headers": [
+      "Loved Gifts",
+      "Liked Gifts",
+      "Disliked Gifts"
+     ],
+     "rows": [
+      [
+       "Mana Coffee, Mana Wine, Mana Potion",
+       "Mana Chocolate, Mana Moon Cupcake, Diamond",
+       "Fish, Trash"
+      ]
+     ]
+    },
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Heart events & romance",
+     "body": "",
+     "items": [
+      "Noel's heart-event details are still being collected (待补).",
+      "Dating unlocks at Heart Level 4: talk daily and give one liked or loved gift per day."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "What gifts does Noel love?",
+       "They love: Mana Coffee, Mana Wine, Mana Potion."
+      ],
+      [
+       "When can I romance Noel?",
+       "Noel appears Spring 1 Year 1; dating unlocks at Heart Level 4."
+      ],
+      [
+       "Is Noel a secret character?",
+       "No — Noel is dateable from the start."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "月光小镇 Noel 角色档案：礼物与恋爱",
+     "metaTitle": "Noel 攻略：礼物、心动事件与恋爱指南",
+     "metaDescription": "《月光小镇》Noel 角色档案：最爱/喜欢礼物、性格、登场时间与恋爱攻略。",
+     "intro": "Noel 是《月光小镇》的可攻略角色之一。本页是 TA 的档案：最爱的礼物、性格，以及如何提升好感。",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "TA 是谁",
+       "body": "",
+       "items": [
+        [
+         "种族",
+         "女巫"
+        ],
+        [
+         "登场时间",
+         "第 1 年春 1 日"
+        ],
+        [
+         "性格",
+         "傲慢、只顾自己，最爱钓鱼——高傲只是掩饰不安的面具。"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "礼物偏好",
+       "body": "",
+       "headers": [
+        "最爱礼物",
+        "喜欢礼物",
+        "讨厌礼物"
+       ],
+       "rows": [
+        [
+         "Mana Coffee, Mana Wine, Mana Potion",
+         "Mana Chocolate, Mana Moon Cupcake, Diamond",
+         "Fish, Trash"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "心动事件与恋爱",
+       "body": "",
+       "items": [
+        "Noel 的心动事件细节仍在收集中（待补）。",
+        "恋爱在 TA 的心数达到 4 级后解锁：每天交谈，并送一件喜欢或最爱的礼物。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Noel 最爱什么礼物？",
+         "TA 最爱：Mana Coffee, Mana Wine, Mana Potion。"
+        ],
+        [
+         "什么时候可以和 Noel 约会？",
+         "TA 在第 1 年春 1 日登场；心数达到 4 级即可约会。"
+        ],
+        [
+         "Noel 是隐藏角色吗？",
+         "不是——Noel 是首发即可攻略的角色。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "ムーンライトピークス Noel キャラクター：贈り物と恋愛",
+     "metaTitle": "Noel 攻略：贈り物・ハートイベント・恋愛",
+     "metaDescription": "『Moonlight Peaks』Noel のプロフィール：大好物・好物、性格、登場時期、恋愛のコツ。",
+     "intro": "Noel は『Moonlight Peaks』の恋愛対象の一人。大好物の贈り物、性格、好感度の上げ方をまとめました。",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "どんなキャラ？",
+       "body": "",
+       "items": [
+        [
+         "種族",
+         "魔女"
+        ],
+        [
+         "登場",
+         "1年目・春1日"
+        ],
+        [
+         "性格",
+         "傲慢で自己中心的、釣りが大好き。尊大さは不安を隠す仮面かもしれません。"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "贈り物の好み",
+       "body": "",
+       "headers": [
+        "大好物",
+        "好物",
+        "嫌いな物"
+       ],
+       "rows": [
+        [
+         "Mana Coffee, Mana Wine, Mana Potion",
+         "Mana Chocolate, Mana Moon Cupcake, Diamond",
+         "Fish, Trash"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "ハートイベントと恋愛",
+       "body": "",
+       "items": [
+        "Noel のハートイベント詳細は収集中（待補）。",
+        "ハートレベル4でデートが解放：毎日話しかけ、好物か大好物を1日1つ贈りましょう。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Noel の大好物は？",
+         "大好物：Mana Coffee, Mana Wine, Mana Potion。"
+        ],
+        [
+         "いつから Noel とデート？",
+         "1年目・春1日に登場。ハートレベル4でデート解放。"
+        ],
+        [
+         "Noel は隠しキャラ？",
+         "いいえ——Noel は最初から攻略可能です。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "문라이트 피크스 Noel 캐릭터: 선물과 연애",
+     "metaTitle": "Noel 공략: 선물·하트 이벤트·연애",
+     "metaDescription": "『문라이트 피크스』Noel 프로필: 최애/좋아하는 선물, 성격, 등장 시기, 연애 공략.",
+     "intro": "Noel은(는) 『문라이트 피크스』의 연애 가능 캐릭터 중 한 명입니다. 최애 선물, 성격, 호감도 올리는 법을 정리했습니다.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "누구인가",
+       "body": "",
+       "items": [
+        [
+         "종족",
+         "마녀"
+        ],
+        [
+         "등장",
+         "1년차 봄 1일"
+        ],
+        [
+         "성격",
+         "거만하고 자기중심적, 낚시를 제일 좋아합니다. 거만함은 불안을 감추는 가면일지도."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "선물 취향",
+       "body": "",
+       "headers": [
+        "최애 선물",
+        "좋아하는 선물",
+        "싫어하는 선물"
+       ],
+       "rows": [
+        [
+         "Mana Coffee, Mana Wine, Mana Potion",
+         "Mana Chocolate, Mana Moon Cupcake, Diamond",
+         "Fish, Trash"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "하트 이벤트와 연애",
+       "body": "",
+       "items": [
+        "Noel의 하트 이벤트 세부 내용은 수집 중(대기).",
+        "하트 레벨 4에서 데이트 해금: 매일 대화하고 좋아하거나 최애인 선물을 하루 1개 주세요."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Noel의 최애 선물은?",
+         "최애: Mana Coffee, Mana Wine, Mana Potion."
+        ],
+        [
+         "Noel과 언제 데이트?",
+         "1년차 봄 1일에 등장. 하트 레벨 4에서 데이트 해금."
+        ],
+        [
+         "Noel은 숨은 캐릭터인가요?",
+         "아니요 — Noel은(는) 처음부터 공략 가능합니다."
+        ]
+       ]
+      }
+     ]
+    },
+    "fr": {
+     "title": "Moonlight Peaks — Noel : cadeaux et romance",
+     "metaTitle": "Noel : cadeaux, événements de cœur et romance",
+     "metaDescription": "Profil de Noel dans Moonlight Peaks : cadeaux adorés/aimés, personnalité, apparition et conseils de romance.",
+     "intro": "Noel est l'un des personnages romantiques de Moonlight Peaks. Voici son profil : cadeaux adorés, personnalité et comment gagner son cœur.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "Qui est Noel ?",
+       "body": "",
+       "items": [
+        [
+         "Affiliation",
+         "Sorcière"
+        ],
+        [
+         "Apparition",
+         "Printemps 1, année 1"
+        ],
+        [
+         "Personnalité",
+         "Arrogant et égocentrique, préfère la pêche — son côté hautain masque ses insécurités."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Cadeaux préférés",
+       "body": "",
+       "headers": [
+        "Cadeaux adorés",
+        "Cadeaux aimés",
+        "Cadeaux détestés"
+       ],
+       "rows": [
+        [
+         "Mana Coffee, Mana Wine, Mana Potion",
+         "Mana Chocolate, Mana Moon Cupcake, Diamond",
+         "Fish, Trash"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Événements de cœur & romance",
+       "body": "",
+       "items": [
+        "Les détails des événements de cœur de Noel sont encore en cours de collecte (à compléter).",
+        "Le rendez-vous se débloque au niveau de cœur 4 : parlez-lui chaque jour et offrez un cadeau aimé ou adoré."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Quels cadeaux Noel adore-t-il ?",
+         "Il/elle adore : Mana Coffee, Mana Wine, Mana Potion."
+        ],
+        [
+         "Quand sortir avec Noel ?",
+         "Apparition : Printemps 1, année 1. Le rendez-vous se débloque au niveau de cœur 4."
+        ],
+        [
+         "Noel est-il un personnage secret ?",
+         "Non — Noel est disponible dès le lancement."
+        ]
+       ]
+      }
+     ]
+    },
+    "de": {
+     "title": "Moonlight Peaks — Noel : Geschenke und Romantik",
+     "metaTitle": "Noel : Geschenke, Herz-Events und Romantik",
+     "metaDescription": "Profil von Noel in Moonlight Peaks : geliebte/gemochte Geschenke, Persönlichkeit, Auftritt und Romantik-Tipps.",
+     "intro": "Noel ist einer der liebbaren Charaktere in Moonlight Peaks. Hier ist das Profil : geliebte Geschenke, Persönlichkeit und wie du die Herzen steigerst.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "Wer ist Noel ?",
+       "body": "",
+       "items": [
+        [
+         "Zugehörigkeit",
+         "Hexe"
+        ],
+        [
+         "Auftritt",
+         "Frühling 1, Jahr 1"
+        ],
+        [
+         "Persönlichkeit",
+         "Arrogant und selbstbezogen, angelt am liebsten — sein Hochmut kaschiert Unsicherheiten."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Geschenk-Vorlieben",
+       "body": "",
+       "headers": [
+        "Geliebte Geschenke",
+        "Gemochte Geschenke",
+        "Gehasste Geschenke"
+       ],
+       "rows": [
+        [
+         "Mana Coffee, Mana Wine, Mana Potion",
+         "Mana Chocolate, Mana Moon Cupcake, Diamond",
+         "Fish, Trash"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Herz-Events & Romantik",
+       "body": "",
+       "items": [
+        "Die Herz-Event-Details von Noel werden noch gesammelt (offen).",
+        "Dating schaltet bei Herz-Level 4 frei : täglich reden und ein gemochtes oder geliebtes Geschenk geben."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Welche Geschenke liebt Noel?",
+         "Geliebt : Mana Coffee, Mana Wine, Mana Potion."
+        ],
+        [
+         "Wann mit Noel daten?",
+         "Auftritt : Frühling 1, Jahr 1. Dating ab Herz-Level 4."
+        ],
+        [
+         "Ist Noel ein geheimer Charakter?",
+         "Nein — Noel ist ab dem Start verfügbar."
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "priority": "P0",
+   "_moon": true
+  },
+  {
+   "slug": "moonlight-peaks/romance/sabrina",
+   "title": "Moonlight Peaks Sabrina: Gifts, Romance & Profile",
+   "metaTitle": "Sabrina (Moonlight Peaks): Gifts, Heart Events & How t…",
+   "metaDescription": "Moonlight Peaks Sabrina profile: loved gifts, liked gifts, personality, when they appear and how to romance them.",
+   "intro": "Sabrina is one of the romanceable characters in Moonlight Peaks. Here is their profile: the gifts they love, what they're like, and how to raise hearts.",
+   "sections": [
+    {
+     "type": "steps",
+     "tag": "STEP",
+     "heading": "Who they are",
+     "body": "",
+     "items": [
+      [
+       "Affiliation",
+       "Witch"
+      ],
+      [
+       "Appears",
+       "Spring 1 Year 1"
+      ],
+      [
+       "Personality",
+       "Dedicated witch, clever, sometimes overwhelmed by her family."
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "tag": "DATA",
+     "heading": "Gift preferences",
+     "body": "",
+     "headers": [
+      "Loved Gifts",
+      "Liked Gifts",
+      "Disliked Gifts"
+     ],
+     "rows": [
+      [
+       "Purple Flowers, Flower Pots, Mana Items",
+       "Witch Hat, Diamond, Houseplants",
+       "Trash, Ore, Fish"
+      ]
+     ]
+    },
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Heart events & romance",
+     "body": "",
+     "items": [
+      "Sabrina's heart-event details are still being collected (待补).",
+      "Dating unlocks at Heart Level 4: talk daily and give one liked or loved gift per day."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "What gifts does Sabrina love?",
+       "They love: Purple Flowers, Flower Pots, Mana Items."
+      ],
+      [
+       "When can I romance Sabrina?",
+       "Sabrina appears Spring 1 Year 1; dating unlocks at Heart Level 4."
+      ],
+      [
+       "Is Sabrina a secret character?",
+       "No — Sabrina is dateable from the start."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "月光小镇 Sabrina 角色档案：礼物与恋爱",
+     "metaTitle": "Sabrina 攻略：礼物、心动事件与恋爱指南",
+     "metaDescription": "《月光小镇》Sabrina 角色档案：最爱/喜欢礼物、性格、登场时间与恋爱攻略。",
+     "intro": "Sabrina 是《月光小镇》的可攻略角色之一。本页是 TA 的档案：最爱的礼物、性格，以及如何提升好感。",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "TA 是谁",
+       "body": "",
+       "items": [
+        [
+         "种族",
+         "女巫"
+        ],
+        [
+         "登场时间",
+         "第 1 年春 1 日"
+        ],
+        [
+         "性格",
+         "专注的女巫，痴迷实验，聪明，偶尔被家族事务压得喘不过气。"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "礼物偏好",
+       "body": "",
+       "headers": [
+        "最爱礼物",
+        "喜欢礼物",
+        "讨厌礼物"
+       ],
+       "rows": [
+        [
+         "Purple Flowers, Flower Pots, Mana Items",
+         "Witch Hat, Diamond, Houseplants",
+         "Trash, Ore, Fish"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "心动事件与恋爱",
+       "body": "",
+       "items": [
+        "Sabrina 的心动事件细节仍在收集中（待补）。",
+        "恋爱在 TA 的心数达到 4 级后解锁：每天交谈，并送一件喜欢或最爱的礼物。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Sabrina 最爱什么礼物？",
+         "TA 最爱：Purple Flowers, Flower Pots, Mana Items。"
+        ],
+        [
+         "什么时候可以和 Sabrina 约会？",
+         "TA 在第 1 年春 1 日登场；心数达到 4 级即可约会。"
+        ],
+        [
+         "Sabrina 是隐藏角色吗？",
+         "不是——Sabrina 是首发即可攻略的角色。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "ムーンライトピークス Sabrina キャラクター：贈り物と恋愛",
+     "metaTitle": "Sabrina 攻略：贈り物・ハートイベント・恋愛",
+     "metaDescription": "『Moonlight Peaks』Sabrina のプロフィール：大好物・好物、性格、登場時期、恋愛のコツ。",
+     "intro": "Sabrina は『Moonlight Peaks』の恋愛対象の一人。大好物の贈り物、性格、好感度の上げ方をまとめました。",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "どんなキャラ？",
+       "body": "",
+       "items": [
+        [
+         "種族",
+         "魔女"
+        ],
+        [
+         "登場",
+         "1年目・春1日"
+        ],
+        [
+         "性格",
+         "実験に夢中な真面目な魔女。賢く、家族のことで時々圧倒されます。"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "贈り物の好み",
+       "body": "",
+       "headers": [
+        "大好物",
+        "好物",
+        "嫌いな物"
+       ],
+       "rows": [
+        [
+         "Purple Flowers, Flower Pots, Mana Items",
+         "Witch Hat, Diamond, Houseplants",
+         "Trash, Ore, Fish"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "ハートイベントと恋愛",
+       "body": "",
+       "items": [
+        "Sabrina のハートイベント詳細は収集中（待補）。",
+        "ハートレベル4でデートが解放：毎日話しかけ、好物か大好物を1日1つ贈りましょう。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Sabrina の大好物は？",
+         "大好物：Purple Flowers, Flower Pots, Mana Items。"
+        ],
+        [
+         "いつから Sabrina とデート？",
+         "1年目・春1日に登場。ハートレベル4でデート解放。"
+        ],
+        [
+         "Sabrina は隠しキャラ？",
+         "いいえ——Sabrina は最初から攻略可能です。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "문라이트 피크스 Sabrina 캐릭터: 선물과 연애",
+     "metaTitle": "Sabrina 공략: 선물·하트 이벤트·연애",
+     "metaDescription": "『문라이트 피크스』Sabrina 프로필: 최애/좋아하는 선물, 성격, 등장 시기, 연애 공략.",
+     "intro": "Sabrina은(는) 『문라이트 피크스』의 연애 가능 캐릭터 중 한 명입니다. 최애 선물, 성격, 호감도 올리는 법을 정리했습니다.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "누구인가",
+       "body": "",
+       "items": [
+        [
+         "종족",
+         "마녀"
+        ],
+        [
+         "등장",
+         "1년차 봄 1일"
+        ],
+        [
+         "성격",
+         "실험에 몰두하는 성실한 마녀. 똑똑하지만 가족 문제에 가끔 압도됩니다."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "선물 취향",
+       "body": "",
+       "headers": [
+        "최애 선물",
+        "좋아하는 선물",
+        "싫어하는 선물"
+       ],
+       "rows": [
+        [
+         "Purple Flowers, Flower Pots, Mana Items",
+         "Witch Hat, Diamond, Houseplants",
+         "Trash, Ore, Fish"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "하트 이벤트와 연애",
+       "body": "",
+       "items": [
+        "Sabrina의 하트 이벤트 세부 내용은 수집 중(대기).",
+        "하트 레벨 4에서 데이트 해금: 매일 대화하고 좋아하거나 최애인 선물을 하루 1개 주세요."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Sabrina의 최애 선물은?",
+         "최애: Purple Flowers, Flower Pots, Mana Items."
+        ],
+        [
+         "Sabrina과 언제 데이트?",
+         "1년차 봄 1일에 등장. 하트 레벨 4에서 데이트 해금."
+        ],
+        [
+         "Sabrina은 숨은 캐릭터인가요?",
+         "아니요 — Sabrina은(는) 처음부터 공략 가능합니다."
+        ]
+       ]
+      }
+     ]
+    },
+    "fr": {
+     "title": "Moonlight Peaks — Sabrina : cadeaux et romance",
+     "metaTitle": "Sabrina : cadeaux, événements de cœur et romance",
+     "metaDescription": "Profil de Sabrina dans Moonlight Peaks : cadeaux adorés/aimés, personnalité, apparition et conseils de romance.",
+     "intro": "Sabrina est l'un des personnages romantiques de Moonlight Peaks. Voici son profil : cadeaux adorés, personnalité et comment gagner son cœur.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "Qui est Sabrina ?",
+       "body": "",
+       "items": [
+        [
+         "Affiliation",
+         "Sorcière"
+        ],
+        [
+         "Apparition",
+         "Printemps 1, année 1"
+        ],
+        [
+         "Personnalité",
+         "Sorcière dévouée, passionnée d'expérimentation, intelligente, parfois dépassée par sa famille."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Cadeaux préférés",
+       "body": "",
+       "headers": [
+        "Cadeaux adorés",
+        "Cadeaux aimés",
+        "Cadeaux détestés"
+       ],
+       "rows": [
+        [
+         "Purple Flowers, Flower Pots, Mana Items",
+         "Witch Hat, Diamond, Houseplants",
+         "Trash, Ore, Fish"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Événements de cœur & romance",
+       "body": "",
+       "items": [
+        "Les détails des événements de cœur de Sabrina sont encore en cours de collecte (à compléter).",
+        "Le rendez-vous se débloque au niveau de cœur 4 : parlez-lui chaque jour et offrez un cadeau aimé ou adoré."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Quels cadeaux Sabrina adore-t-il ?",
+         "Il/elle adore : Purple Flowers, Flower Pots, Mana Items."
+        ],
+        [
+         "Quand sortir avec Sabrina ?",
+         "Apparition : Printemps 1, année 1. Le rendez-vous se débloque au niveau de cœur 4."
+        ],
+        [
+         "Sabrina est-il un personnage secret ?",
+         "Non — Sabrina est disponible dès le lancement."
+        ]
+       ]
+      }
+     ]
+    },
+    "de": {
+     "title": "Moonlight Peaks — Sabrina : Geschenke und Romantik",
+     "metaTitle": "Sabrina : Geschenke, Herz-Events und Romantik",
+     "metaDescription": "Profil von Sabrina in Moonlight Peaks : geliebte/gemochte Geschenke, Persönlichkeit, Auftritt und Romantik-Tipps.",
+     "intro": "Sabrina ist einer der liebbaren Charaktere in Moonlight Peaks. Hier ist das Profil : geliebte Geschenke, Persönlichkeit und wie du die Herzen steigerst.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "Wer ist Sabrina ?",
+       "body": "",
+       "items": [
+        [
+         "Zugehörigkeit",
+         "Hexe"
+        ],
+        [
+         "Auftritt",
+         "Frühling 1, Jahr 1"
+        ],
+        [
+         "Persönlichkeit",
+         "Hingebungsvolle Hexe, experimentierfreudig, klug, manchmal von ihrer Familie überwältigt."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Geschenk-Vorlieben",
+       "body": "",
+       "headers": [
+        "Geliebte Geschenke",
+        "Gemochte Geschenke",
+        "Gehasste Geschenke"
+       ],
+       "rows": [
+        [
+         "Purple Flowers, Flower Pots, Mana Items",
+         "Witch Hat, Diamond, Houseplants",
+         "Trash, Ore, Fish"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Herz-Events & Romantik",
+       "body": "",
+       "items": [
+        "Die Herz-Event-Details von Sabrina werden noch gesammelt (offen).",
+        "Dating schaltet bei Herz-Level 4 frei : täglich reden und ein gemochtes oder geliebtes Geschenk geben."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Welche Geschenke liebt Sabrina?",
+         "Geliebt : Purple Flowers, Flower Pots, Mana Items."
+        ],
+        [
+         "Wann mit Sabrina daten?",
+         "Auftritt : Frühling 1, Jahr 1. Dating ab Herz-Level 4."
+        ],
+        [
+         "Ist Sabrina ein geheimer Charakter?",
+         "Nein — Sabrina ist ab dem Start verfügbar."
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "priority": "P0",
+   "_moon": true
+  },
+  {
+   "slug": "moonlight-peaks/romance/luna",
+   "title": "Moonlight Peaks Luna: Gifts, Romance & Profile",
+   "metaTitle": "Luna (Moonlight Peaks): Gifts, Heart Events & How to R…",
+   "metaDescription": "Moonlight Peaks Luna profile: loved gifts, liked gifts, personality, when they appear and how to romance them.",
+   "intro": "Luna is one of the romanceable characters in Moonlight Peaks. Here is their profile: the gifts they love, what they're like, and how to raise hearts.",
+   "sections": [
+    {
+     "type": "steps",
+     "tag": "STEP",
+     "heading": "Who they are",
+     "body": "",
+     "items": [
+      [
+       "Affiliation",
+       "Witch"
+      ],
+      [
+       "Appears",
+       "Spring 1 Year 1"
+      ],
+      [
+       "Personality",
+       "Enigmatic, spends time in her garden; knows a lot about magic."
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "tag": "DATA",
+     "heading": "Gift preferences",
+     "body": "",
+     "headers": [
+      "Loved Gifts",
+      "Liked Gifts",
+      "Disliked Gifts"
+     ],
+     "rows": [
+      [
+       "Any Flowers",
+       "Flower Pots, Houseplants, Mana Items, Juices",
+       "Trash, Wood, Ore"
+      ]
+     ]
+    },
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Heart events & romance",
+     "body": "",
+     "items": [
+      "Luna's heart-event details are still being collected (待补).",
+      "Dating unlocks at Heart Level 4: talk daily and give one liked or loved gift per day."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "What gifts does Luna love?",
+       "They love: Any Flowers."
+      ],
+      [
+       "When can I romance Luna?",
+       "Luna appears Spring 1 Year 1; dating unlocks at Heart Level 4."
+      ],
+      [
+       "Is Luna a secret character?",
+       "No — Luna is dateable from the start."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "月光小镇 Luna 角色档案：礼物与恋爱",
+     "metaTitle": "Luna 攻略：礼物、心动事件与恋爱指南",
+     "metaDescription": "《月光小镇》Luna 角色档案：最爱/喜欢礼物、性格、登场时间与恋爱攻略。",
+     "intro": "Luna 是《月光小镇》的可攻略角色之一。本页是 TA 的档案：最爱的礼物、性格，以及如何提升好感。",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "TA 是谁",
+       "body": "",
+       "items": [
+        [
+         "种族",
+         "女巫"
+        ],
+        [
+         "登场时间",
+         "第 1 年春 1 日"
+        ],
+        [
+         "性格",
+         "神秘莫测，大部分时间待在花园或照料动物，对魔法造诣很深。"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "礼物偏好",
+       "body": "",
+       "headers": [
+        "最爱礼物",
+        "喜欢礼物",
+        "讨厌礼物"
+       ],
+       "rows": [
+        [
+         "Any Flowers",
+         "Flower Pots, Houseplants, Mana Items, Juices",
+         "Trash, Wood, Ore"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "心动事件与恋爱",
+       "body": "",
+       "items": [
+        "Luna 的心动事件细节仍在收集中（待补）。",
+        "恋爱在 TA 的心数达到 4 级后解锁：每天交谈，并送一件喜欢或最爱的礼物。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Luna 最爱什么礼物？",
+         "TA 最爱：Any Flowers。"
+        ],
+        [
+         "什么时候可以和 Luna 约会？",
+         "TA 在第 1 年春 1 日登场；心数达到 4 级即可约会。"
+        ],
+        [
+         "Luna 是隐藏角色吗？",
+         "不是——Luna 是首发即可攻略的角色。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "ムーンライトピークス Luna キャラクター：贈り物と恋愛",
+     "metaTitle": "Luna 攻略：贈り物・ハートイベント・恋愛",
+     "metaDescription": "『Moonlight Peaks』Luna のプロフィール：大好物・好物、性格、登場時期、恋愛のコツ。",
+     "intro": "Luna は『Moonlight Peaks』の恋愛対象の一人。大好物の贈り物、性格、好感度の上げ方をまとめました。",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "どんなキャラ？",
+       "body": "",
+       "items": [
+        [
+         "種族",
+         "魔女"
+        ],
+        [
+         "登場",
+         "1年目・春1日"
+        ],
+        [
+         "性格",
+         "謎めいた存在。庭仕事と動物の世話に忙しく、魔法に詳しい。"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "贈り物の好み",
+       "body": "",
+       "headers": [
+        "大好物",
+        "好物",
+        "嫌いな物"
+       ],
+       "rows": [
+        [
+         "Any Flowers",
+         "Flower Pots, Houseplants, Mana Items, Juices",
+         "Trash, Wood, Ore"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "ハートイベントと恋愛",
+       "body": "",
+       "items": [
+        "Luna のハートイベント詳細は収集中（待補）。",
+        "ハートレベル4でデートが解放：毎日話しかけ、好物か大好物を1日1つ贈りましょう。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Luna の大好物は？",
+         "大好物：Any Flowers。"
+        ],
+        [
+         "いつから Luna とデート？",
+         "1年目・春1日に登場。ハートレベル4でデート解放。"
+        ],
+        [
+         "Luna は隠しキャラ？",
+         "いいえ——Luna は最初から攻略可能です。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "문라이트 피크스 Luna 캐릭터: 선물과 연애",
+     "metaTitle": "Luna 공략: 선물·하트 이벤트·연애",
+     "metaDescription": "『문라이트 피크스』Luna 프로필: 최애/좋아하는 선물, 성격, 등장 시기, 연애 공략.",
+     "intro": "Luna은(는) 『문라이트 피크스』의 연애 가능 캐릭터 중 한 명입니다. 최애 선물, 성격, 호감도 올리는 법을 정리했습니다.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "누구인가",
+       "body": "",
+       "items": [
+        [
+         "종족",
+         "마녀"
+        ],
+        [
+         "등장",
+         "1년차 봄 1일"
+        ],
+        [
+         "성격",
+         "수수께끼 같은 존재. 정원과 동물 돌보기에 바쁘고, 마법에 대해 잘 압니다."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "선물 취향",
+       "body": "",
+       "headers": [
+        "최애 선물",
+        "좋아하는 선물",
+        "싫어하는 선물"
+       ],
+       "rows": [
+        [
+         "Any Flowers",
+         "Flower Pots, Houseplants, Mana Items, Juices",
+         "Trash, Wood, Ore"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "하트 이벤트와 연애",
+       "body": "",
+       "items": [
+        "Luna의 하트 이벤트 세부 내용은 수집 중(대기).",
+        "하트 레벨 4에서 데이트 해금: 매일 대화하고 좋아하거나 최애인 선물을 하루 1개 주세요."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Luna의 최애 선물은?",
+         "최애: Any Flowers."
+        ],
+        [
+         "Luna과 언제 데이트?",
+         "1년차 봄 1일에 등장. 하트 레벨 4에서 데이트 해금."
+        ],
+        [
+         "Luna은 숨은 캐릭터인가요?",
+         "아니요 — Luna은(는) 처음부터 공략 가능합니다."
+        ]
+       ]
+      }
+     ]
+    },
+    "fr": {
+     "title": "Moonlight Peaks — Luna : cadeaux et romance",
+     "metaTitle": "Luna : cadeaux, événements de cœur et romance",
+     "metaDescription": "Profil de Luna dans Moonlight Peaks : cadeaux adorés/aimés, personnalité, apparition et conseils de romance.",
+     "intro": "Luna est l'un des personnages romantiques de Moonlight Peaks. Voici son profil : cadeaux adorés, personnalité et comment gagner son cœur.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "Qui est Luna ?",
+       "body": "",
+       "items": [
+        [
+         "Affiliation",
+         "Sorcière"
+        ],
+        [
+         "Apparition",
+         "Printemps 1, année 1"
+        ],
+        [
+         "Personnalité",
+         "Personnage énigmatique, passe son temps au jardin ; sait beaucoup sur la magie."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Cadeaux préférés",
+       "body": "",
+       "headers": [
+        "Cadeaux adorés",
+        "Cadeaux aimés",
+        "Cadeaux détestés"
+       ],
+       "rows": [
+        [
+         "Any Flowers",
+         "Flower Pots, Houseplants, Mana Items, Juices",
+         "Trash, Wood, Ore"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Événements de cœur & romance",
+       "body": "",
+       "items": [
+        "Les détails des événements de cœur de Luna sont encore en cours de collecte (à compléter).",
+        "Le rendez-vous se débloque au niveau de cœur 4 : parlez-lui chaque jour et offrez un cadeau aimé ou adoré."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Quels cadeaux Luna adore-t-il ?",
+         "Il/elle adore : Any Flowers."
+        ],
+        [
+         "Quand sortir avec Luna ?",
+         "Apparition : Printemps 1, année 1. Le rendez-vous se débloque au niveau de cœur 4."
+        ],
+        [
+         "Luna est-il un personnage secret ?",
+         "Non — Luna est disponible dès le lancement."
+        ]
+       ]
+      }
+     ]
+    },
+    "de": {
+     "title": "Moonlight Peaks — Luna : Geschenke und Romantik",
+     "metaTitle": "Luna : Geschenke, Herz-Events und Romantik",
+     "metaDescription": "Profil von Luna in Moonlight Peaks : geliebte/gemochte Geschenke, Persönlichkeit, Auftritt und Romantik-Tipps.",
+     "intro": "Luna ist einer der liebbaren Charaktere in Moonlight Peaks. Hier ist das Profil : geliebte Geschenke, Persönlichkeit und wie du die Herzen steigerst.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "Wer ist Luna ?",
+       "body": "",
+       "items": [
+        [
+         "Zugehörigkeit",
+         "Hexe"
+        ],
+        [
+         "Auftritt",
+         "Frühling 1, Jahr 1"
+        ],
+        [
+         "Persönlichkeit",
+         "Rätselhafte Figur, meist im Garten; weiß viel über Magie."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Geschenk-Vorlieben",
+       "body": "",
+       "headers": [
+        "Geliebte Geschenke",
+        "Gemochte Geschenke",
+        "Gehasste Geschenke"
+       ],
+       "rows": [
+        [
+         "Any Flowers",
+         "Flower Pots, Houseplants, Mana Items, Juices",
+         "Trash, Wood, Ore"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Herz-Events & Romantik",
+       "body": "",
+       "items": [
+        "Die Herz-Event-Details von Luna werden noch gesammelt (offen).",
+        "Dating schaltet bei Herz-Level 4 frei : täglich reden und ein gemochtes oder geliebtes Geschenk geben."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Welche Geschenke liebt Luna?",
+         "Geliebt : Any Flowers."
+        ],
+        [
+         "Wann mit Luna daten?",
+         "Auftritt : Frühling 1, Jahr 1. Dating ab Herz-Level 4."
+        ],
+        [
+         "Ist Luna ein geheimer Charakter?",
+         "Nein — Luna ist ab dem Start verfügbar."
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "priority": "P0",
+   "_moon": true
+  },
+  {
+   "slug": "moonlight-peaks/romance/orlock",
+   "title": "Moonlight Peaks Orlock: Gifts, Romance & Profile",
+   "metaTitle": "Orlock (Moonlight Peaks): Gifts, Heart Events & How to…",
+   "metaDescription": "Moonlight Peaks Orlock profile: loved gifts, liked gifts, personality, when they appear and how to romance them.",
+   "intro": "Orlock is one of the romanceable characters in Moonlight Peaks. Here is their profile: the gifts they love, what they're like, and how to raise hearts.",
+   "sections": [
+    {
+     "type": "steps",
+     "tag": "STEP",
+     "heading": "Who they are",
+     "body": "",
+     "items": [
+      [
+       "Affiliation",
+       "Vampire"
+      ],
+      [
+       "Appears",
+       "Spring 1 Year 1"
+      ],
+      [
+       "Personality",
+       "Haunted vampire with an alcohol problem; a romantic, raw side blooms as he recovers."
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "tag": "DATA",
+     "heading": "Gift preferences",
+     "body": "",
+     "headers": [
+      "Loved Gifts",
+      "Liked Gifts",
+      "Disliked Gifts"
+     ],
+     "rows": [
+      [
+       "Red Rose, Red Wine, White Wine, Mana Wine",
+       "Beer, Eggnog, Cupcakes, Irish Coffee",
+       "Trash, Wood, Ore"
+      ]
+     ]
+    },
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Heart events & romance",
+     "body": "",
+     "items": [
+      "Orlock's heart-event details are still being collected (待补).",
+      "Dating unlocks at Heart Level 4: talk daily and give one liked or loved gift per day."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "What gifts does Orlock love?",
+       "They love: Red Rose, Red Wine, White Wine, Mana Wine."
+      ],
+      [
+       "When can I romance Orlock?",
+       "Orlock appears Spring 1 Year 1; dating unlocks at Heart Level 4."
+      ],
+      [
+       "Is Orlock a secret character?",
+       "No — Orlock is dateable from the start."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "月光小镇 Orlock 角色档案：礼物与恋爱",
+     "metaTitle": "Orlock 攻略：礼物、心动事件与恋爱指南",
+     "metaDescription": "《月光小镇》Orlock 角色档案：最爱/喜欢礼物、性格、登场时间与恋爱攻略。",
+     "intro": "Orlock 是《月光小镇》的可攻略角色之一。本页是 TA 的档案：最爱的礼物、性格，以及如何提升好感。",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "TA 是谁",
+       "body": "",
+       "items": [
+        [
+         "种族",
+         "吸血鬼"
+        ],
+        [
+         "登场时间",
+         "第 1 年春 1 日"
+        ],
+        [
+         "性格",
+         "饱受过去阴影折磨、有酗酒问题的吸血鬼；随着康复，浪漫而真挚的一面会绽放。"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "礼物偏好",
+       "body": "",
+       "headers": [
+        "最爱礼物",
+        "喜欢礼物",
+        "讨厌礼物"
+       ],
+       "rows": [
+        [
+         "Red Rose, Red Wine, White Wine, Mana Wine",
+         "Beer, Eggnog, Cupcakes, Irish Coffee",
+         "Trash, Wood, Ore"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "心动事件与恋爱",
+       "body": "",
+       "items": [
+        "Orlock 的心动事件细节仍在收集中（待补）。",
+        "恋爱在 TA 的心数达到 4 级后解锁：每天交谈，并送一件喜欢或最爱的礼物。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Orlock 最爱什么礼物？",
+         "TA 最爱：Red Rose, Red Wine, White Wine, Mana Wine。"
+        ],
+        [
+         "什么时候可以和 Orlock 约会？",
+         "TA 在第 1 年春 1 日登场；心数达到 4 级即可约会。"
+        ],
+        [
+         "Orlock 是隐藏角色吗？",
+         "不是——Orlock 是首发即可攻略的角色。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "ムーンライトピークス Orlock キャラクター：贈り物と恋愛",
+     "metaTitle": "Orlock 攻略：贈り物・ハートイベント・恋愛",
+     "metaDescription": "『Moonlight Peaks』Orlock のプロフィール：大好物・好物、性格、登場時期、恋愛のコツ。",
+     "intro": "Orlock は『Moonlight Peaks』の恋愛対象の一人。大好物の贈り物、性格、好感度の上げ方をまとめました。",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "どんなキャラ？",
+       "body": "",
+       "items": [
+        [
+         "種族",
+         "吸血鬼"
+        ],
+        [
+         "登場",
+         "1年目・春1日"
+        ],
+        [
+         "性格",
+         "過去の怪物から逃げ続ける酒に溺れた吸血鬼。回復するにつれ、ロマンチックな素顔が。"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "贈り物の好み",
+       "body": "",
+       "headers": [
+        "大好物",
+        "好物",
+        "嫌いな物"
+       ],
+       "rows": [
+        [
+         "Red Rose, Red Wine, White Wine, Mana Wine",
+         "Beer, Eggnog, Cupcakes, Irish Coffee",
+         "Trash, Wood, Ore"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "ハートイベントと恋愛",
+       "body": "",
+       "items": [
+        "Orlock のハートイベント詳細は収集中（待補）。",
+        "ハートレベル4でデートが解放：毎日話しかけ、好物か大好物を1日1つ贈りましょう。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Orlock の大好物は？",
+         "大好物：Red Rose, Red Wine, White Wine, Mana Wine。"
+        ],
+        [
+         "いつから Orlock とデート？",
+         "1年目・春1日に登場。ハートレベル4でデート解放。"
+        ],
+        [
+         "Orlock は隠しキャラ？",
+         "いいえ——Orlock は最初から攻略可能です。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "문라이트 피크스 Orlock 캐릭터: 선물과 연애",
+     "metaTitle": "Orlock 공략: 선물·하트 이벤트·연애",
+     "metaDescription": "『문라이트 피크스』Orlock 프로필: 최애/좋아하는 선물, 성격, 등장 시기, 연애 공략.",
+     "intro": "Orlock은(는) 『문라이트 피크스』의 연애 가능 캐릭터 중 한 명입니다. 최애 선물, 성격, 호감도 올리는 법을 정리했습니다.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "누구인가",
+       "body": "",
+       "items": [
+        [
+         "종족",
+         "뱀파이어"
+        ],
+        [
+         "등장",
+         "1년차 봄 1일"
+        ],
+        [
+         "성격",
+         "과거의 괴물에게 쫓기며 술에 의존하는 뱀파이어. 회복되면서 낭만적인 본모습이 피어납니다."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "선물 취향",
+       "body": "",
+       "headers": [
+        "최애 선물",
+        "좋아하는 선물",
+        "싫어하는 선물"
+       ],
+       "rows": [
+        [
+         "Red Rose, Red Wine, White Wine, Mana Wine",
+         "Beer, Eggnog, Cupcakes, Irish Coffee",
+         "Trash, Wood, Ore"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "하트 이벤트와 연애",
+       "body": "",
+       "items": [
+        "Orlock의 하트 이벤트 세부 내용은 수집 중(대기).",
+        "하트 레벨 4에서 데이트 해금: 매일 대화하고 좋아하거나 최애인 선물을 하루 1개 주세요."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Orlock의 최애 선물은?",
+         "최애: Red Rose, Red Wine, White Wine, Mana Wine."
+        ],
+        [
+         "Orlock과 언제 데이트?",
+         "1년차 봄 1일에 등장. 하트 레벨 4에서 데이트 해금."
+        ],
+        [
+         "Orlock은 숨은 캐릭터인가요?",
+         "아니요 — Orlock은(는) 처음부터 공략 가능합니다."
+        ]
+       ]
+      }
+     ]
+    },
+    "fr": {
+     "title": "Moonlight Peaks — Orlock : cadeaux et romance",
+     "metaTitle": "Orlock : cadeaux, événements de cœur et romance",
+     "metaDescription": "Profil de Orlock dans Moonlight Peaks : cadeaux adorés/aimés, personnalité, apparition et conseils de romance.",
+     "intro": "Orlock est l'un des personnages romantiques de Moonlight Peaks. Voici son profil : cadeaux adorés, personnalité et comment gagner son cœur.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "Qui est Orlock ?",
+       "body": "",
+       "items": [
+        [
+         "Affiliation",
+         "Vampire"
+        ],
+        [
+         "Apparition",
+         "Printemps 1, année 1"
+        ],
+        [
+         "Personnalité",
+         "Vampire hanté par son passé, alcoolique ; un côté romantique et brut éclot en se rétablissant."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Cadeaux préférés",
+       "body": "",
+       "headers": [
+        "Cadeaux adorés",
+        "Cadeaux aimés",
+        "Cadeaux détestés"
+       ],
+       "rows": [
+        [
+         "Red Rose, Red Wine, White Wine, Mana Wine",
+         "Beer, Eggnog, Cupcakes, Irish Coffee",
+         "Trash, Wood, Ore"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Événements de cœur & romance",
+       "body": "",
+       "items": [
+        "Les détails des événements de cœur de Orlock sont encore en cours de collecte (à compléter).",
+        "Le rendez-vous se débloque au niveau de cœur 4 : parlez-lui chaque jour et offrez un cadeau aimé ou adoré."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Quels cadeaux Orlock adore-t-il ?",
+         "Il/elle adore : Red Rose, Red Wine, White Wine, Mana Wine."
+        ],
+        [
+         "Quand sortir avec Orlock ?",
+         "Apparition : Printemps 1, année 1. Le rendez-vous se débloque au niveau de cœur 4."
+        ],
+        [
+         "Orlock est-il un personnage secret ?",
+         "Non — Orlock est disponible dès le lancement."
+        ]
+       ]
+      }
+     ]
+    },
+    "de": {
+     "title": "Moonlight Peaks — Orlock : Geschenke und Romantik",
+     "metaTitle": "Orlock : Geschenke, Herz-Events und Romantik",
+     "metaDescription": "Profil von Orlock in Moonlight Peaks : geliebte/gemochte Geschenke, Persönlichkeit, Auftritt und Romantik-Tipps.",
+     "intro": "Orlock ist einer der liebbaren Charaktere in Moonlight Peaks. Hier ist das Profil : geliebte Geschenke, Persönlichkeit und wie du die Herzen steigerst.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "Wer ist Orlock ?",
+       "body": "",
+       "items": [
+        [
+         "Zugehörigkeit",
+         "Vampir"
+        ],
+        [
+         "Auftritt",
+         "Frühling 1, Jahr 1"
+        ],
+        [
+         "Persönlichkeit",
+         "Von seiner Vergangenheit verfolgter, alkoholkranker Vampir; beim Genesen blüht eine romantische Seite auf."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Geschenk-Vorlieben",
+       "body": "",
+       "headers": [
+        "Geliebte Geschenke",
+        "Gemochte Geschenke",
+        "Gehasste Geschenke"
+       ],
+       "rows": [
+        [
+         "Red Rose, Red Wine, White Wine, Mana Wine",
+         "Beer, Eggnog, Cupcakes, Irish Coffee",
+         "Trash, Wood, Ore"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Herz-Events & Romantik",
+       "body": "",
+       "items": [
+        "Die Herz-Event-Details von Orlock werden noch gesammelt (offen).",
+        "Dating schaltet bei Herz-Level 4 frei : täglich reden und ein gemochtes oder geliebtes Geschenk geben."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Welche Geschenke liebt Orlock?",
+         "Geliebt : Red Rose, Red Wine, White Wine, Mana Wine."
+        ],
+        [
+         "Wann mit Orlock daten?",
+         "Auftritt : Frühling 1, Jahr 1. Dating ab Herz-Level 4."
+        ],
+        [
+         "Ist Orlock ein geheimer Charakter?",
+         "Nein — Orlock ist ab dem Start verfügbar."
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "priority": "P0",
+   "_moon": true
+  },
+  {
+   "slug": "moonlight-peaks/romance/evan",
+   "title": "Moonlight Peaks Evan: Gifts, Romance & Profile",
+   "metaTitle": "Evan (Moonlight Peaks): Gifts, Heart Events & How to R…",
+   "metaDescription": "Moonlight Peaks Evan profile: loved gifts, liked gifts, personality, when they appear and how to romance them.",
+   "intro": "Evan is one of the romanceable characters in Moonlight Peaks. Here is their profile: the gifts they love, what they're like, and how to raise hearts.",
+   "sections": [
+    {
+     "type": "steps",
+     "tag": "STEP",
+     "heading": "Who they are",
+     "body": "",
+     "items": [
+      [
+       "Affiliation",
+       "Vampire"
+      ],
+      [
+       "Appears",
+       "Spring 1 Year 1"
+      ],
+      [
+       "Personality",
+       "Orlock's laid-back child; struggles with how Orlock has spiraled."
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "tag": "DATA",
+     "heading": "Gift preferences",
+     "body": "",
+     "headers": [
+      "Loved Gifts",
+      "Liked Gifts",
+      "Disliked Gifts"
+     ],
+     "rows": [
+      [
+       "Black Tulips",
+       "Coffee, Flat Cap, Flowers, Tea, Desserts",
+       "Trash, Ore, Wood"
+      ]
+     ]
+    },
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Heart events & romance",
+     "body": "",
+     "items": [
+      "Evan's heart-event details are still being collected (待补).",
+      "Dating unlocks at Heart Level 4: talk daily and give one liked or loved gift per day."
+     ]
+    },
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      [
+       "What gifts does Evan love?",
+       "They love: Black Tulips."
+      ],
+      [
+       "When can I romance Evan?",
+       "Evan appears Spring 1 Year 1; dating unlocks at Heart Level 4."
+      ],
+      [
+       "Is Evan a secret character?",
+       "No — Evan is dateable from the start."
+      ]
+     ]
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "月光小镇 Evan 角色档案：礼物与恋爱",
+     "metaTitle": "Evan 攻略：礼物、心动事件与恋爱指南",
+     "metaDescription": "《月光小镇》Evan 角色档案：最爱/喜欢礼物、性格、登场时间与恋爱攻略。",
+     "intro": "Evan 是《月光小镇》的可攻略角色之一。本页是 TA 的档案：最爱的礼物、性格，以及如何提升好感。",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "TA 是谁",
+       "body": "",
+       "items": [
+        [
+         "种族",
+         "吸血鬼"
+        ],
+        [
+         "登场时间",
+         "第 1 年春 1 日"
+        ],
+        [
+         "性格",
+         "Orlock 的孩子，性格随和放松，享受当下，却为 Orlock 的沉沦而痛苦。"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "礼物偏好",
+       "body": "",
+       "headers": [
+        "最爱礼物",
+        "喜欢礼物",
+        "讨厌礼物"
+       ],
+       "rows": [
+        [
+         "Black Tulips",
+         "Coffee, Flat Cap, Flowers, Tea, Desserts",
+         "Trash, Ore, Wood"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "心动事件与恋爱",
+       "body": "",
+       "items": [
+        "Evan 的心动事件细节仍在收集中（待补）。",
+        "恋爱在 TA 的心数达到 4 级后解锁：每天交谈，并送一件喜欢或最爱的礼物。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Evan 最爱什么礼物？",
+         "TA 最爱：Black Tulips。"
+        ],
+        [
+         "什么时候可以和 Evan 约会？",
+         "TA 在第 1 年春 1 日登场；心数达到 4 级即可约会。"
+        ],
+        [
+         "Evan 是隐藏角色吗？",
+         "不是——Evan 是首发即可攻略的角色。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "ムーンライトピークス Evan キャラクター：贈り物と恋愛",
+     "metaTitle": "Evan 攻略：贈り物・ハートイベント・恋愛",
+     "metaDescription": "『Moonlight Peaks』Evan のプロフィール：大好物・好物、性格、登場時期、恋愛のコツ。",
+     "intro": "Evan は『Moonlight Peaks』の恋愛対象の一人。大好物の贈り物、性格、好感度の上げ方をまとめました。",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "どんなキャラ？",
+       "body": "",
+       "items": [
+        [
+         "種族",
+         "吸血鬼"
+        ],
+        [
+         "登場",
+         "1年目・春1日"
+        ],
+        [
+         "性格",
+         "Orlock の子で穏やかでおおらか。瞬間を楽しむが、父の落ちぶれに悩んでいます。"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "贈り物の好み",
+       "body": "",
+       "headers": [
+        "大好物",
+        "好物",
+        "嫌いな物"
+       ],
+       "rows": [
+        [
+         "Black Tulips",
+         "Coffee, Flat Cap, Flowers, Tea, Desserts",
+         "Trash, Ore, Wood"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "ハートイベントと恋愛",
+       "body": "",
+       "items": [
+        "Evan のハートイベント詳細は収集中（待補）。",
+        "ハートレベル4でデートが解放：毎日話しかけ、好物か大好物を1日1つ贈りましょう。"
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Evan の大好物は？",
+         "大好物：Black Tulips。"
+        ],
+        [
+         "いつから Evan とデート？",
+         "1年目・春1日に登場。ハートレベル4でデート解放。"
+        ],
+        [
+         "Evan は隠しキャラ？",
+         "いいえ——Evan は最初から攻略可能です。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "문라이트 피크스 Evan 캐릭터: 선물과 연애",
+     "metaTitle": "Evan 공략: 선물·하트 이벤트·연애",
+     "metaDescription": "『문라이트 피크스』Evan 프로필: 최애/좋아하는 선물, 성격, 등장 시기, 연애 공략.",
+     "intro": "Evan은(는) 『문라이트 피크스』의 연애 가능 캐릭터 중 한 명입니다. 최애 선물, 성격, 호감도 올리는 법을 정리했습니다.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "누구인가",
+       "body": "",
+       "items": [
+        [
+         "종족",
+         "뱀파이어"
+        ],
+        [
+         "등장",
+         "1년차 봄 1일"
+        ],
+        [
+         "성격",
+         "Orlock의 아이로 느긋하고 편안한 성격. 지금 이 순간을 즐기지만 아버지의 몰락에 괴로워합니다."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "선물 취향",
+       "body": "",
+       "headers": [
+        "최애 선물",
+        "좋아하는 선물",
+        "싫어하는 선물"
+       ],
+       "rows": [
+        [
+         "Black Tulips",
+         "Coffee, Flat Cap, Flowers, Tea, Desserts",
+         "Trash, Ore, Wood"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "하트 이벤트와 연애",
+       "body": "",
+       "items": [
+        "Evan의 하트 이벤트 세부 내용은 수집 중(대기).",
+        "하트 레벨 4에서 데이트 해금: 매일 대화하고 좋아하거나 최애인 선물을 하루 1개 주세요."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Evan의 최애 선물은?",
+         "최애: Black Tulips."
+        ],
+        [
+         "Evan과 언제 데이트?",
+         "1년차 봄 1일에 등장. 하트 레벨 4에서 데이트 해금."
+        ],
+        [
+         "Evan은 숨은 캐릭터인가요?",
+         "아니요 — Evan은(는) 처음부터 공략 가능합니다."
+        ]
+       ]
+      }
+     ]
+    },
+    "fr": {
+     "title": "Moonlight Peaks — Evan : cadeaux et romance",
+     "metaTitle": "Evan : cadeaux, événements de cœur et romance",
+     "metaDescription": "Profil de Evan dans Moonlight Peaks : cadeaux adorés/aimés, personnalité, apparition et conseils de romance.",
+     "intro": "Evan est l'un des personnages romantiques de Moonlight Peaks. Voici son profil : cadeaux adorés, personnalité et comment gagner son cœur.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "Qui est Evan ?",
+       "body": "",
+       "items": [
+        [
+         "Affiliation",
+         "Vampire"
+        ],
+        [
+         "Apparition",
+         "Printemps 1, année 1"
+        ],
+        [
+         "Personnalité",
+         "Enfant d'Orlock, décontracté ; apprécie l'instant présent mais souffre de la chute d'Orlock."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Cadeaux préférés",
+       "body": "",
+       "headers": [
+        "Cadeaux adorés",
+        "Cadeaux aimés",
+        "Cadeaux détestés"
+       ],
+       "rows": [
+        [
+         "Black Tulips",
+         "Coffee, Flat Cap, Flowers, Tea, Desserts",
+         "Trash, Ore, Wood"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Événements de cœur & romance",
+       "body": "",
+       "items": [
+        "Les détails des événements de cœur de Evan sont encore en cours de collecte (à compléter).",
+        "Le rendez-vous se débloque au niveau de cœur 4 : parlez-lui chaque jour et offrez un cadeau aimé ou adoré."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Quels cadeaux Evan adore-t-il ?",
+         "Il/elle adore : Black Tulips."
+        ],
+        [
+         "Quand sortir avec Evan ?",
+         "Apparition : Printemps 1, année 1. Le rendez-vous se débloque au niveau de cœur 4."
+        ],
+        [
+         "Evan est-il un personnage secret ?",
+         "Non — Evan est disponible dès le lancement."
+        ]
+       ]
+      }
+     ]
+    },
+    "de": {
+     "title": "Moonlight Peaks — Evan : Geschenke und Romantik",
+     "metaTitle": "Evan : Geschenke, Herz-Events und Romantik",
+     "metaDescription": "Profil von Evan in Moonlight Peaks : geliebte/gemochte Geschenke, Persönlichkeit, Auftritt und Romantik-Tipps.",
+     "intro": "Evan ist einer der liebbaren Charaktere in Moonlight Peaks. Hier ist das Profil : geliebte Geschenke, Persönlichkeit und wie du die Herzen steigerst.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "Wer ist Evan ?",
+       "body": "",
+       "items": [
+        [
+         "Zugehörigkeit",
+         "Vampir"
+        ],
+        [
+         "Auftritt",
+         "Frühling 1, Jahr 1"
+        ],
+        [
+         "Persönlichkeit",
+         "Orlocks Kind, entspannt; genießt den Moment, leidet aber unter Orlocks Absturz."
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Geschenk-Vorlieben",
+       "body": "",
+       "headers": [
+        "Geliebte Geschenke",
+        "Gemochte Geschenke",
+        "Gehasste Geschenke"
+       ],
+       "rows": [
+        [
+         "Black Tulips",
+         "Coffee, Flat Cap, Flowers, Tea, Desserts",
+         "Trash, Ore, Wood"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Herz-Events & Romantik",
+       "body": "",
+       "items": [
+        "Die Herz-Event-Details von Evan werden noch gesammelt (offen).",
+        "Dating schaltet bei Herz-Level 4 frei : täglich reden und ein gemochtes oder geliebtes Geschenk geben."
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
+       "heading": "FAQ",
+       "body": "",
+       "items": [
+        [
+         "Welche Geschenke liebt Evan?",
+         "Geliebt : Black Tulips."
+        ],
+        [
+         "Wann mit Evan daten?",
+         "Auftritt : Frühling 1, Jahr 1. Dating ab Herz-Level 4."
+        ],
+        [
+         "Ist Evan ein geheimer Charakter?",
+         "Nein — Evan ist ab dem Start verfügbar."
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "priority": "P0",
+   "_moon": true
   }
  ]
 }
