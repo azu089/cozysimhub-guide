@@ -673,6 +673,15 @@ for page in ALL_PAGES:
     else:
         d["pages"].append(page)
 
+# --- Moonlight Peaks（品类站第 2 游戏，月光档案室主题；独立数据层 moonlight_pages.py）---
+from moonlight_pages import build_moon_pages
+_moon_existing = {p["slug"]: i for i, p in enumerate(d["pages"])}
+for _mp in build_moon_pages():
+    if _mp["slug"] in _moon_existing:
+        d["pages"][_moon_existing[_mp["slug"]]] = _mp
+    else:
+        d["pages"].append(_mp)
+
 # ja/ko/fr/de 页面 title/intro 翻译（data/i18n_pages2.json，内容补齐新页面）
 import json as _j4
 _i18n_pages2 = _j4.loads((ROOT / "i18n_pages2.json").read_text(encoding="utf8"))

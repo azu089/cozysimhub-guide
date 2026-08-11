@@ -123,6 +123,13 @@ function head(title, desc, extraLd, slug, lang) {
   // AdSense 所有权验证 meta —— 五个 EMD 站同款；未配 adsenseId 时零输出
   const adsenseMeta = DATA.site.adsenseId ? `<meta name="google-adsense-account" content="ca-${esc(DATA.site.adsenseId)}" />` : "";
   const htmlLang = LANG_META[lang]?.html || lang;
+  const isMoon = slug.startsWith("moonlight-peaks");
+  const MOON_CSS_V = crypto.createHash("md5").update(fs.readFileSync(path.join(ROOT, "templates", "style-moon.css"), "utf8")).digest("hex").slice(0, 8);
+  const themeColor = isMoon ? "#171034" : "#3A3226";
+  const fontLink = isMoon
+    ? '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Lora:wght@400;500;600&family=MedievalSharp&family=Spectral:wght@500;600&display=swap" rel="stylesheet" />'
+    : '<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet" />';
+  const cssLink = isMoon ? `<link rel="stylesheet" href="/css/style-moon.css?v=${MOON_CSS_V}" />` : `<link rel="stylesheet" href="/css/style.css?v=${CSS_V}" />`;
   return `<!DOCTYPE html>
 <html lang="${htmlLang}">
 <head>
@@ -132,7 +139,7 @@ function head(title, desc, extraLd, slug, lang) {
 <meta name="description" content="${esc(desc)}" />
 <link rel="canonical" href="${urlOf(slug, lang)}" />
 ${KIT.hreflangTags({ langs: LANGS, defaultLang: DEF, urlOf, slug })}
-<meta name="theme-color" content="#3A3226" />
+<meta name="theme-color" content="${themeColor}" />
 ${gsc}${adsenseMeta}
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="${esc(siteI18n(lang).name)}" />
@@ -143,8 +150,8 @@ ${gsc}${adsenseMeta}
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/css/style.css?v=${CSS_V}" />
+${fontLink}
+${cssLink}
 ${slug === "index" && lang === DEF ? `<link rel="preload" as="image" type="image/webp" imagesrcset="/images/hero-640.webp 640w, /images/hero-1280.webp 1280w, /images/hero.webp 1600w" imagesizes="(max-width: 720px) 640px, 1280px" fetchpriority="high" />` : ""}
 <script type="application/ld+json">${ld}</script>
 ${DATA.site.gaId ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(DATA.site.gaId)}"></script>
@@ -186,11 +193,13 @@ function header(lang, active) {
   const langItems = LANGS.map(l =>
     `<a href="${linkOf(active || "index", l)}" class="${l === lang ? "active" : ""}"><span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span></a>`
   ).join("");
+  const moonCross = `<a class="tome-crosslink" href="${linkOf("moonlight-peaks", lang)}">${lang === "zh-CN" ? "🌙 月光小镇（第 2 游戏）" : "🌙 Moonlight Peaks (Game 2)"}</a>`;
   return `<aside class="tome-nav" aria-label="Ledger index">
   <a class="tome-brand" href="${linkOf("index", lang)}">
     <span class="brand-seal">${ICON.crown}</span>
     <span class="brand-name">${esc(siteI18n(lang).name)}<small>${lang === "zh-CN" ? "圆桌手账" : "Round Table Ledger"}</small></span>
   </a>
+  ${moonCross}
   ${chapters}
   <div class="tome-lang"><div class="lang-label">${esc(n.langLabel)}</div>${langItems}</div>
 </aside>`;
@@ -525,17 +534,235 @@ const TOOL_JS = `<script>
 })();
 </script>`;
 
+
+/* ================= 月光档案室主题（Moonlight Peaks · 独立骨架） ================= */
+const MOON_LABELS = {
+  "en": { data: "The Ledger", deep: "Deep Dives", quick: "Quick Answers", search: "Search this table…", langLabel: "Language", home: "Moonlight Peaks", hub: "Back to Sovereign Tower Hub", footerNote: "Unofficial fan site — Moonlight Peaks and its assets belong to Little Chicken / XSEED Games / Marvelous Europe.",
+          footerSource: "Information verified against the official Steam store page and cited guides.", updated: "Updated", ledger: "The Moonlit Ledger" },
+  "zh-CN": { data: "数据账页", deep: "深潜", quick: "快答", search: "搜索本表…", langLabel: "语言", home: "月光小镇", hub: "返回君王之塔攻略中心", footerNote: "非官方粉丝站——《月光小镇》及相关资产归 Little Chicken / XSEED Games / Marvelous Europe 所有。",
+             footerSource: "信息核对自 Steam 官方商店页与标注来源的攻略。", updated: "更新于", ledger: "月光档案室" },
+  "ja": { data: "データ帳簿", deep: "深掘り", quick: "クイック", search: "この表を検索…", langLabel: "言語", home: "ムーンライトピークス", hub: "ソブリンタワー攻略ハブへ戻る", footerNote: "非公式ファンサイト。本ゲームおよび関連アセットは Little Chicken / XSEED Games / Marvelous Europe に帰属します。",
+          footerSource: "情報は Steam 公式ストアと引用元ガイドで確認。", updated: "更新", ledger: "月光の帳簿" },
+  "ko": { data: "데이터 장부", deep: "심층", quick: "빠른 답변", search: "이 표 검색…", langLabel: "언어", home: "문라이트 피크스", hub: "소버린 타워 허브로 돌아가기", footerNote: "비공식 팬 사이트. 게임 및 관련 자산은 Little Chicken / XSEED Games / Marvelous Europe에 귀속됩니다.",
+          footerSource: "정보는 Steam 공식 스토어와 인용된 가이드로 확인했습니다.", updated: "업데이트", ledger: "문빛 장부" },
+  "fr": { data: "Le registre", deep: "Analyses", quick: "Réponses rapides", search: "Rechercher dans ce tableau…", langLabel: "Langue", home: "Moonlight Peaks", hub: "Retour au hub Sovereign Tower", footerNote: "Site de fans non officiel — Moonlight Peaks et ses ressources appartiennent à Little Chicken / XSEED Games / Marvelous Europe.",
+          footerSource: "Informations vérifiées sur la page Steam officielle et les guides cités.", updated: "Mis à jour", ledger: "Le registre au clair de lune" },
+  "de": { data: "Das Register", deep: "Tiefe Analysen", quick: "Schnelle Antworten", search: "Diese Tabelle durchsuchen…", langLabel: "Sprache", home: "Moonlight Peaks", hub: "Zurück zum Sovereign-Tower-Hub", footerNote: "Inoffizielle Fan-Seite — Moonlight Peaks und seine Assets gehören Little Chicken / XSEED Games / Marvelous Europe.",
+          footerSource: "Informationen geprüft gegen den offiziellen Steam-Store und zitierte Guides.", updated: "Aktualisiert", ledger: "Das Mond-Register" },
+};
+const moonTxt = l => MOON_LABELS[l] || MOON_LABELS.en;
+
+/* 月相 SVG（n=0 新月 … 7 满月） */
+function moonPhaseIcon(n, cls) {
+  const pct = n / 7;
+  return `<svg class="moon-phase ${cls || ""}" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="currentColor" opacity="0.18"/><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 3a9 9 0 0 1 0 18c${(pct * 6).toFixed(1)} 0 ${(pct * 9).toFixed(1)}-${(pct * 4).toFixed(1)} 0-${(pct * 4.5).toFixed(1)}z" fill="currentColor" opacity="0.9"/></svg>`;
+}
+
+const MOON_GROUPS = {
+  data: ["moonlight-peaks/how-to-play", "moonlight-peaks/gifts", "moonlight-peaks/romance", "moonlight-peaks/fishing", "moonlight-peaks/flowers", "moonlight-peaks/tools", "moonlight-peaks/achievements"],
+  deep: ["moonlight-peaks/spells", "moonlight-peaks/walkthrough", "moonlight-peaks/relationships", "moonlight-peaks/villagers", "moonlight-peaks/potions", "moonlight-peaks/museum", "moonlight-peaks/breeding"],
+  quick: ["moonlight-peaks/updates", "moonlight-peaks/steam-deck", "moonlight-peaks/console", "moonlight-peaks/system-requirements", "moonlight-peaks/faq"],
+};
+const MOON_PHASE_BY = {};
+MOON_GROUPS.data.forEach((s, i) => MOON_PHASE_BY[s] = 1 + i);
+MOON_GROUPS.deep.forEach((s, i) => MOON_PHASE_BY[s] = 1 + i);
+MOON_GROUPS.quick.forEach((s, i) => MOON_PHASE_BY[s] = 1 + i);
+
+function moonHeader(lang, active) {
+  const t = moonTxt(lang);
+  const n = navI18n(lang);
+  const item = (slug, label) => {
+    const p = DATA.pages.find(x => x.slug === slug);
+    if (!p) return "";
+    const name = pageOf(p, lang).title.replace(/\s*(Moonlight Peaks|Moonlight|月光小镇)\s*/g, " ").replace(/\s+/g, " ").trim();
+    const phase = MOON_PHASE_BY[slug] || 4;
+    return `<a class="moon-nav-item ${slug === active ? "active" : ""}" href="${linkOf(slug, lang)}">${moonPhaseIcon(phase, slug === active ? "glow" : "")}<span>${esc(name)}</span></a>`;
+  };
+  const group = (title, slugs) => `<div class="moon-nav-group"><b>${esc(title)}</b><div class="moon-nav-items">${slugs.map(s => item(s, "")).join("")}</div></div>`;
+  const body = `${group(t.data, MOON_GROUPS.data)}${group(t.deep, MOON_GROUPS.deep)}${group(t.quick, MOON_GROUPS.quick)}`;
+  const langItems = LANGS.map(l =>
+    `<a href="${linkOf(active || "moonlight-peaks", l)}" class="${l === lang ? "active" : ""}"><span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span></a>`
+  ).join("");
+  return `<header class="moon-head">
+  <a class="moon-brand" href="${linkOf("moonlight-peaks", lang)}">
+    <span class="brand-moon">${moonPhaseIcon(7)}</span>
+    <span class="brand-name">${esc(t.ledger)}<small>${esc(t.home)}</small></span>
+  </a>
+  <button class="moon-nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <nav class="moon-nav" aria-label="Moonlight Peaks index">${body}
+    <div class="moon-lang"><span class="lang-label">${esc(t.langLabel)}</span>${langItems}</div>
+    <a class="moon-hub-link" href="${linkOf("index", lang)}">${esc(t.hub)}</a>
+  </nav>
+</header>`;
+}
+
+function moonFooter(lang) {
+  const t = moonTxt(lang);
+  const n = navI18n(lang);
+  const quick = MOON_GROUPS.quick.concat(MOON_GROUPS.data.slice(0, 3));
+  const links = quick.map(s => { const p = DATA.pages.find(x => x.slug === s); return p ? `<a href="${linkOf(s, lang)}">${esc(pageOf(p, lang).title)}</a>` : ""; }).join("");
+  return `<footer class="moon-colophon">
+  <div>
+    <h3>${esc(t.ledger)}</h3>
+    <p>${esc(t.footerNote)}</p>
+    <p>${esc(t.footerSource)} · ${esc(t.updated)} ${TODAY}</p>
+  </div>
+  <div>
+    <div class="moon-colophon-links">
+      <a href="${linkOf("about", lang)}">${esc(n.about)}</a>
+      <a href="${linkOf("privacy", lang)}">${esc(n.privacy)}</a>
+      <a href="${linkOf("contact", lang)}">${esc(n.contact)}</a>
+      <a href="${esc(DATA.game.steamUrl.replace("4113940", "2209900"))}" target="_blank" rel="noopener">Steam ↗</a>
+      ${links}
+    </div>
+    <p class="colophon-legal">© ${new Date().getFullYear()} ${esc(DATA.site.domain)} · ${lang === "zh-CN" ? "非官方粉丝站" : "Unofficial fan site"}</p>
+  </div>
+  ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}
+</footer>`;
+}
+
+/* 月光页 Section 渲染 */
+function renderMoonSection(s, lang, slug) {
+  const escTxt = esc(s.heading || "");
+  const secId = s._tocId ? ` id="${s._tocId}"` : "";
+  const tag = s.tag ? `<span class="tag">${esc(s.tag)}</span>` : "";
+  switch (s.type) {
+    case "table": {
+      const th = (s.headers || []).map(h => `<th scope="col">${esc(h)}</th>`).join("");
+      const tr = (s.rows || []).map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join("")}</tr>`).join("");
+      const tracker = slug === "moonlight-peaks/achievements" ? ' data-tracker="ach"' : "";
+      return `<section class="moon-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><div class="moon-table-wrap"${tracker}><table class="moon-table"><thead><tr>${th}</tr></thead><tbody>${tr}</tbody></table></div></section>`;
+    }
+    case "steps": {
+      const items = (s.items || []).map((it, i) =>
+        `<li class="moon-entry reveal"><span class="moon-entry-no">${moonPhaseIcon(Math.min(7, i + 1))}</span><div class="moon-entry-body"><h3>${esc(it[0])}</h3><p>${esc(it[1])}</p></div></li>`).join("");
+      return `<section class="moon-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><ol class="moon-entries">${items}</ol></section>`;
+    }
+    case "list": {
+      const items = (s.items || []).map(it => `<li>${esc(it)}</li>`).join("");
+      return `<section class="moon-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><ul class="moon-notes">${items}</ul></section>`;
+    }
+    case "faq": {
+      const items = (s.items || []).map((qa, i) =>
+        `<details class="moon-faq" ${i === 0 ? "open" : ""}><summary>${esc(qa[0])}</summary><p>${esc(qa[1])}</p></details>`).join("");
+      return `<section class="moon-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><div class="moon-faq-list">${items}</div></section>`;
+    }
+    case "note": {
+      return `<aside class="moon-abstract reveal">${tag}<p>${esc(s.body || "")}</p></aside>`;
+    }
+    default:
+      return "";
+  }
+}
+
+function renderMoonPage(p, lang) {
+  const t = pageOf(p, lang);
+  const page = { ...t, slug: p.slug };
+  const ld = [
+    KIT.ld.article({ page, lang, urlOf, siteName: siteI18n(lang).name, datePublished: TODAY, dateModified: KIT.LASTMOD_TOKEN }),
+    KIT.ld.breadcrumb({ page, lang, urlOf, homeName: moonTxt(lang).home })
+  ];
+  const secs = t.sections || [];
+  const sections = secs.map((s, i) => renderMoonSection({ ...s, _tocId: `sec-${i}` }, lang, p.slug)).join("");
+  const isHome = p.slug === "moonlight-peaks";
+  const headArt = isHome
+    ? `<div class="moon-hero reveal"><h1>${esc(t.title)}</h1><p class="page-intro">${esc(t.intro || "")}</p></div>`
+    : `<div class="moon-head reveal"><span class="moon-eyebrow">${esc(moonTxt(lang).ledger)}</span><h1>${esc(t.title)}</h1><p class="page-intro">${esc(t.intro || "")}</p></div>`;
+  const body = `<main class="moon-main"><div class="moon-ruled">
+    <article class="moon-article">${headArt}${sections}</article>
+  </div></main>`;
+  return head(t.metaTitle || t.title, t.metaDescription, ld, p.slug, lang) + moonHeader(lang, p.slug) + body + moonFooter(lang) + MOON_JS + "</body></html>";
+}
+
+/* 月光交互 JS（渐进增强：HTML 表不变，JS 加筛选/搜索/成就追踪） */
+const MOON_JS = `<script>
+(function(){
+  var isZh = document.documentElement.lang === 'zh-CN';
+  // 表格搜索（所有 >6 行的月光表）
+  document.querySelectorAll('.moon-table-wrap').forEach(function(w){
+    var table = w.querySelector('table');
+    if (!table || table.rows.length < 7) return;
+    var box = document.createElement('div');
+    box.className = 'moon-filter';
+    box.innerHTML = '<input type="search" class="moon-search" aria-label="' + (isZh ? '搜索本表' : 'Search table') + '" placeholder="' + (isZh ? '搜索本表…' : 'Search this table…') + '">';
+    var input = box.querySelector('input');
+    input.addEventListener('input', function(){
+      var q = this.value.toLowerCase();
+      table.querySelectorAll('tbody tr').forEach(function(tr){
+        tr.style.display = tr.textContent.toLowerCase().includes(q) ? '' : 'none';
+      });
+    });
+    w.insertBefore(box, table);
+  });
+  // 成就追踪器（localStorage，不改变 HTML 内容）
+  document.querySelectorAll('[data-tracker="ach"]').forEach(function(w){
+    var table = w.querySelector('table');
+    if (!table) return;
+    var key = 'mp-ach-' + document.documentElement.lang;
+    var done = {};
+    try { done = JSON.parse(localStorage.getItem(key) || '{}'); } catch(e){}
+    var rows = table.querySelectorAll('tbody tr');
+    var wrap = document.createElement('div');
+    wrap.className = 'ach-progress';
+    var bar = document.createElement('div');
+    bar.className = 'ach-bar';
+    wrap.appendChild(bar);
+    var meta = document.createElement('p');
+    meta.className = 'ach-meta';
+    wrap.appendChild(meta);
+    function refresh(){
+      var n = rows.length, d = 0;
+      rows.forEach(function(tr){ if (done[tr.dataset.ach]) d++; });
+      bar.style.width = (n ? (d / n * 100) : 0) + '%';
+      meta.textContent = (isZh ? '已完成 ' : 'Done ') + d + ' / ' + n;
+      try { localStorage.setItem(key, JSON.stringify(done)); } catch(e){}
+    }
+    rows.forEach(function(tr, i){
+      tr.style.position = 'relative';
+      tr.style.paddingLeft = '2.2em';
+      var cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.className = 'ach-cb';
+      cb.setAttribute('aria-label', (isZh ? '标记完成' : 'Mark done'));
+      var name = (tr.cells[0] && tr.cells[0].textContent || '').trim();
+      if (!name) { name = 'row-' + i; }
+      tr.dataset.ach = name;
+      cb.checked = !!done[name];
+      cb.addEventListener('change', function(){ done[name] = cb.checked; refresh(); });
+      tr.insertBefore(cb, tr.firstChild);
+    });
+    refresh();
+    table.parentNode.insertBefore(wrap, table);
+  });
+  // 移动端导航
+  var tog = document.querySelector('.moon-nav-toggle');
+  var nav = document.querySelector('.moon-nav');
+  if (tog && nav) {
+    tog.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      tog.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+  // reveal 动画
+  var obs = new IntersectionObserver(function(es){
+    es.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); obs.unobserve(en.target); } });
+  }, {threshold:.08});
+  document.querySelectorAll('.moon-entry.reveal').forEach(function(el){ obs.observe(el); });
+})();
+</script>`;
+
 /* ---------- 构建 ---------- */
 function build() {
   if (fs.existsSync(OUT)) fs.rmSync(OUT, { recursive: true, force: true });
   const all = [];
   // 首页
   for (const lang of LANGS) all.push({ html: renderHome(lang), path: lang === DEF ? "index.html" : `${lang}/index.html` });
-  // 内容页（index 已由 renderHome 生成，跳过）
+  // 内容页（index 已由 renderHome 生成，跳过；moonlight-peaks/* 走月光主题）
   for (const p of DATA.pages) {
     if (p.slug === "index") continue;
     for (const lang of LANGS) {
-      const html = renderPage(p, lang) + (p.slug.startsWith("sovereign-tower/tools/") ? TOOL_JS : "") + "</div></body></html>";
+      const isMoon = p.slug.startsWith("moonlight-peaks");
+      const html = isMoon ? renderMoonPage(p, lang) : (renderPage(p, lang) + (p.slug.startsWith("sovereign-tower/tools/") ? TOOL_JS : "") + "</div></body></html>");
       const base = lang === DEF ? `${p.slug}` : `${lang}/${p.slug}`;
       all.push({ html, path: `${base}.html` });
     }
@@ -556,6 +783,7 @@ function build() {
   // 复制静态资源
   fs.mkdirSync(path.join(OUT, "css"), { recursive: true });
   fs.copyFileSync(path.join(ROOT, "templates", "style.css"), path.join(OUT, "css", "style.css"));
+  fs.copyFileSync(path.join(ROOT, "templates", "style-moon.css"), path.join(OUT, "css", "style-moon.css"));
   for (const f of ["_headers", "llms.txt"]) {
     const src = path.join(ROOT, "templates", f);
     if (fs.existsSync(src)) fs.copyFileSync(src, path.join(OUT, f));
