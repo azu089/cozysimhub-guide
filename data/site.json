@@ -16807,8 +16807,8 @@
      "heading": "Latest updates",
      "body": "",
      "items": [
-      "Patch 1.1.41 (2026-07-15): faster loading, house storage across the whole plot, embroidery unlocks earlier, 23+ bug fixes.",
-      "Patch 1.1.38 (2026-07-10): fixed short freezes every 5–20s, slow-walk bug and a Nokturna soft lock.",
+      "Patch 1.1.45 (2026-07-21): photosensitivity warning, Star Gazing widescreen fix, 'Back to the Den' retroactive unlock — more improvements planned for 1.2.",
+      "Patch 1.1.44 (2026-07-16): embroidery table visibility, all-season tree seeds, rainy-night crop fix, save-corruption fix.",
       "Moonlight Peaks launched July 6–7, 2026 on PC (Steam), Switch, Switch 2 and Google Play Games; sales passed 200,000 by July 26."
      ]
     },
@@ -16903,8 +16903,8 @@
        "heading": "Latest updates",
        "body": "",
        "items": [
-        "补丁 1.1.41（2026-07-15）：加载更快、全地块（含谷仓/温室）储物+快速转移、刺绣提前解锁、23+ 项修复。",
-        "补丁 1.1.38（2026-07-10）：修复每 5–20 秒卡顿、走路卡住与 Nokturna 软锁。",
+        "补丁 1.1.45（2026-07-21）：起播光敏警告、观星宽屏黑条修复、“Back to the Den”补发解锁——更多改进计划在 1.2。",
+        "补丁 1.1.44（2026-07-16）：刺绣桌可见、树苗全年可种、雨天晚上作物修复、存档损坏修复。",
         "2026-07-06/07 登陆 PC（Steam）、Switch、Switch 2 与 Google Play Games；7 月 26 日销量破 20 万。"
        ]
       },
@@ -16999,8 +16999,8 @@
        "heading": "Latest updates",
        "body": "",
        "items": [
-        "パッチ1.1.41（2026-07-15）：ロード高速化、敷地全体の収納+クイック転送、刺繍の早期解放、23以上の修正。",
-        "パッチ1.1.38（2026-07-10）：5〜20秒ごとのフリーズ、歩行スタック、Nokturnaのソフトロックを修正。",
+        "パッチ1.1.45（2026-07-21）：起動時の光過敏警告、Star Gazing のワイド画面黒帯修正、「Back to the Den」の遡及解除。1.2 でさらなる改善予定。",
+        "パッチ1.1.44（2026-07-16）：刺繍テーブルの表示、苗木の全季節植え付け、雨の夜の作物修正、セーブ破損修正。",
         "2026年7月6〜7日にPC・Switch・Switch 2・Google Play Gamesで発売、7月26日までに20万本突破。"
        ]
       },
@@ -17095,8 +17095,8 @@
        "heading": "Latest updates",
        "body": "",
        "items": [
-        "패치 1.1.41(2026-07-15): 로딩 개선, 부지 전체 창고+빠른 전송, 자수 조기 해금, 23개 이상 버그 수정.",
-        "패치 1.1.38(2026-07-10): 5~20초마다 프리즈, 걷기 스택, Nokturna 소프트록 수정.",
+        "패치 1.1.45(2026-07-21): 시작 시 광과민 경고, 별자리 관측 와이드 화면 수정, 'Back to the Den' 소급 해금. 1.2에서 추가 개선 예정.",
+        "패치 1.1.44(2026-07-16): 자수 테이블 표시, 묘목 전 계절 심기, 비 오는 밤 작물 수정, 세이브 손상 수정.",
         "2026년 7월 6~7일 PC·Switch·Switch 2·Google Play Games 출시, 7월 26일 20만 장 돌파."
        ]
       },
@@ -17191,8 +17191,8 @@
        "heading": "Latest updates",
        "body": "",
        "items": [
-        "Patch 1.1.41 (15/07/2026) : chargement plus rapide, stockage sur tout le terrain, broderie plus tôt, 23+ correctifs.",
-        "Patch 1.1.38 (10/07/2026) : gels de 5–20 s, animation de marche bloquée et soft lock Nokturna corrigés.",
+        "Patch 1.1.45 (21/07/2026) : avertissement de photosensibilité, correctif Star Gazing écran large, déblocage rétroactif 'Back to the Den'. D'autres améliorations en 1.2.",
+        "Patch 1.1.44 (16/07/2026) : table de broderie visible, pousses plantables toute l'année, correctif cultures les nuits de pluie, correctif de sauvegarde.",
         "Sorti les 6–7 juillet 2026 sur PC, Switch, Switch 2 et Google Play Games ; plus de 200 000 ventes au 26 juillet."
        ]
       },
@@ -17287,9 +17287,9 @@
        "heading": "Latest updates",
        "body": "",
        "items": [
-        "Patch 1.1.41 (15.07.2026): schnelleres Laden, Lager auf dem ganzen Grundstück, Stickerei früher, 23+ Fixes.",
-        "Patch 1.1.38 (10.07.2026): Freezes alle 5–20 s, Lauf-Animation und Nokturna-Softlock behoben.",
-        "Erschienen am 6.–7. Juli 2026 für PC, Switch, Switch 2 und Google Play Games; über 200.000 Verkäufe bis 26. Juli."
+        "Patch 1.1.45 (21.07.2026): Fotosensibilitäts-Warnung, Star-Gazing-Breitbild-Fix, 'Back to the Den' nachträglich. Mehr in 1.2.",
+        "Patch 1.1.44 (16.07.2026): Sticktisch sichtbar, Setzlinge ganzjährig, Pflanzenfix an Regennächten, Speicherfehler-Fix.",
+        "Release 6.–7. Juli 2026 auf PC, Switch, Switch 2 und Google Play Games; über 200.000 Verkäufe bis 26. Juli."
        ]
       },
       {
@@ -30328,35 +30328,75 @@
   {
    "slug": "moonlight-peaks/potions",
    "title": "Moonlight Peaks Potions: Recipes & Effects",
-   "metaTitle": "Moonlight Peaks Potions: What We Know So Far",
-   "metaDescription": "Potion-making in Moonlight Peaks: how to unlock it, known potions and effects, and the 'A Magical Cocktail' achievement — recipes still being verified.",
-   "intro": "Potion-making in Moonlight Peaks unlocks through the main story (part 4) and uses the cauldron with foraged and grown ingredients. This page collects what we've verified so far; recipes are still being confirmed.",
+   "metaTitle": "Moonlight Peaks Potions: All 9 Recipes & Effects",
+   "metaDescription": "Potion-making in Moonlight Peaks unlocks through the main story (part 4) and uses the cauldron with foraged and grown ingredients. All 9 recipes below (ingre…",
+   "intro": "Potion-making in Moonlight Peaks unlocks through the main story (part 4) and uses the cauldron with foraged and grown ingredients. All 9 recipes below (ingredients and sell prices included) are collected from gamer.org (L2, 2026-08-12).",
    "sections": [
     {
      "type": "table",
      "tag": "DATA",
-     "heading": "Known potions & effects",
+     "heading": "All 9 known potions & recipes",
      "body": "",
      "headers": [
       "Potion",
       "Effect",
-      "Status"
+      "Ingredients",
+      "Sell price"
      ],
      "rows": [
       [
+       "Alter Ego Elixir",
+       "Changes your appearance",
+       "Quartz Dust, Nightshade Powder, Honey",
+       "1,000"
+      ],
+      [
+       "Sunscreen Potion",
+       "Protects you from sunlight",
+       "Fiber, Egg",
+       "45"
+      ],
+      [
+       "Mindless Miner Tonic",
+       "Removes energy cost while mining",
+       "Gold Ore, Leftsee, Glowglammer, Nightshade Powder",
+       "1,300"
+      ],
+      [
+       "Frictionless Farming Tonic",
+       "Removes energy cost while farming",
+       "Onion, Honey, Googly Garlic Powder, Heart Stone",
+       "990"
+      ],
+      [
+       "Fluent Fishing Tonic",
+       "Removes energy cost while fishing",
+       "Splotch, Glow Ginger Powder, Sugar, Volacio Mushroom",
+       "700"
+      ],
+      [
+       "Fierce Forester Tonic",
+       "Removes energy cost while chopping wood",
+       "Sage Powder, Amanita, Light Wood, Cranberry",
+       "950"
+      ],
+      [
+       "Rapid Reel Potion",
+       "Fish bite almost instantly",
+       "Angry Mandrake, Wolfsbane Powder, Sugar, Whisper",
+       "700"
+      ],
+      [
+       "Love Potion",
+       "Slightly increases friendship gained from gifts",
+       "Hold-Me-Close, Muse Nut, Amour, Suffrain Powder, Luck Dust",
+       "2,200"
+      ],
+      [
        "Mana Potion",
-       "Restores Mana — handy before spell-heavy days.",
-       "Verified (multiple sources)"
-      ],
-      [
-       "Red Wine (keg, not potion)",
-       "Quest item for Orlock; also a loved gift.",
-       "Verified"
-      ],
-      [
-       "Other recipes",
-       "Effects and ingredients not yet confirmed.",
-       "待补"
+       "Restores 8 Mana",
+       "Mana Essence, Drikker, Henbane Powder, Violet, Frosteria",
+       "3,200"
       ]
      ]
     },
@@ -30392,7 +30432,15 @@
       ],
       [
        "Which potion restores mana?",
-       "The Mana Potion restores Mana (also a loved gift for Noel)."
+       "The Mana Potion restores 8 Mana (it's also a loved gift for Noel)."
+      ],
+      [
+       "Which potion sells for the most?",
+       "The Mana Potion (3,200 Coins) — the priciest recipe found so far."
+      ],
+      [
+       "Is Red Wine a potion?",
+       "No — it's a keg item (a quest item for Orlock and a loved gift), not brewed in the cauldron."
       ],
       [
        "How do I get 'A Magical Cocktail'?",
@@ -30404,35 +30452,75 @@
    "i18n": {
     "zh-CN": {
      "title": "月光小镇 药水配方",
-     "metaTitle": "月光小镇药水：已知配方与效果",
-     "metaDescription": "《月光小镇》药水制作：如何解锁、已知药水与效果、“魔法鸡尾酒”成就——配方仍在核验中。",
-     "intro": "《月光小镇》的药水制作随主线（第 4 部分）解锁，使用坩埚配合采集与种植的原料。本页汇总已核实的内容，配方仍在确认中。",
+     "metaTitle": "月光小镇药水：全部 9 个配方与效果",
+     "metaDescription": "《月光小镇》全部药水配方：9 种药水的效果、材料与售价，以及药水制作解锁方式与“魔法鸡尾酒”成就。",
+     "intro": "《月光小镇》的药水制作随主线（第 4 部分）解锁，使用坩埚配合采集与种植的原料。以下为已核实的全部 9 个配方（含材料与售价，来源 gamer.org，2026-08-12 采集）。",
      "sections": [
       {
        "type": "table",
        "tag": "DATA",
-       "heading": "已知药水与效果",
+       "heading": "全部 9 个已知配方",
        "body": "",
        "headers": [
         "药水",
         "效果",
-        "状态"
+        "材料",
+        "售价"
        ],
        "rows": [
         [
+         "Alter Ego Elixir",
+         "Changes your appearance",
+         "Quartz Dust, Nightshade Powder, Honey",
+         "1,000"
+        ],
+        [
+         "Sunscreen Potion",
+         "Protects you from sunlight",
+         "Fiber, Egg",
+         "45"
+        ],
+        [
+         "Mindless Miner Tonic",
+         "Removes energy cost while mining",
+         "Gold Ore, Leftsee, Glowglammer, Nightshade Powder",
+         "1,300"
+        ],
+        [
+         "Frictionless Farming Tonic",
+         "Removes energy cost while farming",
+         "Onion, Honey, Googly Garlic Powder, Heart Stone",
+         "990"
+        ],
+        [
+         "Fluent Fishing Tonic",
+         "Removes energy cost while fishing",
+         "Splotch, Glow Ginger Powder, Sugar, Volacio Mushroom",
+         "700"
+        ],
+        [
+         "Fierce Forester Tonic",
+         "Removes energy cost while chopping wood",
+         "Sage Powder, Amanita, Light Wood, Cranberry",
+         "950"
+        ],
+        [
+         "Rapid Reel Potion",
+         "Fish bite almost instantly",
+         "Angry Mandrake, Wolfsbane Powder, Sugar, Whisper",
+         "700"
+        ],
+        [
+         "Love Potion",
+         "Slightly increases friendship gained from gifts",
+         "Hold-Me-Close, Muse Nut, Amour, Suffrain Powder, Luck Dust",
+         "2,200"
+        ],
+        [
          "Mana Potion",
-         "Restores Mana — handy before spell-heavy days.",
-         "Verified (multiple sources)"
-        ],
-        [
-         "Red Wine (keg, not potion)",
-         "Quest item for Orlock; also a loved gift.",
-         "Verified"
-        ],
-        [
-         "Other recipes",
-         "Effects and ingredients not yet confirmed.",
-         "待补"
+         "Restores 8 Mana",
+         "Mana Essence, Drikker, Henbane Powder, Violet, Frosteria",
+         "3,200"
         ]
        ]
       },
@@ -30467,8 +30555,16 @@
          "主线推进到第 4 部分（博物馆、Nokturna 与药水制作）时解锁。"
         ],
         [
-         "哪种药水回复魔力？",
-         "魔力药水（也是 Noel 的最爱礼物之一）。"
+         "哪种药水恢复魔力？",
+         "魔力药水恢复 8 点魔力（也是 Noel 的最爱礼物）。"
+        ],
+        [
+         "哪种药水最赚钱？",
+         "魔力药水（3,200 金币）是目前发现的最贵配方。"
+        ],
+        [
+         "红酒是药水吗？",
+         "不是——红酒是酒桶产物（Orlock 的任务物品，也是最爱礼物），不用坩埚酿。"
         ],
         [
          "怎么拿“魔法鸡尾酒”成就？",
@@ -30480,35 +30576,75 @@
     },
     "ja": {
      "title": "ムーンライトピークス ポーション",
-     "metaTitle": "ポーション：判明分のレシピと効果",
-     "metaDescription": "『Moonlight Peaks』のポーション：解放方法、判明分の効果、「A Magical Cocktail」実績。レシピは検証中。",
-     "intro": "ポーション作りはメインストーリー（第4部）で解放。大釜と採取・栽培した材料で作ります。判明分をまとめています。",
+     "metaTitle": "ポーション：全9レシピと効果",
+     "metaDescription": "『Moonlight Peaks』全ポーションレシピ：9種の効果・材料・売値と、解放方法と「A Magical Cocktail」実績。",
+     "intro": "ポーション作りはメインストーリー（第4部）で解放され、大釜に採取・栽培した材料を入れて作ります。以下は検証済みの全9レシピ（材料・売値込み、出典 gamer.org、2026-08-12 収集）。",
      "sections": [
       {
        "type": "table",
        "tag": "DATA",
-       "heading": "判明しているポーション",
+       "heading": "判明している全9種",
        "body": "",
        "headers": [
         "ポーション",
         "効果",
-        "状態"
+        "材料",
+        "売値"
        ],
        "rows": [
         [
+         "Alter Ego Elixir",
+         "Changes your appearance",
+         "Quartz Dust, Nightshade Powder, Honey",
+         "1,000"
+        ],
+        [
+         "Sunscreen Potion",
+         "Protects you from sunlight",
+         "Fiber, Egg",
+         "45"
+        ],
+        [
+         "Mindless Miner Tonic",
+         "Removes energy cost while mining",
+         "Gold Ore, Leftsee, Glowglammer, Nightshade Powder",
+         "1,300"
+        ],
+        [
+         "Frictionless Farming Tonic",
+         "Removes energy cost while farming",
+         "Onion, Honey, Googly Garlic Powder, Heart Stone",
+         "990"
+        ],
+        [
+         "Fluent Fishing Tonic",
+         "Removes energy cost while fishing",
+         "Splotch, Glow Ginger Powder, Sugar, Volacio Mushroom",
+         "700"
+        ],
+        [
+         "Fierce Forester Tonic",
+         "Removes energy cost while chopping wood",
+         "Sage Powder, Amanita, Light Wood, Cranberry",
+         "950"
+        ],
+        [
+         "Rapid Reel Potion",
+         "Fish bite almost instantly",
+         "Angry Mandrake, Wolfsbane Powder, Sugar, Whisper",
+         "700"
+        ],
+        [
+         "Love Potion",
+         "Slightly increases friendship gained from gifts",
+         "Hold-Me-Close, Muse Nut, Amour, Suffrain Powder, Luck Dust",
+         "2,200"
+        ],
+        [
          "Mana Potion",
-         "Restores Mana — handy before spell-heavy days.",
-         "Verified (multiple sources)"
-        ],
-        [
-         "Red Wine (keg, not potion)",
-         "Quest item for Orlock; also a loved gift.",
-         "Verified"
-        ],
-        [
-         "Other recipes",
-         "Effects and ingredients not yet confirmed.",
-         "待补"
+         "Restores 8 Mana",
+         "Mana Essence, Drikker, Henbane Powder, Violet, Frosteria",
+         "3,200"
         ]
        ]
       },
@@ -30539,16 +30675,24 @@
        "body": "",
        "items": [
         [
-         "ポーションはいつ？",
+         "ポーションはいつ解放？",
          "メインストーリー第4部で解放。"
         ],
         [
-         "マナ回復のポーションは？",
-         "マナポーション（Noel の大好物でもある）。"
+         "マナ回復は？",
+         "Mana Potion がマナを8回復（Noel の大好物でもある）。"
+        ],
+        [
+         "一番売れるのは？",
+         "Mana Potion（3,200コイン）が現時点で最高値。"
+        ],
+        [
+         "赤ワインはポーション？",
+         "いいえ——たるで作るアイテム（Orlock のクエスト品で大好物）。大釜では作りません。"
         ],
         [
          "「A Magical Cocktail」は？",
-         "ポーションを溜めて素早く飲み、全効果を同時に。"
+         "全ポーションを確保し、続けて飲んで全効果を同時に。"
         ]
        ]
       }
@@ -30556,35 +30700,75 @@
     },
     "ko": {
      "title": "문라이트 피크스 물약",
-     "metaTitle": "물약: 확인된 레시피와 효과",
-     "metaDescription": "『문라이트 피크스』물약: 해금 방법, 확인된 효과, 'A Magical Cocktail' 업적. 레시피 검증 중.",
-     "intro": "물약 제작은 메인 스토리(4부)에서 해금되며, 가마솥에 재배·채집한 재료를 넣어 만듭니다. 확인된 내용을 정리했습니다.",
+     "metaTitle": "물약: 전체 9개 레시피와 효과",
+     "metaDescription": "『문라이트 피크스』전체 물약 레시피: 9종의 효과·재료·판매가와 해금 방법, 'A Magical Cocktail' 업적.",
+     "intro": "물약 제작은 메인 스토리(4부)에서 해금되며, 가마솥에 재배·채집한 재료를 넣어 만듭니다. 아래는 검증된 전체 9개 레시피입니다(재료·판매가 포함, 출처 gamer.org, 2026-08-12 수집).",
      "sections": [
       {
        "type": "table",
        "tag": "DATA",
-       "heading": "확인된 물약",
+       "heading": "전체 9종 레시피",
        "body": "",
        "headers": [
         "물약",
         "효과",
-        "상태"
+        "재료",
+        "판매가"
        ],
        "rows": [
         [
+         "Alter Ego Elixir",
+         "Changes your appearance",
+         "Quartz Dust, Nightshade Powder, Honey",
+         "1,000"
+        ],
+        [
+         "Sunscreen Potion",
+         "Protects you from sunlight",
+         "Fiber, Egg",
+         "45"
+        ],
+        [
+         "Mindless Miner Tonic",
+         "Removes energy cost while mining",
+         "Gold Ore, Leftsee, Glowglammer, Nightshade Powder",
+         "1,300"
+        ],
+        [
+         "Frictionless Farming Tonic",
+         "Removes energy cost while farming",
+         "Onion, Honey, Googly Garlic Powder, Heart Stone",
+         "990"
+        ],
+        [
+         "Fluent Fishing Tonic",
+         "Removes energy cost while fishing",
+         "Splotch, Glow Ginger Powder, Sugar, Volacio Mushroom",
+         "700"
+        ],
+        [
+         "Fierce Forester Tonic",
+         "Removes energy cost while chopping wood",
+         "Sage Powder, Amanita, Light Wood, Cranberry",
+         "950"
+        ],
+        [
+         "Rapid Reel Potion",
+         "Fish bite almost instantly",
+         "Angry Mandrake, Wolfsbane Powder, Sugar, Whisper",
+         "700"
+        ],
+        [
+         "Love Potion",
+         "Slightly increases friendship gained from gifts",
+         "Hold-Me-Close, Muse Nut, Amour, Suffrain Powder, Luck Dust",
+         "2,200"
+        ],
+        [
          "Mana Potion",
-         "Restores Mana — handy before spell-heavy days.",
-         "Verified (multiple sources)"
-        ],
-        [
-         "Red Wine (keg, not potion)",
-         "Quest item for Orlock; also a loved gift.",
-         "Verified"
-        ],
-        [
-         "Other recipes",
-         "Effects and ingredients not yet confirmed.",
-         "待补"
+         "Restores 8 Mana",
+         "Mana Essence, Drikker, Henbane Powder, Violet, Frosteria",
+         "3,200"
         ]
        ]
       },
@@ -30615,16 +30799,24 @@
        "body": "",
        "items": [
         [
-         "물약은 언제?",
+         "물약은 언제 해금?",
          "메인 스토리 4부에서 해금."
         ],
         [
-         "마나 회복 물약?",
-         "마나 물약(Noel의 최애 선물이기도)."
+         "마나 회복 물약은?",
+         "Mana Potion이 마나 8 회복(Noel의 최애 선물이기도)."
         ],
         [
-         "'A Magical Cocktail'?",
-         "물약을 모아 빠르게 마셔 모든 효과 동시 활성."
+         "가장 비싼 물약은?",
+         "Mana Potion(3,200코인)이 현재 최고가."
+        ],
+        [
+         "레드 와인은 물약인가요?",
+         "아니요 — 술통 아이템(Orlock 퀘스트용, 최애 선물). 가마솥으로 만들지 않습니다."
+        ],
+        [
+         "'A Magical Cocktail'은?",
+         "물약을 모아 두고 연속으로 마셔 모든 효과를 동시에. "
         ]
        ]
       }
@@ -30632,35 +30824,75 @@
     },
     "fr": {
      "title": "Potions de Moonlight Peaks",
-     "metaTitle": "Potions : recettes et effets connus",
-     "metaDescription": "Les potions de Moonlight Peaks : déblocage, effets connus et le succès 'A Magical Cocktail' — recettes en cours de vérification.",
-     "intro": "Les potions se débloquent dans l'histoire (partie 4) avec un chaudron et des ingrédients cultivés ou cueillis. Voici ce qui est vérifié.",
+     "metaTitle": "Potions : les 9 recettes et effets",
+     "metaDescription": "Toutes les recettes de potions de Moonlight Peaks : effets, ingrédients et prix de vente pour 9 potions, plus le déblocage et le succès 'A Magical Cocktail'.",
+     "intro": "Les potions se débloquent dans l'histoire (partie 4) avec un chaudron et des ingrédients cultivés ou cueillis. Voici les 9 recettes vérifiées (ingrédients et prix inclus, source : gamer.org, collecté le 12/08/2026).",
      "sections": [
       {
        "type": "table",
        "tag": "DATA",
-       "heading": "Potions connues",
+       "heading": "Les 9 potions connues",
        "body": "",
        "headers": [
         "Potion",
         "Effet",
-        "Statut"
+        "Ingrédients",
+        "Prix de vente"
        ],
        "rows": [
         [
+         "Alter Ego Elixir",
+         "Changes your appearance",
+         "Quartz Dust, Nightshade Powder, Honey",
+         "1,000"
+        ],
+        [
+         "Sunscreen Potion",
+         "Protects you from sunlight",
+         "Fiber, Egg",
+         "45"
+        ],
+        [
+         "Mindless Miner Tonic",
+         "Removes energy cost while mining",
+         "Gold Ore, Leftsee, Glowglammer, Nightshade Powder",
+         "1,300"
+        ],
+        [
+         "Frictionless Farming Tonic",
+         "Removes energy cost while farming",
+         "Onion, Honey, Googly Garlic Powder, Heart Stone",
+         "990"
+        ],
+        [
+         "Fluent Fishing Tonic",
+         "Removes energy cost while fishing",
+         "Splotch, Glow Ginger Powder, Sugar, Volacio Mushroom",
+         "700"
+        ],
+        [
+         "Fierce Forester Tonic",
+         "Removes energy cost while chopping wood",
+         "Sage Powder, Amanita, Light Wood, Cranberry",
+         "950"
+        ],
+        [
+         "Rapid Reel Potion",
+         "Fish bite almost instantly",
+         "Angry Mandrake, Wolfsbane Powder, Sugar, Whisper",
+         "700"
+        ],
+        [
+         "Love Potion",
+         "Slightly increases friendship gained from gifts",
+         "Hold-Me-Close, Muse Nut, Amour, Suffrain Powder, Luck Dust",
+         "2,200"
+        ],
+        [
          "Mana Potion",
-         "Restores Mana — handy before spell-heavy days.",
-         "Verified (multiple sources)"
-        ],
-        [
-         "Red Wine (keg, not potion)",
-         "Quest item for Orlock; also a loved gift.",
-         "Verified"
-        ],
-        [
-         "Other recipes",
-         "Effects and ingredients not yet confirmed.",
-         "待补"
+         "Restores 8 Mana",
+         "Mana Essence, Drikker, Henbane Powder, Violet, Frosteria",
+         "3,200"
         ]
        ]
       },
@@ -30691,16 +30923,24 @@
        "body": "",
        "items": [
         [
-         "Quand les potions ?",
-         "Pendant l'histoire (partie 4)."
+         "Quand débloquer les potions ?",
+         "Pendant l'histoire principale (partie 4)."
         ],
         [
-         "Potion de mana ?",
-         "La potion de mana (aussi un cadeau adoré de Noel)."
+         "Quelle potion restaure le mana ?",
+         "La Mana Potion restaure 8 de mana (cadeau adoré de Noel aussi)."
         ],
         [
-         "'A Magical Cocktail' ?",
-         "Buvez plusieurs potions à la suite pour cumuler les effets."
+         "La plus chère ?",
+         "Mana Potion (3 200 pièces) — la plus chère trouvée."
+        ],
+        [
+         "Le vin rouge est-il une potion ?",
+         "Non — un produit du tonneau (objet de quête pour Orlock, cadeau adoré), pas un brassin de chaudron."
+        ],
+        [
+         "Comment avoir 'A Magical Cocktail' ?",
+         "Stockez les potions puis buvez-les à la suite pour cumuler les effets."
         ]
        ]
       }
@@ -30708,35 +30948,75 @@
     },
     "de": {
      "title": "Tränke in Moonlight Peaks",
-     "metaTitle": "Tränke: bekannte Rezepte und Effekte",
-     "metaDescription": "Tränke in Moonlight Peaks: Freischalten, bekannte Effekte und der Erfolg 'A Magical Cocktail' — Rezepte werden noch geprüft.",
-     "intro": "Tränke schaltest du in der Hauptstory (Teil 4) frei: Kessel plus angebaute/gesammelte Zutaten. Hier ist, was wir verifiziert haben.",
+     "metaTitle": "Tränke: alle 9 Rezepte und Effekte",
+     "metaDescription": "Alle Trank-Rezepte in Moonlight Peaks: Effekte, Zutaten und Verkaufspreise für 9 Tränke, plus Freischaltung und der Erfolg 'A Magical Cocktail'.",
+     "intro": "Tränke schaltest du in der Hauptstory (Teil 4) frei: Kessel plus angebaute/gesammelte Zutaten. Hier sind alle 9 verifizierten Rezepte (Zutaten und Preise inklusive, Quelle: gamer.org, erfasst am 12.08.2026).",
      "sections": [
       {
        "type": "table",
        "tag": "DATA",
-       "heading": "Bekannte Tränke",
+       "heading": "Alle 9 bekannten Tränke",
        "body": "",
        "headers": [
         "Trank",
         "Effekt",
-        "Status"
+        "Zutaten",
+        "Verkaufspreis"
        ],
        "rows": [
         [
+         "Alter Ego Elixir",
+         "Changes your appearance",
+         "Quartz Dust, Nightshade Powder, Honey",
+         "1,000"
+        ],
+        [
+         "Sunscreen Potion",
+         "Protects you from sunlight",
+         "Fiber, Egg",
+         "45"
+        ],
+        [
+         "Mindless Miner Tonic",
+         "Removes energy cost while mining",
+         "Gold Ore, Leftsee, Glowglammer, Nightshade Powder",
+         "1,300"
+        ],
+        [
+         "Frictionless Farming Tonic",
+         "Removes energy cost while farming",
+         "Onion, Honey, Googly Garlic Powder, Heart Stone",
+         "990"
+        ],
+        [
+         "Fluent Fishing Tonic",
+         "Removes energy cost while fishing",
+         "Splotch, Glow Ginger Powder, Sugar, Volacio Mushroom",
+         "700"
+        ],
+        [
+         "Fierce Forester Tonic",
+         "Removes energy cost while chopping wood",
+         "Sage Powder, Amanita, Light Wood, Cranberry",
+         "950"
+        ],
+        [
+         "Rapid Reel Potion",
+         "Fish bite almost instantly",
+         "Angry Mandrake, Wolfsbane Powder, Sugar, Whisper",
+         "700"
+        ],
+        [
+         "Love Potion",
+         "Slightly increases friendship gained from gifts",
+         "Hold-Me-Close, Muse Nut, Amour, Suffrain Powder, Luck Dust",
+         "2,200"
+        ],
+        [
          "Mana Potion",
-         "Restores Mana — handy before spell-heavy days.",
-         "Verified (multiple sources)"
-        ],
-        [
-         "Red Wine (keg, not potion)",
-         "Quest item for Orlock; also a loved gift.",
-         "Verified"
-        ],
-        [
-         "Other recipes",
-         "Effects and ingredients not yet confirmed.",
-         "待补"
+         "Restores 8 Mana",
+         "Mana Essence, Drikker, Henbane Powder, Violet, Frosteria",
+         "3,200"
         ]
        ]
       },
@@ -30767,16 +31047,24 @@
        "body": "",
        "items": [
         [
-         "Wann Tränke?",
+         "Wann Tränke freischalten?",
          "In der Hauptstory (Teil 4)."
         ],
         [
-         "Mana-Trank?",
-         "Der Mana-Trank (auch ein geliebtes Geschenk von Noel)."
+         "Welcher Trank stellt Mana wieder her?",
+         "Mana Potion stellt 8 Mana wieder her (auch ein Lieblingsgeschenk von Noel)."
         ],
         [
-         "'A Magical Cocktail'?",
-         "Mehrere Tränke schnell trinken, um alle Effekte zu stapeln."
+         "Der teuerste?",
+         "Mana Potion (3.200 Münzen) — der bisher teuerste."
+        ],
+        [
+         "Ist Rotwein ein Trank?",
+         "Nein — ein Fassprodukt (Quest-Item für Orlock, geliebtes Geschenk), nicht im Kessel."
+        ],
+        [
+         "Wie bekomme ich 'A Magical Cocktail'?",
+         "Tränke horten und nacheinander trinken, damit alle Effekte gleichzeitig aktiv sind."
         ]
        ]
       }
@@ -30790,8 +31078,8 @@
    "slug": "moonlight-peaks/museum",
    "title": "Moonlight Peaks Museum: How to Open & Complete It",
    "metaTitle": "Moonlight Peaks Museum: Opening, Donations & Completion",
-   "metaDescription": "How to open and complete the Museum in Moonlight Peaks: Jada's questline, four-family artifacts, aquarium collection and the completion achievement.",
-   "intro": "The Museum in Moonlight Peaks is opened through Jada's questline and completed by donating fish, flowers, artifacts and collectibles. This page collects what's verified.",
+   "metaDescription": "The Museum in Moonlight Peaks is opened through Jada's questline and completed by donating fish, flowers, artifacts and collectibles. It has five exhibit roo…",
+   "intro": "The Museum in Moonlight Peaks is opened through Jada's questline and completed by donating fish, flowers, artifacts and collectibles. It has five exhibit rooms — Critters, Deity, Farming, Supernatural and Aquarium. This page collects what's verified.",
    "sections": [
     {
      "type": "steps",
@@ -30814,6 +31102,47 @@
       [
        "Return & exhibit",
        "Return the artifacts to Jada and visit her exhibition the next day to open the Museum."
+      ]
+     ]
+    },
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "The five exhibit rooms",
+     "body": "",
+     "items": [
+      "Critters Room — small creatures and critters.",
+      "Deity Room — divine artifacts from the gods (see the table below).",
+      "Farming Room — farming collectibles (including Amanita, grown in summer and autumn).",
+      "Supernatural Room — supernatural relics.",
+      "Aquarium Room — the fish collection (all 22 fish for 'Fishing Pro')."
+     ]
+    },
+    {
+     "type": "table",
+     "tag": "DATA",
+     "heading": "Deity Room artifacts (4)",
+     "body": "",
+     "headers": [
+      "Artifact",
+      "How to get it"
+     ],
+     "rows": [
+      [
+       "Death's Tomb",
+       "Reach max friendship with Death."
+      ],
+      [
+       "Chakra Tuner",
+       "Reach max friendship with the Moon Goddess."
+      ],
+      [
+       "Sun God's Halo",
+       "Reach max friendship with the Sun God."
+      ],
+      [
+       "Llemi's Bow",
+       "Reach max friendship with Llemi."
       ]
      ]
     },
@@ -30886,7 +31215,48 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Completion & achievements",
+       "heading": "五个展室",
+       "body": "",
+       "items": [
+        "生物室（Critters Room）——小型生物与萌宠。",
+        "神室（Deity Room）——诸神的圣物（见下方表格）。",
+        "农业室（Farming Room）——农耕收藏（含 Amanita，夏秋两季种植）。",
+        "超自然室（Supernatural Room）——超自然遗物。",
+        "水族馆室（Aquarium Room）——鱼类收藏（集齐 22 种鱼得“Fishing Pro”）。"
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "神室文物（4 件）",
+       "body": "",
+       "headers": [
+        "文物",
+        "获取方式"
+       ],
+       "rows": [
+        [
+         "Death's Tomb",
+         "Reach max friendship with Death."
+        ],
+        [
+         "Chakra Tuner",
+         "Reach max friendship with the Moon Goddess."
+        ],
+        [
+         "Sun God's Halo",
+         "Reach max friendship with the Sun God."
+        ],
+        [
+         "Llemi's Bow",
+         "Reach max friendship with Llemi."
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "完成与成就",
        "body": "",
        "items": [
         "“Archaeo-Logistics”——开启博物馆。",
@@ -30906,6 +31276,14 @@
         [
          "博物馆任务线是谁的？",
          "Jada，文物收藏家（随 Persephone 的剧情解锁）。"
+        ],
+        [
+         "博物馆有几个展室？",
+         "5 个：生物室、神室、农业室、超自然室与水族馆室。"
+        ],
+        [
+         "神室有什么？",
+         "4 件圣物：Death 满好感的 Death's Tomb、月神/太阳神/Llemi 满好感的 Chakra Tuner、Sun God's Halo、Llemi's Bow。"
         ],
         [
          "捐什么？",
@@ -30952,7 +31330,48 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Completion & achievements",
+       "heading": "5つの展示室",
+       "body": "",
+       "items": [
+        "クリッター室（Critters Room）——小さな生き物。",
+        "神の間（Deity Room）——神々の聖物（下表参照）。",
+        "農業室（Farming Room）——農耕コレクション（Amanita は夏・秋に栽培）。",
+        "超自然室（Supernatural Room）——超自然の遺物。",
+        "水族館室（Aquarium Room）——魚コレクション（全22種で「Fishing Pro」）。"
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "神の間の遺物（4点）",
+       "body": "",
+       "headers": [
+        "遺物",
+        "入手方法"
+       ],
+       "rows": [
+        [
+         "Death's Tomb",
+         "Reach max friendship with Death."
+        ],
+        [
+         "Chakra Tuner",
+         "Reach max friendship with the Moon Goddess."
+        ],
+        [
+         "Sun God's Halo",
+         "Reach max friendship with the Sun God."
+        ],
+        [
+         "Llemi's Bow",
+         "Reach max friendship with Llemi."
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "完成と実績",
        "body": "",
        "items": [
         "「Archaeo-Logistics」——博物館を開く。",
@@ -30972,6 +31391,14 @@
         [
          "博物館のクエストは誰？",
          "Jada（遺物コレクター）。Persephone のストーリーで解放。"
+        ],
+        [
+         "展示室はいくつ？",
+         "5つ：クリッター、神、農業、超自然、水族館。"
+        ],
+        [
+         "神の間には？",
+         "4点：Death 好感度MAXの Death's Tomb、月神・太陽神・Llemi 好感度MAXの Chakra Tuner / Sun God's Halo / Llemi's Bow。"
         ],
         [
          "何を寄贈？",
@@ -31018,7 +31445,48 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Completion & achievements",
+       "heading": "다섯 개의 전시실",
+       "body": "",
+       "items": [
+        "크리터즈 룸(Critters Room) — 작은 생물들.",
+        "신의 방(Deity Room) — 신들의 성물(아래 표 참조).",
+        "파밍 룸(Farming Room) — 농업 컬렉션(Amanita, 여름·가을 재배).",
+        "초자연의 방(Supernatural Room) — 초자연 유물.",
+        "아쿠아리움 룸(Aquarium Room) — 물고기 컬렉션(22종 완성 시 'Fishing Pro')."
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "신의 방 유물(4점)",
+       "body": "",
+       "headers": [
+        "유물",
+        "획득 방법"
+       ],
+       "rows": [
+        [
+         "Death's Tomb",
+         "Reach max friendship with Death."
+        ],
+        [
+         "Chakra Tuner",
+         "Reach max friendship with the Moon Goddess."
+        ],
+        [
+         "Sun God's Halo",
+         "Reach max friendship with the Sun God."
+        ],
+        [
+         "Llemi's Bow",
+         "Reach max friendship with Llemi."
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "완성과 업적",
        "body": "",
        "items": [
         "'Archaeo-Logistics' — 박물관 개관.",
@@ -31038,6 +31506,14 @@
         [
          "박물관 퀘스트는?",
          "Jada(유물 수집가). Persephone 스토리로 해금."
+        ],
+        [
+         "전시실은 몇 개?",
+         "5개: 크리터즈, 신, 파밍, 초자연, 아쿠아리움."
+        ],
+        [
+         "신의 방에는?",
+         "4점: Death 호감도 MAX Death's Tomb, 달의 여신·태양신·Llemi 호감도 MAX Chakra Tuner / Sun God's Halo / Llemi's Bow."
         ],
         [
          "뭘 기증?",
@@ -31084,7 +31560,48 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Completion & achievements",
+       "heading": "Les cinq salles d'exposition",
+       "body": "",
+       "items": [
+        "Salle des créatures (Critters) — petites créatures.",
+        "Salle divine (Deity) — artefacts des dieux (voir tableau).",
+        "Salle agricole (Farming) — collection agricole (Amanita, été/automne).",
+        "Salle du surnaturel (Supernatural) — reliques surnaturelles.",
+        "Salle de l'aquarium (Aquarium) — poissons (les 22 pour 'Fishing Pro')."
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Artefacts de la salle divine (4)",
+       "body": "",
+       "headers": [
+        "Artefact",
+        "Comment l'obtenir"
+       ],
+       "rows": [
+        [
+         "Death's Tomb",
+         "Reach max friendship with Death."
+        ],
+        [
+         "Chakra Tuner",
+         "Reach max friendship with the Moon Goddess."
+        ],
+        [
+         "Sun God's Halo",
+         "Reach max friendship with the Sun God."
+        ],
+        [
+         "Llemi's Bow",
+         "Reach max friendship with Llemi."
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Complétion & succès",
        "body": "",
        "items": [
         "'Archaeo-Logistics' — ouvrir le musée.",
@@ -31104,6 +31621,14 @@
         [
          "Qui dirige la quête ?",
          "Jada, la collectionneuse (avec l'histoire de Persephone)."
+        ],
+        [
+         "Combien de salles ?",
+         "5 : créatures, divine, agricole, surnaturel et aquarium."
+        ],
+        [
+         "Salle divine ?",
+         "4 artefacts : Death's Tomb (amitié max avec Death), Chakra Tuner (déesse lunaire), Sun God's Halo (dieu soleil), Llemi's Bow (Llemi)."
         ],
         [
          "Quoi donner ?",
@@ -31150,7 +31675,48 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Completion & achievements",
+       "heading": "Die fünf Ausstellungsräume",
+       "body": "",
+       "items": [
+        "Kreaturen-Raum (Critters) — kleine Kreaturen.",
+        "Götterraum (Deity) — göttliche Artefakte (siehe Tabelle).",
+        "Landwirtschaftsraum (Farming) — Farm-Sammelstücke (Amanita, Sommer/Herbst).",
+        "Übernatürlicher Raum (Supernatural) — Relikte.",
+        "Aquarienraum (Aquarium) — Fischsammlung (alle 22 für 'Fishing Pro')."
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "DATA",
+       "heading": "Artefakte des Götterraums (4)",
+       "body": "",
+       "headers": [
+        "Artefakt",
+        "So erhältst du es"
+       ],
+       "rows": [
+        [
+         "Death's Tomb",
+         "Reach max friendship with Death."
+        ],
+        [
+         "Chakra Tuner",
+         "Reach max friendship with the Moon Goddess."
+        ],
+        [
+         "Sun God's Halo",
+         "Reach max friendship with the Sun God."
+        ],
+        [
+         "Llemi's Bow",
+         "Reach max friendship with Llemi."
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "Abschluss & Erfolge",
        "body": "",
        "items": [
         "'Archaeo-Logistics' — Museum öffnen.",
@@ -31172,6 +31738,14 @@
          "Jada, die Sammlerin (mit Persephones Story)."
         ],
         [
+         "Wie viele Räume?",
+         "5: Kreaturen, Götter, Landwirtschaft, Übernatürliches, Aquarium."
+        ],
+        [
+         "Götterraum?",
+         "4 Artefakte: Death's Tomb (max. Freundschaft mit Death), Chakra Tuner (Mondgöttin), Sun God's Halo (Sonnengott), Llemi's Bow (Llemi)."
+        ],
+        [
          "Was spenden?",
          "Fische (Aquarium), Blumen, Artefakte, Soul Blobs."
         ],
@@ -31190,9 +31764,9 @@
   {
    "slug": "moonlight-peaks/breeding",
    "title": "Moonlight Peaks Animals: Cheekens, Cowcula & More",
-   "metaTitle": "Moonlight Peaks Animals: How to Get Barns & Farm Creat…",
-   "metaDescription": "Farm animals in Moonlight Peaks: unlock the barn (4,000 Coins), adopt Cheekens and Cowcula from Luna's farm, and what byproducts they give.",
-   "intro": "Farm animals in Moonlight Peaks unlock after Luna's letter. Build a barn, adopt creatures from Luna's farm, feed them fodder and collect byproducts for cooking, quests and money.",
+   "metaTitle": "Moonlight Peaks Animals: All 7 Farm Creatures & Prices",
+   "metaDescription": "All Moonlight Peaks farm animals: Cheeken, Pig Goat, Draculamb, Cowcula, Bumpkin, Stoney and Rabbicula — unlock, purchase price and what each produces.",
+   "intro": "Farm animals in Moonlight Peaks unlock after Luna's letter. Build a barn, adopt creatures from Luna's farm, feed them fodder and collect byproducts for cooking, quests and money. All 7 animals with prices below are from sportsrant (L2, 2026-08-12).",
    "sections": [
     {
      "type": "steps",
@@ -31221,31 +31795,55 @@
     {
      "type": "table",
      "tag": "DATA",
-     "heading": "Known farm creatures",
+     "heading": "All 7 known farm animals",
      "body": "",
      "headers": [
-      "Creature",
-      "Source",
-      "Byproduct / use",
-      "Status"
+      "Animal",
+      "Unlock",
+      "Purchase price",
+      "Produces"
      ],
      "rows": [
       [
-       "Cheekens",
-       "Luna's farm",
-       "Eggs (fried egg for quests, cooking)",
-       "Verified"
+       "Cheeken",
+       "'Farm Animals for Sale' quest",
+       "1,200",
+       "Egg, Golden Egg"
+      ],
+      [
+       "Pig Goat",
+       "Build a Barn",
+       "3,500",
+       "Piggoat Milk"
+      ],
+      [
+       "Draculamb",
+       "Build a Barn",
+       "4,500",
+       "Draculamb Milk, Wool"
       ],
       [
        "Cowcula",
-       "Luna's farm",
-       "Milk → Cheese via the press ('Cheese, if You Please' quest)",
-       "Verified"
+       "Build a Barn",
+       "6,000",
+       "Cowcula Milk"
       ],
       [
-       "Other creatures",
-       "Luna's farm (later game)",
-       "待补",
+       "Bumpkin",
+       "Reach Fall (Year 1)",
+       "12,000",
+       "Plops (compost)"
+      ],
+      [
+       "Stoney",
+       "Reach Winter (Year 1)",
+       "9,000",
+       "Heart Stone"
+      ],
+      [
+       "Rabbicula",
+       "Reach Spring (Year 2)",
+       "2,800",
        "待补"
       ]
      ]
@@ -31265,6 +31863,10 @@
        "4,000 Coins at Ridge's shop (the Howling Hammer)."
       ],
       [
+       "Which animal pays off fastest?",
+       "Cheeken (1,200) lays eggs daily — the cheapest entry; Bumpkin (Fall, 12,000) is the most expensive so far."
+      ],
+      [
        "What can I do with eggs?",
        "Fried eggs are needed for the Hendersons' housewarming quest; eggs also cook into recipes."
       ]
@@ -31274,9 +31876,9 @@
    "i18n": {
     "zh-CN": {
      "title": "月光小镇 动物养殖",
-     "metaTitle": "月光小镇动物：谷仓与农场生物",
-     "metaDescription": "《月光小镇》农场动物：解锁谷仓（4000 金币）、从 Luna 农场领养 Cheekens 与 Cowcula、收集副产物。",
-     "intro": "收到 Luna 来信后解锁农场动物：建造谷仓、从 Luna 的农场领养生物、投放饲料并收集副产物用于烹饪、任务与赚钱。",
+     "metaTitle": "月光小镇动物：全部 7 种农场生物与价格",
+     "metaDescription": "收到 Luna 来信后解锁农场动物：建造谷仓、从 Luna 的农场领养生物、投放饲料并收集副产物用于烹饪、任务与赚钱。以下为全部 7 种动物及已核实价格（…",
+     "intro": "收到 Luna 来信后解锁农场动物：建造谷仓、从 Luna 的农场领养生物、投放饲料并收集副产物用于烹饪、任务与赚钱。以下为全部 7 种动物及已核实价格（来源 sportsrant，2026-08-12 采集）。",
      "sections": [
       {
        "type": "steps",
@@ -31305,31 +31907,55 @@
       {
        "type": "table",
        "tag": "DATA",
-       "heading": "已知农场生物",
+       "heading": "全部 7 种已知动物",
        "body": "",
        "headers": [
-        "生物",
-        "来源",
-        "副产物/用途",
-        "状态"
+        "动物",
+        "解锁",
+        "购买价",
+        "产出"
        ],
        "rows": [
         [
-         "Cheekens",
-         "Luna's farm",
-         "Eggs (fried egg for quests, cooking)",
-         "Verified"
+         "Cheeken",
+         "'Farm Animals for Sale' quest",
+         "1,200",
+         "Egg, Golden Egg"
+        ],
+        [
+         "Pig Goat",
+         "Build a Barn",
+         "3,500",
+         "Piggoat Milk"
+        ],
+        [
+         "Draculamb",
+         "Build a Barn",
+         "4,500",
+         "Draculamb Milk, Wool"
         ],
         [
          "Cowcula",
-         "Luna's farm",
-         "Milk → Cheese via the press ('Cheese, if You Please' quest)",
-         "Verified"
+         "Build a Barn",
+         "6,000",
+         "Cowcula Milk"
         ],
         [
-         "Other creatures",
-         "Luna's farm (later game)",
-         "待补",
+         "Bumpkin",
+         "Reach Fall (Year 1)",
+         "12,000",
+         "Plops (compost)"
+        ],
+        [
+         "Stoney",
+         "Reach Winter (Year 1)",
+         "9,000",
+         "Heart Stone"
+        ],
+        [
+         "Rabbicula",
+         "Reach Spring (Year 2)",
+         "2,800",
          "待补"
         ]
        ]
@@ -31349,6 +31975,10 @@
          "Ridge 的店铺（Howling Hammer）售价 4,000 金币。"
         ],
         [
+         "哪种动物回本最快？",
+         "Cheeken（1,200）每天产蛋，是最便宜入门；Bumpkin（秋季 12,000）目前最贵。"
+        ],
+        [
          "鸡蛋能做什么？",
          "煎蛋是 Hendersons 乔迁任务所需；蛋也可用于烹饪。"
         ]
@@ -31358,9 +31988,9 @@
     },
     "ja": {
      "title": "ムーンライトピークス 動物",
-     "metaTitle": "動物：納屋と牧場の仲間",
-     "metaDescription": "『Moonlight Peaks』の牧場動物：納屋（4,000コイン）の解放、Luna の農場で Cheekens や Cowcula を、副産物も。",
-     "intro": "Luna の手紙で動物が解放されます。納屋を建て、Luna の農場で動物を迎え、餌を与えて副産物を集めましょう。",
+     "metaTitle": "動物：全7種の牧場生物と価格",
+     "metaDescription": "Luna の手紙で動物が解放されます。納屋を建て、Luna の農場で動物を迎え、餌を与えて副産物を集めましょう。以下は全7種と確認済みの価格（出典 spo…",
+     "intro": "Luna の手紙で動物が解放されます。納屋を建て、Luna の農場で動物を迎え、餌を与えて副産物を集めましょう。以下は全7種と確認済みの価格（出典 sportsrant、2026-08-12 収集）。",
      "sections": [
       {
        "type": "steps",
@@ -31389,31 +32019,55 @@
       {
        "type": "table",
        "tag": "DATA",
-       "heading": "判明している動物",
+       "heading": "判明している全7種",
        "body": "",
        "headers": [
         "動物",
-        "入手先",
-        "副産物/用途",
-        "状態"
+        "解放",
+        "購入価格",
+        "産物"
        ],
        "rows": [
         [
-         "Cheekens",
-         "Luna's farm",
-         "Eggs (fried egg for quests, cooking)",
-         "Verified"
+         "Cheeken",
+         "'Farm Animals for Sale' quest",
+         "1,200",
+         "Egg, Golden Egg"
+        ],
+        [
+         "Pig Goat",
+         "Build a Barn",
+         "3,500",
+         "Piggoat Milk"
+        ],
+        [
+         "Draculamb",
+         "Build a Barn",
+         "4,500",
+         "Draculamb Milk, Wool"
         ],
         [
          "Cowcula",
-         "Luna's farm",
-         "Milk → Cheese via the press ('Cheese, if You Please' quest)",
-         "Verified"
+         "Build a Barn",
+         "6,000",
+         "Cowcula Milk"
         ],
         [
-         "Other creatures",
-         "Luna's farm (later game)",
-         "待补",
+         "Bumpkin",
+         "Reach Fall (Year 1)",
+         "12,000",
+         "Plops (compost)"
+        ],
+        [
+         "Stoney",
+         "Reach Winter (Year 1)",
+         "9,000",
+         "Heart Stone"
+        ],
+        [
+         "Rabbicula",
+         "Reach Spring (Year 2)",
+         "2,800",
          "待补"
         ]
        ]
@@ -31425,7 +32079,7 @@
        "body": "",
        "items": [
         [
-         "動物はいつ？",
+         "動物はいつ解放？",
          "Luna の手紙後（3日目頃、序盤）。"
         ],
         [
@@ -31433,8 +32087,12 @@
          "Ridge の店（Howling Hammer）で4,000コイン。"
         ],
         [
-         "卵の使い道？",
-         "目玉焼きは Hendersons の引っ越しクエストに必要。料理にも。"
+         "回収が早い動物は？",
+         "Cheekens（1,200）は毎日卵を産み最も手軽。Bumpkin（秋・12,000）が今のところ最高額。"
+        ],
+        [
+         "卵の使い道は？",
+         "Hendersons の引っ越しクエストに目玉焼き、料理にも。"
         ]
        ]
       }
@@ -31442,9 +32100,9 @@
     },
     "ko": {
      "title": "문라이트 피크스 동물",
-     "metaTitle": "동물: 헛간과 농장 생물",
-     "metaDescription": "『문라이트 피크스』농장 동물: 헛간(4,000코인) 해금, Luna 농장에서 Cheekens·Cowcula 입양, 부산물 수집.",
-     "intro": "Luna의 편지로 농장 동물이 해금됩니다. 헛간을 짓고, Luna 농장에서 생물을 입양하고, 사료를 주고 부산물을 모으세요.",
+     "metaTitle": "동물: 전체 7종 농장 생물과 가격",
+     "metaDescription": "Luna의 편지로 농장 동물이 해금됩니다. 헛간을 짓고, Luna 농장에서 생물을 입양하고, 사료를 주고 부산물을 모으세요. 아래는 전체…",
+     "intro": "Luna의 편지로 농장 동물이 해금됩니다. 헛간을 짓고, Luna 농장에서 생물을 입양하고, 사료를 주고 부산물을 모으세요. 아래는 전체 7종과 검증된 가격입니다(출처 sportsrant, 2026-08-12 수집).",
      "sections": [
       {
        "type": "steps",
@@ -31473,31 +32131,55 @@
       {
        "type": "table",
        "tag": "DATA",
-       "heading": "확인된 농장 생물",
+       "heading": "전체 7종 확인",
        "body": "",
        "headers": [
-        "생물",
-        "출처",
-        "부산물/용도",
-        "상태"
+        "동물",
+        "해금",
+        "구매 가격",
+        "생산물"
        ],
        "rows": [
         [
-         "Cheekens",
-         "Luna's farm",
-         "Eggs (fried egg for quests, cooking)",
-         "Verified"
+         "Cheeken",
+         "'Farm Animals for Sale' quest",
+         "1,200",
+         "Egg, Golden Egg"
+        ],
+        [
+         "Pig Goat",
+         "Build a Barn",
+         "3,500",
+         "Piggoat Milk"
+        ],
+        [
+         "Draculamb",
+         "Build a Barn",
+         "4,500",
+         "Draculamb Milk, Wool"
         ],
         [
          "Cowcula",
-         "Luna's farm",
-         "Milk → Cheese via the press ('Cheese, if You Please' quest)",
-         "Verified"
+         "Build a Barn",
+         "6,000",
+         "Cowcula Milk"
         ],
         [
-         "Other creatures",
-         "Luna's farm (later game)",
-         "待补",
+         "Bumpkin",
+         "Reach Fall (Year 1)",
+         "12,000",
+         "Plops (compost)"
+        ],
+        [
+         "Stoney",
+         "Reach Winter (Year 1)",
+         "9,000",
+         "Heart Stone"
+        ],
+        [
+         "Rabbicula",
+         "Reach Spring (Year 2)",
+         "2,800",
          "待补"
         ]
        ]
@@ -31509,15 +32191,19 @@
        "body": "",
        "items": [
         [
-         "동물은 언제?",
+         "동물은 언제 해금?",
          "Luna의 편지 후(3일차쯤, 초반)."
         ],
         [
-         "헛간 가격?",
+         "헛간 가격은?",
          "Ridge 상점(Howling Hammer)에서 4,000코인."
         ],
         [
-         "달걀 용도?",
+         "회수 빠른 동물은?",
+         "Cheeken(1,200)이 매일 알을 낳아 가장 가볍고, Bumpkin(가을·12,000)이 현재 최고가."
+        ],
+        [
+         "달걀 용도는?",
          "프라이드에그는 Hendersons 이사 퀘스트 필요. 요리에도."
         ]
        ]
@@ -31526,9 +32212,9 @@
     },
     "fr": {
      "title": "Animaux de Moonlight Peaks",
-     "metaTitle": "Animaux : granges et créatures de ferme",
-     "metaDescription": "Les animaux de Moonlight Peaks : débloquer la grange (4 000 pièces), adopter Cheekens et Cowcula à la ferme de Luna, et leurs sous-produits.",
-     "intro": "Les animaux se débloquent après la lettre de Luna. Construisez une grange, adoptez des créatures, nourrissez-les et collectez les sous-produits.",
+     "metaTitle": "Animaux : les 7 créatures de ferme et prix",
+     "metaDescription": "Tous les animaux de ferme de Moonlight Peaks : Cheeken, Pig Goat, Draculamb, Cowcula, Bumpkin, Stoney et Rabbicula — déblocage, prix et produits.",
+     "intro": "Les animaux se débloquent après la lettre de Luna. Construisez une grange, adoptez des créatures, nourrissez-les et collectez les sous-produits. Voici les 7 animaux et leurs prix vérifiés (source : sportsrant, collecté le 12/08/2026).",
      "sections": [
       {
        "type": "steps",
@@ -31557,31 +32243,55 @@
       {
        "type": "table",
        "tag": "DATA",
-       "heading": "Créatures connues",
+       "heading": "Les 7 créatures connues",
        "body": "",
        "headers": [
-        "Créature",
-        "Source",
-        "Sous-produit / usage",
-        "Statut"
+        "Animal",
+        "Déblocage",
+        "Prix d'achat",
+        "Produits"
        ],
        "rows": [
         [
-         "Cheekens",
-         "Luna's farm",
-         "Eggs (fried egg for quests, cooking)",
-         "Verified"
+         "Cheeken",
+         "'Farm Animals for Sale' quest",
+         "1,200",
+         "Egg, Golden Egg"
+        ],
+        [
+         "Pig Goat",
+         "Build a Barn",
+         "3,500",
+         "Piggoat Milk"
+        ],
+        [
+         "Draculamb",
+         "Build a Barn",
+         "4,500",
+         "Draculamb Milk, Wool"
         ],
         [
          "Cowcula",
-         "Luna's farm",
-         "Milk → Cheese via the press ('Cheese, if You Please' quest)",
-         "Verified"
+         "Build a Barn",
+         "6,000",
+         "Cowcula Milk"
         ],
         [
-         "Other creatures",
-         "Luna's farm (later game)",
-         "待补",
+         "Bumpkin",
+         "Reach Fall (Year 1)",
+         "12,000",
+         "Plops (compost)"
+        ],
+        [
+         "Stoney",
+         "Reach Winter (Year 1)",
+         "9,000",
+         "Heart Stone"
+        ],
+        [
+         "Rabbicula",
+         "Reach Spring (Year 2)",
+         "2,800",
          "待补"
         ]
        ]
@@ -31593,12 +32303,16 @@
        "body": "",
        "items": [
         [
-         "Quand les animaux ?",
+         "Quand débloquer les animaux ?",
          "Après la lettre de Luna (jour 3, tôt)."
         ],
         [
          "Prix de la grange ?",
          "4 000 pièces chez Ridge (Howling Hammer)."
+        ],
+        [
+         "Le plus rentable ?",
+         "Cheeken (1 200) pond chaque jour ; Bumpkin (automne, 12 000) est le plus cher."
         ],
         [
          "Œufs ?",
@@ -31610,9 +32324,9 @@
     },
     "de": {
      "title": "Tiere in Moonlight Peaks",
-     "metaTitle": "Tiere: Scheunen und Hofkreaturen",
-     "metaDescription": "Hoftiere in Moonlight Peaks: Scheune freischalten (4.000 Münzen), Cheekens und Cowcula von Lunas Hof adoptieren und Nebenprodukte sammeln.",
-     "intro": "Hoftiere schaltest du nach Lunas Brief frei. Baue eine Scheune, adoptiere Kreaturen, füttere sie und sammle Nebenprodukte.",
+     "metaTitle": "Tiere: alle 7 Hofkreaturen und Preise",
+     "metaDescription": "Alle Hoftiere in Moonlight Peaks: Cheeken, Pig Goat, Draculamb, Cowcula, Bumpkin, Stoney und Rabbicula — Freischaltung, Kaufpreis, Produkte.",
+     "intro": "Hoftiere schaltest du nach Lunas Brief frei. Baue eine Scheune, adoptiere Kreaturen, füttere sie und sammle Nebenprodukte. Hier alle 7 Tiere mit verifizierten Preisen (Quelle: sportsrant, erfasst am 12.08.2026).",
      "sections": [
       {
        "type": "steps",
@@ -31641,31 +32355,55 @@
       {
        "type": "table",
        "tag": "DATA",
-       "heading": "Bekannte Hofkreaturen",
+       "heading": "Alle 7 bekannten Tiere",
        "body": "",
        "headers": [
-        "Kreatur",
-        "Quelle",
-        "Nebenprodukt / Nutzen",
-        "Status"
+        "Tier",
+        "Freischaltung",
+        "Kaufpreis",
+        "Produkte"
        ],
        "rows": [
         [
-         "Cheekens",
-         "Luna's farm",
-         "Eggs (fried egg for quests, cooking)",
-         "Verified"
+         "Cheeken",
+         "'Farm Animals for Sale' quest",
+         "1,200",
+         "Egg, Golden Egg"
+        ],
+        [
+         "Pig Goat",
+         "Build a Barn",
+         "3,500",
+         "Piggoat Milk"
+        ],
+        [
+         "Draculamb",
+         "Build a Barn",
+         "4,500",
+         "Draculamb Milk, Wool"
         ],
         [
          "Cowcula",
-         "Luna's farm",
-         "Milk → Cheese via the press ('Cheese, if You Please' quest)",
-         "Verified"
+         "Build a Barn",
+         "6,000",
+         "Cowcula Milk"
         ],
         [
-         "Other creatures",
-         "Luna's farm (later game)",
-         "待补",
+         "Bumpkin",
+         "Reach Fall (Year 1)",
+         "12,000",
+         "Plops (compost)"
+        ],
+        [
+         "Stoney",
+         "Reach Winter (Year 1)",
+         "9,000",
+         "Heart Stone"
+        ],
+        [
+         "Rabbicula",
+         "Reach Spring (Year 2)",
+         "2,800",
          "待补"
         ]
        ]
@@ -31677,7 +32415,7 @@
        "body": "",
        "items": [
         [
-         "Wann Tiere?",
+         "Wann Tiere freischalten?",
          "Nach Lunas Brief (ca. Tag 3, früh)."
         ],
         [
@@ -31685,7 +32423,11 @@
          "4.000 Münzen bei Ridge (Howling Hammer)."
         ],
         [
-         "Eier?",
+         "Am schnellsten rentabel?",
+         "Cheeken (1.200) legt täglich Eier; Bumpkin (Herbst, 12.000) ist das teuerste."
+        ],
+        [
+         "Wofür Eier?",
          "Spiegeleier für die Henderson-Quest; auch Kochen."
         ]
        ]
@@ -31699,8 +32441,8 @@
   {
    "slug": "moonlight-peaks/updates",
    "title": "Moonlight Peaks Updates & Patch Notes",
-   "metaTitle": "Moonlight Peaks Patch Notes: 1.1.41, 1.1.38 & More",
-   "metaDescription": "The latest Moonlight Peaks patch notes: 1.1.41 (storage, loading, embroidery), 1.1.38 (freeze fixes) and the 1.0 launch — updated as new patches drop.",
+   "metaTitle": "Moonlight Peaks Patch Notes: 1.1.45, 1.1.44 & More",
+   "metaDescription": "Little Chicken keeps Moonlight Peaks updated with regular patches. This page tracks the latest patch notes; it's updated whenever a new update ships.",
    "intro": "Little Chicken keeps Moonlight Peaks updated with regular patches. This page tracks the latest patch notes; it's updated whenever a new update ships.",
    "sections": [
     {
@@ -31714,6 +32456,16 @@
       "Highlights"
      ],
      "rows": [
+      [
+       "1.1.45",
+       "2026-07-21",
+       "Added a photosensitivity warning at startup; fixed Star Gazing signs blocked by black bars on widescreen; fixed the Loveage Gift Exchange soft lock; fixed animals in Luna's shop disappearing after Pumpkin Head's heart event; boosted Weeping Willows respawn in the Howling Marshes; 'Back to the Den' now triggers (retroactive grant one in-game day after all Vampsters returned); fixed escaping the Recover the Moon quest; fixed Bee House / Firefly Sanctuary memory leaks; mouse, Farm Helpers and item-pickup performance; text fixes. More improvements are coming in 1.2."
+      ],
+      [
+       "1.1.44",
+       "2026-07-16",
+       "Fixed the invisible embroidery table; fixed failing to load after upgrading your house; tree seeds are now plantable in all seasons and show correct seasons; decorations on tables/shelves no longer consume inventory slots; crops no longer grow during rainy nights; fixed a corrupted save from quitting while saving (Steam only)."
+      ],
       [
        "1.1.41",
        "2026-07-15",
@@ -31749,6 +32501,14 @@
      "body": "",
      "items": [
       [
+       "What did patch 1.1.45 fix?",
+       "A photosensitivity warning at startup, the Star Gazing widescreen black-bar bug, the Loveage Gift Exchange soft lock, animals vanishing from Luna's shop, the 'Back to the Den' achievement trigger (retroactive), Recover the Moon skip, Bee House/Firefly Sanctuary memory leaks, plus mouse/Farm Helpers/item-pickup performance. More is planned for 1.2."
+      ],
+      [
+       "What did patch 1.1.44 fix?",
+       "The invisible embroidery table, failing to load after a house upgrade, all-season tree planting with correct season display, inventory slots for table/shelf decorations, rainy-night crop growth, and a save-corruption bug (Steam only)."
+      ],
+      [
        "What did patch 1.1.41 fix?",
        "Loading times, house storage across the whole plot (incl. barns/greenhouses), earlier embroidery, season display on tree seeds, and 23+ bug fixes."
       ],
@@ -31766,8 +32526,8 @@
    "i18n": {
     "zh-CN": {
      "title": "月光小镇 更新日志",
-     "metaTitle": "月光小镇补丁说明：1.1.41、1.1.38 等",
-     "metaDescription": "《月光小镇》最新补丁说明：1.1.41（储物、加载、刺绣）、1.1.38（卡顿修复）与 1.0 发布——随新补丁持续更新。",
+     "metaTitle": "月光小镇补丁说明：1.1.45、1.1.44 等",
+     "metaDescription": "Little Chicken 持续为《月光小镇》发布补丁。本页追踪最新补丁说明，每次新更新都会更新。",
      "intro": "Little Chicken 持续为《月光小镇》发布补丁。本页追踪最新补丁说明，每次新更新都会更新。",
      "sections": [
       {
@@ -31781,6 +32541,16 @@
         "要点"
        ],
        "rows": [
+        [
+         "1.1.45",
+         "2026-07-21",
+         "Added a photosensitivity warning at startup; fixed Star Gazing signs blocked by black bars on widescreen; fixed the Loveage Gift Exchange soft lock; fixed animals in Luna's shop disappearing after Pumpkin Head's heart event; boosted Weeping Willows respawn in the Howling Marshes; 'Back to the Den' now triggers (retroactive grant one in-game day after all Vampsters returned); fixed escaping the Recover the Moon quest; fixed Bee House / Firefly Sanctuary memory leaks; mouse, Farm Helpers and item-pickup performance; text fixes. More improvements are coming in 1.2."
+        ],
+        [
+         "1.1.44",
+         "2026-07-16",
+         "Fixed the invisible embroidery table; fixed failing to load after upgrading your house; tree seeds are now plantable in all seasons and show correct seasons; decorations on tables/shelves no longer consume inventory slots; crops no longer grow during rainy nights; fixed a corrupted save from quitting while saving (Steam only)."
+        ],
         [
          "1.1.41",
          "2026-07-15",
@@ -31816,6 +32586,14 @@
        "body": "",
        "items": [
         [
+         "1.1.45 修了什么？",
+         "起播光敏警告、观星宽屏黑条、Loveage 礼物交换软锁、Luna 商店动物消失（南瓜头心事件后）、“Back to the Den”成就补发、Recover the Moon 逃课、蜜蜂屋/萤火虫圣所内存泄漏，以及鼠标/农场助手/捡拾性能——1.2 还有更多改进。"
+        ],
+        [
+         "1.1.44 修了什么？",
+         "刺绣桌不可见、升级房屋后无法加载、树苗全年可种且季节显示正确、桌面/架装饰不占库存、雨天晚上作物不生长、保存时退出损坏存档（仅 Steam）。"
+        ],
+        [
          "1.1.41 修了什么？",
          "加载时间、全地块储物（含谷仓/温室）、刺绣提前、树苗显示结果季节，以及 23+ 项修复。"
         ],
@@ -31833,8 +32611,8 @@
     },
     "ja": {
      "title": "ムーンライトピークス アップデート",
-     "metaTitle": "パッチノート：1.1.41、1.1.38 ほか",
-     "metaDescription": "『Moonlight Peaks』最新パッチ：1.1.41（倉庫・ロード・刺繍）、1.1.38（フリーズ修正）、1.0 発売。",
+     "metaTitle": "パッチノート：1.1.45、1.1.44 ほか",
+     "metaDescription": "Little Chicken はパッチを定期的に配信。最新のパッチノートを追跡します。",
      "intro": "Little Chicken はパッチを定期的に配信。最新のパッチノートを追跡します。",
      "sections": [
       {
@@ -31848,6 +32626,16 @@
         "ハイライト"
        ],
        "rows": [
+        [
+         "1.1.45",
+         "2026-07-21",
+         "Added a photosensitivity warning at startup; fixed Star Gazing signs blocked by black bars on widescreen; fixed the Loveage Gift Exchange soft lock; fixed animals in Luna's shop disappearing after Pumpkin Head's heart event; boosted Weeping Willows respawn in the Howling Marshes; 'Back to the Den' now triggers (retroactive grant one in-game day after all Vampsters returned); fixed escaping the Recover the Moon quest; fixed Bee House / Firefly Sanctuary memory leaks; mouse, Farm Helpers and item-pickup performance; text fixes. More improvements are coming in 1.2."
+        ],
+        [
+         "1.1.44",
+         "2026-07-16",
+         "Fixed the invisible embroidery table; fixed failing to load after upgrading your house; tree seeds are now plantable in all seasons and show correct seasons; decorations on tables/shelves no longer consume inventory slots; crops no longer grow during rainy nights; fixed a corrupted save from quitting while saving (Steam only)."
+        ],
         [
          "1.1.41",
          "2026-07-15",
@@ -31883,6 +32671,14 @@
        "body": "",
        "items": [
         [
+         "1.1.45 の修正は？",
+         "起動時の光過敏警告、Star Gazing の黒帯、Loveage Gift Exchange のソフトロック、Pumpkin Head のハートイベント後の動物消失、「Back to the Den」の遡及解除、Recover the Moon の逃げ道、Bee House/Firefly Sanctuary のメモリリーク、マウス・ファームヘルパー・拾い性能。1.2 でさらなる改善予定。"
+        ],
+        [
+         "1.1.44 の修正は？",
+         "刺繍テーブル非表示、家のアップグレード後のロード不能、苗木の全季節植え付けと季節表示、テーブル・棚の装飾がインベントリを消費しない、雨の夜の作物成長、保存中の終了によるセーブ破損（Steamのみ）。"
+        ],
+        [
          "1.1.41 の修正は？",
          "ロード時間、敷地全体の収納（納屋・温室含む）、刺繍の早期解放、季節表示、23以上のバグ。"
         ],
@@ -31900,8 +32696,8 @@
     },
     "ko": {
      "title": "문라이트 피크스 업데이트",
-     "metaTitle": "패치 노트: 1.1.41, 1.1.38 등",
-     "metaDescription": "『문라이트 피크스』최신 패치: 1.1.41(창고·로딩·자수), 1.1.38(프리즈 수정), 1.0 출시.",
+     "metaTitle": "패치 노트: 1.1.45, 1.1.44 등",
+     "metaDescription": "Little Chicken이 정기적으로 패치를 배포합니다. 최신 패치 노트를 정리합니다.",
      "intro": "Little Chicken이 정기적으로 패치를 배포합니다. 최신 패치 노트를 정리합니다.",
      "sections": [
       {
@@ -31915,6 +32711,16 @@
         "핵심"
        ],
        "rows": [
+        [
+         "1.1.45",
+         "2026-07-21",
+         "Added a photosensitivity warning at startup; fixed Star Gazing signs blocked by black bars on widescreen; fixed the Loveage Gift Exchange soft lock; fixed animals in Luna's shop disappearing after Pumpkin Head's heart event; boosted Weeping Willows respawn in the Howling Marshes; 'Back to the Den' now triggers (retroactive grant one in-game day after all Vampsters returned); fixed escaping the Recover the Moon quest; fixed Bee House / Firefly Sanctuary memory leaks; mouse, Farm Helpers and item-pickup performance; text fixes. More improvements are coming in 1.2."
+        ],
+        [
+         "1.1.44",
+         "2026-07-16",
+         "Fixed the invisible embroidery table; fixed failing to load after upgrading your house; tree seeds are now plantable in all seasons and show correct seasons; decorations on tables/shelves no longer consume inventory slots; crops no longer grow during rainy nights; fixed a corrupted save from quitting while saving (Steam only)."
+        ],
         [
          "1.1.41",
          "2026-07-15",
@@ -31950,6 +32756,14 @@
        "body": "",
        "items": [
         [
+         "1.1.45 수정?",
+         "시작 시 광과민 경고, 별자리 관측 검은띠, Loveage 선물 교환 소프트록, Pumpkin Head 하트 이벤트 후 동물 소멸, 'Back to the Den' 소급 해금, Recover the Moon 탈출, Bee House/Firefly Sanctuary 메모리 누수, 마우스·농장 헬퍼·줍기 성능. 1.2에서 추가 개선."
+        ],
+        [
+         "1.1.44 수정?",
+         "자수 테이블 비표시, 집 업그레이드 후 로드 불가, 묘목 전 계절 심기·계절 표시, 테이블·선반 장식이 인벤토리 차지 안 함, 비 오는 밤 작물 성장, 저장 중 종료로 세이브 손상(Steam 전용)."
+        ],
+        [
          "1.1.41 수정?",
          "로딩 시간, 부지 전체 창고(헛간·온실), 자수 조기 해금, 계절 표시, 23개 이상 버그."
         ],
@@ -31967,8 +32781,8 @@
     },
     "fr": {
      "title": "Mises à jour de Moonlight Peaks",
-     "metaTitle": "Notes de patch : 1.1.41, 1.1.38 et plus",
-     "metaDescription": "Les dernières notes de patch de Moonlight Peaks : 1.1.41 (stockage, chargement, broderie), 1.1.38 (gels) et la sortie 1.0.",
+     "metaTitle": "Notes de patch : 1.1.45, 1.1.44 et plus",
+     "metaDescription": "Little Chicken met régulièrement Moonlight Peaks à jour. Cette page suit les dernières notes de patch.",
      "intro": "Little Chicken met régulièrement Moonlight Peaks à jour. Cette page suit les dernières notes de patch.",
      "sections": [
       {
@@ -31982,6 +32796,16 @@
         "Points clés"
        ],
        "rows": [
+        [
+         "1.1.45",
+         "2026-07-21",
+         "Added a photosensitivity warning at startup; fixed Star Gazing signs blocked by black bars on widescreen; fixed the Loveage Gift Exchange soft lock; fixed animals in Luna's shop disappearing after Pumpkin Head's heart event; boosted Weeping Willows respawn in the Howling Marshes; 'Back to the Den' now triggers (retroactive grant one in-game day after all Vampsters returned); fixed escaping the Recover the Moon quest; fixed Bee House / Firefly Sanctuary memory leaks; mouse, Farm Helpers and item-pickup performance; text fixes. More improvements are coming in 1.2."
+        ],
+        [
+         "1.1.44",
+         "2026-07-16",
+         "Fixed the invisible embroidery table; fixed failing to load after upgrading your house; tree seeds are now plantable in all seasons and show correct seasons; decorations on tables/shelves no longer consume inventory slots; crops no longer grow during rainy nights; fixed a corrupted save from quitting while saving (Steam only)."
+        ],
         [
          "1.1.41",
          "2026-07-15",
@@ -32017,8 +32841,16 @@
        "body": "",
        "items": [
         [
+         "Que corrige 1.1.45 ?",
+         "Avertissement de photosensibilité, Star Gazing en écran large, soft lock Loveage, animaux disparus chez Luna, 'Back to the Den' rétroactif, Recover the Moon, fuites mémoire Bee House/Firefly Sanctuary, performances souris/ferme/ramassage. Plus en 1.2."
+        ],
+        [
+         "Que corrige 1.1.44 ?",
+         "Table de broderie invisible, chargement après upgrade de maison, pousses plantables toute l'année, décorations sans slot d'inventaire, cultures les nuits de pluie, sauvegarde corrompue (Steam uniquement)."
+        ],
+        [
          "Que corrige 1.1.41 ?",
-         "Chargement, stockage sur tout le terrain (granges/serres), broderie plus tôt, saisons, 23+ correctifs."
+         "Chargement, stockage sur tout le terrain, broderie plus tôt, saisons, 23+ correctifs."
         ],
         [
          "Patchs consoles ?",
@@ -32034,8 +32866,8 @@
     },
     "de": {
      "title": "Updates für Moonlight Peaks",
-     "metaTitle": "Patch-Notizen: 1.1.41, 1.1.38 und mehr",
-     "metaDescription": "Die neuesten Patch-Notizen zu Moonlight Peaks: 1.1.41 (Lager, Laden, Stickerei), 1.1.38 (Freezes) und der 1.0-Start.",
+     "metaTitle": "Patch-Notizen: 1.1.45, 1.1.44 und mehr",
+     "metaDescription": "Die neuesten Patch-Notizen: 1.1.45 (Fotosensibilitäts-Warnung, Star Gazing, 'Back to the Den'), 1.1.44 (Sticktisch, Setzlinge) und der 1.0-Start.",
      "intro": "Little Chicken aktualisiert Moonlight Peaks regelmäßig. Diese Seite verfolgt die neuesten Patch-Notizen.",
      "sections": [
       {
@@ -32049,6 +32881,16 @@
         "Highlights"
        ],
        "rows": [
+        [
+         "1.1.45",
+         "2026-07-21",
+         "Added a photosensitivity warning at startup; fixed Star Gazing signs blocked by black bars on widescreen; fixed the Loveage Gift Exchange soft lock; fixed animals in Luna's shop disappearing after Pumpkin Head's heart event; boosted Weeping Willows respawn in the Howling Marshes; 'Back to the Den' now triggers (retroactive grant one in-game day after all Vampsters returned); fixed escaping the Recover the Moon quest; fixed Bee House / Firefly Sanctuary memory leaks; mouse, Farm Helpers and item-pickup performance; text fixes. More improvements are coming in 1.2."
+        ],
+        [
+         "1.1.44",
+         "2026-07-16",
+         "Fixed the invisible embroidery table; fixed failing to load after upgrading your house; tree seeds are now plantable in all seasons and show correct seasons; decorations on tables/shelves no longer consume inventory slots; crops no longer grow during rainy nights; fixed a corrupted save from quitting while saving (Steam only)."
+        ],
         [
          "1.1.41",
          "2026-07-15",
@@ -32084,8 +32926,16 @@
        "body": "",
        "items": [
         [
+         "Was fixte 1.1.45?",
+         "Fotosensibilitäts-Warnung, Star-Gazing-Balken, Loveage-Softlock, verschwundene Tiere, 'Back to the Den' nachträglich, Recover the Moon, Speicherlecks, Maus/Farmhelfer/Aufsammeln-Performance. Mehr in 1.2."
+        ],
+        [
+         "Was fixte 1.1.44?",
+         "Unsichtbarer Sticktisch, Laden nach Haus-Upgrade, Setzlinge ganzjährig, Dekoration ohne Inventarslots, Pflanzenfix an Regennächten, Speicherfehler (nur Steam)."
+        ],
+        [
          "Was fixte 1.1.41?",
-         "Ladezeiten, Lager auf dem Grundstück (Scheunen/Gewächshäuser), Stickerei früher, Jahreszeiten, 23+ Fixes."
+         "Ladezeiten, Lager auf dem Grundstück, Stickerei früher, Jahreszeiten, 23+ Fixes."
         ],
         [
          "Konsolen-Patches?",
