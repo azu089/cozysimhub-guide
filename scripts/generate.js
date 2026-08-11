@@ -120,6 +120,8 @@ const KNIGHT_DATA = (() => {
 function head(title, desc, extraLd, slug, lang) {
   const ld = JSON.stringify([KIT.ld.website({ name: siteI18n(lang).name, url: urlOf("index", lang), description: siteI18n(lang).description })].concat(extraLd || []));
   const gsc = DATA.site.gscVerification ? `<meta name="google-site-verification" content="${esc(DATA.site.gscVerification)}" />` : "";
+  // AdSense 所有权验证 meta —— 五个 EMD 站同款；未配 adsenseId 时零输出
+  const adsenseMeta = DATA.site.adsenseId ? `<meta name="google-adsense-account" content="ca-${esc(DATA.site.adsenseId)}" />` : "";
   const htmlLang = LANG_META[lang]?.html || lang;
   return `<!DOCTYPE html>
 <html lang="${htmlLang}">
@@ -131,7 +133,7 @@ function head(title, desc, extraLd, slug, lang) {
 <link rel="canonical" href="${urlOf(slug, lang)}" />
 ${KIT.hreflangTags({ langs: LANGS, defaultLang: DEF, urlOf, slug })}
 <meta name="theme-color" content="#3A3226" />
-${gsc}
+${gsc}${adsenseMeta}
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="${esc(siteI18n(lang).name)}" />
 <meta property="og:title" content="${esc(title)}" />
@@ -581,6 +583,7 @@ function build() {
   // robots.txt
   fs.writeFileSync(path.join(OUT, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: https://${DATA.site.domain}/sitemap.xml\n`);
   KIT.writeIndexNowKey(OUT, DATA.site.indexNowKey);
+  KIT.writeAds(OUT, DATA.site.adsenseId);   // 未配 adsenseId 时不产出空 ads.txt（审计会拦空文件）
   // 404
   fs.writeFileSync(path.join(OUT, "404.html"), renderStatic("404", DEF) + "</body></html>");
   console.log(`✓ built ${all.length} files (${LANGS.length} langs, ${DATA.pages.length + 4} pages)`);
