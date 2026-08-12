@@ -23,6 +23,6 @@ jobs:
       - name: Assert deterministic build
         run: |
           find public -type f -print0 | sort -z | xargs -0 sha256sum > /tmp/a.sha
-          node scripts/generate.js
+          TZ=Pacific/Kiritimati node scripts/generate.js
           find public -type f -print0 | sort -z | xargs -0 sha256sum > /tmp/b.sha
           diff /tmp/a.sha /tmp/b.sha

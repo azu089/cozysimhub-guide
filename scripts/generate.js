@@ -25,7 +25,12 @@ const linkOf = (slug, lang) => {
   if (p === "" || p === "index") return lang === DEF ? "/" : `/${lang}/`;
   return lang === DEF ? `/${p}` : `/${lang}/${p}`;
 };
-const TODAY = new Date().toISOString().slice(0, 10);
+// 构建时间不是内容。默认固定到仓库已声明的内容校验日期；只有编辑者显式
+// 提供 CONTENT_UPDATED_AT 时才推进，避免同一 commit 跨午夜生成整站不同产物。
+const TODAY = process.env.CONTENT_UPDATED_AT || DATA.site.contentUpdatedAt;
+if (!/^\d{4}-\d{2}-\d{2}$/.test(TODAY || "")) {
+  throw new Error("data/site.json site.contentUpdatedAt or CONTENT_UPDATED_AT must be YYYY-MM-DD");
+}
 const LM = KIT.createLastmod({ manifestPath: path.join(ROOT, "data", ".lastmod.json"), today: TODAY });
 
 /* ---------- 语言与国旗（SVG，全平台渲染） ---------- */
@@ -1042,7 +1047,7 @@ function build() {
   if (fs.existsSync(OUT)) fs.rmSync(OUT, { recursive: true, force: true });
   const all = [];
   // 首页
-  for (const lang of LANGS) all.push({ html: renderHome(lang), path: lang === DEF ? "index.html" : `${lang}/index.html` });
+  for (const lang of LANGS) all.push({ html: renderHome(lang), path: lang === DEF ? "index.html" : `${lang}/index.html`, url: urlOf("index", lang) });
   // 内容页（index 已由 renderHome 生成，跳过；moonlight-peaks/* 走月光主题）
   for (const p of DATA.pages) {
     if (p.slug === "index") continue;
@@ -1050,21 +1055,21 @@ function build() {
       const isMoon = p.slug.startsWith("moonlight-peaks");
       const html = isMoon ? renderMoonPage(p, lang) : (renderPage(p, lang) + (p.slug.startsWith("sovereign-tower/tools/") ? TOOL_JS : "") + "</div></body></html>");
       const base = lang === DEF ? `${p.slug}` : `${lang}/${p.slug}`;
-      all.push({ html, path: `${base}.html` });
+      all.push({ html, path: `${base}.html`, url: urlOf(p.slug, lang) });
     }
   }
   // 静态页
   for (const slug of ["about", "privacy", "contact"]) {
     for (const lang of LANGS) {
       const html = renderStatic(slug, lang) + "</div></body></html>";
-      all.push({ html, path: lang === DEF ? `${slug}.html` : `${lang}/${slug}.html` });
+      all.push({ html, path: lang === DEF ? `${slug}.html` : `${lang}/${slug}.html`, url: urlOf(slug, lang) });
     }
   }
   // 写文件
   for (const f of all) {
     const p = path.join(OUT, f.path);
     fs.mkdirSync(path.dirname(p), { recursive: true });
-    fs.writeFileSync(p, f.html);
+    fs.writeFileSync(p, LM.stamp(f.url, f.html));
   }
   // 复制静态资源
   fs.mkdirSync(path.join(OUT, "css"), { recursive: true });
@@ -1094,8 +1099,9 @@ function build() {
     }
     for (const slug of ["about", "privacy", "contact"]) urls.push(urlOf(slug, lang));
   }
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${esc(u)}</loc><lastmod>${TODAY}</lastmod></url>`).join("\n")}\n</urlset>\n`;
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${esc(u)}</loc><lastmod>${LM.dateFor(u)}</lastmod></url>`).join("\n")}\n</urlset>\n`;
   fs.writeFileSync(path.join(OUT, "sitemap.xml"), sitemap);
+  LM.save();
   // robots.txt
   fs.writeFileSync(path.join(OUT, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: https://${DATA.site.domain}/sitemap.xml\n`);
   KIT.writeIndexNowKey(OUT, DATA.site.indexNowKey);
