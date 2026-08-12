@@ -1731,6 +1731,10 @@
      [
       "Act 2 살인이 엔딩에 영향을 주나요?",
       "네 — 살인 조사(Gwendan 퀘스트라인)가 생존자를 바꾸고 어떤 결의가 해금되는지 결정합니다. 달성률 72.3%로 대부분 미완료."
+     ],
+     [
+      "'트루 엔딩'이 있나요?",
+      "Sovereign Tower에는 공식 '트루 엔딩' 표기가 없습니다. 가장 가까운 것은 플레이어 커뮤니티가 보고한 숨은/대체 엔딩(Steam 커뮤니티 스레드)이며, 정확한 해금 조건은 아직 검증 중입니다(待補)."
      ]
     ]
    }
@@ -1802,6 +1806,10 @@
      [
       "Act 2 殺人はエンディングに影響？",
       "はい——殺人調査（Gwendan クエストライン）が生存者を変え、どの決議が解禁されるかを決める。達成率72.3%で大多数が未完了。"
+     ],
+     [
+      "「トゥルーエンディング」はありますか？",
+      "Sovereign Tower に公式の「トゥルーエンディング」表記はありません。最も近いのはプレイヤーコミュニティが報告する隠し/代替エンディング（Steam コミュニティスレッド）ですが、正確な解放条件は検証中です（待補）。"
      ]
     ]
    }
@@ -1873,6 +1881,10 @@
      [
       "Le meurtre de l'Acte 2 affecte-t-il les fins ?",
       "Oui — l'enquête (la quête de Gwendan) change qui survit et quelles résolutions se débloquent ; seulement ~27,7 % des joueurs l'ont terminée (taux de succès)."
+     ],
+     [
+      "Y a-t-il une vraie fin (true ending) ?",
+      "Sovereign Tower n'a pas de fin « true ending » officielle. La plus proche est la fin cachée/alternative signalée par les joueurs (fil Steam Community), mais ses conditions exactes sont encore en cours de vérification (待补)."
      ]
     ]
    }
@@ -1944,6 +1956,10 @@
      [
       "Beeinflusst der Mord in Akt 2 die Enden?",
       "Ja — die Mordermittlung (Gwendans Questlinie) ändert, wer überlebt und welche Auflösungen freigeschaltet werden; nur ~27,7 % der Spieler haben sie abgeschlossen (Erfolgsrate)."
+     ],
+     [
+      "Gibt es ein „True Ending“?",
+      "Sovereign Tower hat kein offizielles „True Ending“. Am nächsten kommt das von Spielern gemeldete versteckte/alternative Ende (Steam-Community-Thread), dessen genaue Freischaltbedingungen aber noch verifiziert werden (待补)."
      ]
     ]
    }

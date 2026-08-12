@@ -402,6 +402,7 @@ def build_endings():
                 ["How many endings are there?", "A full verified count is 待补. Community videos confirm at least conquest, King Slayer, hidden/alt and Arthur marriage endings."],
                 ["Can I see every ending in one run?", "No — several routes are mutually exclusive. Use New Game+ and the rewind system to explore branches across runs."],
                 ["Does the Act 2 murder affect endings?", "Yes — the murder investigation (Gwendan's questline) changes who survives and which resolutions unlock; only ~27.7% of players have completed it (achievement rate)."],
+                ["Is there a true ending?", "Sovereign Tower has no official 'true ending' label. The closest match is the hidden/alt ending reported by players (Steam community thread), but its exact unlock conditions are still being verified (待补)."],
             ]),
         ],
         "i18n": {"zh-CN": {
@@ -425,6 +426,7 @@ def build_endings():
                     ["一共有多少结局？", "完整已核实数量待补。社区视频确认至少有征服、King Slayer、隐藏/替代、亚瑟王联姻等结局。"],
                     ["一周目能看完全部结局吗？", "不能——多条路线互斥。用 New Game+ 和回溯系统跨周目探索分支。"],
                     ["Act 2 谋杀会影响结局吗？", "会——谋杀调查（Gwendan 任务线）改变谁存活并解锁哪些决议；只有约 27.7% 的玩家完成过（成就率）。"],
+                    ["有「真结局」吗？", "君王之塔没有官方标注的「真结局」。最接近的是玩家社区报告的隐藏/替代结局（Steam 社区帖），但其确切解锁条件仍在核实（待补）。"],
                 ]),
             ],
         }},
