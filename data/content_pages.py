@@ -506,6 +506,7 @@ def build_updates_log():
         "Launch sale: 15% off until 2026-08-20 (¥57.80 in CN).",
         "2 DLCs are attached (appids 4870280 / 4911710) — content still being verified (待补).",
         "This page is the change log for our guides — it updates as we verify new mechanics.",
+        "Patch 1.0.8 (Aug 10, 2026): fixed a GODOT loading-screen crash, Gwendan being immortal, Gwendolen mourning twice, and a Ligia questline choice lock — plus more.",
     ]
     en_faq = [
         ["When was Sovereign Tower released?", "2026-08-06, as a full release (not early access)."],
@@ -516,6 +517,7 @@ def build_updates_log():
         "首发特惠：-15% 至 2026-08-20（国区 ¥57.80）。",
         "已挂 2 个 DLC（appid 4870280 / 4911710）——内容仍在核实（待补）。",
         "本页是我们的攻略更新日志——每当我们核实新机制就更新。",
+        "补丁 1.0.8（2026-08-10）：修复 GODOT 加载屏崩溃、Gwendan 不朽、Gwendolen 重复哀悼、Ligia 任务线选择锁定等问题。",
     ]
     zh_faq = [
         ["君王之塔什么时候发售？", "2026-08-06，正式版（非抢先体验）。"],
