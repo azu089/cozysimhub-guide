@@ -631,9 +631,17 @@ function renderMoonSection(s, lang, slug) {
   switch (s.type) {
     case "table": {
       const th = (s.headers || []).map(h => `<th scope="col">${esc(h)}</th>`).join("");
-      const tr = (s.rows || []).map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join("")}</tr>`).join("");
+      // rowAttrs 由 data/moon_row_attrs.py 从「各自那一列」机械推导（不新增事实），
+      // 渲染成 data-* 供筛选器用；无 JS 时这些属性对读者与爬虫完全无影响。
+      const attrs = s.rowAttrs || [];
+      const tr = (s.rows || []).map((r, i) => {
+        const a = attrs[i] || {};
+        const da = Object.keys(a).filter(k => a[k]).map(k => ` data-${k}="${esc(a[k])}"`).join("");
+        return `<tr${da}>${r.map(c => `<td>${esc(c)}</td>`).join("")}</tr>`;
+      }).join("");
       const tracker = slug === "moonlight-peaks/achievements" ? ' data-tracker="ach"' : "";
-      return `<section class="moon-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><div class="moon-table-wrap"${tracker}><table class="moon-table"><thead><tr>${th}</tr></thead><tbody>${tr}</tbody></table></div></section>`;
+      const kind = s.filterKind ? ` data-filter="${esc(s.filterKind)}"` : "";
+      return `<section class="moon-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><div class="moon-table-wrap"${tracker}${kind}><table class="moon-table"><thead><tr>${th}</tr></thead><tbody>${tr}</tbody></table></div></section>`;
     }
     case "steps": {
       const items = (s.items || []).map((it, i) =>
@@ -683,65 +691,332 @@ function renderMoonPage(p, lang) {
   return head(t.metaTitle || t.title, t.metaDescription, ld, p.slug, lang) + moonHeader(lang, p.slug) + body + moonFooter(lang) + MOON_JS + "</body></html>";
 }
 
-/* 月光交互 JS（渐进增强：HTML 表不变，JS 加筛选/搜索/成就追踪） */
+/* 月光交互工具 UI 文案 —— 6 语。
+   原则：**通用词翻译，游戏专有名词保留英文**。
+   Silverveil Lake / Luna Bay 这类地名没有官方中日韩译名，自己编=违反铁律 3；
+   而 Full Moon / Rain / Large fish / 稀有度 这些是通用词，翻译无风险且对 ko/ja 用户价值最大。 */
+const MOON_UI = {
+  "en":    { search: "Search this table…", searchAria: "Search table", reset: "Reset", showing: "Showing {n} of {t}", none: "No rows match — try clearing a filter.",
+             gRarity: "Rarity", gLoc: "Location", gCond: "Condition", gRod: "Rod", gTier: "Gift tier",
+             common: "Common", uncommon: "Uncommon", rare: "Rare", superrare: "Super Rare",
+             fullmoon: "Full Moon", rain: "Rain", large: "Large fish", evening: "Evening", allseason: "All seasons",
+             anyrod: "Any rod", premium: "Premium rod", pending: "Data pending",
+             loved: "Loved", liked: "Liked", disliked: "Disliked",
+             achDone: "Done {d} / {n}", achHide: "Hide completed", achReset: "Reset progress", achMark: "Mark as done" },
+  "zh-CN": { search: "搜索本表…", searchAria: "搜索本表", reset: "重置", showing: "显示 {n} / {t} 条", none: "没有匹配的条目 —— 试试取消一个筛选。",
+             gRarity: "稀有度", gLoc: "地点", gCond: "条件", gRod: "鱼竿", gTier: "礼物档",
+             common: "普通", uncommon: "少见", rare: "稀有", superrare: "超稀有",
+             fullmoon: "满月", rain: "雨天", large: "大型鱼", evening: "傍晚", allseason: "全季节",
+             anyrod: "任意竿", premium: "高级竿", pending: "数据待补",
+             loved: "最爱", liked: "喜欢", disliked: "讨厌",
+             achDone: "已完成 {d} / {n}", achHide: "隐藏已完成", achReset: "重置进度", achMark: "标记完成" },
+  "ja":    { search: "この表を検索…", searchAria: "表を検索", reset: "リセット", showing: "{t} 件中 {n} 件", none: "該当なし —— フィルターを外してみてください。",
+             gRarity: "レア度", gLoc: "場所", gCond: "条件", gRod: "竿", gTier: "好み",
+             common: "コモン", uncommon: "アンコモン", rare: "レア", superrare: "超レア",
+             fullmoon: "満月", rain: "雨", large: "大型魚", evening: "夕方", allseason: "全季節",
+             anyrod: "どの竿でも", premium: "プレミアム竿", pending: "データ未確認",
+             loved: "大好き", liked: "好き", disliked: "嫌い",
+             achDone: "達成 {d} / {n}", achHide: "達成済みを隠す", achReset: "進捗をリセット", achMark: "達成済みにする" },
+  "ko":    { search: "이 표에서 검색…", searchAria: "표 검색", reset: "초기화", showing: "{t}개 중 {n}개", none: "일치하는 항목이 없습니다 —— 필터를 해제해 보세요.",
+             gRarity: "희귀도", gLoc: "장소", gCond: "조건", gRod: "낚싯대", gTier: "선물 반응",
+             common: "일반", uncommon: "고급", rare: "희귀", superrare: "초희귀",
+             fullmoon: "보름달", rain: "비", large: "대형 어류", evening: "저녁", allseason: "모든 계절",
+             anyrod: "아무 낚싯대", premium: "프리미엄 낚싯대", pending: "데이터 미확인",
+             loved: "매우 좋아함", liked: "좋아함", disliked: "싫어함",
+             achDone: "달성 {d} / {n}", achHide: "달성 항목 숨기기", achReset: "진행도 초기화", achMark: "달성 표시" },
+  "fr":    { search: "Rechercher dans ce tableau…", searchAria: "Rechercher", reset: "Réinitialiser", showing: "{n} sur {t}", none: "Aucun résultat — retirez un filtre.",
+             gRarity: "Rareté", gLoc: "Lieu", gCond: "Condition", gRod: "Canne", gTier: "Préférence",
+             common: "Commun", uncommon: "Peu commun", rare: "Rare", superrare: "Très rare",
+             fullmoon: "Pleine lune", rain: "Pluie", large: "Gros poisson", evening: "Soirée", allseason: "Toutes saisons",
+             anyrod: "N'importe quelle canne", premium: "Canne premium", pending: "Données à confirmer",
+             loved: "Adoré", liked: "Aimé", disliked: "Détesté",
+             achDone: "Fait {d} / {n}", achHide: "Masquer les obtenus", achReset: "Réinitialiser", achMark: "Marquer comme fait" },
+  "de":    { search: "In dieser Tabelle suchen…", searchAria: "Tabelle durchsuchen", reset: "Zurücksetzen", showing: "{n} von {t}", none: "Keine Treffer — Filter entfernen.",
+             gRarity: "Seltenheit", gLoc: "Ort", gCond: "Bedingung", gRod: "Rute", gTier: "Vorliebe",
+             common: "Gewöhnlich", uncommon: "Ungewöhnlich", rare: "Selten", superrare: "Sehr selten",
+             fullmoon: "Vollmond", rain: "Regen", large: "Großer Fisch", evening: "Abend", allseason: "Alle Jahreszeiten",
+             anyrod: "Beliebige Rute", premium: "Premium-Rute", pending: "Daten ausstehend",
+             loved: "Geliebt", liked: "Gemocht", disliked: "Ungeliebt",
+             achDone: "Erledigt {d} / {n}", achHide: "Erledigte ausblenden", achReset: "Fortschritt zurücksetzen", achMark: "Als erledigt markieren" }
+};
+/* 地点是游戏专有名词 → 全语言保留英文原名（与表格单元格一致，便于对照） */
+const MOON_LOC_LABELS = {
+  "silverveil": "Silverveil Lake", "moonlit-pines": "Moonlit Pines River", "luna-bay": "Luna Bay",
+  "pink-grove": "Pink Grove", "underground": "Underground / Caves", "howling-marshes": "Howling Marshes",
+  "misty-shores": "Misty Shores", "farm": "Farm rivers", "anywhere": "Anywhere"
+};
+
+/* 月光交互 JS（渐进增强：HTML 表格一个字不改，筛选器全靠 JS 加） */
 const MOON_JS = `<script>
 (function(){
-  var isZh = document.documentElement.lang === 'zh-CN';
-  // 表格搜索（所有 >6 行的月光表）
-  document.querySelectorAll('.moon-table-wrap').forEach(function(w){
-    var table = w.querySelector('table');
-    if (!table || table.rows.length < 7) return;
-    var box = document.createElement('div');
-    box.className = 'moon-filter';
-    box.innerHTML = '<input type="search" class="moon-search" aria-label="' + (isZh ? '搜索本表' : 'Search table') + '" placeholder="' + (isZh ? '搜索本表…' : 'Search this table…') + '">';
-    var input = box.querySelector('input');
-    input.addEventListener('input', function(){
-      var q = this.value.toLowerCase();
-      table.querySelectorAll('tbody tr').forEach(function(tr){
-        tr.style.display = tr.textContent.toLowerCase().includes(q) ? '' : 'none';
+  var UI = ${JSON.stringify(MOON_UI)};
+  var LOC = ${JSON.stringify(MOON_LOC_LABELS)};
+  var t = UI[document.documentElement.lang] || UI.en;
+  var fmt = function(s, o){ return s.replace(/\\{(\\w+)\\}/g, function(_, k){ return o[k]; }); };
+
+  function chip(label, group, value){
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'moon-chip';
+    b.textContent = label;
+    b.dataset.group = group;
+    b.dataset.value = value;
+    b.setAttribute('aria-pressed', 'false');
+    return b;
+  }
+
+  /* 通用筛选引擎：组内 OR，组间 AND；搜索与筛选叠加 */
+  function buildFilter(wrap, table, groups, opts){
+    opts = opts || {};
+    var rows = Array.prototype.slice.call(table.querySelectorAll('tbody tr'));
+    if (!rows.length) return;
+    var bar = document.createElement('div');
+    bar.className = 'moon-filter';
+
+    var searchRow = document.createElement('div');
+    searchRow.className = 'moon-filter-search';
+    var input = document.createElement('input');
+    input.type = 'search';
+    input.className = 'moon-search';
+    input.placeholder = t.search;
+    input.setAttribute('aria-label', t.searchAria);
+    var resetBtn = document.createElement('button');
+    resetBtn.type = 'button';
+    resetBtn.className = 'moon-reset';
+    resetBtn.textContent = t.reset;
+    searchRow.appendChild(input);
+    searchRow.appendChild(resetBtn);
+    bar.appendChild(searchRow);
+
+    var active = {};
+    groups.forEach(function(g){
+      if (!g.values.length) return;
+      active[g.key] = [];
+      var row = document.createElement('div');
+      row.className = 'moon-chip-row';
+      if (g.label) {
+        var lab = document.createElement('span');
+        lab.className = 'moon-chip-label';
+        lab.textContent = g.label;
+        row.appendChild(lab);
+      }
+      g.values.forEach(function(v){
+        var c = chip(v.label, g.key, v.value);
+        c.addEventListener('click', function(){
+          var arr = active[g.key];
+          var i = arr.indexOf(v.value);
+          if (i > -1) { arr.splice(i, 1); c.setAttribute('aria-pressed', 'false'); }
+          else { arr.push(v.value); c.setAttribute('aria-pressed', 'true'); }
+          apply();
+        });
+        row.appendChild(c);
+      });
+      bar.appendChild(row);
+    });
+
+    var count = document.createElement('p');
+    count.className = 'moon-count';
+    count.setAttribute('aria-live', 'polite');
+    bar.appendChild(count);
+
+    var empty = document.createElement('p');
+    empty.className = 'moon-empty';
+    empty.textContent = t.none;
+    empty.hidden = true;
+
+    function apply(){
+      var q = input.value.trim().toLowerCase();
+      var shown = 0;
+      rows.forEach(function(tr){
+        var ok = true;
+        for (var k in active) {
+          var sel = active[k];
+          if (!sel.length) continue;
+          var have = (tr.dataset[k] || '').split(' ');
+          if (!sel.some(function(v){ return have.indexOf(v) > -1; })) { ok = false; break; }
+        }
+        if (ok && q) ok = opts.match ? opts.match(tr, q, active) : tr.textContent.toLowerCase().indexOf(q) > -1;
+        tr.hidden = !ok;
+        if (ok) shown++;
+      });
+      count.textContent = fmt(t.showing, { n: shown, t: rows.length });
+      empty.hidden = shown !== 0;
+    }
+
+    resetBtn.addEventListener('click', function(){
+      input.value = '';
+      for (var k in active) active[k] = [];
+      bar.querySelectorAll('.moon-chip').forEach(function(c){ c.setAttribute('aria-pressed', 'false'); });
+      apply();
+    });
+    input.addEventListener('input', apply);
+
+    wrap.insertBefore(bar, table.parentNode === wrap ? table : wrap.firstChild);
+    wrap.appendChild(empty);
+    apply();
+  }
+
+  /* 从行属性里收集实际出现过的值 —— 不硬编码，数据变了筛选项自动跟着变 */
+  function valuesOf(rows, key, labeler){
+    var seen = [];
+    rows.forEach(function(tr){
+      (tr.dataset[key] || '').split(' ').forEach(function(v){
+        if (v && seen.indexOf(v) < 0) seen.push(v);
       });
     });
-    w.insertBefore(box, table);
+    return seen.filter(function(v){ return v !== 'unlisted'; })
+               .map(function(v){ return { value: v, label: labeler(v) }; });
+  }
+
+  /* —— 鱼图鉴：稀有度 / 地点 / 条件 / 竿 —— */
+  document.querySelectorAll('[data-filter="fish"]').forEach(function(w){
+    var table = w.querySelector('table');
+    if (!table) return;
+    var rows = Array.prototype.slice.call(table.querySelectorAll('tbody tr'));
+    var order = ['common', 'uncommon', 'rare', 'superrare'];
+    var rarity = valuesOf(rows, 'rarity', function(v){ return t[v] || v; })
+      .sort(function(a, b){ return order.indexOf(a.value) - order.indexOf(b.value); });
+    var loc = valuesOf(rows, 'loc', function(v){ return LOC[v] || v; });
+    var cond = [];
+    ['moon', 'weather', 'size', 'time'].forEach(function(k){
+      valuesOf(rows, k, function(v){ return t[v] || v; }).forEach(function(v){
+        if (['anyweather', 'anytime'].indexOf(v.value) < 0) cond.push({ value: v.value, key: k, label: v.label });
+      });
+    });
+    var rod = valuesOf(rows, 'rod', function(v){ return t[v] || v; });
+    buildFilter(w, table, [
+      { key: 'rarity', label: t.gRarity, values: rarity },
+      { key: 'loc', label: t.gLoc, values: loc },
+      { key: 'moon', label: t.gCond, values: cond.filter(function(c){ return c.key === 'moon'; }) },
+      { key: 'weather', label: '', values: cond.filter(function(c){ return c.key === 'weather'; }) },
+      { key: 'size', label: '', values: cond.filter(function(c){ return c.key === 'size'; }) },
+      { key: 'rod', label: t.gRod, values: rod }
+    ]);
   });
-  // 成就追踪器（localStorage，不改变 HTML 内容）
+
+  /* —— 礼物矩阵：搜一个物品，看谁最爱/喜欢/讨厌它（反查，竞品没有） —— */
+  document.querySelectorAll('[data-filter="gift"]').forEach(function(w){
+    var table = w.querySelector('table');
+    if (!table) return;
+    var COLS = { hasloved: 1, hasliked: 2, hasdisliked: 3 };
+    buildFilter(w, table, [
+      { key: 'has', label: t.gTier, values: [
+        { value: 'hasloved', label: t.loved },
+        { value: 'hasliked', label: t.liked },
+        { value: 'hasdisliked', label: t.disliked }
+      ] }
+    ], {
+      // 选了「讨厌」再搜 Trash → 只列出讨厌 Trash 的角色（把搜索限定在选中的列里）
+      match: function(tr, q, active) {
+        var sel = (active.has || []).filter(function(k){ return COLS[k]; });
+        if (!sel.length) return tr.textContent.toLowerCase().indexOf(q) > -1;
+        return sel.some(function(k){
+          var cell = tr.cells[COLS[k]];
+          return cell && cell.textContent.toLowerCase().indexOf(q) > -1;
+        });
+      }
+    });
+  });
+
+  /* —— 其余长表：只给搜索（无结构化属性可筛） —— */
+  document.querySelectorAll('.moon-table-wrap:not([data-filter])').forEach(function(w){
+    var table = w.querySelector('table');
+    if (!table || table.rows.length < 7) return;
+    buildFilter(w, table, []);
+  });
+
+  /* —— 59 成就追踪器 —— */
   document.querySelectorAll('[data-tracker="ach"]').forEach(function(w){
     var table = w.querySelector('table');
     if (!table) return;
-    var key = 'mp-ach-' + document.documentElement.lang;
+    var key = 'mp-ach-v1';
     var done = {};
     try { done = JSON.parse(localStorage.getItem(key) || '{}'); } catch(e){}
-    var rows = table.querySelectorAll('tbody tr');
-    var wrap = document.createElement('div');
-    wrap.className = 'ach-progress';
+    var rows = Array.prototype.slice.call(table.querySelectorAll('tbody tr'));
+    if (!rows.length) return;
+
+    // 复选框必须放进真正的 <td>，否则会被当成匿名单元格塞进行首，整表错列一格
+    var headRow = table.querySelector('thead tr');
+    if (headRow) {
+      var th = document.createElement('th');
+      th.className = 'ach-col';
+      th.setAttribute('scope', 'col');
+      th.innerHTML = '<span class="visually-hidden">' + t.achMark + '</span>';
+      headRow.insertBefore(th, headRow.firstChild);
+    }
+
+    var panel = document.createElement('div');
+    panel.className = 'ach-panel';
+    var barWrap = document.createElement('div');
+    barWrap.className = 'ach-progress';
     var bar = document.createElement('div');
     bar.className = 'ach-bar';
-    wrap.appendChild(bar);
+    barWrap.appendChild(bar);
     var meta = document.createElement('p');
     meta.className = 'ach-meta';
-    wrap.appendChild(meta);
+    var ctrls = document.createElement('div');
+    ctrls.className = 'ach-ctrls';
+    var hideLab = document.createElement('label');
+    hideLab.className = 'ach-hide';
+    var hideCb = document.createElement('input');
+    hideCb.type = 'checkbox';
+    hideLab.appendChild(hideCb);
+    hideLab.appendChild(document.createTextNode(' ' + t.achHide));
+    var resetB = document.createElement('button');
+    resetB.type = 'button';
+    resetB.className = 'moon-reset';
+    resetB.textContent = t.achReset;
+    ctrls.appendChild(hideLab);
+    ctrls.appendChild(resetB);
+    panel.appendChild(barWrap);
+    panel.appendChild(meta);
+    panel.appendChild(ctrls);
+
     function refresh(){
       var n = rows.length, d = 0;
       rows.forEach(function(tr){ if (done[tr.dataset.ach]) d++; });
       bar.style.width = (n ? (d / n * 100) : 0) + '%';
-      meta.textContent = (isZh ? '已完成 ' : 'Done ') + d + ' / ' + n;
+      barWrap.setAttribute('role', 'progressbar');
+      barWrap.setAttribute('aria-valuenow', String(d));
+      barWrap.setAttribute('aria-valuemin', '0');
+      barWrap.setAttribute('aria-valuemax', String(n));
+      meta.textContent = fmt(t.achDone, { d: d, n: n });
+      // 用独立 class 而不是 hidden：搜索框也在用 hidden，两者互不覆盖
+      rows.forEach(function(tr){
+        tr.classList.toggle('ach-hidden', hideCb.checked && !!done[tr.dataset.ach]);
+      });
       try { localStorage.setItem(key, JSON.stringify(done)); } catch(e){}
     }
+
     rows.forEach(function(tr, i){
-      tr.style.position = 'relative';
-      tr.style.paddingLeft = '2.2em';
+      var name = ((tr.cells[0] && tr.cells[0].textContent) || '').trim() || ('row-' + i);
+      tr.dataset.ach = name;
+      var td = document.createElement('td');
+      td.className = 'ach-col';
       var cb = document.createElement('input');
       cb.type = 'checkbox';
       cb.className = 'ach-cb';
-      cb.setAttribute('aria-label', (isZh ? '标记完成' : 'Mark done'));
-      var name = (tr.cells[0] && tr.cells[0].textContent || '').trim();
-      if (!name) { name = 'row-' + i; }
-      tr.dataset.ach = name;
+      cb.setAttribute('aria-label', t.achMark + ': ' + name);
       cb.checked = !!done[name];
-      cb.addEventListener('change', function(){ done[name] = cb.checked; refresh(); });
-      tr.insertBefore(cb, tr.firstChild);
+      cb.addEventListener('change', function(){
+        done[name] = cb.checked;
+        if (!cb.checked) delete done[name];
+        refresh();
+      });
+      td.appendChild(cb);
+      tr.insertBefore(td, tr.firstChild);
     });
+
+    hideCb.addEventListener('change', refresh);
+    resetB.addEventListener('click', function(){
+      done = {};
+      table.querySelectorAll('.ach-cb').forEach(function(c){ c.checked = false; });
+      hideCb.checked = false;
+      refresh();
+    });
+
+    w.insertBefore(panel, w.firstChild);
     refresh();
-    table.parentNode.insertBefore(wrap, table);
   });
   // 移动端导航
   var tog = document.querySelector('.moon-nav-toggle');

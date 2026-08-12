@@ -782,8 +782,14 @@ for _p in d["pages"]:
         if not _md or len(_md) > _dhi:
             _t["metaDescription"] = _clip(_intro or _title, _dhi)
 
+# --- Moonlight Peaks 表格行属性（供筛选器用；只挂 data-*，不改任何表格内容）---
+# 放在最后：要等所有页面与 i18n 注入都完成后再挂，否则后写入的 sections 会覆盖掉 rowAttrs
+from moon_row_attrs import apply_row_attrs
+_attr_n = apply_row_attrs(d["pages"])
+
 # 输出
 (ROOT / "site.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf8")
+print(f"row-attrs tables: {_attr_n}")
 print(f"langs: {d['site']['languages']}")
 print(f"pages: {len(d['pages'])}")
 print("built:", ", ".join(p['slug'] for p in d['pages']))
