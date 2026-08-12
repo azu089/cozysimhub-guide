@@ -481,18 +481,21 @@ def build_achievements():
 def build_home():
     en = {
         "slug": "index",
-        "title": "Sovereign Tower Guide Hub",
-        "metaTitle": "Sovereign Tower (君王之塔) Guide: All Knights, Recipes, Endings & Tools",
-        "metaDescription": "Complete Sovereign Tower guides: all 24 knights with stats and hidden traits, the 6 recipes, every ending, quest mechanics, romance and interactive tools.",
-        "intro": "A fan-made guide hub for Sovereign Tower (君王之塔), the Round Table management RPG by WILD WITS GAMES / Curve Games. Start with the knights roster, then dive into recipes, endings and our interactive tools.",
+        # 2026-08-13：首页 meta 原本整段在讲 Sovereign Tower，等于和已经排到第 5 位的
+        # /sovereign-tower/ 抢同一个意图 → GSC 实测 36 展示 0 点击。
+        # 站已是双游戏品类站，首页改为承接品类词，具体游戏词交给各自子目录。
+        "title": "Cozy & Sim Game Guide Hub",
+        "metaTitle": "Cozy & Sim Game Guides — Filterable Data Tables",
+        "metaDescription": "Data-first guides for cozy and sim games: Sovereign Tower (24 knights, every ending) and Moonlight Peaks (59 achievements, fish and gift tables). 6 languages.",
+        "intro": "Data-first guides for cozy and simulation games. Every guide here is built around complete tables you can filter — not one-line answers. Two games covered so far: Sovereign Tower (Round Table management RPG) and Moonlight Peaks (cozy vampire life sim), each in six languages.",
         "sections": [
             notes("What's inside", [
-                "All 24 knights — six stats, hidden traits, favourite meals and recruit conditions.",
-                "Secret knights like Dulahan, Chester and Alwena and how to get them.",
-                "The full quest score formula, XP table and affinity rules.",
-                "All 6 recipes and each knight's favourite meal.",
-                "Interactive tools: Knight Quest Matcher and Affinity Calculator.",
-                "More cozy/sim game hubs are on the way — this is the first one."]),
+                "Sovereign Tower — all 24 knights (six stats, hidden traits, favourite meals, recruit conditions), secret knights, the full quest score formula and every ending.",
+                "Moonlight Peaks — 59 achievements with a progress tracker, the fish chart with rarity/location/full-moon filters, and gift preferences for 27 characters.",
+                "Filterable tables, not walls of text: pick Full Moon and see only the fish it applies to; pick Disliked and search an item to see who hates it.",
+                "Interactive tools: Knight Quest Matcher, Affinity Calculator, achievement tracker.",
+                "Six languages (EN / 简体中文 / 日本語 / 한국어 / Français / Deutsch) — not machine-translated stubs.",
+                "More cozy/sim games get added as sub-sections here rather than on new domains."]),
             faq_block([
                 ["Is this an official site?", "No — this is an unofficial fan resource. Game and assets belong to WILD WITS GAMES / Curve Games."],
                 ["What language is the game in?", "Official languages: English, French, German, Japanese, Korean, Simplified Chinese. Our guides cover all six."],
@@ -500,18 +503,18 @@ def build_home():
             ]),
         ],
         "i18n": {"zh-CN": {
-            "title": "君王之塔 攻略中心",
-            "metaTitle": "君王之塔 Sovereign Tower 攻略：全部骑士、菜谱、结局与工具",
-            "metaDescription": "君王之塔完整攻略：全部 24 位骑士属性与隐藏特质、6 种菜谱、全结局、任务机制、恋爱攻略与交互工具。",
-            "intro": "《君王之塔》（Sovereign Tower）圆桌管理 RPG 的非官方攻略中心，开发者 WILD WITS GAMES / 发行 Curve Games。从骑士名单开始，再深入菜谱、结局与交互工具。",
+            "title": "cozy / 模拟经营游戏数据攻略站",
+            "metaTitle": "君王之塔 / Moonlight Peaks 数据攻略站",
+            "metaDescription": "cozy 与模拟经营游戏的数据化攻略：君王之塔 24 骑士与全结局、Moonlight Peaks 59 成就与鱼类/礼物全表，全部可筛选，6 种语言。",
+            "intro": "专做 cozy 与模拟经营游戏的数据化攻略：每一页都围绕**可筛选的完整表格**做，而不是一句话答案。目前收录两款游戏——《君王之塔》（圆桌管理 RPG）与 Moonlight Peaks（吸血鬼田园模拟），各六种语言。",
             "sections": [
                 notes("站内内容", [
-                    "全部 24 位骑士——六维属性、隐藏特质、最爱菜与招募条件。",
-                    "隐藏骑士（Dulahan、Chester、Alwena 等）的获取方法。",
-                    "完整的任务得分公式、经验表与好感规则。",
-                    "全部 6 种菜与每位骑士的最爱菜。",
-                    "交互工具：骑士-任务匹配器与好感计算器。",
-                    "更多 cozy/sim 游戏攻略中心即将上线——这是第一个。"]),
+                    "君王之塔——全部 24 位骑士（六维属性、隐藏特质、最爱菜、招募条件）、隐藏骑士、完整任务得分公式与全结局。",
+                    "Moonlight Peaks——59 个成就带进度追踪器、鱼类图鉴可按稀有度/地点/满月筛选、27 位角色的礼物喜好表。",
+                    "是可筛选的表格，不是大段文字：点「满月」只留满月能钓的鱼；点「讨厌」再搜物品，就知道谁讨厌它。",
+                    "交互工具：骑士-任务匹配器、好感计算器、成就追踪器。",
+                    "六种语言（EN / 简体中文 / 日本語 / 한국어 / Français / Deutsch），不是机翻占位。",
+                    "后续 cozy/sim 新游继续以子栏目形式加在这里，不再开新域名。"]),
                 faq_block([
                     ["这是官方站吗？", "不是——这是非官方粉丝资源站。游戏及相关资产归 WILD WITS GAMES / Curve Games 所有。"],
                     ["游戏支持什么语言？", "官方语言：英语、法语、德语、日语、韩语、简体中文。我们的攻略覆盖全部 6 种。"],

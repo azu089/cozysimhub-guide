@@ -1,42 +1,122 @@
 {
   "ja": {
-    "title": "ソブリンタワー 攻略ハブ",
-    "metaTitle": "ソブリンタワー（君王之塔）攻略：全騎士・レシピ・エンディング・ツール",
-    "metaDescription": "ソブリンタワー完全攻略：24人の騎士のステータスと隠し特性、6つのレシピ、全エンディング、クエスト仕組み、恋愛と便利ツール。",
-    "intro": "円卓管理RPG『ソブリンタワー』（Sovereign Tower / 君王之塔）の非公式攻略ハブ。開発は WILD WITS GAMES / 発売は Curve Games。騎士一覧から始めて、レシピ・エンディング・対話ツールへ。",
+    "title": "cozy・シミュレーション系 データ攻略",
+    "metaTitle": "ソブリンタワー / Moonlight Peaks データ攻略",
+    "metaDescription": "cozy・シミュ系の数値攻略：ソブリンタワー全24騎士と全エンディング、Moonlight Peaks の実績59個と魚・プレゼント全表。絞り込み対応。",
+    "intro": "cozy・シミュレーション系ゲームの「数値で引ける」攻略サイトです。どのページも一行の答えではなく、絞り込みできる完全な表を軸に作っています。現在の収録は2作品——ソブリンタワー（円卓マネジメントRPG）と Moonlight Peaks（吸血鬼のスローライフシム）、それぞれ6言語。",
     "note_title": "サイトの内容",
-    "note_items": ["全24人の騎士——六つのステータス、隠し特性、好きな料理、雇用条件。", "Dulahan・Chester・Alwenaなどの隠し騎士と入手方法。", "クエストの得点計算式、経験値表、好感度ルール。", "全6つのレシピと各騎士の好きな料理。", "対話ツール：騎士クエストマッチャーと好感度計算機。", "今後さらにcozy/simゲームの攻略ハブを追加予定——これが最初の1つ。"],
+    "note_items": [
+      "ソブリンタワー——全24騎士（6ステータス・隠し特性・好物・加入条件）、隠し騎士、クエスト得点式、全エンディング。",
+      "Moonlight Peaks——実績59個の進捗トラッカー、レア度・場所・満月で絞れる魚図鑑、27キャラのプレゼント好み表。",
+      "文章の壁ではなく絞り込める表：「満月」を押せば満月限定の魚だけ、「嫌い」を押してアイテム名を検索すれば誰が嫌うか分かります。",
+      "便利ツール：騎士クエストマッチャー、好感度計算機、実績トラッカー。",
+      "6言語（EN / 简体中文 / 日本語 / 한국어 / Français / Deutsch）、機械翻訳の穴埋めではありません。",
+      "今後の cozy/sim 新作も新規ドメインではなく、ここのサブセクションとして追加します。"
+    ],
     "faq_title": "FAQ",
-    "faq_items": [["公式サイトですか？", "いいえ——非公式ファンサイトです。ゲームおよび関連アセットは WILD WITS GAMES / Curve Games に帰属します。"], ["対応言語は？", "公式言語：英語・フランス語・ドイツ語・日本語・韓国語・簡体字中国語。当サイトは6言語すべてで攻略を提供します。"], ["ゲームの新着情報は？", "2026-08-06 発売。ローンチセール15%OFFは2026-08-20まで。実績75個、Steam Deck Verified。"]]
+    "faq_items": [
+      [
+        "公式サイトですか？",
+        "いいえ——非公式ファンサイトです。ゲームおよび関連アセットは WILD WITS GAMES / Curve Games に帰属します。"
+      ],
+      [
+        "対応言語は？",
+        "公式言語：英語・フランス語・ドイツ語・日本語・韓国語・簡体字中国語。当サイトは6言語すべてで攻略を提供します。"
+      ],
+      [
+        "ゲームの新着情報は？",
+        "2026-08-06 発売。ローンチセール15%OFFは2026-08-20まで。実績75個、Steam Deck Verified。"
+      ]
+    ]
   },
   "ko": {
-    "title": "소버린 타워 가이드 허브",
-    "metaTitle": "소버린 타워(군왕지탑) 공략: 전체 기사·레시피·엔딩·도구",
-    "metaDescription": "소버린 타워 완전 공략: 24명 기사의 스탯과 숨은 특성, 6개 레시피, 전체 엔딩, 퀘스트 메커니즘, 연애와 대화형 도구.",
-    "intro": "원탁 경영 RPG 『소버린 타워』(Sovereign Tower / 君王之塔)의 비공식 공략 허브. 개발 WILD WITS GAMES / 퍼블리셔 Curve Games. 기사 명단부터 레시피·엔딩·대화형 도구까지.",
+    "title": "코지·시뮬 게임 데이터 공략",
+    "metaTitle": "소버린 타워 / Moonlight Peaks 데이터 공략",
+    "metaDescription": "코지·시뮬 게임 데이터 공략: 소버린 타워 기사 24명·전체 엔딩, Moonlight Peaks 도전과제 59개·물고기·선물 표. 필터 지원",
+    "intro": "코지·시뮬레이션 게임을 데이터로 찾아보는 공략 사이트입니다. 모든 페이지가 한 줄 답변이 아니라 필터로 걸러지는 완전한 표를 중심으로 되어 있습니다. 현재 두 작품——소버린 타워(원탁 경영 RPG)와 Moonlight Peaks(뱀파이어 힐링 시뮬), 각각 6개 언어.",
     "note_title": "사이트 내용",
-    "note_items": ["전체 24명 기사 — 6가지 스탯, 숨은 특성, 좋아하는 요리, 고용 조건.", "Dulahan·Chester·Alwena 등 숨은 기사와 획득 방법.", "퀘스트 점수 공식, 경험치 표, 호감도 규칙.", "전체 6개 레시피와 각 기사의 좋아하는 요리.", "대화형 도구: 기사 퀘스트 매처와 호감도 계산기.", "앞으로 더 많은 cozy/sim 게임 허브를 추가 — 이것이 첫 번째."],
+    "note_items": [
+      "소버린 타워——기사 24명 전원(6가지 스탯·숨은 특성·좋아하는 요리·영입 조건), 히든 기사, 퀘스트 점수 공식, 전체 엔딩.",
+      "Moonlight Peaks——도전과제 59개 진행도 트래커, 희귀도·장소·보름달로 거르는 물고기 도감, 캐릭터 27명 선물 취향표.",
+      "긴 글이 아니라 필터되는 표입니다: '보름달'을 누르면 보름달 물고기만, '싫어함'을 누르고 아이템을 검색하면 누가 싫어하는지 바로 나옵니다.",
+      "대화형 도구: 기사-퀘스트 매처, 호감도 계산기, 도전과제 트래커.",
+      "6개 언어(EN / 简体中文 / 日本語 / 한국어 / Français / Deutsch), 기계번역 채우기가 아닙니다.",
+      "앞으로 나오는 코지/시뮬 신작도 새 도메인이 아니라 이곳의 하위 섹션으로 추가합니다."
+    ],
     "faq_title": "FAQ",
-    "faq_items": [["공식 사이트인가요?", "아니요 — 비공식 팬 사이트입니다. 게임 및 관련 자산은 WILD WITS GAMES / Curve Games에 귀속됩니다."], ["지원 언어는?", "공식 언어: 영어, 프랑스어, 독일어, 일본어, 한국어, 간체 중국어. 저희는 6개 언어 모두 제공합니다."], ["게임 소식은?", "2026-08-06 출시. 출시 세일 15% OFF는 2026-08-20까지. 업적 75개, Steam Deck Verified."]]
+    "faq_items": [
+      [
+        "공식 사이트인가요?",
+        "아니요 — 비공식 팬 사이트입니다. 게임 및 관련 자산은 WILD WITS GAMES / Curve Games에 귀속됩니다."
+      ],
+      [
+        "지원 언어는?",
+        "공식 언어: 영어, 프랑스어, 독일어, 일본어, 한국어, 간체 중국어. 저희는 6개 언어 모두 제공합니다."
+      ],
+      [
+        "게임 소식은?",
+        "2026-08-06 출시. 출시 세일 15% OFF는 2026-08-20까지. 업적 75개, Steam Deck Verified."
+      ]
+    ]
   },
   "fr": {
-    "title": "Guide Hub de Sovereign Tower",
-    "metaTitle": "Sovereign Tower (君王之塔) : guide complet — chevaliers, recettes, fins et outils",
-    "metaDescription": "Guides complets de Sovereign Tower : les 24 chevaliers avec stats et traits cachés, les 6 recettes, toutes les fins, les mécaniques de quêtes, l'amour et des outils interactifs.",
-    "intro": "Hub de guides non officiel pour Sovereign Tower (君王之塔), le RPG de gestion à la Table Ronde de WILD WITS GAMES / Curve Games. Commencez par la liste des chevaliers, puis plongez dans les recettes, les fins et nos outils interactifs.",
+    "title": "Guides cozy & simulation",
+    "metaTitle": "Guides cozy & simulation — tableaux filtrables",
+    "metaDescription": "Guides orientés données pour jeux cozy et de simulation : Sovereign Tower (24 chevaliers, toutes les fins) et Moonlight Peaks (59 succès, poissons, cadeaux).",
+    "intro": "Des guides orientés données pour les jeux cozy et de simulation. Chaque page repose sur des tableaux complets que vous pouvez filtrer, pas sur une réponse en une ligne. Deux jeux couverts : Sovereign Tower (RPG de gestion de Table Ronde) et Moonlight Peaks (simulation de vie vampirique), chacun en six langues.",
     "note_title": "Contenu du site",
-    "note_items": ["Les 24 chevaliers — six stats, traits cachés, plats favoris et conditions de recrutement.", "Les chevaliers secrets comme Dulahan, Chester et Alwena, et comment les obtenir.", "La formule de score de quête complète, le tableau d'XP et les règles d'affinité.", "Les 6 recettes et le plat favori de chaque chevalier.", "Outils interactifs : le matcheur chevalier-quête et le calculateur d'affinité.", "D'autres hubs de jeux cozy/sim arrivent — c'est le premier."],
+    "note_items": [
+      "Sovereign Tower — les 24 chevaliers (six statistiques, traits cachés, plats préférés, conditions de recrutement), chevaliers secrets, formule de score des quêtes et toutes les fins.",
+      "Moonlight Peaks — 59 succès avec suivi de progression, tableau des poissons filtrable par rareté, lieu et pleine lune, préférences de cadeaux pour 27 personnages.",
+      "Des tableaux filtrables plutôt que des pavés : choisissez « Pleine lune » et seuls les poissons concernés restent ; choisissez « Détesté » et cherchez un objet pour voir qui le déteste.",
+      "Outils interactifs : sélecteur chevalier-quête, calculateur d'affinité, suivi des succès.",
+      "Six langues (EN / 简体中文 / 日本語 / 한국어 / Français / Deutsch), pas des ébauches traduites automatiquement.",
+      "Les prochains jeux cozy/sim seront ajoutés ici en sous-sections, pas sur de nouveaux domaines."
+    ],
     "faq_title": "FAQ",
-    "faq_items": [["Ce site est-il officiel ?", "Non — c'est une ressource de fans non officielle. Le jeu et ses ressources appartiennent à WILD WITS GAMES / Curve Games."], ["Quelles langues ?", "Langues officielles : anglais, français, allemand, japonais, coréen, chinois simplifié. Nos guides couvrent les six."], ["Nouveautés ?", "Sorti le 2026-08-06 ; -15 % jusqu'au 2026-08-20. 75 succès, Steam Deck Verified."]]
+    "faq_items": [
+      [
+        "Ce site est-il officiel ?",
+        "Non — c'est une ressource de fans non officielle. Le jeu et ses ressources appartiennent à WILD WITS GAMES / Curve Games."
+      ],
+      [
+        "Quelles langues ?",
+        "Langues officielles : anglais, français, allemand, japonais, coréen, chinois simplifié. Nos guides couvrent les six."
+      ],
+      [
+        "Nouveautés ?",
+        "Sorti le 2026-08-06 ; -15 % jusqu'au 2026-08-20. 75 succès, Steam Deck Verified."
+      ]
+    ]
   },
   "de": {
-    "title": "Sovereign Tower Guide-Hub",
-    "metaTitle": "Sovereign Tower (君王之塔): kompletter Guide — Ritter, Rezepte, Enden und Tools",
-    "metaDescription": "Komplette Sovereign-Tower-Guides: alle 24 Ritter mit Stats und versteckten Eigenschaften, die 6 Rezepte, alle Enden, Quest-Mechaniken, Romantik und interaktive Tools.",
-    "intro": "Ein inoffizieller Guide-Hub für Sovereign Tower (君王之塔), das Table-Runde-Management-RPG von WILD WITS GAMES / Curve Games. Beginne mit der Ritterliste, dann Rezepte, Enden und unsere interaktiven Tools.",
+    "title": "Cozy- & Simulations-Guides",
+    "metaTitle": "Cozy- & Simulations-Guides — filterbare Datentabellen",
+    "metaDescription": "Datenbasierte Guides für Cozy- und Simulationsspiele: Sovereign Tower (24 Ritter, alle Enden) und Moonlight Peaks (59 Erfolge, Fisch- und Geschenktabellen).",
+    "intro": "Datenbasierte Guides für Cozy- und Simulationsspiele. Jede Seite baut auf vollständigen, filterbaren Tabellen auf statt auf einer Ein-Satz-Antwort. Bisher zwei Spiele: Sovereign Tower (Tafelrunden-Management-RPG) und Moonlight Peaks (gemütliche Vampir-Lebenssimulation), jeweils in sechs Sprachen.",
     "note_title": "Inhalt der Seite",
-    "note_items": ["Alle 24 Ritter — sechs Werte, versteckte Eigenschaften, Lieblingsgerichte und Rekrutierungsbedingungen.", "Geheimritter wie Dulahan, Chester und Alwena und wie man sie bekommt.", "Die vollständige Quest-Punktformel, XP-Tabelle und Sympathie-Regeln.", "Alle 6 Rezepte und das Lieblingsgericht jedes Ritters.", "Interaktive Tools: Quest-Matcher für Ritter und Sympathie-Rechner.", "Weitere cozy/sim-Spiel-Hubs folgen — dies ist der erste."],
+    "note_items": [
+      "Sovereign Tower — alle 24 Ritter (sechs Werte, versteckte Eigenschaften, Lieblingsgerichte, Rekrutierungsbedingungen), geheime Ritter, komplette Quest-Punkteformel und alle Enden.",
+      "Moonlight Peaks — 59 Erfolge mit Fortschrittsanzeige, Fischtabelle filterbar nach Seltenheit, Ort und Vollmond, Geschenkvorlieben von 27 Charakteren.",
+      "Filterbare Tabellen statt Textwüsten: „Vollmond“ anklicken zeigt nur die passenden Fische; „Ungeliebt“ anklicken und einen Gegenstand suchen zeigt, wer ihn hasst.",
+      "Interaktive Tools: Ritter-Quest-Matcher, Zuneigungsrechner, Erfolgs-Tracker.",
+      "Sechs Sprachen (EN / 简体中文 / 日本語 / 한국어 / Français / Deutsch), keine maschinell übersetzten Platzhalter.",
+      "Weitere Cozy-/Sim-Spiele kommen als Unterbereiche hierher, nicht auf neue Domains."
+    ],
     "faq_title": "FAQ",
-    "faq_items": [["Ist diese Seite offiziell?", "Nein — eine inoffizielle Fan-Ressource. Spiel und Assets gehören WILD WITS GAMES / Curve Games."], ["Welche Sprachen?", "Offizielle Sprachen: Englisch, Französisch, Deutsch, Japanisch, Koreanisch, vereinfachtes Chinesisch. Unsere Guides decken alle sechs ab."], ["Neuigkeiten?", "Erschienen am 06.08.2026; 15 % Rabatt bis 20.08.2026. 75 Erfolge, Steam Deck Verified."]]
+    "faq_items": [
+      [
+        "Ist diese Seite offiziell?",
+        "Nein — eine inoffizielle Fan-Ressource. Spiel und Assets gehören WILD WITS GAMES / Curve Games."
+      ],
+      [
+        "Welche Sprachen?",
+        "Offizielle Sprachen: Englisch, Französisch, Deutsch, Japanisch, Koreanisch, vereinfachtes Chinesisch. Unsere Guides decken alle sechs ab."
+      ],
+      [
+        "Neuigkeiten?",
+        "Erschienen am 06.08.2026; 15 % Rabatt bis 20.08.2026. 75 Erfolge, Steam Deck Verified."
+      ]
+    ]
   }
 }
