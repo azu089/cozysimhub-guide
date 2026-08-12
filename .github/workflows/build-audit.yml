@@ -22,7 +22,10 @@ jobs:
         run: node scripts/lib/audit.js .
       - name: Assert deterministic build
         run: |
+          NODE_OPTIONS="--require=$GITHUB_WORKSPACE/scripts/lib/freeze-clock.cjs" \
+            BUILD_CLOCK=2026-12-31T23:30:00Z node scripts/generate.js
           find public -type f -print0 | sort -z | xargs -0 sha256sum > /tmp/a.sha
-          TZ=Pacific/Kiritimati node scripts/generate.js
+          NODE_OPTIONS="--require=$GITHUB_WORKSPACE/scripts/lib/freeze-clock.cjs" \
+            BUILD_CLOCK=2027-01-01T00:30:00Z TZ=Pacific/Kiritimati node scripts/generate.js
           find public -type f -print0 | sort -z | xargs -0 sha256sum > /tmp/b.sha
-          diff /tmp/a.sha /tmp/b.sha
+          diff -u /tmp/a.sha /tmp/b.sha

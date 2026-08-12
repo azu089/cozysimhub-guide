@@ -31,6 +31,7 @@ const TODAY = process.env.CONTENT_UPDATED_AT || DATA.site.contentUpdatedAt;
 if (!/^\d{4}-\d{2}-\d{2}$/.test(TODAY || "")) {
   throw new Error("data/site.json site.contentUpdatedAt or CONTENT_UPDATED_AT must be YYYY-MM-DD");
 }
+const COPYRIGHT_YEAR = TODAY.slice(0, 4);
 const LM = KIT.createLastmod({ manifestPath: path.join(ROOT, "data", ".lastmod.json"), today: TODAY });
 
 /* ---------- 语言与国旗（SVG，全平台渲染） ---------- */
@@ -244,7 +245,7 @@ function footer(lang) {
       <a href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">Steam ↗</a>
       ${key}
     </div>
-    <p class="colophon-legal">© ${new Date().getFullYear()} ${esc(DATA.site.domain)} · ${lang === "zh-CN" ? "非官方粉丝站" : "Unofficial fan site"}</p>
+    <p class="colophon-legal">© ${COPYRIGHT_YEAR} ${esc(DATA.site.domain)} · ${lang === "zh-CN" ? "非官方粉丝站" : "Unofficial fan site"}</p>
   </div>
   ${renderAmazonAffiliate(lang)}
   ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}
@@ -623,7 +624,7 @@ function moonFooter(lang) {
       <a href="${esc(DATA.game.steamUrl.replace("4113940", "2209900"))}" target="_blank" rel="noopener">Steam ↗</a>
       ${links}
     </div>
-    <p class="colophon-legal">© ${new Date().getFullYear()} ${esc(DATA.site.domain)} · ${lang === "zh-CN" ? "非官方粉丝站" : "Unofficial fan site"}</p>
+    <p class="colophon-legal">© ${COPYRIGHT_YEAR} ${esc(DATA.site.domain)} · ${lang === "zh-CN" ? "非官方粉丝站" : "Unofficial fan site"}</p>
   </div>
   ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}
 </footer>
