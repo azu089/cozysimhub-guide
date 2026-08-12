@@ -1089,7 +1089,9 @@ function build() {
   const urls = [];
   for (const lang of LANGS) {
     urls.push(urlOf("index", lang));
-    for (const p of DATA.pages) urls.push(urlOf(p.slug, lang));
+    for (const p of DATA.pages) {
+      if (p.slug !== "index") urls.push(urlOf(p.slug, lang));
+    }
     for (const slug of ["about", "privacy", "contact"]) urls.push(urlOf(slug, lang));
   }
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${esc(u)}</loc><lastmod>${TODAY}</lastmod></url>`).join("\n")}\n</urlset>\n`;
@@ -1100,7 +1102,7 @@ function build() {
   KIT.writeAds(OUT, DATA.site.adsenseId);   // 未配 adsenseId 时不产出空 ads.txt（审计会拦空文件）
   // 404
   fs.writeFileSync(path.join(OUT, "404.html"), renderStatic("404", DEF) + "</body></html>");
-  console.log(`✓ built ${all.length} files (${LANGS.length} langs, ${DATA.pages.length + 4} pages)`);
+  console.log(`✓ built ${all.length} files (${LANGS.length} langs, ${DATA.pages.length + 3} pages)`);
 }
 
 build();
