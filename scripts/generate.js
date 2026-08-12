@@ -245,6 +245,7 @@ function footer(lang) {
   ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}
   ${DATA.site.adsterra ? DATA.site.adsterra : ""}
 </footer>
+${KIT.decisionEventsScript()}
 <script>
 document.addEventListener('DOMContentLoaded', function(){
   var toggle = document.querySelector('.tome-nav-toggle');
@@ -620,7 +621,8 @@ function moonFooter(lang) {
     <p class="colophon-legal">© ${new Date().getFullYear()} ${esc(DATA.site.domain)} · ${lang === "zh-CN" ? "非官方粉丝站" : "Unofficial fan site"}</p>
   </div>
   ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}
-</footer>`;
+</footer>
+${KIT.decisionEventsScript()}`;
 }
 
 /* 月光页 Section 渲染 */
