@@ -8,6 +8,11 @@
   "gaId": "G-XPDQ7NGFCN",
   "gscVerification": "",
   "adsenseId": "pub-4174270222899193",
+  "adsenseServing": {
+   "enabled": false,
+   "providerReady": false,
+   "certifiedCmpReady": false
+  },
   "indexNowKey": "b8429e47da375d1b53d48ac9118fc7b9",
   "ogImage": "/images/hero.jpg",
   "languages": [

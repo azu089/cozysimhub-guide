@@ -15,6 +15,24 @@ const ROOT = path.join(__dirname, "..");
 const DATA = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "site.json"), "utf8"));
 const OUT = path.join(ROOT, "public");
 const esc = KIT.esc;
+const ADSENSE_FIXTURE_ENABLED = process.env.NODE_ENV === "test" && process.env.COZY_ADSENSE_FIXTURE === "enabled";
+const ADSENSE_PUBLISHER_ID = /^pub-\d+$/.test(String(DATA.site.adsenseId || "").trim())
+  ? String(DATA.site.adsenseId).trim()
+  : "";
+const ADSENSE_CLIENT_ID = ADSENSE_PUBLISHER_ID ? `ca-${ADSENSE_PUBLISHER_ID}` : "";
+const ADSENSE_SERVING_ENABLED = Boolean(
+  ADSENSE_CLIENT_ID && (
+    ADSENSE_FIXTURE_ENABLED || (
+      DATA.site.adsenseServing &&
+      DATA.site.adsenseServing.enabled === true &&
+      DATA.site.adsenseServing.providerReady === true &&
+      DATA.site.adsenseServing.certifiedCmpReady === true
+    )
+  )
+);
+const adsenseScript = () => ADSENSE_SERVING_ENABLED
+  ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(ADSENSE_CLIENT_ID)}" crossorigin="anonymous"></script>`
+  : "";
 const LANGS = DATA.site.languages || ["en"];
 const DEF = DATA.site.defaultLanguage || "en";
 const CSS_V = crypto.createHash("md5").update(fs.readFileSync(path.join(ROOT, "templates", "style.css"), "utf8")).digest("hex").slice(0, 8);
@@ -127,7 +145,7 @@ function head(title, desc, extraLd, slug, lang) {
   const ld = JSON.stringify([KIT.ld.website({ name: siteI18n(lang).name, url: urlOf("index", lang), description: siteI18n(lang).description })].concat(extraLd || []));
   const gsc = DATA.site.gscVerification ? `<meta name="google-site-verification" content="${esc(DATA.site.gscVerification)}" />` : "";
   // AdSense 所有权验证 meta —— 五个 EMD 站同款；未配 adsenseId 时零输出
-  const adsenseMeta = DATA.site.adsenseId ? `<meta name="google-adsense-account" content="ca-${esc(DATA.site.adsenseId)}" />` : "";
+  const adsenseMeta = ADSENSE_CLIENT_ID ? `<meta name="google-adsense-account" content="${esc(ADSENSE_CLIENT_ID)}" />` : "";
   const htmlLang = LANG_META[lang]?.html || lang;
   const isMoon = slug.startsWith("moonlight-peaks");
   const MOON_CSS_V = crypto.createHash("md5").update(fs.readFileSync(path.join(ROOT, "templates", "style-moon.css"), "utf8")).digest("hex").slice(0, 8);
@@ -248,7 +266,7 @@ function footer(lang) {
     <p class="colophon-legal">© ${COPYRIGHT_YEAR} ${esc(DATA.site.domain)} · ${lang === "zh-CN" ? "非官方粉丝站" : "Unofficial fan site"}</p>
   </div>
   ${renderAmazonAffiliate(lang)}
-  ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}
+  ${adsenseScript()}
   ${DATA.site.adsterra ? DATA.site.adsterra : ""}
 </footer>
 ${KIT.decisionEventsScript()}
@@ -626,7 +644,7 @@ function moonFooter(lang) {
     </div>
     <p class="colophon-legal">© ${COPYRIGHT_YEAR} ${esc(DATA.site.domain)} · ${lang === "zh-CN" ? "非官方粉丝站" : "Unofficial fan site"}</p>
   </div>
-  ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}
+  ${adsenseScript()}
 </footer>
 ${KIT.decisionEventsScript()}`;
 }
