@@ -17,9 +17,13 @@ jobs:
         with:
           node-version: 22
       - name: Build
-        run: node scripts/generate.js
+        run: python3 data/build_content.py && node scripts/generate.js
       - name: Audit
-        run: node scripts/lib/audit.js .
+        run: |
+          node scripts/lib/audit.js .
+          node scripts/audit-commercial-gates.mjs
+          node scripts/audit-consent.mjs
+          node scripts/audit-navigation-integrity.mjs
       - name: Assert deterministic build
         run: |
           NODE_OPTIONS="--require=$GITHUB_WORKSPACE/scripts/lib/freeze-clock.cjs" \

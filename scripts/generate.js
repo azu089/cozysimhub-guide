@@ -30,8 +30,8 @@ const ADSENSE_SERVING_ENABLED = Boolean(
     )
   )
 );
-const adsenseScript = () => ADSENSE_SERVING_ENABLED
-  ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(ADSENSE_CLIENT_ID)}" crossorigin="anonymous"></script>`
+const ADSENSE_SCRIPT_SRC = ADSENSE_SERVING_ENABLED
+  ? `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`
   : "";
 const LANGS = DATA.site.languages || ["en"];
 const DEF = DATA.site.defaultLanguage || "en";
@@ -176,10 +176,12 @@ ${gsc}${adsenseMeta}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 ${fontLink}
 ${cssLink}
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 ${slug === "index" && lang === DEF ? `<link rel="preload" as="image" type="image/webp" imagesrcset="/images/hero-640.webp 640w, /images/hero-1280.webp 1280w, /images/hero.webp 1600w" imagesizes="(max-width: 720px) 640px, 1280px" fetchpriority="high" />` : ""}
 <script type="application/ld+json">${ld}</script>
-${DATA.site.gaId ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(DATA.site.gaId)}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${esc(DATA.site.gaId)}');</script>` : ""}
 </head>
 <body>
 <div class="app-shell">
@@ -218,7 +220,7 @@ function header(lang, active) {
     `<a href="${linkOf(active || "index", l)}" class="${l === lang ? "active" : ""}"><span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span></a>`
   ).join("");
   const moonCross = `<a class="tome-crosslink" href="${linkOf("moonlight-peaks", lang)}">${lang === "zh-CN" ? "🌙 月光小镇（第 2 游戏）" : "🌙 Moonlight Peaks (Game 2)"}</a>`;
-  return `<aside class="tome-nav" aria-label="Ledger index">
+  return `<aside id="sovereign-navigation" class="tome-nav" aria-label="Ledger index">
   <a class="tome-brand" href="${linkOf("index", lang)}">
     <span class="brand-seal">${ICON.crown}</span>
     <span class="brand-name">${esc(siteI18n(lang).name)}<small>${lang === "zh-CN" ? "圆桌手账" : "Round Table Ledger"}</small></span>
@@ -227,6 +229,64 @@ function header(lang, active) {
   ${chapters}
   <div class="tome-lang"><div class="lang-label">${esc(n.langLabel)}</div>${langItems}</div>
 </aside>`;
+}
+
+const CONSENT_I18N = {
+  "en": { settings: "Privacy settings", title: "Privacy choices", intro: "Choose whether this site may load optional analytics. Advertising providers are currently disabled.", analytics: "Analytics", analyticsHelp: "If enabled, Google Analytics 4 may process your IP address, device/browser details, page, referrer, approximate region and identifiers for measurement.", ads: "Advertising", adsHelp: "Google AdSense serving and Adsterra are currently disabled, so no advertising script will load. A future provider change must use a new consent version.", accept: "Accept available", reject: "Reject", manage: "Manage options", save: "Save choices", withdraw: "Withdraw optional consent", close: "Close privacy choices" },
+  "zh-CN": { settings: "隐私设置", title: "隐私选择", intro: "请选择本站是否可以加载可选统计服务。广告服务目前均已关闭。", analytics: "统计分析", analyticsHelp: "启用后，Google Analytics 4 可能为统计处理 IP 地址、设备/浏览器信息、访问页面、来源页面、大致地区与标识符。", ads: "广告", adsHelp: "Google AdSense 投放与 Adsterra 目前均已关闭，不会加载广告脚本；未来如更换服务商，必须使用新的同意版本。", accept: "同意可用项目", reject: "不同意", manage: "管理选项", save: "保存选择", withdraw: "撤回可选同意", close: "关闭隐私选择" },
+  "ja": { settings: "プライバシー設定", title: "プライバシーの選択", intro: "任意のアクセス解析を読み込むか選択してください。広告サービスは現在無効です。", analytics: "アクセス解析", analyticsHelp: "有効にすると、Google Analytics 4 が測定のため IP アドレス、端末・ブラウザー情報、閲覧ページ、参照元、おおよその地域、識別子を処理する場合があります。", ads: "広告", adsHelp: "Google AdSense の配信と Adsterra は現在無効で、広告スクリプトは読み込まれません。将来プロバイダーを変更する場合は新しい同意バージョンが必要です。", accept: "利用可能な項目に同意", reject: "同意しない", manage: "設定を管理", save: "選択を保存", withdraw: "任意の同意を撤回", close: "プライバシー設定を閉じる" },
+  "ko": { settings: "개인정보 설정", title: "개인정보 선택", intro: "선택적 분석 서비스의 로드를 허용할지 선택하세요. 광고 서비스는 현재 비활성화되어 있습니다.", analytics: "분석", analyticsHelp: "활성화하면 Google Analytics 4가 측정을 위해 IP 주소, 기기·브라우저 정보, 방문 페이지, 유입 경로, 대략적인 지역과 식별자를 처리할 수 있습니다.", ads: "광고", adsHelp: "Google AdSense 게재와 Adsterra는 현재 비활성화되어 광고 스크립트가 로드되지 않습니다. 향후 공급자 변경 시 새 동의 버전이 필요합니다.", accept: "사용 가능한 항목 동의", reject: "거부", manage: "옵션 관리", save: "선택 저장", withdraw: "선택적 동의 철회", close: "개인정보 선택 닫기" },
+  "fr": { settings: "Réglages de confidentialité", title: "Choix de confidentialité", intro: "Choisissez si ce site peut charger l'analyse facultative. Les services publicitaires sont actuellement désactivés.", analytics: "Analyse", analyticsHelp: "Si elle est activée, Google Analytics 4 peut traiter l'adresse IP, les informations de l'appareil et du navigateur, la page, le référent, la région approximative et des identifiants à des fins de mesure.", ads: "Publicité", adsHelp: "La diffusion Google AdSense et Adsterra sont actuellement désactivées : aucun script publicitaire n'est chargé. Tout futur changement de fournisseur devra utiliser une nouvelle version de consentement.", accept: "Accepter les options disponibles", reject: "Refuser", manage: "Gérer les options", save: "Enregistrer", withdraw: "Retirer le consentement facultatif", close: "Fermer les choix de confidentialité" },
+  "de": { settings: "Datenschutzeinstellungen", title: "Datenschutzauswahl", intro: "Wählen Sie, ob diese Website optionale Analyse laden darf. Werbedienste sind derzeit deaktiviert.", analytics: "Analyse", analyticsHelp: "Bei Aktivierung kann Google Analytics 4 IP-Adresse, Geräte- und Browserdaten, besuchte Seite, Referrer, ungefähre Region und Kennungen zur Messung verarbeiten.", ads: "Werbung", adsHelp: "Google-AdSense-Auslieferung und Adsterra sind derzeit deaktiviert; es wird kein Werbeskript geladen. Ein künftiger Anbieterwechsel erfordert eine neue Einwilligungsversion.", accept: "Verfügbare Optionen akzeptieren", reject: "Ablehnen", manage: "Optionen verwalten", save: "Auswahl speichern", withdraw: "Optionale Einwilligung widerrufen", close: "Datenschutzauswahl schließen" }
+};
+
+function consentUi(lang) {
+  const t = CONSENT_I18N[lang] || CONSENT_I18N.en;
+  const rawAdsterra = String(DATA.site.adsterra || "");
+  const adsterraSrc = (rawAdsterra.match(/src="([^"]*effectivecpmnetwork\.com[^"]*)"/) || [])[1] || "";
+  const adsterraContainer = (rawAdsterra.match(/id="(container-[^"]+)"/) || [])[1] || "";
+  const cfg = JSON.stringify({ gaId: DATA.site.gaId || "", adsenseSrc: ADSENSE_SCRIPT_SRC, adsterraSrc, adsterraContainer, advertisingAvailable: Boolean(ADSENSE_SCRIPT_SRC || adsterraSrc) });
+  return `<button type="button" class="privacy-settings" data-consent-settings aria-haspopup="dialog" aria-controls="privacy-consent-dialog" aria-expanded="false">${esc(t.settings)}</button>
+  <dialog id="privacy-consent-dialog" class="consent-dialog" data-consent-dialog aria-labelledby="privacy-consent-title">
+    <div class="consent-card">
+      <button type="button" class="consent-close" data-consent-close aria-label="${esc(t.close)}">×</button>
+      <h2 id="privacy-consent-title" tabindex="-1">${esc(t.title)}</h2><p>${esc(t.intro)}</p>
+      <div class="consent-summary"><b>${esc(t.analytics)}</b><span>${esc(t.analyticsHelp)}</span><b>${esc(t.ads)}</b><span>${esc(t.adsHelp)}</span></div>
+      <div class="consent-manage" data-consent-manage hidden>
+        <label><input type="checkbox" data-consent-analytics> <span><b>${esc(t.analytics)}</b><small>${esc(t.analyticsHelp)}</small></span></label>
+        <label><input type="checkbox" data-consent-advertising> <span><b>${esc(t.ads)}</b><small>${esc(t.adsHelp)}</small></span></label>
+      </div>
+      <div class="consent-actions">
+        <button type="button" data-consent-accept>${esc(t.accept)}</button>
+        <button type="button" data-consent-reject>${esc(t.reject)}</button>
+        <button type="button" data-consent-manage-open>${esc(t.manage)}</button>
+        <button type="button" data-consent-save hidden>${esc(t.save)}</button>
+        <button type="button" data-consent-withdraw hidden>${esc(t.withdraw)}</button>
+      </div>
+    </div>
+  </dialog><div id="consent-ad-slot" aria-hidden="true"></div>
+  <script>
+  (function(){
+    var cfg=${cfg}, key="cozysimhub-consent-v1", dialog=document.querySelector("[data-consent-dialog]");
+    var settings=document.querySelector("[data-consent-settings]"), opener=null, loaded={analytics:false,adsense:false,adsterra:false};
+    function read(){try{var v=JSON.parse(localStorage.getItem(key)||"null");return v&&typeof v.analytics==="boolean"&&typeof v.advertising==="boolean"?v:null;}catch(_){return null;}}
+    function loadAnalytics(){if(loaded.analytics||!cfg.gaId)return;loaded.analytics=true;window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag("js",new Date());gtag("config",cfg.gaId);var s=document.createElement("script");s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id="+encodeURIComponent(cfg.gaId);document.head.appendChild(s);}
+    function loadAdvertising(){var slot=document.getElementById("consent-ad-slot");if(cfg.adsenseSrc&&!loaded.adsense){loaded.adsense=true;var g=document.createElement("script");g.async=true;g.crossOrigin="anonymous";g.src=cfg.adsenseSrc;slot.appendChild(g);}if(cfg.adsterraSrc&&!loaded.adsterra){loaded.adsterra=true;if(cfg.adsterraContainer){var d=document.createElement("div");d.id=cfg.adsterraContainer;slot.appendChild(d);}var a=document.createElement("script");a.async=true;a.setAttribute("data-cfasync","false");a.src=cfg.adsterraSrc;slot.appendChild(a);}}
+    function apply(v){if(v&&v.analytics)loadAnalytics();if(v&&v.advertising&&cfg.advertisingAvailable)loadAdvertising();}
+    function close(){if(dialog.open)dialog.close();settings.setAttribute("aria-expanded","false");if(opener&&opener.focus)opener.focus();}
+    function open(source){opener=source||document.activeElement;var v=read();dialog.querySelector("[data-consent-analytics]").checked=!!(v&&v.analytics);var advertising=dialog.querySelector("[data-consent-advertising]");advertising.checked=!!(v&&v.advertising&&cfg.advertisingAvailable);advertising.disabled=!cfg.advertisingAvailable;dialog.querySelector("[data-consent-manage]").hidden=true;dialog.querySelector("[data-consent-save]").hidden=true;dialog.querySelector("[data-consent-withdraw]").hidden=!v;settings.setAttribute("aria-expanded","true");dialog.showModal();dialog.querySelector("#privacy-consent-title").focus();}
+    function save(v){v.advertising=!!(v.advertising&&cfg.advertisingAvailable);localStorage.setItem(key,JSON.stringify(v));apply(v);close();}
+    settings.addEventListener("click",function(){open(settings);});
+    dialog.querySelector("[data-consent-close]").addEventListener("click",close);
+    dialog.querySelector("[data-consent-accept]").addEventListener("click",function(){save({analytics:true,advertising:cfg.advertisingAvailable});});
+    dialog.querySelector("[data-consent-reject]").addEventListener("click",function(){save({analytics:false,advertising:false});});
+    dialog.querySelector("[data-consent-manage-open]").addEventListener("click",function(){dialog.querySelector("[data-consent-manage]").hidden=false;dialog.querySelector("[data-consent-save]").hidden=false;});
+    dialog.querySelector("[data-consent-save]").addEventListener("click",function(){save({analytics:dialog.querySelector("[data-consent-analytics]").checked,advertising:dialog.querySelector("[data-consent-advertising]").checked});});
+    dialog.querySelector("[data-consent-withdraw]").addEventListener("click",function(){save({analytics:false,advertising:false});});
+    dialog.addEventListener("cancel",function(){setTimeout(function(){settings.setAttribute("aria-expanded","false");if(opener&&opener.focus)opener.focus();},0);});
+    var initial=read();if(initial)apply(initial);else setTimeout(function(){open(settings);},0);
+  })();
+  </script>`;
 }
 function renderAmazonAffiliate(lang) {
   const n = navI18n(lang);
@@ -266,8 +326,6 @@ function footer(lang) {
     <p class="colophon-legal">© ${COPYRIGHT_YEAR} ${esc(DATA.site.domain)} · ${lang === "zh-CN" ? "非官方粉丝站" : "Unofficial fan site"}</p>
   </div>
   ${renderAmazonAffiliate(lang)}
-  ${adsenseScript()}
-  ${DATA.site.adsterra ? DATA.site.adsterra : ""}
 </footer>
 ${KIT.decisionEventsScript()}
 <script>
@@ -276,9 +334,10 @@ document.addEventListener('DOMContentLoaded', function(){
   var nav = document.querySelector('.tome-nav');
   var overlay = document.querySelector('.tome-nav-overlay');
   if (toggle && nav && overlay) {
-    toggle.addEventListener('click', function(){ nav.classList.toggle('open'); overlay.classList.toggle('show'); });
-    overlay.addEventListener('click', function(){ nav.classList.remove('open'); overlay.classList.remove('show'); });
-    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') { nav.classList.remove('open'); overlay.classList.remove('show'); } });
+    function setNavigation(open, returnFocus){nav.classList.toggle('open',open);overlay.classList.toggle('show',open);toggle.setAttribute('aria-expanded',open?'true':'false');if(!open&&returnFocus)toggle.focus();}
+    toggle.addEventListener('click', function(){ setNavigation(!nav.classList.contains('open'), false); });
+    overlay.addEventListener('click', function(){ setNavigation(false, true); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && nav.classList.contains('open')) { setNavigation(false, true); } });
   }
   var obs = new IntersectionObserver(function(es){
     es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); obs.unobserve(en.target); } });
@@ -298,7 +357,8 @@ document.addEventListener('DOMContentLoaded', function(){
     tocTargets.forEach(function(s){ if (s) tocObs.observe(s); });
   }
 });
-</script>`;
+</script>
+${consentUi(lang)}`;
 }
 /* ---------- Section 渲染（手账组件语言） ---------- */
 function renderSection(s, lang) {
@@ -379,7 +439,7 @@ function renderHome(lang) {
     return `<a href="${linkOf(p.slug, lang)}"><span class="idx-no">${String(gamePages.length + i + 1).padStart(2, "0")}</span><span class="idx-ic">${ICON.calc}</span><span class="idx-txt"><b>${esc(pt.title)}</b><small>${lang === "zh-CN" ? "交互工具" : "Interactive tool"}</small></span></a>`;
   }).join("");
   const heroPlate = `<div class="cover-plate">${KIT.picture({ src: "/images/hero.jpg", srcset: "/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 1600w", sizes: "(max-width: 720px) 92vw, 720px", attrs: `alt="${esc(siteI18n(lang).name)}" loading="eager" width="1600" height="900" fetchpriority="high"` })}</div>`;
-  const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
+  const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger" aria-controls="sovereign-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
 <div class="tome-nav-overlay"></div>
 <main class="page-main">
   <section class="ledger-cover reveal">
@@ -434,7 +494,7 @@ function renderPage(p, lang) {
   const imgMap = { "sovereign-tower/how-to-play": "how-to-play", "sovereign-tower/knights": "knights", "sovereign-tower/secret-knights": "secret-knights", "sovereign-tower/romance": "romance", "sovereign-tower/endings": "endings", "sovereign-tower/recipes": "recipes", "sovereign-tower/quest-mechanics": "quest-mechanics", "sovereign-tower/achievements": "achievements" };
   const pageImg = imgMap[p.slug];
   const art = pageImg ? `<img class="page-art reveal" src="/images/${pageImg}-640.jpg" srcset="/images/${pageImg}-640.jpg 640w, /images/${pageImg}-1280.jpg 1280w, /images/${pageImg}.jpg 1600w" sizes="(max-width: 720px) 640px, 1280px" alt="${esc(t.title)}" width="900" height="506" loading="lazy" />` : "";
-  const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
+  const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger" aria-controls="sovereign-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
 <div class="tome-nav-overlay"></div>
 <main class="page-main"><div class="page-shell">
   <aside class="page-folio reveal">
@@ -463,43 +523,43 @@ function renderStatic(slug, lang) {
   const BODY_I18N = {
     "en": {
       "about": `${esc(siteI18n(lang).name)} is an unofficial fan resource for Sovereign Tower (君王之塔). We research every page against the official Steam store page, fan wiki data and community reports, and clearly mark anything still being verified.`,
-      "privacy": "This site does not collect personal data beyond what hosting and analytics providers (e.g. Google Analytics if enabled) record. See your ad/analytics provider's policy for details.",
+      "privacy": "Before you choose, this site does not request Google Analytics 4, Google AdSense serving or Adsterra. If you allow analytics, GA4 may process your IP address, device and browser information, visited page, referrer, approximate region, and cookies or similar identifiers for measurement. Your choice is stored locally in your browser under cozysimhub-consent-v1; reject keeps optional providers blocked. The persistent Privacy settings control lets you change or withdraw your choice, which prevents new optional-provider requests on later page loads. Google AdSense ownership metadata and ads.txt are configured, but ad serving is disabled; Adsterra is not configured. Google Fonts stylesheets load independently before your choice and Google may receive standard network data. Cloudflare hosting may keep standard access logs. We do not claim to use a Google-certified CMP.",
       "contact": "Corrections or questions? Contact us via the site's GitHub repository or email.",
       "404": "The page you are looking for was not found. Return to the guide hub."
     },
     "zh-CN": {
       "about": "本站是非官方粉丝资源站，服务于《君王之塔》(Sovereign Tower)。我们逐页核对 Steam 官方商店页、粉丝 wiki 数据与社区报告，未核实的部分明确标注。",
-      "privacy": "本站除托管与统计服务商（如启用时的 Google Analytics）记录的常规数据外，不收集个人数据。详见对应服务商的隐私政策。",
+      "privacy": "在您作出选择前，本站不会请求 Google Analytics 4、Google AdSense 投放或 Adsterra。若允许统计分析，GA4 可能为统计处理您的 IP 地址、设备和浏览器信息、访问页面、来源页面、大致地区，以及 Cookie 或类似标识符。您的选择仅以 cozysimhub-consent-v1 保存在本地浏览器中；选择不同意会继续阻止所有可选服务。您可随时使用固定显示的“隐私设置”更改或撤回选择，撤回后后续页面加载不会再发出新的可选服务请求。Google AdSense 仅配置了所有权验证元数据与 ads.txt，广告投放仍关闭；Adsterra 未配置。Google Fonts 样式表会在选择前独立加载，Google 可能收到常规网络数据；Cloudflare 托管服务也可能保留标准访问日志。本站不声称使用 Google 认证的 CMP。",
       "contact": "勘误或疑问？请通过本站 GitHub 仓库或邮箱联系。",
       "404": "未找到您访问的页面。返回攻略中心。"
     },
     "ja": {
       "about": "当サイトは『ソブリンタワー』(Sovereign Tower) の非公式ファンサイトです。Steam公式ストア・ファンwiki・コミュニティ報告を基準に各ページを調査し、未検証の内容は明記しています。",
-      "privacy": "当サイトは、ホスティング・分析事業者（有効時は Google Analytics 等）が記録する通常のデータ以外、個人データを収集しません。",
+      "privacy": "選択前に、当サイトは Google Analytics 4、Google AdSense の広告配信、Adsterra を要求しません。アクセス解析を許可すると、GA4 が測定のため IP アドレス、端末・ブラウザー情報、閲覧ページ、参照元、おおよその地域、Cookie または類似識別子を処理する場合があります。選択はブラウザー内に cozysimhub-consent-v1 として保存され、拒否すると任意サービスはブロックされたままです。常時表示されるプライバシー設定から変更・撤回でき、撤回後のページ読み込みでは新たな任意サービス要求を防ぎます。Google AdSense は所有権確認メタデータと ads.txt のみ設定済みで広告配信は無効、Adsterra は未設定です。Google Fonts のスタイルシートは選択前に独立して読み込まれ、Google が標準的なネットワークデータを受け取る場合があります。Cloudflare は標準アクセスログを保持する場合があります。当サイトは Google 認定 CMP の使用をうたいません。",
       "contact": "誤りや質問は、GitHub リポジトリまたはメールでご連絡ください。",
       "404": "お探しのページは見つかりませんでした。攻略センターへ戻る。"
     },
     "ko": {
       "about": "이 사이트는 『소버린 타워』(Sovereign Tower)의 비공식 팬 리소스입니다. Steam 공식 스토어, 팬 위키, 커뮤니티 보고를 기준으로 조사하며, 검증되지 않은 내용은 명확히 표시합니다.",
-      "privacy": "이 사이트는 호스팅·분석 제공자(활성화 시 Google Analytics 등)가 기록하는 일반 데이터 외에 개인 데이터를 수집하지 않습니다.",
+      "privacy": "선택 전에는 Google Analytics 4, Google AdSense 광고 게재 또는 Adsterra를 요청하지 않습니다. 분석을 허용하면 GA4가 측정을 위해 IP 주소, 기기·브라우저 정보, 방문 페이지, 유입 경로, 대략적인 지역과 쿠키 또는 유사 식별자를 처리할 수 있습니다. 선택은 브라우저에 cozysimhub-consent-v1로 로컬 저장되며, 거부하면 선택적 공급자가 계속 차단됩니다. 항상 표시되는 개인정보 설정에서 변경하거나 철회할 수 있고, 철회 후의 페이지 로드에서는 새로운 선택적 공급자 요청이 차단됩니다. Google AdSense는 소유권 확인 메타데이터와 ads.txt만 설정되어 있고 광고 게재는 비활성화되어 있으며, Adsterra는 설정되지 않았습니다. Google Fonts 스타일시트는 선택 전에 별도로 로드되어 Google이 표준 네트워크 데이터를 받을 수 있습니다. Cloudflare 호스팅은 표준 접속 로그를 보관할 수 있습니다. 이 사이트는 Google 인증 CMP 사용을 주장하지 않습니다.",
       "contact": "오류나 문의는 GitHub 리포지토리 또는 이메일로 연락해 주세요.",
       "404": "요청하신 페이지를 찾을 수 없습니다. 가이드 허브로 돌아가기."
     },
     "fr": {
       "about": "Ce site est une ressource de fans non officielle pour Sovereign Tower (君王之塔). Nous vérifions chaque page sur la page Steam officielle, les wikis de fans et les rapports de la communauté.",
-      "privacy": "Ce site ne collecte pas de données personnelles au-delà de ce que les hébergeurs et outils d'analyse (ex. Google Analytics) enregistrent.",
+      "privacy": "Avant votre choix, ce site ne demande ni Google Analytics 4, ni diffusion Google AdSense, ni Adsterra. Si vous autorisez l'analyse, GA4 peut traiter l'adresse IP, les informations de l'appareil et du navigateur, la page visitée, le référent, la région approximative et des cookies ou identifiants similaires pour la mesure. Votre choix est stocké localement dans le navigateur sous cozysimhub-consent-v1 ; un refus maintient les services facultatifs bloqués. Le bouton permanent Réglages de confidentialité permet de modifier ou retirer ce choix, empêchant de nouvelles requêtes facultatives lors des chargements suivants. Les métadonnées de propriété Google AdSense et ads.txt sont configurées, mais la diffusion publicitaire est désactivée ; Adsterra n'est pas configuré. Les feuilles de style Google Fonts se chargent séparément avant le choix et Google peut recevoir des données réseau standard. L'hébergement Cloudflare peut conserver des journaux d'accès standard. Ce site ne prétend pas utiliser une CMP certifiée par Google.",
       "contact": "Corrections ou questions ? Contactez-nous via le dépôt GitHub ou par e-mail.",
       "404": "Page introuvable. Retour au hub de guides."
     },
     "de": {
       "about": "Diese Seite ist eine inoffizielle Fan-Ressource für Sovereign Tower (君王之塔). Wir prüfen jede Seite gegen den offiziellen Steam-Store, Fan-Wikis und Community-Berichte.",
-      "privacy": "Diese Seite erhebt keine personenbezogenen Daten über das hinaus, was Hosting- und Analyseanbieter (z. B. Google Analytics) aufzeichnen.",
+      "privacy": "Vor Ihrer Auswahl fordert diese Website weder Google Analytics 4 noch Google-AdSense-Auslieferung oder Adsterra an. Wenn Sie Analyse erlauben, kann GA4 IP-Adresse, Geräte- und Browserdaten, besuchte Seite, Referrer, ungefähre Region sowie Cookies oder ähnliche Kennungen zur Messung verarbeiten. Ihre Auswahl wird als cozysimhub-consent-v1 lokal im Browser gespeichert; eine Ablehnung hält optionale Anbieter blockiert. Über die ständig sichtbaren Datenschutzeinstellungen können Sie die Auswahl ändern oder widerrufen; danach werden bei späteren Seitenaufrufen keine neuen optionalen Anbieteranfragen gesendet. Für Google AdSense sind nur Eigentumsmetadaten und ads.txt eingerichtet, die Anzeigenauslieferung ist deaktiviert; Adsterra ist nicht konfiguriert. Google-Fonts-Stylesheets werden unabhängig vor der Auswahl geladen und Google kann Standard-Netzwerkdaten erhalten. Cloudflare-Hosting kann Standard-Zugriffsprotokolle führen. Diese Website behauptet nicht, eine von Google zertifizierte CMP zu verwenden.",
       "contact": "Korrekturen oder Fragen? Kontakt über das GitHub-Repository oder per E-Mail.",
       "404": "Seite nicht gefunden. Zurück zum Guide-Hub."
     }
   };
   const bodyMap = BODY_I18N[lang] || BODY_I18N.en;
-  const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
+  const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger" aria-controls="sovereign-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
 <div class="tome-nav-overlay"></div>
 <main class="page-main"><div class="page-shell"><article class="page-leaf"><div class="page-head"><h1>${esc(titleMap[slug])}</h1></div><p>${bodyMap[slug]}</p></article></div></main>`;
   const dhi = lang.startsWith("zh") || lang.startsWith("ja") || lang.startsWith("ko") ? 78 : 158;
@@ -615,8 +675,8 @@ function moonHeader(lang, active) {
     <span class="brand-moon">${moonPhaseIcon(7)}</span>
     <span class="brand-name">${esc(t.ledger)}<small>${esc(t.home)}</small></span>
   </a>
-  <button class="moon-nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-  <nav class="moon-nav" aria-label="Moonlight Peaks index">${body}
+  <button class="moon-nav-toggle" type="button" aria-label="Toggle menu" aria-controls="moonlight-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <nav id="moonlight-navigation" class="moon-nav" aria-label="Moonlight Peaks index">${body}
     <div class="moon-lang"><span class="lang-label">${esc(t.langLabel)}</span>${langItems}</div>
     <a class="moon-hub-link" href="${linkOf("index", lang)}">${esc(t.hub)}</a>
   </nav>
@@ -644,9 +704,9 @@ function moonFooter(lang) {
     </div>
     <p class="colophon-legal">© ${COPYRIGHT_YEAR} ${esc(DATA.site.domain)} · ${lang === "zh-CN" ? "非官方粉丝站" : "Unofficial fan site"}</p>
   </div>
-  ${adsenseScript()}
 </footer>
-${KIT.decisionEventsScript()}`;
+${KIT.decisionEventsScript()}
+${consentUi(lang)}`;
 }
 
 /* 月光页 Section 渲染 */
@@ -1048,10 +1108,11 @@ const MOON_JS = `<script>
   var tog = document.querySelector('.moon-nav-toggle');
   var nav = document.querySelector('.moon-nav');
   if (tog && nav) {
+    function setMoonNavigation(open, returnFocus){nav.classList.toggle('open',open);tog.setAttribute('aria-expanded',open?'true':'false');if(!open&&returnFocus)tog.focus();}
     tog.addEventListener('click', function(){
-      var open = nav.classList.toggle('open');
-      tog.setAttribute('aria-expanded', open ? 'true' : 'false');
+      setMoonNavigation(!nav.classList.contains('open'), false);
     });
+    document.addEventListener('keydown', function(e){if(e.key==='Escape'&&nav.classList.contains('open'))setMoonNavigation(false,true);});
   }
   // reveal 动画
   var obs = new IntersectionObserver(function(es){

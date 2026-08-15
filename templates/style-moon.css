@@ -24,6 +24,16 @@ a:hover{color:var(--candle-soft)}
 img{max-width:100%;height:auto}
 svg{display:inline-block;vertical-align:middle}
 
+/* Privacy choices share behavior with the hub while keeping the moon palette. */
+.privacy-settings{position:fixed;right:14px;bottom:14px;z-index:110;min-height:44px;padding:9px 14px;border:1px solid var(--candle);border-radius:999px;background:var(--night-deep);color:var(--moon);box-shadow:var(--shadow);font:600 13px/1.2 var(--font-body);cursor:pointer}
+.consent-dialog{width:min(680px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:0;border:1px solid var(--candle);border-radius:16px;background:var(--panel);color:var(--moon);box-shadow:0 24px 70px rgba(6,3,18,.72)}
+.consent-dialog::backdrop{background:rgba(6,3,18,.78);backdrop-filter:blur(3px)}
+.consent-card{position:relative;padding:26px}.consent-card h2{margin:0 48px 8px 0;color:var(--moon);font-family:var(--font-head);font-size:1.8rem}.consent-card>p{color:var(--moon-soft)}
+.consent-close{position:absolute;right:12px;top:10px;width:44px;height:44px;border:0;border-radius:10px;background:transparent;color:var(--moon);font-size:28px;cursor:pointer}
+.consent-summary{display:grid;gap:4px;margin:18px 0}.consent-summary span{color:var(--moon-soft);margin-bottom:10px}
+.consent-manage{display:grid;gap:10px;margin:18px 0}.consent-manage label{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid var(--line);border-radius:10px}.consent-manage input{width:22px;height:22px;flex:0 0 auto;accent-color:var(--candle)}.consent-manage small{display:block;color:var(--moon-soft);margin-top:3px}
+.consent-actions{display:flex;flex-wrap:wrap;gap:8px}.consent-actions button{min-height:44px;padding:9px 13px;border:1px solid var(--candle);border-radius:9px;background:var(--panel-2);color:var(--moon);font:700 14px/1.2 var(--font-body);cursor:pointer}.consent-actions [data-consent-accept]{background:var(--candle);color:var(--night-deep)}.consent-actions [data-consent-reject],.consent-actions [data-consent-withdraw]{background:transparent}
+
 /* ---------- 顶部：月光品牌 + 月相导航 ---------- */
 .moon-head{position:sticky;top:0;z-index:50;background:rgba(15,10,34,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .moon-brand{display:flex;align-items:center;gap:.7rem;padding:14px 20px;color:var(--moon)}
@@ -31,13 +41,13 @@ svg{display:inline-block;vertical-align:middle}
 .brand-moon{width:34px;height:34px;color:var(--candle)}
 .brand-name{font-family:var(--font-head);font-weight:700;font-size:1.15rem;letter-spacing:.02em;display:flex;flex-direction:column;line-height:1.15}
 .brand-name small{font-family:var(--font-body);font-weight:400;font-size:.72rem;color:var(--moon-soft);letter-spacing:.12em;text-transform:uppercase}
-.moon-nav-toggle{display:none;margin-left:auto;background:none;border:1px solid var(--line);color:var(--moon);border-radius:8px;padding:8px 10px;cursor:pointer}
+.moon-nav-toggle{display:none;margin-left:auto;min-width:44px;min-height:44px;background:none;border:1px solid var(--line);color:var(--moon);border-radius:8px;padding:8px 10px;cursor:pointer}
 .moon-nav-toggle svg{width:20px;height:20px}
 .moon-nav{padding:0 20px 14px}
 .moon-nav-group{margin-bottom:10px}
 .moon-nav-group>b{display:block;font-family:var(--font-label);font-weight:400;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--moon-soft);margin:0 0 6px}
 .moon-nav-items{display:flex;flex-wrap:wrap;gap:6px}
-.moon-nav-item{display:inline-flex;align-items:center;gap:.45rem;padding:6px 12px;border:1px solid var(--line-soft);border-radius:999px;color:var(--moon-soft);font-size:.88rem;transition:transform .18s ease-out,color .18s ease-out,border-color .18s ease-out,box-shadow .18s ease-out}
+.moon-nav-item{display:inline-flex;align-items:center;gap:.45rem;min-height:44px;padding:6px 12px;border:1px solid var(--line-soft);border-radius:999px;color:var(--moon-soft);font-size:.88rem;transition:transform .18s ease-out,color .18s ease-out,border-color .18s ease-out,box-shadow .18s ease-out}
 .moon-nav-item .moon-phase{width:16px;height:16px}
 .moon-nav-item:hover{color:var(--candle-soft);border-color:rgba(240,168,72,.5);transform:translateY(-1px)}
 .moon-nav-item.active{color:var(--candle);border-color:rgba(240,168,72,.7);box-shadow:0 0 14px rgba(240,168,72,.25)}
@@ -45,7 +55,7 @@ svg{display:inline-block;vertical-align:middle}
 @keyframes moonPulse{0%,100%{opacity:1}50%{opacity:.45}}
 .moon-lang{display:flex;align-items:center;gap:.5rem;margin-top:12px;flex-wrap:wrap}
 .lang-label{font-family:var(--font-label);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--moon-soft)}
-.moon-lang a{display:inline-flex;align-items:center;gap:.35rem;font-size:.82rem;color:var(--moon-soft);padding:3px 8px;border-radius:6px}
+.moon-lang a{display:inline-flex;align-items:center;gap:.35rem;min-height:44px;font-size:.82rem;color:var(--moon-soft);padding:3px 8px;border-radius:6px}
 .moon-lang a.active{color:var(--candle);background:rgba(240,168,72,.12)}
 .moon-lang a:hover{color:var(--candle-soft)}
 .moon-hub-link{display:inline-flex;margin-top:10px;font-size:.82rem;color:var(--moonbeam)}
@@ -163,6 +173,7 @@ svg{display:inline-block;vertical-align:middle}
   .moon-nav-item{border-radius:8px}
   .moon-ruled{border-left:none;padding-left:0}
   .moon-main{padding:18px 14px 40px}
+  .consent-card{padding:22px 18px}.consent-actions button{width:100%}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none !important;transition:none !important}

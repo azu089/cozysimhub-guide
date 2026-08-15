@@ -95,6 +95,10 @@ const assertOutput = ({ fixture }) => {
     assert.equal(row.html.includes("client=pub-"), false, `raw pub client leaked in ${row.relative}`);
     assert.equal(row.html.includes("client=ca-ca-pub-"), false, `double ca- prefix in ${row.relative}`);
     if (fixture) assert.equal(count(row.html, `client=${expectedClient}`), 1, `fixture client mismatch in ${row.relative}`);
+    for (const token of ["data-consent-settings", "data-consent-accept", "data-consent-reject", "data-consent-withdraw"])
+      assert(row.html.includes(token), `consent control ${token} missing in ${row.relative}`);
+    assert.equal(/<script[^>]+src=["'][^"']*(?:googletagmanager\.com|googlesyndication\.com|effectivecpmnetwork\.com)/i.test(row.html), false,
+      `optional provider injected before consent in ${row.relative}`);
   }
   return { currentRows, amazon: amazonFingerprint(currentRows) };
 };
