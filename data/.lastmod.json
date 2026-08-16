@@ -1,6 +1,6 @@
 {
   "https://cozysimhub.com/": {
-    "hash": "08312bd6d5f37b371d88187286c3714a",
+    "hash": "54836e0e1a2a1d277d930182167c37e9",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/about": {
@@ -12,7 +12,7 @@
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/": {
-    "hash": "962f1e77d574564f51fef9846e64f131",
+    "hash": "e6afdbcf87fc8dac85799b1df2f32d49",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/about": {
@@ -307,6 +307,10 @@
     "hash": "06718fbf03227600d8a4175871de1db5",
     "date": "2026-08-13"
   },
+  "https://cozysimhub.com/de/sovereign-tower/walkthrough/act-2": {
+    "hash": "0bf77587b8ac1b286ffcc3a89624b08a",
+    "date": "2026-08-13"
+  },
   "https://cozysimhub.com/de/sovereign-tower/walkthrough/beast-hunt": {
     "hash": "40d46442feff08aaaa8ae84dbab440b9",
     "date": "2026-08-13"
@@ -320,7 +324,7 @@
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/": {
-    "hash": "ac9f27255fcd31c5a0d009d64c0a9b32",
+    "hash": "2ae6db5e162dd6683313714e8195f7bc",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/about": {
@@ -615,6 +619,10 @@
     "hash": "7e3ab2c30a0c30c74a57451042214cdd",
     "date": "2026-08-13"
   },
+  "https://cozysimhub.com/fr/sovereign-tower/walkthrough/act-2": {
+    "hash": "86ceb166617976053ff7790045635ff9",
+    "date": "2026-08-13"
+  },
   "https://cozysimhub.com/fr/sovereign-tower/walkthrough/beast-hunt": {
     "hash": "531b06e93603c5511131157c3f349fef",
     "date": "2026-08-13"
@@ -628,7 +636,7 @@
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/": {
-    "hash": "b79f8bd2a597ece6cf26c81185851c5d",
+    "hash": "4b6ee6185824da60cd26e4e7c03d7fee",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/about": {
@@ -923,6 +931,10 @@
     "hash": "b127dac48913cccd24054e1d50879ef3",
     "date": "2026-08-13"
   },
+  "https://cozysimhub.com/ja/sovereign-tower/walkthrough/act-2": {
+    "hash": "a73a903dfea232bafe88ad55cdc8ec4c",
+    "date": "2026-08-13"
+  },
   "https://cozysimhub.com/ja/sovereign-tower/walkthrough/beast-hunt": {
     "hash": "101230debbd43de6d89f47e22650a952",
     "date": "2026-08-13"
@@ -936,7 +948,7 @@
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ko/": {
-    "hash": "9483898e4c7a5f9e66496d07bfca23c8",
+    "hash": "0955c58665d8d517ceb6e9bc3eab5463",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ko/about": {
@@ -1229,6 +1241,10 @@
   },
   "https://cozysimhub.com/ko/sovereign-tower/walkthrough/act-1-groveshire": {
     "hash": "87117d3515f190c6e74cde492805ccac",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/ko/sovereign-tower/walkthrough/act-2": {
+    "hash": "90dc5502710c6dd2d8dd5bf3528ba01d",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ko/sovereign-tower/walkthrough/beast-hunt": {
@@ -1527,6 +1543,10 @@
     "hash": "1b54a1e03a0ef39309085a4b54b503f7",
     "date": "2026-08-13"
   },
+  "https://cozysimhub.com/sovereign-tower/walkthrough/act-2": {
+    "hash": "74e78af3ebbb7629733b04f9d5ba5558",
+    "date": "2026-08-13"
+  },
   "https://cozysimhub.com/sovereign-tower/walkthrough/beast-hunt": {
     "hash": "8efc2088588881e373056de2f65a3a87",
     "date": "2026-08-13"
@@ -1540,7 +1560,7 @@
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/zh-CN/": {
-    "hash": "4353470e78e9d79370b2ccdfab2b6671",
+    "hash": "c4074841755a0ef948a25bdc070fa60e",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/zh-CN/about": {
@@ -1833,6 +1853,10 @@
   },
   "https://cozysimhub.com/zh-CN/sovereign-tower/walkthrough/act-1-groveshire": {
     "hash": "69b708409b77beb89db727aec7c3c43d",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/zh-CN/sovereign-tower/walkthrough/act-2": {
+    "hash": "c5ee32bb4b601718da65a0779c3943a9",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/zh-CN/sovereign-tower/walkthrough/beast-hunt": {

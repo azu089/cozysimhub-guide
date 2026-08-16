@@ -32,7 +32,7 @@ function inspect(html) {
   return failures;
 }
 
-assert.equal(htmlFiles.length, 463, "generated HTML inventory changed");
+assert.equal(htmlFiles.length, 469, "generated HTML inventory changed");
 for (const file of htmlFiles)
   assert.deepEqual(inspect(fs.readFileSync(file, "utf8")), [], `navigation contract failed in ${path.relative(publicDir, file)}`);
 

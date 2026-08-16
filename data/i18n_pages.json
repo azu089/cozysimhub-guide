@@ -386,5 +386,31 @@
    "metaDescription": "Sympathie-Änderung durch Quests, Lieblingsgerichte und Herrscherstil berechnen.",
    "intro": "Sympathie schätzen: geliebte Quest +1,33, verhasste -0,75, Lieblingsgericht +1,5, Herrscherstil. Bei -7 kündigt der Ritter."
   }
+ },
+ "sovereign-tower/walkthrough/act-2": {
+  "ja": {
+   "title": "第2幕：殺人事件ウォークスルー",
+   "metaTitle": "ソブリンタワー Act2 殺人事件攻略：調査・巻き戻し・対峙",
+   "metaDescription": "ソブリンタワー Act2 殺人事件の完遂ルート：調査→供述→巻き戻し→Alwena→対峙（first casualty 72.3%）。",
+   "intro": "Act 2 の殺人事件はソブリンタワーで最も見落とされやすい大規模分岐——first casualty の達成率は Steam 上 72.3%。検証済みルート：調査→供述を聞く→マークされた朝へ巻き戻す→Alwena と話す→対峙。"
+  },
+  "ko": {
+   "title": "2막: 살인 사건 공략",
+   "metaTitle": "소버린 타워 2막 살인 사건 공략 — 조사·되감기·대면",
+   "metaDescription": "소버린 타워 2막 살인 사건 완료 루트: 조사→자백→되감기→Alwena→대면 (first casualty 72.3%).",
+   "intro": "2막 살인 사건은 소버린 타워에서 가장 많이 건너뛰는 대형 분기 — first casualty 달성률은 Steam에서 72.3%. 검증된 루트: 조사→자백 청취→표시된 아침으로 되감기→Alwena와 대화→대면."
+  },
+  "fr": {
+   "title": "Acte 2 : l'enquête sur le meurtre",
+   "metaTitle": "Sovereign Tower Acte 2 — Enquête sur le meurtre : itinéraire complet",
+   "metaDescription": "Terminer l'enquête sur le meurtre de Sovereign Tower (Acte 2) : enquêter, écouter les aveux, remonter le temps, parler à Alwena et confronter le tueur.",
+   "intro": "L'enquête sur le meurtre de l'Acte 2 est la grande branche la plus ignorée de Sovereign Tower — le succès first casualty est à 72,3 % sur Steam. Voici l'itinéraire vérifié : enquêter, écouter les aveux, remonter au matin marqué, parler à Alwena et confronter le tueur."
+  },
+  "de": {
+   "title": "Akt 2: Mordermittlung",
+   "metaTitle": "Sovereign Tower Akt 2 — Mordermittlung: kompletter Weg",
+   "metaDescription": "Die Mordermittlung in Sovereign Tower (Akt 2) abschließen: ermitteln, Geständnisse anhören, Zeit zurückdrehen, mit Alwena sprechen und den Mörder konfrontieren.",
+   "intro": "Die Mordermittlung in Akt 2 ist der am meisten übersprungene große Handlungsstrang in Sovereign Tower — der Erfolg first casualty liegt bei 72,3 % auf Steam. Hier ist der verifizierte Weg: ermitteln, Geständnisse anhören, zum markierten Morgen zurückdrehen, mit Alwena sprechen und den Mörder konfrontieren."
+  }
  }
 }

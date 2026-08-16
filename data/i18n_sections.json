@@ -3234,5 +3234,303 @@
     ]
    }
   ]
+ },
+ "sovereign-tower/walkthrough/act-2": {
+  "ja": [
+   {
+    "type": "steps",
+    "tag": "STEP",
+    "heading": "Act 2 殺人事件——検証済みルート",
+    "body": "",
+    "items": [
+     [
+      "殺人事件はどこから",
+      "殺人イベントは Act 2 のストーリーで、Cycle 10–11 頃に発生。"
+     ],
+     [
+      "犯人を調査",
+      "殺人調査を進め、判断の前に容疑者の証言を集める。"
+     ],
+     [
+      "供述を聞く",
+      "供述を最後まで聞く——検証済みルートは聞き切ることが前提。"
+     ],
+     [
+      "マークされた朝へ巻き戻す",
+      "時間を巻き戻し、事件が指し示す朝に戻る。"
+     ],
+     [
+      "Alwena と話す",
+      "対峙の前に、執務官 Alwena と事件について話す。"
+     ],
+     [
+      "犯人と対峙する",
+      "犯人と直接対峙する選択肢を選ぶ。"
+     ],
+     [
+      "voices / manipulated を問う",
+      "声（voices）と操られた（manipulated）ことについて問い、分岐を締める。"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "検証済みと未確認",
+    "body": "",
+    "items": [
+     "検証済みルート：犯人調査→供述を聞く→マークされた朝へ巻き戻す→Alwena と話す→犯人と対峙→voices / manipulated を問う。",
+     "Gwendan Villador は報告上の容疑者だが、犯人は周回ごとに変わる——セーブごとに固定ではない。",
+     "Gwendan に関わる death sentence bug（死刑判決バグ）の報告あり。正確な発生条件と修正状況は確認待ち（待補）。",
+     "この分岐の解決方法で生存者が変わり、解放されるエンディングも変わる。完遂で first casualty 実績が解放される（Steam グローバル 72.3%）。"
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Act 2 の殺人事件はいつ？",
+      "Act 2 の Cycle 10–11 頃。"
+     ],
+     [
+      "Gwendan が犯人とは限らない？",
+      "はい——Gwendan Villador は報告上の容疑者だが、犯人は周回ごとに変わる。正確なルールが検証されるまでは、どの容疑者も周回依存とみなすこと（待補）。"
+     ],
+     [
+      "first casualty 実績とは？",
+      "殺人線の完遂に紐づく実績。Steam のグローバル達成率は 72.3%——殺人調査は最も見逃されやすい大規模分岐。"
+     ],
+     [
+      "Gwendan の death sentence bug とは？",
+      "Gwendan に関わる死刑判決を出し得るバグの報告。正確な発生条件と修正状況は確認待ち（待補）。"
+     ]
+    ]
+   }
+  ],
+  "ko": [
+   {
+    "type": "steps",
+    "tag": "STEP",
+    "heading": "2막 살인 사건 — 검증된 루트",
+    "body": "",
+    "items": [
+     [
+      "살인 사건은 어디서 시작",
+      "살인 이벤트는 2막 스토리로, Cycle 10~11 즈음 발생."
+     ],
+     [
+      "범인 조사",
+      "살인 조사를 진행하고 판단 전에 용의자들의 진술을 모은다."
+     ],
+     [
+      "자백 듣기",
+      "자백을 끝까지 듣는다 — 검증된 루트는 끝까지 듣는 것이 전제."
+     ],
+     [
+      "표시된 아침으로 되감기",
+      "시간을 되감아 사건이 가리키는 아침으로 돌아간다."
+     ],
+     [
+      "Alwena와 대화",
+      "대면 전에 집사 Alwena와 사건을 상의한다."
+     ],
+     [
+      "범인과 대면",
+      "범인과 정면으로 대면하는 선택지를 고른다."
+     ],
+     [
+      "voices / manipulated 질문",
+      "목소리(voices)와 조종(manipulated)에 대해 묻고 분기를 마무리한다."
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "검증됨과 확인 대기",
+    "body": "",
+    "items": [
+     "검증된 루트: 범인 조사→자백 청취→표시된 아침으로 되감기→Alwena와 대화→범인 대면→voices/manipulated 질문.",
+     "Gwendan Villador가 보고된 용의자지만 범인은 회차마다 다름 — 세이브마다 고정되지 않음.",
+     "Gwendan 관련 death sentence bug(사형 판결 버그) 보고 있음. 정확한 발생 조건과 수정 여부는 확인 대기(待補).",
+     "이 분기의 해결 방식에 따라 생존자와 해금되는 엔딩이 달라지며, 완료 시 first casualty 업적이 해금됩니다(Steam 글로벌 72.3%)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "2막 살인 사건은 언제?",
+      "2막 Cycle 10~11 즈음."
+     ],
+     [
+      "Gwendan이 항상 범인?",
+      "아니요 — Gwendan Villador는 보고된 용의자지만 범인은 회차마다 다릅니다. 정확한 규칙이 검증되기 전까지 모든 용의자는 회차 의존으로 보세요(待補)."
+     ],
+     [
+      "first casualty 업적이란?",
+      "살인선 완료에 연결된 업적. Steam 글로벌 달성률 72.3% — 살인 조사는 가장 많이 건너뛰는 대형 분기입니다."
+     ],
+     [
+      "Gwendan의 death sentence bug는?",
+      "Gwendan 관련 사형 판결이 나올 수 있는 버그 보고. 정확한 발생 조건과 수정 여부는 확인 대기(待補)."
+     ]
+    ]
+   }
+  ],
+  "fr": [
+   {
+    "type": "steps",
+    "tag": "STEP",
+    "heading": "Acte 2 — l'itinéraire vérifié de l'enquête",
+    "body": "",
+    "items": [
+     [
+      "Où commence l'histoire",
+      "L'événement du meurtre est une intrigue de l'Acte 2, vers les cycles 10–11."
+     ],
+     [
+      "Enquêter sur le tueur",
+      "Menez l'enquête et recueillez les versions des suspects avant de juger."
+     ],
+     [
+      "Écouter les aveux",
+      "Écoutez les aveux en entier — l'itinéraire vérifié exige d'aller au bout."
+     ],
+     [
+      "Remonter au matin marqué",
+      "Remontez le temps jusqu'au matin marqué par l'affaire."
+     ],
+     [
+      "Parler à Alwena",
+      "Parlez à Alwena, l'intendante, avant l'affrontement."
+     ],
+     [
+      "Confronter le tueur",
+      "Choisissez de confronter le tueur face à face."
+     ],
+     [
+      "Poser les questions sur les voix / la manipulation",
+      "Posez les questions sur les voix et la manipulation pour clore la branche."
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Vérifié et en attente",
+    "body": "",
+    "items": [
+     "Itinéraire vérifié : enquêter → écouter les aveux → remonter au matin marqué → parler à Alwena → confronter le tueur → poser les questions voix / manipulation.",
+     "Gwendan Villador est le suspect rapporté, mais le tueur varie d'une partie à l'autre — le coupable n'est pas fixe d'une sauvegarde à l'autre.",
+     "Un bug de condamnation à mort impliquant Gwendan a été rapporté ; déclencheur exact et statut de correctif à confirmer (待补).",
+     "La résolution de cette branche change qui survit et quelles fins se débloquent ; la terminer débloque le succès first casualty (72,3 % sur Steam)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Quand a lieu le meurtre de l'Acte 2 ?",
+      "Vers les cycles 10–11 de l'Acte 2."
+     ],
+     [
+      "Gwendan est-il toujours le tueur ?",
+      "Non — Gwendan Villador est le suspect rapporté, mais le coupable varie selon les parties ; considérez tout suspect comme dépendant de la partie tant que les règles exactes ne sont pas vérifiées (待补)."
+     ],
+     [
+      "C'est quoi le succès first casualty ?",
+      "Le succès lié à la fin de la ligne du meurtre. Son taux global Steam est de 72,3 % — l'enquête est la grande branche la plus ignorée."
+     ],
+     [
+      "Le bug de condamnation à mort de Gwendan ?",
+      "Un bug rapporté pouvant infliger une condamnation à mort impliquant Gwendan ; déclencheur et correctif à confirmer (待补)."
+     ]
+    ]
+   }
+  ],
+  "de": [
+   {
+    "type": "steps",
+    "tag": "STEP",
+    "heading": "Akt 2 — der verifizierte Weg",
+    "body": "",
+    "items": [
+     [
+      "Wo die Geschichte beginnt",
+      "Das Mordereignis ist ein Handlungsstrang in Akt 2, etwa bei Zyklus 10–11."
+     ],
+     [
+      "Den Mörder ermitteln",
+      "Führe die Ermittlung durch und sammle erst die Aussagen der Verdächtigen."
+     ],
+     [
+      "Geständnisse anhören",
+      "Höre die Geständnisse vollständig an — der verifizierte Weg setzt das voraus."
+     ],
+     [
+      "Zum markierten Morgen zurückdrehen",
+      "Drehe die Zeit auf den markierten Morgen des Falls zurück."
+     ],
+     [
+      "Mit Alwena sprechen",
+      "Sprich vor der Konfrontation mit Alwena, der Intendantin."
+     ],
+     [
+      "Den Mörder konfrontieren",
+      "Wähle, den Mörder von Angesicht zu Angesicht zu konfrontieren."
+     ],
+     [
+      "Nach Stimmen / Manipulation fragen",
+      "Stelle die Fragen zu Stimmen (voices) und Manipulation, um den Zweig abzuschließen."
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "NOTE",
+    "heading": "Verifiziert und offen",
+    "body": "",
+    "items": [
+     "Verifizierter Weg: ermitteln → Geständnisse anhören → zum markierten Morgen zurückdrehen → mit Alwena sprechen → den Mörder konfrontieren → nach Stimmen/Manipulation fragen.",
+     "Gwendan Villador ist der gemeldete Verdächtige, aber der Mörder variiert zwischen Durchläufen — der Täter ist nicht pro Speicherstand festgelegt.",
+     "Ein Todesurteils-Bug um Gwendan wurde gemeldet; genauer Auslöser und Fix-Status sind noch zu bestätigen (待补).",
+     "Wie dieser Zweig ausgeht, ändert, wer überlebt und welche Enden sich freischalten; der Abschluss schaltet den Erfolg first casualty frei (72,3 % auf Steam)."
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "FAQ",
+    "body": "",
+    "items": [
+     [
+      "Wann passiert der Mord in Akt 2?",
+      "Etwa bei Zyklus 10–11 in Akt 2."
+     ],
+     [
+      "Ist Gwendan immer der Mörder?",
+      "Nein — Gwendan Villador ist der gemeldete Verdächtige, aber der Täter variiert zwischen Durchläufen; behandle jeden Verdächtigen als durchlaufabhängig, bis die genauen Regeln verifiziert sind (待补)."
+     ],
+     [
+      "Was ist der Erfolg first casualty?",
+      "Der Erfolg für den Abschluss der Mordlinie. Seine Steam-Weltrate liegt bei 72,3 % — die Mordermittlung ist der meistübersprungene große Zweig."
+     ],
+     [
+      "Der Todesurteils-Bug von Gwendan?",
+      "Ein gemeldeter Bug, der ein Todesurteil mit Beteiligung von Gwendan auslösen kann; Auslöser und Fix-Status sind zu bestätigen (待补)."
+     ]
+    ]
+   }
+  ]
  }
 }

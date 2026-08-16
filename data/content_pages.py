@@ -383,6 +383,54 @@ def build_walkthrough_rebellion():
     zh_secs = [notes("叛乱剧情", zh_note), faq_block(zh_faq)]
     return _wt("sovereign-tower/walkthrough/rebellion", "Rebellion Walkthrough", "Sovereign Tower Rebellion Walkthrough — Epicrate & Brimwood", "The Rebellion storyline in Sovereign Tower: Epicrate of Brimwood, her Revolutionar trait and the People/Nobility balance.", "The Rebellion chain follows Epicrate and Brimwood. Balance People and Nobility to get the most from her revolutionary scoring.", en_secs, zh_secs)
 
+def build_walkthrough_act2():
+    # Act 2 谋杀线（G6 数据驱动补页）：仅写 L1 可溯源事实，来源见 docs/research/sovereign-tower-research.md §3/§4/§5
+    en_steps = [
+        ["Where the murder storyline starts", "The murder event is an Act 2 storyline that lands around Cycle 10–11."],
+        ["Investigate the murderer", "Work the murder investigation and gather the suspects' accounts before you judge."],
+        ["Hear the confessions", "Listen to the confessions in full — the verified route depends on hearing them out."],
+        ["Rewind to the marked morning", "Turn back time to the morning the case is marked on."],
+        ["Talk to Alwena", "Talk to Alwena, the Intendant, about the case before the confrontation."],
+        ["Confront the murderer", "Choose to confront the murderer face to face."],
+        ["Ask about the voices / manipulation", "Ask the questions about voices and being manipulated to close the branch."],
+    ]
+    en_note = [
+        "Verified route: investigate the murderer → hear the confessions → rewind to the marked morning → talk to Alwena → confront the murderer → ask about voices / manipulated.",
+        "Gwendan Villador is the reported suspect, but the murderer varies across runs — the 'who' is not fixed from save to save.",
+        "A death-sentence bug involving Gwendan has been reported; its exact trigger and fix status are pending confirmation (待补).",
+        "How the murder branch resolves changes who survives and which endings unlock; finishing it unlocks the first casualty achievement (72.3% Steam global rate).",
+    ]
+    en_faq = [
+        ["When does the Act 2 murder happen?", "Around Cycle 10–11 in Act 2."],
+        ["Is Gwendan always the murderer?", "No — Gwendan Villador is the reported suspect, but the guilty knight varies across runs; treat any suspect as run-dependent until the exact rules are verified (待补)."],
+        ["What is the first casualty achievement?", "The achievement tied to completing the murder line. Its Steam global achievement rate is 72.3% — the murder investigation is the most-skipped major branch."],
+        ["What is the Gwendan death-sentence bug?", "A reported bug that can hand out a death sentence involving Gwendan; exact trigger and fix status are pending confirmation (待补)."],
+    ]
+    zh_steps = [
+        ["谋杀剧情从哪里开始", "谋杀事件是 Act 2 的剧情线，大约在 Cycle 10–11 触发。"],
+        ["调查凶手", "推进谋杀调查，先收集嫌疑人的说法再下判断。"],
+        ["听完供词", "完整听完供词——已验证的解法链依赖先听完再行动。"],
+        ["回溯到标记日早晨", "用时间回溯回到案件标记的那个早晨。"],
+        ["跟 Alwena 对话", "在对质前，先跟总管 Alwena 谈案情。"],
+        ["当面对峙凶手", "选择与凶手当面对峙。"],
+        ["追问 voices / manipulated", "追问关于 voices（声音）与被操控（manipulated）的问题，收束这条分支。"],
+    ]
+    zh_note = [
+        "已验证解法链：调查凶手 → 听完供词 → 回溯到标记日早晨 → 跟 Alwena 对话 → 当面对峙凶手 → 追问 voices / manipulated。",
+        "Gwendan Villador 是报告的嫌疑人，但凶手跨周目可变——谁是凶手在每局存档里并不固定。",
+        "已报告一个涉及 Gwendan 的 death sentence bug（死刑判决 bug）；确切触发条件与修复状态待确认（待补）。",
+        "谋杀分支的解法会改变谁存活、解锁哪些结局；完成它才解锁 first casualty 成就（Steam 全球达成率 72.3%）。",
+    ]
+    zh_faq = [
+        ["Act 2 谋杀事件什么时候发生？", "大约在 Act 2 的 Cycle 10–11。"],
+        ["Gwendan 一定是凶手吗？", "不一定——Gwendan Villador 是报告的嫌疑人，但凶手跨周目可变；确切规则核实前，任何嫌疑人都是周目相关的（待补）。"],
+        ["first casualty 成就是什么？", "完成谋杀线关联的成就。Steam 全球成就率 72.3%——谋杀调查是最多人跳过的重大分支。"],
+        ["Gwendan 的 death sentence bug 是什么？", "已报告的一个可能对 Gwendan 相关角色判死刑的 bug；确切触发条件与是否修复待确认（待补）。"],
+    ]
+    en_secs = [{"type": "steps", "tag": "STEP", "heading": "Act 2 murder investigation — the verified route", "body": "", "items": en_steps}, notes("What's verified and what's pending", en_note), faq_block(en_faq)]
+    zh_secs = [{"type": "steps", "tag": "STEP", "heading": "Act 2 谋杀调查——已验证路线", "body": "", "items": zh_steps}, notes("已验证与待确认", zh_note), faq_block(zh_faq)]
+    return _wt("sovereign-tower/walkthrough/act-2", "Act 2: Murder Investigation Walkthrough", "Sovereign Tower Act 2 Murder Walkthrough — Full Route", "How to complete the Sovereign Tower Act 2 murder investigation: investigate the murderer, hear the confessions, rewind to the marked morning, talk to Alwena and confront the killer.", "The Act 2 murder investigation is Sovereign Tower's most-skipped major branch — the first casualty achievement sits at 72.3% on Steam. Here is the verified route: investigate the murderer, hear the confessions, rewind to the marked morning, talk to Alwena, then confront the killer.", en_secs, zh_secs)
+
 def build_systems_annexes():
     en_note = [
         "Annexes are buildings that add systems to your tower: Carina's Forge repairs and crafts gear, the Witch's Alchemy Room makes consumables.",
