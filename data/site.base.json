@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "Sovereign Tower Guide Hub",
+    "name": "CozySimHub",
     "domain": "cozysimhub.com",
     "tagline": "中文全量攻略 · 24 骑士档案 · 菜谱 · 结局 · 交互工具",
     "description": "君王之塔 Sovereign Tower 中文攻略 Hub：24 位骑士全量档案、隐藏骑士招募、恋爱隐藏条件、全结局、菜谱对照、任务机制与好感计算器。",
@@ -27,7 +27,26 @@
     "contentUpdatedAt": "2026-08-13",
     "adsterra": "<script async=\"async\" data-cfasync=\"false\" src=\"https://paralysisfoxbullet.com/3428e02aa4b3429848158ecb988e5aa7/invoke.js\"></script> <div id=\"container-3428e02aa4b3429848158ecb988e5aa7\"></div>",
     "affiliates": {},
-    "i18n": {}
+    "i18n": {
+      "en": {
+        "name": "CozySimHub"
+      },
+      "zh-CN": {
+        "name": "CozySimHub"
+      },
+      "ja": {
+        "name": "CozySimHub"
+      },
+      "ko": {
+        "name": "CozySimHub"
+      },
+      "fr": {
+        "name": "CozySimHub"
+      },
+      "de": {
+        "name": "CozySimHub"
+      }
+    }
   },
   "game": {
     "name": "Sovereign Tower",
