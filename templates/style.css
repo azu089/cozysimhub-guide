@@ -49,11 +49,13 @@ img { max-width: 100%; height: auto; }
 
 /* Privacy choices: native modal containment + persistent withdrawal entry. */
 .privacy-settings {
-  position: fixed; right: 14px; bottom: 14px; z-index: 110; min-height: 44px;
+  position: fixed; right: 16px; top: 78px; z-index: 110; min-height: 44px;
   padding: 9px 14px; border: 1px solid var(--gold); border-radius: 999px;
   background: var(--deep); color: #F5EDDB; box-shadow: var(--shadow-md);
   font: 600 13px/1.2 "Inter", sans-serif; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 6px;
 }
+.privacy-settings::before { content: "🔒"; font-size: 12px; }
 .consent-dialog {
   width: min(680px, calc(100vw - 32px)); max-height: calc(100dvh - 32px);
   padding: 0; border: 1px solid var(--gold); border-radius: 16px;
@@ -91,12 +93,12 @@ img { max-width: 100%; height: auto; }
 /* ---------- 左卷宗栏（浅纸底 + 金线，非深棕） ---------- */
 .tome-nav {
   position: sticky; top: 0; height: 100vh; overflow-y: auto;
-  background: linear-gradient(180deg, var(--paper-deep), #F0E7D2);
+  background: var(--card);
   border-right: 1px solid var(--line);
-  padding: 30px 20px 40px;
-  display: flex; flex-direction: column; gap: 4px;
+  padding: 20px 16px 32px;
+  display: flex; flex-direction: column; gap: 2px;
 }
-.tome-brand { display: flex; align-items: center; gap: 12px; padding: 0 6px 20px; border-bottom: 1px solid var(--gold); margin-bottom: 14px; }
+.tome-brand { display: flex; align-items: center; gap: 12px; padding: 0 6px 14px; border-bottom: 1px solid var(--gold); margin-bottom: 10px; }
 .brand-seal {
   width: 44px; height: 44px; border-radius: 50%; flex: 0 0 auto;
   display: inline-flex; align-items: center; justify-content: center;
@@ -110,7 +112,7 @@ img { max-width: 100%; height: auto; }
 .tome-chapter { margin-bottom: 2px; }
 .tome-chapter > b {
   display: block; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--gold); padding: 14px 8px 5px; font-family: "Inter", sans-serif; font-weight: 600;
+  color: var(--gold); padding: 10px 8px 4px; font-family: "Inter", sans-serif; font-weight: 600;
 }
 .tome-chapter a {
   display: flex; align-items: center; gap: 10px; padding: 8px 8px 8px 12px;
@@ -124,6 +126,7 @@ img { max-width: 100%; height: auto; }
 .nav-ic { display: inline-flex; color: var(--terra); }
 .nav-ic svg { width: 16px; height: 16px; }
 
+.lang-note { margin: 6px 0 0; padding: 5px 8px; font-size: .72rem; color: #8A7B5C; background: rgba(180,150,80,.08); border-radius: 6px; letter-spacing: .02em; }
 .tome-lang { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--line); }
 .tome-lang .lang-label { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); padding: 6px 8px; font-family: "Inter", sans-serif; }
 .tome-lang a { display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 6px 8px; border-radius: 8px; color: var(--ink-soft); font-size: 13px; }

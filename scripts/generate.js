@@ -229,8 +229,8 @@ function header(lang, active) {
   const langItems = pageLangsOf(active || "index").map(l =>
     `<a href="${linkOf(active || "index", l)}" class="${l === lang ? "active" : ""}"><span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span></a>`
   ).join("");
-  const moonCross = `<a class="tome-crosslink" href="${linkOf("moonlight-peaks", lang)}">${lang === "zh-CN" ? "🌙 月光小镇（第 2 游戏）" : "🌙 Moonlight Peaks (Game 2)"}</a>`;
-  const sandCross = `<a class="tome-crosslink" href="${linkOf("sandustry", lang)}">${lang === "zh-CN" ? "⛏️ 沙金工业（第 3 游戏）" : lang === "ko" ? "⛏️ 샌더스트리 (Game 3)" : "⛏️ Sandustry (Game 3)"}</a>`;
+  const moonCross = `<a class="tome-crosslink" href="${linkOf("moonlight-peaks", lang)}">${lang === "zh-CN" ? "🌙 月光小镇" : lang === "ko" ? "🌙 문라이트 피크스" : "🌙 Moonlight Peaks"}</a>`;
+  const sandCross = `<a class="tome-crosslink" href="${linkOf("sandustry", lang)}">${lang === "zh-CN" ? "⛏️ 沙金工业" : lang === "ko" ? "⛏️ 샌더스트리" : "⛏️ Sandustry"}</a>`;
   return `<aside id="sovereign-navigation" class="tome-nav" aria-label="Ledger index">
   <a class="tome-brand" href="${linkOf("index", lang)}">
     <span class="brand-seal">${ICON.crown}</span>
@@ -240,6 +240,7 @@ function header(lang, active) {
   ${sandCross}
   ${chapters}
   <div class="tome-lang"><div class="lang-label">${esc(n.langLabel)}</div>${langItems}</div>
+  ${(active || "").startsWith("sandustry") ? `<p class="lang-note">${lang === "zh-CN" ? "可用语言：English · 한국어 · 简体中文" : lang === "ko" ? "가능한 언어: English · 한국어 · 简体中文" : "Available in: English · 한국어 · 简体中文"}</p>` : ""}
 </aside>`;
 }
 
@@ -708,7 +709,7 @@ function moonFooter(lang) {
   const t = moonTxt(lang);
   const n = navI18n(lang);
   const quick = MOON_GROUPS.quick.concat(MOON_GROUPS.data.slice(0, 3));
-  const links = quick.map(s => { const p = DATA.pages.find(x => x.slug === s); return p ? `<a href="${linkOf(s, lang)}">${esc(pageOf(p, lang).title)}</a>` : ""; }).join("") + `<a href="${linkOf("sandustry", lang)}">${lang === "ko" ? "⛏️ 샌더스트리" : "⛏️ Sandustry"}</a>`;
+  const links = quick.map(s => { const p = DATA.pages.find(x => x.slug === s); return p ? `<a href="${linkOf(s, lang)}">${esc(pageOf(p, lang).title)}</a>` : ""; }).join("") + `<a href="${linkOf("sandustry", lang)}">${lang === "zh-CN" ? "⛏️ 沙金工业" : lang === "ko" ? "⛏️ 샌더스트리" : "⛏️ Sandustry"}</a>`;
   return `<footer class="moon-colophon">
   <div>
     <h3>${esc(t.ledger)}</h3>
