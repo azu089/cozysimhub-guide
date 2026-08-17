@@ -504,11 +504,16 @@ function renderPage(p, lang) {
   ];
   // 章回目录（sections 的 heading 生成 TOC）
   const secs = t.sections || [];
-  const tocItems = secs.map((s, i) => {
+  const tocEntries = secs.map((s, i) => {
     if (!s.heading) return "";
     const id = `sec-${i}`;
     return `<a href="#${id}"><span class="toc-no">${String(i + 1).padStart(2, "0")}</span><span>${esc(s.heading)}</span></a>`;
-  }).join("");
+  }).filter(Boolean);
+  const tocItems = tocEntries.join("");
+  // 搜索框只在目录足够长（>=5 条）时渲染；短目录（如 Sandustry 0-3 条）不显示，避免占位空洞
+  const tocSearchHtml = tocEntries.length >= 5
+    ? `<div class="toc-search"><input type="search" placeholder="${esc(navI18n(lang).search)}" aria-label="${esc(navI18n(lang).searchLabel)}" onkeyup="var q=this.value.toLowerCase();document.querySelectorAll('.page-folio nav a').forEach(function(a){a.style.display=a.textContent.toLowerCase().includes(q)?'':'none';});" /></div>`
+    : "";
   const sections = secs.map((s, i) => {
     const withId = { ...s, _tocId: `sec-${i}` };
     return renderSection(withId, lang);
@@ -521,7 +526,7 @@ function renderPage(p, lang) {
 <main class="page-main"><div class="page-shell">
   <aside class="page-folio reveal">
     <div class="folio-cap">${isTool ? (lang === "zh-CN" ? "工具" : "Tools") : (lang === "zh-CN" ? "章回" : "Folio")}</div>
-    <div class="toc-search"><input type="search" placeholder="${esc(navI18n(lang).search)}" aria-label="${esc(navI18n(lang).searchLabel)}" onkeyup="var q=this.value.toLowerCase();document.querySelectorAll('.page-folio nav a').forEach(function(a){a.style.display=a.textContent.toLowerCase().includes(q)?'':'none';});" /></div>
+    ${tocSearchHtml}
     <nav>${tocItems}</nav>
   </aside>
   <article class="page-leaf">
