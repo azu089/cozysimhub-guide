@@ -170,7 +170,7 @@ function head(title, desc, extraLd, slug, lang) {
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}" />
-<link rel="canonical" href="${urlOf(slug, lang)}" />
+<link rel="canonical" href="${urlOf(slug, lang)}" />${slug === "404" ? '<meta name="robots" content="noindex" />' : ""}
 ${KIT.hreflangTags({ langs: hreflangLangs, defaultLang: DEF, urlOf, slug })}
 <meta name="theme-color" content="${themeColor}" />
 ${gsc}${adsenseMeta}
@@ -545,7 +545,8 @@ function renderPage(p, lang) {
 function renderStatic(slug, lang) {
   const n = navI18n(lang);
   const titleMap = {
-    "about": n.about, "privacy": n.privacy, "contact": n.contact
+    "about": n.about, "privacy": n.privacy, "contact": n.contact,
+    "404": `${siteI18n(lang).name} — 404`
   };
   const BODY_I18N = {
     "en": {
