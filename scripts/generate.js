@@ -38,10 +38,16 @@ const DEF = DATA.site.defaultLanguage || "en";
 const CSS_V = crypto.createHash("md5").update(fs.readFileSync(path.join(ROOT, "templates", "style.css"), "utf8")).digest("hex").slice(0, 8);
 const urlOf = KIT.createUrl({ domain: DATA.site.domain, defaultLang: DEF });
 // 内部链接用相对路径（审计识别 inbound + 不依赖域名）；canonical/hreflang 仍用绝对 urlOf
+const pageLangsOf = (slug) => {
+  const p = DATA.pages.find(x => x.slug === slug);
+  return (p && p.languages && p.languages.length) ? p.languages : LANGS;
+};
 const linkOf = (slug, lang) => {
   const p = String(slug).replace(/\.html$/, "").replace(/^\//, "");
   if (p === "" || p === "index") return lang === DEF ? "/" : `/${lang}/`;
-  return lang === DEF ? `/${p}` : `/${lang}/${p}`;
+  const pl = pageLangsOf(p);
+  const useLang = pl.includes(lang) ? lang : DEF;
+  return useLang === DEF ? `/${p}` : `/${useLang}/${p}`;
 };
 // 构建时间不是内容。默认固定到仓库已声明的内容校验日期；只有编辑者显式
 // 提供 CONTENT_UPDATED_AT 时才推进，避免同一 commit 跨午夜生成整站不同产物。
@@ -193,7 +199,8 @@ ${slug === "index" && lang === DEF ? `<link rel="preload" as="image" type="image
 
 /* ---------- 语言切换器（含 SVG 国旗，修复下拉溢出） ---------- */
 function langSwitcher(lang, slug) {
-  const items = LANGS.map(l =>
+  const pl = pageLangsOf(slug);
+  const items = pl.map(l =>
     `<a href="${linkOf(slug, l)}" class="${l === lang ? "active" : ""}"><span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span></a>`
   ).join("");
   return `<details class="lang-dd">
