@@ -9,7 +9,7 @@ const publicDir = path.join(root, "public");
 const walk = dir => fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry =>
   entry.isDirectory() ? walk(path.join(dir, entry.name)) : [path.join(dir, entry.name)]).sort();
 const htmlFiles = walk(publicDir).filter(file => file.endsWith(".html"));
-const providerTag = /<script[^>]+src=["'][^"']*(?:googletagmanager\.com|googlesyndication\.com|effectivecpmnetwork\.com)[^"']*["'][^>]*>/i;
+const providerTag = /<script[^>]+src=["'][^"']*(?:googletagmanager\.com|googlesyndication\.com|effectivecpmnetwork\.com|\/invoke\.js)[^"']*["'][^>]*>/i;
 
 function inspect(html) {
   const failures = [];
@@ -23,6 +23,9 @@ function inspect(html) {
   if (!html.includes('key="cozysimhub-consent-v1"')) failures.push("missing-local-preference-key");
   if (!html.includes('dialog.addEventListener("cancel"')) failures.push("missing-escape-focus-return");
   if (!html.includes('aria-controls="privacy-consent-dialog"') || !html.includes('aria-expanded="false"')) failures.push("settings-aria-drift");
+  if (!html.includes('"advertisingAvailable":true')) failures.push("advertising-unavailable");
+  if (!html.includes('if(cfg.adsterraSrc&&!loaded.adsterra){loaded.adsterra=true')) failures.push("adsterra-duplicate-load-guard");
+  if (!html.includes('a.setAttribute("data-cfasync","false");a.src=cfg.adsterraSrc')) failures.push("adsterra-loader-drift");
   return failures;
 }
 
@@ -52,10 +55,14 @@ const faults = [
   [baseline.replaceAll("data-consent-settings", "data-broken-settings"), "missing-settings"],
   [baseline.replaceAll("data-consent-withdraw", "data-broken-withdraw"), "missing-withdraw"],
   [baseline.replace("</head>", '<script src="https://www.googletagmanager.com/gtag/js?id=fault"></script></head>'), "pre-consent-provider"],
+  [baseline.replace("</head>", '<script async="async" data-cfasync="false" src="https://paralysisfoxbullet.com/fault/invoke.js"></script></head>'), "pre-consent-provider"],
   [baseline.replaceAll("dialog.showModal()", "dialog.show()"), "nonmodal-dialog"],
   [baseline.replace("loaded={analytics:false", "loaded={analytics:true"), "non-fail-closed-state"],
   [baseline.replaceAll('save({analytics:false,advertising:false})', 'save({analytics:true,advertising:true})'), "withdrawal-or-reject-drift"],
   [baseline.replaceAll('aria-controls="privacy-consent-dialog"', 'aria-controls="broken-dialog"'), "settings-aria-drift"],
+  [baseline.replace('"advertisingAvailable":true', '"advertisingAvailable":false'), "advertising-unavailable"],
+  [baseline.replace('if(cfg.adsterraSrc&&!loaded.adsterra){loaded.adsterra=true', 'if(cfg.adsterraSrc){loaded.adsterra=true'), "adsterra-duplicate-load-guard"],
+  [baseline.replace('a.setAttribute("data-cfasync","false");a.src=cfg.adsterraSrc', 'a.src=cfg.adsterraSrc'), "adsterra-loader-drift"],
 ];
 for (const [html, expected] of faults)
   assert(inspect(html).includes(expected), `negative fault was not caught: ${expected}`);
