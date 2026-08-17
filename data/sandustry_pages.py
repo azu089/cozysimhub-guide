@@ -295,8 +295,8 @@ def _lang_page(lang_data, en_sections):
     }
 
 def _to_page(en, i18n_map):
-    """en=EN 页面 dict（含 slug/title/intro/sections）；i18n_map={lang: {title, intro, sections: {idx: ov}}}。
-    返回 site.json pages 条目（含 i18n 字段）。"""
+    """en=EN 页面 dict（含 slug/title/intro/sections）；i18n_map={lang: {title, intro, sections}}。
+    返回 site.json pages 条目（含 i18n 字段 + languages 白名单）。"""
     page_i18n = {}
     for lg, ld in (i18n_map or {}).items():
         if ld is None:
@@ -309,6 +309,8 @@ def _to_page(en, i18n_map):
         "metaDescription": en.get("metaDescription", ""),
         "intro": en.get("intro", ""),
         "sections": en["sections"],
+        # 语言白名单：en(默认) + ko(主) + zh-CN(条件性)；ja/fr/de 不生成（G2 语言策略）
+        "languages": ["en", "ko", "zh-CN"],
     }
     if page_i18n:
         p["i18n"] = page_i18n
@@ -317,31 +319,23 @@ def _to_page(en, i18n_map):
 def build_sandustry_pages():
     """返回 Sandustry 页面列表，供 build_content.py 追加到 d['pages']。"""
     reg = {
-        "sandustry": (HOME_EN, {"ko": HOME_KO}),
-        "sandustry/getting-started": (GETTING_STARTED_EN, {"ko": GETTING_STARTED_KO}),
-        "sandustry/materials": (MATERIALS_EN, {"ko": MATERIALS_KO}),
-        "sandustry/steam-deck": (STEAM_DECK_EN, {"ko": STEAM_DECK_KO}),
-        "sandustry/macos": (MACOS_EN, {"ko": MACOS_KO}),
-        "sandustry/mobile": (MOBILE_EN, {"ko": MOBILE_KO}),
-        "sandustry/achievements": (ACHIEVEMENTS_EN, {"ko": ACHIEVEMENTS_KO}),
-        "sandustry/faq": (FAQ_EN, {"ko": FAQ_KO}),
-        "sandustry/updates": (UPDATES_EN, {"ko": UPDATES_KO}),
-        "sandustry/mechanics": (MECHANICS_EN, {"ko": MECHANICS_KO}),
+        "sandustry": (HOME_EN, {"ko": HOME_KO, "zh-CN": HOME_ZH}),
+        "sandustry/getting-started": (GETTING_STARTED_EN, {"ko": GETTING_STARTED_KO, "zh-CN": GETTING_STARTED_ZH}),
+        "sandustry/materials": (MATERIALS_EN, {"ko": MATERIALS_KO, "zh-CN": MATERIALS_ZH}),
+        "sandustry/steam-deck": (STEAM_DECK_EN, {"ko": STEAM_DECK_KO, "zh-CN": STEAM_DECK_ZH}),
+        "sandustry/macos": (MACOS_EN, {"ko": MACOS_KO, "zh-CN": MACOS_ZH}),
+        "sandustry/mobile": (MOBILE_EN, {"ko": MOBILE_KO, "zh-CN": MOBILE_ZH}),
+        "sandustry/achievements": (ACHIEVEMENTS_EN, {"ko": ACHIEVEMENTS_KO, "zh-CN": ACHIEVEMENTS_ZH}),
+        "sandustry/faq": (FAQ_EN, {"ko": FAQ_KO, "zh-CN": FAQ_ZH}),
+        "sandustry/updates": (UPDATES_EN, {"ko": UPDATES_KO, "zh-CN": UPDATES_ZH}),
+        "sandustry/mechanics": (MECHANICS_EN, {"ko": MECHANICS_KO, "zh-CN": MECHANICS_ZH}),
     }
     pages = []
     for slug, (en, i18n) in reg.items():
         if en is None and not i18n:
             continue
         if en is None:
-            # FAQ ko-only：用 ko 结构 + i18n 空（ko 作为主语言由外层处理）
-            pages.append({
-                "slug": slug,
-                "title": i18n["ko"]["title"],
-                "metaTitle": i18n["ko"].get("metaTitle", ""),
-                "metaDescription": i18n["ko"].get("metaDescription", ""),
-                "intro": i18n["ko"].get("intro", ""),
-                "sections": i18n["ko"]["sections"],
-            })
+            # FAQ ko-only：用 ko 结构（en 由 FAQ_EN 提供，已在上方处理）
             continue
         pages.append(_to_page(en, i18n))
     return pages
@@ -491,5 +485,178 @@ ACHIEVEMENTS_KO = {
             ["HELIODYNE_TYCOON", "0.4%"],
         ]),
         M("출처: Steam 업적 API (L0). 2026-08-17 수집."),
+    ],
+}
+
+# ---------- zh-CN 完整 i18n（G2 条件性第二语言；表格正确 schema + 链接 cover + FAQ 数组）----------
+HOME_ZH = {
+    "slug": "sandustry",
+    "title": "沙金工业攻略中心",
+    "metaTitle": "沙金工业攻略：材料·入门·成就·补丁",
+    "metaDescription": "沙金工业攻略中心：全部材料属性、入门指南、Steam Deck 与 macOS 指南、手机版答案、16 个成就与 EA 补丁日志 — 中文版。",
+    "intro": "《沙金工业》是 Lantto Games 开发、Hooded Horse 发行的自动化·探索·基地建设策略游戏。2026年8月13日在 Steam、GOG、Microsoft Store 与 PC Game Pass 开启抢先体验。",
+    "sections": [
+        N("本中心涵盖内容", [
+            {"text": "入门指南（中文 + 韩语 + 英语）", "href": "/zh-CN/sandustry/getting-started"},
+            {"text": f"全部 {len(MATERIALS)} 种材料的密度、类型、获取、加工与物理属性", "href": "/zh-CN/sandustry/materials"},
+            {"text": "机制：研究、工具、能量与机器", "href": "/zh-CN/sandustry/mechanics"},
+            {"text": "Steam Deck 指南", "href": "/zh-CN/sandustry/steam-deck"},
+            {"text": "macOS 指南", "href": "/zh-CN/sandustry/macos"},
+            {"text": "手机版答案：没有官方手机版", "href": "/zh-CN/sandustry/mobile"},
+            {"text": "16 个成就与解锁率", "href": "/zh-CN/sandustry/achievements"},
+            {"text": "常见问题", "href": "/zh-CN/sandustry/faq"},
+            {"text": "EA 补丁日志与路线图", "href": "/zh-CN/sandustry/updates"},
+        ]),
+        M(f"数据版本：{MATERIALS_VERSION['version']}（{MATERIALS_VERSION['captured']} 采集）。来源：官方维基（L0）+ Steam API（L0）。"),
+    ],
+}
+GETTING_STARTED_ZH = {
+    "slug": "sandustry/getting-started",
+    "title": "沙金工业入门指南",
+    "metaTitle": "沙金工业入门指南",
+    "metaDescription": "沙金工业入门指南：从第一把铲子到第一座自动化工厂。",
+    "intro": "本指南带您从沙金工业的第一把铲子走到第一座自动化工厂。",
+    "sections": [
+        S("第一步", [
+            "先用铲子（Shovel）挖土（Dirt）——土是沙子（Sand）的主要来源。",
+            "收集沙子，用火或水加工成湿沙（Wet Sand），再向金（Gold）转化。",
+            "建造收集器（Collector）储存资源——金必须存入收集器才会计入银行。",
+            "用金与萤石（Fluxite）解锁研究（Research）——这两种是主要推进材料。",
+        ]),
+        N("发展循环", [
+            "挖矿 → 加工（水/火）→ 收集 → 研究 → 建造机器 → 自动化",
+            "金与萤石推动研究；全部材料的获取与副产品见材料表。",
+        ]),
+        M("来源：官方维基（L0）。版本 v0.5.4。"),
+    ],
+}
+MATERIALS_ZH = {
+    "slug": "sandustry/materials",
+    "title": "沙金工业全部材料",
+    "metaTitle": "沙金工业全部材料",
+    "metaDescription": "沙金工业每种材料的密度、类型、获取、加工与物理属性。",
+    "intro": f"沙金工业全部 {len(MATERIALS)} 种材料：密度、类型、获取、加工与物理属性（官方维基来源）。",
+    "sections": [
+        T(["材料", "密度", "类型", "获取", "加工", "副产品"], [[m["name"], m["props"].get("Density","待补"), m["props"].get("Matter Type","待补"), m["props"].get("Obtained From","待补"), m["props"].get("Processed By","待补"), m["props"].get("Byproducts","—")] for m in MATERIALS], heading="全部材料"),
+        M("版本：v0.5.4。"),
+    ],
+}
+STEAM_DECK_ZH = {
+    "slug": "sandustry/steam-deck",
+    "title": "Steam Deck 上玩沙金工业",
+    "metaTitle": "沙金工业 Steam Deck 指南",
+    "metaDescription": "在 Steam Deck 上运行沙金工业：性能、设置与操作建议。",
+    "intro": "沙金工业提供原生 Linux 版，社区报告在 Steam Deck 上可玩。以下是最佳体验设置。",
+    "sections": [
+        N("设置", [
+            "原生 Linux 构建 — 无需 Proton。",
+            "社区报告可玩（boilingsteam）；官方 Valve 兼容评级尚未发布。",
+            "使用 Steam Input 映射操作 — 游戏没有完整手柄支持类别。",
+        ]),
+        M("来源：L1 社区报告 + L0 平台事实。版本 v0.5.4。"),
+    ],
+}
+MACOS_ZH = {
+    "slug": "sandustry/macos",
+    "title": "macOS 上玩沙金工业",
+    "metaTitle": "沙金工业 macOS 指南",
+    "metaDescription": "沙金工业原生 macOS 支持与右键 Bug 规避。",
+    "intro": "沙金工业有原生 macOS 版本。玩家报告了右键交互 Bug——这里提供规避方法。",
+    "sections": [
+        N("原生支持", [
+            "官方 macOS 构建 — 无需转换层。",
+            "已知问题：部分情境下右键交互会失败（社区报告）。",
+            "规避：在补丁发布前重新绑定或改用其他输入方式。",
+        ]),
+        M("来源：L1 社区帖子 + L0 平台事实。版本 v0.5.4。"),
+    ],
+}
+MOBILE_ZH = {
+    "slug": "sandustry/mobile",
+    "title": "沙金工业有手机版吗？",
+    "metaTitle": "沙金工业手机版答案",
+    "metaDescription": "沙金工业没有官方手机版。谨防假冒 APK 网站。",
+    "intro": "没有——沙金工业没有官方手机版。网上流传的假冒 APK 下载页是骗局，请勿下载。",
+    "sections": [
+        N("官方平台", [
+            "Steam、GOG、Microsoft Store 与 PC Game Pass。",
+            "未公布 Android/iOS 版本。",
+            "“沙金工业 APK”页面是骗局——只使用官方来源。",
+        ]),
+        M("来源：L0 官方平台 + L1 假冒页面观察。"),
+    ],
+}
+ACHIEVEMENTS_ZH = {
+    "slug": "sandustry/achievements",
+    "title": "沙金工业全部成就（16个）",
+    "metaTitle": "沙金工业 16 个成就",
+    "metaDescription": "沙金工业 16 个成就与全球解锁率。",
+    "intro": "沙金工业 16 个成就与全球解锁率（官方 Steam API 来源）。",
+    "sections": [
+        T(["成就", "解锁率"], [
+            ["PROMOTION_PROTOCOL", "93.5%"], ["FLUX_IT_UP", "89.3%"], ["GOLD_IN_THE_BIN", "87.8%"],
+            ["ANCIENT_TECHNOLOGY", "80.8%"], ["FIRST_BLOOM", "73.9%"], ["VOID_TOUCHED", "57.5%"],
+            ["CRITTER_CATCHER", "50.9%"], ["FIRST_SPARK", "49.9%"], ["QUARTERMASTER", "42.3%"],
+            ["STRATACORE_SECURED", "28.2%"], ["CONSERVATORY_CURATOR", "26.8%"], ["AURA_EXTRACTOR", "23.7%"],
+            ["FULL_CIRCLE", "19.6%"], ["FINAL_SCHEMATIC", "16.4%"], ["VAULTKEEPER", "10.8%"],
+            ["HELIODYNE_TYCOON", "0.4%"],
+        ]),
+        M("来源：Steam 成就 API（L0）。2026-08-17 采集。"),
+    ],
+}
+FAQ_ZH = {
+    "slug": "sandustry/faq",
+    "title": "沙金工业 FAQ",
+    "metaTitle": "沙金工业 FAQ",
+    "metaDescription": "沙金工业常见问题：韩语支持、手机版、多人。",
+    "intro": "沙金工业常见问题解答。",
+    "sections": [
+        F([
+            ["沙金工业支持韩语吗？", "支持。官方提供韩语（界面+字幕）。"],
+            ["有手机版吗？", "没有。谨防假冒 APK 下载站。官方平台：Steam、GOG、Microsoft Store、PC Game Pass。"],
+            ["支持多人吗？", "不支持。这是单人游戏。"],
+            ["如何获得金（Gold）？", "金是大多数加工的副产品。必须存入收集器（Collector）才会计入银行。"],
+        ]),
+    ],
+}
+UPDATES_ZH = {
+    "slug": "sandustry/updates",
+    "title": "沙金工业更新日志",
+    "metaTitle": "沙金工业补丁日志",
+    "metaDescription": "沙金工业最新补丁：v0.5.4、v0.5.3 与 EA 发布。",
+    "intro": "Lantto Games 频繁发布抢先体验补丁。本页整理官方 Steam 新闻的最新补丁说明，每次更新都会刷新。",
+    "sections": [
+        T(["版本", "日期", "主要内容"], [
+            ["v0.5.4（更新 #1）", "2026-08-16", "更好的过滤器编辑、Tier 5 软锁修复、红块临时移除、缩放快捷键"],
+            ["v0.5.3（热修复）", "2026-08-14", "更好的日志、内存优化、更清晰的目标"],
+            ["EA 发布", "2026-08-13", "沙金工业在 Steam、GOG、Microsoft Store 与 PC Game Pass 开启抢先体验"],
+        ], heading="补丁记录"),
+        N("更新方法", [
+            "Steam：启动游戏时自动安装更新。",
+            "GOG / Microsoft Store / PC Game Pass：商店端补丁可能晚于 Steam 发布。",
+        ]),
+        M("来源：官方 Steam 新闻（ISteamNews API，L0）。数据版本 v0.5.4（2026-08-17）。"),
+    ],
+}
+MECHANICS_ZH = {
+    "slug": "sandustry/mechanics",
+    "title": "沙金工业机制：研究、工具、能量",
+    "metaTitle": "沙金工业机制",
+    "metaDescription": "沙金工业核心机制：研究推进、工具等级、能量机器。",
+    "intro": "沙金工业的核心循环：用金与萤石研究、工具升级、能量驱动的机器。",
+    "sections": [
+        N("研究", [
+            "金与萤石是两种主要推进材料——金用于研究新技术。",
+            "金只有存入收集器（Collector）才会计入银行。",
+        ]),
+        N("工具", [
+            "工具包括：铲子、枪、火箭发射器、钻头、激光、虚空枪、抓取器、火焰喷射器、低温爆破器、驱赶器、真空、抓钩、拆除器、标牌与管道移除器。",
+            "更高级工具解锁更快的挖掘与加工。",
+        ]),
+        N("机器与能量", [
+            "机器：传送带（及 Mk.2）、发射器、过滤器、振动筛、动能压机、种植箱、收集器、管道、泵、液体通风口、萤石发射器、蒸汽烘干机、清扫无人机。",
+            "能量驱动机器；管理生产链以逐步自动化。",
+        ]),
+        M("来源：官方维基（L0）。数据版本 v0.5.4（2026-08-17）。"),
     ],
 }

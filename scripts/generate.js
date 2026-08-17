@@ -148,6 +148,9 @@ function head(title, desc, extraLd, slug, lang) {
   const adsenseMeta = ADSENSE_CLIENT_ID ? `<meta name="google-adsense-account" content="${esc(ADSENSE_CLIENT_ID)}" />` : "";
   const htmlLang = LANG_META[lang]?.html || lang;
   const isMoon = slug.startsWith("moonlight-peaks");
+  // hreflang 语言集：页面声明 languages 则用它，否则全局 LANGS
+  const _pageDef = DATA.pages.find(x => x.slug === slug);
+  const hreflangLangs = (_pageDef && _pageDef.languages && _pageDef.languages.length) ? _pageDef.languages : LANGS;
   const MOON_CSS_V = crypto.createHash("md5").update(fs.readFileSync(path.join(ROOT, "templates", "style-moon.css"), "utf8")).digest("hex").slice(0, 8);
   const themeColor = isMoon ? "#171034" : "#3A3226";
   const fontLink = isMoon
@@ -162,7 +165,7 @@ function head(title, desc, extraLd, slug, lang) {
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}" />
 <link rel="canonical" href="${urlOf(slug, lang)}" />
-${KIT.hreflangTags({ langs: LANGS, defaultLang: DEF, urlOf, slug })}
+${KIT.hreflangTags({ langs: hreflangLangs, defaultLang: DEF, urlOf, slug })}
 <meta name="theme-color" content="${themeColor}" />
 ${gsc}${adsenseMeta}
 <meta property="og:type" content="website" />
@@ -1145,7 +1148,8 @@ function build() {
   // 内容页（index 已由 renderHome 生成，跳过；moonlight-peaks/* 走月光主题）
   for (const p of DATA.pages) {
     if (p.slug === "index") continue;
-    for (const lang of LANGS) {
+    const pageLangs = (p.languages && p.languages.length) ? p.languages : LANGS;
+    for (const lang of pageLangs) {
       const isMoon = p.slug.startsWith("moonlight-peaks");
       const html = isMoon ? renderMoonPage(p, lang) : (renderPage(p, lang) + (p.slug.startsWith("sovereign-tower/tools/") ? TOOL_JS : "") + "</div></body></html>");
       const base = lang === DEF ? `${p.slug}` : `${lang}/${p.slug}`;
@@ -1189,7 +1193,10 @@ function build() {
   for (const lang of LANGS) {
     urls.push(urlOf("index", lang));
     for (const p of DATA.pages) {
-      if (p.slug !== "index") urls.push(urlOf(p.slug, lang));
+      if (p.slug !== "index") {
+        const pl = (p.languages && p.languages.length) ? p.languages : LANGS;
+        if (pl.includes(lang)) urls.push(urlOf(p.slug, lang));
+      }
     }
     for (const slug of ["about", "privacy", "contact"]) urls.push(urlOf(slug, lang));
   }
