@@ -79,7 +79,7 @@ HOME_KO = {
     "slug": "sandustry",
     "title": "샌더스트리 가이드 허브",
     "metaTitle": "샌더스트리 가이드: 재료·시작·업적·패치",
-    "metaDescription": "샌더스트리 가이드 허브: 전체 재료 속성, 시작 가이드, Steam Deck·macOS 가이드, 모바일 답변, 16개 업적, EA 패치 로그 — 한국어와 영어.",
+    "metaDescription": "샌더스트리 가이드: 전체 재료, 시작 가이드, Steam Deck·macOS, 모바일 답변, 업적, EA 패치 로그.",
     "intro": "샌더스트리는 Lantto Games가 개발하고 Hooded Horse가 퍼블리싱한 자동화·탐험·기지 건설 전략 게임입니다. 2026년 8월 13일 Steam, GOG, Microsoft Store, PC Game Pass에서 얼리 액세스로 출시되었습니다.",
     "sections": [
         N("이 허브에서 다루는 내용", [
