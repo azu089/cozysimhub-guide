@@ -394,7 +394,7 @@ img { max-width: 100%; height: auto; }
   .spread::after { display: none; }
   .spread-col.left { border-right: 0; border-bottom: 1px solid var(--line); }
   .page-shell { grid-template-columns: 1fr; margin: 20px 14px; }
-  .page-folio { position: static; max-height: 240px; overflow-y: auto; }
+  .page-folio { position: static; max-height: 240px; overflow-y: auto; min-height: auto; }
   .ledger-cover { margin: 20px 14px; padding: 34px 24px; }
   .colophon { margin: 24px 14px; grid-template-columns: 1fr; padding: 26px 22px; }
 }
