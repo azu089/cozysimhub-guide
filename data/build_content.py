@@ -788,6 +788,15 @@ for _p in d["pages"]:
         if not _md or len(_md) > _dhi:
             _t["metaDescription"] = _clip(_intro or _title, _dhi)
 
+# --- Sandustry（品类站第 3 游戏，沙金工房主题；独立数据层 sandustry_pages.py + sandustry_materials.py）---
+from sandustry_pages import build_sandustry_pages
+_sd_existing = {p["slug"]: i for i, p in enumerate(d["pages"])}
+for _sdp in build_sandustry_pages():
+    if _sdp["slug"] in _sd_existing:
+        d["pages"][_sd_existing[_sdp["slug"]]] = _sdp
+    else:
+        d["pages"].append(_sdp)
+
 # --- Moonlight Peaks 表格行属性（供筛选器用；只挂 data-*，不改任何表格内容）---
 # 放在最后：要等所有页面与 i18n 注入都完成后再挂，否则后写入的 sections 会覆盖掉 rowAttrs
 from moon_row_attrs import apply_row_attrs

@@ -40685,6 +40685,1205 @@
    },
    "priority": "P0",
    "_moon": true
+  },
+  {
+   "slug": "sandustry",
+   "title": "Sandustry Guide Hub",
+   "metaTitle": "Sandustry Guide: Materials, Getting Started, Steam Deck, Achievements & Patch Log",
+   "metaDescription": "Sandustry guide hub: all materials with properties, getting-started, Steam Deck and macOS guides, mobile answer, 16 achievements, EA patch log — Korean and English.",
+   "intro": "Sandustry is an automation, exploration and base-building strategy game by Lantto Games, published by Hooded Horse. EA since August 13, 2026 on Steam, GOG, Microsoft Store and PC Game Pass; every pixel is a resource.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "What this hub covers",
+     "body": "",
+     "items": [
+      "Getting started (Korean + English)",
+      "All 50 materials with density, type, source, processing and physics",
+      "Steam Deck and macOS guides",
+      "Mobile answer: no official mobile version — beware fake APK sites",
+      "All 16 achievements with unlock rates",
+      "EA patch log & roadmap, API-driven"
+     ]
+    },
+    {
+     "type": "note",
+     "tag": "NOTE",
+     "heading": "",
+     "body": "Data version: v0.5.4 (captured 2026-08-17). Sources: official wiki (L0) + Steam API (L0)."
+    }
+   ],
+   "i18n": {
+    "ko": {
+     "title": "샌더스트리 가이드 허브",
+     "metaTitle": "샌더스트리 가이드: 재료, 시작 가이드, Steam Deck, 업적, 패치 로그",
+     "metaDescription": "샌더스트리 가이드 허브: 전체 재료 속성, 시작 가이드, Steam Deck·macOS 가이드, 모바일 답변, 16개 업적, EA 패치 로그 — 한국어와 영어.",
+     "intro": "샌더스트리는 Lantto Games가 개발하고 Hooded Horse가 퍼블리싱한 자동화·탐험·기지 건설 전략 게임입니다. 2026년 8월 13일 Steam, GOG, Microsoft Store, PC Game Pass에서 얼리 액세스로 출시되었습니다.",
+     "sections": [
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "이 허브에서 다루는 내용",
+       "body": "",
+       "items": [
+        "시작 가이드 (한국어 + 영어)",
+        "전체 50개 재료의 밀도·유형·획득처·가공·물리 속성",
+        "Steam Deck 및 macOS 가이드",
+        "모바일 답변: 공식 모바일 버전 없음 — 가짜 APK 사이트 주의",
+        "16개 업적과 달성률",
+        "EA 패치 로그 및 로드맵 (API 기반)"
+       ]
+      },
+      {
+       "type": "note",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "데이터 버전: v0.5.4 (2026-08-17 수집). 출처: 공식 위키 (L0) + Steam API (L0)."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "slug": "sandustry/getting-started",
+   "title": "Sandustry Getting Started",
+   "metaTitle": "Sandustry Getting Started Guide: First Factory, Materials, Research",
+   "metaDescription": "Sandustry getting-started guide: first factory, understanding materials, research and progression.",
+   "intro": "This guide gets you from your first shovel to your first automated factory in Sandustry.",
+   "sections": [
+    {
+     "type": "steps",
+     "tag": "STEP",
+     "heading": "First steps",
+     "body": "",
+     "items": [
+      "Start by mining Dirt with your Shovel — Dirt is the primary source of Sand.",
+      "Collect Sand and let Water turn it into Wet Sand; process toward Gold.",
+      "Build a Collector to bank resources — Gold must be stored in Collector blocks to count toward your bank.",
+      "Unlock Research with Gold and Fluxite — these are the two major progression materials."
+     ]
+    },
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Progression loop",
+     "body": "",
+     "items": [
+      "Mine → process (Water/Fire) → collect → research → build machines → automate.",
+      "Gold and Fluxite drive research; see the materials table for every source and byproduct."
+     ]
+    },
+    {
+     "type": "note",
+     "tag": "NOTE",
+     "heading": "",
+     "body": "Source: official wiki (L0). Version v0.5.4."
+    }
+   ],
+   "i18n": {
+    "ko": {
+     "title": "샌더스트리 시작 가이드",
+     "metaTitle": "샌더스트리 시작 가이드: 첫 공장, 재료, 연구",
+     "metaDescription": "샌더스트리 시작 가이드: 첫 공장 건설, 재료 이해, 연구와 진행.",
+     "intro": "이 가이드는 샌더스트리에서 첫 삽부터 첫 자동화 공장까지 안내합니다.",
+     "sections": [
+      {
+       "type": "steps",
+       "tag": "STEP",
+       "heading": "첫 단계",
+       "body": "",
+       "items": [
+        "삽(Shovel)으로 흙(Dirt)을 캐세요 — 흙은 모래(Sand)의 주요 공급원입니다.",
+        "모래를 모으고 물(Water)로 젖은 모래(Wet Sand)로 만든 뒤 금(Gold)으로 가공하세요.",
+        "수집기(Collector)를 지어 자원을 저장하세요 — 금은 수집기에 보관해야 은행에 집계됩니다.",
+        "금과 플럭사이트(Fluxite)로 연구(Research)를 해금하세요 — 이 두 재료가 주요 진행 자원입니다."
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "NOTE",
+       "heading": "진행 루프",
+       "body": "",
+       "items": [
+        "채굴 → 가공(물/불) → 수집 → 연구 → 기계 건설 → 자동화",
+        "금과 플럭사이트가 연구를 이끕니다. 모든 재료의 획득처와 부산물은 재료 표를 참고하세요."
+       ]
+      },
+      {
+       "type": "note",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "출처: 공식 위키 (L0). 버전 v0.5.4."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "slug": "sandustry/materials",
+   "title": "All Sandustry Materials",
+   "metaTitle": "All Sandustry Materials: Density, Sources, Processing, Physics",
+   "metaDescription": "Every Sandustry material with density, matter type, source, processing and physics.",
+   "intro": "All 50 materials in Sandustry, with density, type, source, processing and physics from the official wiki.",
+   "sections": [
+    {
+     "type": "table",
+     "tag": "MATERIALS",
+     "heading": "All Materials",
+     "body": "",
+     "headers": [
+      "Material",
+      "Density",
+      "Type",
+      "Obtained From",
+      "Processed By",
+      "Byproducts"
+     ],
+     "rows": [
+      [
+       "Amethelis",
+       "40",
+       "Wisp",
+       "Flower",
+       "Dryer",
+       "Dry Amethelis"
+      ],
+      [
+       "Auralite",
+       "待补",
+       "Solid",
+       "Aurixite",
+       "Aura Extractor",
+       "Aura"
+      ],
+      [
+       "Aurixite",
+       "待补",
+       "Solid",
+       "Florin",
+       "Shaker",
+       "Auralite"
+      ],
+      [
+       "Burnt_Residue",
+       "50",
+       "Solid",
+       "Residue",
+       "Kinetic Press",
+       "Gold, Seed"
+      ],
+      [
+       "Cinder",
+       "50",
+       "Solid",
+       "Scoria",
+       "Fire",
+       "Lava"
+      ],
+      [
+       "Copper",
+       "待补",
+       "Solid",
+       "Copper Ore",
+       "Smelter",
+       "Liquid Copper"
+      ],
+      [
+       "Copper_Ore",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Crackstone",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Depleted_Steam",
+       "0",
+       "Gas",
+       "Consuming Steam",
+       "Condenser",
+       "Water"
+      ],
+      [
+       "Dirt",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Dry_Amethelis",
+       "待补",
+       "Solid",
+       "Amethelis",
+       "Fire",
+       "Florin"
+      ],
+      [
+       "Dune",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Florin",
+       "待补",
+       "待补",
+       "待补",
+       "N/A",
+       "N/A"
+      ],
+      [
+       "Florinol",
+       "待补",
+       "Liquid",
+       "Florin",
+       "Synthesizer",
+       "Aurixite"
+      ],
+      [
+       "Florinol_Soil",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Flower",
+       "待补",
+       "待补",
+       "Seed",
+       "N/A",
+       "Amethelis, Gold"
+      ],
+      [
+       "Fluxite",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Frostbed",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Gold",
+       "300",
+       "Solid",
+       "Shaker, Kinetic Press, Flower",
+       "Smelter",
+       "N/A"
+      ],
+      [
+       "Ice",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Indestructible",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Lava",
+       "75",
+       "Liquid",
+       "Cinder, Fire",
+       "Cryoblaster",
+       "Scoria"
+      ],
+      [
+       "Limestone",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Liquid_Copper",
+       "待补",
+       "Liquid",
+       "Copper",
+       "Copper Mold",
+       "None"
+      ],
+      [
+       "Liquid_Gold",
+       "待补",
+       "Liquid",
+       "Smelter",
+       "N/A",
+       "N/A"
+      ],
+      [
+       "Mooncrystal",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Moonhop",
+       "待补",
+       "待补",
+       "待补",
+       "N/A",
+       "N/A"
+      ],
+      [
+       "Moss",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Prismaline",
+       "待补",
+       "待补",
+       "待补",
+       "N/A",
+       "N/A"
+      ],
+      [
+       "Prismite",
+       "待补",
+       "Solid",
+       "待补",
+       "N/A",
+       "N/A"
+      ],
+      [
+       "Puff",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Redsand",
+       "160",
+       "Solid",
+       "Redsoil",
+       "Combining with Void Petals",
+       "Voidbloom"
+      ],
+      [
+       "Redsoil",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Residue",
+       "50",
+       "Slushy",
+       "Wet Sand",
+       "Fire",
+       "Burnt Residue"
+      ],
+      [
+       "Sand",
+       "150",
+       "Solid",
+       "Dirt",
+       "Water",
+       "Wet Sand"
+      ],
+      [
+       "Scoria",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Seed",
+       "150",
+       "Solid",
+       "Kinetic Press",
+       "Combine with Water",
+       "Wet Seed"
+      ],
+      [
+       "Snow",
+       "150",
+       "Solid",
+       "Cryoblaster, Frostbed",
+       "Fire",
+       "Water"
+      ],
+      [
+       "Solidite",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Steam",
+       "0",
+       "Gas",
+       "Heating Water or Snow",
+       "Reaching the sky",
+       "Water"
+      ],
+      [
+       "Stone",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Sunsand",
+       "待补",
+       "待补",
+       "Dune",
+       "N/A",
+       "N/A"
+      ],
+      [
+       "Vine",
+       "待补",
+       "待补",
+       "待补",
+       "待补",
+       "—"
+      ],
+      [
+       "Void_Husk",
+       "待补",
+       "待补",
+       "待补",
+       "N/A",
+       "N/A"
+      ],
+      [
+       "Void_Juice",
+       "待补",
+       "待补",
+       "待补",
+       "N/A",
+       "N/A"
+      ],
+      [
+       "Void_Seed",
+       "待补",
+       "待补",
+       "待补",
+       "N/A",
+       "N/A"
+      ],
+      [
+       "Voidbloom",
+       "30",
+       "Slushy",
+       "Combining Void Petals and Redsand",
+       "Flux Emanator",
+       "Fluxite"
+      ],
+      [
+       "Water",
+       "100",
+       "Liquid",
+       "Ice, Steam",
+       "Fire, Snow",
+       "Steam, Ice"
+      ],
+      [
+       "Wet_Sand",
+       "150",
+       "Slushy",
+       "Sand",
+       "Shakers",
+       "Gold, Residue"
+      ],
+      [
+       "Wet_Seed",
+       "100",
+       "Slushy",
+       "Seed, Water",
+       "Planter Box",
+       "Flower"
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "tag": "NOTE",
+     "heading": "",
+     "body": "Version: v0.5.4."
+    }
+   ],
+   "i18n": {
+    "ko": {
+     "title": "샌더스트리 전체 재료",
+     "metaTitle": "샌더스트리 전체 재료: 밀도, 획득처, 가공, 물리",
+     "metaDescription": "샌더스트리의 모든 재료: 밀도, 유형, 획득처, 가공, 물리 속성.",
+     "intro": "샌더스트리의 모든 재료 50종의 밀도, 유형, 획득처, 가공, 물리 속성 (공식 위키 출처).",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "MATERIALS",
+       "heading": "모든 재료",
+       "body": "",
+       "headers": [
+        "재료",
+        "밀도",
+        "유형",
+        "획득처",
+        "가공",
+        "부산물"
+       ],
+       "rows": [
+        [
+         "Amethelis",
+         "40",
+         "Wisp",
+         "Flower",
+         "Dryer",
+         "Dry Amethelis"
+        ],
+        [
+         "Auralite",
+         "미확인",
+         "Solid",
+         "Aurixite",
+         "Aura Extractor",
+         "Aura"
+        ],
+        [
+         "Aurixite",
+         "미확인",
+         "Solid",
+         "Florin",
+         "Shaker",
+         "Auralite"
+        ],
+        [
+         "Burnt_Residue",
+         "50",
+         "Solid",
+         "Residue",
+         "Kinetic Press",
+         "Gold, Seed"
+        ],
+        [
+         "Cinder",
+         "50",
+         "Solid",
+         "Scoria",
+         "Fire",
+         "Lava"
+        ],
+        [
+         "Copper",
+         "미확인",
+         "Solid",
+         "Copper Ore",
+         "Smelter",
+         "Liquid Copper"
+        ],
+        [
+         "Copper_Ore",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Crackstone",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Depleted_Steam",
+         "0",
+         "Gas",
+         "Consuming Steam",
+         "Condenser",
+         "Water"
+        ],
+        [
+         "Dirt",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Dry_Amethelis",
+         "미확인",
+         "Solid",
+         "Amethelis",
+         "Fire",
+         "Florin"
+        ],
+        [
+         "Dune",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Florin",
+         "미확인",
+         "미확인",
+         "미확인",
+         "N/A",
+         "N/A"
+        ],
+        [
+         "Florinol",
+         "미확인",
+         "Liquid",
+         "Florin",
+         "Synthesizer",
+         "Aurixite"
+        ],
+        [
+         "Florinol_Soil",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Flower",
+         "미확인",
+         "미확인",
+         "Seed",
+         "N/A",
+         "Amethelis, Gold"
+        ],
+        [
+         "Fluxite",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Frostbed",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Gold",
+         "300",
+         "Solid",
+         "Shaker, Kinetic Press, Flower",
+         "Smelter",
+         "N/A"
+        ],
+        [
+         "Ice",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Indestructible",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Lava",
+         "75",
+         "Liquid",
+         "Cinder, Fire",
+         "Cryoblaster",
+         "Scoria"
+        ],
+        [
+         "Limestone",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Liquid_Copper",
+         "미확인",
+         "Liquid",
+         "Copper",
+         "Copper Mold",
+         "None"
+        ],
+        [
+         "Liquid_Gold",
+         "미확인",
+         "Liquid",
+         "Smelter",
+         "N/A",
+         "N/A"
+        ],
+        [
+         "Mooncrystal",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Moonhop",
+         "미확인",
+         "미확인",
+         "미확인",
+         "N/A",
+         "N/A"
+        ],
+        [
+         "Moss",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Prismaline",
+         "미확인",
+         "미확인",
+         "미확인",
+         "N/A",
+         "N/A"
+        ],
+        [
+         "Prismite",
+         "미확인",
+         "Solid",
+         "미확인",
+         "N/A",
+         "N/A"
+        ],
+        [
+         "Puff",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Redsand",
+         "160",
+         "Solid",
+         "Redsoil",
+         "Combining with Void Petals",
+         "Voidbloom"
+        ],
+        [
+         "Redsoil",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Residue",
+         "50",
+         "Slushy",
+         "Wet Sand",
+         "Fire",
+         "Burnt Residue"
+        ],
+        [
+         "Sand",
+         "150",
+         "Solid",
+         "Dirt",
+         "Water",
+         "Wet Sand"
+        ],
+        [
+         "Scoria",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Seed",
+         "150",
+         "Solid",
+         "Kinetic Press",
+         "Combine with Water",
+         "Wet Seed"
+        ],
+        [
+         "Snow",
+         "150",
+         "Solid",
+         "Cryoblaster, Frostbed",
+         "Fire",
+         "Water"
+        ],
+        [
+         "Solidite",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Steam",
+         "0",
+         "Gas",
+         "Heating Water or Snow",
+         "Reaching the sky",
+         "Water"
+        ],
+        [
+         "Stone",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Sunsand",
+         "미확인",
+         "미확인",
+         "Dune",
+         "N/A",
+         "N/A"
+        ],
+        [
+         "Vine",
+         "미확인",
+         "미확인",
+         "미확인",
+         "미확인",
+         "—"
+        ],
+        [
+         "Void_Husk",
+         "미확인",
+         "미확인",
+         "미확인",
+         "N/A",
+         "N/A"
+        ],
+        [
+         "Void_Juice",
+         "미확인",
+         "미확인",
+         "미확인",
+         "N/A",
+         "N/A"
+        ],
+        [
+         "Void_Seed",
+         "미확인",
+         "미확인",
+         "미확인",
+         "N/A",
+         "N/A"
+        ],
+        [
+         "Voidbloom",
+         "30",
+         "Slushy",
+         "Combining Void Petals and Redsand",
+         "Flux Emanator",
+         "Fluxite"
+        ],
+        [
+         "Water",
+         "100",
+         "Liquid",
+         "Ice, Steam",
+         "Fire, Snow",
+         "Steam, Ice"
+        ],
+        [
+         "Wet_Sand",
+         "150",
+         "Slushy",
+         "Sand",
+         "Shakers",
+         "Gold, Residue"
+        ],
+        [
+         "Wet_Seed",
+         "100",
+         "Slushy",
+         "Seed, Water",
+         "Planter Box",
+         "Flower"
+        ]
+       ]
+      },
+      {
+       "type": "note",
+       "tag": "NOTE",
+       "heading": "",
+       "body": "버전: v0.5.4."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "slug": "sandustry/steam-deck",
+   "title": "Sandustry on Steam Deck",
+   "metaTitle": "Sandustry on Steam Deck: Settings, Performance & Controls",
+   "metaDescription": "Run Sandustry on Steam Deck: performance, settings and control tips.",
+   "intro": "Sandustry has native Linux support and is reported playable on Steam Deck. Here is how to get the best experience.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Setup",
+     "body": "",
+     "items": [
+      "Native Linux build — no Proton required.",
+      "Playable per community reports (boilingsteam); official Valve compatibility rating not yet published.",
+      "Use Steam Input to map controls — the game has no full controller support category."
+     ]
+    },
+    {
+     "type": "note",
+     "tag": "NOTE",
+     "heading": "",
+     "body": "Source: L1 community reports + L0 platform facts. Version v0.5.4."
+    }
+   ]
+  },
+  {
+   "slug": "sandustry/macos",
+   "title": "Sandustry on macOS",
+   "metaTitle": "Sandustry on macOS: Native Support & Right-Click Bug",
+   "metaDescription": "Sandustry native macOS support, the right-click bug and workarounds.",
+   "intro": "Sandustry has a native macOS version. A right-click interaction bug has been reported by players — here is the workaround.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Native support",
+     "body": "",
+     "items": [
+      "Official macOS build — no translation layer.",
+      "Known issue: right-click interactions can fail in some contexts (community reports).",
+      "Workaround: rebind or use an alternative input until patched."
+     ]
+    },
+    {
+     "type": "note",
+     "tag": "NOTE",
+     "heading": "",
+     "body": "Source: L1 community threads + L0 platform facts. Version v0.5.4."
+    }
+   ]
+  },
+  {
+   "slug": "sandustry/mobile",
+   "title": "Is Sandustry on Mobile?",
+   "metaTitle": "Is Sandustry on Mobile? No — Beware Fake APK Sites",
+   "metaDescription": "Sandustry has no official mobile version. Fake APK download sites are scams.",
+   "intro": "No — Sandustry has no official mobile version. Fake APK download pages are circulating; do not download from them.",
+   "sections": [
+    {
+     "type": "list",
+     "tag": "NOTE",
+     "heading": "Official platforms",
+     "body": "",
+     "items": [
+      "Steam, GOG, Microsoft Store and PC Game Pass.",
+      "No Android/iOS version announced.",
+      "Fake 'Sandustry APK' pages are scams — official sources only."
+     ]
+    },
+    {
+     "type": "note",
+     "tag": "NOTE",
+     "heading": "",
+     "body": "Source: L0 official platforms + L1 fake-page observation."
+    }
+   ]
+  },
+  {
+   "slug": "sandustry/achievements",
+   "title": "All Sandustry Achievements (16)",
+   "metaTitle": "All 16 Sandustry Achievements with Unlock Rates",
+   "metaDescription": "All 16 Sandustry achievements and their global unlock rates.",
+   "intro": "All 16 Sandustry achievements with global unlock rates from the official Steam API.",
+   "sections": [
+    {
+     "type": "table",
+     "tag": "DATA",
+     "heading": "",
+     "body": "",
+     "headers": [
+      "Achievement",
+      "Unlock Rate"
+     ],
+     "rows": [
+      [
+       "PROMOTION_PROTOCOL",
+       "93.5%"
+      ],
+      [
+       "FLUX_IT_UP",
+       "89.3%"
+      ],
+      [
+       "GOLD_IN_THE_BIN",
+       "87.8%"
+      ],
+      [
+       "ANCIENT_TECHNOLOGY",
+       "80.8%"
+      ],
+      [
+       "FIRST_BLOOM",
+       "73.9%"
+      ],
+      [
+       "VOID_TOUCHED",
+       "57.5%"
+      ],
+      [
+       "CRITTER_CATCHER",
+       "50.9%"
+      ],
+      [
+       "FIRST_SPARK",
+       "49.9%"
+      ],
+      [
+       "QUARTERMASTER",
+       "42.3%"
+      ],
+      [
+       "STRATACORE_SECURED",
+       "28.2%"
+      ],
+      [
+       "CONSERVATORY_CURATOR",
+       "26.8%"
+      ],
+      [
+       "AURA_EXTRACTOR",
+       "23.7%"
+      ],
+      [
+       "FULL_CIRCLE",
+       "19.6%"
+      ],
+      [
+       "FINAL_SCHEMATIC",
+       "16.4%"
+      ],
+      [
+       "VAULTKEEPER",
+       "10.8%"
+      ],
+      [
+       "HELIODYNE_TYCOON",
+       "0.4%"
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "tag": "NOTE",
+     "heading": "",
+     "body": "Source: Steam achievements API (L0). Captured 2026-08-17."
+    }
+   ]
+  },
+  {
+   "slug": "sandustry/faq",
+   "title": "샌더스트리 FAQ",
+   "metaTitle": "샌더스트리 FAQ: 한국어 지원, 모바일, 멀티플레이어",
+   "metaDescription": "샌더스트리 자주 묻는 질문: 한국어 지원, 모바일 버전, 멀티플레이어.",
+   "intro": "샌더스트리에 대한 자주 묻는 질문입니다.",
+   "sections": [
+    {
+     "type": "faq",
+     "tag": "FAQ",
+     "heading": "FAQ",
+     "body": "",
+     "items": [
+      {
+       "q": "샌더스트리는 한국어를 지원하나요?",
+       "a": "네. 한국어(인터페이스+자막)를 공식 지원합니다."
+      },
+      {
+       "q": "모바일 버전이 있나요?",
+       "a": "없습니다. 가짜 APK 다운로드 사이트에 주의하세요. 공식 플랫폼은 Steam, GOG, Microsoft Store, PC Game Pass입니다."
+      },
+      {
+       "q": "멀티플레이어가 있나요?",
+       "a": "없습니다. 싱글 플레이어 게임입니다."
+      },
+      {
+       "q": "금(Gold)은 어떻게 얻나요?",
+       "a": "대부분의 가공 과정의 부산물로 얻습니다. 수집기(Collector)에 보관해야 은행에 집계됩니다."
+      }
+     ]
+    }
+   ]
   }
  ]
 }

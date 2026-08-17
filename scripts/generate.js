@@ -220,12 +220,14 @@ function header(lang, active) {
     `<a href="${linkOf(active || "index", l)}" class="${l === lang ? "active" : ""}"><span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span></a>`
   ).join("");
   const moonCross = `<a class="tome-crosslink" href="${linkOf("moonlight-peaks", lang)}">${lang === "zh-CN" ? "🌙 月光小镇（第 2 游戏）" : "🌙 Moonlight Peaks (Game 2)"}</a>`;
+  const sandCross = `<a class="tome-crosslink" href="${linkOf("sandustry", lang)}">${lang === "zh-CN" ? "⛏️ 沙金工业（第 3 游戏）" : lang === "ko" ? "⛏️ 샌더스트리 (Game 3)" : "⛏️ Sandustry (Game 3)"}</a>`;
   return `<aside id="sovereign-navigation" class="tome-nav" aria-label="Ledger index">
   <a class="tome-brand" href="${linkOf("index", lang)}">
     <span class="brand-seal">${ICON.crown}</span>
     <span class="brand-name">${esc(siteI18n(lang).name)}<small>${lang === "zh-CN" ? "圆桌手账" : "Round Table Ledger"}</small></span>
   </a>
   ${moonCross}
+  ${sandCross}
   ${chapters}
   <div class="tome-lang"><div class="lang-label">${esc(n.langLabel)}</div>${langItems}</div>
 </aside>`;

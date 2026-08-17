@@ -14,13 +14,13 @@ const generatorPath = path.join(root, "scripts", "generate.js");
 const expectedPublisher = "pub-4174270222899193";
 const expectedClient = `ca-${expectedPublisher}`;
 const expectedAmazon = {
-  modulePages: 307,
-  modules: 307,
-  tagOccurrences: 1535,
-  urls: 1535,
-  disclosures: 307,
-  disclosureSha256: "00d9db4415f4beb0bddc91b89f89d38c2075161f91558a1241026712d0a00944",
-  shapeSha256: "4b57be150a058fcee8db0774fb3fa446a14278ed169851f17fd29c6bb82a5c4a",
+  modulePages: 355,
+  modules: 355,
+  tagOccurrences: 1775,
+  urls: 1775,
+  disclosures: 355,
+  disclosureSha256: "47a8c58b955956e47e76e7d115d4a5846aef3a9f12e7e740a291238bae11db06",
+  shapeSha256: "faac5f22bb036045d2a976caca24345af3ac46203bc23223c67be00503fb8942",
 };
 
 const readJson = file => JSON.parse(fs.readFileSync(file, "utf8"));
@@ -119,7 +119,7 @@ const firstDefaultBuild = runBuild(false);
 const firstDefault = assertOutput({ fixture: false });
 const firstDefaultHash = treeHash();
 const indexableFiles = sitemapFiles();
-assert.equal(indexableFiles.length, 468, "six-language route set changed");
+assert.equal(indexableFiles.length, 516, "six-language route set changed");
 for (const file of indexableFiles) {
   assert.equal(fs.existsSync(file), true, `missing indexable output ${path.relative(publicDir, file)}`);
   const html = fs.readFileSync(file, "utf8");
