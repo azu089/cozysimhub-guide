@@ -23,11 +23,12 @@ function inspect(html) {
     if (!html.includes("function setNavigation(open, returnFocus)") || !html.includes("setNavigation(false, true)")) failures.push("sovereign-close-sync");
     if (!html.includes("e.key === 'Escape' && nav.classList.contains('open')")) failures.push("sovereign-escape");
   }
-  if (html.includes('class="moon-nav"')) {
-    if (!html.includes('id="moonlight-navigation" class="moon-nav"')) failures.push("moon-nav-id");
-    if (!html.includes('aria-controls="moonlight-navigation" aria-expanded="false"')) failures.push("moon-toggle-aria");
-    if (!html.includes("function setMoonNavigation(open, returnFocus)") || !html.includes("setMoonNavigation(false,true)")) failures.push("moon-close-sync");
-    if (!html.includes("e.key==='Escape'&&nav.classList.contains('open')")) failures.push("moon-escape");
+  // 统一主题契约：月光页并入共享 tome-nav，不得残留独立 moon 骨架 / 独立语言切换器，
+  // 且必须带共享 game-switch + 全局 tome-lang。
+  if (html.includes('class="moon-article"') || html.includes('class="moon-main"')) {
+    if (html.includes('class="moon-nav"') || html.includes('class="moon-lang"') || html.includes('class="moon-head"')) failures.push("moon-chrome-remnant");
+    if (!html.includes('class="game-switch"')) failures.push("moon-game-switch-missing");
+    if (!html.includes('class="tome-lang"')) failures.push("moon-tome-lang-missing");
   }
   return failures;
 }
@@ -51,9 +52,11 @@ for (const [name, dimensions] of assets) {
 }
 assert(/\.tome-nav-toggle\s*\{[^}]*padding:\s*14px 16px/s.test(style), "Sovereign toggle 44px target contract missing");
 assert(/\.tome-chapter a\s*\{[^}]*min-height:\s*44px/s.test(style), "Sovereign navigation target contract missing");
-assert(/\.moon-nav-toggle\{[^}]*padding:8px 10px/s.test(moonStyle), "Moonlight toggle target contract missing");
-assert(/\.moon-nav-item\{[^}]*min-height:44px/s.test(moonStyle), "Moonlight navigation target contract missing");
+assert(/\.game-switch-item\s*\{[^}]*min-height:\s*44px/s.test(style), "Game switch target contract missing");
+assert(/\.tome-lang a\s*\{[^}]*min-height:\s*44px/s.test(style), "Language switch target contract missing");
 assert(/\.privacy-settings[\s\S]*?min-height:\s*44px/.test(style), "privacy settings target contract missing");
+assert(!/\.moon-nav-toggle/.test(moonStyle), "moon-nav-toggle must be removed from style-moon.css");
+assert(!/\.moon-nav-item/.test(moonStyle), "moon-nav-item must be removed from style-moon.css");
 
 const sovereign = fs.readFileSync(path.join(publicDir, "index.html"), "utf8");
 const moon = fs.readFileSync(path.join(publicDir, "moonlight-peaks.html"), "utf8");
@@ -62,9 +65,9 @@ const faults = [
   [sovereign.replace('aria-controls="sovereign-navigation"', 'aria-controls="broken-navigation"'), "sovereign-toggle-aria"],
   [sovereign.replaceAll("setNavigation(false, true)", "setNavigation(false, false)"), "sovereign-close-sync"],
   [sovereign.replace("e.key === 'Escape'", "e.key === 'Enter'"), "sovereign-escape"],
-  [moon.replace('id="moonlight-navigation"', 'id="broken-navigation"'), "moon-nav-id"],
-  [moon.replace('aria-controls="moonlight-navigation"', 'aria-controls="broken-navigation"'), "moon-toggle-aria"],
-  [moon.replaceAll("setMoonNavigation(false,true)", "setMoonNavigation(false,false)"), "moon-close-sync"],
+  [moon.replace('<div class="tome-nav-overlay"></div>', '<div class="tome-nav-overlay"></div><nav id="moonlight-navigation" class="moon-nav"></nav>'), "moon-chrome-remnant"],
+  [moon.replace('class="game-switch"', 'class="broken-switch"'), "moon-game-switch-missing"],
+  [moon.replace('class="tome-lang"', 'class="broken-lang"'), "moon-tome-lang-missing"],
   [sovereign.replace('/favicon.svg', '/missing-favicon.svg'), "favicon-head-links"],
 ];
 for (const [html, expected] of faults)
@@ -73,10 +76,11 @@ for (const [html, expected] of faults)
 console.log(JSON.stringify({
   status: "pass",
   pages: htmlFiles.length,
-  navigationSystems: ["sovereign-tower", "moonlight-peaks"],
+  navigationSystems: ["sovereign-tower", "moonlight-peaks (unified tome-nav)"],
   staticWidths: [375, 1440],
   targetMinPx: 44,
   escapeFocusReturn: true,
+  unifiedMoonContract: ["game-switch", "tome-lang", "no-moon-nav", "no-moon-lang"],
   faviconAssets: assets.length,
   negativeFaults: faults.length,
 }, null, 2));

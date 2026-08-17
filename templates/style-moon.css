@@ -1,191 +1,74 @@
 /* ============================================================
-   Moonlight Peaks · 月光档案室（The Moonlit Ledger）
-   独立 UI 骨架：月夜紫 + 月光银 + 灯笼暖光 + 哥特手账
-   Playfair Display / Lora / MedievalSharp / Spectral
+   Moonlight Peaks · 月光专属内容组件（共享纸金主题）
+   主题统一后（用户反馈 1）：页面加载 style.css（纸/金书卷）+ 本文件；
+   本文件只保留月光小镇**专属内容组件**——筛选器 / 成就追踪器 / 角色档案卡 /
+   月光封底。全部使用 style.css 的共享 token，不再定义深色皮肤或独立导航骨架。
    ============================================================ */
-:root{
-  --night:#171034; --night-deep:#0F0A22; --panel:#241A45; --panel-2:#2E2257;
-  --moon:#F0EBFB; --moon-soft:#B7ABDB; --moonbeam:#8F83C6;
-  --candle:#F0A848; --candle-soft:#F8DCA8; --vamp:#B0333F; --rose:#D996AD; --leaf:#8FA273;
-  --line:rgba(240,232,251,0.12); --line-soft:rgba(240,232,251,0.07);
-  --font-head:"Playfair Display","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC",serif;
-  --font-body:"Lora","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC",serif;
-  --font-label:"MedievalSharp","PingFang SC",serif;
-  --font-data:"Spectral","PingFang SC","Noto Sans CJK SC",serif;
-  --radius:10px; --shadow:0 6px 22px rgba(6,3,18,.45);
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--night);color:var(--moon);font-family:var(--font-body);font-size:17px;line-height:1.65;
-  background-image:radial-gradient(1200px 500px at 50% -10%,rgba(143,131,198,.16),transparent 60%),radial-gradient(900px 400px at 90% 110%,rgba(176,51,63,.10),transparent 60%);
-  background-attachment:fixed}
-a{color:var(--candle);text-decoration:none}
-a:hover{color:var(--candle-soft)}
-img{max-width:100%;height:auto}
-svg{display:inline-block;vertical-align:middle}
-
-/* Privacy choices share behavior with the hub while keeping the moon palette. */
-.privacy-settings{position:fixed;right:16px;top:78px;z-index:110;min-height:44px;padding:9px 14px;border:1px solid var(--candle);border-radius:999px;background:var(--night-deep);color:var(--moon);box-shadow:var(--shadow);font:600 13px/1.2 var(--font-body);cursor:pointer;display:inline-flex;align-items:center;gap:6px}.privacy-settings::before{content:"🔒";font-size:12px}
-.consent-dialog{width:min(680px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:0;border:1px solid var(--candle);border-radius:16px;background:var(--panel);color:var(--moon);box-shadow:0 24px 70px rgba(6,3,18,.72)}
-.consent-dialog::backdrop{background:rgba(6,3,18,.78);backdrop-filter:blur(3px)}
-.consent-card{position:relative;padding:26px}.consent-card h2{margin:0 48px 8px 0;color:var(--moon);font-family:var(--font-head);font-size:1.8rem}.consent-card>p{color:var(--moon-soft)}
-.consent-close{position:absolute;right:12px;top:10px;width:44px;height:44px;border:0;border-radius:10px;background:transparent;color:var(--moon);font-size:28px;cursor:pointer}
-.consent-summary{display:grid;gap:4px;margin:18px 0}.consent-summary span{color:var(--moon-soft);margin-bottom:10px}
-.consent-manage{display:grid;gap:10px;margin:18px 0}.consent-manage label{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid var(--line);border-radius:10px}.consent-manage input{width:22px;height:22px;flex:0 0 auto;accent-color:var(--candle)}.consent-manage small{display:block;color:var(--moon-soft);margin-top:3px}
-.consent-actions{display:flex;flex-wrap:wrap;gap:8px}.consent-actions button{min-height:44px;padding:9px 13px;border:1px solid var(--candle);border-radius:9px;background:var(--panel-2);color:var(--moon);font:700 14px/1.2 var(--font-body);cursor:pointer}.consent-actions [data-consent-accept]{background:var(--candle);color:var(--night-deep)}.consent-actions [data-consent-reject],.consent-actions [data-consent-withdraw]{background:transparent}
-
-/* ---------- 顶部：月光品牌 + 月相导航（桌面默认折叠，对齐竞品紧凑导航） ---------- */
-.moon-head{position:sticky;top:0;z-index:50;background:rgba(15,10,34,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.5rem;padding:0 18px;min-height:64px}
-.moon-brand{display:flex;align-items:center;gap:.7rem;padding:10px 0;color:var(--moon)}
-.moon-brand:hover{color:var(--candle-soft)}
-.brand-moon{width:34px;height:34px;color:var(--candle)}
-.brand-name{font-family:var(--font-head);font-weight:700;font-size:1.15rem;letter-spacing:.02em;display:flex;flex-direction:column;line-height:1.15}
-.brand-name small{font-family:var(--font-body);font-weight:400;font-size:.72rem;color:var(--moon-soft);letter-spacing:.12em;text-transform:uppercase}
-.moon-nav-toggle{display:inline-flex;align-items:center;justify-content:center;margin-left:auto;min-width:44px;min-height:44px;background:none;border:1px solid var(--line);color:var(--moon);border-radius:8px;padding:8px 10px;cursor:pointer}
-.moon-nav-toggle svg{width:20px;height:20px}
-.moon-nav{display:none;position:absolute;left:0;right:0;top:100%;background:rgba(15,10,34,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 20px 16px;max-height:calc(100vh - 64px);overflow-y:auto;box-shadow:0 18px 40px rgba(0,0,0,.4)}
-.moon-nav.open{display:block}
-.moon-nav-group{margin-bottom:10px}
-.moon-nav-group>b{display:block;font-family:var(--font-label);font-weight:400;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--moon-soft);margin:0 0 6px}
-.moon-nav-items{display:flex;flex-wrap:wrap;gap:6px}
-.moon-nav-item{display:inline-flex;align-items:center;gap:.45rem;min-height:44px;padding:6px 12px;border:1px solid var(--line-soft);border-radius:999px;color:var(--moon-soft);font-size:.88rem;transition:transform .18s ease-out,color .18s ease-out,border-color .18s ease-out,box-shadow .18s ease-out}
-.moon-nav-item .moon-phase{width:16px;height:16px}
-.moon-nav-item:hover{color:var(--candle-soft);border-color:rgba(240,168,72,.5);transform:translateY(-1px)}
-.moon-nav-item.active{color:var(--candle);border-color:rgba(240,168,72,.7);box-shadow:0 0 14px rgba(240,168,72,.25)}
-.moon-nav-item.active .moon-phase.glow{color:var(--candle);animation:moonPulse 2.8s ease-in-out infinite}
-@keyframes moonPulse{0%,100%{opacity:1}50%{opacity:.45}}
-.moon-lang{display:flex;align-items:center;gap:.5rem;margin-top:12px;flex-wrap:wrap}
-.lang-label{font-family:var(--font-label);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--moon-soft)}
-.moon-lang a{display:inline-flex;align-items:center;gap:.35rem;min-height:44px;font-size:.82rem;color:var(--moon-soft);padding:3px 8px;border-radius:6px}
-.moon-lang a.active{color:var(--candle);background:rgba(240,168,72,.12)}
-.moon-lang a:hover{color:var(--candle-soft)}
-.moon-hub-link{display:inline-flex;margin-top:10px;font-size:.82rem;color:var(--moonbeam)}
-.moon-hub-link:hover{color:var(--candle-soft)}
-.flag{display:inline-block;width:20px;height:14px;border-radius:2px;overflow:hidden}
-.svg-flag svg{width:20px;height:14px}
-
-/* ---------- 正文：账页横线栏格 ---------- */
-.moon-main{max-width:1000px;margin:0 auto;padding:26px 18px 60px;min-height:calc(100vh - 128px)}
-.moon-ruled{background:linear-gradient(180deg,rgba(240,232,251,.028) 1px,transparent 1px) 0 0/100% 30px;
-  border-left:3px solid var(--line-soft);padding-left:20px;border-radius:0 14px 14px 0}
-.moon-article{max-width:860px}
-.moon-hero{padding:26px 0 10px;text-align:left}
-.moon-head-page{margin-top:4px}
-.moon-eyebrow{font-family:var(--font-label);font-size:.74rem;letter-spacing:.26em;text-transform:uppercase;color:var(--candle)}
-.moon-hero h1,.moon-head-page h1{font-family:var(--font-head);font-weight:800;font-size:clamp(1.6rem,4.5vw,2.6rem);line-height:1.15;margin:.4rem 0 .8rem;color:var(--moon);text-shadow:0 2px 30px rgba(143,131,198,.35)}
-.page-intro{color:var(--moon-soft);font-size:1.02rem;margin:0 0 1.2rem}
-
-/* ---------- 区块与组件 ---------- */
-.moon-section{margin:30px 0}
-.section-head{display:flex;align-items:center;gap:.6rem;margin-bottom:12px}
-.section-head h2{font-family:var(--font-head);font-weight:700;font-size:1.35rem;margin:0;color:var(--moon)}
-.tag{font-family:var(--font-label);font-size:.66rem;letter-spacing:.2em;color:var(--night-deep);background:var(--candle);padding:3px 9px;border-radius:5px;text-transform:uppercase}
-.moon-abstract{background:linear-gradient(135deg,var(--panel),var(--panel-2));border:1px solid var(--line);border-left:4px solid var(--vamp);border-radius:var(--radius);padding:16px 18px;color:var(--moon-soft);font-size:.95rem;box-shadow:var(--shadow)}
-
-/* 表格：账页 */
-.moon-table-wrap{overflow-x:auto;background:rgba(20,13,42,.55);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
-.moon-filter{padding:12px 14px 4px}
-.moon-search{width:100%;background:var(--night-deep);border:1px solid var(--line);color:var(--moon);border-radius:8px;padding:9px 12px;font-family:var(--font-body);font-size:.9rem}
-.moon-search:focus{outline:2px solid var(--candle);border-color:transparent}
-.moon-table{width:100%;border-collapse:collapse;font-family:var(--font-data);font-size:.9rem}
-.moon-table th{background:var(--panel);color:var(--candle-soft);font-family:var(--font-label);font-weight:400;letter-spacing:.06em;text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
-.moon-table td{padding:9px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top;color:var(--moon)}
-.moon-table tbody tr:nth-child(even){background:rgba(240,232,251,.025)}
-.moon-table tbody tr:hover{background:rgba(240,168,72,.07)}
-
-/* 步骤：月相账条 */
-.moon-entries{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
-.moon-entry{display:flex;gap:14px;align-items:flex-start;background:linear-gradient(135deg,var(--panel),rgba(36,26,69,.6));border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow);opacity:0;transform:translateY(10px);transition:opacity .4s ease-out,transform .4s ease-out}
-.moon-entry.in{opacity:1;transform:none}
-.moon-entry-no{width:30px;height:30px;flex:none;color:var(--candle);margin-top:2px}
-.moon-entry-body h3{font-family:var(--font-head);font-weight:700;font-size:1.05rem;margin:0 0 4px;color:var(--moon)}
-.moon-entry-body p{margin:0;color:var(--moon-soft);font-size:.94rem}
-
-/* 列表：星标笔记 */
-.moon-notes{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
-.moon-notes li{position:relative;padding-left:22px;color:var(--moon-soft);font-size:.95rem}
-.moon-notes li::before{content:"";position:absolute;left:2px;top:.55em;width:8px;height:8px;background:var(--candle);border-radius:50%;box-shadow:0 0 8px rgba(240,168,72,.8)}
-
-/* FAQ */
-.moon-faq-list{display:flex;flex-direction:column;gap:8px}
-.moon-faq{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
-.moon-faq summary{cursor:pointer;padding:12px 16px;font-family:var(--font-head);font-weight:600;color:var(--moon);list-style:none;position:relative;padding-right:2.4em;transition:color .18s ease-out}
-.moon-faq summary::after{content:"▾";position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--candle)}
-.moon-faq[open] summary::after{transform:translateY(-50%) rotate(180deg)}
-.moon-faq summary:hover{color:var(--candle-soft)}
-.moon-faq p{margin:0;padding:0 16px 14px;color:var(--moon-soft);font-size:.94rem}
-.moon-faq[open]{border-color:rgba(240,168,72,.4)}
-
-/* 成就追踪器 */
-.ach-panel{padding:14px 14px 2px}
-.ach-progress{margin:0 0 4px}
-.ach-bar{height:8px;border-radius:99px;background:linear-gradient(90deg,var(--vamp),var(--candle));width:0;transition:width .3s ease-out;box-shadow:0 0 12px rgba(240,168,72,.4)}
-.ach-meta{margin:6px 0 0;font-family:var(--font-label);font-size:.72rem;letter-spacing:.14em;color:var(--moon-soft);text-transform:uppercase}
-.ach-ctrls{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:10px 0 0}
-.ach-hide{display:inline-flex;align-items:center;gap:.45em;font-size:.85rem;color:var(--moon-soft);cursor:pointer;min-height:44px}
-.ach-hide input{width:16px;height:16px;accent-color:var(--candle)}
-/* 复选框放在真正的 <td> 里（此前是直接塞进 <tr>，会被当成匿名单元格导致整表错列） */
-.ach-col{width:44px;text-align:center}
-.ach-cb{width:18px;height:18px;accent-color:var(--candle);cursor:pointer}
-.moon-table tbody tr.ach-hidden{display:none}
 
 /* ---------- 筛选器（渐进增强，无 JS 时整块不存在） ---------- */
+.moon-filter{padding:12px 14px 4px}
 .moon-filter-search{display:flex;gap:8px;align-items:center}
 .moon-filter-search .moon-search{flex:1}
-.moon-reset{background:transparent;border:1px solid var(--line);color:var(--moon-soft);border-radius:8px;
-  padding:9px 14px;font-family:var(--font-body);font-size:.85rem;cursor:pointer;min-height:44px;
-  transition:border-color .2s ease-out,color .2s ease-out}
-.moon-reset:hover{border-color:var(--candle);color:var(--candle)}
-.moon-reset:focus-visible{outline:2px solid var(--candle);outline-offset:2px}
+.moon-search{width:100%;background:var(--card);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:9px 12px;font-family:"Inter",sans-serif;font-size:.9rem}
+.moon-search:focus{outline:2px solid var(--gold);border-color:transparent}
+.moon-reset{background:transparent;border:1px solid var(--line);color:var(--ink-soft);border-radius:8px;
+  padding:9px 14px;font-family:"Inter",sans-serif;font-size:.85rem;cursor:pointer;min-height:44px;
+  transition:border-color .2s var(--ease),color .2s var(--ease)}
+.moon-reset:hover{border-color:var(--gold);color:var(--gold)}
+.moon-reset:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .moon-chip-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:10px}
-.moon-chip-label{font-family:var(--font-label);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--moonbeam);margin-right:2px}
-.moon-chip{background:var(--night-deep);border:1px solid var(--line);color:var(--moon-soft);border-radius:99px;
-  padding:7px 13px;font-family:var(--font-body);font-size:.82rem;cursor:pointer;min-height:36px;
-  transition:background .2s ease-out,border-color .2s ease-out,color .2s ease-out}
-.moon-chip:hover{border-color:var(--moonbeam);color:var(--moon)}
-.moon-chip:focus-visible{outline:2px solid var(--candle);outline-offset:2px}
-.moon-chip[aria-pressed="true"]{background:var(--panel-2);border-color:var(--candle);color:var(--candle-soft)}
-.moon-count{margin:10px 0 0;font-family:var(--font-label);font-size:.7rem;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--moonbeam)}
-.moon-empty{margin:0;padding:16px 14px 18px;color:var(--moon-soft);font-size:.9rem;text-align:center}
+.moon-chip-label{font-family:"Inter",sans-serif;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);margin-right:2px}
+.moon-chip{background:var(--card);border:1px solid var(--line);color:var(--ink-soft);border-radius:99px;
+  padding:7px 13px;font-family:"Inter",sans-serif;font-size:.82rem;cursor:pointer;min-height:36px;
+  transition:background .2s var(--ease),border-color .2s var(--ease),color .2s var(--ease)}
+.moon-chip:hover{border-color:var(--gold);color:var(--ink)}
+.moon-chip:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.moon-chip[aria-pressed="true"]{background:rgba(184,134,11,.14);border-color:var(--gold);color:var(--deep);font-weight:600}
+.moon-count{margin:10px 0 0;font-family:"Inter",sans-serif;font-size:.7rem;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--muted)}
+.moon-empty{margin:0;padding:16px 14px 18px;color:var(--ink-soft);font-size:.9rem;text-align:center}
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
   clip:rect(0 0 0 0);white-space:nowrap;border:0}
-@media (prefers-reduced-motion:reduce){
-  .ach-bar,.moon-chip,.moon-reset{transition:none}
-}
 
-/* ---------- Footer：夜更 ---------- */
-.moon-colophon{margin-top:40px;border-top:1px solid var(--line);background:var(--night-deep);color:var(--moon-soft);font-size:.86rem;padding:30px 20px 40px;display:grid;gap:18px}
-.moon-colophon h3{font-family:var(--font-head);color:var(--candle);margin:0 0 6px}
-.moon-colophon p{margin:.3rem 0}
-.moon-colophon-links{display:flex;flex-wrap:wrap;gap:6px 14px}
-.moon-colophon-links a{color:var(--moonbeam)}
-.moon-colophon-links a:hover{color:var(--candle-soft)}
-.colophon-legal{margin-top:10px;color:rgba(183,171,219,.6)}
-
-/* ---------- 移动端 ---------- */
-@media (max-width:760px){
-  body{font-size:16px}
-  .moon-nav{padding:14px 18px 18px}
-  .moon-nav.open{display:block;border-top:1px solid var(--line)}
-  .moon-nav-items{flex-direction:column;align-items:stretch;gap:4px}
-  .moon-nav-item{border-radius:8px}
-  .moon-ruled{border-left:none;padding-left:0}
-  .moon-main{padding:18px 14px 40px;min-height:calc(100vh - 96px)}
-  .consent-card{padding:22px 18px}.consent-actions button{width:100%}
-}
-@media (prefers-reduced-motion:reduce){
-  *{animation:none !important;transition:none !important}
-  .moon-entry{opacity:1;transform:none}
-}
+/* ---------- 59 成就追踪器 ---------- */
+.ach-panel{padding:14px 14px 2px}
+.ach-progress{margin:0 0 4px}
+.ach-bar{height:8px;border-radius:99px;background:linear-gradient(90deg,var(--terra),var(--gold-soft));width:0;transition:width .3s var(--ease);box-shadow:0 0 10px rgba(184,134,11,.35)}
+.ach-meta{margin:6px 0 0;font-family:"Inter",sans-serif;font-size:.72rem;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+.ach-ctrls{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:10px 0 0}
+.ach-hide{display:inline-flex;align-items:center;gap:.45em;font-size:.85rem;color:var(--ink-soft);cursor:pointer;min-height:44px}
+.ach-hide input{width:16px;height:16px;accent-color:var(--gold)}
+/* 复选框放在真正的 <td> 里（此前是直接塞进 <tr>，会被当成匿名单元格导致整表错列） */
+.ach-col{width:44px;text-align:center}
+.ach-cb{width:18px;height:18px;accent-color:var(--gold);cursor:pointer}
+.moon-table tbody tr.ach-hidden{display:none}
 
 /* ---------- 角色档案卡（characters hub / 单页跳转） ---------- */
 .moon-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:6px}
-.char-card{display:flex;flex-direction:column;gap:2px;padding:14px 16px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(150deg,var(--panel),var(--panel-2));color:var(--moon);text-decoration:none;box-shadow:var(--shadow);transition:transform .18s ease-out,border-color .18s ease-out,box-shadow .18s ease-out}
-.char-card:hover{transform:translateY(-2px);border-color:var(--candle-soft);box-shadow:0 8px 24px rgba(240,168,72,.18)}
-.char-card-name{font-family:var(--font-head);font-weight:700;font-size:1.05rem;color:var(--candle)}
-.char-card-sub{font-family:var(--font-label);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--moon-soft)}
-.char-card-note{font-size:.82rem;color:var(--moonbeam)}
+.char-card{display:flex;flex-direction:column;gap:2px;padding:14px 16px;border:1px solid var(--line);border-radius:var(--radius-md);background:var(--card);color:var(--ink);text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .18s var(--ease),border-color .18s var(--ease),box-shadow .18s var(--ease)}
+.char-card:hover{transform:translateY(-2px);border-color:var(--gold-soft);box-shadow:0 8px 24px rgba(184,134,11,.18);text-decoration:none}
+.char-card-name{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:1.05rem;color:var(--deep)}
+.char-card-sub{font-family:"Inter",sans-serif;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.char-card-note{font-size:.82rem;color:var(--ink-soft)}
 .moon-cards .char-card[data-soon]{opacity:.75}
+
+/* ---------- 月光封底（映射共享 colophon 深底金线） ---------- */
+.moon-colophon{margin:44px 38px 34px;padding:34px 38px;background:linear-gradient(180deg,var(--deep),var(--deep-2));color:rgba(237,227,206,.82);border-radius:16px;box-shadow:var(--shadow-md);display:grid;grid-template-columns:1.2fr 1fr;gap:28px;position:relative;overflow:hidden}
+.moon-colophon::before{content:"";position:absolute;inset:9px;border:1px solid rgba(217,182,74,.25);border-radius:10px;pointer-events:none}
+.moon-colophon h3{color:#F5EDDB;font-size:26px;margin-bottom:8px;font-weight:700}
+.moon-colophon p{font-size:13.5px;line-height:1.7}
+.moon-colophon-links{display:flex;flex-wrap:wrap;gap:10px 18px}
+.moon-colophon-links a{color:rgba(237,227,206,.85);font-size:13.5px}
+.moon-colophon-links a:hover{color:var(--gold-soft)}
+.colophon-legal{font-size:12px;color:rgba(237,227,206,.5);margin-top:12px;border-top:1px solid rgba(237,227,206,.15);padding-top:10px}
+
+/* ---------- 移动端 ---------- */
+@media (max-width:960px){
+  .moon-colophon{margin:24px 14px;grid-template-columns:1fr;padding:26px 22px}
+  .consent-card{padding:22px 18px}.consent-actions button{width:100%}
+}
 @media (max-width:520px){.moon-cards{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}}
+@media (prefers-reduced-motion:reduce){
+  .ach-bar,.moon-chip,.moon-reset{transition:none}
+}

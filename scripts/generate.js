@@ -304,11 +304,13 @@ function head(title, desc, extraLd, slug, lang) {
   const _pageDef = DATA.pages.find(x => x.slug === slug);
   const hreflangLangs = (_pageDef && _pageDef.languages && _pageDef.languages.length) ? _pageDef.languages : LANGS;
   const MOON_CSS_V = crypto.createHash("md5").update(fs.readFileSync(path.join(ROOT, "templates", "style-moon.css"), "utf8")).digest("hex").slice(0, 8);
-  const themeColor = isMoon ? "#171034" : "#3A3226";
-  const fontLink = isMoon
-    ? '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Lora:wght@400;500;600&family=MedievalSharp&family=Spectral:wght@500;600&display=swap" rel="stylesheet" />'
-    : '<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet" />';
-  const cssLink = isMoon ? `<link rel="stylesheet" href="/css/style-moon.css?v=${MOON_CSS_V}" />` : `<link rel="stylesheet" href="/css/style.css?v=${CSS_V}" />`;
+  // 主题统一（用户反馈 1）：全站共享 CozySimHub 纸/金书卷主题，月光页不跳深色皮肤。
+  // 字体 / theme-color 全站一致；月光页额外加载 style-moon.css（仅月光专属内容组件）。
+  const themeColor = "#3A3226";
+  const fontLink = '<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet" />';
+  const cssLink = isMoon
+    ? `<link rel="stylesheet" href="/css/style.css?v=${CSS_V}" />\n<link rel="stylesheet" href="/css/style-moon.css?v=${MOON_CSS_V}" />`
+    : `<link rel="stylesheet" href="/css/style.css?v=${CSS_V}" />`;
   return `<!DOCTYPE html>
 <html lang="${htmlLang}">
 <head>
@@ -361,24 +363,34 @@ const GUIDE_GROUPS = {
 function header(lang, active) {
   const n = navI18n(lang);
   const c = catI18n(lang);
+  const isMoon = (active || "").startsWith("moonlight-peaks");
   const G = GUIDE_GROUPS.en;
+  const stripRe = isMoon
+    ? /\s*(Moonlight Peaks|Moonlight|月光小镇)\s*/g
+    : /\s*(Sovereign Tower|Sovereign|君王之塔)\s*/g;
   const link = (slug, label, icon, folio, act) =>
-    `<a href="${linkOf(slug, lang)}" class="${act ? "active" : ""}"><span class="folio-no">${folio}</span><span class="nav-ic">${ICON[icon] || ""}</span><span>${esc(label)}</span></a>`;
+    `<a href="${linkOf(slug, lang)}" class="${act ? "active" : ""}"><span class="folio-no">${folio}</span><span class="nav-ic">${ICON[icon] || icon || ""}</span><span>${esc(label)}</span></a>`;
   const chap = (title, slugs) => `<div class="tome-chapter"><b>${esc(title)}</b>${slugs.map((s, i) => {
     const p = DATA.pages.find(x => x.slug === s);
     if (!p) return "";
-    const t = pageOf(p, lang).title.replace(/\s*(Sovereign Tower|Sovereign|君王之塔)\s*/g, " ").replace(/\s+/g, " ").trim();
-    const ic = s.includes("knights") ? "shield" : s.includes("romance") ? "heart" : s.includes("recipes") ? "chef" : s.includes("endings") ? "crown" : s.includes("secret") ? "fist" : s.includes("quest") && s.includes("mech") ? "scales" : s.includes("achievement") ? "trophy" : s.includes("tools") ? "calc" : s.includes("how-to-play") ? "book" : "wand";
+    const t = pageOf(p, lang).title.replace(stripRe, " ").replace(/\s+/g, " ").trim();
+    const ic = isMoon
+      ? moonPhaseIcon(MOON_PHASE_BY[s] || 4)
+      : (s.includes("knights") ? "shield" : s.includes("romance") ? "heart" : s.includes("recipes") ? "chef" : s.includes("endings") ? "crown" : s.includes("secret") ? "fist" : s.includes("quest") && s.includes("mech") ? "scales" : s.includes("achievement") ? "trophy" : s.includes("tools") ? "calc" : s.includes("how-to-play") ? "book" : "wand");
     return link(s, t, ic, String(i + 1).padStart(2, "0"), s === active);
   }).join("")}</div>`;
-  // hub 页侧栏不放君王之塔独占章节：改放「最新内容」快捷链接（spec §A.3）
-  const chapters = active === "index" ? latestNav(lang) : `${chap(n.p0, G.p0)}${chap(n.p1, G.p1)}${chap(n.p2, G.p2)}`;
+  // 月光小镇页：moon-nav 三组（data/deep/quick）映射为 tome-chapter 章节（复用既有 chap 结构）
+  const chapters = active === "index"
+    ? latestNav(lang)
+    : isMoon
+      ? `${chap(moonTxt(lang).data, MOON_GROUPS.data)}${chap(moonTxt(lang).deep, MOON_GROUPS.deep)}${chap(moonTxt(lang).quick, MOON_GROUPS.quick)}`
+      : `${chap(n.p0, G.p0)}${chap(n.p1, G.p1)}${chap(n.p2, G.p2)}`;
   const langItems = pageLangsOf(active || "index").map(l =>
     `<a href="${linkOf(active || "index", l)}" class="${l === lang ? "active" : ""}"><span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span></a>`
   ).join("");
   return `<aside id="sovereign-navigation" class="tome-nav" aria-label="Ledger index">
   <a class="tome-brand" href="${linkOf("index", lang)}">
-    <span class="brand-seal">${ICON.crown}</span>
+    <span class="brand-seal">${isMoon ? moonPhaseIcon(7, "brand-moon") : ICON.crown}</span>
     <span class="brand-name">${esc(siteI18n(lang).name)}<small>${esc(c.brandSub)}</small></span>
   </a>
   ${gameSwitch(lang, active)}
@@ -466,33 +478,10 @@ function renderAmazonAffiliate(lang) {
   </div>`;
 }
 
-function footer(lang, slug) {
-  const n = navI18n(lang);
-  const c = catI18n(lang);
-  const key = DATA.pages.slice(0, 8).map(p => `<a href="${linkOf(p.slug, lang)}">${esc(pageOf(p, lang).title)}</a>`).join("");
-  const steamHref = (slug || "").startsWith("sandustry")
-    ? "https://store.steampowered.com/app/2764460/Sandustry/"
-    : DATA.game.steamUrl;
-  return `<footer class="colophon">
-  <div>
-    <h3>${esc(siteI18n(lang).name)}</h3>
-    <p>${esc(slug === "index" ? c.footerNote : n.footerNote)}</p>
-    <p>${esc(n.footerSource)} · ${esc(n.updated)} ${TODAY}</p>
-  </div>
-  <div>
-    <div class="colophon-links">
-      <a href="${linkOf("about", lang)}">${esc(n.about)}</a>
-      <a href="${linkOf("privacy", lang)}">${esc(n.privacy)}</a>
-      <a href="${linkOf("contact", lang)}">${esc(n.contact)}</a>
-      <a href="${esc(steamHref)}" target="_blank" rel="noopener">Steam ↗</a>
-      ${key}
-    </div>
-    <p class="colophon-legal">© ${COPYRIGHT_YEAR} ${esc(DATA.site.domain)} · ${lang === "zh-CN" ? "非官方粉丝站" : "Unofficial fan site"}</p>
-  </div>
-  ${renderAmazonAffiliate(lang)}
-</footer>
-${KIT.decisionEventsScript()}
-<script>
+/* 共享 tome-nav 交互 JS（抽屉开合 + Escape 焦点归还 + reveal + TOC 高亮）：
+   所有页面（含月光页）都走这一份，保证导航行为一致（用户反馈 1）。 */
+function tomeNavJs() {
+  return `<script>
 document.addEventListener('DOMContentLoaded', function(){
   var toggle = document.querySelector('.tome-nav-toggle');
   var nav = document.querySelector('.tome-nav');
@@ -521,7 +510,36 @@ document.addEventListener('DOMContentLoaded', function(){
     tocTargets.forEach(function(s){ if (s) tocObs.observe(s); });
   }
 });
-</script>
+</script>`;
+}
+
+function footer(lang, slug) {
+  const n = navI18n(lang);
+  const c = catI18n(lang);
+  const key = DATA.pages.slice(0, 8).map(p => `<a href="${linkOf(p.slug, lang)}">${esc(pageOf(p, lang).title)}</a>`).join("");
+  const steamHref = (slug || "").startsWith("sandustry")
+    ? "https://store.steampowered.com/app/2764460/Sandustry/"
+    : DATA.game.steamUrl;
+  return `<footer class="colophon">
+  <div>
+    <h3>${esc(siteI18n(lang).name)}</h3>
+    <p>${esc(slug === "index" ? c.footerNote : n.footerNote)}</p>
+    <p>${esc(n.footerSource)} · ${esc(n.updated)} ${TODAY}</p>
+  </div>
+  <div>
+    <div class="colophon-links">
+      <a href="${linkOf("about", lang)}">${esc(n.about)}</a>
+      <a href="${linkOf("privacy", lang)}">${esc(n.privacy)}</a>
+      <a href="${linkOf("contact", lang)}">${esc(n.contact)}</a>
+      <a href="${esc(steamHref)}" target="_blank" rel="noopener">Steam ↗</a>
+      ${key}
+    </div>
+    <p class="colophon-legal">© ${COPYRIGHT_YEAR} ${esc(DATA.site.domain)} · ${lang === "zh-CN" ? "非官方粉丝站" : "Unofficial fan site"}</p>
+  </div>
+  ${renderAmazonAffiliate(lang)}
+</footer>
+${KIT.decisionEventsScript()}
+${tomeNavJs()}
 ${consentUi(lang)}`;
 }
 /* ---------- Section 渲染（手账组件语言） ---------- */
@@ -922,39 +940,11 @@ MOON_GROUPS.data.forEach((s, i) => MOON_PHASE_BY[s] = 1 + i);
 MOON_GROUPS.deep.forEach((s, i) => MOON_PHASE_BY[s] = 1 + i);
 MOON_GROUPS.quick.forEach((s, i) => MOON_PHASE_BY[s] = 1 + i);
 
-function moonHeader(lang, active) {
-  const t = moonTxt(lang);
-  const n = navI18n(lang);
-  const item = (slug, label) => {
-    const p = DATA.pages.find(x => x.slug === slug);
-    if (!p) return "";
-    const name = pageOf(p, lang).title.replace(/\s*(Moonlight Peaks|Moonlight|月光小镇)\s*/g, " ").replace(/\s+/g, " ").trim();
-    const phase = MOON_PHASE_BY[slug] || 4;
-    return `<a class="moon-nav-item ${slug === active ? "active" : ""}" href="${linkOf(slug, lang)}">${moonPhaseIcon(phase, slug === active ? "glow" : "")}<span>${esc(name)}</span></a>`;
-  };
-  const group = (title, slugs) => `<div class="moon-nav-group"><b>${esc(title)}</b><div class="moon-nav-items">${slugs.map(s => item(s, "")).join("")}</div></div>`;
-  const body = `${group(t.data, MOON_GROUPS.data)}${group(t.deep, MOON_GROUPS.deep)}${group(t.quick, MOON_GROUPS.quick)}`;
-  const langItems = LANGS.map(l =>
-    `<a href="${linkOf(active || "moonlight-peaks", l)}" class="${l === lang ? "active" : ""}"><span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span></a>`
-  ).join("");
-  return `<header class="moon-head">
-  <a class="moon-brand" href="${linkOf("moonlight-peaks", lang)}">
-    <span class="brand-moon">${moonPhaseIcon(7)}</span>
-    <span class="brand-name">${esc(t.ledger)}<small>${esc(t.home)}</small></span>
-  </a>
-  <button class="moon-nav-toggle" type="button" aria-label="Toggle menu" aria-controls="moonlight-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-  <nav id="moonlight-navigation" class="moon-nav" aria-label="Moonlight Peaks index">${body}
-    <div class="moon-lang"><span class="lang-label">${esc(t.langLabel)}</span>${langItems}</div>
-    <a class="moon-hub-link" href="${linkOf("index", lang)}">${esc(t.hub)}</a>
-  </nav>
-</header>`;
-}
-
 function moonFooter(lang) {
   const t = moonTxt(lang);
   const n = navI18n(lang);
   const quick = MOON_GROUPS.quick.concat(MOON_GROUPS.data.slice(0, 3));
-  const links = quick.map(s => { const p = DATA.pages.find(x => x.slug === s); return p ? `<a href="${linkOf(s, lang)}">${esc(pageOf(p, lang).title)}</a>` : ""; }).join("") + `<a href="${linkOf("sandustry", lang)}">${lang === "zh-CN" ? "⛏️ 沙金工业" : lang === "ko" ? "⛏️ 샌더스트리" : "⛏️ Sandustry"}</a>`;
+  const links = quick.map(s => { const p = DATA.pages.find(x => x.slug === s); return p ? `<a href="${linkOf(s, lang)}">${esc(pageOf(p, lang).title)}</a>` : ""; }).join("");
   return `<footer class="moon-colophon">
   <div>
     <h3>${esc(t.ledger)}</h3>
@@ -973,6 +963,7 @@ function moonFooter(lang) {
   </div>
 </footer>
 ${KIT.decisionEventsScript()}
+${tomeNavJs()}
 ${consentUi(lang)}`;
 }
 
@@ -1040,11 +1031,15 @@ function renderMoonPage(p, lang) {
   const isHome = p.slug === "moonlight-peaks";
   const headArt = isHome
     ? `<div class="moon-hero reveal"><h1>${esc(t.title)}</h1><p class="page-intro">${esc(t.intro || "")}</p></div>`
-    : `<div class="moon-head reveal"><span class="moon-eyebrow">${esc(moonTxt(lang).ledger)}</span><h1>${esc(t.title)}</h1><p class="page-intro">${esc(t.intro || "")}</p></div>`;
-  const body = `<main class="moon-main"><div class="moon-ruled">
-    <article class="moon-article">${headArt}${sections}</article>
-  </div></main>`;
-  return head(t.metaTitle || t.title, t.metaDescription, ld, p.slug, lang) + moonHeader(lang, p.slug) + body + moonFooter(lang) + MOON_JS + "</body></html>";
+    : `<div class="moon-page-head reveal"><span class="moon-eyebrow">${esc(moonTxt(lang).ledger)}</span><h1>${esc(t.title)}</h1><p class="page-intro">${esc(t.intro || "")}</p></div>`;
+  const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger" aria-controls="sovereign-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
+<div class="tome-nav-overlay"></div>
+<main class="moon-main"><div class="moon-ruled">
+  <article class="moon-article">${headArt}${sections}</article>
+</div></main>`;
+  // 主题统一（用户反馈 1/2）：改用共享 header()（tome-nav：game-switch + tome-chapter + 全局 tome-lang），
+  // 不再渲染 moonHeader / moon-lang 独立语言切换器。
+  return head(t.metaTitle || t.title, t.metaDescription, ld, p.slug, lang) + header(lang, p.slug) + body + moonFooter(lang) + MOON_JS + "</div></body></html>";
 }
 
 /* 月光交互工具 UI 文案 —— 6 语。
@@ -1374,16 +1369,7 @@ const MOON_JS = `<script>
     w.insertBefore(panel, w.firstChild);
     refresh();
   });
-  // 移动端导航
-  var tog = document.querySelector('.moon-nav-toggle');
-  var nav = document.querySelector('.moon-nav');
-  if (tog && nav) {
-    function setMoonNavigation(open, returnFocus){nav.classList.toggle('open',open);tog.setAttribute('aria-expanded',open?'true':'false');if(!open&&returnFocus)tog.focus();}
-    tog.addEventListener('click', function(){
-      setMoonNavigation(!nav.classList.contains('open'), false);
-    });
-    document.addEventListener('keydown', function(e){if(e.key==='Escape'&&nav.classList.contains('open'))setMoonNavigation(false,true);});
-  }
+  // 移动端导航：月光页已并入共享 tome-nav（tomeNavJs 统一处理抽屉/Escape/焦点归还）
   // reveal 动画
   var obs = new IntersectionObserver(function(es){
     es.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); obs.unobserve(en.target); } });

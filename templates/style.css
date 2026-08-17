@@ -568,17 +568,23 @@ img { max-width: 100%; height: auto; }
 .latest-item a:hover { color: var(--terra); text-decoration: underline; }
 .latest-date { margin-left: auto; flex: 0 0 auto; color: var(--muted); font-size: 12.5px; white-space: nowrap; }
 
-/* 游戏切换器（tome-nav 顶部，品牌下方 —— spec §A.3 / B.2.3） */
+/* 游戏切换器（tome-nav 顶部，品牌下方 —— spec §A.3 / B.2.3）
+   横向单行 + overflow-x 滚动（用户反馈 3）：游戏多时不会纵向堆叠顶掉 tome-chapter；
+   tome-nav 保持 sticky，游戏切换区固定高度单行。 */
 .game-switch {
-  display: flex; flex-direction: column; gap: 2px;
-  padding: 4px 0 12px; margin-bottom: 6px; border-bottom: 1px solid var(--line);
+  display: flex; flex-direction: row; align-items: stretch; gap: 4px;
+  padding: 4px 0 10px; margin-bottom: 6px; border-bottom: 1px solid var(--line);
+  overflow-x: auto; overflow-y: hidden;
+  scrollbar-width: thin; scrollbar-color: rgba(184, 134, 11, 0.4) transparent;
+  flex: 0 0 auto;
 }
 .game-switch-item {
-  display: flex; align-items: center; gap: 10px; min-height: var(--control-min);
-  padding: 10px 12px; border-radius: 8px; color: var(--ink-soft); font-size: 14px; font-weight: 600;
+  display: inline-flex; align-items: center; gap: 8px; flex: 0 0 auto;
+  white-space: nowrap; min-height: 44px;
+  padding: 8px 12px; border-radius: 8px; color: var(--ink-soft); font-size: 13.5px; font-weight: 600;
   transition: background 0.15s var(--ease), color 0.15s var(--ease);
 }
-.game-switch-item svg { width: 16px; height: 16px; flex: 0 0 auto; }
+.game-switch-item svg { width: 15px; height: 15px; flex: 0 0 auto; }
 .game-switch-item:hover { background: rgba(184, 134, 11, 0.09); text-decoration: none; }
 .game-switch-item.active, .game-switch-item[aria-current="page"] { background: var(--deep); color: #EDE3CE; }
 
@@ -592,6 +598,86 @@ img { max-width: 100%; height: auto; }
   .hub-hero { padding: 28px 22px; }
   .latest-item { flex-wrap: wrap; gap: 8px 12px; }
   .latest-date { margin-left: 0; }
+}
+
+/* ============ 月光小镇内容（并入共享纸金主题 —— 用户反馈 1/4）
+   月光内容块（moon-article / moon-notes / moon-faq / moon-table 等）在共享主题下
+   直接可用：样式映射到纸/金 token，视觉与君王之塔/沙金工业一致，不再跳深色皮肤。 ============ */
+.moon-main { max-width: 1000px; margin: 0 auto; padding: 34px 38px 60px; min-width: 0; flex: 1 0 auto; }
+.moon-ruled {
+  background:
+    repeating-linear-gradient(180deg, rgba(184,134,11,.05) 0 1px, transparent 1px 30px) 0 0/100% 30px,
+    linear-gradient(180deg, var(--card), #F8F2E2);
+  border-left: 3px solid var(--gold); padding-left: 24px; border-radius: 0 14px 14px 0;
+}
+.moon-article { max-width: 860px; }
+.moon-hero { padding: 26px 0 10px; }
+.moon-page-head { padding: 26px 0 10px; }
+.moon-eyebrow { font: 700 .74rem/1 "Inter", sans-serif; letter-spacing: .26em; text-transform: uppercase; color: var(--terra); }
+.moon-hero h1, .moon-page-head h1 { font-family: "Cormorant Garamond", serif; font-weight: 800; font-size: clamp(1.6rem, 4.5vw, 2.6rem); line-height: 1.15; margin: .4rem 0 .8rem; color: var(--deep); }
+.moon-section { margin: 32px 0; padding-left: 8px; }
+
+/* 账页表（纸金版，映射 ledger-table） */
+.moon-table-wrap { overflow-x: auto; max-width: 100%; border: 1px solid var(--line); border-radius: 12px; background: var(--card); box-shadow: var(--shadow-md); }
+.moon-table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+.moon-table thead th {
+  background: linear-gradient(135deg, rgba(184,134,11,.12), rgba(154,52,18,.08));
+  color: var(--deep); font-family: "Cormorant Garamond", serif; font-size: 19px; font-weight: 700;
+  text-align: left; padding: 13px 15px; border-bottom: 2px solid var(--gold); white-space: nowrap;
+}
+.moon-table tbody td { padding: 11px 15px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink-soft); }
+.moon-table tbody tr:nth-child(even) { background: rgba(184,134,11,.035); }
+.moon-table tbody tr:hover { background: rgba(184,134,11,.07); }
+.moon-table tbody tr:last-child td { border-bottom: 0; }
+
+/* 步骤：月相账条（纸金版，映射 work-ticket） */
+.moon-entries { list-style: none; display: grid; gap: 13px; }
+.moon-entry {
+  display: flex; gap: 16px; align-items: flex-start;
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: 4px 12px 12px 4px; padding: 16px 20px 16px 22px;
+  box-shadow: var(--shadow-sm); position: relative;
+}
+.moon-entry::before { content: ""; position: absolute; left: 11px; top: 14px; bottom: 14px; width: 3px; background: var(--terra); border-radius: 2px; }
+.moon-entry-no { flex: 0 0 auto; width: 30px; height: 30px; color: var(--gold); margin-top: 2px; }
+.moon-entry-no svg { width: 30px; height: 30px; }
+.moon-entry-body h3 { font-family: "Cormorant Garamond", serif; font-size: 23px; font-weight: 700; margin-bottom: 2px; color: var(--deep); }
+.moon-entry-body p { color: var(--ink-soft); font-size: 15px; }
+
+/* 列表：星标笔记（纸金版） */
+.moon-notes { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.moon-notes li { position: relative; padding-left: 22px; color: var(--ink-soft); font-size: 15px; }
+.moon-notes li::before { content: ""; position: absolute; left: 2px; top: .55em; width: 8px; height: 8px; background: var(--gold); border-radius: 50%; box-shadow: 0 0 6px rgba(184,134,11,.5); }
+
+/* FAQ（纸金版，映射 faq-item） */
+.moon-faq-list { display: flex; flex-direction: column; gap: 11px; }
+.moon-faq { background: var(--card); border: 1px solid var(--line); border-radius: 4px 12px 12px 4px; overflow: hidden; box-shadow: var(--shadow-sm); }
+.moon-faq summary {
+  cursor: pointer; padding: 15px 18px 15px 28px; font-weight: 600; font-size: 15.5px;
+  list-style: none; position: relative; color: var(--ink); font-family: "Inter", sans-serif;
+}
+.moon-faq summary::before { content: ""; position: absolute; left: 11px; top: 18px; width: 8px; height: 8px; border: 1.5px solid var(--gold); border-radius: 50%; }
+.moon-faq summary::after {
+  content: "+"; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);
+  font-size: 22px; color: var(--terra); transition: transform 0.2s var(--ease); font-weight: 300;
+}
+.moon-faq[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+.moon-faq[open] summary { color: var(--terra); }
+.moon-faq p { padding: 0 18px 16px 28px; color: var(--ink-soft); font-size: 15px; }
+
+/* 批注条（纸金版，映射 marginalia） */
+.moon-abstract {
+  border-left: 3px solid var(--gold); background: rgba(184,134,11,.07);
+  padding: 14px 18px; border-radius: 0 10px 10px 0; color: var(--ink-soft); font-size: 15px;
+}
+
+/* 月相徽记（品牌 seal 变体 / 章节图标） */
+.brand-seal .moon-phase, .brand-seal svg { width: 26px; height: 26px; }
+.nav-ic .moon-phase { width: 16px; height: 16px; color: var(--gold); }
+
+@media (max-width: 960px) {
+  .moon-main { padding: 20px 14px 40px; }
+  .moon-ruled { border-left: none; padding-left: 0; }
 }
 
 /* reduced-motion 扩展（spec §C.1）：去位移留色彩 */
