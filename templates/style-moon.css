@@ -35,8 +35,7 @@ svg{display:inline-block;vertical-align:middle}
 .consent-actions{display:flex;flex-wrap:wrap;gap:8px}.consent-actions button{min-height:44px;padding:9px 13px;border:1px solid var(--candle);border-radius:9px;background:var(--panel-2);color:var(--moon);font:700 14px/1.2 var(--font-body);cursor:pointer}.consent-actions [data-consent-accept]{background:var(--candle);color:var(--night-deep)}.consent-actions [data-consent-reject],.consent-actions [data-consent-withdraw]{background:transparent}
 
 /* ---------- 顶部：月光品牌 + 月相导航（桌面默认折叠，对齐竞品紧凑导航） ---------- */
-.moon-head{position:sticky;top:0;z-index:50;background:rgba(15,10,34,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.moon-head{display:flex;align-items:center;gap:.5rem;padding:0 18px;min-height:64px;position:relative}
+.moon-head{position:sticky;top:0;z-index:50;background:rgba(15,10,34,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.5rem;padding:0 18px;min-height:64px}
 .moon-brand{display:flex;align-items:center;gap:.7rem;padding:10px 0;color:var(--moon)}
 .moon-brand:hover{color:var(--candle-soft)}
 .brand-moon{width:34px;height:34px;color:var(--candle)}
