@@ -87,8 +87,8 @@ img { max-width: 100%; height: auto; }
 
 /* ============ 布局：左卷宗栏 + 右内容 ============ */
 .app-shell { display: grid; grid-template-columns: 256px 1fr; min-height: 100vh; }
-.app-main { min-width: 0; }
-.page-main { min-width: 0; }
+.app-main { min-width: 0; display: flex; flex-direction: column; min-height: 100vh; }
+.page-main { min-width: 0; flex: 1 0 auto; }
 
 /* ---------- 左卷宗栏（浅纸底 + 金线，非深棕） ---------- */
 .tome-nav {
@@ -228,6 +228,7 @@ img { max-width: 100%; height: auto; }
 .page-shell > * { min-width: 0; }
 .page-folio {
   position: sticky; top: 26px;
+  min-height: calc(100vh - 88px);
   background: linear-gradient(180deg, #FBF6E8, var(--card));
   border: 1px solid var(--line); border-radius: 12px; padding: 24px 20px;
   box-shadow: var(--shadow-md);
@@ -246,6 +247,7 @@ img { max-width: 100%; height: auto; }
 
 .page-leaf {
   min-width: 0;
+  min-height: calc(100vh - 88px);
   background: linear-gradient(180deg, var(--card), #F8F2E2);
   border: 1px solid var(--line); border-radius: 4px 18px 18px 4px;
   padding: 38px 40px 46px; box-shadow: var(--shadow-md); position: relative;
