@@ -311,9 +311,12 @@ function renderAmazonAffiliate(lang) {
   </div>`;
 }
 
-function footer(lang) {
+function footer(lang, slug) {
   const n = navI18n(lang);
   const key = DATA.pages.slice(0, 8).map(p => `<a href="${linkOf(p.slug, lang)}">${esc(pageOf(p, lang).title)}</a>`).join("");
+  const steamHref = (slug || "").startsWith("sandustry")
+    ? "https://store.steampowered.com/app/2764460/Sandustry/"
+    : DATA.game.steamUrl;
   return `<footer class="colophon">
   <div>
     <h3>${esc(siteI18n(lang).name)}</h3>
@@ -325,7 +328,7 @@ function footer(lang) {
       <a href="${linkOf("about", lang)}">${esc(n.about)}</a>
       <a href="${linkOf("privacy", lang)}">${esc(n.privacy)}</a>
       <a href="${linkOf("contact", lang)}">${esc(n.contact)}</a>
-      <a href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">Steam ↗</a>
+      <a href="${esc(steamHref)}" target="_blank" rel="noopener">Steam ↗</a>
       ${key}
     </div>
     <p class="colophon-legal">© ${COPYRIGHT_YEAR} ${esc(DATA.site.domain)} · ${lang === "zh-CN" ? "非官方粉丝站" : "Unofficial fan site"}</p>
@@ -380,7 +383,10 @@ function renderSection(s, lang) {
       return `<section class="ledger-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><ol class="work-tickets">${items}</ol></section>`;
     }
     case "list": {
-      const items = (s.items || []).map(it => `<li>${esc(it)}</li>`).join("");
+      const items = (s.items || []).map(it =>
+        (it && typeof it === "object" && it.href)
+          ? `<li><a href="${esc(it.href)}">${esc(it.text)}</a></li>`
+          : `<li>${esc(it)}</li>`).join("");
       return `<section class="ledger-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><ul class="ledger-notes">${items}</ul></section>`;
     }
     case "table": {
@@ -474,7 +480,7 @@ function renderHome(lang) {
   </section>
 </main>`;
   const ld = [KIT.ld.article({ page: { ...t, slug: "index" }, lang, urlOf, siteName: siteI18n(lang).name, datePublished: TODAY, dateModified: KIT.LASTMOD_TOKEN })];
-  return head(t.metaTitle || t.title, t.metaDescription, ld, "index", lang) + header(lang, "index") + body + footer(lang);
+  return head(t.metaTitle || t.title, t.metaDescription, ld, "index", lang) + header(lang, "index") + body + footer(lang, "index");
 }
 /* ---------- 普通页 ---------- */
 function renderPage(p, lang) {
@@ -517,7 +523,7 @@ function renderPage(p, lang) {
     ${sections}
   </article>
   </div></main>`;
-  return head(t.metaTitle || t.title, t.metaDescription, ld, p.slug, lang) + header(lang, p.slug) + body + footer(lang);
+  return head(t.metaTitle || t.title, t.metaDescription, ld, p.slug, lang) + header(lang, p.slug) + body + footer(lang, p.slug);
 }
 /* ---------- 静态页（about/privacy/contact） ---------- */
 function renderStatic(slug, lang) {
@@ -569,7 +575,7 @@ function renderStatic(slug, lang) {
 <main class="page-main"><div class="page-shell"><article class="page-leaf"><div class="page-head"><h1>${esc(titleMap[slug])}</h1></div><p>${bodyMap[slug]}</p></article></div></main>`;
   const dhi = lang.startsWith("zh") || lang.startsWith("ja") || lang.startsWith("ko") ? 78 : 158;
   const desc = bodyMap[slug].length > dhi ? bodyMap[slug].slice(0, dhi - 1).trimEnd() + "…" : bodyMap[slug];
-  return head(titleMap[slug], desc, [], slug, lang) + header(lang, slug) + body + footer(lang);
+  return head(titleMap[slug], desc, [], slug, lang) + header(lang, slug) + body + footer(lang, slug);
 }
 /* ---------- 工具交互 JS（渐进增强） ---------- */
 const TOOL_JS = `<script>
@@ -692,7 +698,7 @@ function moonFooter(lang) {
   const t = moonTxt(lang);
   const n = navI18n(lang);
   const quick = MOON_GROUPS.quick.concat(MOON_GROUPS.data.slice(0, 3));
-  const links = quick.map(s => { const p = DATA.pages.find(x => x.slug === s); return p ? `<a href="${linkOf(s, lang)}">${esc(pageOf(p, lang).title)}</a>` : ""; }).join("");
+  const links = quick.map(s => { const p = DATA.pages.find(x => x.slug === s); return p ? `<a href="${linkOf(s, lang)}">${esc(pageOf(p, lang).title)}</a>` : ""; }).join("") + `<a href="${linkOf("sandustry", lang)}">${lang === "ko" ? "⛏️ 샌더스트리" : "⛏️ Sandustry"}</a>`;
   return `<footer class="moon-colophon">
   <div>
     <h3>${esc(t.ledger)}</h3>
@@ -740,7 +746,10 @@ function renderMoonSection(s, lang, slug) {
       return `<section class="moon-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><ol class="moon-entries">${items}</ol></section>`;
     }
     case "list": {
-      const items = (s.items || []).map(it => `<li>${esc(it)}</li>`).join("");
+      const items = (s.items || []).map(it =>
+        (it && typeof it === "object" && it.href)
+          ? `<li><a href="${esc(it.href)}">${esc(it.text)}</a></li>`
+          : `<li>${esc(it)}</li>`).join("");
       return `<section class="moon-section"${secId}><div class="section-head">${tag}<h2>${escTxt}</h2></div><ul class="moon-notes">${items}</ul></section>`;
     }
     case "cards": {

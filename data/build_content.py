@@ -797,6 +797,20 @@ for _sdp in build_sandustry_pages():
     else:
         d["pages"].append(_sdp)
 
+# --- Sandustry ja/fr/de/zh-CN 补充翻译（data/i18n_sandustry.json；须在 sandustry_pages 块之后）---
+_i18n_sandustry = _j2.loads((ROOT / "i18n_sandustry.json").read_text(encoding="utf8"))
+for _sp in d["pages"]:
+    if not _sp["slug"].startswith("sandustry"):
+        continue
+    _tr = _i18n_sandustry.get(_sp["slug"])
+    if not _tr:
+        continue
+    for _lang, _t in _tr.items():
+        _sp.setdefault("i18n", {})[_lang] = {
+            "title": _t.get("title"), "metaTitle": _t.get("metaTitle"), "metaDescription": _t.get("metaDescription"), "intro": _t.get("intro"),
+            "sections": _t.get("sections") or [],
+        }
+
 # --- Moonlight Peaks 表格行属性（供筛选器用；只挂 data-*，不改任何表格内容）---
 # 放在最后：要等所有页面与 i18n 注入都完成后再挂，否则后写入的 sections 会覆盖掉 rowAttrs
 from moon_row_attrs import apply_row_attrs

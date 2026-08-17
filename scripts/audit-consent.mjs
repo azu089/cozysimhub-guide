@@ -26,7 +26,7 @@ function inspect(html) {
   return failures;
 }
 
-assert.equal(htmlFiles.length, 517, "generated HTML inventory changed");
+assert.equal(htmlFiles.length, 529, "generated HTML inventory changed");
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, "utf8");
   assert.deepEqual(inspect(html), [], `consent contract failed in ${path.relative(publicDir, file)}`);
