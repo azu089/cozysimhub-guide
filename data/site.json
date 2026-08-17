@@ -1,6 +1,6 @@
 {
  "site": {
-  "name": "Sovereign Tower Guide Hub",
+  "name": "CozySimHub",
   "domain": "cozysimhub.com",
   "tagline": "中文全量攻略 · 24 骑士档案 · 菜谱 · 结局 · 交互工具",
   "description": "君王之塔 Sovereign Tower 中文攻略 Hub：24 位骑士全量档案、隐藏骑士招募、恋爱隐藏条件、全结局、菜谱对照、任务机制与好感计算器。",
@@ -27,7 +27,26 @@
   "contentUpdatedAt": "2026-08-13",
   "adsterra": "<script async=\"async\" data-cfasync=\"false\" src=\"https://pl30883184.effectivecpmnetwork.com/3428e02aa4b3429848158ecb988e5aa7/invoke.js\"></script> <div id=\"container-3428e02aa4b3429848158ecb988e5aa7\"></div>",
   "affiliates": {},
-  "i18n": {}
+  "i18n": {
+   "en": {
+    "name": "CozySimHub"
+   },
+   "zh-CN": {
+    "name": "CozySimHub"
+   },
+   "ja": {
+    "name": "CozySimHub"
+   },
+   "ko": {
+    "name": "CozySimHub"
+   },
+   "fr": {
+    "name": "CozySimHub"
+   },
+   "de": {
+    "name": "CozySimHub"
+   }
+  }
  },
  "game": {
   "name": "Sovereign Tower",
@@ -7362,9 +7381,9 @@
   },
   {
    "slug": "index",
-   "title": "Cozy & Sim Game Guide Hub",
-   "metaTitle": "Cozy & Sim Game Guides — Filterable Data Tables",
-   "metaDescription": "Data-first guides for cozy and sim games: Sovereign Tower (24 knights, every ending) and Moonlight Peaks (59 achievements, fish and gift tables). 6 languages.",
+   "title": "Cozy & Sim Game Guides: Sovereign Tower, Moonlight Peaks",
+   "metaTitle": "Cozy & Sim Game Guides: Sovereign Tower, Moonlight Peaks",
+   "metaDescription": "Data-first guides: Sovereign Tower knights & endings, Moonlight Peaks achievements & gifts, Sandustry materials. Filterable tables, 6 languages.",
    "intro": "Data-first guides for cozy and simulation games. Every guide here is built around complete tables you can filter — not one-line answers. Two games covered so far: Sovereign Tower (Round Table management RPG) and Moonlight Peaks (cozy vampire life sim), each in six languages.",
    "sections": [
     {
@@ -7404,9 +7423,9 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "cozy / 模拟经营游戏数据攻略站",
-     "metaTitle": "君王之塔 / Moonlight Peaks 数据攻略站",
-     "metaDescription": "cozy 与模拟经营游戏的数据化攻略：君王之塔 24 骑士与全结局、Moonlight Peaks 59 成就与鱼类/礼物全表，全部可筛选，6 种语言。",
+     "title": "Cozy 与模拟经营游戏攻略 — 君王之塔 / 月光小镇",
+     "metaTitle": "Cozy 与模拟经营游戏攻略 — 君王之塔 / 月光小镇",
+     "metaDescription": "数据化攻略：君王之塔 24 骑士与全结局、月光小镇 59 成就与礼物表、沙金工业材料与入门。可筛选表格，6 种语言。",
      "intro": "专做 cozy 与模拟经营游戏的数据化攻略：每一页都围绕**可筛选的完整表格**做，而不是一句话答案。目前收录两款游戏——《君王之塔》（圆桌管理 RPG）与 Moonlight Peaks（吸血鬼田园模拟），各六种语言。",
      "sections": [
       {
@@ -7446,9 +7465,9 @@
      ]
     },
     "ja": {
-     "title": "cozy・シミュレーション系 データ攻略",
-     "metaTitle": "ソブリンタワー / Moonlight Peaks データ攻略",
-     "metaDescription": "cozy・シミュ系の数値攻略：ソブリンタワー全24騎士と全エンディング、Moonlight Peaks の実績59個と魚・プレゼント全表。絞り込み対応。",
+     "title": "コージー・シムゲーム攻略 — ソブリンタワー / ムーンライトピークス",
+     "metaTitle": "コージー・シムゲーム攻略 — ソブリンタワー / ムーンライトピークス",
+     "metaDescription": "データ攻略：24 騎士・全エンディング、59 実績・贈り物表、素材・入門。絞り込み表、6 言語。",
      "intro": "cozy・シミュレーション系ゲームの「数値で引ける」攻略サイトです。どのページも一行の答えではなく、絞り込みできる完全な表を軸に作っています。現在の収録は2作品——ソブリンタワー（円卓マネジメントRPG）と Moonlight Peaks（吸血鬼のスローライフシム）、それぞれ6言語。",
      "sections": [
       {
@@ -7488,9 +7507,9 @@
      ]
     },
     "ko": {
-     "title": "코지·시뮬 게임 데이터 공략",
-     "metaTitle": "소버린 타워 / Moonlight Peaks 데이터 공략",
-     "metaDescription": "코지·시뮬 게임 데이터 공략: 소버린 타워 기사 24명·전체 엔딩, Moonlight Peaks 도전과제 59개·물고기·선물 표. 필터 지원",
+     "title": "코지·시뮬 게임 공략 — 소버린 타워 / 문라이트 피크스",
+     "metaTitle": "코지·시뮬 게임 공략 — 소버린 타워 / 문라이트 피크스",
+     "metaDescription": "데이터 공략: 기사 24명·전체 엔딩, 도전과제 59개·선물 표, 재료·입문. 필터 표, 6개 언어.",
      "intro": "코지·시뮬레이션 게임을 데이터로 찾아보는 공략 사이트입니다. 모든 페이지가 한 줄 답변이 아니라 필터로 걸러지는 완전한 표를 중심으로 되어 있습니다. 현재 두 작품——소버린 타워(원탁 경영 RPG)와 Moonlight Peaks(뱀파이어 힐링 시뮬), 각각 6개 언어.",
      "sections": [
       {
@@ -7530,9 +7549,9 @@
      ]
     },
     "fr": {
-     "title": "Guides cozy & simulation",
-     "metaTitle": "Guides cozy & simulation — tableaux filtrables",
-     "metaDescription": "Guides orientés données pour jeux cozy et de simulation : Sovereign Tower (24 chevaliers, toutes les fins) et Moonlight Peaks (59 succès, poissons, cadeaux).",
+     "title": "Guides cozy & sim: Sovereign Tower, Moonlight Peaks",
+     "metaTitle": "Guides cozy & sim: Sovereign Tower, Moonlight Peaks",
+     "metaDescription": "Guides orientés données : chevaliers et fins de Sovereign Tower, succès et cadeaux de Moonlight Peaks, matériaux de Sandustry. Tableaux filtrables, 6 langues.",
      "intro": "Des guides orientés données pour les jeux cozy et de simulation. Chaque page repose sur des tableaux complets que vous pouvez filtrer, pas sur une réponse en une ligne. Deux jeux couverts : Sovereign Tower (RPG de gestion de Table Ronde) et Moonlight Peaks (simulation de vie vampirique), chacun en six langues.",
      "sections": [
       {
@@ -7572,9 +7591,9 @@
      ]
     },
     "de": {
-     "title": "Cozy- & Simulations-Guides",
-     "metaTitle": "Cozy- & Simulations-Guides — filterbare Datentabellen",
-     "metaDescription": "Datenbasierte Guides für Cozy- und Simulationsspiele: Sovereign Tower (24 Ritter, alle Enden) und Moonlight Peaks (59 Erfolge, Fisch- und Geschenktabellen).",
+     "title": "Cozy- & Sim-Guides — Sovereign Tower, Moonlight Peaks",
+     "metaTitle": "Cozy- & Sim-Guides — Sovereign Tower, Moonlight Peaks",
+     "metaDescription": "Datenbasierte Guides mit filterbaren Tabellen, geprüften Quellen und interaktiven Tools: Sovereign Tower, Moonlight Peaks, Sandustry.",
      "intro": "Datenbasierte Guides für Cozy- und Simulationsspiele. Jede Seite baut auf vollständigen, filterbaren Tabellen auf statt auf einer Ein-Satz-Antwort. Bisher zwei Spiele: Sovereign Tower (Tafelrunden-Management-RPG) und Moonlight Peaks (gemütliche Vampir-Lebenssimulation), jeweils in sechs Sprachen.",
      "sections": [
       {

@@ -1,0 +1,113 @@
+{
+  "_schema": "CozySimHub category hub game registry — DESIGN-SPEC ui-cozy-category-home-20260817-01 §F.3",
+  "_notes": [
+    "Add one object per game: cards, game-switch and JSON-LD ItemList are all data-driven (zero template change).",
+    "taglineI18n = first sentence of the game hub page intro (site.json L0 text, not new copy).",
+    "badges: spec §A.2 suggested values; where site.json carries a more precise figure the value was aligned and the source recorded in each game's note.",
+    "SD badge '97-98% Positive' has no site.json backing -> kept per spec value, marked pending G4 evidence.",
+    "videoGame fields (JSON-LD) are L0 facts sourced from site.json pages; url/image are derived at render time."
+  ],
+  "games": [
+    {
+      "id": "sovereign-tower",
+      "name": "Sovereign Tower",
+      "nameI18n": { "en": "Sovereign Tower", "zh-CN": "君王之塔", "ja": "ソブリンタワー", "ko": "소버린 타워", "fr": "Sovereign Tower", "de": "Sovereign Tower" },
+      "hubSlug": "sovereign-tower/knights",
+      "accent": "st",
+      "icon": "crown",
+      "cover": { "src": "/images/knights.jpg", "alt": "Sovereign Tower", "width": 900, "height": 506 },
+      "taglineI18n": {
+        "en": "All 24 knights in Sovereign Tower are recruitable.",
+        "zh-CN": "君王之塔的 24 位骑士全部可以招募。",
+        "ja": "ソブリンタワーの24人の騎士は全員雇用可能。",
+        "ko": "소버린 타워의 24명 기사는 전원 고용 가능.",
+        "fr": "Les 24 chevaliers de Sovereign Tower sont tous recrutables.",
+        "de": "Alle 24 Ritter in Sovereign Tower sind rekrutierbar."
+      },
+      "badges": [
+        { "value": "24", "labelI18n": { "en": "Knights", "zh-CN": "骑士", "ja": "騎士", "ko": "기사", "fr": "Chevaliers", "de": "Ritter" } },
+        { "value": "75", "labelI18n": { "en": "Achievements", "zh-CN": "成就", "ja": "実績", "ko": "도전과제", "fr": "Succès", "de": "Erfolge" } },
+        { "value": "86", "labelI18n": { "en": "Metacritic", "zh-CN": "Metacritic", "ja": "Metacritic", "ko": "Metacritic", "fr": "Metacritic", "de": "Metacritic" } }
+      ],
+      "coreLinks": ["sovereign-tower/knights", "sovereign-tower/secret-knights", "sovereign-tower/endings", "sovereign-tower/romance", "sovereign-tower/quest-mechanics"],
+      "languages": ["en", "zh-CN", "ja", "ko", "fr", "de"],
+      "latest": [
+        { "slug": "sovereign-tower/endings", "date": "2026-08-13" },
+        { "slug": "sovereign-tower/secret-knights", "date": "2026-08-13" }
+      ],
+      "videoGame": {
+        "genre": "Round Table Management RPG",
+        "developer": "WILD WITS GAMES",
+        "publisher": "Curve Games",
+        "datePublished": "2026-08-06",
+        "image": "/images/knights.jpg"
+      },
+      "note": "Badge values from site.json: 24 knights (sovereign-tower/knights intro), 75 achievements (sovereign-tower/achievements intro), Metacritic 86 (sovereign-tower/review/overview metaTitle). videoGame fields from data/site.json game object (developer/publisher/releaseDate) + review overview genre."
+    },
+    {
+      "id": "moonlight-peaks",
+      "name": "Moonlight Peaks",
+      "nameI18n": { "en": "Moonlight Peaks", "zh-CN": "月光小镇", "ja": "ムーンライトピークス", "ko": "문라이트 피크스", "fr": "Moonlight Peaks", "de": "Moonlight Peaks" },
+      "hubSlug": "moonlight-peaks",
+      "accent": "mp",
+      "icon": "moon",
+      "taglineI18n": {
+        "en": "Moonlight Peaks is a cozy gothic life-sim by Little Chicken, published by XSEED Games and Marvelous Europe.",
+        "zh-CN": "《月光小镇》Moonlight Peaks 是 Little Chicken 开发、XSEED Games 与 Marvelous Europe 发行的哥特田园生活模拟。",
+        "ja": "『Moonlight Peaks』は Little Chicken 開発、XSEED Games / Marvelous Europe 発売のゴシック系スローライフ。",
+        "ko": "『문라이트 피크스』는 Little Chicken이 개발하고 XSEED Games / Marvelous Europe이 배급하는 고딕 감성 라이프 시뮬.",
+        "fr": "Moonlight Peaks est un life-sim gothique cosy de Little Chicken, édité par XSEED Games et Marvelous Europe.",
+        "de": "Moonlight Peaks ist ein gemütliches Gothic-Life-Sim von Little Chicken, veröffentlicht von XSEED Games und Marvelous Europe."
+      },
+      "badges": [
+        { "value": "200K+", "labelI18n": { "en": "Sales", "zh-CN": "销量", "ja": "売上", "ko": "판매", "fr": "Ventes", "de": "Verkäufe" } },
+        { "value": "59", "labelI18n": { "en": "Achievements", "zh-CN": "成就", "ja": "実績", "ko": "도전과제", "fr": "Succès", "de": "Erfolge" } },
+        { "value": "23", "labelI18n": { "en": "Romanceable", "zh-CN": "可恋爱角色", "ja": "恋愛対象", "ko": "연애 가능", "fr": "Romances", "de": "Liebesoptionen" } }
+      ],
+      "coreLinks": ["moonlight-peaks/achievements", "moonlight-peaks/gifts", "moonlight-peaks/romance", "moonlight-peaks/fishing"],
+      "languages": ["en", "zh-CN", "ja", "ko", "fr", "de"],
+      "latest": [
+        { "slug": "moonlight-peaks/achievements", "date": "2026-08-13" },
+        { "slug": "moonlight-peaks/gifts", "date": "2026-08-13" }
+      ],
+      "videoGame": {
+        "genre": "Cozy gothic life-sim",
+        "developer": "Little Chicken",
+        "publisher": "XSEED Games / Marvelous Europe",
+        "datePublished": "2026-07-06"
+      },
+      "note": "Badge values from site.json: 200K+ sales (moonlight-peaks hub FAQ 'sales passed 200,000 by July 26'), 59 achievements (moonlight-peaks/achievements intro), 23 romanceable (moonlight-peaks/romance intro). videoGame developer/publisher/date from moonlight-peaks hub intro + launch FAQ."
+    },
+    {
+      "id": "sandustry",
+      "name": "Sandustry",
+      "nameI18n": { "en": "Sandustry", "zh-CN": "沙金工业", "ja": "Sandustry", "ko": "샌더스트리", "fr": "Sandustry", "de": "Sandustry" },
+      "hubSlug": "sandustry",
+      "accent": "sd",
+      "icon": "gear",
+      "taglineI18n": {
+        "en": "Sandustry is an automation, exploration and base-building strategy game by Lantto Games, published by Hooded Horse.",
+        "zh-CN": "《沙金工业》是 Lantto Games 开发、Hooded Horse 发行的自动化·探索·基地建设策略游戏。",
+        "ko": "샌더스트리는 Lantto Games가 개발하고 Hooded Horse가 퍼블리싱한 자동화·탐험·기지 건설 전략 게임입니다."
+      },
+      "badges": [
+        { "value": "97-98%", "labelI18n": { "en": "Positive", "zh-CN": "好评", "ko": "긍정" } },
+        { "value": "EA", "labelI18n": { "en": "Early Access", "zh-CN": "抢先体验", "ko": "얼리 액세스" } },
+        { "value": "16", "labelI18n": { "en": "Achievements", "zh-CN": "成就", "ko": "도전과제" } }
+      ],
+      "coreLinks": ["sandustry/getting-started", "sandustry/materials", "sandustry/steam-deck"],
+      "languages": ["en", "ko", "zh-CN"],
+      "latest": [
+        { "slug": "sandustry/getting-started", "date": "2026-08-13" },
+        { "slug": "sandustry/materials", "date": "2026-08-13" }
+      ],
+      "videoGame": {
+        "genre": "Automation, exploration and base-building strategy",
+        "developer": "Lantto Games",
+        "publisher": "Hooded Horse",
+        "datePublished": "2026-08-13"
+      },
+      "note": "Badge values: EA (sandustry hub intro 'EA since August 13, 2026') and 16 achievements (sandustry/achievements title) from site.json; '97-98% Positive' has NO site.json source -> spec §A.2 suggested value, pending G4 evidence confirmation. videoGame developer/publisher/EA date from sandustry hub intro. Languages whitelist en/ko/zh-CN unchanged."
+    }
+  ]
+}

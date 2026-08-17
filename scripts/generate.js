@@ -13,6 +13,14 @@ const KIT = require("./lib/site-kit");
 
 const ROOT = path.join(__dirname, "..");
 const DATA = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "site.json"), "utf8"));
+// 品类游戏注册表（CozySimHub hub）：卡片墙 / 游戏切换器 / JSON-LD ItemList 全部数据驱动
+const GAMES = (() => {
+  const p = path.join(ROOT, "data", "games.json");
+  if (!fs.existsSync(p)) throw new Error("data/games.json missing — CozySimHub hub requires the game registry");
+  const raw = JSON.parse(fs.readFileSync(p, "utf8"));
+  if (!Array.isArray(raw.games) || !raw.games.length) throw new Error("data/games.json must contain a non-empty games array");
+  return raw.games;
+})();
 const OUT = path.join(ROOT, "public");
 const esc = KIT.esc;
 const ADSENSE_FIXTURE_ENABLED = process.env.NODE_ENV === "test" && process.env.COZY_ADSENSE_FIXTURE === "enabled";
@@ -96,6 +104,13 @@ const ICON = {
   "fist": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 12V8a2 2 0 0 1 4 0v1m0-1V6a2 2 0 0 1 4 0v2m0-1V7a2 2 0 0 1 4 0v6a5 5 0 0 1-5 5h-1a5 5 0 0 1-4-2l-2-2a2 2 0 0 1 0-2z"/></svg>',
 };
 
+/* 游戏徽记（品类站新增，禁 emoji —— spec §A.4）：月相 / 齿轮 */
+const GAME_ICON = {
+  "crown": ICON.crown,
+  "moon": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.2A8.6 8.6 0 0 1 9.8 4 8.6 8.6 0 1 0 20 14.2z"/></svg>',
+  "gear": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.1"/><path d="M12 2.6v3M12 18.4v3M2.6 12h3M18.4 12h3M5.4 5.4l2.1 2.1M16.5 16.5l2.1 2.1M18.6 5.4l-2.1 2.1M7.5 16.5l-2.1 2.1"/></svg>',
+};
+
 /* ---------- 语言/站点文案 ---------- */
 const NAV_I18N = {
   "en":    { home: "Home", guides: "Guides", ledgers: "The Ledger", tools: "Tools", search: "Search guides…", searchLabel: "Search guides", langLabel: "Language",
@@ -124,6 +139,137 @@ const NAV_I18N = {
              footerSource: "Informationen geprüft gegen den offiziellen Steam-Store, Fan-Wikis und Community-Berichte.", updated: "Aktualisiert", amazonTitle: "Gaming-Ausrüstung", amazonNote: "Als Amazon-Partner verdienen wir an qualifizierten Käufen. Preise und Verfügbarkeit können sich ändern.", amazon1: "Gaming-Tastatur", amazon2: "Gaming-Maus", amazon3: "Headset", amazon4: "Controller", amazon5: "Monitor" },
 };
 const navI18n = l => NAV_I18N[l] || NAV_I18N.en;
+
+/* ---------- 品类文案（CozySimHub hub，6 语 —— spec §E.2） ---------- */
+const CATEGORY_I18N = {
+  "en": {
+    hubEyebrow: "CozySimHub · Cozy & Sim",
+    hubTitle: "Cozy & Sim Game Guides",
+    hubSub: "Data-first guides with filterable tables, verified sources and interactive tools — for cozy and simulation games.",
+    ctaBrowse: "Browse all guides",
+    ctaLatest: "What's new",
+    secGames: "Featured games",
+    secValue: "Why CozySimHub",
+    v1Title: "Data-first tables",
+    v1Text: "Every guide is a complete, filterable table — no one-line answers.",
+    v2Title: "Verified sources",
+    v2Text: "Facts traced to official store pages, wiki data and community reports.",
+    v3Title: "Interactive tools",
+    v3Text: "Trackers, matchers and calculators built on the same data.",
+    secLatest: "Latest guides",
+    allGuides: "All guides →",
+    switchLabel: "Games",
+    updated: "Updated",
+    footerNote: "Unofficial fan site — games and assets belong to their respective owners.",
+    brandSub: "Cozy & Sim Guide Hub"
+  },
+  "zh-CN": {
+    hubEyebrow: "CozySimHub · Cozy 与模拟经营",
+    hubTitle: "Cozy 与模拟经营游戏攻略",
+    hubSub: "以可筛选表格、可核来源与交互工具为核心的数据化攻略，专注 cozy 与模拟经营游戏。",
+    ctaBrowse: "浏览全部攻略",
+    ctaLatest: "最新内容",
+    secGames: "收录游戏",
+    secValue: "为什么是 CozySimHub",
+    v1Title: "数据化表格",
+    v1Text: "每篇攻略都是可筛选的完整表格，拒绝一句话答案。",
+    v2Title: "来源可核",
+    v2Text: "事实溯源到官方商店页、wiki 数据与社区报告。",
+    v3Title: "交互工具",
+    v3Text: "同一数据上的追踪器、匹配器与计算器。",
+    secLatest: "最新攻略",
+    allGuides: "全部攻略 →",
+    switchLabel: "游戏",
+    updated: "更新于",
+    footerNote: "非官方粉丝站——游戏及相关资产归各权利方所有。",
+    brandSub: "Cozy 与模拟经营攻略中心"
+  },
+  "ja": {
+    hubEyebrow: "CozySimHub · コージー・シム",
+    hubTitle: "コージー・シムゲーム攻略",
+    hubSub: "絞り込みできる表・検証済みソース・対話ツールを軸にしたデータ攻略サイト。",
+    ctaBrowse: "全攻略を見る",
+    ctaLatest: "最新情報",
+    secGames: "収録ゲーム",
+    secValue: "CozySimHub の特徴",
+    v1Title: "データ第一",
+    v1Text: "すべての攻略は絞り込みできる完全な表。",
+    v2Title: "検証済みソース",
+    v2Text: "公式ストア・wiki・コミュニティ報告に基づく。",
+    v3Title: "対話ツール",
+    v3Text: "同じデータ上のトラッカー・マッチャー・計算機。",
+    secLatest: "最新攻略",
+    allGuides: "全攻略 →",
+    switchLabel: "ゲーム",
+    updated: "更新",
+    footerNote: "非公式ファンサイト。ゲームとアセットは各権利者に帰属します。",
+    brandSub: "コージー・シム攻略ハブ"
+  },
+  "ko": {
+    hubEyebrow: "CozySimHub · 코지·시뮬",
+    hubTitle: "코지·시뮬 게임 공략",
+    hubSub: "필터되는 표·검증된 출처·대화형 도구 중심의 데이터 공략 사이트.",
+    ctaBrowse: "전체 공략 보기",
+    ctaLatest: "최신 소식",
+    secGames: "수록 게임",
+    secValue: "CozySimHub 소개",
+    v1Title: "데이터 우선",
+    v1Text: "모든 공략은 필터 가능한 완전한 표.",
+    v2Title: "검증된 출처",
+    v2Text: "공식 스토어·위키·커뮤니티 보고 기반.",
+    v3Title: "대화형 도구",
+    v3Text: "같은 데이터 기반 트래커·매처·계산기.",
+    secLatest: "최신 공략",
+    allGuides: "전체 공략 →",
+    switchLabel: "게임",
+    updated: "업데이트",
+    footerNote: "비공식 팬 사이트. 게임 및 자산은 각 권리자에게 귀속됩니다.",
+    brandSub: "코지·시뮬 공략 허브"
+  },
+  "fr": {
+    hubEyebrow: "CozySimHub · Cozy & sim",
+    hubTitle: "Guides de jeux cozy et de simulation",
+    hubSub: "Guides orientés données : tableaux filtrables, sources vérifiées et outils interactifs.",
+    ctaBrowse: "Parcourir les guides",
+    ctaLatest: "Nouveautés",
+    secGames: "Jeux à l'affiche",
+    secValue: "Pourquoi CozySimHub",
+    v1Title: "Tableaux orientés données",
+    v1Text: "Chaque guide est un tableau complet et filtrable.",
+    v2Title: "Sources vérifiées",
+    v2Text: "Faits tracés aux pages officielles, wikis et rapports.",
+    v3Title: "Outils interactifs",
+    v3Text: "Suivis, matcheurs et calculateurs sur les mêmes données.",
+    secLatest: "Derniers guides",
+    allGuides: "Tous les guides →",
+    switchLabel: "Jeux",
+    updated: "Mis à jour",
+    footerNote: "Site de fans non officiel — jeux et ressources appartiennent à leurs propriétaires.",
+    brandSub: "Hub de guides cozy & sim"
+  },
+  "de": {
+    hubEyebrow: "CozySimHub · Cozy & Sim",
+    hubTitle: "Cozy- & Simulations-Guides",
+    hubSub: "Datenbasierte Guides mit filterbaren Tabellen, geprüften Quellen und interaktiven Tools.",
+    ctaBrowse: "Alle Guides ansehen",
+    ctaLatest: "Neuigkeiten",
+    secGames: "Enthaltene Spiele",
+    secValue: "Warum CozySimHub",
+    v1Title: "Datenorientierte Tabellen",
+    v1Text: "Jeder Guide ist eine vollständige, filterbare Tabelle.",
+    v2Title: "Geprüfte Quellen",
+    v2Text: "Fakten aus offiziellen Store-Seiten, Wikis und Community-Berichten.",
+    v3Title: "Interaktive Tools",
+    v3Text: "Tracker, Matcher und Rechner auf derselben Datenbasis.",
+    secLatest: "Neueste Guides",
+    allGuides: "Alle Guides →",
+    switchLabel: "Spiele",
+    updated: "Aktualisiert",
+    footerNote: "Inoffizielle Fan-Seite — Spiele und Assets gehören ihren jeweiligen Eigentümern.",
+    brandSub: "Cozy- & Sim-Guide-Hub"
+  }
+};
+const catI18n = l => CATEGORY_I18N[l] || CATEGORY_I18N.en;
 
 const pageOf = (page, lang) => {
   if (lang === DEF || !page.i18n || !page.i18n[lang]) {
@@ -189,7 +335,6 @@ ${cssLink}
 <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
 <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-${slug === "index" && lang === DEF ? `<link rel="preload" as="image" type="image/webp" imagesrcset="/images/hero-640.webp 640w, /images/hero-1280.webp 1280w, /images/hero.webp 1600w" imagesizes="(max-width: 720px) 640px, 1280px" fetchpriority="high" />` : ""}
 <script type="application/ld+json">${ld}</script>
 </head>
 <body>
@@ -215,6 +360,7 @@ const GUIDE_GROUPS = {
 };
 function header(lang, active) {
   const n = navI18n(lang);
+  const c = catI18n(lang);
   const G = GUIDE_GROUPS.en;
   const link = (slug, label, icon, folio, act) =>
     `<a href="${linkOf(slug, lang)}" class="${act ? "active" : ""}"><span class="folio-no">${folio}</span><span class="nav-ic">${ICON[icon] || ""}</span><span>${esc(label)}</span></a>`;
@@ -225,19 +371,17 @@ function header(lang, active) {
     const ic = s.includes("knights") ? "shield" : s.includes("romance") ? "heart" : s.includes("recipes") ? "chef" : s.includes("endings") ? "crown" : s.includes("secret") ? "fist" : s.includes("quest") && s.includes("mech") ? "scales" : s.includes("achievement") ? "trophy" : s.includes("tools") ? "calc" : s.includes("how-to-play") ? "book" : "wand";
     return link(s, t, ic, String(i + 1).padStart(2, "0"), s === active);
   }).join("")}</div>`;
-  const chapters = `${chap(n.p0, G.p0)}${chap(n.p1, G.p1)}${chap(n.p2, G.p2)}`;
+  // hub 页侧栏不放君王之塔独占章节：改放「最新内容」快捷链接（spec §A.3）
+  const chapters = active === "index" ? latestNav(lang) : `${chap(n.p0, G.p0)}${chap(n.p1, G.p1)}${chap(n.p2, G.p2)}`;
   const langItems = pageLangsOf(active || "index").map(l =>
     `<a href="${linkOf(active || "index", l)}" class="${l === lang ? "active" : ""}"><span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span></a>`
   ).join("");
-  const moonCross = `<a class="tome-crosslink" href="${linkOf("moonlight-peaks", lang)}">${lang === "zh-CN" ? "🌙 月光小镇" : lang === "ko" ? "🌙 문라이트 피크스" : "🌙 Moonlight Peaks"}</a>`;
-  const sandCross = `<a class="tome-crosslink" href="${linkOf("sandustry", lang)}">${lang === "zh-CN" ? "⛏️ 沙金工业" : lang === "ko" ? "⛏️ 샌더스트리" : "⛏️ Sandustry"}</a>`;
   return `<aside id="sovereign-navigation" class="tome-nav" aria-label="Ledger index">
   <a class="tome-brand" href="${linkOf("index", lang)}">
     <span class="brand-seal">${ICON.crown}</span>
-    <span class="brand-name">${esc(siteI18n(lang).name)}<small>${lang === "zh-CN" ? "圆桌手账" : "Round Table Ledger"}</small></span>
+    <span class="brand-name">${esc(siteI18n(lang).name)}<small>${esc(c.brandSub)}</small></span>
   </a>
-  ${moonCross}
-  ${sandCross}
+  ${gameSwitch(lang, active)}
   ${chapters}
   <div class="tome-lang"><div class="lang-label">${esc(n.langLabel)}</div>${langItems}</div>
   ${(active || "").startsWith("sandustry") ? `<p class="lang-note">${lang === "zh-CN" ? "可用语言：English · 한국어 · 简体中文" : lang === "ko" ? "가능한 언어: English · 한국어 · 简体中文" : "Available in: English · 한국어 · 简体中文"}</p>` : ""}
@@ -256,7 +400,7 @@ const CONSENT_I18N = {
 function consentUi(lang) {
   const t = CONSENT_I18N[lang] || CONSENT_I18N.en;
   const rawAdsterra = String(DATA.site.adsterra || "");
-  const adsterraSrc = (rawAdsterra.match(/src="([^"]*effectivecpmnetwork\.com[^"]*)"/) || [])[1] || "";
+  const adsterraSrc = (rawAdsterra.match(/src="([^"]*\/invoke\.js)"/) || [])[1] || "";
   const adsterraContainer = (rawAdsterra.match(/id="(container-[^"]+)"/) || [])[1] || "";
   const advertisingAvailable = Boolean(ADSENSE_SCRIPT_SRC || adsterraSrc);
   const cfg = JSON.stringify({ gaId: DATA.site.gaId || "", adsenseSrc: ADSENSE_SCRIPT_SRC, adsterraSrc, adsterraContainer, advertisingAvailable });
@@ -324,6 +468,7 @@ function renderAmazonAffiliate(lang) {
 
 function footer(lang, slug) {
   const n = navI18n(lang);
+  const c = catI18n(lang);
   const key = DATA.pages.slice(0, 8).map(p => `<a href="${linkOf(p.slug, lang)}">${esc(pageOf(p, lang).title)}</a>`).join("");
   const steamHref = (slug || "").startsWith("sandustry")
     ? "https://store.steampowered.com/app/2764460/Sandustry/"
@@ -331,7 +476,7 @@ function footer(lang, slug) {
   return `<footer class="colophon">
   <div>
     <h3>${esc(siteI18n(lang).name)}</h3>
-    <p>${esc(n.footerNote)}</p>
+    <p>${esc(slug === "index" ? c.footerNote : n.footerNote)}</p>
     <p>${esc(n.footerSource)} · ${esc(n.updated)} ${TODAY}</p>
   </div>
   <div>
@@ -444,53 +589,147 @@ function renderSection(s, lang) {
   }
 }
 
-/* ---------- 首页（手账总览） ---------- */
-function renderHome(lang) {
-  const isZh = lang === "zh-CN";
-  const t = pageOf(DATA.pages.find(p => p.slug === "index"), lang);
-  const intro = t.intro || "";
-  const gamePages = DATA.pages.filter(p => p.slug.startsWith("sovereign-tower/") && p.slug !== "sovereign-tower/tools/quest-matcher" && p.slug !== "sovereign-tower/tools/affinity-calc");
-  const toolPages = DATA.pages.filter(p => p.slug.startsWith("sovereign-tower/tools/"));
-  const idx = (p, i) => {
-    const pt = pageOf(p, lang);
-    const ic = p.slug.includes("knights") ? "shield" : p.slug.includes("romance") ? "heart" : p.slug.includes("recipes") ? "chef" : p.slug.includes("endings") ? "crown" : p.slug.includes("secret") ? "fist" : p.slug.includes("achievement") ? "trophy" : p.slug.includes("quest") ? "scales" : "book";
-    return `<a href="${linkOf(p.slug, lang)}"><span class="idx-no">${String(i + 1).padStart(2, "0")}</span><span class="idx-ic">${ICON[ic]}</span><span class="idx-txt"><b>${esc(pt.title)}</b><small>${esc((pt.metaDescription || "").slice(0, 48))}…</small></span></a>`;
+/* ---------- 首页（品类枢纽 hub 四段式 —— spec §A.1） ---------- */
+/* 本地 JSON-LD 构造器（不改 site-kit；spec §D.1） */
+function ldOrganization() {
+  return { "@context": "https://schema.org", "@type": "Organization", name: "CozySimHub", url: `https://${DATA.site.domain}/` };
+}
+function ldVideoGame(g, lang) {
+  const langs = (g.languages && g.languages.length) ? g.languages : LANGS;
+  const useLang = langs.includes(lang) ? lang : DEF;   // 只指向真实存在的语言 URL
+  const item = { "@type": "VideoGame", name: g.name, url: urlOf(g.hubSlug, useLang), inLanguage: "en" };
+  const m = g.videoGame || {};
+  if (m.genre) item.genre = m.genre;
+  if (m.developer) item.developer = m.developer;
+  if (m.publisher) item.publisher = m.publisher;
+  if (m.datePublished) item.datePublished = m.datePublished;
+  if (m.image) item.image = `https://${DATA.site.domain}${m.image}`;
+  return item;
+}
+function ldItemList(games, lang) {
+  return {
+    "@context": "https://schema.org", "@type": "ItemList",
+    name: catI18n(lang).hubTitle,
+    itemListElement: games.map((g, i) => ({ "@type": "ListItem", position: i + 1, item: ldVideoGame(g, lang) }))
   };
-  const toolIdx = toolPages.map((p, i) => {
-    const pt = pageOf(p, lang);
-    return `<a href="${linkOf(p.slug, lang)}"><span class="idx-no">${String(gamePages.length + i + 1).padStart(2, "0")}</span><span class="idx-ic">${ICON.calc}</span><span class="idx-txt"><b>${esc(pt.title)}</b><small>${lang === "zh-CN" ? "交互工具" : "Interactive tool"}</small></span></a>`;
+}
+
+/* 最新内容：从 games.json latest 收集（数据驱动，不硬编码 —— spec §A.5） */
+function latestItems(lang, max = 6) {
+  const rows = [];
+  for (const g of GAMES) {
+    for (const it of (g.latest || [])) {
+      const p = DATA.pages.find(x => x.slug === it.slug);
+      if (!p) continue;
+      rows.push({ game: g, slug: it.slug, date: it.date || TODAY });
+    }
+  }
+  rows.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  return rows.slice(0, max);
+}
+function latestListHtml(lang) {
+  const c = catI18n(lang);
+  return latestItems(lang).map(({ game, slug, date }) => {
+    const p = DATA.pages.find(x => x.slug === slug);
+    const title = pageOf(p, lang).title;
+    const gname = game.nameI18n[lang] || game.name;
+    return `<div class="latest-item"><span class="latest-tag" data-accent="${esc(game.accent)}">${esc(gname)}</span><a href="${linkOf(slug, lang)}">${esc(title)}</a><span class="latest-date">${esc(c.updated)} ${esc(date)}</span></div>`;
   }).join("");
-  const heroPlate = `<div class="cover-plate">${KIT.picture({ src: "/images/hero.jpg", srcset: "/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 1600w", sizes: "(max-width: 720px) 92vw, 720px", attrs: `alt="${esc(siteI18n(lang).name)}" loading="eager" width="1600" height="900" fetchpriority="high"` })}</div>`;
+}
+/* hub 页侧栏「最新内容」快捷链接（spec §A.3：章节区可空或放最新链接） */
+function latestNav(lang) {
+  const c = catI18n(lang);
+  const items = latestItems(lang, 5).map(({ game, slug }) => {
+    const p = DATA.pages.find(x => x.slug === slug);
+    if (!p) return "";
+    return `<a href="${linkOf(slug, lang)}"><span class="folio-no">${GAME_ICON[game.icon] || ""}</span><span>${esc(pageOf(p, lang).title)}</span></a>`;
+  }).join("");
+  return `<div class="tome-chapter"><b>${esc(c.secLatest)}</b>${items}</div>`;
+}
+
+/* 游戏切换器（tome-nav 顶部，品牌下方 —— spec §A.3） */
+function gameSwitch(lang, active) {
+  const c = catI18n(lang);
+  const items = GAMES.map(g => {
+    const name = g.nameI18n[lang] || g.name;
+    const current = (active || "").startsWith(g.id);
+    return `<a class="game-switch-item${current ? " active" : ""}" href="${linkOf(g.hubSlug, lang)}"${current ? ' aria-current="page"' : ""}>${GAME_ICON[g.icon] || ICON.crown}<span>${esc(name)}</span></a>`;
+  }).join("");
+  return `<nav class="game-switch" aria-label="${esc(c.switchLabel)}">${items}</nav>`;
+}
+
+/* 游戏卡片（spec §A.2） */
+function gameCard(g, lang) {
+  const c = catI18n(lang);
+  const name = g.nameI18n[lang] || g.name;
+  const tagline = g.taglineI18n[lang] || g.taglineI18n.en || "";
+  const hub = linkOf(g.hubSlug, lang);
+  const badges = (g.badges || []).map(b => {
+    const label = (b.labelI18n || {})[lang] || (b.labelI18n || {}).en || "";
+    return `<li class="badge"><b>${esc(b.value)}</b>${label ? ` ${esc(label)}` : ""}</li>`;
+  }).join("");
+  const links = (g.coreLinks || []).map(slug => {
+    const p = DATA.pages.find(x => x.slug === slug);
+    if (!p) return "";
+    return `<li><a href="${linkOf(slug, lang)}">${esc(pageOf(p, lang).title)}</a></li>`;
+  }).join("");
+  // 封面带：cover.src 存在才渲染位图（width/height 防 CLS），否则渐变 + SVG 徽记（spec §B.2.4）
+  const cover = g.cover
+    ? `<a class="game-cover" href="${hub}"><img class="game-cover-img" src="${esc(g.cover.src)}" srcset="${esc(g.cover.src.replace(/\.jpg$/, "-640.jpg 640w, ") + g.cover.src.replace(/\.jpg$/, "-1280.jpg 1280w, ") + g.cover.src + " 1600w")}" sizes="(max-width: 720px) 640px, 1280px" alt="${esc(g.cover.alt || name)}" width="${esc(g.cover.width)}" height="${esc(g.cover.height)}" loading="lazy" /></a>`
+    : `<a class="game-cover game-cover-icon" style="background:linear-gradient(135deg,var(--accent-${g.accent}-tint),var(--accent-${g.accent}))" href="${hub}" aria-hidden="true" tabindex="-1">${GAME_ICON[g.icon] || ICON.crown}</a>`;
+  return `<article class="game-card" data-game="${esc(g.id)}">
+    ${cover}
+    <div class="game-body">
+      <h2 class="game-name">${esc(name)}</h2>
+      ${tagline ? `<p class="game-tagline">${esc(tagline)}</p>` : ""}
+      ${badges ? `<ul class="game-badges">${badges}</ul>` : ""}
+      ${links ? `<ul class="game-links">${links}</ul>` : ""}
+      <a class="game-all" href="${hub}">${esc(c.allGuides)}</a>
+    </div>
+  </article>`;
+}
+
+/* 品类价值主张（spec §A.1 段 3） */
+function valueGrid(lang) {
+  const c = catI18n(lang);
+  const items = [
+    { icon: "scroll", title: c.v1Title, text: c.v1Text },
+    { icon: "book", title: c.v2Title, text: c.v2Text },
+    { icon: "calc", title: c.v3Title, text: c.v3Text }
+  ].map(v => `<div class="value-item"><span class="value-ic">${ICON[v.icon]}</span><h3>${esc(v.title)}</h3><p>${esc(v.text)}</p></div>`).join("");
+  return `<div class="value-grid">${items}</div>`;
+}
+
+function renderHome(lang) {
+  const t = pageOf(DATA.pages.find(p => p.slug === "index"), lang);
+  const c = catI18n(lang);
+  const cards = GAMES.map(g => gameCard(g, lang)).join("");
   const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger" aria-controls="sovereign-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
 <div class="tome-nav-overlay"></div>
-<main class="page-main">
-  <section class="ledger-cover reveal">
-    ${heroPlate}
-    <span class="cover-seal">${ICON.crown}</span>
-    <h1>${isZh ? "君王之塔 · 圆桌手账" : "Sovereign Tower · The Round Table Ledger"}</h1>
-    <p class="cover-intro">${esc(intro)}</p>
-    <div class="cover-cta">
-      <a class="btn btn-primary" href="${linkOf("sovereign-tower/knights", lang)}">${isZh ? "翻开：全部骑士" : "Open: All Knights"}</a>
-      <a class="btn btn-ghost" href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">Steam ↗</a>
+<main class="page-main hub-main">
+  <section class="hub-hero">
+    <span class="hub-eyebrow reveal">${esc(c.hubEyebrow)}</span>
+    <h1 class="hub-title reveal" style="transition-delay:.04s">${esc(c.hubTitle)}</h1>
+    <p class="hub-sub reveal" style="transition-delay:.08s">${esc(c.hubSub)}</p>
+    <div class="hub-cta">
+      <a class="btn btn-primary" href="#games">${esc(c.ctaBrowse)}</a>
+      <a class="btn btn-ghost" href="#latest">${esc(c.ctaLatest)}</a>
     </div>
   </section>
-  <section class="spread reveal">
-    <div class="spread-col left">
-      <div class="folio-head"><span class="folio-mark"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></span><h2>${isZh ? "卷宗目录" : "Index"}</h2></div>
-      <div class="tome-index">${gamePages.map(idx).join("")}${toolIdx}</div>
-    </div>
-    <div class="spread-col right">
-      <div class="folio-head"><span class="folio-mark"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l4-1L20 7a2 2 0 0 0-3-3L5 16l-1 4z"/><path d="M14 6l4 4"/></svg></span><h2>${isZh ? "最新批注" : "Latest Notes"}</h2></div>
-      <div class="ledger-notes">
-        <div class="note-entry"><b>${isZh ? "24 位骑士全档案已收录" : "All 24 knights documented"}</b><p>${isZh ? "六维属性、隐藏特质、最爱菜、招募条件一次看全。" : "Six stats, hidden traits, favourite meals and recruit conditions."}</p></div>
-        <div class="note-entry"><b>${isZh ? "隐藏骑士招募方法" : "Secret knight recruitment"}</b><p>${isZh ? "Dulahan / Chester / Alwena 的触发条件与窗口。" : "Dulahan / Chester / Alwena triggers and windows."}</p></div>
-        <div class="note-entry"><b>${isZh ? "任务得分公式已核对" : "Quest score formula verified"}</b><p>${isZh ? "阈值、经验表、好感规则全部标注来源。" : "Thresholds, XP table and affinity rules with sources."}</p></div>
-        <div class="note-entry"><b>${isZh ? "交互工具上线" : "Interactive tools live"}</b><p>${isZh ? "骑士-任务匹配器与好感计算器可用。" : "Knight Quest Matcher and Affinity Calculator ready."}</p></div>
-      </div>
-    </div>
+  <section id="games" class="hub-section reveal">
+    <h2 class="hub-section-title">${esc(c.secGames)}</h2>
+    <div class="game-grid">${cards}</div>
+  </section>
+  <section class="hub-section hub-value reveal">
+    <h2 class="hub-section-title">${esc(c.secValue)}</h2>
+    ${valueGrid(lang)}
+  </section>
+  <section id="latest" class="hub-section hub-latest reveal">
+    <h2 class="hub-section-title">${esc(c.secLatest)}</h2>
+    <div class="latest-list">${latestListHtml(lang)}</div>
   </section>
 </main>`;
-  const ld = [KIT.ld.article({ page: { ...t, slug: "index" }, lang, urlOf, siteName: siteI18n(lang).name, datePublished: TODAY, dateModified: KIT.LASTMOD_TOKEN })];
+  const ld = [ldOrganization(), ldItemList(GAMES, lang)];
   return head(t.metaTitle || t.title, t.metaDescription, ld, "index", lang) + header(lang, "index") + body + footer(lang, "index");
 }
 /* ---------- 普通页 ---------- */
