@@ -413,7 +413,7 @@ function langDropdown(lang, slug) {
     if (!pl.includes(l)) {
       return `<span class="lang-item unavailable" aria-disabled="true" title="${esc(n.unavailable)}">${flag}</span>`;
     }
-    return `<a href="${linkOf(slug || "index", l)}" class="lang-item${l === lang ? " active" : ""}"${l === lang ? ' aria-current="page"' : ""}>${flag}</a>`;
+    return `<a href="${linkOf(slug || "index", l)}" data-lang="${l}" class="lang-item${l === lang ? " active" : ""}"${l === lang ? ' aria-current="page"' : ""}>${flag}</a>`;
   }).join("");
   return `<details class="lang-dd">
     <summary aria-label="${esc(n.langLabel)}"><span class="flag svg-flag">${flagOf(lang)}</span><span class="lang-name">${LANG_META[lang]?.name || lang}</span><span class="caret">▾</span></summary>
@@ -615,6 +615,47 @@ function renderAmazonAffiliate(lang) {
   </div>`;
 }
 
+/* 语言记忆（用户反馈：每次访问都回到英文页，以为翻译没生效）：
+   1) 点语言切换器 .dd-lang a 时把所选语言存入 localStorage（key: cozySimHubLang）；
+   2) 页面加载时若存在偏好且与当前路径语言不同、且该页支持偏好语言（pageLangsOf 白名单，
+      如 sandustry 仅 en/ko/zh-CN），则 location.replace 一次跳转到偏好语言路径；
+      en 为默认语言走无前缀路径；目标与当前路径相同则不跳（防循环）。 */
+function langMemoryJs(lang, pageLangs) {
+  const langsJson = JSON.stringify(pageLangs || []);
+  return `<script>
+(function(){
+  var KEY = "cozySimHubLang";
+  var ALL = ${langsJson};
+  function currentLang(){
+    var m = location.pathname.match(/^\\/(en|zh-CN|ja|ko|fr|de)(\\/|$)/);
+    return m ? m[1] : null;
+  }
+  function prefOf(href){
+    var m = (href || "").match(/^\\/(en|zh-CN|ja|ko|fr|de)(\\/|$)/);
+    return m ? m[1] : "en";
+  }
+  document.addEventListener("click", function(e){
+    var a = e.target && e.target.closest ? e.target.closest(".dd-lang a.lang-item") : null;
+    if (a && a.getAttribute("data-lang")) {
+      try { localStorage.setItem(KEY, a.getAttribute("data-lang")); } catch(_) {}
+    }
+  });
+  var pref = null;
+  try { pref = localStorage.getItem(KEY); } catch(_) {}
+  if (!pref || ALL.indexOf(pref) < 0) return;
+  var cur = currentLang();
+  var target = null;
+  if (!cur) {
+    if (pref !== "en") target = "/" + pref + (location.pathname === "/" ? "/" : location.pathname);
+  } else if (cur !== pref) {
+    var rest = location.pathname.replace(new RegExp("^/" + cur + "(?=/|$)"), "");
+    target = pref === "en" ? (rest || "/") : "/" + pref + rest;
+  }
+  if (target && target !== location.pathname) location.replace(target);
+})();
+</script>`;
+}
+
 /* 共享导航交互 JS（抽屉开合 + 关闭态 inert + 打开态焦点圈闭 + Escape 归还 + reveal + TOC 高亮 + 下拉收起）：
    所有页面（含月光页）都走这一份，保证导航行为一致（P1-06：Doloc 同款缺陷的回归修复）。 */
 function tomeNavJs() {
@@ -720,6 +761,7 @@ function footer(lang, slug) {
   ${renderAmazonAffiliate(lang)}
 </footer>
 ${KIT.decisionEventsScript()}
+${langMemoryJs(lang, pageLangsOf(slug))}
 ${tomeNavJs()}
 ${consentDialog(lang)}
 </div>`;
@@ -1106,7 +1148,7 @@ function moonPhaseIcon(n, cls) {
   return `<svg class="moon-phase ${cls || ""}" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="currentColor" opacity="0.18"/><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 3a9 9 0 0 1 0 18c${(pct * 6).toFixed(1)} 0 ${(pct * 9).toFixed(1)}-${(pct * 4).toFixed(1)} 0-${(pct * 4.5).toFixed(1)}z" fill="currentColor" opacity="0.9"/></svg>`;
 }
 
-function moonFooter(lang) {
+function moonFooter(lang, slug) {
   const t = moonTxt(lang);
   const n = navI18n(lang);
   // P1-03：月光页脚 key 链接按月光 guideGroups 从 games.json 取（不再硬编码 MOON_GROUPS）
@@ -1133,6 +1175,7 @@ function moonFooter(lang) {
   </div>
 </footer>
 ${KIT.decisionEventsScript()}
+${langMemoryJs(lang, pageLangsOf(slug || "index"))}
 ${tomeNavJs()}
 ${consentDialog(lang)}
 </div>`;
@@ -1224,7 +1267,7 @@ function renderMoonPage(p, lang) {
   </aside>
 </div></main></div>`;
   // 主题统一（用户反馈 1/2）：共享 header()（site-header + 侧栏），不再渲染 moonHeader / moon-lang 独立语言切换器。
-  return head(t.metaTitle || t.title, t.metaDescription, ld, p.slug, lang) + header(lang, p.slug) + body + moonFooter(lang) + MOON_JS + "</div></body></html>";
+  return head(t.metaTitle || t.title, t.metaDescription, ld, p.slug, lang) + header(lang, p.slug) + body + moonFooter(lang, p.slug) + MOON_JS + "</div></body></html>";
 }
 
 /* 月光交互工具 UI 文案 —— 6 语。
