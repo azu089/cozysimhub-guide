@@ -2569,7 +2569,11 @@ def build_moon_pages():
             for _idx, _ov in _lang_ov.items():
                 _secs = page_i18n.setdefault(_lg, {}).setdefault("sections", [])
                 if 0 <= _idx < len(en["sections"]):
-                    _merged = dict(en["sections"][_idx])
+                    # 修复：合并基线必须从“已翻译的 section”出发，而非从 EN 出发，
+                    # 否则 EXTRA 覆盖会丢掉基础 i18n 的 heading/headers/items/rows，
+                    # 导致 fr/de/ja/ko 标题回退为英文（“rows/heading 覆盖被丢弃”类 bug）。
+                    _base = _secs[_idx] if _idx < len(_secs) else en["sections"][_idx]
+                    _merged = dict(_base)
                     for _k in ("heading", "headers", "items", "body", "rows"):
                         if _k in _ov:
                             _merged[_k] = _ov[_k]

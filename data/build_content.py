@@ -844,6 +844,348 @@ for _ppx in d["pages"]:
                     if _rx and len(_rx) >= 3 and _rx[2] in _mapx:
                         _rx[2] = _mapx[_rx[2]]
 
+# --- fr/de 本地化修复（用户反馈：切换法语/德语仍显示英文/中文）---
+# 范围：knights 表头 5→7 + 最后两列按 en 重译；8 张空表补 76 行；recipes 对齐 en（2 列 / 24 行）；
+#       中文残留（143 单元格 + 1 intro）从 en 重译；“待补”→ à compléter / noch offen；
+#       MP 16 标题（由 moonlight_pages 合并 bug 修复解决）；de new-game-plus 标题。
+_FR_PH = "à compléter"
+_DE_PH = "noch offen"
+
+_NOTE_FR = {
+    "Alwena": "La seule personne capable de déterrer les rumeurs des autres chevaliers — une à la fois, et uniquement celles que vous ne connaissez pas encore.",
+    "Angelica": "Style de souverain : aime Kind, déteste Tyrannic ; déteste Ghost/Assassination.",
+    "Ari": "Ne démissionne jamais ; sa monture Columbus raccourcit les quêtes de −4 cycles.",
+    "Arron": "L'histoire peut accorder le trait Dragon Knight (petit bonus sur toute quête, doublé au combat).",
+    "Brunhilda": "Style de souverain : aime Audacious, déteste Wise.",
+    "Chester": "Stats aléatoires + affinité tous types = un remplaçant universel.",
+    "Childeric": "L'armure 9 est la plus élevée du jeu.",
+    "Daguez": "Force 15 au maximum ; épée à deux mains verrouillée.",
+    "Dulahan": "Chevalier démon ; n'apparaît qu'après la mort de Goberto. Aime les 6 plats.",
+    "Edith": "MAG 12 à égalité pour la plus haute valeur ; relique Dainself.",
+    "Epicrate": "Figure révolutionnaire du soulèvement de Brimwood.",
+    "Gideon": "Protagoniste ; candidat au cycle 13. Style de souverain : aime Audacious, déteste Tyrannic.",
+    "Goberto": "Premier véritable recrutement (cycle 2). La lignée d'armure Almor peut faire passer l'armure de 7→17 et accorder Perfect Armour.",
+    "Gothild": "Garde du corps ; rejoint via l'embuscade de Victoria ou la lignée d'Enberg.",
+    "Gwendan Villador": "Déteste Audacious ; suspect du meurtre (varie selon les parties).",
+    "Ligia": "Érudite ; rejoint via la lignée de Southbay (père survivant).",
+    "Oliver": "Employé de bureau ; candidat au cycle 19 s'il est épargné dans le prologue.",
+    "Rufus": "La forme humaine de The Wolf une fois la malédiction levée ; levez la malédiction à Groveshire.",
+    "Silgur": "Chasseur ; rejoint via la réussite standard de Groveshire.",
+    "Tarcus": "Défenseur des nobles ; rejoint via la lignée de Gavault (côté de la mère).",
+    "The Wolf": "Apprivoisé par Angelica via la route de la bête ; monture verrouillée.",
+    "Ursula": "Immortelle — recrutable à nouveau après la mort ; rejoint automatiquement au cycle 5.",
+    "Victoria": "Meilleures stats de départ du jeu (67 au total) ; rejoint via l'assassinat d'Enberg.",
+    "Zolta": "Joueur ; rejoint via le derby de Kutnar.",
+}
+_NOTE_DE = {
+    "Alwena": "Die einzige Ritterin, die Gerüchte über andere Ritter ausgraben kann — eines nach dem anderen, und nur solche, die du noch nicht kennst.",
+    "Angelica": "Herrscherstil: mag Kind, verabscheut Tyrannic; verabscheut Ghost/Assassination.",
+    "Ari": "Tritt nie zurück; Reittier Columbus verkürzt Quests um −4 Zyklen.",
+    "Arron": "Die Story kann das Merkmal Dragon Knight verleihen (kleiner Bonus auf jede Quest, im Kampf verdoppelt).",
+    "Brunhilda": "Herrscherstil: mag Audacious, verabscheut Wise.",
+    "Chester": "Zufällige Werte + Affinität für alle Typen = ein universeller Lückenfüller.",
+    "Childeric": "Rüstung 9 ist die höchste im Spiel.",
+    "Daguez": "Volle 15 Stärke; Zweihänder gesperrt.",
+    "Dulahan": "Dämonenritter; erscheint erst nach Gobertos Tod. Liebt alle 6 Gerichte.",
+    "Edith": "MAG 12 ist der höchste Wert (geteilt); Relikt Dainself.",
+    "Epicrate": "Revolutionäre Figur des Brimwood-Aufstands.",
+    "Gideon": "Protagonist; Kandidat in Zyklus 13. Herrscherstil: mag Audacious, verabscheut Tyrannic.",
+    "Goberto": "Erste richtige Rekrutierung (Zyklus 2). Die Almor-Rüstungslinie kann die Rüstung von 7→17 erhöhen und Perfect Armour gewähren.",
+    "Gothild": "Leibwächterin; kommt über den Victoria-Hinterhalt oder die Enberg-Linie.",
+    "Gwendan Villador": "Verabscheut Audacious; Mordverdächtiger (variiert je Durchlauf).",
+    "Ligia": "Gelehrte; kommt über die Southbay-Linie (Vater überlebt).",
+    "Oliver": "Büroangestellter; Kandidat in Zyklus 19, falls im Prolog verschont.",
+    "Rufus": "The Wolfs menschliche Form nach dem Fluchbruch; löse den Fluch in Groveshire.",
+    "Silgur": "Jäger; kommt über den standardmäßigen Groveshire-Erfolg.",
+    "Tarcus": "Verteidiger des Adels; kommt über die Gavault-Linie (Mutters Seite).",
+    "The Wolf": "Von Angelica über die Bestien-Route gezähmt; Reittier gesperrt.",
+    "Ursula": "Unsterblich — nach dem Tod erneut rekrutierbar; tritt in Zyklus 5 automatisch bei.",
+    "Victoria": "Höchste Startwerte im Spiel (67 gesamt); kommt über das Enberg-Attentat.",
+    "Zolta": "Spieler; kommt über das Kutnar-Derby.",
+}
+
+_RECRUIT_FR = {
+    "Alwena": "Événement d'urgence unique : après l'Acte 2, quand la Table Ronde n'a plus aucun chevalier disponible (en liste et pas en quête, morts/démissionnaires exclus), elle se porte volontaire. Impossible à déclencher à la demande ; aucune seconde chance. Ne meurt et ne démissionne jamais.",
+    "Angelica": "Rejoint automatiquement pendant l'histoire d'ouverture.",
+    "Ari": "Invoqué pour 25 pièces d'or (le cadet des frères Basalt).",
+    "Arron": "Pas d'audience de candidature — rejoint via l'intrigue Drakovic.",
+    "Brunhilda": "Intrigue de Gavault, côté de la fille (county_quest_gavault_2_daughter_side jusqu'à la fin) ; pas d'audience de candidature.",
+    "Chester": "Apparaît après tout résultat spécial de Clean Keeper Goose Partie 2 (fromage / un cheval / Gwendan — trois choix, 1 pièce d'or chacun). Chester est le vrai prix.",
+    "Childeric": "à compléter",
+    "Daguez": "à compléter",
+    "Dulahan": "Apparaît comme chevalier démon sur la voie de la mort de Goberto.",
+    "Edith": "à compléter",
+    "Epicrate": "à compléter",
+    "Gideon": "Apparaît en audience de candidature au cycle 13 (Acte 2, rejoint volontairement).",
+    "Goberto": "Premier véritable recrutement — audience de candidature au cycle 2.",
+    "Gothild": "Deux routes — après l'embuscade de Victoria (quest_victoria_gank), ou l'intrigue d'Enberg (cour d'interrogatoire / finale).",
+    "Gwendan Villador": "Audience de candidature au cycle 3.",
+    "Ligia": "Intrigue de Southbay (la route où son père survit).",
+    "Oliver": "Audience de candidature au cycle 19 — seulement s'il n'a pas été exécuté dans le prologue.",
+    "Rufus": "Mystical Research (Groveshire, nécessite la satisfaction des Érudits) ou dialogue d'affinité 2 avec The Wolf. Même personne que The Wolf — sa forme humaine après levée de la malédiction.",
+    "Silgur": "Réussite standard de l'intrigue de Groveshire (branche non-loup-garou, non-accident).",
+    "Tarcus": "Intrigue de Gavault, côté de la mère (mutuellement exclusif avec Brunhilda, qui prend le côté de la fille).",
+    "The Wolf": "Angelica apprivoise la bête — envoyez Angelica sur Kill the Beast d'Almor pour le résultat spécial.",
+    "Ursula": "Rejoint automatiquement au cycle 5.",
+    "Victoria": "Intrigue d'assassinat d'Enberg (pas d'audience de candidature).",
+    "Zolta": "Intrigue de Kutnar (gagnez le derby de Kutnar en trichant).",
+}
+_RECRUIT_DE = {
+    "Alwena": "Einmaliges Notfall-Ereignis: nach Akt 2, wenn die Tafelrunde keine verfügbaren Ritter mehr hat (im Dienst und nicht auf Quest, Tote/Zurückgetretene ausgenommen), meldet sie sich freiwillig. Nicht auf Wunsch auslösbar; keine zweite Chance. Stirbt nie und tritt nie zurück.",
+    "Angelica": "Tritt automatisch während der Eröffnungsstory bei.",
+    "Ari": "Für 25 Gold beschworen (der jüngere der Basalt-Brüder).",
+    "Arron": "Keine Kandidaten-Audienz — tritt über die Drakovic-Storyline bei.",
+    "Brunhilda": "Gavault-Storyline, Seite der Tochter (county_quest_gavault_2_daughter_side bis zum Ende); keine Kandidaten-Audienz.",
+    "Chester": "Erscheint nach jedem besonderen Ergebnis von Clean Keeper Goose Teil 2 (Käse / ein Pferd / Gwendan — drei Optionen, je 1 Gold). Chester ist der wahre Preis.",
+    "Childeric": "noch offen",
+    "Daguez": "noch offen",
+    "Dulahan": "Erscheint als Dämonenritter auf Gobertos Todespfad.",
+    "Edith": "noch offen",
+    "Epicrate": "noch offen",
+    "Gideon": "Erscheint als Kandidaten-Audienz in Zyklus 13 (Akt 2, tritt freiwillig bei).",
+    "Goberto": "Erste richtige Rekrutierung — Kandidaten-Audienz in Zyklus 2.",
+    "Gothild": "Zwei Wege — nach dem Victoria-Hinterhalt (quest_victoria_gank) oder über die Enberg-Storyline (Verhör-Gericht / Finale).",
+    "Gwendan Villador": "Kandidaten-Audienz in Zyklus 3.",
+    "Ligia": "Southbay-Storyline (der Weg, auf dem ihr Vater überlebt).",
+    "Oliver": "Kandidaten-Audienz in Zyklus 19 — nur wenn er im Prolog nicht hingerichtet wurde.",
+    "Rufus": "Mystical Research (Groveshire, erfordert Zufriedenheit der Gelehrten) oder Freischaltung über The Wolf Affinität 2. Dieselbe Person wie The Wolf — seine menschliche Form nach Fluchbruch.",
+    "Silgur": "Standardmäßiger Groveshire-Storyline-Erfolg (Nicht-Werwolf, Nicht-Unfall-Zweig).",
+    "Tarcus": "Gavault-Storyline, Seite der Mutter (schließt Brunhilda aus, die die Seite der Tochter wählt).",
+    "The Wolf": "Angelica zähmt die Bestie — schicke Angelica auf Almors Kill the Beast für das besondere Ergebnis.",
+    "Ursula": "Tritt in Zyklus 5 automatisch bei.",
+    "Victoria": "Enberg-Attentats-Storyline (keine Kandidaten-Audienz).",
+    "Zolta": "Kutnar-Storyline (gewinne das Kutnar-Derby durch Schummeln).",
+}
+
+_DESC_FR = {
+    "Galette-Saucisse": "Galette de sarrasin à la saucisse — un classique de rue de Brizh.",
+    "Croque-Monsieur": "Sandwich grillé jambon-fromage, le réconfort classique.",
+    "Préfou": "Pain à l'ail cuit au beurre — un favori des tavernes.",
+    "Crêpe": "Fine crêpe française, sucrée ou salée.",
+    "Brizhian Butter Shortbread": "Sablé au beurre riche de Brizh.",
+    "Lion's Taco": "Un taco audacieux avec une part de lion en garniture.",
+}
+_DESC_DE = {
+    "Galette-Saucisse": "Buchweizen-Galette mit Wurst — ein Brizh-Straßengericht.",
+    "Croque-Monsieur": "Getoastetes Schinken-Käse-Sandwich, der klassische Seelentröster.",
+    "Préfou": "In Butter gebackenes Knoblauchbrot — ein Tavernen-Liebling.",
+    "Crêpe": "Dünner französischer Pfannkuchen, süß oder herzhaft.",
+    "Brizhian Butter Shortbread": "Reichhaltiges Butter-Shortbread aus Brizh.",
+    "Lion's Taco": "Ein kräftiger Taco mit einer Löwenportion Füllung.",
+}
+
+def _frde_ph(lang):
+    return _FR_PH if lang == "fr" else _DE_PH
+
+def _frde_kstats(k, lang):
+    if k.get("stats") is None:
+        if k["name"] == "Chester":
+            return "Aléatoire (Chester relance 0–15 à chaque jet)" if lang == "fr" else "Zufällig (Chester würfelt bei jedem Check 0–15 neu)"
+        return _frde_ph(lang)
+    return " / ".join(str(x) for x in k["stats"])
+
+def _frde_meals(k, lang):
+    ph = _frde_ph(lang)
+    return ", ".join(m if m != "TBD" else ph for m in (k.get("meals") or [ph]))
+
+def _frde_krow(k, lang):
+    ph = _frde_ph(lang)
+    note = _NOTE_FR if lang == "fr" else _NOTE_DE
+    return [k["name"], k.get("origin") or ph, str(k.get("level") or ph), str(k.get("armor") or ph),
+            _frde_kstats(k, lang), _frde_meals(k, lang), note.get(k["name"]) or k.get("note") or ""]
+
+def _frde_all_krows(lang):
+    rows = [_frde_krow(k, lang) for k in KNIGHTS]
+    rows += [_frde_krow({"name": n, **b}, lang) for n, b in KNIGHTS_BASIC.items()]
+    return rows
+
+def _frde_set_table(page_i18n, rows, headers=None):
+    for _s in page_i18n.get("sections") or []:
+        if _s.get("type") == "table":
+            if headers is not None:
+                _s["headers"] = headers
+            _s["rows"] = rows
+            return True
+    return False
+
+# 1) knights 表：7 表头 + 24 行（最后两列重译）
+_KNIGHTS_HEAD_FR = ["Chevalier", "Origine", "Niv.", "Armure", "Stats (STR/AGI/CHA/MAG/WIT/LCK)", "Plats favoris", "Notes"]
+_KNIGHTS_HEAD_DE = ["Ritter", "Herkunft", "Stufe", "Rüstung", "Werte (STR/AGI/CHA/MAG/WIT/LCK)", "Lieblingsgerichte", "Notizen"]
+
+# 2) 空表静态行（tier-list / factions / quest-success / system-requirements / overview / knights-stats）
+_TIER_FR = [
+    ["S", "Victoria, Daguez, Edith, Childeric, Alwena", "Stats de départ d'élite — Victoria a le plus haut total (67), Daguez 15 STR, Edith 12 MAG, Childeric 12 WIT et armure 9, plus les rumeurs d'Intendante d'Alwena."],
+    ["A", "Ari, Brunhilda, Epicrate, Dulahan, Chester, Gothild", "Stats solides ou traits puissants : Ari 13 AGI, Gothild 37 au total, Dulahan dégâts réduits de moitié, Chester affinité tous types."],
+    ["B", "Angelica, Arron, Gwendan, Tarcus, Ursula, Ligia, Oliver, Gideon, Zolta", "Solides avec de l'investissement narratif ; l'Immortal d'Ursula est utile de façon ponctuelle, Arron devient Dragon Knight."],
+    ["C", "Goberto, Rufus, Silgur, The Wolf", "Dépendants de la situation ; beaucoup gagnent en valeur grâce à des traits ou des intrigues."],
+]
+_TIER_DE = [
+    ["S", "Victoria, Daguez, Edith, Childeric, Alwena", "Elite-Startwerte — Victoria hat den höchsten Gesamtwert (67), Daguez 15 STR, Edith 12 MAG, Childeric 12 WIT und Rüstung 9, plus Alwenas Intendant-Gerüchte."],
+    ["A", "Ari, Brunhilda, Epicrate, Dulahan, Chester, Gothild", "Starke Werte oder mächtige Merkmale: Ari 13 AGI, Gothild 37 gesamt, Dulahan halber Schaden, Chester Affinität für alle Typen."],
+    ["B", "Angelica, Arron, Gwendan, Tarcus, Ursula, Ligia, Oliver, Gideon, Zolta", "Solide mit Story-Investition; Ursulas Unsterblichkeit ist situativ nützlich, Arron wird zum Dragon Knight."],
+    ["C", "Goberto, Rufus, Silgur, The Wolf", "Situationsabhängig; viele gewinnen durch Merkmale oder Storylines an Wert."],
+]
+_FACTIONS_FR = [
+    ["Marchands", "Commerce et richesse ; les quêtes et décisions de cour qui stimulent l'économie augmentent leur satisfaction."],
+    ["Mystiques", "Magie et arcanes ; les rituels et quêtes magiques leur plaisent."],
+    ["Érudits", "Savoir et recherche ; les quêtes de recherche et d'investigation leur correspondent."],
+    ["Nobles", "Noblesse et tradition ; les décisions favorisant l'aristocratie leur plaisent."],
+    ["Peuple", "Le petit peuple ; les décisions serviables et bienveillantes élèvent leur considération."],
+]
+_FACTIONS_DE = [
+    ["Händler", "Handel und Wohlstand; Quests und Hofentscheidungen, die die Wirtschaft ankurbeln, steigern ihre Zufriedenheit."],
+    ["Mystiker", "Magie und das Okkulte; Rituale und magische Quests erfreuen sie."],
+    ["Gelehrte", "Wissen und Forschung; Forschungs- und Ermittlungs-Quests entsprechen ihnen."],
+    ["Adel", "Adel und Tradition; Entscheidungen zugunsten der Aristokratie erfreuen sie."],
+    ["Volk", "Das einfache Volk; hilfsbereite und freundliche Entscheidungen heben ihr Ansehen."],
+]
+_QUESTSUCCESS_FR = [
+    ["Critical Success", "+10", "Récompense ×2"],
+    ["Great Success", "+5", "Récompense ×1.5"],
+    ["Success", "0", "Récompense ×1"],
+    ["Major Failure", "−5", "Aucune récompense"],
+    ["Critical Failure", "−10", "Aucune récompense"],
+]
+_QUESTSUCCESS_DE = [
+    ["Critical Success", "+10", "Belohnung ×2"],
+    ["Great Success", "+5", "Belohnung ×1.5"],
+    ["Success", "0", "Belohnung ×1"],
+    ["Major Failure", "−5", "Keine Belohnung"],
+    ["Critical Failure", "−10", "Keine Belohnung"],
+]
+_SYSREQ_FR = [
+    ["Minimum", "Windows 10 / i5-4670K / 4 Go de RAM / GT 1030 2 Go / DX12 / 3 Go"],
+    ["Recommandé", "Windows 11 / i5-9600K / 8 Go de RAM / GTX 1060 6 Go / DX12 / 3 Go"],
+    ["Linux / Steam Deck", "SteamOS 3.8.10 / Zen2 4c8t / 4-8 Go / RDNA2 8CU (Deck Verified)"],
+]
+_SYSREQ_DE = [
+    ["Minimum", "Windows 10 / i5-4670K / 4 GB RAM / GT 1030 2 GB / DX12 / 3 GB"],
+    ["Empfohlen", "Windows 11 / i5-9600K / 8 GB RAM / GTX 1060 6 GB / DX12 / 3 GB"],
+    ["Linux / Steam Deck", "SteamOS 3.8.10 / Zen2 4c8t / 4-8 GB / RDNA2 8CU (Deck Verified)"],
+]
+_OVERVIEW_FR = [
+    ["Metacritic", "86 (champ de la page boutique)"],
+    ["Note Steam", "Très positives — 90 % sur plus de 700 avis"],
+    ["Sortie", "2026-08-06 (version complète, pas un accès anticipé)"],
+    ["Genre", "Indé / RPG — gestion de Table Ronde"],
+    ["Éditeur", "Curve Games"],
+]
+_OVERVIEW_DE = [
+    ["Metacritic", "86 (Feld auf der Shop-Seite)"],
+    ["Steam-Wertung", "Sehr positiv — 90 % von über 700 Rezensionen"],
+    ["Release", "06.08.2026 (Vollversion, kein Early Access)"],
+    ["Genre", "Indie / RPG — Tafelrunden-Verwaltung"],
+    ["Publisher", "Curve Games"],
+]
+_STATS_FR = [
+    ["Force", "Puissance physique brute pour le combat, la chasse et les tâches lourdes."],
+    ["Agilité", "Vitesse, dextérité, mobilité — éclaireurs et duellistes s'y appuient."],
+    ["Charisme", "Persuasion et présence sociale — diplomatie et quêtes publiques."],
+    ["Magie", "Aptitude arcanique — rituels et quêtes magiques."],
+    ["Esprit", "Intelligence, perception, déduction — recherche et investigation."],
+    ["Chance", "Fortune — petits bonus et meilleurs résultats."],
+]
+_STATS_DE = [
+    ["Stärke", "Rohe Körperkraft für Kampf, Jagd und schwere Aufgaben."],
+    ["Geschicklichkeit", "Geschwindigkeit, Gewandtheit, Mobilität — Späher und Duellanten setzen darauf."],
+    ["Charisma", "Überzeugung und soziale Präsenz — Diplomatie und öffentliche Quests."],
+    ["Magie", "Arkane Begabung — Rituale und magische Quests."],
+    ["Verstand", "Intelligenz, Wahrnehmung, Deduktion — Forschung und Ermittlung."],
+    ["Glück", "Glück — kleine Boni und bessere Ergebnisse."],
+]
+
+for _pp in d["pages"]:
+    _slug = _pp.get("slug")
+    if _slug not in ("sovereign-tower/knights", "sovereign-tower/knights/roster", "sovereign-tower/knights/tier-list",
+                     "sovereign-tower/guides/factions", "sovereign-tower/guides/recruit-knights",
+                     "sovereign-tower/guides/quest-success", "sovereign-tower/review/system-requirements",
+                     "sovereign-tower/review/overview", "sovereign-tower/knights/stats", "sovereign-tower/recipes"):
+        continue
+    for _lg in ("fr", "de"):
+        _ix = (_pp.get("i18n") or {}).get(_lg)
+        if not _ix:
+            continue
+        if _slug == "sovereign-tower/knights":
+            _frde_set_table(_ix, _frde_all_krows(_lg), _KNIGHTS_HEAD_FR if _lg == "fr" else _KNIGHTS_HEAD_DE)
+        elif _slug == "sovereign-tower/knights/roster":
+            _ph = _frde_ph(_lg)
+            _rows = [[_k["name"], _k.get("origin") or _ph, str(_k.get("level") or _ph), str(_k.get("armor") or _ph), _frde_kstats(_k, _lg)] for _k in KNIGHTS]
+            _rows += [[_n, _b.get("origin") or _ph, str(_b.get("level") or _ph), str(_b.get("armor") or _ph), _frde_kstats({"name": _n, "stats": _b.get("stats")}, _lg)] for _n, _b in KNIGHTS_BASIC.items()]
+            _frde_set_table(_ix, _rows)
+        elif _slug == "sovereign-tower/knights/tier-list":
+            _frde_set_table(_ix, _TIER_FR if _lg == "fr" else _TIER_DE)
+        elif _slug == "sovereign-tower/guides/factions":
+            _frde_set_table(_ix, _FACTIONS_FR if _lg == "fr" else _FACTIONS_DE)
+        elif _slug == "sovereign-tower/guides/recruit-knights":
+            _rc = _RECRUIT_FR if _lg == "fr" else _RECRUIT_DE
+            _rows = [[_k["name"], _rc.get(_k["name"]) or _k.get("recruit") or _frde_ph(_lg)] for _k in KNIGHTS]
+            _rows += [[_n, _rc.get(_n) or _b.get("recruit") or _frde_ph(_lg)] for _n, _b in KNIGHTS_BASIC.items()]
+            _frde_set_table(_ix, _rows)
+        elif _slug == "sovereign-tower/guides/quest-success":
+            _frde_set_table(_ix, _QUESTSUCCESS_FR if _lg == "fr" else _QUESTSUCCESS_DE)
+        elif _slug == "sovereign-tower/review/system-requirements":
+            _frde_set_table(_ix, _SYSREQ_FR if _lg == "fr" else _SYSREQ_DE)
+        elif _slug == "sovereign-tower/review/overview":
+            _frde_set_table(_ix, _OVERVIEW_FR if _lg == "fr" else _OVERVIEW_DE)
+        elif _slug == "sovereign-tower/knights/stats":
+            _frde_set_table(_ix, _STATS_FR if _lg == "fr" else _STATS_DE)
+        elif _slug == "sovereign-tower/recipes":
+            _ph = _frde_ph(_lg)
+            _desc = _DESC_FR if _lg == "fr" else _DESC_DE
+            _head0 = ["Plat", "Description"] if _lg == "fr" else ["Gericht", "Beschreibung"]
+            _rows0 = [[r["en"], _desc[r["en"]]] for r in RECIPES]
+            _rows1 = [[_k["name"], _frde_meals(_k, _lg)] for _k in KNIGHTS]
+            _rows1 += [[_n, _frde_meals({"name": _n, **_b}, _lg)] for _n, _b in KNIGHTS_BASIC.items()]
+            _tables = [s for s in _ix.get("sections") or [] if s.get("type") == "table"]
+            if len(_tables) >= 2:
+                _tables[0]["headers"] = _head0
+                _tables[0]["rows"] = _rows0
+                _tables[1]["rows"] = _rows1
+
+# 3) 中文残留按 en 重译（endings 一周目） + de new-game-plus 标题
+for _pp in d["pages"]:
+    _slug = _pp.get("slug")
+    if _slug == "sovereign-tower/endings":
+        for _lg in ("fr", "de"):
+            _ix = (_pp.get("i18n") or {}).get(_lg)
+            if not _ix:
+                continue
+            _repl = "conquête en première partie" if _lg == "fr" else "Eroberung im ersten Durchlauf"
+            for _s in _ix.get("sections") or []:
+                for _r in _s.get("rows") or []:
+                    for _ci, _c in enumerate(_r):
+                        if isinstance(_c, str) and "一周目" in _c:
+                            _r[_ci] = _c.replace("一周目征服结局", _repl)
+    elif _slug == "sovereign-tower/guides/new-game-plus":
+        _de = (_pp.get("i18n") or {}).get("de")
+        if _de:
+            for _s in _de.get("sections") or []:
+                if _s.get("heading") == "New Game Plus":
+                    _s["heading"] = "Neues Spiel +"
+
+# 4) “待补”中文占位 → à compléter / noch offen（全站 fr/de，递归替换）
+def _frde_no_zh(node, lang):
+    ph = _FR_PH if lang == "fr" else _DE_PH
+    if isinstance(node, str):
+        return node.replace("待补", ph)
+    if isinstance(node, list):
+        return [_frde_no_zh(x, lang) for x in node]
+    if isinstance(node, dict):
+        return {k: _frde_no_zh(v, lang) for k, v in node.items()}
+    return node
+
+for _pp in d["pages"]:
+    for _lg in ("fr", "de"):
+        _ix = (_pp.get("i18n") or {}).get(_lg)
+        if not _ix:
+            continue
+        _ph = _FR_PH if _lg == "fr" else _DE_PH
+        for _k in ("title", "metaTitle", "metaDescription", "intro"):
+            if isinstance(_ix.get(_k), str):
+                _ix[_k] = _ix[_k].replace("待补", _ph)
+        if _ix.get("sections") is not None:
+            _ix["sections"] = _frde_no_zh(_ix["sections"], _lg)
+
 # --- zh-CN 标题/intro/区块标题翻译覆盖（用户反馈：切换中文仍有英文残留）---
 # content_pages._wt() 把英文 title/metaTitle/metaDescription 直接填入 i18n.zh-CN，
 # 导致 31 个 sovereign-tower 页面 h1 标题、19 个首段、16 个区块标题在 zh-CN 下仍是英文。

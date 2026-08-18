@@ -1737,7 +1737,9 @@
         "Origine",
         "Niv.",
         "Armure",
-        "Stats (FOR/AGI/CHA/MAG/ESP/CHA)"
+        "Stats (STR/AGI/CHA/MAG/WIT/LCK)",
+        "Plats favoris",
+        "Notes"
        ],
        "rows": [
         [
@@ -1746,8 +1748,8 @@
          "12",
          "8",
          "8 / 9 / 10 / 0 / 12 / 7",
-         "Brizhian Butter Shortbread，Crêpe",
-         "唯一能挖其他骑士流言的人（一次一个，且只挖你不知道的）。"
+         "Brizhian Butter Shortbread, Crêpe",
+         "La seule personne capable de déterrer les rumeurs des autres chevaliers — une à la fois, et uniquement celles que vous ne connaissez pas encore."
         ],
         [
          "Angelica",
@@ -1755,8 +1757,8 @@
          "1",
          "5",
          "4 / 8 / 3 / 0 / 2 / 7",
-         "Préfou，Crêpe",
-         "君主风格：喜 Kind 恶 Tyrannic；恶 Ghost/Assassination。"
+         "Préfou, Crêpe",
+         "Style de souverain : aime Kind, déteste Tyrannic ; déteste Ghost/Assassination."
         ],
         [
          "Ari",
@@ -1764,8 +1766,8 @@
          "8",
          "6",
          "5 / 13 / 8 / 3 / 8 / 6",
-         "Brizhian Butter Shortbread，Crêpe",
-         "永不辞职；坐骑 Columbus 使任务 −4 cycles。"
+         "Brizhian Butter Shortbread, Crêpe",
+         "Ne démissionne jamais ; sa monture Columbus raccourcit les quêtes de −4 cycles."
         ],
         [
          "Arron",
@@ -1773,8 +1775,8 @@
          "3",
          "7",
          "2 / 2 / 3 / 6 / 7 / 8",
-         "Crêpe，Brizhian Butter Shortbread",
-         "剧情可得 Dragon Knight 特质（任意任务小加成，战斗翻倍）。"
+         "Crêpe, Brizhian Butter Shortbread",
+         "L'histoire peut accorder le trait Dragon Knight (petit bonus sur toute quête, doublé au combat)."
         ],
         [
          "Brunhilda",
@@ -1782,17 +1784,17 @@
          "1",
          "6",
          "7 / 2 / 6 / 7 / 3 / 0",
-         "Galette-Saucisse，Lion's Taco",
-         "君主风格：喜 Audacious 恶 Wise。"
+         "Galette-Saucisse, Lion's Taco",
+         "Style de souverain : aime Audacious, déteste Wise."
         ],
         [
          "Chester",
          "Milkford",
          "15",
          "6",
-         "随机（Chester 每次判定重 roll 0–15）",
-         "Galette-Saucisse，Croque-Monsieur，Préfou，Crêpe，Brizhian Butter Shortbread，Lion's Taco",
-         "随机属性 + 全类型好感 = 万能补位工具人。"
+         "Aléatoire (Chester relance 0–15 à chaque jet)",
+         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco",
+         "Stats aléatoires + affinité tous types = un remplaçant universel."
         ],
         [
          "Childeric",
@@ -1800,8 +1802,8 @@
          "6",
          "9",
          "7 / 4 / 4 / 0 / 12 / 4",
-         "Crêpe，Croque-Monsieur",
-         "护甲 9 为全游最高。"
+         "Crêpe, Croque-Monsieur",
+         "L'armure 9 est la plus élevée du jeu."
         ],
         [
          "Daguez",
@@ -1809,8 +1811,8 @@
          "1",
          "6",
          "15 / 0 / 0 / 0 / 0 / 9",
-         "Crêpe，Galette-Saucisse，Préfou",
-         "满力量 15；巨剑锁定。"
+         "Crêpe, Galette-Saucisse, Préfou",
+         "Force 15 au maximum ; épée à deux mains verrouillée."
         ],
         [
          "Dulahan",
@@ -1818,8 +1820,8 @@
          "1",
          "7",
          "8 / 8 / 0 / 9 / 0 / 0",
-         "全部 6 种",
-         "Goberto 死后才出现（恶魔骑士）。"
+         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco",
+         "Chevalier démon ; n'apparaît qu'après la mort de Goberto. Aime les 6 plats."
         ],
         [
          "Edith",
@@ -1827,8 +1829,8 @@
          "8",
          "7",
          "7 / 10 / 3 / 12 / 7 / 0",
-         "Croque-Monsieur，Brizhian Butter Shortbread",
-         "MAG 12 并列最高；圣物 Dainself。"
+         "Croque-Monsieur, Brizhian Butter Shortbread",
+         "MAG 12 à égalité pour la plus haute valeur ; relique Dainself."
         ],
         [
          "Epicrate",
@@ -1836,125 +1838,125 @@
          "9",
          "6",
          "3 / 3 / 9 / 9 / 12 / 3",
-         "待补",
-         "Brimwood 起义历史人物。"
+         "à compléter",
+         "Figure révolutionnaire du soulèvement de Brimwood."
         ],
         [
          "Gideon",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 6 天可招。"
+         "Tower City",
+         "5",
+         "5",
+         "4 / 6 / 8 / 3 / 7 / 2",
+         "Brizhian Butter Shortbread, Crêpe",
+         "Protagoniste ; candidat au cycle 13. Style de souverain : aime Audacious, déteste Tyrannic."
         ],
         [
          "Goberto",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+         "Naoned",
+         "1",
+         "7",
+         "8 / 1 / 3 / 0 / 0 / 0",
+         "Lion's Taco, Galette-Saucisse, Brizhian Butter Shortbread",
+         "Premier véritable recrutement (cycle 2). La lignée d'armure Almor peut faire passer l'armure de 7→17 et accorder Perfect Armour."
         ],
         [
          "Gothild",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Mana Strala",
+         "7",
+         "6",
+         "9 / 3 / 5 / 3 / 9 / 8",
+         "Croque-Monsieur, Brizhian Butter Shortbread",
+         "Garde du corps ; rejoint via l'embuscade de Victoria ou la lignée d'Enberg."
         ],
         [
          "Gwendan Villador",
-         "待补",
+         "Villador",
          "1",
          "6",
-         "待补",
-         "待补",
-         "恶 Audacious；谋杀案疑凶（跨周目可变）。"
+         "5 / 4 / 8 / 2 / 3 / 1",
+         "Crêpe, Croque-Monsieur",
+         "Déteste Audacious ; suspect du meurtre (varie selon les parties)."
         ],
         [
          "Ligia",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Southbay Gate",
+         "6",
+         "5",
+         "3 / 8 / 4 / 10 / 2 / 6",
+         "Préfou, Crêpe",
+         "Érudite ; rejoint via la lignée de Southbay (père survivant)."
         ],
         [
          "Oliver",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Angelor",
+         "6",
+         "7",
+         "2 / 8 / 3 / 3 / 9 / 6",
+         "Galette-Saucisse, Croque-Monsieur",
+         "Employé de bureau ; candidat au cycle 19 s'il est épargné dans le prologue."
         ],
         [
          "Rufus",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 6 天；与狼同行。"
+         "Belthorn (Groveshire)",
+         "1",
+         "7",
+         "6 / 6 / 1 / 3 / 7 / 1",
+         "Galette-Saucisse, Croque-Monsieur",
+         "La forme humaine de The Wolf une fois la malédiction levée ; levez la malédiction à Groveshire."
         ],
         [
          "Silgur",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 7 天。"
+         "Beaconsbury",
+         "1",
+         "5",
+         "3 / 8 / 3 / 0 / 8 / 1",
+         "Galette-Saucisse, Crêpe",
+         "Chasseur ; rejoint via la réussite standard de Groveshire."
         ],
         [
          "Tarcus",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Mavignac (Gavault)",
+         "1",
+         "8",
+         "6 / 3 / 1 / 0 / 10 / 5",
+         "Brizhian Butter Shortbread, Préfou",
+         "Défenseur des nobles ; rejoint via la lignée de Gavault (côté de la mère)."
         ],
         [
          "The Wolf",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 6 天。"
+         "Belthorn (Groveshire)",
+         "1",
+         "5",
+         "3 / 7 / 3 / 3 / 7 / 1",
+         "Galette-Saucisse, Croque-Monsieur",
+         "Apprivoisé par Angelica via la route de la bête ; monture verrouillée."
         ],
         [
          "Ursula",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 5 天。"
+         "Mossgart",
+         "1",
+         "5",
+         "3 / 4 / 2 / 7 / 7 / 0",
+         "Préfou, Lion's Taco",
+         "Immortelle — recrutable à nouveau après la mort ; rejoint automatiquement au cycle 5."
         ],
         [
          "Victoria",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "City of Enberg",
+         "13",
+         "7",
+         "13 / 13 / 9 / 13 / 10 / 9",
+         "Croque-Monsieur, Préfou",
+         "Meilleures stats de départ du jeu (67 au total) ; rejoint via l'assassinat d'Enberg."
         ],
         [
          "Zolta",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Volga Camp",
+         "6",
+         "7",
+         "4 / 5 / 2 / 9 / 2 / 11",
+         "Crêpe, Lion's Taco",
+         "Joueur ; rejoint via le derby de Kutnar."
         ]
        ]
       },
@@ -1995,7 +1997,9 @@
         "Herkunft",
         "Stufe",
         "Rüstung",
-        "Werte (STR/AGI/CHA/MAG/WIT/GLK)"
+        "Werte (STR/AGI/CHA/MAG/WIT/LCK)",
+        "Lieblingsgerichte",
+        "Notizen"
        ],
        "rows": [
         [
@@ -2004,8 +2008,8 @@
          "12",
          "8",
          "8 / 9 / 10 / 0 / 12 / 7",
-         "Brizhian Butter Shortbread，Crêpe",
-         "唯一能挖其他骑士流言的人（一次一个，且只挖你不知道的）。"
+         "Brizhian Butter Shortbread, Crêpe",
+         "Die einzige Ritterin, die Gerüchte über andere Ritter ausgraben kann — eines nach dem anderen, und nur solche, die du noch nicht kennst."
         ],
         [
          "Angelica",
@@ -2013,8 +2017,8 @@
          "1",
          "5",
          "4 / 8 / 3 / 0 / 2 / 7",
-         "Préfou，Crêpe",
-         "君主风格：喜 Kind 恶 Tyrannic；恶 Ghost/Assassination。"
+         "Préfou, Crêpe",
+         "Herrscherstil: mag Kind, verabscheut Tyrannic; verabscheut Ghost/Assassination."
         ],
         [
          "Ari",
@@ -2022,8 +2026,8 @@
          "8",
          "6",
          "5 / 13 / 8 / 3 / 8 / 6",
-         "Brizhian Butter Shortbread，Crêpe",
-         "永不辞职；坐骑 Columbus 使任务 −4 cycles。"
+         "Brizhian Butter Shortbread, Crêpe",
+         "Tritt nie zurück; Reittier Columbus verkürzt Quests um −4 Zyklen."
         ],
         [
          "Arron",
@@ -2031,8 +2035,8 @@
          "3",
          "7",
          "2 / 2 / 3 / 6 / 7 / 8",
-         "Crêpe，Brizhian Butter Shortbread",
-         "剧情可得 Dragon Knight 特质（任意任务小加成，战斗翻倍）。"
+         "Crêpe, Brizhian Butter Shortbread",
+         "Die Story kann das Merkmal Dragon Knight verleihen (kleiner Bonus auf jede Quest, im Kampf verdoppelt)."
         ],
         [
          "Brunhilda",
@@ -2040,17 +2044,17 @@
          "1",
          "6",
          "7 / 2 / 6 / 7 / 3 / 0",
-         "Galette-Saucisse，Lion's Taco",
-         "君主风格：喜 Audacious 恶 Wise。"
+         "Galette-Saucisse, Lion's Taco",
+         "Herrscherstil: mag Audacious, verabscheut Wise."
         ],
         [
          "Chester",
          "Milkford",
          "15",
          "6",
-         "随机（Chester 每次判定重 roll 0–15）",
-         "Galette-Saucisse，Croque-Monsieur，Préfou，Crêpe，Brizhian Butter Shortbread，Lion's Taco",
-         "随机属性 + 全类型好感 = 万能补位工具人。"
+         "Zufällig (Chester würfelt bei jedem Check 0–15 neu)",
+         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco",
+         "Zufällige Werte + Affinität für alle Typen = ein universeller Lückenfüller."
         ],
         [
          "Childeric",
@@ -2058,8 +2062,8 @@
          "6",
          "9",
          "7 / 4 / 4 / 0 / 12 / 4",
-         "Crêpe，Croque-Monsieur",
-         "护甲 9 为全游最高。"
+         "Crêpe, Croque-Monsieur",
+         "Rüstung 9 ist die höchste im Spiel."
         ],
         [
          "Daguez",
@@ -2067,8 +2071,8 @@
          "1",
          "6",
          "15 / 0 / 0 / 0 / 0 / 9",
-         "Crêpe，Galette-Saucisse，Préfou",
-         "满力量 15；巨剑锁定。"
+         "Crêpe, Galette-Saucisse, Préfou",
+         "Volle 15 Stärke; Zweihänder gesperrt."
         ],
         [
          "Dulahan",
@@ -2076,8 +2080,8 @@
          "1",
          "7",
          "8 / 8 / 0 / 9 / 0 / 0",
-         "全部 6 种",
-         "Goberto 死后才出现（恶魔骑士）。"
+         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco",
+         "Dämonenritter; erscheint erst nach Gobertos Tod. Liebt alle 6 Gerichte."
         ],
         [
          "Edith",
@@ -2085,8 +2089,8 @@
          "8",
          "7",
          "7 / 10 / 3 / 12 / 7 / 0",
-         "Croque-Monsieur，Brizhian Butter Shortbread",
-         "MAG 12 并列最高；圣物 Dainself。"
+         "Croque-Monsieur, Brizhian Butter Shortbread",
+         "MAG 12 ist der höchste Wert (geteilt); Relikt Dainself."
         ],
         [
          "Epicrate",
@@ -2094,125 +2098,125 @@
          "9",
          "6",
          "3 / 3 / 9 / 9 / 12 / 3",
-         "待补",
-         "Brimwood 起义历史人物。"
+         "noch offen",
+         "Revolutionäre Figur des Brimwood-Aufstands."
         ],
         [
          "Gideon",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 6 天可招。"
+         "Tower City",
+         "5",
+         "5",
+         "4 / 6 / 8 / 3 / 7 / 2",
+         "Brizhian Butter Shortbread, Crêpe",
+         "Protagonist; Kandidat in Zyklus 13. Herrscherstil: mag Audacious, verabscheut Tyrannic."
         ],
         [
          "Goberto",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+         "Naoned",
+         "1",
+         "7",
+         "8 / 1 / 3 / 0 / 0 / 0",
+         "Lion's Taco, Galette-Saucisse, Brizhian Butter Shortbread",
+         "Erste richtige Rekrutierung (Zyklus 2). Die Almor-Rüstungslinie kann die Rüstung von 7→17 erhöhen und Perfect Armour gewähren."
         ],
         [
          "Gothild",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Mana Strala",
+         "7",
+         "6",
+         "9 / 3 / 5 / 3 / 9 / 8",
+         "Croque-Monsieur, Brizhian Butter Shortbread",
+         "Leibwächterin; kommt über den Victoria-Hinterhalt oder die Enberg-Linie."
         ],
         [
          "Gwendan Villador",
-         "待补",
+         "Villador",
          "1",
          "6",
-         "待补",
-         "待补",
-         "恶 Audacious；谋杀案疑凶（跨周目可变）。"
+         "5 / 4 / 8 / 2 / 3 / 1",
+         "Crêpe, Croque-Monsieur",
+         "Verabscheut Audacious; Mordverdächtiger (variiert je Durchlauf)."
         ],
         [
          "Ligia",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Southbay Gate",
+         "6",
+         "5",
+         "3 / 8 / 4 / 10 / 2 / 6",
+         "Préfou, Crêpe",
+         "Gelehrte; kommt über die Southbay-Linie (Vater überlebt)."
         ],
         [
          "Oliver",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Angelor",
+         "6",
+         "7",
+         "2 / 8 / 3 / 3 / 9 / 6",
+         "Galette-Saucisse, Croque-Monsieur",
+         "Büroangestellter; Kandidat in Zyklus 19, falls im Prolog verschont."
         ],
         [
          "Rufus",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 6 天；与狼同行。"
+         "Belthorn (Groveshire)",
+         "1",
+         "7",
+         "6 / 6 / 1 / 3 / 7 / 1",
+         "Galette-Saucisse, Croque-Monsieur",
+         "The Wolfs menschliche Form nach dem Fluchbruch; löse den Fluch in Groveshire."
         ],
         [
          "Silgur",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 7 天。"
+         "Beaconsbury",
+         "1",
+         "5",
+         "3 / 8 / 3 / 0 / 8 / 1",
+         "Galette-Saucisse, Crêpe",
+         "Jäger; kommt über den standardmäßigen Groveshire-Erfolg."
         ],
         [
          "Tarcus",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Mavignac (Gavault)",
+         "1",
+         "8",
+         "6 / 3 / 1 / 0 / 10 / 5",
+         "Brizhian Butter Shortbread, Préfou",
+         "Verteidiger des Adels; kommt über die Gavault-Linie (Mutters Seite)."
         ],
         [
          "The Wolf",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 6 天。"
+         "Belthorn (Groveshire)",
+         "1",
+         "5",
+         "3 / 7 / 3 / 3 / 7 / 1",
+         "Galette-Saucisse, Croque-Monsieur",
+         "Von Angelica über die Bestien-Route gezähmt; Reittier gesperrt."
         ],
         [
          "Ursula",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 5 天。"
+         "Mossgart",
+         "1",
+         "5",
+         "3 / 4 / 2 / 7 / 7 / 0",
+         "Préfou, Lion's Taco",
+         "Unsterblich — nach dem Tod erneut rekrutierbar; tritt in Zyklus 5 automatisch bei."
         ],
         [
          "Victoria",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "City of Enberg",
+         "13",
+         "7",
+         "13 / 13 / 9 / 13 / 10 / 9",
+         "Croque-Monsieur, Préfou",
+         "Höchste Startwerte im Spiel (67 gesamt); kommt über das Enberg-Attentat."
         ],
         [
          "Zolta",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Volga Camp",
+         "6",
+         "7",
+         "4 / 5 / 2 / 9 / 2 / 11",
+         "Crêpe, Lion's Taco",
+         "Spieler; kommt über das Kutnar-Derby."
         ]
        ]
       },
@@ -2636,7 +2640,7 @@
        "items": [
         [
          "Puis-je recruter Dulahan sans tuer Goberto ?",
-         "Selon les données du wiki de fans, Dulahan n'apparaît que sur la voie de mort de Goberto. Aucune voie alternative confirmée pour l'instant (待补 si non vérifié)."
+         "Selon les données du wiki de fans, Dulahan n'apparaît que sur la voie de mort de Goberto. Aucune voie alternative confirmée pour l'instant (à compléter si non vérifié)."
         ],
         [
          "Alwena est-elle manquable ?",
@@ -2718,7 +2722,7 @@
        "items": [
         [
          "Kann ich Dulahan rekrutieren, ohne Goberto zu töten?",
-         "Laut Fan-Wiki-Daten erscheint Dulahan nur auf Gobertos Todesweg. Eine bestätigte Alternative gibt es noch nicht (待补, falls unverifiziert)."
+         "Laut Fan-Wiki-Daten erscheint Dulahan nur auf Gobertos Todesweg. Eine bestätigte Alternative gibt es noch nicht (noch offen, falls unverifiziert)."
         ],
         [
          "Kann man Alwena verpassen?",
@@ -3054,22 +3058,22 @@
         [
          "Lady of the Tower (statue de pierre)",
          "Argument de vente officiel — une statue de pierre à conquérir, liée aux secrets de la tour.",
-         "Concept vérifié (Steam L0) ; étapes complètes 待补"
+         "Concept vérifié (Steam L0) ; étapes complètes à compléter"
         ],
         [
          "Angelica",
          "Recrue de l'histoire d'ouverture ; route Cœur-Bienveillant, aime le style de souverain Kind.",
-         "Route confirmée ; étapes cachées 待补"
+         "Route confirmée ; étapes cachées à compléter"
         ],
         [
          "Arthur (fin mariage)",
          "Des vidéos communautaires montrent une fin de mariage avec Arthur.",
-         "Existe (Bilibili L0) ; conditions exactes 待补"
+         "Existe (Bilibili L0) ; conditions exactes à compléter"
         ],
         [
          "Gideon / autres",
          "Les discussions Steam demandent comment séduire le chevalier-loup et évoquent des conditions secrètes.",
-         "Rapport communautaire ; 待补"
+         "Rapport communautaire ; à compléter"
         ]
        ]
       },
@@ -3085,11 +3089,11 @@
         ],
         [
          "Puis-je séduire plusieurs chevaliers ?",
-         "Les retours communautaires divergent selon les routes ; certaines semblent mutuellement exclusives (待补 tant que non vérifié en jeu)."
+         "Les retours communautaires divergent selon les routes ; certaines semblent mutuellement exclusives (à compléter tant que non vérifié en jeu)."
         ],
         [
          "La fin mariage avec Arthur exige-t-elle un équilibre de factions précis ?",
-         "Des vidéos communautaires existent mais les prérequis exacts ne sont pas vérifiés — à traiter comme 待补."
+         "Des vidéos communautaires existent mais les prérequis exacts ne sont pas vérifiés — à traiter comme à compléter."
         ]
        ]
       }
@@ -3126,22 +3130,22 @@
         [
          "Lady of the Tower (Steinstatue)",
          "Offizielles Verkaufsargument — eine romantisierbare Steinfigur, verbunden mit den Geheimnissen des Turms.",
-         "Konzept verifiziert (Steam L0); volle Schritte 待补"
+         "Konzept verifiziert (Steam L0); volle Schritte noch offen"
         ],
         [
          "Angelica",
          "Rekrutin der Eröffnungs-Story; Kind-Hearted-Route, mag Herrscherstil Kind.",
-         "Route bestätigt; versteckte Schritte 待补"
+         "Route bestätigt; versteckte Schritte noch offen"
         ],
         [
          "Arthur (Heiratsende)",
          "Community-Videos zeigen ein Heiratsende mit Arthur.",
-         "Existiert (Bilibili L0); genaue Bedingungen 待补"
+         "Existiert (Bilibili L0); genaue Bedingungen noch offen"
         ],
         [
          "Gideon / andere",
          "Steam-Community-Threads fragen nach der Romanze mit dem Werwolf-Ritter und geheimen Bedingungen.",
-         "Community-bekundet; 待补"
+         "Community-bekundet; noch offen"
         ]
        ]
       },
@@ -3157,11 +3161,11 @@
         ],
         [
          "Kann ich mehrere Ritter gleichzeitig romantisieren?",
-         "Die Community-Berichte unterscheiden sich je nach Route; einige Routen scheinen sich gegenseitig auszuschließen (待补, bis im Spiel verifiziert)."
+         "Die Community-Berichte unterscheiden sich je nach Route; einige Routen scheinen sich gegenseitig auszuschließen (noch offen, bis im Spiel verifiziert)."
         ],
         [
          "Braucht das Arthur-Heiratsende ein bestimmtes Fraktionsgleichgewicht?",
-         "Es gibt Community-Videos, aber die genauen Voraussetzungen sind unverifiziert — als 待补 behandeln."
+         "Es gibt Community-Videos, aber die genauen Voraussetzungen sind unverifiziert — als noch offen behandeln."
         ]
        ]
       }
@@ -3512,24 +3516,24 @@
        ],
        "rows": [
         [
-         "Fin de conquête (一周目征服结局)",
+         "Fin de conquête (conquête en première partie)",
          "Une vidéo Bilibili communautaire montre une fin de conquête dès la première partie.",
-         "Existe (vidéo L0) ; conditions 待补"
+         "Existe (vidéo L0) ; conditions à compléter"
         ],
         [
          "Résolution King Slayer",
          "Un chemin de résolution autour du King Slayer, couvert par des sites de fans.",
-         "Couvert par whisperofthehouse (L0) ; étapes 待补"
+         "Couvert par whisperofthehouse (L0) ; étapes à compléter"
         ],
         [
          "Fin cachée / alternative",
          "Steam Community : « How to get the secret alt ending » (7 réponses).",
-         "Rapport communautaire ; étapes 待补"
+         "Rapport communautaire ; étapes à compléter"
         ],
         [
          "Fin mariage avec Arthur",
          "Fin de mariage avec Arthur montrée dans des vidéos communautaires.",
-         "Existe (L0) ; conditions 待补"
+         "Existe (L0) ; conditions à compléter"
         ],
         [
          "Route du meurtre de Gwendan",
@@ -3557,7 +3561,7 @@
        "items": [
         [
          "Combien y a-t-il de fins ?",
-         "Un compte complet vérifié est 待补. Les vidéos communautaires confirment au moins les fins conquête, King Slayer, cachée/alternative et mariage avec Arthur."
+         "Un compte complet vérifié est à compléter. Les vidéos communautaires confirment au moins les fins conquête, King Slayer, cachée/alternative et mariage avec Arthur."
         ],
         [
          "Puis-je voir toutes les fins en une partie ?",
@@ -3569,7 +3573,7 @@
         ],
         [
          "Y a-t-il une vraie fin (true ending) ?",
-         "Sovereign Tower n'a pas de fin « true ending » officielle. La plus proche est la fin cachée/alternative signalée par les joueurs (fil Steam Community), mais ses conditions exactes sont encore en cours de vérification (待补)."
+         "Sovereign Tower n'a pas de fin « true ending » officielle. La plus proche est la fin cachée/alternative signalée par les joueurs (fil Steam Community), mais ses conditions exactes sont encore en cours de vérification (à compléter)."
         ]
        ]
       }
@@ -3593,24 +3597,24 @@
        ],
        "rows": [
         [
-         "Eroberungsende (一周目征服结局)",
+         "Eroberungsende (Eroberung im ersten Durchlauf)",
          "Ein Community-Bilibili-Video zeigt ein Eroberungsende im ersten Lauf.",
-         "Existiert (L0-Video); Bedingungen 待补"
+         "Existiert (L0-Video); Bedingungen noch offen"
         ],
         [
          "King-Slayer-Auflösung",
          "Ein Auflösungspfad rund um den King Slayer, von Fan-Seiten abgedeckt.",
-         "Von whisperofthehouse abgedeckt (L0); Schritte 待补"
+         "Von whisperofthehouse abgedeckt (L0); Schritte noch offen"
         ],
         [
          "Verstecktes / alternatives Ende",
          "Steam-Community: „How to get the secret alt ending“ (7 Antworten).",
-         "Community-bekundet; Schritte 待补"
+         "Community-bekundet; Schritte noch offen"
         ],
         [
          "Arthur-Heiratsende",
          "Heiratsende mit Arthur in Community-Videos gezeigt.",
-         "Existiert (L0); Bedingungen 待补"
+         "Existiert (L0); Bedingungen noch offen"
         ],
         [
          "Gwendan-Mordroute",
@@ -3638,7 +3642,7 @@
        "items": [
         [
          "Wie viele Enden gibt es?",
-         "Eine vollständig verifizierte Zahl ist 待补. Community-Videos bestätigen mindestens Eroberung, King Slayer, verstecktes/alternatives und Arthur-Heiratsende."
+         "Eine vollständig verifizierte Zahl ist noch offen. Community-Videos bestätigen mindestens Eroberung, King Slayer, verstecktes/alternatives und Arthur-Heiratsende."
         ],
         [
          "Kann ich alle Enden in einem Lauf sehen?",
@@ -3650,7 +3654,7 @@
         ],
         [
          "Gibt es ein „True Ending“?",
-         "Sovereign Tower hat kein offizielles „True Ending“. Am nächsten kommt das von Spielern gemeldete versteckte/alternative Ende (Steam-Community-Thread), dessen genaue Freischaltbedingungen aber noch verifiziert werden (待补)."
+         "Sovereign Tower hat kein offizielles „True Ending“. Am nächsten kommt das von Spielern gemeldete versteckte/alternative Ende (Steam-Community-Thread), dessen genaue Freischaltbedingungen aber noch verifiziert werden (noch offen)."
         ]
        ]
       }
@@ -4320,40 +4324,33 @@
        "heading": "",
        "body": "",
        "headers": [
-        "Plat (EN)",
-        "Plat (中文)",
+        "Plat",
         "Description"
        ],
        "rows": [
         [
          "Galette-Saucisse",
-         "香肠荞麦饼",
-         "Galette de sarrasin à la saucisse — le plat de rue de Brizh."
+         "Galette de sarrasin à la saucisse — un classique de rue de Brizh."
         ],
         [
          "Croque-Monsieur",
-         "法式三明治",
-         "Toast jambon-fromage grillé, classique réconfortant."
+         "Sandwich grillé jambon-fromage, le réconfort classique."
         ],
         [
          "Préfou",
-         "蒜香面包",
-         "Pain à l'ail doré au beurre — le favori des tavernes."
+         "Pain à l'ail cuit au beurre — un favori des tavernes."
         ],
         [
          "Crêpe",
-         "可丽饼",
-         "Crêpe fine, sucrée ou salée."
+         "Fine crêpe française, sucrée ou salée."
         ],
         [
          "Brizhian Butter Shortbread",
-         "布里兹黄油酥饼",
-         "Un sablé au beurre riche, signature de Brizh."
+         "Sablé au beurre riche de Brizh."
         ],
         [
          "Lion's Taco",
-         "狮子玉米饼",
-         "Un taco généreux et audacieux."
+         "Un taco audacieux avec une part de lion en garniture."
         ]
        ]
       },
@@ -4369,47 +4366,99 @@
        "rows": [
         [
          "Alwena",
-         "Brizhian Butter Shortbread、Crêpe"
+         "Brizhian Butter Shortbread, Crêpe"
         ],
         [
          "Angelica",
-         "Préfou、Crêpe"
+         "Préfou, Crêpe"
         ],
         [
          "Ari",
-         "Brizhian Butter Shortbread、Crêpe"
+         "Brizhian Butter Shortbread, Crêpe"
         ],
         [
          "Arron",
-         "Crêpe、Brizhian Butter Shortbread"
+         "Crêpe, Brizhian Butter Shortbread"
         ],
         [
          "Brunhilda",
-         "Galette-Saucisse、Lion's Taco"
+         "Galette-Saucisse, Lion's Taco"
         ],
         [
          "Chester",
-         "Les 6 plats"
+         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco"
         ],
         [
          "Childeric",
-         "Crêpe、Croque-Monsieur"
+         "Crêpe, Croque-Monsieur"
         ],
         [
          "Daguez",
-         "Crêpe、Galette-Saucisse、Préfou"
+         "Crêpe, Galette-Saucisse, Préfou"
         ],
         [
          "Dulahan",
-         "Les 6 plats"
+         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco"
         ],
         [
          "Edith",
-         "Croque-Monsieur、Brizhian Butter Shortbread"
+         "Croque-Monsieur, Brizhian Butter Shortbread"
         ],
         [
-         "Autres chevaliers",
-         "待补"
+         "Epicrate",
+         "à compléter"
+        ],
+        [
+         "Gideon",
+         "Brizhian Butter Shortbread, Crêpe"
+        ],
+        [
+         "Goberto",
+         "Lion's Taco, Galette-Saucisse, Brizhian Butter Shortbread"
+        ],
+        [
+         "Gothild",
+         "Croque-Monsieur, Brizhian Butter Shortbread"
+        ],
+        [
+         "Gwendan Villador",
+         "Crêpe, Croque-Monsieur"
+        ],
+        [
+         "Ligia",
+         "Préfou, Crêpe"
+        ],
+        [
+         "Oliver",
+         "Galette-Saucisse, Croque-Monsieur"
+        ],
+        [
+         "Rufus",
+         "Galette-Saucisse, Croque-Monsieur"
+        ],
+        [
+         "Silgur",
+         "Galette-Saucisse, Crêpe"
+        ],
+        [
+         "Tarcus",
+         "Brizhian Butter Shortbread, Préfou"
+        ],
+        [
+         "The Wolf",
+         "Galette-Saucisse, Croque-Monsieur"
+        ],
+        [
+         "Ursula",
+         "Préfou, Lion's Taco"
+        ],
+        [
+         "Victoria",
+         "Croque-Monsieur, Préfou"
+        ],
+        [
+         "Zolta",
+         "Crêpe, Lion's Taco"
         ]
        ]
       },
@@ -4458,40 +4507,33 @@
        "heading": "",
        "body": "",
        "headers": [
-        "Gericht (EN)",
-        "Gericht (中文)",
+        "Gericht",
         "Beschreibung"
        ],
        "rows": [
         [
          "Galette-Saucisse",
-         "香肠荞麦饼",
-         "Buchweizen-Galette mit Wurst — Brizhs Straßenklassiker."
+         "Buchweizen-Galette mit Wurst — ein Brizh-Straßengericht."
         ],
         [
          "Croque-Monsieur",
-         "法式三明治",
-         "Gegrilltes Schinken-Käse-Sandwich, der Klassiker zum Wohlfühlen."
+         "Getoastetes Schinken-Käse-Sandwich, der klassische Seelentröster."
         ],
         [
          "Préfou",
-         "蒜香面包",
-         "Mit Butter geröstetes Knoblauchbrot — der Favorit der Tavernen."
+         "In Butter gebackenes Knoblauchbrot — ein Tavernen-Liebling."
         ],
         [
          "Crêpe",
-         "可丽饼",
-         "Dünner französischer Eierkuchen, süß oder herzhaft."
+         "Dünner französischer Pfannkuchen, süß oder herzhaft."
         ],
         [
          "Brizhian Butter Shortbread",
-         "布里兹黄油酥饼",
-         "Reichhaltiger Butterkeks, eine Spezialität Brizhs."
+         "Reichhaltiges Butter-Shortbread aus Brizh."
         ],
         [
          "Lion's Taco",
-         "狮子玉米饼",
-         "Ein großzügig gefüllter, kühner Taco."
+         "Ein kräftiger Taco mit einer Löwenportion Füllung."
         ]
        ]
       },
@@ -4507,47 +4549,99 @@
        "rows": [
         [
          "Alwena",
-         "Brizhian Butter Shortbread、Crêpe"
+         "Brizhian Butter Shortbread, Crêpe"
         ],
         [
          "Angelica",
-         "Préfou、Crêpe"
+         "Préfou, Crêpe"
         ],
         [
          "Ari",
-         "Brizhian Butter Shortbread、Crêpe"
+         "Brizhian Butter Shortbread, Crêpe"
         ],
         [
          "Arron",
-         "Crêpe、Brizhian Butter Shortbread"
+         "Crêpe, Brizhian Butter Shortbread"
         ],
         [
          "Brunhilda",
-         "Galette-Saucisse、Lion's Taco"
+         "Galette-Saucisse, Lion's Taco"
         ],
         [
          "Chester",
-         "Alle 6 Gerichte"
+         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco"
         ],
         [
          "Childeric",
-         "Crêpe、Croque-Monsieur"
+         "Crêpe, Croque-Monsieur"
         ],
         [
          "Daguez",
-         "Crêpe、Galette-Saucisse、Préfou"
+         "Crêpe, Galette-Saucisse, Préfou"
         ],
         [
          "Dulahan",
-         "Alle 6 Gerichte"
+         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco"
         ],
         [
          "Edith",
-         "Croque-Monsieur、Brizhian Butter Shortbread"
+         "Croque-Monsieur, Brizhian Butter Shortbread"
         ],
         [
-         "Andere Ritter",
-         "待补"
+         "Epicrate",
+         "noch offen"
+        ],
+        [
+         "Gideon",
+         "Brizhian Butter Shortbread, Crêpe"
+        ],
+        [
+         "Goberto",
+         "Lion's Taco, Galette-Saucisse, Brizhian Butter Shortbread"
+        ],
+        [
+         "Gothild",
+         "Croque-Monsieur, Brizhian Butter Shortbread"
+        ],
+        [
+         "Gwendan Villador",
+         "Crêpe, Croque-Monsieur"
+        ],
+        [
+         "Ligia",
+         "Préfou, Crêpe"
+        ],
+        [
+         "Oliver",
+         "Galette-Saucisse, Croque-Monsieur"
+        ],
+        [
+         "Rufus",
+         "Galette-Saucisse, Croque-Monsieur"
+        ],
+        [
+         "Silgur",
+         "Galette-Saucisse, Crêpe"
+        ],
+        [
+         "Tarcus",
+         "Brizhian Butter Shortbread, Préfou"
+        ],
+        [
+         "The Wolf",
+         "Galette-Saucisse, Croque-Monsieur"
+        ],
+        [
+         "Ursula",
+         "Préfou, Lion's Taco"
+        ],
+        [
+         "Victoria",
+         "Croque-Monsieur, Préfou"
+        ],
+        [
+         "Zolta",
+         "Crêpe, Lion's Taco"
         ]
        ]
       },
@@ -6874,7 +6968,7 @@
      "title": "Les 75 succès",
      "metaTitle": "Les 75 succès",
      "metaDescription": "Sovereign Tower a 75 succès Steam. Les 10 en avant, la route How Cute et les données de taux.",
-     "intro": "Sovereign Tower a 75 succès Steam. La liste complète est en cours de vérification (待补), mais les 10 en avant et plusieurs importants sont confirmés.",
+     "intro": "Sovereign Tower a 75 succès Steam. La liste complète est en cours de vérification (à compléter), mais les 10 en avant et plusieurs importants sont confirmés.",
      "sections": [
       {
        "type": "list",
@@ -6955,7 +7049,7 @@
         ],
         [
          "La liste complète est-elle disponible ?",
-         "Le tableau complet des 75 succès est 待补 (Steam Community est limité en requêtes ; nous vérifions via SteamDB/sources communautaires)."
+         "Le tableau complet des 75 succès est à compléter (Steam Community est limité en requêtes ; nous vérifions via SteamDB/sources communautaires)."
         ]
        ]
       }
@@ -6965,7 +7059,7 @@
      "title": "Alle 75 Erfolge",
      "metaTitle": "Alle 75 Erfolge",
      "metaDescription": "Sovereign Tower hat 75 Steam-Erfolge. Die Top 10, die How-Cute-Route und Erfolgsraten-Daten.",
-     "intro": "Sovereign Tower hat 75 Steam-Erfolge. Die vollständige Liste wird noch verifiziert (待补), aber die Top 10 und mehrere wichtige sind bestätigt.",
+     "intro": "Sovereign Tower hat 75 Steam-Erfolge. Die vollständige Liste wird noch verifiziert (noch offen), aber die Top 10 und mehrere wichtige sind bestätigt.",
      "sections": [
       {
        "type": "list",
@@ -7046,7 +7140,7 @@
         ],
         [
          "Ist die vollständige Liste verfügbar?",
-         "Die komplette 75er-Tabelle ist 待补 (Steam Community ist ratenlimitiert; wir verifizieren über SteamDB/Community-Quellen)."
+         "Die komplette 75er-Tabelle ist noch offen (Steam Community ist ratenlimitiert; wir verifizieren über SteamDB/Community-Quellen)."
         ]
        ]
       }
@@ -7344,7 +7438,7 @@
         "Type ou condition de quête aimé : +1,33 d'affinité chacun. Détesté : −0,75 chacun.",
         "Plat favori : +1,5 d'affinité et +0,5 de score de quête.",
         "Seuil de démission : −7 pour presque tout le monde ; Alwena et Ari ne démissionnent jamais (−1500).",
-        "C'est un outil d'aide à la planification — les valeurs réelles en jeu peuvent varier (待补 si une règle n'est pas vérifiée)."
+        "C'est un outil d'aide à la planification — les valeurs réelles en jeu peuvent varier (à compléter si une règle n'est pas vérifiée)."
        ]
       }
      ]
@@ -7371,7 +7465,7 @@
         "Geliebter Quest-Typ oder Bedingung: je +1,33 Sympathie. Verhasst: je −0,75.",
         "Lieblingsgericht: +1,5 Sympathie und +0,5 Quest-Punkte.",
         "Kündigungsschwelle: −7 für fast alle; Alwena und Ari kündigen nie (−1500).",
-        "Das ist eine Planungshilfe — tatsächliche Spielwerte können abweichen (待补, falls eine Regel unverifiziert ist)."
+        "Das ist eine Planungshilfe — tatsächliche Spielwerte können abweichen (noch offen, falls eine Regel unverifiziert ist)."
        ]
       }
      ]
@@ -8538,7 +8632,176 @@
         "Armure",
         "Stats (FOR/AGI/CHA/MAG/ESP/CHA)"
        ],
-       "rows": []
+       "rows": [
+        [
+         "Alwena",
+         "Grest (Brizh)",
+         "12",
+         "8",
+         "8 / 9 / 10 / 0 / 12 / 7"
+        ],
+        [
+         "Angelica",
+         "Clovermont (Groveshire)",
+         "1",
+         "5",
+         "4 / 8 / 3 / 0 / 2 / 7"
+        ],
+        [
+         "Ari",
+         "Isle of Basalt",
+         "8",
+         "6",
+         "5 / 13 / 8 / 3 / 8 / 6"
+        ],
+        [
+         "Arron",
+         "Drakovic Castle",
+         "3",
+         "7",
+         "2 / 2 / 3 / 6 / 7 / 8"
+        ],
+        [
+         "Brunhilda",
+         "Fort Gavault",
+         "1",
+         "6",
+         "7 / 2 / 6 / 7 / 3 / 0"
+        ],
+        [
+         "Chester",
+         "Milkford",
+         "15",
+         "6",
+         "Aléatoire (Chester relance 0–15 à chaque jet)"
+        ],
+        [
+         "Childeric",
+         "Almora",
+         "6",
+         "9",
+         "7 / 4 / 4 / 0 / 12 / 4"
+        ],
+        [
+         "Daguez",
+         "Grest (Brizh)",
+         "1",
+         "6",
+         "15 / 0 / 0 / 0 / 0 / 9"
+        ],
+        [
+         "Dulahan",
+         "Anveld",
+         "1",
+         "7",
+         "8 / 8 / 0 / 9 / 0 / 0"
+        ],
+        [
+         "Edith",
+         "Avalon",
+         "8",
+         "7",
+         "7 / 10 / 3 / 12 / 7 / 0"
+        ],
+        [
+         "Epicrate",
+         "Brimwood Congregation",
+         "9",
+         "6",
+         "3 / 3 / 9 / 9 / 12 / 3"
+        ],
+        [
+         "Gideon",
+         "Tower City",
+         "5",
+         "5",
+         "4 / 6 / 8 / 3 / 7 / 2"
+        ],
+        [
+         "Goberto",
+         "Naoned",
+         "1",
+         "7",
+         "8 / 1 / 3 / 0 / 0 / 0"
+        ],
+        [
+         "Gothild",
+         "Mana Strala",
+         "7",
+         "6",
+         "9 / 3 / 5 / 3 / 9 / 8"
+        ],
+        [
+         "Gwendan Villador",
+         "Villador",
+         "1",
+         "6",
+         "5 / 4 / 8 / 2 / 3 / 1"
+        ],
+        [
+         "Ligia",
+         "Southbay Gate",
+         "6",
+         "5",
+         "3 / 8 / 4 / 10 / 2 / 6"
+        ],
+        [
+         "Oliver",
+         "Angelor",
+         "6",
+         "7",
+         "2 / 8 / 3 / 3 / 9 / 6"
+        ],
+        [
+         "Rufus",
+         "Belthorn (Groveshire)",
+         "1",
+         "7",
+         "6 / 6 / 1 / 3 / 7 / 1"
+        ],
+        [
+         "Silgur",
+         "Beaconsbury",
+         "1",
+         "5",
+         "3 / 8 / 3 / 0 / 8 / 1"
+        ],
+        [
+         "Tarcus",
+         "Mavignac (Gavault)",
+         "1",
+         "8",
+         "6 / 3 / 1 / 0 / 10 / 5"
+        ],
+        [
+         "The Wolf",
+         "Belthorn (Groveshire)",
+         "1",
+         "5",
+         "3 / 7 / 3 / 3 / 7 / 1"
+        ],
+        [
+         "Ursula",
+         "Mossgart",
+         "1",
+         "5",
+         "3 / 4 / 2 / 7 / 7 / 0"
+        ],
+        [
+         "Victoria",
+         "City of Enberg",
+         "13",
+         "7",
+         "13 / 13 / 9 / 13 / 10 / 9"
+        ],
+        [
+         "Zolta",
+         "Volga Camp",
+         "6",
+         "7",
+         "4 / 5 / 2 / 9 / 2 / 11"
+        ]
+       ]
       },
       {
        "type": "list",
@@ -8578,7 +8841,176 @@
         "Rüstung",
         "Werte (STR/AGI/CHA/MAG/WIT/GLK)"
        ],
-       "rows": []
+       "rows": [
+        [
+         "Alwena",
+         "Grest (Brizh)",
+         "12",
+         "8",
+         "8 / 9 / 10 / 0 / 12 / 7"
+        ],
+        [
+         "Angelica",
+         "Clovermont (Groveshire)",
+         "1",
+         "5",
+         "4 / 8 / 3 / 0 / 2 / 7"
+        ],
+        [
+         "Ari",
+         "Isle of Basalt",
+         "8",
+         "6",
+         "5 / 13 / 8 / 3 / 8 / 6"
+        ],
+        [
+         "Arron",
+         "Drakovic Castle",
+         "3",
+         "7",
+         "2 / 2 / 3 / 6 / 7 / 8"
+        ],
+        [
+         "Brunhilda",
+         "Fort Gavault",
+         "1",
+         "6",
+         "7 / 2 / 6 / 7 / 3 / 0"
+        ],
+        [
+         "Chester",
+         "Milkford",
+         "15",
+         "6",
+         "Zufällig (Chester würfelt bei jedem Check 0–15 neu)"
+        ],
+        [
+         "Childeric",
+         "Almora",
+         "6",
+         "9",
+         "7 / 4 / 4 / 0 / 12 / 4"
+        ],
+        [
+         "Daguez",
+         "Grest (Brizh)",
+         "1",
+         "6",
+         "15 / 0 / 0 / 0 / 0 / 9"
+        ],
+        [
+         "Dulahan",
+         "Anveld",
+         "1",
+         "7",
+         "8 / 8 / 0 / 9 / 0 / 0"
+        ],
+        [
+         "Edith",
+         "Avalon",
+         "8",
+         "7",
+         "7 / 10 / 3 / 12 / 7 / 0"
+        ],
+        [
+         "Epicrate",
+         "Brimwood Congregation",
+         "9",
+         "6",
+         "3 / 3 / 9 / 9 / 12 / 3"
+        ],
+        [
+         "Gideon",
+         "Tower City",
+         "5",
+         "5",
+         "4 / 6 / 8 / 3 / 7 / 2"
+        ],
+        [
+         "Goberto",
+         "Naoned",
+         "1",
+         "7",
+         "8 / 1 / 3 / 0 / 0 / 0"
+        ],
+        [
+         "Gothild",
+         "Mana Strala",
+         "7",
+         "6",
+         "9 / 3 / 5 / 3 / 9 / 8"
+        ],
+        [
+         "Gwendan Villador",
+         "Villador",
+         "1",
+         "6",
+         "5 / 4 / 8 / 2 / 3 / 1"
+        ],
+        [
+         "Ligia",
+         "Southbay Gate",
+         "6",
+         "5",
+         "3 / 8 / 4 / 10 / 2 / 6"
+        ],
+        [
+         "Oliver",
+         "Angelor",
+         "6",
+         "7",
+         "2 / 8 / 3 / 3 / 9 / 6"
+        ],
+        [
+         "Rufus",
+         "Belthorn (Groveshire)",
+         "1",
+         "7",
+         "6 / 6 / 1 / 3 / 7 / 1"
+        ],
+        [
+         "Silgur",
+         "Beaconsbury",
+         "1",
+         "5",
+         "3 / 8 / 3 / 0 / 8 / 1"
+        ],
+        [
+         "Tarcus",
+         "Mavignac (Gavault)",
+         "1",
+         "8",
+         "6 / 3 / 1 / 0 / 10 / 5"
+        ],
+        [
+         "The Wolf",
+         "Belthorn (Groveshire)",
+         "1",
+         "5",
+         "3 / 7 / 3 / 3 / 7 / 1"
+        ],
+        [
+         "Ursula",
+         "Mossgart",
+         "1",
+         "5",
+         "3 / 4 / 2 / 7 / 7 / 0"
+        ],
+        [
+         "Victoria",
+         "City of Enberg",
+         "13",
+         "7",
+         "13 / 13 / 9 / 13 / 10 / 9"
+        ],
+        [
+         "Zolta",
+         "Volga Camp",
+         "6",
+         "7",
+         "4 / 5 / 2 / 9 / 2 / 11"
+        ]
+       ]
       },
       {
        "type": "list",
@@ -8907,7 +9339,28 @@
         "Chevaliers",
         "Pourquoi"
        ],
-       "rows": []
+       "rows": [
+        [
+         "S",
+         "Victoria, Daguez, Edith, Childeric, Alwena",
+         "Stats de départ d'élite — Victoria a le plus haut total (67), Daguez 15 STR, Edith 12 MAG, Childeric 12 WIT et armure 9, plus les rumeurs d'Intendante d'Alwena."
+        ],
+        [
+         "A",
+         "Ari, Brunhilda, Epicrate, Dulahan, Chester, Gothild",
+         "Stats solides ou traits puissants : Ari 13 AGI, Gothild 37 au total, Dulahan dégâts réduits de moitié, Chester affinité tous types."
+        ],
+        [
+         "B",
+         "Angelica, Arron, Gwendan, Tarcus, Ursula, Ligia, Oliver, Gideon, Zolta",
+         "Solides avec de l'investissement narratif ; l'Immortal d'Ursula est utile de façon ponctuelle, Arron devient Dragon Knight."
+        ],
+        [
+         "C",
+         "Goberto, Rufus, Silgur, The Wolf",
+         "Dépendants de la situation ; beaucoup gagnent en valeur grâce à des traits ou des intrigues."
+        ]
+       ]
       },
       {
        "type": "list",
@@ -8945,7 +9398,28 @@
         "Ritter",
         "Warum"
        ],
-       "rows": []
+       "rows": [
+        [
+         "S",
+         "Victoria, Daguez, Edith, Childeric, Alwena",
+         "Elite-Startwerte — Victoria hat den höchsten Gesamtwert (67), Daguez 15 STR, Edith 12 MAG, Childeric 12 WIT und Rüstung 9, plus Alwenas Intendant-Gerüchte."
+        ],
+        [
+         "A",
+         "Ari, Brunhilda, Epicrate, Dulahan, Chester, Gothild",
+         "Starke Werte oder mächtige Merkmale: Ari 13 AGI, Gothild 37 gesamt, Dulahan halber Schaden, Chester Affinität für alle Typen."
+        ],
+        [
+         "B",
+         "Angelica, Arron, Gwendan, Tarcus, Ursula, Ligia, Oliver, Gideon, Zolta",
+         "Solide mit Story-Investition; Ursulas Unsterblichkeit ist situativ nützlich, Arron wird zum Dragon Knight."
+        ],
+        [
+         "C",
+         "Goberto, Rufus, Silgur, The Wolf",
+         "Situationsabhängig; viele gewinnen durch Merkmale oder Storylines an Wert."
+        ]
+       ]
       },
       {
        "type": "list",
@@ -9269,7 +9743,28 @@
         "Faction",
         "Ce qui la fait évoluer"
        ],
-       "rows": []
+       "rows": [
+        [
+         "Marchands",
+         "Commerce et richesse ; les quêtes et décisions de cour qui stimulent l'économie augmentent leur satisfaction."
+        ],
+        [
+         "Mystiques",
+         "Magie et arcanes ; les rituels et quêtes magiques leur plaisent."
+        ],
+        [
+         "Érudits",
+         "Savoir et recherche ; les quêtes de recherche et d'investigation leur correspondent."
+        ],
+        [
+         "Nobles",
+         "Noblesse et tradition ; les décisions favorisant l'aristocratie leur plaisent."
+        ],
+        [
+         "Peuple",
+         "Le petit peuple ; les décisions serviables et bienveillantes élèvent leur considération."
+        ]
+       ]
       },
       {
        "type": "list",
@@ -9306,7 +9801,28 @@
         "Fraktion",
         "Was sie antreibt"
        ],
-       "rows": []
+       "rows": [
+        [
+         "Händler",
+         "Handel und Wohlstand; Quests und Hofentscheidungen, die die Wirtschaft ankurbeln, steigern ihre Zufriedenheit."
+        ],
+        [
+         "Mystiker",
+         "Magie und das Okkulte; Rituale und magische Quests erfreuen sie."
+        ],
+        [
+         "Gelehrte",
+         "Wissen und Forschung; Forschungs- und Ermittlungs-Quests entsprechen ihnen."
+        ],
+        [
+         "Adel",
+         "Adel und Tradition; Entscheidungen zugunsten der Aristokratie erfreuen sie."
+        ],
+        [
+         "Volk",
+         "Das einfache Volk; hilfsbereite und freundliche Entscheidungen heben ihr Ansehen."
+        ]
+       ]
       },
       {
        "type": "list",
@@ -9934,7 +10450,104 @@
         "Chevalier",
         "Condition de recrutement"
        ],
-       "rows": []
+       "rows": [
+        [
+         "Alwena",
+         "Événement d'urgence unique : après l'Acte 2, quand la Table Ronde n'a plus aucun chevalier disponible (en liste et pas en quête, morts/démissionnaires exclus), elle se porte volontaire. Impossible à déclencher à la demande ; aucune seconde chance. Ne meurt et ne démissionne jamais."
+        ],
+        [
+         "Angelica",
+         "Rejoint automatiquement pendant l'histoire d'ouverture."
+        ],
+        [
+         "Ari",
+         "Invoqué pour 25 pièces d'or (le cadet des frères Basalt)."
+        ],
+        [
+         "Arron",
+         "Pas d'audience de candidature — rejoint via l'intrigue Drakovic."
+        ],
+        [
+         "Brunhilda",
+         "Intrigue de Gavault, côté de la fille (county_quest_gavault_2_daughter_side jusqu'à la fin) ; pas d'audience de candidature."
+        ],
+        [
+         "Chester",
+         "Apparaît après tout résultat spécial de Clean Keeper Goose Partie 2 (fromage / un cheval / Gwendan — trois choix, 1 pièce d'or chacun). Chester est le vrai prix."
+        ],
+        [
+         "Childeric",
+         "à compléter"
+        ],
+        [
+         "Daguez",
+         "à compléter"
+        ],
+        [
+         "Dulahan",
+         "Apparaît comme chevalier démon sur la voie de la mort de Goberto."
+        ],
+        [
+         "Edith",
+         "à compléter"
+        ],
+        [
+         "Epicrate",
+         "à compléter"
+        ],
+        [
+         "Gideon",
+         "Apparaît en audience de candidature au cycle 13 (Acte 2, rejoint volontairement)."
+        ],
+        [
+         "Goberto",
+         "Premier véritable recrutement — audience de candidature au cycle 2."
+        ],
+        [
+         "Gothild",
+         "Deux routes — après l'embuscade de Victoria (quest_victoria_gank), ou l'intrigue d'Enberg (cour d'interrogatoire / finale)."
+        ],
+        [
+         "Gwendan Villador",
+         "Audience de candidature au cycle 3."
+        ],
+        [
+         "Ligia",
+         "Intrigue de Southbay (la route où son père survit)."
+        ],
+        [
+         "Oliver",
+         "Audience de candidature au cycle 19 — seulement s'il n'a pas été exécuté dans le prologue."
+        ],
+        [
+         "Rufus",
+         "Mystical Research (Groveshire, nécessite la satisfaction des Érudits) ou dialogue d'affinité 2 avec The Wolf. Même personne que The Wolf — sa forme humaine après levée de la malédiction."
+        ],
+        [
+         "Silgur",
+         "Réussite standard de l'intrigue de Groveshire (branche non-loup-garou, non-accident)."
+        ],
+        [
+         "Tarcus",
+         "Intrigue de Gavault, côté de la mère (mutuellement exclusif avec Brunhilda, qui prend le côté de la fille)."
+        ],
+        [
+         "The Wolf",
+         "Angelica apprivoise la bête — envoyez Angelica sur Kill the Beast d'Almor pour le résultat spécial."
+        ],
+        [
+         "Ursula",
+         "Rejoint automatiquement au cycle 5."
+        ],
+        [
+         "Victoria",
+         "Intrigue d'assassinat d'Enberg (pas d'audience de candidature)."
+        ],
+        [
+         "Zolta",
+         "Intrigue de Kutnar (gagnez le derby de Kutnar en trichant)."
+        ]
+       ]
       },
       {
        "type": "list",
@@ -9971,7 +10584,104 @@
         "Ritter",
         "Rekrutierungsbedingung"
        ],
-       "rows": []
+       "rows": [
+        [
+         "Alwena",
+         "Einmaliges Notfall-Ereignis: nach Akt 2, wenn die Tafelrunde keine verfügbaren Ritter mehr hat (im Dienst und nicht auf Quest, Tote/Zurückgetretene ausgenommen), meldet sie sich freiwillig. Nicht auf Wunsch auslösbar; keine zweite Chance. Stirbt nie und tritt nie zurück."
+        ],
+        [
+         "Angelica",
+         "Tritt automatisch während der Eröffnungsstory bei."
+        ],
+        [
+         "Ari",
+         "Für 25 Gold beschworen (der jüngere der Basalt-Brüder)."
+        ],
+        [
+         "Arron",
+         "Keine Kandidaten-Audienz — tritt über die Drakovic-Storyline bei."
+        ],
+        [
+         "Brunhilda",
+         "Gavault-Storyline, Seite der Tochter (county_quest_gavault_2_daughter_side bis zum Ende); keine Kandidaten-Audienz."
+        ],
+        [
+         "Chester",
+         "Erscheint nach jedem besonderen Ergebnis von Clean Keeper Goose Teil 2 (Käse / ein Pferd / Gwendan — drei Optionen, je 1 Gold). Chester ist der wahre Preis."
+        ],
+        [
+         "Childeric",
+         "noch offen"
+        ],
+        [
+         "Daguez",
+         "noch offen"
+        ],
+        [
+         "Dulahan",
+         "Erscheint als Dämonenritter auf Gobertos Todespfad."
+        ],
+        [
+         "Edith",
+         "noch offen"
+        ],
+        [
+         "Epicrate",
+         "noch offen"
+        ],
+        [
+         "Gideon",
+         "Erscheint als Kandidaten-Audienz in Zyklus 13 (Akt 2, tritt freiwillig bei)."
+        ],
+        [
+         "Goberto",
+         "Erste richtige Rekrutierung — Kandidaten-Audienz in Zyklus 2."
+        ],
+        [
+         "Gothild",
+         "Zwei Wege — nach dem Victoria-Hinterhalt (quest_victoria_gank) oder über die Enberg-Storyline (Verhör-Gericht / Finale)."
+        ],
+        [
+         "Gwendan Villador",
+         "Kandidaten-Audienz in Zyklus 3."
+        ],
+        [
+         "Ligia",
+         "Southbay-Storyline (der Weg, auf dem ihr Vater überlebt)."
+        ],
+        [
+         "Oliver",
+         "Kandidaten-Audienz in Zyklus 19 — nur wenn er im Prolog nicht hingerichtet wurde."
+        ],
+        [
+         "Rufus",
+         "Mystical Research (Groveshire, erfordert Zufriedenheit der Gelehrten) oder Freischaltung über The Wolf Affinität 2. Dieselbe Person wie The Wolf — seine menschliche Form nach Fluchbruch."
+        ],
+        [
+         "Silgur",
+         "Standardmäßiger Groveshire-Storyline-Erfolg (Nicht-Werwolf, Nicht-Unfall-Zweig)."
+        ],
+        [
+         "Tarcus",
+         "Gavault-Storyline, Seite der Mutter (schließt Brunhilda aus, die die Seite der Tochter wählt)."
+        ],
+        [
+         "The Wolf",
+         "Angelica zähmt die Bestie — schicke Angelica auf Almors Kill the Beast für das besondere Ergebnis."
+        ],
+        [
+         "Ursula",
+         "Tritt in Zyklus 5 automatisch bei."
+        ],
+        [
+         "Victoria",
+         "Enberg-Attentats-Storyline (keine Kandidaten-Audienz)."
+        ],
+        [
+         "Zolta",
+         "Kutnar-Storyline (gewinne das Kutnar-Derby durch Schummeln)."
+        ]
+       ]
       },
       {
        "type": "list",
@@ -10601,7 +11311,33 @@
         "Seuil",
         "Récompense"
        ],
-       "rows": []
+       "rows": [
+        [
+         "Critical Success",
+         "+10",
+         "Récompense ×2"
+        ],
+        [
+         "Great Success",
+         "+5",
+         "Récompense ×1.5"
+        ],
+        [
+         "Success",
+         "0",
+         "Récompense ×1"
+        ],
+        [
+         "Major Failure",
+         "−5",
+         "Aucune récompense"
+        ],
+        [
+         "Critical Failure",
+         "−10",
+         "Aucune récompense"
+        ]
+       ]
       },
       {
        "type": "list",
@@ -10640,7 +11376,33 @@
         "Schwelle",
         "Belohnung"
        ],
-       "rows": []
+       "rows": [
+        [
+         "Critical Success",
+         "+10",
+         "Belohnung ×2"
+        ],
+        [
+         "Great Success",
+         "+5",
+         "Belohnung ×1.5"
+        ],
+        [
+         "Success",
+         "0",
+         "Belohnung ×1"
+        ],
+        [
+         "Major Failure",
+         "−5",
+         "Keine Belohnung"
+        ],
+        [
+         "Critical Failure",
+         "−10",
+         "Keine Belohnung"
+        ]
+       ]
       },
       {
        "type": "list",
@@ -11438,7 +12200,7 @@
         "La Chasse aux bêtes est liée à Ari et au Loup — tous deux sont rattachés aux quêtes de loups/bêtes.",
         "Ari est un Cavalier de griffon (monture verrouillée) et un Éclaireur solide ; il n'aime pas la Chasse.",
         "Le Loup a le trait Loup (monture verrouillée) et est Loyal — le score évolue avec l'affinité moyenne du groupe.",
-        "Les routes de la Chasse aux bêtes sont encore en cours de vérification (待补 étapes exactes)."
+        "Les routes de la Chasse aux bêtes sont encore en cours de vérification (à compléter étapes exactes)."
        ]
       },
       {
@@ -11465,7 +12227,7 @@
         "Die Bestienjagd ist mit Ari und dem Wolf verbunden — beide gehören zu den Wolf-/Bestien-Questlinien.",
         "Ari ist ein Greifenreiter (Reittier gesperrt) und ein starker Späher; er mag Jagd nicht.",
         "Der Wolf hat das Wolfs-Merkmal (Reittier gesperrt) und ist loyal — der Score skaliert mit der durchschnittlichen Bindung der Gruppe.",
-        "Die Routen der Bestienjagd werden noch im Detail verifiziert (待补 genaue Schritte)."
+        "Die Routen der Bestienjagd werden noch im Detail verifiziert (noch offen genaue Schritte)."
        ]
       },
       {
@@ -12242,7 +13004,7 @@
        "items": [
         "Itinéraire vérifié : enquêter → écouter les aveux → remonter au matin marqué → parler à Alwena → confronter le tueur → poser les questions voix / manipulation.",
         "Gwendan Villador est le suspect rapporté, mais le tueur varie d'une partie à l'autre — le coupable n'est pas fixe d'une sauvegarde à l'autre.",
-        "Un bug de condamnation à mort impliquant Gwendan a été rapporté ; déclencheur exact et statut de correctif à confirmer (待补).",
+        "Un bug de condamnation à mort impliquant Gwendan a été rapporté ; déclencheur exact et statut de correctif à confirmer (à compléter).",
         "La résolution de cette branche change qui survit et quelles fins se débloquent ; la terminer débloque le succès first casualty (72,3 % sur Steam)."
        ]
       },
@@ -12258,7 +13020,7 @@
         ],
         [
          "Gwendan est-il toujours le tueur ?",
-         "Non — Gwendan Villador est le suspect rapporté, mais le coupable varie selon les parties ; considérez tout suspect comme dépendant de la partie tant que les règles exactes ne sont pas vérifiées (待补)."
+         "Non — Gwendan Villador est le suspect rapporté, mais le coupable varie selon les parties ; considérez tout suspect comme dépendant de la partie tant que les règles exactes ne sont pas vérifiées (à compléter)."
         ],
         [
          "C'est quoi le succès first casualty ?",
@@ -12266,7 +13028,7 @@
         ],
         [
          "Le bug de condamnation à mort de Gwendan ?",
-         "Un bug rapporté pouvant infliger une condamnation à mort impliquant Gwendan ; déclencheur et correctif à confirmer (待补)."
+         "Un bug rapporté pouvant infliger une condamnation à mort impliquant Gwendan ; déclencheur et correctif à confirmer (à compléter)."
         ]
        ]
       }
@@ -12322,7 +13084,7 @@
        "items": [
         "Verifizierter Weg: ermitteln → Geständnisse anhören → zum markierten Morgen zurückdrehen → mit Alwena sprechen → den Mörder konfrontieren → nach Stimmen/Manipulation fragen.",
         "Gwendan Villador ist der gemeldete Verdächtige, aber der Mörder variiert zwischen Durchläufen — der Täter ist nicht pro Speicherstand festgelegt.",
-        "Ein Todesurteils-Bug um Gwendan wurde gemeldet; genauer Auslöser und Fix-Status sind noch zu bestätigen (待补).",
+        "Ein Todesurteils-Bug um Gwendan wurde gemeldet; genauer Auslöser und Fix-Status sind noch zu bestätigen (noch offen).",
         "Wie dieser Zweig ausgeht, ändert, wer überlebt und welche Enden sich freischalten; der Abschluss schaltet den Erfolg first casualty frei (72,3 % auf Steam)."
        ]
       },
@@ -12338,7 +13100,7 @@
         ],
         [
          "Ist Gwendan immer der Mörder?",
-         "Nein — Gwendan Villador ist der gemeldete Verdächtige, aber der Täter variiert zwischen Durchläufen; behandle jeden Verdächtigen als durchlaufabhängig, bis die genauen Regeln verifiziert sind (待补)."
+         "Nein — Gwendan Villador ist der gemeldete Verdächtige, aber der Täter variiert zwischen Durchläufen; behandle jeden Verdächtigen als durchlaufabhängig, bis die genauen Regeln verifiziert sind (noch offen)."
         ],
         [
          "Was ist der Erfolg first casualty?",
@@ -12346,7 +13108,7 @@
         ],
         [
          "Der Todesurteils-Bug von Gwendan?",
-         "Ein gemeldeter Bug, der ein Todesurteil mit Beteiligung von Gwendan auslösen kann; Auslöser und Fix-Status sind zu bestätigen (待补)."
+         "Ein gemeldeter Bug, der ein Todesurteil mit Beteiligung von Gwendan auslösen kann; Auslöser und Fix-Status sind zu bestätigen (noch offen)."
         ]
        ]
       }
@@ -12507,7 +13269,7 @@
        "items": [
         "Les annexes sont des bâtiments qui ajoutent des systèmes à votre tour : la Forge de Carina répare et fabrique l'équipement, la Salle d'alchimie de la Sorcière produit les consommables.",
         "Construire et améliorer les annexes débloque plus de chevaliers, d'outils et d'histoire.",
-        "Les listes exactes d'annexes et leurs coûts sont encore en cours de vérification (待补)."
+        "Les listes exactes d'annexes et leurs coûts sont encore en cours de vérification (à compléter)."
        ]
       },
       {
@@ -12533,7 +13295,7 @@
        "items": [
         "Nebengebäude erweitern die Systeme deines Turms: Carinas Schmiede repariert und fertigt Ausrüstung, der Alchemieraum der Hexe stellt Verbrauchsgüter her.",
         "Bauen und Ausbauen von Nebengebäuden schaltet mehr Ritter, Werkzeuge und Story frei.",
-        "Die genauen Listen und Kosten der Nebengebäude werden noch verifiziert (待补)."
+        "Die genauen Listen und Kosten der Nebengebäude werden noch verifiziert (noch offen)."
        ]
       },
       {
@@ -13095,7 +13857,7 @@
        "items": [
         "Le royaume s'étend sur plusieurs régions : Brizh, Clovermont/Groveshire, Fort Gavault, Château de Drakovic, Avalon, etc.",
         "Les noms de régions viennent des origines des chevaliers — la terre natale de chaque chevalier est un lieu de quête qui peut donner des bonus de saveur.",
-        "Une carte interactive complète du royaume n'est pas encore vérifiée (待补)."
+        "Une carte interactive complète du royaume n'est pas encore vérifiée (à compléter)."
        ]
       },
       {
@@ -13121,7 +13883,7 @@
        "items": [
         "Das Königreich erstreckt sich über mehrere Regionen: Brizh, Clovermont/Groveshire, Fort Gavault, Drakovic-Schloss, Avalon usw.",
         "Die Regionsnamen stammen aus den Herkunftsorten der Ritter — die Heimat jedes Ritters ist ein Quest-Ort, der Geschmacks-Boni geben kann.",
-        "Eine vollständige interaktive Königreichskarte ist noch nicht verifiziert (待补)."
+        "Eine vollständige interaktive Königreichskarte ist noch nicht verifiziert (noch offen)."
        ]
       },
       {
@@ -13493,7 +14255,7 @@
        "items": [
         "Sorti le 2026-08-06 (v1.0, pas en accès anticipé).",
         "Promo de lancement : −15 % jusqu'au 2026-08-20 (57,80 ¥ en Chine).",
-        "2 DLC sont rattachés (appids 4870280 / 4911710) — contenu encore en cours de vérification (待补).",
+        "2 DLC sont rattachés (appids 4870280 / 4911710) — contenu encore en cours de vérification (à compléter).",
         "Cette page est le journal de mise à jour de nos guides — elle évolue au fil de nos vérifications.",
         "Patch 1.0.8 (10/08/2026) : crash à l'écran de chargement GODOT, Gwendan immortel, Gwendolen en deuil deux fois, blocage de choix dans la quête de Ligia, etc."
        ]
@@ -13521,7 +14283,7 @@
        "items": [
         "Veröffentlicht am 2026-08-06 (v1.0, kein Early Access).",
         "Startrabatt: 15 % bis 2026-08-20 (57,80 ¥ in CN).",
-        "2 DLCs sind angehängt (App-IDs 4870280 / 4911710) — Inhalt wird noch verifiziert (待补).",
+        "2 DLCs sind angehängt (App-IDs 4870280 / 4911710) — Inhalt wird noch verifiziert (noch offen).",
         "Diese Seite ist das Änderungsprotokoll unserer Guides — sie wächst, sobald wir neue Mechaniken verifizieren.",
         "Patch 1.0.8 (10.08.2026): Absturz beim GODOT-Ladebildschirm, unsterblicher Gwendan, Gwendolens doppelte Trauer und gesperrte Wahl in Ligias Quest — u. a."
        ]
@@ -13719,7 +14481,20 @@
         "",
         "Configuration"
        ],
-       "rows": []
+       "rows": [
+        [
+         "Minimum",
+         "Windows 10 / i5-4670K / 4 Go de RAM / GT 1030 2 Go / DX12 / 3 Go"
+        ],
+        [
+         "Recommandé",
+         "Windows 11 / i5-9600K / 8 Go de RAM / GTX 1060 6 Go / DX12 / 3 Go"
+        ],
+        [
+         "Linux / Steam Deck",
+         "SteamOS 3.8.10 / Zen2 4c8t / 4-8 Go / RDNA2 8CU (Deck Verified)"
+        ]
+       ]
       },
       {
        "type": "faq",
@@ -13745,7 +14520,20 @@
         "",
         "Anforderungen"
        ],
-       "rows": []
+       "rows": [
+        [
+         "Minimum",
+         "Windows 10 / i5-4670K / 4 GB RAM / GT 1030 2 GB / DX12 / 3 GB"
+        ],
+        [
+         "Empfohlen",
+         "Windows 11 / i5-9600K / 8 GB RAM / GTX 1060 6 GB / DX12 / 3 GB"
+        ],
+        [
+         "Linux / Steam Deck",
+         "SteamOS 3.8.10 / Zen2 4c8t / 4-8 GB / RDNA2 8CU (Deck Verified)"
+        ]
+       ]
       },
       {
        "type": "faq",
@@ -14042,7 +14830,28 @@
         "Indicateur",
         "Valeur"
        ],
-       "rows": []
+       "rows": [
+        [
+         "Metacritic",
+         "86 (champ de la page boutique)"
+        ],
+        [
+         "Note Steam",
+         "Très positives — 90 % sur plus de 700 avis"
+        ],
+        [
+         "Sortie",
+         "2026-08-06 (version complète, pas un accès anticipé)"
+        ],
+        [
+         "Genre",
+         "Indé / RPG — gestion de Table Ronde"
+        ],
+        [
+         "Éditeur",
+         "Curve Games"
+        ]
+       ]
       },
       {
        "type": "list",
@@ -14079,7 +14888,28 @@
         "Metrik",
         "Wert"
        ],
-       "rows": []
+       "rows": [
+        [
+         "Metacritic",
+         "86 (Feld auf der Shop-Seite)"
+        ],
+        [
+         "Steam-Wertung",
+         "Sehr positiv — 90 % von über 700 Rezensionen"
+        ],
+        [
+         "Release",
+         "06.08.2026 (Vollversion, kein Early Access)"
+        ],
+        [
+         "Genre",
+         "Indie / RPG — Tafelrunden-Verwaltung"
+        ],
+        [
+         "Publisher",
+         "Curve Games"
+        ]
+       ]
       },
       {
        "type": "list",
@@ -14253,7 +15083,7 @@
         "Sorti le 2026-08-06 en v1.0 complète (pas en accès anticipé).",
         "Une démo était disponible avant le lancement (trailer officiel de la démo existant).",
         "Promo de lancement : −15 % jusqu'au 2026-08-20.",
-        "Deux DLC sont rattachés (待补 contenu)."
+        "Deux DLC sont rattachés (à compléter contenu)."
        ]
       },
       {
@@ -14280,7 +15110,7 @@
         "Veröffentlicht am 2026-08-06 als vollständige v1.0 (kein Early Access).",
         "Vor dem Launch war eine Demo verfügbar (offizieller Demo-Trailer existiert).",
         "Startrabatt: 15 % bis 2026-08-20.",
-        "Zwei DLCs sind angehängt (待补 Inhalt)."
+        "Zwei DLCs sind angehängt (noch offen Inhalt)."
        ]
       },
       {
@@ -14445,8 +15275,8 @@
        "heading": "Statut de la bande-son",
        "body": "",
        "items": [
-        "Les tags officiels du jeu incluent des qualités proches de la bande-son ; le trailer de lancement contient de la musique originale (待补 compositeur exact).",
-        "Les détails de la bande-son (compositeur, liste des titres, disponibilité en streaming) sont encore en cours de vérification (待补).",
+        "Les tags officiels du jeu incluent des qualités proches de la bande-son ; le trailer de lancement contient de la musique originale (à compléter compositeur exact).",
+        "Les détails de la bande-son (compositeur, liste des titres, disponibilité en streaming) sont encore en cours de vérification (à compléter).",
         "Consultez la page Steam et les canaux officiels pour les nouvelles de la bande-son."
        ]
       },
@@ -14471,8 +15301,8 @@
        "heading": "Status des Soundtracks",
        "body": "",
        "items": [
-        "Die offiziellen Tags des Spiels enthalten soundtrack-nahe Eigenschaften; der Launch-Trailer enthält Originalmusik (待补 genauer Komponist).",
-        "Details zum Soundtrack (Komponist, Titelliste, Streaming-Verfügbarkeit) werden noch verifiziert (待补).",
+        "Die offiziellen Tags des Spiels enthalten soundtrack-nahe Eigenschaften; der Launch-Trailer enthält Originalmusik (noch offen genauer Komponist).",
+        "Details zum Soundtrack (Komponist, Titelliste, Streaming-Verfügbarkeit) werden noch verifiziert (noch offen).",
         "Checke die Steam-Store-Seite und die offiziellen Kanäle für Soundtrack-News."
        ]
       },
@@ -14633,7 +15463,7 @@
        "body": "",
        "items": [
         "Sovereign Tower propose des consommables et de l'équipement d'artisanat à travers les systèmes de la tour (Forge, Salle d'alchimie).",
-        "Les listes d'objets sont encore en cours de vérification en jeu (待补) — cet aperçu grandira à mesure que nous confirmons des objets.",
+        "Les listes d'objets sont encore en cours de vérification en jeu (à compléter) — cet aperçu grandira à mesure que nous confirmons des objets.",
         "Familles d'objets clés signalées : consommables (potions, nourriture) et équipement d'artisanat (armes, matériaux d'armure)."
        ]
       },
@@ -14659,7 +15489,7 @@
        "body": "",
        "items": [
         "Sovereign Tower hat Verbrauchsgüter und Handwerksausrüstung in den Systemen des Turms (Schmiede, Alchemieraum).",
-        "Die Gegenstandslisten werden noch im Spiel verifiziert (待补) — diese Übersicht wächst, sobald wir Gegenstände bestätigen.",
+        "Die Gegenstandslisten werden noch im Spiel verifiziert (noch offen) — diese Übersicht wächst, sobald wir Gegenstände bestätigen.",
         "Wichtige Gegenstandsfamilien: Verbrauchsgüter (Tränke, Essen) und Handwerksausrüstung (Waffen, Rüstungsmaterialien)."
        ]
       },
@@ -14828,7 +15658,7 @@
        "body": "",
        "items": [
         "La Salle d'alchimie de la Sorcière fabrique les consommables (potions, nourriture) pour les quêtes et la récupération.",
-        "Les recettes et effets des consommables sont encore en cours de vérification (待补).",
+        "Les recettes et effets des consommables sont encore en cours de vérification (à compléter).",
         "Les repas favoris donnent +1,5 d'affinité et +0,5 de score de quête — la nourriture est la famille de consommables la plus confirmée."
        ]
       },
@@ -14854,7 +15684,7 @@
        "body": "",
        "items": [
         "Der Alchemieraum der Hexe stellt Verbrauchsgüter (Tränke, Essen) für Quests und Erholung her.",
-        "Rezepte und Effekte der Verbrauchsgüter werden noch verifiziert (待补).",
+        "Rezepte und Effekte der Verbrauchsgüter werden noch verifiziert (noch offen).",
         "Lieblingsgerichte geben +1,5 Bindung und +0,5 Quest-Score — Essen ist die am besten bestätigte Verbrauchsgüter-Familie."
        ]
       },
@@ -15023,7 +15853,7 @@
        "body": "",
        "items": [
         "La Forge de Carina répare et fabrique l'équipement ; l'armure sert de points de vie pour les dégâts de quête.",
-        "Les recettes d'artisanat et les chemins d'amélioration sont encore en cours de vérification (待补).",
+        "Les recettes d'artisanat et les chemins d'amélioration sont encore en cours de vérification (à compléter).",
         "Childeric commence avec une armure de 9 (la plus haute) — un tank solide pour les quêtes à dégâts."
        ]
       },
@@ -15049,7 +15879,7 @@
        "body": "",
        "items": [
         "Carinas Schmiede repariert und fertigt Ausrüstung; Rüstung dient als Trefferpunkte für Quest-Schaden.",
-        "Handwerksrezepte und Upgrade-Pfade werden noch verifiziert (待补).",
+        "Handwerksrezepte und Upgrade-Pfade werden noch verifiziert (noch offen).",
         "Childeric startet mit Rüstung 9 (höchster Wert) — ein starker Tank für schadenslastige Quests."
        ]
       },
@@ -15425,7 +16255,7 @@
         "Prise en charge complète de la manette (Xbox et PlayStation) ainsi que de la souris et du clavier.",
         "Fonction officielle : jouable sans saisie minutée — aucune pression pour prendre des décisions rapidement.",
         "Le jeu prend en charge la sauvegarde à tout moment et Steam Cloud.",
-        "Les raccourcis clavier exacts et la correspondance des manettes sont encore en cours de compilation (待补)."
+        "Les raccourcis clavier exacts et la correspondance des manettes sont encore en cours de compilation (à compléter)."
        ]
       },
       {
@@ -15452,7 +16282,7 @@
         "Volle Controller-Unterstützung (Xbox und PlayStation) plus Maus und Tastatur.",
         "Offizielles Feature: spielbar ohne Zeitlimit — kein Druck, Entscheidungen zu überstürzen.",
         "Das Spiel unterstützt Speichern jederzeit und Steam Cloud.",
-        "Die genauen Tastenbelegungen und Controller-Mappings werden noch zusammengestellt (待补)."
+        "Die genauen Tastenbelegungen und Controller-Mappings werden noch zusammengestellt (noch offen)."
        ]
       },
       {
@@ -16021,7 +16851,7 @@
        "heading": "Nouvelle partie +",
        "body": "",
        "items": [
-        "La Nouvelle partie + est disponible après une partie terminée (selon les sources fans ; déblocage exact 待补).",
+        "La Nouvelle partie + est disponible après une partie terminée (selon les sources fans ; déblocage exact à compléter).",
         "Elle conserve la progression pour explorer les branches et fins mutuellement exclusives.",
         "Servez-vous-en pour viser les fins verrouillées en première partie (mariage d'Arthur, fins cachées, autres issues de factions)."
        ]
@@ -16044,10 +16874,10 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "New Game Plus",
+       "heading": "Neues Spiel +",
        "body": "",
        "items": [
-        "New Game Plus ist nach einem abgeschlossenen Durchlauf verfügbar (laut Fan-Quellen; genaues Freischalten 待补).",
+        "New Game Plus ist nach einem abgeschlossenen Durchlauf verfügbar (laut Fan-Quellen; genaues Freischalten noch offen).",
         "Es übernimmt den Fortschritt, damit du sich gegenseitig ausschließende Zweige und Enden erkunden kannst.",
         "Nutze es für Enden, die du im ersten Lauf ausgesperrt hast (Arthur-Heirat, versteckte Enden, andere Fraktionsausgänge)."
        ]
@@ -16218,7 +17048,7 @@
        "items": [
         "L'ultimatum du Chevalier Dragon au Cycle 4 offre des chemins d'alliance : rallier le peuple, s'allier aux nobles, ou utiliser les forces mystiques — chacun avec ses exigences.",
         "Les alliances débloquent des fins alternatives et changent la dynamique des factions.",
-        "Les branches d'alliance au-delà du Cycle 4 sont encore en cours de vérification (待补)."
+        "Les branches d'alliance au-delà du Cycle 4 sont encore en cours de vérification (à compléter)."
        ]
       },
       {
@@ -16244,7 +17074,7 @@
        "items": [
         "Das Drachenritter-Ultimatum in Zyklus 4 bietet Allianz-Pfade: das Volk sammeln, mit Adligen verbünden oder mystische Kräfte nutzen — jeweils mit eigenen Anforderungen.",
         "Allianzen schalten alternative Enden frei und verändern die Fraktionsdynamik.",
-        "Die genauen Allianz-Zweige über Zyklus 4 hinaus werden noch verifiziert (待补)."
+        "Die genauen Allianz-Zweige über Zyklus 4 hinaus werden noch verifiziert (noch offen)."
        ]
       },
       {
@@ -16815,9 +17645,9 @@
        "heading": "Serviteurs et personnel de la tour",
        "body": "",
        "items": [
-        "La tour a des serviteurs et du personnel au-delà des chevaliers (signalé ; effectif exact 待补).",
+        "La tour a des serviteurs et du personnel au-delà des chevaliers (signalé ; effectif exact à compléter).",
         "L'Intendante Alwena est la figure clé du personnel — elle gère la tour et révèle les rumeurs sur les chevaliers.",
-        "Les serviteurs de la tour incluent probablement des rôles de cour et du personnel d'entretien ; la liste exacte est encore en cours de vérification (待补)."
+        "Les serviteurs de la tour incluent probablement des rôles de cour et du personnel d'entretien ; la liste exacte est encore en cours de vérification (à compléter)."
        ]
       },
       {
@@ -16841,9 +17671,9 @@
        "heading": "Turmbewohner & Personal",
        "body": "",
        "items": [
-        "Der Turm hat Diener und Personal über die Ritter hinaus (gemeldet; genaue Liste 待补).",
+        "Der Turm hat Diener und Personal über die Ritter hinaus (gemeldet; genaue Liste noch offen).",
         "Intendantin Alwena ist die Schlüsselfigur des Personals — sie verwaltet den Turm und verrät Ritter-Gerüchte.",
-        "Turm-Diener umfassen vermutlich Hofrollen und Instandhaltungspersonal; die genaue Liste wird noch verifiziert (待补)."
+        "Turm-Diener umfassen vermutlich Hofrollen und Instandhaltungspersonal; die genaue Liste wird noch verifiziert (noch offen)."
        ]
       },
       {
@@ -17035,7 +17865,32 @@
         "Stat",
         "À quoi elle sert"
        ],
-       "rows": []
+       "rows": [
+        [
+         "Force",
+         "Puissance physique brute pour le combat, la chasse et les tâches lourdes."
+        ],
+        [
+         "Agilité",
+         "Vitesse, dextérité, mobilité — éclaireurs et duellistes s'y appuient."
+        ],
+        [
+         "Charisme",
+         "Persuasion et présence sociale — diplomatie et quêtes publiques."
+        ],
+        [
+         "Magie",
+         "Aptitude arcanique — rituels et quêtes magiques."
+        ],
+        [
+         "Esprit",
+         "Intelligence, perception, déduction — recherche et investigation."
+        ],
+        [
+         "Chance",
+         "Fortune — petits bonus et meilleurs résultats."
+        ]
+       ]
       },
       {
        "type": "list",
@@ -17065,7 +17920,32 @@
         "Wert",
         "Was er tut"
        ],
-       "rows": []
+       "rows": [
+        [
+         "Stärke",
+         "Rohe Körperkraft für Kampf, Jagd und schwere Aufgaben."
+        ],
+        [
+         "Geschicklichkeit",
+         "Geschwindigkeit, Gewandtheit, Mobilität — Späher und Duellanten setzen darauf."
+        ],
+        [
+         "Charisma",
+         "Überzeugung und soziale Präsenz — Diplomatie und öffentliche Quests."
+        ],
+        [
+         "Magie",
+         "Arkane Begabung — Rituale und magische Quests."
+        ],
+        [
+         "Verstand",
+         "Intelligenz, Wahrnehmung, Deduktion — Forschung und Ermittlung."
+        ],
+        [
+         "Glück",
+         "Glück — kleine Boni und bessere Ergebnisse."
+        ]
+       ]
       },
       {
        "type": "list",
@@ -17236,7 +18116,7 @@
        "body": "",
        "items": [
         "Le Barde (Hildegard) apparaît dans les données du fan wiki comme chevalier secret.",
-        "Les étapes exactes de recrutement et les stats sont encore en cours de vérification (待补).",
+        "Les étapes exactes de recrutement et les stats sont encore en cours de vérification (à compléter).",
         "Surveillez les événements d'histoire liés à la musique ou aux représentations — des conditions musicales apparaissent dans les données de quêtes."
        ]
       },
@@ -17262,7 +18142,7 @@
        "body": "",
        "items": [
         "Der Barde (Hildegard) erscheint in Fan-Wiki-Daten als geheimer Ritter.",
-        "Die genauen Rekrutierungsschritte und Werte werden noch verifiziert (待补).",
+        "Die genauen Rekrutierungsschritte und Werte werden noch verifiziert (noch offen).",
         "Achte auf Story-Ereignisse rund um Musik oder Aufführungen — musikalische Bedingungen erscheinen in den Quest-Daten."
        ]
       },
@@ -17385,7 +18265,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "本攻略覆盖内容",
+       "heading": "本站覆盖内容",
        "body": "",
        "items": [
         "23 位可攻略角色，含 喜欢/最爱/讨厌 礼物与心动事件。",
@@ -17481,7 +18361,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "What this hub covers",
+       "heading": "このハブの内容",
        "body": "",
        "items": [
         "恋愛対象23人の贈り物（大好物・好物・嫌い）とハートイベント。",
@@ -17534,7 +18414,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Latest updates",
+       "heading": "最新アップデート",
        "body": "",
        "items": [
         "パッチ1.1.45（2026-07-21）：起動時の光過敏警告、Star Gazing のワイド画面黒帯修正、「Back to the Den」の遡及解除。1.2 でさらなる改善予定。",
@@ -17577,7 +18457,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "What this hub covers",
+       "heading": "이 허브의 내용",
        "body": "",
        "items": [
         "연애 대상 23명의 선물(최애·좋아함·싫어함)과 하트 이벤트.",
@@ -17630,7 +18510,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Latest updates",
+       "heading": "최신 업데이트",
        "body": "",
        "items": [
         "패치 1.1.45(2026-07-21): 시작 시 광과민 경고, 별자리 관측 와이드 화면 수정, 'Back to the Den' 소급 해금. 1.2에서 추가 개선 예정.",
@@ -17673,7 +18553,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "What this hub covers",
+       "heading": "Contenu de ce hub",
        "body": "",
        "items": [
         "Les 23 personnages romantiques avec cadeaux adorés/aimés/détestés et événements de cœur.",
@@ -17726,7 +18606,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Latest updates",
+       "heading": "Dernières mises à jour",
        "body": "",
        "items": [
         "Patch 1.1.45 (21/07/2026) : avertissement de photosensibilité, correctif Star Gazing écran large, déblocage rétroactif 'Back to the Den'. D'autres améliorations en 1.2.",
@@ -17769,7 +18649,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "What this hub covers",
+       "heading": "Was dieser Hub abdeckt",
        "body": "",
        "items": [
         "Alle 23 Liebesoptionen mit Geschenken (geliebt/gemocht/gehasst) und Herz-Events.",
@@ -17822,7 +18702,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Latest updates",
+       "heading": "Neueste Updates",
        "body": "",
        "items": [
         "Patch 1.1.45 (21.07.2026): Fotosensibilitäts-Warnung, Star-Gazing-Breitbild-Fix, 'Back to the Den' nachträglich. Mehr in 1.2.",
@@ -18066,7 +18946,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "新手要避免的错误",
+       "heading": "新手常见误区",
        "body": "",
        "items": [
         "鱼钩抛得太近——鱼会被吓跑。保持距离抛竿，再轻轻收线。",
@@ -18186,7 +19066,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Beginner mistakes to avoid",
+       "heading": "初心者がやりがちな失敗",
        "body": "",
        "items": [
         "釣り糸を近くに投げすぎると魚が逃げる。距離を取って投げ、軽く巻き取る。",
@@ -18306,7 +19186,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Beginner mistakes to avoid",
+       "heading": "초보자 흔한 실수",
        "body": "",
        "items": [
         "낚싯바늘을 너무 가까이 던지면 물고기가 도망갑니다. 거리를 두고 던진 뒤 가볍게 감으세요.",
@@ -18426,7 +19306,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Beginner mistakes to avoid",
+       "heading": "Erreurs de débutant à éviter",
        "body": "",
        "items": [
         "Lancer l'hameçon trop près — les poissons fuient. Lancez à distance puis ramenez doucement.",
@@ -18546,7 +19426,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Beginner mistakes to avoid",
+       "heading": "Anfängerfehler vermeiden",
        "body": "",
        "items": [
         "Den Haken zu nah werfen — Fische erschrecken. Wirf auf Distanz und kurble sanft.",
@@ -19166,7 +20046,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "快速好感技巧",
+       "heading": "快速提升好感技巧",
        "body": "",
        "items": [
         "花是全游戏最通用的礼物——许多居民喜欢或最爱花。",
@@ -19471,7 +20351,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Fast friendship tips",
+       "heading": "好感度を早く上げるコツ",
        "body": "",
        "items": [
         "花は最も汎用性が高い——多くの住民が好む・大好き。",
@@ -19776,7 +20656,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Fast friendship tips",
+       "heading": "호감도 빨리 올리는 팁",
        "body": "",
        "items": [
         "꽃은 가장 활용도 높은 선물 — 많은 주민이 좋아하거나 최애입니다.",
@@ -20081,7 +20961,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Fast friendship tips",
+       "heading": "Astuces pour monter l'amitié vite",
        "body": "",
        "items": [
         "Les fleurs sont le cadeau le plus polyvalent — beaucoup adorent ou aiment.",
@@ -20386,7 +21266,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Fast friendship tips",
+       "heading": "Tipps für schnelle Freundschaft",
        "body": "",
        "items": [
         "Blumen sind die vielseitigsten Geschenke — viele lieben oder mögen sie.",
@@ -21056,7 +21936,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Portrait styles (Switch)",
+       "heading": "ポートレート設定（Switch）",
        "body": "",
        "items": [
         "Nintendo Switch で「+」ボタンを押してメインメニュー。",
@@ -21279,7 +22159,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Portrait styles (Switch)",
+       "heading": "초상화 설정(Switch)",
        "body": "",
        "items": [
         "Nintendo Switch에서 '+' 버튼으로 메인 메뉴.",
@@ -21502,7 +22382,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Portrait styles (Switch)",
+       "heading": "Styles de portrait (Switch)",
        "body": "",
        "items": [
         "Ouvrez le menu principal avec '+' sur Switch.",
@@ -21725,7 +22605,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Portrait styles (Switch)",
+       "heading": "Porträt-Stile (Switch)",
        "body": "",
        "items": [
         "Öffne das Hauptmenü mit '+' auf der Switch.",
@@ -23207,7 +24087,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Fishing tips",
+       "heading": "釣りのコツ",
        "body": "",
        "items": [
         "季節・天気を変えて釣る——Goldy は春夏のみ、Mouthout は雨のみ。",
@@ -23700,7 +24580,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Fishing tips",
+       "heading": "낚시 팁",
        "body": "",
        "items": [
         "모든 계절·날씨에서 낚시 — Goldy는 봄·여름, Mouthout은 비 오는 날만.",
@@ -23865,7 +24745,7 @@
          "All seasons / any time",
          "Any rod",
          "—",
-         "待补"
+         "à compléter"
         ],
         [
          "Twilight",
@@ -23874,7 +24754,7 @@
          "Early evening",
          "Any rod",
          "—",
-         "待补"
+         "à compléter"
         ],
         [
          "Moonflutter",
@@ -23883,7 +24763,7 @@
          "Full Moon only",
          "Any rod",
          "—",
-         "待补"
+         "à compléter"
         ],
         [
          "Furybud",
@@ -23892,7 +24772,7 @@
          "Large fish",
          "Premium rod",
          "—",
-         "待补"
+         "à compléter"
         ],
         [
          "Goliath",
@@ -23901,7 +24781,7 @@
          "Large fish",
          "Premium rod",
          "—",
-         "待补"
+         "à compléter"
         ],
         [
          "Amour",
@@ -23910,7 +24790,7 @@
          "All seasons / any time",
          "Any rod",
          "—",
-         "待补"
+         "à compléter"
         ],
         [
          "Glammer",
@@ -23919,7 +24799,7 @@
          "All seasons / any time",
          "Any rod",
          "—",
-         "待补"
+         "à compléter"
         ],
         [
          "Armour",
@@ -23937,16 +24817,16 @@
          "Any",
          "Any rod",
          "—",
-         "待补"
+         "à compléter"
         ],
         [
          "4 more species",
          "—",
-         "待补",
-         "待补",
-         "待补",
+         "à compléter",
+         "à compléter",
+         "à compléter",
          "—",
-         "待补"
+         "à compléter"
         ]
        ],
        "rowAttrs": [
@@ -24058,7 +24938,7 @@
          "moon": "",
          "size": "",
          "rod": "anyrod",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "uncommon",
@@ -24069,7 +24949,7 @@
          "moon": "",
          "size": "",
          "rod": "anyrod",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "rare",
@@ -24080,7 +24960,7 @@
          "moon": "fullmoon",
          "size": "",
          "rod": "anyrod",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "rare",
@@ -24091,7 +24971,7 @@
          "moon": "",
          "size": "large",
          "rod": "premium",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "rare",
@@ -24102,7 +24982,7 @@
          "moon": "",
          "size": "large",
          "rod": "premium",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "uncommon",
@@ -24113,7 +24993,7 @@
          "moon": "",
          "size": "",
          "rod": "anyrod",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "uncommon",
@@ -24124,7 +25004,7 @@
          "moon": "",
          "size": "",
          "rod": "anyrod",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "rare",
@@ -24146,7 +25026,7 @@
          "moon": "",
          "size": "",
          "rod": "anyrod",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "unlisted",
@@ -24157,7 +25037,7 @@
          "moon": "",
          "size": "",
          "rod": "unlisted",
-         "pending": "pending"
+         "pending": ""
         }
        ],
        "filterKind": "fish"
@@ -24185,7 +25065,7 @@
         ],
         [
          "Enchanted Fishing Rod",
-         "待补",
+         "à compléter",
          "Catches every fish and removes the energy cost of fishing (per community reports)."
         ]
        ]
@@ -24193,7 +25073,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Fishing tips",
+       "heading": "Conseils de pêche",
        "body": "",
        "items": [
         "Pêchez chaque saison et météo — Goldy (printemps/été), Mouthout (pluie).",
@@ -24358,7 +25238,7 @@
          "All seasons / any time",
          "Any rod",
          "—",
-         "待补"
+         "noch offen"
         ],
         [
          "Twilight",
@@ -24367,7 +25247,7 @@
          "Early evening",
          "Any rod",
          "—",
-         "待补"
+         "noch offen"
         ],
         [
          "Moonflutter",
@@ -24376,7 +25256,7 @@
          "Full Moon only",
          "Any rod",
          "—",
-         "待补"
+         "noch offen"
         ],
         [
          "Furybud",
@@ -24385,7 +25265,7 @@
          "Large fish",
          "Premium rod",
          "—",
-         "待补"
+         "noch offen"
         ],
         [
          "Goliath",
@@ -24394,7 +25274,7 @@
          "Large fish",
          "Premium rod",
          "—",
-         "待补"
+         "noch offen"
         ],
         [
          "Amour",
@@ -24403,7 +25283,7 @@
          "All seasons / any time",
          "Any rod",
          "—",
-         "待补"
+         "noch offen"
         ],
         [
          "Glammer",
@@ -24412,7 +25292,7 @@
          "All seasons / any time",
          "Any rod",
          "—",
-         "待补"
+         "noch offen"
         ],
         [
          "Armour",
@@ -24430,16 +25310,16 @@
          "Any",
          "Any rod",
          "—",
-         "待补"
+         "noch offen"
         ],
         [
          "4 more species",
          "—",
-         "待补",
-         "待补",
-         "待补",
+         "noch offen",
+         "noch offen",
+         "noch offen",
          "—",
-         "待补"
+         "noch offen"
         ]
        ],
        "rowAttrs": [
@@ -24551,7 +25431,7 @@
          "moon": "",
          "size": "",
          "rod": "anyrod",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "uncommon",
@@ -24562,7 +25442,7 @@
          "moon": "",
          "size": "",
          "rod": "anyrod",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "rare",
@@ -24573,7 +25453,7 @@
          "moon": "fullmoon",
          "size": "",
          "rod": "anyrod",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "rare",
@@ -24584,7 +25464,7 @@
          "moon": "",
          "size": "large",
          "rod": "premium",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "rare",
@@ -24595,7 +25475,7 @@
          "moon": "",
          "size": "large",
          "rod": "premium",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "uncommon",
@@ -24606,7 +25486,7 @@
          "moon": "",
          "size": "",
          "rod": "anyrod",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "uncommon",
@@ -24617,7 +25497,7 @@
          "moon": "",
          "size": "",
          "rod": "anyrod",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "rare",
@@ -24639,7 +25519,7 @@
          "moon": "",
          "size": "",
          "rod": "anyrod",
-         "pending": "pending"
+         "pending": ""
         },
         {
          "rarity": "unlisted",
@@ -24650,7 +25530,7 @@
          "moon": "",
          "size": "",
          "rod": "unlisted",
-         "pending": "pending"
+         "pending": ""
         }
        ],
        "filterKind": "fish"
@@ -24678,7 +25558,7 @@
         ],
         [
          "Enchanted Fishing Rod",
-         "待补",
+         "noch offen",
          "Catches every fish and removes the energy cost of fishing (per community reports)."
         ]
        ]
@@ -24686,7 +25566,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Fishing tips",
+       "heading": "Angeltipps",
        "body": "",
        "items": [
         "In jeder Jahreszeit und jedem Wetter angeln — Goldy (Frühling/Sommer), Mouthout (Regen).",
@@ -25269,7 +26149,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "花朵技巧",
+       "heading": "花卉技巧",
        "body": "",
        "items": [
         "Luna 喜欢任何花——安全的每日礼物。",
@@ -25556,7 +26436,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Flower tips",
+       "heading": "花のコツ",
        "body": "",
        "items": [
         "Luna はどんな花も大好き——毎日でも安全。",
@@ -25843,7 +26723,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Flower tips",
+       "heading": "꽃 팁",
        "body": "",
        "items": [
         "Luna는 어떤 꽃이든 최애 — 매일 안전한 선물.",
@@ -26130,7 +27010,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Flower tips",
+       "heading": "Conseils fleurs",
        "body": "",
        "items": [
         "Luna adore toute fleur — cadeau sûr.",
@@ -26417,7 +27297,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Flower tips",
+       "heading": "Blumen-Tipps",
        "body": "",
        "items": [
         "Luna liebt jede Blume — sicheres Geschenk.",
@@ -27822,7 +28702,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Spells worth buying first",
+       "heading": "最初に買うべき呪文",
        "body": "",
        "items": [
         "Aquaflux I（無料）と Refilliarmus（マナ0）——水やりループ。",
@@ -27976,7 +28856,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Spells worth buying first",
+       "heading": "먼저 사면 좋은 주문",
        "body": "",
        "items": [
         "Aquaflux I(무료)와 Refilliarmus(마나0) — 물 주기 루프.",
@@ -28130,7 +29010,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Spells worth buying first",
+       "heading": "Sorts à acheter en premier",
        "body": "",
        "items": [
         "Aquaflux I (gratuit) et Refilliarmus (0 mana) — la boucle d'eau.",
@@ -28284,7 +29164,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Spells worth buying first",
+       "heading": "Zauber zuerst kaufen",
        "body": "",
        "items": [
         "Aquaflux I (kostenlos) und Refilliarmus (0 Mana) — der Wasser-Loop.",
@@ -28870,7 +29750,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "100% 完成度技巧",
+       "heading": "100% 完成技巧",
        "body": "",
        "items": [
         "纹章成就：完成各家族剧情线（Ambrosia、Dracula、Henderson、Hosu、Khazan、Logan、Webb），把纹章放入纹章园。",
@@ -29159,7 +30039,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Tips for 100% completion",
+       "heading": "コンプリートのコツ",
        "body": "",
        "items": [
         "家紋：各家族のストーリー（Ambrosia、Dracula、Henderson、Hosu、Khazan、Logan、Webb）を終えて紋章園に置く。",
@@ -29448,7 +30328,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Tips for 100% completion",
+       "heading": "100% 달성 팁",
        "body": "",
        "items": [
         "문장: 각 가문 스토리(Ambrosia, Dracula, Henderson, Hosu, Khazan, Logan, Webb) 완료 후 문장 정원에 배치.",
@@ -29737,7 +30617,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Tips for 100% completion",
+       "heading": "Conseils pour le 100 %",
        "body": "",
        "items": [
         "Emblèmes : finissez chaque famille (Ambrosia, Dracula, Henderson, Hosu, Khazan, Logan, Webb) pour le Jardin des emblèmes.",
@@ -30026,7 +30906,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Tips for 100% completion",
+       "heading": "Tipps für 100 %",
        "body": "",
        "items": [
         "Wappen: Schließe jede Familie (Ambrosia, Dracula, Henderson, Hosu, Khazan, Logan, Webb) ab und setze das Wappen in den Wappengarten.",
@@ -31039,7 +31919,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "好感里程碑",
+       "heading": "友情里程碑",
        "body": "",
        "items": [
         "心数 3 级——可以拥抱角色。",
@@ -31119,7 +31999,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Friendship milestones",
+       "heading": "友情のマイルストーン",
        "body": "",
        "items": [
         "ハート3——ハグ可能。",
@@ -31199,7 +32079,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Friendship milestones",
+       "heading": "우정 마일스톤",
        "body": "",
        "items": [
         "하트 3 — 포옹 가능.",
@@ -31279,7 +32159,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Friendship milestones",
+       "heading": "Étapes d'amitié",
        "body": "",
        "items": [
         "Niveau de cœur 3 — câlin.",
@@ -31359,7 +32239,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Friendship milestones",
+       "heading": "Freundschafts-Meilensteine",
        "body": "",
        "items": [
         "Herz-Stufe 3 — Umarmung.",
@@ -31984,7 +32864,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Shops & services",
+       "heading": "店とサービス",
        "body": "",
        "items": [
         "Webb of Wonders（Sabrina）：呪文、マナ強化、バックパック拡張。",
@@ -32190,7 +33070,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Shops & services",
+       "heading": "상점과 서비스",
        "body": "",
        "items": [
         "Webb of Wonders(Sabrina): 주문, 마나 강화, 가방 확장.",
@@ -32396,7 +33276,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Shops & services",
+       "heading": "Boutiques et services",
        "body": "",
        "items": [
         "Webb of Wonders (Sabrina) : sorts, mana, emplacements de sac.",
@@ -32602,7 +33482,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Shops & services",
+       "heading": "Läden & Dienste",
        "body": "",
        "items": [
         "Webb of Wonders (Sabrina): Zauber, Mana, Inventarplätze.",
@@ -34606,7 +35486,7 @@
          "Rabbicula",
          "Reach Spring (Year 2)",
          "2,800",
-         "待补"
+         "à compléter"
         ]
        ]
       },
@@ -34718,7 +35598,7 @@
          "Rabbicula",
          "Reach Spring (Year 2)",
          "2,800",
-         "待补"
+         "noch offen"
         ]
        ]
       },
@@ -34970,7 +35850,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "How to update",
+       "heading": "アップデート方法",
        "body": "",
        "items": [
         "Steam：起動時に自動更新。",
@@ -35055,7 +35935,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "How to update",
+       "heading": "업데이트 방법",
        "body": "",
        "items": [
         "Steam: 실행 시 자동 업데이트.",
@@ -35140,7 +36020,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "How to update",
+       "heading": "Comment mettre à jour",
        "body": "",
        "items": [
         "Steam : mise à jour auto au lancement.",
@@ -35225,7 +36105,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "How to update",
+       "heading": "So aktualisierst du",
        "body": "",
        "items": [
         "Steam: automatisch beim Start.",
@@ -35376,7 +36256,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "值得一试的 Steam Deck 设置",
+       "heading": "建议的设置",
        "body": "",
        "items": [
         "将帧率限制在 40–60 FPS，获得稳定掌机体验。",
@@ -35443,7 +36323,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Steam Deck settings to try",
+       "heading": "おすすめ設定",
        "body": "",
        "items": [
         "フレームレートを40〜60FPSに制限して安定させる。",
@@ -35510,7 +36390,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Steam Deck settings to try",
+       "heading": "권장 설정",
        "body": "",
        "items": [
         "프레임 40~60FPS로 제한해 안정적으로.",
@@ -35566,18 +36446,18 @@
         ],
         [
          "Performance on Deck",
-         "Community reports not yet collected — 待补."
+         "Community reports not yet collected — à compléter."
         ],
         [
          "Official Verified status",
-         "待补 (not yet confirmed on the store page)."
+         "à compléter (not yet confirmed on the store page)."
         ]
        ]
       },
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Steam Deck settings to try",
+       "heading": "Réglages à essayer",
        "body": "",
        "items": [
         "Limitez à 40–60 FPS pour une expérience stable.",
@@ -35633,18 +36513,18 @@
         ],
         [
          "Performance on Deck",
-         "Community reports not yet collected — 待补."
+         "Community reports not yet collected — noch offen."
         ],
         [
          "Official Verified status",
-         "待补 (not yet confirmed on the store page)."
+         "noch offen (not yet confirmed on the store page)."
         ]
        ]
       },
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Steam Deck settings to try",
+       "heading": "Empfohlene Einstellungen",
        "body": "",
        "items": [
         "Frame auf 40–60 FPS begrenzen.",
@@ -35789,7 +36669,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "主机专属内容",
+       "heading": "主机特色",
        "body": "",
        "items": [
         "立绘风格：在 Switch 上可切换两套立绘预设（设置 → 立绘风格）：卡通+写实光影，或动漫风。",
@@ -35861,7 +36741,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Console extras",
+       "heading": "機種別の特長",
        "body": "",
        "items": [
         "ポートレート：Switch で2つのプリセットを切替（設定→Portrait Style）。カートゥーン or アニメ風。",
@@ -35933,7 +36813,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Console extras",
+       "heading": "콘솔 특징",
        "body": "",
        "items": [
         "초상화: Switch에서 프리셋 2개 전환(설정→Portrait Style). 카툰 or 애니풍.",
@@ -36005,7 +36885,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Console extras",
+       "heading": "Spécificités consoles",
        "body": "",
        "items": [
         "Portraits : deux préréglages sur Switch (Réglages → Portrait Style) : cartoon ou anime.",
@@ -36077,7 +36957,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Console extras",
+       "heading": "Konsolen-Extras",
        "body": "",
        "items": [
         "Porträts: zwei Presets auf Switch (Einstellungen → Portrait Style): Cartoon oder Anime.",
@@ -36320,7 +37200,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Other platforms",
+       "heading": "他のプラットフォーム",
        "body": "",
        "items": [
         "macOS：対応（Steam で Mac 版確認済み。詳細スペックは待補）。",
@@ -36398,7 +37278,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Other platforms",
+       "heading": "기타 플랫폼",
        "body": "",
        "items": [
         "macOS: 지원(Steam에서 Mac 버전 확인. 세부 사양은 대기).",
@@ -36476,7 +37356,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Other platforms",
+       "heading": "Autres plateformes",
        "body": "",
        "items": [
         "macOS : pris en charge (version Mac confirmée sur Steam ; specs à compléter).",
@@ -36554,7 +37434,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Other platforms",
+       "heading": "Andere Plattformen",
        "body": "",
        "items": [
         "macOS: unterstützt (Mac-Version auf Steam bestätigt; Specs offen).",
@@ -36708,7 +37588,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "还有疑问？",
+       "heading": "还有问题？",
        "body": "",
        "items": [
         "查礼物全表、恋爱指南、钓鱼图鉴与主线流程获取更深细节。",
@@ -36774,7 +37654,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Still missing an answer?",
+       "heading": "他に質問があれば",
        "body": "",
        "items": [
         "贈り物ガイド、恋愛ガイド、釣りガイド、ストーリー攻略でさらに詳しく。",
@@ -36840,7 +37720,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Still missing an answer?",
+       "heading": "더 궁금한 점이 있다면",
        "body": "",
        "items": [
         "선물 가이드, 연애 가이드, 낚시 가이드, 메인 공략에서 더 자세히.",
@@ -36906,7 +37786,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Still missing an answer?",
+       "heading": "Toujours une question ?",
        "body": "",
        "items": [
         "Consultez les guides cadeaux, romance, pêche et la soluce pour plus de détails.",
@@ -36972,7 +37852,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Still missing an answer?",
+       "heading": "Noch eine Frage?",
        "body": "",
        "items": [
         "Mehr Details in Geschenke-, Romantik-, Angel-Guide und Komplettlösung.",
