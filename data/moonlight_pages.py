@@ -26,13 +26,13 @@ def M(body, tag="NOTE"):
     return {"type": "note", "tag": tag, "heading": "", "body": body}
 
 def lang_page(lang_data, en_sections):
-    """用紧凑覆盖表生成语言版 page：sections 只覆盖已翻译的字段（heading/headers/items/body），
+    """用紧凑覆盖表生成语言版 page：sections 只覆盖已翻译的字段（heading/headers/items/body/rows），
     未覆盖字段（表格 rows 等）继承 EN。"""
     secs = []
     for i, es in enumerate(en_sections):
         ov = (lang_data.get("sections") or {}).get(i, {})
         sec = dict(es)
-        for k in ("heading", "headers", "items", "body"):
+        for k in ("heading", "headers", "items", "body", "rows"):
             if k in ov:
                 sec[k] = ov[k]
         secs.append(sec)
@@ -2570,7 +2570,7 @@ def build_moon_pages():
                 _secs = page_i18n.setdefault(_lg, {}).setdefault("sections", [])
                 if 0 <= _idx < len(en["sections"]):
                     _merged = dict(en["sections"][_idx])
-                    for _k in ("heading", "headers", "items", "body"):
+                    for _k in ("heading", "headers", "items", "body", "rows"):
                         if _k in _ov:
                             _merged[_k] = _ov[_k]
                     # 保持 sections 顺序：替换或插入

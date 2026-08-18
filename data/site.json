@@ -10714,10 +10714,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Act 0: Prologue Walkthrough",
-     "metaTitle": "Act 0: Prologue Walkthrough",
-     "metaDescription": "The opening of Sovereign Tower sets you on the throne with Arlin the advisor…",
-     "intro": "The opening of Sovereign Tower sets you on the throne with Arlin the advisor guiding your first decisions. Here is the Act 0 prologue, step by step.",
+     "title": "第 0 幕：序章流程攻略",
+     "metaTitle": "君王之塔 序章流程：首日朝会与圆桌",
+     "metaDescription": "君王之塔序章怎么玩：开场朝会、第一位骑士与圆桌循环。",
+     "intro": "《君王之塔》开局让你与顾问 Arlin 一同坐上王座，做出最初的决策。这里是第 0 幕序章的分步攻略。",
      "sections": [
       {
        "type": "steps",
@@ -10928,10 +10928,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Act 1: Gavault Walkthrough",
-     "metaTitle": "Act 1: Gavault Walkthrough",
-     "metaDescription": "The Gavault chain in Act 1 leads to Brunhilda, the princess of Gavault. Follo…",
-     "intro": "The Gavault chain in Act 1 leads to Brunhilda, the princess of Gavault. Follow the daughter's side to recruit her and know how to assign her well.",
+     "title": "第 1 幕：加沃特流程攻略",
+     "metaTitle": "君王之塔 第 1 幕加沃特：招募 Brunhilda",
+     "metaDescription": "第 1 幕加沃特剧情线：走女儿侧、招募 Brunhilda 公主与她的狩猎偏好。",
+     "intro": "第 1 幕的加沃特线通向加沃特公主 Brunhilda。走女儿侧即可招募她，并知道如何更好地指派她。",
      "sections": [
       {
        "type": "list",
@@ -11123,10 +11123,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Act 1: Groveshire Walkthrough",
-     "metaTitle": "Act 1: Groveshire Walkthrough",
-     "metaDescription": "The Groveshire chain follows Angelica and the goose/beast quest line that end…",
-     "intro": "The Groveshire chain follows Angelica and the goose/beast quest line that ends with Chester. Here is what we know about the route.",
+     "title": "第 1 幕：格罗夫郡流程攻略",
+     "metaTitle": "君王之塔 第 1 幕格罗夫郡：Angelica 与鹅任务",
+     "metaDescription": "第 1 幕格罗夫郡剧情线：Angelica 的领地、鹅任务线与 Chester 的招募。",
+     "intro": "格罗夫郡线跟随 Angelica 与鹅/野兽任务线，以 Chester 收尾。这里是我们已知的路线。",
      "sections": [
       {
        "type": "list",
@@ -11319,10 +11319,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Beast Hunt Walkthrough",
-     "metaTitle": "Beast Hunt Walkthrough",
-     "metaDescription": "The Beast Hunt in Sovereign Tower connects Ari, The Wolf and the hunting ques…",
-     "intro": "The Beast Hunt in Sovereign Tower connects Ari, The Wolf and the hunting quest line. Use the right knights and know the wolf routes.",
+     "title": "野兽狩猎流程攻略",
+     "metaTitle": "君王之塔 野兽狩猎：招募 Ari 与 The Wolf",
+     "metaDescription": "君王之塔野兽狩猎路线：招募 Ari 与 The Wolf、最适合狩猎的骑士与要避免的坑。",
+     "intro": "君王之塔的野兽狩猎连接 Ari、The Wolf 与狩猎任务线。用对骑士，摸清狼路线。",
      "sections": [
       {
        "type": "list",
@@ -11519,10 +11519,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Goose Quest Walkthrough",
-     "metaTitle": "Goose Quest Walkthrough",
-     "metaDescription": "The Clean Keeper Goose quest line ends with Chester — the knight with random…",
-     "intro": "The Clean Keeper Goose quest line ends with Chester — the knight with random stats who loves every assignment. Here is the route as we know it.",
+     "title": "鹅任务流程攻略",
+     "metaTitle": "君王之塔 鹅任务：怎么拿 Chester",
+     "metaDescription": "君王之塔的 Clean Keeper 鹅任务：特殊结局与如何通向 Chester 的招募。",
+     "intro": "Clean Keeper 鹅任务线以 Chester 收尾——属性随机、喜欢一切指派的神秘骑士。这里是已知路线。",
      "sections": [
       {
        "type": "list",
@@ -11714,10 +11714,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Rebellion Walkthrough",
-     "metaTitle": "Rebellion Walkthrough",
-     "metaDescription": "The Rebellion chain follows Epicrate and Brimwood. Balance People and Nobilit…",
-     "intro": "The Rebellion chain follows Epicrate and Brimwood. Balance People and Nobility to get the most from her revolutionary scoring.",
+     "title": "叛乱流程攻略",
+     "metaTitle": "君王之塔 叛乱线：Epicrate 与布里姆伍德",
+     "metaDescription": "君王之塔叛乱剧情线：布里姆伍德的 Epicrate、革命者特质与平民/贵族平衡。",
+     "intro": "叛乱线跟随 Epicrate 与布里姆伍德。平衡平民与贵族，才能最大化她的革命得分。",
      "sections": [
       {
        "type": "list",
@@ -11954,10 +11954,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Act 2: Murder Investigation Walkthrough",
-     "metaTitle": "Act 2: Murder Investigation Walkth…",
-     "metaDescription": "The Act 2 murder investigation is Sovereign Tower's most-skipped major branch…",
-     "intro": "The Act 2 murder investigation is Sovereign Tower's most-skipped major branch — the first casualty achievement sits at 72.3% on Steam. Here is the verified route: investigate the murderer, hear the confessions, rewind to the marked morning, talk to Alwena, then confront the killer.",
+     "title": "第 2 幕：谋杀调查流程攻略",
+     "metaTitle": "君王之塔 第 2 幕谋杀调查：完整路线",
+     "metaDescription": "第 2 幕谋杀调查是被跳过最多的大支线——first casualty 成就仅 72.3% 达成。这里是完整路线。",
+     "intro": "第 2 幕谋杀调查是君王之塔被跳过最多的大支线——first casualty 成就在 Steam 上只有 72.3% 达成。这里是经过验证的路线：调查凶手、听取证词、回溯到标记的早晨、与 Alwena 对话，然后直面凶手。",
      "sections": [
       {
        "type": "steps",
@@ -12392,10 +12392,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Annexes & Building Guide",
-     "metaTitle": "Annexes & Building Guide",
-     "metaDescription": "Annexes are the buildings that expand your tower's systems. The Forge handles…",
-     "intro": "Annexes are the buildings that expand your tower's systems. The Forge handles gear, the Alchemy Room makes consumables — and both unlock new tools and story.",
+     "title": "附属建筑与建造指南",
+     "metaTitle": "君王之塔 附属建筑：锻炉与炼金室",
+     "metaDescription": "君王之塔附属建筑：Carina's Forge 锻炉、Witch's Alchemy Room 炼金室，以及建造如何解锁进程。",
+     "intro": "附属建筑是扩展高塔系统的建筑：锻炉处理装备、炼金室制作消耗品——两者都解锁新工具与剧情。",
      "sections": [
       {
        "type": "list",
@@ -12587,10 +12587,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Round Table System Guide",
-     "metaTitle": "Round Table System Guide",
-     "metaDescription": "The Round Table is the heart of Sovereign Tower — where knights go out on que…",
-     "intro": "The Round Table is the heart of Sovereign Tower — where knights go out on quests each cycle. Here is how the system works.",
+     "title": "圆桌系统指南",
+     "metaTitle": "君王之塔 圆桌：任务指派与容量",
+     "metaDescription": "君王之塔圆桌怎么运作：每幕容量、任务指派与紧急招募。",
+     "intro": "圆桌是君王之塔的核心——每 cycle 骑士从这里外出执行任务。这里是系统运作方式。",
      "sections": [
       {
        "type": "list",
@@ -12783,10 +12783,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Quest Outcomes Explained",
-     "metaTitle": "Quest Outcomes Explained",
-     "metaDescription": "Every quest in Sovereign Tower returns one of six outcomes. Here are the thre…",
-     "intro": "Every quest in Sovereign Tower returns one of six outcomes. Here are the thresholds, rewards and what triggers Unexpected Outcomes.",
+     "title": "任务结果详解",
+     "metaTitle": "君王之塔 任务结果：阈值与奖励",
+     "metaDescription": "君王之塔任务结果：critical/great/success/failure 阈值、奖励倍率与意外结果（Unexpected Outcome）。",
+     "intro": "君王之塔的每个任务都返回六种结果之一。这里是阈值、奖励与意外结果的触发条件。",
      "sections": [
       {
        "type": "list",
@@ -12980,10 +12980,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Kingdom Map & Regions",
-     "metaTitle": "Kingdom Map & Regions",
-     "metaDescription": "Sovereign Tower's kingdom spans regions tied to each knight's homeland. Some…",
-     "intro": "Sovereign Tower's kingdom spans regions tied to each knight's homeland. Some traits reward assigning knights to their home regions.",
+     "title": "王国地图与地区",
+     "metaTitle": "君王之塔 王国地图：地区与加成",
+     "metaDescription": "君王之塔王国地区：Brizh、格罗夫郡、加沃特、德拉科维奇等——以及基于地区的特质加成。",
+     "intro": "君王之塔的王国横跨多个地区，与每位骑士的家乡相连。部分特质会奖励把骑士派往家乡地区。",
      "sections": [
       {
        "type": "list",
@@ -13175,10 +13175,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Audience (Morning Court) Guide",
-     "metaTitle": "Audience (Morning Court) Guide",
-     "metaDescription": "Every cycle opens with the morning court. Your answers move factions and appl…",
-     "intro": "Every cycle opens with the morning court. Your answers move factions and apply sovereign tags that knights approve or dislike.",
+     "title": "朝会（晨间朝堂）指南",
+     "metaTitle": "君王之塔 朝会：请愿与君主风格",
+     "metaDescription": "君王之塔晨间朝堂：请愿、派系变动与骑士反应的君主风格标签。",
+     "intro": "每个 cycle 从晨间朝堂开始。你的回答会推动派系并应用骑士认可或反感的君主风格标签。",
      "sections": [
       {
        "type": "list",
@@ -13372,10 +13372,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Release & Update Log",
-     "metaTitle": "Release & Update Log",
-     "metaDescription": "The Sovereign Tower changelog: release date, sale status, DLC and what we are…",
-     "intro": "The Sovereign Tower changelog: release date, sale status, DLC and what we are verifying next.",
+     "title": "发布与更新日志",
+     "metaTitle": "君王之塔 发布与更新日志",
+     "metaDescription": "君王之塔发布信息与本站攻略更新日志：v1.0 发售、促销与 DLC 状态。",
+     "intro": "君王之塔更新日志：发售日期、促销状态、DLC 与下一步核实内容。",
      "sections": [
       {
        "type": "list",
@@ -13590,9 +13590,9 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "System Requirements",
-     "metaTitle": "System Requirements",
-     "metaDescription": "君王之塔支持 Windows 和 Linux/SteamOS。这里是官方最低、推荐与 Steam Deck 配置。",
+     "title": "系统配置要求",
+     "metaTitle": "君王之塔 系统配置：最低与推荐",
+     "metaDescription": "君王之塔系统配置：官方商店页的最低、推荐与 Steam Deck 规格。",
      "intro": "君王之塔支持 Windows 和 Linux/SteamOS。这里是官方最低、推荐与 Steam Deck 配置。",
      "sections": [
       {
@@ -13830,10 +13830,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Review Overview",
-     "metaTitle": "Review Overview",
-     "metaDescription": "Sovereign Tower landed strong reviews at launch. Here is the overview — score…",
-     "intro": "Sovereign Tower landed strong reviews at launch. Here is the overview — scores, what's praised and who it's for.",
+     "title": "评测概览",
+     "metaTitle": "君王之塔 评测：Metacritic 86、Steam 90% 好评",
+     "metaDescription": "君王之塔评测概览：Metacritic 86、Steam 90% 好评，评论者与玩家称赞的点。",
+     "intro": "君王之塔发售后获得强劲好评。这里是概览——分数、被称赞之处与适合人群。",
      "sections": [
       {
        "type": "table",
@@ -14144,10 +14144,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Release & Demo Info",
-     "metaTitle": "Release & Demo Info",
-     "metaDescription": "When did Sovereign Tower come out, is there a demo, and what's the DLC situat…",
-     "intro": "When did Sovereign Tower come out, is there a demo, and what's the DLC situation? Everything about availability.",
+     "title": "发售与 demo 信息",
+     "metaTitle": "君王之塔 发售、demo 与平台",
+     "metaDescription": "君王之塔发售与 demo 信息：v1.0 日期、demo 可用性、促销与 DLC 状态。",
+     "intro": "君王之塔何时发售？有没有 demo？DLC 情况如何？这里关于可获得性的一切。",
      "sections": [
       {
        "type": "list",
@@ -14334,10 +14334,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Soundtrack Info",
-     "metaTitle": "Soundtrack Info",
-     "metaDescription": "The music of Sovereign Tower adds a lot to its tone. Here is what we know so…",
-     "intro": "The music of Sovereign Tower adds a lot to its tone. Here is what we know so far about the soundtrack.",
+     "title": "原声带信息",
+     "metaTitle": "君王之塔 原声带：音乐与作曲家",
+     "metaDescription": "君王之塔原声带状态：关于音乐、作曲家与可获得性的已知信息。",
+     "intro": "君王之塔的音乐为氛围增色不少。这里是目前关于原声带的信息。",
      "sections": [
       {
        "type": "list",
@@ -14527,10 +14527,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Items Overview",
-     "metaTitle": "Items Overview",
-     "metaDescription": "An overview of Sovereign Tower's items — consumables and crafting gear — with…",
-     "intro": "An overview of Sovereign Tower's items — consumables and crafting gear — with what we've confirmed so far.",
+     "title": "物品总览",
+     "metaTitle": "君王之塔 物品总览：消耗品与制作装备",
+     "metaDescription": "君王之塔物品总览：消耗品与制作装备系列、获取途径与正在核实的内容。",
+     "intro": "君王之塔物品总览——消耗品与制作装备——以及目前已确认的信息。",
      "sections": [
       {
        "type": "list",
@@ -14714,10 +14714,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Consumables Guide",
-     "metaTitle": "Consumables Guide",
-     "metaDescription": "Consumables in Sovereign Tower come from the Alchemy Room. Here is what we kn…",
-     "intro": "Consumables in Sovereign Tower come from the Alchemy Room. Here is what we know about potions and food.",
+     "title": "消耗品指南",
+     "metaTitle": "君王之塔 消耗品：药水与食物",
+     "metaDescription": "君王之塔消耗品：炼金室出品的药水与食物、效果与最爱菜加成。",
+     "intro": "君王之塔的消耗品来自炼金室。这里是关于药水与食物的已知信息。",
      "sections": [
       {
        "type": "list",
@@ -14909,10 +14909,10 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Crafting & Gear Guide",
-     "metaTitle": "Crafting & Gear Guide",
-     "metaDescription": "Crafting and gear in Sovereign Tower revolve around the Forge. Armour is your…",
-     "intro": "Crafting and gear in Sovereign Tower revolve around the Forge. Armour is your knights' hit points for quest damage.",
+     "title": "制作与装备指南",
+     "metaTitle": "君王之塔 制作装备：锻炉与护甲",
+     "metaDescription": "君王之塔制作与装备：Carina's Forge 锻炉、作为任务血量的护甲与已知配方。",
+     "intro": "君王之塔的制作与装备围绕锻炉展开。护甲是骑士承受任务伤害的血量。",
      "sections": [
       {
        "type": "list",
@@ -15105,9 +15105,9 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Best Opening Strategy",
-     "metaTitle": "Best Opening Strategy",
-     "metaDescription": "开局几个 cycle 决定基调：早期平衡派系、招到 Ari、推进剧情线让 Act 2 更强。",
+     "title": "最佳开局策略",
+     "metaTitle": "君王之塔 最佳开局：早期派系与骑士",
+     "metaDescription": "君王之塔最佳开局：早期派系平衡、招募 Ari 与 Act 2 前的剧情线优先级。",
      "intro": "开局几个 cycle 决定基调：早期平衡派系、招到 Ari、推进剧情线让 Act 2 更强。",
      "sections": [
       {
@@ -15306,9 +15306,9 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Controls & Input Guide",
-     "metaTitle": "Controls & Input Guide",
-     "metaDescription": "君王之塔支持手柄和键鼠，官方特性是无需限时输入。",
+     "title": "操作与输入指南",
+     "metaTitle": "君王之塔 操作：手柄与键鼠",
+     "metaDescription": "君王之塔操作：完整手柄支持、键鼠与无需限时输入特性。",
      "intro": "君王之塔支持手柄和键鼠，官方特性是无需限时输入。",
      "sections": [
       {
@@ -15507,9 +15507,9 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Difficulty Tips",
-     "metaTitle": "Difficulty Tips",
-     "metaDescription": "更难的 cycle 惩罚仓促。善用回溯、均衡阵容、管理菜与护甲。",
+     "title": "难度技巧",
+     "metaTitle": "君王之塔 难度技巧：撑过更难 cycle",
+     "metaDescription": "君王之塔难度技巧：把回溯当安全网、均衡阵容、管理菜与护甲。",
      "intro": "更难的 cycle 惩罚仓促。善用回溯、均衡阵容、管理菜与护甲。",
      "sections": [
       {
@@ -15708,9 +15708,9 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Knight Loyalty & Affinity",
-     "metaTitle": "Knight Loyalty & Affinity",
-     "metaDescription": "骑士在好感 −7 时辞职，除非是 Alwena 或 Ari。这里教你保住阵容。",
+     "title": "骑士忠诚与好感",
+     "metaTitle": "君王之塔 骑士忠诚：好感与辞职",
+     "metaDescription": "君王之塔骑士忠诚：好感规则、−7 辞职阈值与永不离开的人。",
      "intro": "骑士在好感 −7 时辞职，除非是 Alwena 或 Ari。这里教你保住阵容。",
      "sections": [
       {
@@ -15908,9 +15908,9 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "New Game Plus Guide",
-     "metaTitle": "New Game Plus Guide",
-     "metaDescription": "新游戏+ 让你在通关后带着进度重开，专门探索第一周目锁掉的分支路线、隐藏结局与不同派系走向，是看全所有结局的干净方式。",
+     "title": "新游戏+指南",
+     "metaTitle": "君王之塔 新游戏+：继承与结局",
+     "metaDescription": "君王之塔新游戏+：继承什么、为何它是看全所有结局的方式。",
      "intro": "新游戏+ 让你在通关后带着进度重开，专门探索第一周目锁掉的分支路线、隐藏结局与不同派系走向，是看全所有结局的干净方式。",
      "sections": [
       {
@@ -16103,9 +16103,9 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Alliances & Rival Rulers",
-     "metaTitle": "Alliances & Rival Rulers",
-     "metaDescription": "君王之塔在关键决策时让你站在不同派系一边——这里解释结盟机制。",
+     "title": "结盟与邻国君主",
+     "metaTitle": "君王之塔 结盟：Cycle 4 通牒与派系立场",
+     "metaDescription": "君王之塔结盟：Cycle 4 通牒、派系立场与结盟如何改变结局。",
      "intro": "君王之塔在关键决策时让你站在不同派系一边——这里解释结盟机制。",
      "sections": [
       {
@@ -16300,9 +16300,9 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Beat the Dragon Knight (Cycle 4)",
-     "metaTitle": "Beat the Dragon Knight (Cycle 4)",
-     "metaDescription": "Cycle 4 龙骑士发出通牒，有三条派系+金币路径。这里教你应对。",
+     "title": "击败龙骑士（Cycle 4）",
+     "metaTitle": "君王之塔 Cycle 4 龙骑士：三个选项",
+     "metaDescription": "君王之塔 Cycle 4 龙骑士最后通牒：三个选项及其派系与金币要求。",
      "intro": "Cycle 4 龙骑士发出通牒，有三条派系+金币路径。这里教你应对。",
      "sections": [
       {
@@ -16504,9 +16504,9 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Sovereign Archetypes Explained",
-     "metaTitle": "Sovereign Archetypes Explained",
-     "metaDescription": "你的统治风格由五种君主风格定义。骑士会对此反应——这里教你玩转朝堂。",
+     "title": "君主风格详解",
+     "metaTitle": "君王之塔 君主风格：五种风格",
+     "metaDescription": "君王之塔五种君主风格、骑士各自认可哪种、以及如何运用。",
      "intro": "你的统治风格由五种君主风格定义。骑士会对此反应——这里教你玩转朝堂。",
      "sections": [
       {
@@ -16702,9 +16702,9 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Tower Servants & Staff",
-     "metaTitle": "Tower Servants & Staff",
-     "metaDescription": "除了骑士，高塔还有仆从和职员——总管 Alwena 是关键人物。",
+     "title": "高塔仆从与职员",
+     "metaTitle": "君王之塔 高塔仆从：总管与职员",
+     "metaDescription": "君王之塔的高塔仆从与职员：总管 Alwena 的职责与其余已知信息。",
      "intro": "除了骑士，高塔还有仆从和职员——总管 Alwena 是关键人物。",
      "sections": [
       {
@@ -16917,9 +16917,9 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "Knight Stats Explained",
-     "metaTitle": "Knight Stats Explained",
-     "metaDescription": "每位骑士有六维属性。这里说明每一项的作用以及它们如何喂给任务得分。",
+     "title": "骑士属性详解",
+     "metaTitle": "君王之塔 骑士属性：STR/AGI/CHA/MAG/WIT/LCK",
+     "metaDescription": "君王之塔骑士属性：力量、敏捷、魅力、魔法、智慧与幸运各有什么作用，得分如何运作。",
      "intro": "每位骑士有六维属性。这里说明每一项的作用以及它们如何喂给任务得分。",
      "sections": [
       {
@@ -17122,9 +17122,9 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "The Bard (Secret Knight)",
-     "metaTitle": "The Bard (Secret Knight)",
-     "metaDescription": "吟游诗人出现在粉丝数据中作为隐藏骑士。这里是目前已知信息。",
+     "title": "吟游诗人（隐藏骑士）",
+     "metaTitle": "君王之塔 吟游诗人：隐藏骑士",
+     "metaDescription": "君王之塔的吟游诗人（Hildegard）：关于隐藏骑士与招募状态的已知信息。",
      "intro": "吟游诗人出现在粉丝数据中作为隐藏骑士。这里是目前已知信息。",
      "sections": [
       {
@@ -17386,7 +17386,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "What this hub covers",
+       "heading": "本攻略覆盖内容",
        "body": "",
        "items": [
         "23 位可攻略角色，含 喜欢/最爱/讨厌 礼物与心动事件。",
@@ -17407,39 +17407,39 @@
        ],
        "rows": [
         [
-         "Gift Guide",
-         "Every character's loved / liked / disliked gifts with a searchable table."
+         "礼物全表",
+         "全部角色 喜欢/讨厌 礼物，可搜索筛选。"
         ],
         [
-         "Romance Guide",
-         "All 23 dateable characters, heart levels, dates, marriage and vampire conversion."
+         "恋爱指南",
+         "23 位可攻略角色、心数、约会、结婚与转化为吸血鬼。"
         ],
         [
-         "Fishing Guide",
-         "All fish, locations, full-moon exclusives and rod upgrades."
+         "钓鱼图鉴",
+         "全部鱼类、钓点、满月专属与鱼竿升级。"
         ],
         [
-         "Flower Guide",
-         "Every flower by season, location and value."
+         "花卉全表",
+         "按季节/地点/价格列出每种花。"
         ],
         [
-         "Tool Upgrades",
-         "Copper / Iron / Gold costs and materials for every tool."
+         "工具升级",
+         "铜/铁/金 各工具的价格与材料。"
         ],
         [
-         "Achievements",
-         "All 59 achievements and how to unlock them."
+         "成就列表",
+         "全部 59 个成就与解锁方法。"
         ],
         [
-         "Walkthrough",
-         "The main story step by step, part 1 to 8."
+         "主线流程",
+         "主线故事第 1–8 部分逐步攻略。"
         ]
        ]
       },
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Latest updates",
+       "heading": "最新更新",
        "body": "",
        "items": [
         "补丁 1.1.45（2026-07-21）：起播光敏警告、观星宽屏黑条修复、“Back to the Den”补发解锁——更多改进计划在 1.2。",
@@ -18047,27 +18047,27 @@
        ],
        "rows": [
         [
-         "Energy",
-         "Spent by every action; rest or eat to recover. Upgrade it with purchases at Webb of Wonders."
+         "体力 Energy",
+         "每个动作都会消耗；休息或进食恢复。可在 Webb of Wonders 购买上限提升。"
         ],
         [
-         "Mana",
-         "Spent by spells. Restore it with Mana Potions or a Mana Extractor (from the 'Quest for Mana' chain)."
+         "魔力 Mana",
+         "施法消耗；用魔力药水或魔力萃取器恢复（来自“魔力任务”任务链）。"
         ],
         [
-         "Heart levels",
-         "One gift per character per day. Gifts they love give the biggest boost; disliked gifts barely count."
+         "心数 Heart",
+         "每个角色每天只能送一次礼物；喜欢的礼物加成最大，讨厌的几乎不计。"
         ],
         [
-         "Shipments",
-         "Chester ships products at night — watch for the sale-big achievement at 9,000+ Coins in one night."
+         "出货 Shipments",
+         "Chester 夜间出货——一晚卖出 9,000+ 金币可触发大额售卖成就。"
         ]
        ]
       },
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Beginner mistakes to avoid",
+       "heading": "新手要避免的错误",
        "body": "",
        "items": [
         "鱼钩抛得太近——鱼会被吓跑。保持距离抛竿，再轻轻收线。",
@@ -18167,20 +18167,20 @@
        ],
        "rows": [
         [
-         "Energy",
-         "Spent by every action; rest or eat to recover. Upgrade it with purchases at Webb of Wonders."
+         "体力",
+         "すべての行動で消費。休息か食事で回復。Webb of Wonders で上限を強化可能。"
         ],
         [
-         "Mana",
-         "Spent by spells. Restore it with Mana Potions or a Mana Extractor (from the 'Quest for Mana' chain)."
+         "マナ",
+         "魔法で消費。マナポーションかマナ抽出器で回復（「Quest for Mana」で解放）。"
         ],
         [
-         "Heart levels",
-         "One gift per character per day. Gifts they love give the biggest boost; disliked gifts barely count."
+         "ハート",
+         "キャラごとに1日1つの贈り物。大好物は最大、嫌いな物はほぼ増えません。"
         ],
         [
-         "Shipments",
-         "Chester ships products at night — watch for the sale-big achievement at 9,000+ Coins in one night."
+         "出荷",
+         "Chester が夜に出荷。一晩で9,000コイン以上売ると達成実績。"
         ]
        ]
       },
@@ -18287,20 +18287,20 @@
        ],
        "rows": [
         [
-         "Energy",
-         "Spent by every action; rest or eat to recover. Upgrade it with purchases at Webb of Wonders."
+         "체력",
+         "모든 행동이 소모. 휴식이나 식사로 회복. Webb of Wonders에서 상한 증가."
         ],
         [
-         "Mana",
-         "Spent by spells. Restore it with Mana Potions or a Mana Extractor (from the 'Quest for Mana' chain)."
+         "마나",
+         "마법이 소모. 마나 물약이나 마나 추출기로 회복('Quest for Mana' 연쇄 퀘스트)."
         ],
         [
-         "Heart levels",
-         "One gift per character per day. Gifts they love give the biggest boost; disliked gifts barely count."
+         "하트",
+         "캐릭터당 하루 선물 1개. 좋아하는 선물이 가장 크고, 싫어하는 선물은 거의 안 오릅니다."
         ],
         [
-         "Shipments",
-         "Chester ships products at night — watch for the sale-big achievement at 9,000+ Coins in one night."
+         "출하",
+         "Chester가 밤에 출하. 한밤에 9,000코인 이상 판매하면 업적."
         ]
        ]
       },
@@ -18407,20 +18407,20 @@
        ],
        "rows": [
         [
-         "Energy",
-         "Spent by every action; rest or eat to recover. Upgrade it with purchases at Webb of Wonders."
+         "Énergie",
+         "Chaque action en consomme ; repos ou nourriture. Augmentez-la chez Webb of Wonders."
         ],
         [
          "Mana",
-         "Spent by spells. Restore it with Mana Potions or a Mana Extractor (from the 'Quest for Mana' chain)."
+         "Consommé par les sorts ; restaurez-le avec des potions ou l'extracteur de mana (quête 'Quest for Mana')."
         ],
         [
-         "Heart levels",
-         "One gift per character per day. Gifts they love give the biggest boost; disliked gifts barely count."
+         "Cœurs",
+         "Un cadeau par personnage et par jour. Les cadeaux aimés boostent ; les détestés comptent à peine."
         ],
         [
-         "Shipments",
-         "Chester ships products at night — watch for the sale-big achievement at 9,000+ Coins in one night."
+         "Expéditions",
+         "Chester expédie la nuit — l'exploit des 9 000+ pièces en une nuit."
         ]
        ]
       },
@@ -18527,20 +18527,20 @@
        ],
        "rows": [
         [
-         "Energy",
-         "Spent by every action; rest or eat to recover. Upgrade it with purchases at Webb of Wonders."
+         "Energie",
+         "Jede Aktion kostet Energie; Schlaf oder Essen regeneriert. Maximalwert bei Webb of Wonders kaufbar."
         ],
         [
          "Mana",
-         "Spent by spells. Restore it with Mana Potions or a Mana Extractor (from the 'Quest for Mana' chain)."
+         "Zauber kosten Mana; regeneriere mit Tränken oder dem Mana-Extraktor ('Quest for Mana')."
         ],
         [
-         "Heart levels",
-         "One gift per character per day. Gifts they love give the biggest boost; disliked gifts barely count."
+         "Herzen",
+         "Ein Geschenk pro Charakter und Tag. Geliebte Geschenke geben am meisten; gehasste fast nichts."
         ],
         [
-         "Shipments",
-         "Chester ships products at night — watch for the sale-big achievement at 9,000+ Coins in one night."
+         "Versand",
+         "Chester verschickt nachts — der 9.000+-Münzen-Erfolg in einer Nacht."
         ]
        ]
       },
@@ -19167,7 +19167,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Fast friendship tips",
+       "heading": "快速好感技巧",
        "body": "",
        "items": [
         "花是全游戏最通用的礼物——许多居民喜欢或最爱花。",
@@ -20665,141 +20665,141 @@
        "rows": [
         [
          "Fiona",
-         "Witch",
-         "Spring 1 Year 1",
-         "Aloof and uninterested at first; feuds with Orlock but hides a deeper story."
+         "女巫",
+         "第 1 年春 1 日",
+         "外表疏离、对教团以外的人不感兴趣，与 Orlock 有宿怨，但隐藏着更深的故事。"
         ],
         [
          "Noel",
-         "Witch",
-         "Spring 1 Year 1",
-         "Arrogant, self-interested, prefers fishing — his haughty side hides insecurities."
+         "女巫",
+         "第 1 年春 1 日",
+         "傲慢、只顾自己，最爱钓鱼——高傲只是掩饰不安的面具。"
         ],
         [
          "Sabrina",
-         "Witch",
-         "Spring 1 Year 1",
-         "Dedicated witch, clever, sometimes overwhelmed by her family."
+         "女巫",
+         "第 1 年春 1 日",
+         "专注的女巫，痴迷实验，聪明，偶尔被家族事务压得喘不过气。"
         ],
         [
          "Luna",
-         "Witch",
-         "Spring 1 Year 1",
-         "Enigmatic, spends time in her garden; knows a lot about magic."
+         "女巫",
+         "第 1 年春 1 日",
+         "神秘莫测，大部分时间待在花园或照料动物，对魔法造诣很深。"
         ],
         [
          "Orlock",
-         "Vampire",
-         "Spring 1 Year 1",
-         "Haunted vampire with an alcohol problem; a romantic, raw side blooms as he recovers."
+         "吸血鬼",
+         "第 1 年春 1 日",
+         "饱受过去阴影折磨、有酗酒问题的吸血鬼；随着康复，浪漫而真挚的一面会绽放。"
         ],
         [
          "Evan",
-         "Vampire",
-         "Spring 1 Year 1",
-         "Orlock's laid-back child; struggles with how Orlock has spiraled."
+         "吸血鬼",
+         "第 1 年春 1 日",
+         "Orlock 的孩子，性格随和放松，享受当下，却为 Orlock 的沉沦而痛苦。"
         ],
         [
          "Mina",
-         "Vampire",
-         "Spring 1 Year 1",
-         "Bright, excitable, Orlock's other child and Evan's sister; worries about her family."
+         "吸血鬼",
+         "第 1 年春 1 日",
+         "开朗、容易兴奋，Orlock 的另一个孩子、Evan 的妹妹；很担心家人。"
         ],
         [
          "Samael",
-         "Vampire",
-         "Spring 1 Year 1",
-         "Orlock's nephew; dark, mysterious and kind."
+         "吸血鬼",
+         "第 1 年春 1 日",
+         "Orlock 的外甥；阴郁、神秘却善良。"
         ],
         [
          "Elvira",
-         "Vampire",
-         "Spring 1 Year 1",
-         "Spirited and motivated; always organizing social gatherings."
+         "吸血鬼",
+         "第 1 年春 1 日",
+         "有活力、干劲十足；总是张罗各种社交聚会。"
         ],
         [
          "Persephone",
-         "Human",
-         "Summer 24 Year 1",
-         "Curious human who moved in with her niece and nephew."
+         "人类",
+         "第 1 年夏 24 日",
+         "好奇心强的人类，和侄女、外甥一起搬来。"
         ],
         [
          "Jada",
-         "Human",
-         "With Persephone's quests",
-         "Intense relic collector; unlocks later in the game."
+         "人类",
+         "随 Persephone 任务线",
+         "狂热的文物收藏家；游戏后期解锁。"
         ],
         [
          "Winston",
-         "Human",
-         "With Persephone's quests",
-         "Terrified of supernaturals; his arc is about facing fears."
+         "人类",
+         "随 Persephone 任务线",
+         "非常害怕超自然存在；他的剧情线是直面恐惧。"
         ],
         [
          "Saga",
-         "Werewolf",
-         "Spring 1 Year 1",
-         "Trying to ease the feud between Orlock and her father Brook."
+         "狼人",
+         "第 1 年春 1 日",
+         "努力缓和 Orlock 与她父亲 Brook 之间的矛盾。"
         ],
         [
          "Ridge",
-         "Werewolf",
-         "Spring 1 Year 1",
-         "Brook's laid-back brother; runs the Howling Hammer, father of Ludo."
+         "狼人",
+         "第 1 年春 1 日",
+         "Brook 随和的弟弟；经营 Howling Hammer，是 Ludo 的父亲。"
         ],
         [
          "Ludo",
-         "Werewolf",
-         "Spring 1 Year 1",
-         "Carefree prankster always in trouble with Brook."
+         "狼人",
+         "第 1 年春 1 日",
+         "无忧无虑的捣蛋鬼，总惹 Brook 生气。"
         ],
         [
          "Dragan",
-         "Seer",
-         "Spring 1 Year 1",
-         "Struggles with visions; perfects his card game (Nokturna)."
+         "先知",
+         "第 1 年春 1 日",
+         "被预知幻象困扰；潜心打磨他的卡牌游戏（Nokturna）。"
         ],
         [
          "Alina",
-         "Seer",
-         "Spring 1 Year 1",
-         "Intense and passionate; little patience for Dragan."
+         "先知",
+         "第 1 年春 1 日",
+         "强烈而热情；对 Dragan 没什么耐心。"
         ],
         [
          "Aras",
-         "Seer",
-         "Spring 1 Year 1",
-         "Runs the fashion store Third Eye Threads; kind and soft-spoken."
+         "先知",
+         "第 1 年春 1 日",
+         "经营时尚店 Third Eye Threads；善良、说话轻声细语。"
         ],
         [
          "Death",
-         "Supernatural",
-         "Story progression",
-         "Tired of the job; caring once you help."
+         "超自然存在",
+         "随剧情推进",
+         "厌倦了这份工作；你帮过之后会变得很体贴。"
         ],
         [
          "Llemi",
-         "Supernatural",
-         "Spring before Lovage festival",
-         "A love demon; memorable every interaction."
+         "超自然存在",
+         "春季、Lovage 节前",
+         "一位爱之恶魔；每次互动都令人难忘。"
         ],
         [
          "Kim",
-         "Mermaid",
-         "Hidden (TBA)",
-         "Secret romance candidate."
+         "人鱼",
+         "隐藏（待补）",
+         "隐藏恋爱候选。"
         ],
         [
          "Tae",
-         "Mermaid",
-         "Hidden (TBA)",
-         "Secret romance candidate."
+         "人鱼",
+         "隐藏（待补）",
+         "隐藏恋爱候选。"
         ],
         [
          "Rei",
-         "Mermaid",
-         "Hidden (TBA)",
-         "Secret romance candidate."
+         "人鱼",
+         "隐藏（待补）",
+         "隐藏恋爱候选。"
         ]
        ]
       },
@@ -20834,7 +20834,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Portrait styles (Switch)",
+       "heading": "立绘风格（Switch）",
        "body": "",
        "items": [
         "在 Nintendo Switch 上按“+”键打开主菜单。",
@@ -22301,168 +22301,168 @@
        "rows": [
         [
          "Whisper",
-         "Common",
-         "Most water (not Silverveil Lake)",
-         "All seasons / any time / any weather",
-         "Any rod",
+         "常见",
+         "大部分水域（Silverveil Lake 除外）",
+         "全年 / 任意时间 / 任意天气",
+         "任意鱼竿",
          "6",
          "40"
         ],
         [
          "Splotch",
-         "Common",
+         "常见",
          "Silverveil Lake",
-         "All seasons / any time",
-         "Any rod",
+         "全年 / 任意时间",
+         "任意鱼竿",
          "6",
          "55"
         ],
         [
          "Violet",
-         "Uncommon",
+         "少见",
          "Moonlit Pines River",
-         "All seasons / any time",
-         "Any rod",
+         "全年 / 任意时间",
+         "任意鱼竿",
          "8",
          "65"
         ],
         [
          "Glibby",
-         "Uncommon",
-         "Rivers near Silverveil / your farm",
-         "All seasons / any time",
-         "Any rod",
+         "少见",
+         "Silverveil 附近的河流 / 你的农场",
+         "全年 / 任意时间",
+         "任意鱼竿",
          "8",
          "65"
         ],
         [
          "Orbis",
-         "Uncommon",
+         "少见",
          "Silverveil Lake",
-         "All seasons / any time",
-         "Any rod",
+         "全年 / 任意时间",
+         "任意鱼竿",
          "8",
          "75"
         ],
         [
          "Goldy",
-         "Uncommon",
-         "Rivers near Silverveil / farm / Misty Shores",
-         "Spring & Summer only",
-         "Any rod",
+         "少见",
+         "Silverveil / 农场 / Misty Shores 附近的河流",
+         "仅春季与夏季",
+         "任意鱼竿",
          "8",
          "50"
         ],
         [
          "Mouthout",
-         "Uncommon",
+         "少见",
          "Silverveil Lake / Misty Shores",
-         "Rain only",
-         "Any rod",
+         "仅雨天",
+         "任意鱼竿",
          "8",
          "100"
         ],
         [
          "Brickle",
-         "Uncommon",
+         "少见",
          "Howling Marshes",
-         "All seasons / any time",
-         "Any rod",
+         "全年 / 任意时间",
+         "任意鱼竿",
          "8",
          "80"
         ],
         [
          "Leftsee",
-         "Uncommon",
-         "Underground / Cave of Echoes / Crystal Cave",
-         "All seasons / any time",
-         "Any rod",
+         "少见",
+         "地下 / Cave of Echoes / Crystal Cave",
+         "全年 / 任意时间",
+         "任意鱼竿",
          "8",
          "140"
         ],
         [
          "Skullfin",
-         "Rare",
-         "Underground / Cave of Echoes / Crystal Cave",
-         "All seasons / any time",
-         "Any rod",
+         "稀有",
+         "地下 / Cave of Echoes / Crystal Cave",
+         "全年 / 任意时间",
+         "任意鱼竿",
          "—",
          "待补"
         ],
         [
          "Twilight",
-         "Uncommon",
+         "少见",
          "Luna Bay",
-         "Early evening",
-         "Any rod",
+         "傍晚",
+         "任意鱼竿",
          "—",
          "待补"
         ],
         [
          "Moonflutter",
-         "Rare",
+         "稀有",
          "Luna Bay",
-         "Full Moon only",
-         "Any rod",
+         "仅满月",
+         "任意鱼竿",
          "—",
          "待补"
         ],
         [
          "Furybud",
-         "Rare",
+         "稀有",
          "Luna Bay",
-         "Large fish",
-         "Premium rod",
+         "大型鱼",
+         "Premium 鱼竿",
          "—",
          "待补"
         ],
         [
          "Goliath",
-         "Rare",
+         "稀有",
          "Moonlit Pines River",
-         "Large fish",
-         "Premium rod",
+         "大型鱼",
+         "Premium 鱼竿",
          "—",
          "待补"
         ],
         [
          "Amour",
-         "Uncommon",
+         "少见",
          "Pink Grove",
-         "All seasons / any time",
-         "Any rod",
+         "全年 / 任意时间",
+         "任意鱼竿",
          "—",
          "待补"
         ],
         [
          "Glammer",
-         "Uncommon",
+         "少见",
          "Pink Grove",
-         "All seasons / any time",
-         "Any rod",
+         "全年 / 任意时间",
+         "任意鱼竿",
          "—",
          "待补"
         ],
         [
          "Armour",
-         "Rare",
+         "稀有",
          "Pink Grove",
-         "Large fish",
-         "Premium rod",
+         "大型鱼",
+         "Premium 鱼竿",
          "8",
          "280"
         ],
         [
          "Missing",
-         "Super Rare",
-         "Any fishing spot",
-         "Any",
-         "Any rod",
+         "超稀有",
+         "任意钓点",
+         "任意",
+         "任意鱼竿",
          "—",
          "待补"
         ],
         [
-         "4 more species",
+         "另有 4 种",
          "—",
          "待补",
          "待补",
@@ -22473,201 +22473,201 @@
        ],
        "rowAttrs": [
         {
-         "rarity": "common",
-         "loc": "anywhere",
-         "season": "allseason",
-         "weather": "anyweather",
-         "time": "anytime",
-         "moon": "",
-         "size": "",
-         "rod": "anyrod",
-         "pending": ""
-        },
-        {
-         "rarity": "common",
+         "rarity": "unlisted",
          "loc": "silverveil",
-         "season": "allseason",
-         "weather": "unlisted",
-         "time": "anytime",
-         "moon": "",
-         "size": "",
-         "rod": "anyrod",
-         "pending": ""
-        },
-        {
-         "rarity": "uncommon",
-         "loc": "moonlit-pines",
-         "season": "allseason",
-         "weather": "unlisted",
-         "time": "anytime",
-         "moon": "",
-         "size": "",
-         "rod": "anyrod",
-         "pending": ""
-        },
-        {
-         "rarity": "uncommon",
-         "loc": "silverveil farm",
-         "season": "allseason",
-         "weather": "unlisted",
-         "time": "anytime",
-         "moon": "",
-         "size": "",
-         "rod": "anyrod",
-         "pending": ""
-        },
-        {
-         "rarity": "uncommon",
-         "loc": "silverveil",
-         "season": "allseason",
-         "weather": "unlisted",
-         "time": "anytime",
-         "moon": "",
-         "size": "",
-         "rod": "anyrod",
-         "pending": ""
-        },
-        {
-         "rarity": "uncommon",
-         "loc": "silverveil misty-shores farm",
-         "season": "spring summer",
+         "season": "unlisted",
          "weather": "unlisted",
          "time": "unlisted",
          "moon": "",
          "size": "",
-         "rod": "anyrod",
+         "rod": "unlisted",
          "pending": ""
         },
         {
-         "rarity": "uncommon",
+         "rarity": "unlisted",
+         "loc": "silverveil",
+         "season": "unlisted",
+         "weather": "unlisted",
+         "time": "unlisted",
+         "moon": "",
+         "size": "",
+         "rod": "unlisted",
+         "pending": ""
+        },
+        {
+         "rarity": "unlisted",
+         "loc": "moonlit-pines",
+         "season": "unlisted",
+         "weather": "unlisted",
+         "time": "unlisted",
+         "moon": "",
+         "size": "",
+         "rod": "unlisted",
+         "pending": ""
+        },
+        {
+         "rarity": "unlisted",
+         "loc": "silverveil",
+         "season": "unlisted",
+         "weather": "unlisted",
+         "time": "unlisted",
+         "moon": "",
+         "size": "",
+         "rod": "unlisted",
+         "pending": ""
+        },
+        {
+         "rarity": "unlisted",
+         "loc": "silverveil",
+         "season": "unlisted",
+         "weather": "unlisted",
+         "time": "unlisted",
+         "moon": "",
+         "size": "",
+         "rod": "unlisted",
+         "pending": ""
+        },
+        {
+         "rarity": "unlisted",
          "loc": "silverveil misty-shores",
          "season": "unlisted",
-         "weather": "rain",
+         "weather": "unlisted",
          "time": "unlisted",
          "moon": "",
          "size": "",
-         "rod": "anyrod",
+         "rod": "unlisted",
          "pending": ""
         },
         {
-         "rarity": "uncommon",
+         "rarity": "unlisted",
+         "loc": "silverveil misty-shores",
+         "season": "unlisted",
+         "weather": "unlisted",
+         "time": "unlisted",
+         "moon": "",
+         "size": "",
+         "rod": "unlisted",
+         "pending": ""
+        },
+        {
+         "rarity": "unlisted",
          "loc": "howling-marshes",
-         "season": "allseason",
-         "weather": "unlisted",
-         "time": "anytime",
-         "moon": "",
-         "size": "",
-         "rod": "anyrod",
-         "pending": ""
-        },
-        {
-         "rarity": "uncommon",
-         "loc": "underground",
-         "season": "allseason",
-         "weather": "unlisted",
-         "time": "anytime",
-         "moon": "",
-         "size": "",
-         "rod": "anyrod",
-         "pending": ""
-        },
-        {
-         "rarity": "rare",
-         "loc": "underground",
-         "season": "allseason",
-         "weather": "unlisted",
-         "time": "anytime",
-         "moon": "",
-         "size": "",
-         "rod": "anyrod",
-         "pending": "pending"
-        },
-        {
-         "rarity": "uncommon",
-         "loc": "luna-bay",
-         "season": "unlisted",
-         "weather": "unlisted",
-         "time": "evening",
-         "moon": "",
-         "size": "",
-         "rod": "anyrod",
-         "pending": "pending"
-        },
-        {
-         "rarity": "rare",
-         "loc": "luna-bay",
          "season": "unlisted",
          "weather": "unlisted",
          "time": "unlisted",
-         "moon": "fullmoon",
+         "moon": "",
          "size": "",
-         "rod": "anyrod",
+         "rod": "unlisted",
+         "pending": ""
+        },
+        {
+         "rarity": "unlisted",
+         "loc": "underground",
+         "season": "unlisted",
+         "weather": "unlisted",
+         "time": "unlisted",
+         "moon": "",
+         "size": "",
+         "rod": "unlisted",
+         "pending": ""
+        },
+        {
+         "rarity": "unlisted",
+         "loc": "underground",
+         "season": "unlisted",
+         "weather": "unlisted",
+         "time": "unlisted",
+         "moon": "",
+         "size": "",
+         "rod": "unlisted",
          "pending": "pending"
         },
         {
-         "rarity": "rare",
+         "rarity": "unlisted",
          "loc": "luna-bay",
          "season": "unlisted",
          "weather": "unlisted",
          "time": "unlisted",
          "moon": "",
-         "size": "large",
+         "size": "",
+         "rod": "unlisted",
+         "pending": "pending"
+        },
+        {
+         "rarity": "unlisted",
+         "loc": "luna-bay",
+         "season": "unlisted",
+         "weather": "unlisted",
+         "time": "unlisted",
+         "moon": "",
+         "size": "",
+         "rod": "unlisted",
+         "pending": "pending"
+        },
+        {
+         "rarity": "unlisted",
+         "loc": "luna-bay",
+         "season": "unlisted",
+         "weather": "unlisted",
+         "time": "unlisted",
+         "moon": "",
+         "size": "",
          "rod": "premium",
          "pending": "pending"
         },
         {
-         "rarity": "rare",
+         "rarity": "unlisted",
          "loc": "moonlit-pines",
          "season": "unlisted",
          "weather": "unlisted",
          "time": "unlisted",
          "moon": "",
-         "size": "large",
+         "size": "",
          "rod": "premium",
          "pending": "pending"
         },
         {
-         "rarity": "uncommon",
-         "loc": "pink-grove",
-         "season": "allseason",
-         "weather": "unlisted",
-         "time": "anytime",
-         "moon": "",
-         "size": "",
-         "rod": "anyrod",
-         "pending": "pending"
-        },
-        {
-         "rarity": "uncommon",
-         "loc": "pink-grove",
-         "season": "allseason",
-         "weather": "unlisted",
-         "time": "anytime",
-         "moon": "",
-         "size": "",
-         "rod": "anyrod",
-         "pending": "pending"
-        },
-        {
-         "rarity": "rare",
+         "rarity": "unlisted",
          "loc": "pink-grove",
          "season": "unlisted",
          "weather": "unlisted",
          "time": "unlisted",
          "moon": "",
-         "size": "large",
+         "size": "",
+         "rod": "unlisted",
+         "pending": "pending"
+        },
+        {
+         "rarity": "unlisted",
+         "loc": "pink-grove",
+         "season": "unlisted",
+         "weather": "unlisted",
+         "time": "unlisted",
+         "moon": "",
+         "size": "",
+         "rod": "unlisted",
+         "pending": "pending"
+        },
+        {
+         "rarity": "unlisted",
+         "loc": "pink-grove",
+         "season": "unlisted",
+         "weather": "unlisted",
+         "time": "unlisted",
+         "moon": "",
+         "size": "",
          "rod": "premium",
          "pending": ""
         },
         {
-         "rarity": "superrare",
-         "loc": "anywhere",
+         "rarity": "unlisted",
+         "loc": "unlisted",
          "season": "unlisted",
          "weather": "unlisted",
          "time": "unlisted",
          "moon": "",
          "size": "",
-         "rod": "anyrod",
+         "rod": "unlisted",
          "pending": "pending"
         },
         {
@@ -22697,25 +22697,25 @@
        "rows": [
         [
          "Fishing Rod",
-         "Free (Noel's quest)",
-         "Small fish only."
+         "免费（Noel 的任务）",
+         "仅小型鱼。"
         ],
         [
          "Premium Fishing Rod",
-         "16,000 Coins + 1x Fishing Rod + 3x Gold Bar",
-         "Catches both Large and Small fish."
+         "16,000 金币 + 1x Fishing Rod + 3x 金条",
+         "可钓大型与小型鱼。"
         ],
         [
          "Enchanted Fishing Rod",
          "待补",
-         "Catches every fish and removes the energy cost of fishing (per community reports)."
+         "可钓所有鱼，并免除钓鱼的体力消耗（据社区报告）。"
         ]
        ]
       },
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Fishing tips",
+       "heading": "钓鱼技巧",
        "body": "",
        "items": [
         "每个季节和天气都去钓——部分鱼有时令（Goldy 春夏；Mouthout 仅雨天）。",
@@ -25036,241 +25036,241 @@
        "rows": [
         [
          "Black Azalea",
-         "Summer",
-         "Misty Shores, Moonlit Pines",
+         "夏",
+         "Misty Shores、Moonlit Pines",
          "6",
-         "Death (love), Luna (love)"
+         "Death（最爱）、Luna（最爱）"
         ],
         [
          "Blue Azalea",
          "—",
          "—",
          "6",
-         "Luna (love), Winston"
+         "Luna（最爱）、Winston"
         ],
         [
          "Pink Azalea",
-         "Spring",
-         "Player Farm, Moonlit Pines",
+         "春",
+         "玩家农场、Moonlit Pines",
          "6",
-         "Luna (love), Mina (love)"
+         "Luna（最爱）、Mina（最爱）"
         ],
         [
          "Purple Azalea",
-         "Spring",
-         "Player Farm, Moonlit Pines",
+         "春",
+         "玩家农场、Moonlit Pines",
          "6",
-         "Luna (love), Sabrina (love)"
+         "Luna（最爱）、Sabrina（最爱）"
         ],
         [
          "Red Azalea",
-         "Spring",
+         "春",
          "Misty Shores",
          "6",
-         "Luna (love)"
+         "Luna（最爱）"
         ],
         [
          "Yellow Azalea",
-         "Spring",
+         "春",
          "Howling Marshes",
          "6",
-         "Jada (love), Luna (love)"
+         "Jada（最爱）、Luna（最爱）"
         ],
         [
          "Blue Kthonia",
          "—",
          "—",
          "15",
-         "Luna (love)"
+         "Luna（最爱）"
         ],
         [
          "Purple Kthonia",
-         "Spring/Summer",
+         "春夏",
          "Moonlit Pines",
          "15",
-         "Luna (love), Sabrina (love), Saga (love)"
+         "Luna（最爱）、Sabrina（最爱）、Saga（最爱）"
         ],
         [
          "Purple Lavender",
-         "Spring",
+         "春",
          "Moonlit Pines",
          "15",
-         "Luna (love), Persephone (love)"
+         "Luna（最爱）、Persephone（最爱）"
         ],
         [
          "Red Lavender",
-         "Spring",
+         "春",
          "Misty Shores",
          "15",
-         "Luna (love)"
+         "Luna（最爱）"
         ],
         [
          "Blue Moonlight Flower",
-         "Spring",
+         "春",
          "Khazan Temple",
          "—",
-         "Luna (love), Moon Goddess (love)"
+         "Luna（最爱）、Moon Goddess（最爱）"
         ],
         [
          "Purple Moonlight Flower",
-         "Summer",
+         "夏",
          "Khazan Temple",
          "—",
-         "Aras (love), Dragan (love), Luna (love), Moon Goddess (love)"
+         "Aras（最爱）、Dragan（最爱）、Luna（最爱）、Moon Goddess（最爱）"
         ],
         [
          "Black Plumeria",
          "—",
          "—",
          "6",
-         "Luna (love)"
+         "Luna（最爱）"
         ],
         [
          "Blue Plumeria",
          "—",
          "—",
          "6",
-         "Luna (love)"
+         "Luna（最爱）"
         ],
         [
          "Pink Plumeria",
          "—",
          "—",
          "6",
-         "Luna (love)"
+         "Luna（最爱）"
         ],
         [
          "Purple Plumeria",
-         "Spring/Summer",
-         "Player Farm, Moonlit Pines",
+         "春夏",
+         "玩家农场、Moonlit Pines",
          "6",
-         "Luna (love), Sabrina (love)"
+         "Luna（最爱）、Sabrina（最爱）"
         ],
         [
          "Red Plumeria",
          "—",
          "—",
          "6",
-         "Luna (love)"
+         "Luna（最爱）"
         ],
         [
          "Yellow Plumeria",
-         "Spring",
+         "春",
          "Howling Marshes",
          "6",
-         "Luna (love), Sun God (love)"
+         "Luna（最爱）、Sun God（最爱）"
         ],
         [
          "Poinsettia",
-         "Winter",
+         "冬",
          "Misty Shores",
          "—",
-         "Luna (love)"
+         "Luna（最爱）"
         ],
         [
          "Black Rose",
-         "Summer",
+         "夏",
          "Khazan Temple",
          "10",
-         "Alina (love), Luna (love)"
+         "Alina（最爱）、Luna（最爱）"
         ],
         [
          "Blue Rose",
-         "Summer",
+         "夏",
          "Khazan Temple",
          "10",
-         "Luna (love), Ridge (love)"
+         "Luna（最爱）、Ridge（最爱）"
         ],
         [
          "Pink Rose",
          "—",
          "—",
          "10",
-         "Luna (love)"
+         "Luna（最爱）"
         ],
         [
          "Purple Rose",
-         "Spring/Summer",
-         "Moonlit Pines, Player Farm",
+         "春夏",
+         "Moonlit Pines、玩家农场",
          "10",
-         "Luna (love)"
+         "Luna（最爱）"
         ],
         [
          "Red Rose",
          "—",
          "—",
          "10",
-         "Elvira (love), Luna (love)"
+         "Elvira（最爱）、Luna（最爱）"
         ],
         [
          "White Rose",
-         "Spring/Summer",
-         "Khazan Temple, Moonlit Pines",
+         "春夏",
+         "Khazan Temple、Moonlit Pines",
          "10",
-         "Brook (love), Luna (love)"
+         "Brook（最爱）、Luna（最爱）"
         ],
         [
          "Yellow Rose",
-         "Spring",
+         "春",
          "Howling Marshes",
          "10",
-         "Luna (love)"
+         "Luna（最爱）"
         ],
         [
          "Black Tulips",
-         "Spring",
+         "春",
          "Misty Shores",
          "6",
-         "Ludo (love), Luna (love)"
+         "Ludo（最爱）、Luna（最爱）"
         ],
         [
          "Blue Tulips",
          "—",
          "—",
          "6",
-         "Luna (love)"
+         "Luna（最爱）"
         ],
         [
          "Pink Tulips",
-         "Spring",
+         "春",
          "Moonlit Pines",
          "6",
-         "Luna (love), Mina (love)"
+         "Luna（最爱）、Mina（最爱）"
         ],
         [
          "Purple Tulips",
-         "Spring",
-         "Player Farm, Moonlit Pines",
+         "春",
+         "玩家农场、Moonlit Pines",
          "6",
-         "Luna (love), Sabrina (love)"
+         "Luna（最爱）、Sabrina（最爱）"
         ],
         [
          "Red Tulips",
-         "Spring",
+         "春",
          "Misty Shores",
          "6",
-         "Luna (love)"
+         "Luna（最爱）"
         ],
         [
          "White Tulips",
-         "Spring",
-         "Crest Garden, Town NE",
+         "春",
+         "纹章园、城镇东北",
          "6",
-         "Fiona (love), Luna (love)"
+         "Fiona（最爱）、Luna（最爱）"
         ],
         [
          "Yellow Tulips",
-         "Spring",
+         "春",
          "Howling Marshes",
          "6",
-         "Luna (love)"
+         "Luna（最爱）"
         ]
        ]
       },
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Flower tips",
+       "heading": "花朵技巧",
        "body": "",
        "items": [
         "Luna 喜欢任何花——安全的每日礼物。",
@@ -27570,75 +27570,75 @@
        "rows": [
         [
          "Aquaflux I",
-         "Free (story)",
-         "Summon a watering can that waters up to 16 crops.",
-         "1 Mana"
+         "免费（剧情）",
+         "召唤一个水壶，最多浇灌 16 格作物。",
+         "1 魔力"
         ],
         [
          "Aquaflux II",
-         "8,000 Coins (needs Witch's Wand)",
-         "Summon 2 watering cans, up to 24 crops each.",
-         "1 Mana"
+         "8,000 金币（需要女巫魔杖）",
+         "召唤 2 个水壶，每个最多浇灌 24 格作物。",
+         "1 魔力"
         ],
         [
          "Arborascend I",
-         "1,200 Coins",
-         "Magically move 1 tree.",
-         "2 Mana"
+         "1,200 金币",
+         "魔法移动 1 棵树。",
+         "2 魔力"
         ],
         [
          "Ethereal Hands I",
-         "1,400 Coins",
-         "Summon helping hands that harvest up to 32 crops.",
-         "1 Mana"
+         "1,400 金币",
+         "召唤帮手之手，最多收获 32 格作物。",
+         "1 魔力"
         ],
         [
          "Metamorphosia I",
-         "1,600 Coins",
-         "Transform 1 crop into another random crop.",
-         "3 Mana"
+         "1,600 金币",
+         "将 1 格作物随机变成另一种作物。",
+         "3 魔力"
         ],
         [
          "Hoisthaven",
-         "2,000 Coins",
-         "Magically move a building.",
-         "3 Mana"
+         "2,000 金币",
+         "魔法移动一栋建筑。",
+         "3 魔力"
         ],
         [
          "Maturio I",
-         "2,000 Coins",
-         "Instantly grow crops to maturity in a 1-by-1 area.",
-         "2 Mana"
+         "2,000 金币",
+         "立即催熟 1×1 范围内的作物。",
+         "2 魔力"
         ],
         [
          "Refilliarmus",
-         "2,000 Coins",
-         "Instantly refill your watering can.",
-         "0 Mana"
+         "2,000 金币",
+         "立即装满你的水壶。",
+         "0 魔力"
         ],
         [
          "Ethereal Shovels I",
-         "2,200 Coins",
-         "Summon a shovel that digs up to 32 spots.",
-         "1 Mana"
+         "2,200 金币",
+         "召唤一把铲子，最多挖掘 32 格。",
+         "1 魔力"
         ],
         [
          "Ethereal Axes I",
-         "2,400 Coins",
-         "Summon an axe that chops up to 16 logs or trees.",
-         "2 Mana"
+         "2,400 金币",
+         "召唤一把斧头，最多砍伐 16 根原木或树。",
+         "2 魔力"
         ],
         [
          "Ethereal Pickaxes I",
-         "2,600 Coins",
-         "Summon a pickaxe that crushes up to 16 rocks.",
-         "2 Mana"
+         "2,600 金币",
+         "召唤一把镐，最多敲碎 16 块岩石。",
+         "2 魔力"
         ],
         [
          "Tomorrow's Tears",
-         "4,000 Coins",
-         "Make it rain the next night.",
-         "3 Mana"
+         "4,000 金币",
+         "让第二天晚上下雨。",
+         "3 魔力"
         ]
        ]
       },
@@ -27669,7 +27669,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Spells worth buying first",
+       "heading": "值得先买的咒语",
        "body": "",
        "items": [
         "Aquaflux I（免费）与 Refilliarmus（0 魔力）——浇水循环。",
@@ -28632,246 +28632,246 @@
        "rows": [
         [
          "A Childhood Dream",
-         "Build a treehouse with Ridge."
+         "与 Ridge 一起建造树屋。"
         ],
         [
          "A Farming Monopoly",
-         "Earn 1,000,000 coins."
+         "赚取 1,000,000 金币。"
         ],
         [
          "A Generous Donor",
-         "Give 299 gifts."
+         "送出 299 份礼物。"
         ],
         [
          "A House for the Hendersons",
-         "Welcome the Henderson family to town."
+         "欢迎 Henderson 一家来到小镇。"
         ],
         [
          "A Lively Farm",
-         "Adopt your first farm creature."
+         "领养你的第一只农场生物。"
         ],
         [
          "A Magical Cocktail",
-         "Have every potion effect active at the same time."
+         "让所有药水效果同时生效。"
         ],
         [
          "A Magical Toolbelt",
-         "Upgrade any tool into its Enchanted version."
+         "将任意工具升级为附魔版本。"
         ],
         [
          "AFKitten",
-         "Pet your Hellkitten for five consecutive minutes."
+         "连续抚摸你的 Hellkitten 五分钟。"
         ],
         [
          "Albertus' Helper",
-         "Complete 25 job board requests."
+         "完成 25 个任务板委托。"
         ],
         [
          "Archaeo-Logistics",
-         "Open the Museum."
+         "开启博物馆。"
         ],
         [
          "Awooooo!",
-         "Talk to a werewolf during a full moon."
+         "满月时与狼人交谈。"
         ],
         [
          "Back in Place",
-         "Return every plastic chair."
+         "归还全部塑料椅。"
         ],
         [
          "Back to the Den",
-         "Return every Vampster to its den."
+         "把全部 Vampster 送回巢穴。"
         ],
         [
          "Bad Santa!",
-         "Bring charcoal to Pakkeleg."
+         "把木炭带给 Pakkeleg。"
         ],
         [
          "Bottomless Chester",
-         "Sell more than 9,000 coins worth of items in one night."
+         "一晚卖出价值超过 9,000 金币的物品。"
         ],
         [
          "Buddies for Afterlife",
-         "Become friends with Death."
+         "与 Death 成为朋友。"
         ],
         [
          "By the Shore",
-         "Discover Luna Bay."
+         "发现 Luna Bay。"
         ],
         [
          "Call of the Current",
-         "Unlock Mermaid form."
+         "解锁人鱼形态。"
         ],
         [
          "Card Tricks",
-         "Score at least 30 points in a single Nokturna match."
+         "单局 Nokturna 至少获得 30 分。"
         ],
         [
          "Cartographer",
-         "Discover every location in Moonlight Peaks."
+         "发现《月光小镇》的每个地点。"
         ],
         [
          "Do You Speak Animalese?",
-         "Talk to a creature while in Hellkitten form."
+         "以 Hellkitten 形态与生物交谈。"
         ],
         [
          "Dracula Estate",
-         "Fully upgrade your house."
+         "完全升级你的房屋。"
         ],
         [
          "Fishing Pro",
-         "Catch every fish."
+         "钓到所有鱼。"
         ],
         [
          "Fully Energized",
-         "Reach maximum Energy."
+         "体力达到上限。"
         ],
         [
          "Get Creative",
-         "Craft a flower arrangement, embroidery, or vase."
+         "制作一份插花、刺绣或花瓶。"
         ],
         [
          "Happy New Year!",
-         "Complete your first in-game year."
+         "完成游戏内第一年。"
         ],
         [
          "Magic at Max Capacity",
-         "Reach maximum Mana."
+         "魔力达到上限。"
         ],
         [
          "Making Mina Proud",
-         "Cook 25 different recipes."
+         "烹饪 25 种不同的菜谱。"
         ],
         [
          "Master of Witchcraft",
-         "Fully upgrade every spell."
+         "完全升级所有咒语。"
         ],
         [
          "Missing? No!",
-         "Catch a Missing."
+         "钓到一只 Missing。"
         ],
         [
          "Moonlit Stretching",
-         "Attend your first yoga session."
+         "参加你的第一节瑜伽课。"
         ],
         [
          "New Beginnings",
-         "Plant your first crop."
+         "种植你的第一株作物。"
         ],
         [
          "Nokturna Master",
-         "Collect every Nokturna card."
+         "集齐所有 Nokturna 卡牌。"
         ],
         [
          "One Collection to Rule Them All",
-         "Complete the Museum."
+         "完成博物馆。"
         ],
         [
          "Out of the Mist",
-         "Lift the curse from Misty Shores."
+         "解除 Misty Shores 的诅咒。"
         ],
         [
          "Out of This World",
-         "Travel to the moon."
+         "前往月球。"
         ],
         [
          "Perpetual Bloom",
-         "Build a greenhouse."
+         "建造一座温室。"
         ],
         [
          "Purrgatory",
-         "Unlock Hellkitten form."
+         "解锁 Hellkitten 形态。"
         ],
         [
          "Raiders of the Lost Art",
-         "Finish Elvira's treasure hunt."
+         "完成 Elvira 的寻宝任务。"
         ],
         [
          "Rightful Ritualist",
-         "Activate every Witch's Circle."
+         "激活所有女巫法阵。"
         ],
         [
          "Serial Gifter",
-         "Give 25 loved gifts in the same night."
+         "同一晚送出 25 份最爱礼物。"
         ],
         [
          "Skulls in a Net",
-         "Collect every Soul Blob."
+         "收集全部灵魂团。"
         ],
         [
          "Social Butterfly",
-         "Reach four hearts with every character."
+         "与每个角色达到四颗心。"
         ],
         [
          "Soup-Chef",
-         "Earn the Mastersoup trophy."
+         "获得 Mastersoup 奖杯。"
         ],
         [
          "Take a Seat",
-         "Help repair the broken bench."
+         "帮忙修理坏掉的长椅。"
         ],
         [
          "The Ambrosias",
-         "Place the Ambrosia Crest in the Crest Garden."
+         "将 Ambrosia 纹章放入纹章园。"
         ],
         [
          "The Draculas",
-         "Place the Dracula Crest in the Crest Garden."
+         "将 Dracula 纹章放入纹章园。"
         ],
         [
          "The Hendersons",
-         "Place the Henderson Crest in the Crest Garden."
+         "将 Henderson 纹章放入纹章园。"
         ],
         [
          "The Hosus",
-         "Place the Hosu Crest in the Crest Garden."
+         "将 Hosu 纹章放入纹章园。"
         ],
         [
          "The Khazans",
-         "Place the Khazan Crest in the Crest Garden."
+         "将 Khazan 纹章放入纹章园。"
         ],
         [
          "The Logans",
-         "Place the Logan Crest in the Crest Garden."
+         "将 Logan 纹章放入纹章园。"
         ],
         [
          "The Pumpking",
-         "Meet the mysterious pumpkin."
+         "遇见神秘的南瓜。"
         ],
         [
          "The Webbs",
-         "Place the Webb Crest in the Crest Garden."
+         "将 Webb 纹章放入纹章园。"
         ],
         [
          "Tied the Knot",
-         "Get married."
+         "结婚。"
         ],
         [
          "To the Depths",
-         "Open the Catacombs."
+         "开启地下墓穴。"
         ],
         [
          "Tree Hugger",
-         "Fall in love with a tree."
+         "与一棵树坠入爱河。"
         ],
         [
          "Vampire with a Wand",
-         "Cast your first spell."
+         "施展你的第一个咒语。"
         ],
         [
          "Wings of the Night",
-         "Unlock Bat form."
+         "解锁蝙蝠形态。"
         ],
         [
          "Witnessing Revolution",
-         "Watch the Draculambs march."
+         "观看 Draculambs 游行。"
         ]
        ]
       },
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Tips for 100% completion",
+       "heading": "100% 完成度技巧",
        "body": "",
        "items": [
         "纹章成就：完成各家族剧情线（Ambrosia、Dracula、Henderson、Hosu、Khazan、Logan、Webb），把纹章放入纹章园。",
@@ -30223,44 +30223,44 @@
        ],
        "rows": [
         [
-         "Part 1",
-         "Meeting Townsfolk & Getting Started",
-         "Orlock's Wine Scheme, meet the town, catch fish, first comfort, animal care, A Bridge Too Far."
+         "第 1 部分",
+         "认识居民与起步",
+         "Orlock 的红酒计划、结识小镇、钓鱼、第一次安慰、照顾动物、A Bridge Too Far。"
         ],
         [
-         "Part 2",
-         "Furnace, Magic & Cat Transformation",
-         "Tension in the Crest Garden, A Croak and a Crest, Dinner Party, catch bugs, Magic of Crops."
+         "第 2 部分",
+         "熔炉、魔法与猫形态",
+         "纹章园中的紧张、A Croak and a Crest、晚宴、捉虫、Magic of Crops。"
         ],
         [
-         "Part 3",
-         "Upgrades, Herbs & Mana",
-         "Get Iron, upgrade tools, earn money fast, change clothes, grow herbs, recover Mana."
+         "第 3 部分",
+         "升级、药草与魔力",
+         "获取铁、升级工具、快速赚钱、换装、种植药草、恢复魔力。"
         ],
         [
-         "Part 4",
-         "Museum, Nokturna & Potion-Making",
-         "A New Beginning, Museum in the Making, how to win Nokturna, Curating the Museum, Mend It With Magic."
+         "第 4 部分",
+         "博物馆、Nokturna 与药水制作",
+         "A New Beginning、Museum in the Making、如何赢得 Nokturna、布置博物馆、Mend It With Magic。"
         ],
         [
-         "Part 5",
-         "Webb's Crest & Mermaid Transformation",
-         "Webb family storyline and unlocking the Mermaid form."
+         "第 5 部分",
+         "Webb 纹章与人鱼形态",
+         "Webb 家族剧情与解锁人鱼形态。"
         ],
         [
-         "Part 6",
-         "Beehives, Saga & Kim Quests",
-         "Beehives, Saga's storyline and Kim's quests."
+         "第 6 部分",
+         "蜂箱、Saga 与 Kim 任务",
+         "蜂箱、Saga 的剧情与 Kim 的任务。"
         ],
         [
-         "Part 7",
-         "Missing, Moon, Bat & Khazan Crest",
-         "The Missing fish, Selene and the moon, Bat transformation, Khazan's Crest, Master of the Night, Pub Quiz."
+         "第 7 部分",
+         "Missing、月亮、蝙蝠与 Khazan 纹章",
+         "Missing 鱼、Selene 与月亮、蝙蝠形态、Khazan 纹章、Master of the Night、Pub Quiz。"
         ],
         [
-         "Part 8",
-         "Ambrosia, Gold & Dracula",
-         "The Ambrosia Crisis, where to find Gold, Darkness Over Moonlight Peaks, post-game overview."
+         "第 8 部分",
+         "Ambrosia、黄金与 Dracula",
+         "Ambrosia 危机、去哪里找黄金、Darkness Over Moonlight Peaks、通关后概览。"
         ]
        ]
       },
@@ -31012,35 +31012,35 @@
        ],
        "rows": [
         [
-         "Daily routine",
-         "Talk to each character and give one gift per day for a relationship-point boost."
+         "每日互动",
+         "每天与每个角色交谈并赠送一件礼物，获得关系点。"
         ],
         [
-         "Gift quality",
-         "Gifts they like or love grant extra points — liked gifts are marked with a star, loved items with a heart in the previously-gifted list."
+         "礼物质量",
+         "喜欢/最爱的礼物额外加分——已赠列表里，喜欢用星标、最爱用心标。"
         ],
         [
-         "Heart levels",
-         "Higher hearts unlock new interactions. Hugs come at heart level 3; dating starts at heart level 4."
+         "心数等级",
+         "心数越高解锁越多互动：3 级可拥抱，4 级开始约会。"
         ],
         [
-         "Dates",
-         "Invite a character out and play dating minigames. Dates can fail if you ignore instructions or arrive late — losing friendship points."
+         "约会",
+         "邀请角色外出并玩约会小游戏。若忽略提示或迟到会失败，损失好感。"
         ],
         [
-         "Marriage",
-         "Max out your chosen romance and propose. You can only marry one character."
+         "结婚",
+         "把恋爱对象的心数刷满并求婚，一次只能与一人结婚。"
         ],
         [
-         "Non-dateable NPCs",
-         "A dozen-plus extra NPCs can still be befriended with gifts — useful for quests and the 'Social Butterfly' achievement."
+         "不可恋爱 NPC",
+         "另有十多位 NPC 可赠送礼物交友——对任务与“Social Butterfly”成就有用。"
         ]
        ]
       },
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Friendship milestones",
+       "heading": "好感里程碑",
        "body": "",
        "items": [
         "心数 3 级——可以拥抱角色。",
@@ -31092,28 +31092,28 @@
        ],
        "rows": [
         [
-         "Daily routine",
-         "Talk to each character and give one gift per day for a relationship-point boost."
+         "毎日の行動",
+         "各キャラに毎日会話と贈り物1つで関係ポイント。"
         ],
         [
-         "Gift quality",
-         "Gifts they like or love grant extra points — liked gifts are marked with a star, loved items with a heart in the previously-gifted list."
+         "贈り物の質",
+         "好物・大好物はボーナス。既に贈ったリストで星=好物、ハート=大好物。"
         ],
         [
-         "Heart levels",
-         "Higher hearts unlock new interactions. Hugs come at heart level 3; dating starts at heart level 4."
+         "ハートレベル",
+         "高くなると新たな行動。3でハグ、4でデート。"
         ],
         [
-         "Dates",
-         "Invite a character out and play dating minigames. Dates can fail if you ignore instructions or arrive late — losing friendship points."
+         "デート",
+         "ミニゲーム付き。指示を無視したり遅刻すると失敗し好感度減少。"
         ],
         [
-         "Marriage",
-         "Max out your chosen romance and propose. You can only marry one character."
+         "結婚",
+         "選んだ相手を最大まで上げプロポーズ。複数とは結婚できません。"
         ],
         [
-         "Non-dateable NPCs",
-         "A dozen-plus extra NPCs can still be befriended with gifts — useful for quests and the 'Social Butterfly' achievement."
+         "NPC",
+         "10人以上のNPCとも贈り物で友情を。クエストと「Social Butterfly」実績に。"
         ]
        ]
       },
@@ -31172,28 +31172,28 @@
        ],
        "rows": [
         [
-         "Daily routine",
-         "Talk to each character and give one gift per day for a relationship-point boost."
+         "매일 행동",
+         "각 캐릭터에게 매일 대화 + 선물 1개로 관계 포인트."
         ],
         [
-         "Gift quality",
-         "Gifts they like or love grant extra points — liked gifts are marked with a star, loved items with a heart in the previously-gifted list."
+         "선물 품질",
+         "좋아함/최애는 보너스. 기존 선물 목록에서 별=좋아함, 하트=최애."
         ],
         [
-         "Heart levels",
-         "Higher hearts unlock new interactions. Hugs come at heart level 3; dating starts at heart level 4."
+         "하트 레벨",
+         "높을수록 더 많은 행동. 3에서 포옹, 4에서 데이트."
         ],
         [
-         "Dates",
-         "Invite a character out and play dating minigames. Dates can fail if you ignore instructions or arrive late — losing friendship points."
+         "데이트",
+         "미니게임 포함. 지시 무시나 지각 시 실패, 호감도 감소."
         ],
         [
-         "Marriage",
-         "Max out your chosen romance and propose. You can only marry one character."
+         "결혼",
+         "선택한 상대를 최대로 올리고 프로포즈. 한 번에 한 명만."
         ],
         [
-         "Non-dateable NPCs",
-         "A dozen-plus extra NPCs can still be befriended with gifts — useful for quests and the 'Social Butterfly' achievement."
+         "NPC",
+         "10명 이상의 NPC도 선물로 우정 가능. 퀘스트와 'Social Butterfly' 업적에 유용."
         ]
        ]
       },
@@ -31252,28 +31252,28 @@
        ],
        "rows": [
         [
-         "Daily routine",
-         "Talk to each character and give one gift per day for a relationship-point boost."
+         "Routine quotidienne",
+         "Parlez et offrez un cadeau par personnage et par jour."
         ],
         [
-         "Gift quality",
-         "Gifts they like or love grant extra points — liked gifts are marked with a star, loved items with a heart in the previously-gifted list."
+         "Qualité du cadeau",
+         "Aimés/adorés donnent des points bonus — étoile = aimé, cœur = adoré."
         ],
         [
-         "Heart levels",
-         "Higher hearts unlock new interactions. Hugs come at heart level 3; dating starts at heart level 4."
+         "Niveaux de cœur",
+         "Câlin au niveau 3, rendez-vous au niveau 4."
         ],
         [
-         "Dates",
-         "Invite a character out and play dating minigames. Dates can fail if you ignore instructions or arrive late — losing friendship points."
+         "Rendez-vous",
+         "Mini-jeux ; peuvent échouer (retard, consignes ignorées) — perte de points."
         ],
         [
-         "Marriage",
-         "Max out your chosen romance and propose. You can only marry one character."
+         "Mariage",
+         "Maxez la romance et proposez. Un seul mariage."
         ],
         [
-         "Non-dateable NPCs",
-         "A dozen-plus extra NPCs can still be befriended with gifts — useful for quests and the 'Social Butterfly' achievement."
+         "PNJ",
+         "Plus d'une douzaine de PNJ peuvent être amis via cadeaux."
         ]
        ]
       },
@@ -31332,28 +31332,28 @@
        ],
        "rows": [
         [
-         "Daily routine",
-         "Talk to each character and give one gift per day for a relationship-point boost."
+         "Tägliche Routine",
+         "Rede mit jedem und gib ein Geschenk pro Tag."
         ],
         [
-         "Gift quality",
-         "Gifts they like or love grant extra points — liked gifts are marked with a star, loved items with a heart in the previously-gifted list."
+         "Geschenkqualität",
+         "Gemocht/geliebt gibt Bonus — Stern = gemocht, Herz = geliebt."
         ],
         [
-         "Heart levels",
-         "Higher hearts unlock new interactions. Hugs come at heart level 3; dating starts at heart level 4."
+         "Herz-Stufen",
+         "Umarmung ab Stufe 3, Dating ab Stufe 4."
         ],
         [
          "Dates",
-         "Invite a character out and play dating minigames. Dates can fail if you ignore instructions or arrive late — losing friendship points."
+         "Minispiele; können scheitern (Verspätung, Anweisungen) — Verlust an Punkten."
         ],
         [
-         "Marriage",
-         "Max out your chosen romance and propose. You can only marry one character."
+         "Heirat",
+         "Maximiere die Romanze und mach einen Heiratsantrag. Nur eine Ehe."
         ],
         [
-         "Non-dateable NPCs",
-         "A dozen-plus extra NPCs can still be befriended with gifts — useful for quests and the 'Social Butterfly' achievement."
+         "NPCs",
+         "Über ein Dutzend NPCs sind per Geschenken befreundbar."
         ]
        ]
       },
@@ -31626,160 +31626,160 @@
        "rows": [
         [
          "Fiona",
-         "Witch",
-         "Coven circle / Webb of Wonders area",
-         "Aloof witch with a feud with Orlock."
+         "女巫",
+         "女巫集会圈 / Webb of Wonders 一带",
+         "与 Orlock 有宿怨的疏离女巫。"
         ],
         [
          "Noel",
-         "Witch",
-         "Rivers & coast",
-         "Arrogant fisher-witch; haughty on the surface."
+         "女巫",
+         "河流与海岸",
+         "傲慢的钓鱼女巫；表面高傲。"
         ],
         [
          "Sabrina",
-         "Witch",
-         "Webb of Wonders (magic shop)",
-         "Sells spells, mana upgrades and inventory slots."
+         "女巫",
+         "Webb of Wonders（魔法商店）",
+         "出售咒语、魔力升级与背包扩容。"
         ],
         [
          "Luna",
-         "Witch",
-         "Her farm in Moonlit Pines / Town Hall bench",
-         "Sells seeds and animals; loves any flower."
+         "女巫",
+         "她在 Moonlit Pines 的农场 / 市政厅长椅",
+         "出售种子与动物；喜欢任何花。"
         ],
         [
          "Orlock",
-         "Vampire",
+         "吸血鬼",
          "Ambrosia Mansion / The Broken Lamp",
-         "Haunted vampire recovering from alcohol problems."
+         "正在戒酒的、饱受困扰的吸血鬼。"
         ],
         [
          "Evan",
-         "Vampire",
+         "吸血鬼",
          "Coffee and Coffins",
-         "Laid-back; Orlock's child."
+         "随和；Orlock 的孩子。"
         ],
         [
          "Mina",
-         "Vampire",
+         "吸血鬼",
          "Coffee and Coffins",
-         "Bright and excitable; Orlock's other child."
+         "开朗、容易兴奋；Orlock 的另一个孩子。"
         ],
         [
          "Samael",
-         "Vampire",
-         "The Broken Lamp (after 23:00)",
-         "Dark, mysterious, kind."
+         "吸血鬼",
+         "The Broken Lamp（23:00 后）",
+         "阴郁、神秘、善良。"
         ],
         [
          "Elvira",
-         "Vampire",
-         "Around town / organizes gatherings",
-         "Spirited event organizer."
+         "吸血鬼",
+         "城镇各处 / 组织聚会",
+         "有活力的活动组织者。"
         ],
         [
          "Persephone",
-         "Human",
-         "Moves in Summer 24 Year 1",
-         "Curious human with niece and nephew."
+         "人类",
+         "第 1 年夏 24 日搬来",
+         "与侄女、外甥同住的好奇人类。"
         ],
         [
          "Jada",
-         "Human",
-         "With Persephone's quests",
-         "Relic collector; runs the Museum questline."
+         "人类",
+         "随 Persephone 任务线",
+         "文物收藏家；负责博物馆任务线。"
         ],
         [
          "Winston",
-         "Human",
-         "With Persephone's quests",
-         "Afraid of supernaturals."
+         "人类",
+         "随 Persephone 任务线",
+         "害怕超自然存在。"
         ],
         [
          "Saga",
-         "Werewolf",
-         "Town, Howling Marshes",
-         "Tries to ease the Orlock–Brook feud."
+         "狼人",
+         "城镇、Howling Marshes",
+         "努力缓和 Orlock 与 Brook 的矛盾。"
         ],
         [
          "Ridge",
-         "Werewolf",
-         "The Howling Hammer (tool shop)",
-         "Sells tool upgrades; father of Ludo."
+         "狼人",
+         "The Howling Hammer（工具店）",
+         "出售工具升级；Ludo 的父亲。"
         ],
         [
          "Ludo",
-         "Werewolf",
-         "Around town",
-         "Prankster werewolf."
+         "狼人",
+         "城镇各处",
+         "爱捣蛋的狼人。"
         ],
         [
          "Dragan",
-         "Seer",
-         "Near his house / Nokturna",
-         "Vision-struggling card player."
+         "先知",
+         "他家附近 / Nokturna",
+         "被预知幻象困扰的卡牌玩家。"
         ],
         [
          "Alina",
-         "Seer",
-         "Near Dragan's house",
-         "Intense, passionate seer."
+         "先知",
+         "Dragan 家附近",
+         "强烈、热情的先知。"
         ],
         [
          "Aras",
-         "Seer",
-         "Third Eye Threads (fashion)",
-         "Kind, soft-spoken store owner."
+         "先知",
+         "Third Eye Threads（时尚）",
+         "善良、轻声细语的店主。"
         ],
         [
          "Death",
-         "Supernatural",
-         "Near the Catacombs",
-         "Tired of the job; gives the bug net."
+         "超自然存在",
+         "地下墓穴附近",
+         "厌倦了这份工作；会给捕虫网。"
         ],
         [
          "Llemi",
-         "Supernatural",
-         "Before the Lovage festival",
-         "Love demon; dateable."
+         "超自然存在",
+         "Lovage 节前",
+         "爱之恶魔；可攻略。"
         ],
         [
          "Kim / Tae / Rei",
-         "Mermaid",
-         "Hidden",
-         "Secret romance candidates."
+         "人鱼",
+         "隐藏",
+         "隐藏恋爱候选。"
         ],
         [
          "Viktor",
          "NPC",
-         "Dome building",
-         "Gives the Red Wine quest; likes cheese."
+         "圆顶建筑",
+         "给出红酒任务；喜欢奶酪。"
         ],
         [
          "Brook",
          "NPC",
-         "Town Hall / mayor",
-         "Werewolf mayor; registers you."
+         "市政厅 / 镇长",
+         "狼人镇长；为你登记。"
         ],
         [
          "Jarvis",
          "NPC",
-         "Around town (ghost)",
-         "Tells you about the Chalice."
+         "城镇各处（幽灵）",
+         "告诉你关于 Chalice 的事。"
         ],
         [
          "Chester",
          "NPC",
-         "Your farm",
-         "Shipping monster."
+         "你的农场",
+         "出货怪物。"
         ]
        ]
       },
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Shops & services",
+       "heading": "商店与服务",
        "body": "",
        "items": [
         "Webb of Wonders（Sabrina）：咒语、魔力升级、背包扩容。",
@@ -32785,55 +32785,55 @@
        "rows": [
         [
          "Alter Ego Elixir",
-         "Changes your appearance",
+         "改变你的外观",
          "Quartz Dust, Nightshade Powder, Honey",
          "1,000"
         ],
         [
          "Sunscreen Potion",
-         "Protects you from sunlight",
+         "保护你不受阳光伤害",
          "Fiber, Egg",
          "45"
         ],
         [
          "Mindless Miner Tonic",
-         "Removes energy cost while mining",
+         "挖矿时不消耗体力",
          "Gold Ore, Leftsee, Glowglammer, Nightshade Powder",
          "1,300"
         ],
         [
          "Frictionless Farming Tonic",
-         "Removes energy cost while farming",
+         "农耕时不消耗体力",
          "Onion, Honey, Googly Garlic Powder, Heart Stone",
          "990"
         ],
         [
          "Fluent Fishing Tonic",
-         "Removes energy cost while fishing",
+         "钓鱼时不消耗体力",
          "Splotch, Glow Ginger Powder, Sugar, Volacio Mushroom",
          "700"
         ],
         [
          "Fierce Forester Tonic",
-         "Removes energy cost while chopping wood",
+         "砍柴时不消耗体力",
          "Sage Powder, Amanita, Light Wood, Cranberry",
          "950"
         ],
         [
          "Rapid Reel Potion",
-         "Fish bite almost instantly",
+         "鱼儿几乎立刻上钩",
          "Angry Mandrake, Wolfsbane Powder, Sugar, Whisper",
          "700"
         ],
         [
          "Love Potion",
-         "Slightly increases friendship gained from gifts",
+         "略微提高送礼物获得的好感",
          "Hold-Me-Close, Muse Nut, Amour, Suffrain Powder, Luck Dust",
          "2,200"
         ],
         [
          "Mana Potion",
-         "Restores 8 Mana",
+         "恢复 8 点魔力",
          "Mana Essence, Drikker, Henbane Powder, Violet, Frosteria",
          "3,200"
         ]
@@ -33552,19 +33552,19 @@
        "rows": [
         [
          "Death's Tomb",
-         "Reach max friendship with Death."
+         "与 Death 达到满好感。"
         ],
         [
          "Chakra Tuner",
-         "Reach max friendship with the Moon Goddess."
+         "与月神达到满好感。"
         ],
         [
          "Sun God's Halo",
-         "Reach max friendship with the Sun God."
+         "与太阳神达到满好感。"
         ],
         [
          "Llemi's Bow",
-         "Reach max friendship with Llemi."
+         "与 Llemi 达到满好感。"
         ]
        ]
       },
@@ -34233,43 +34233,43 @@
        "rows": [
         [
          "Cheeken",
-         "'Farm Animals for Sale' quest",
+         "“Farm Animals for Sale”任务",
          "1,200",
          "Egg, Golden Egg"
         ],
         [
          "Pig Goat",
-         "Build a Barn",
+         "建造谷仓",
          "3,500",
          "Piggoat Milk"
         ],
         [
          "Draculamb",
-         "Build a Barn",
+         "建造谷仓",
          "4,500",
          "Draculamb Milk, Wool"
         ],
         [
          "Cowcula",
-         "Build a Barn",
+         "建造谷仓",
          "6,000",
          "Cowcula Milk"
         ],
         [
          "Bumpkin",
-         "Reach Fall (Year 1)",
+         "第 1 年秋季",
          "12,000",
-         "Plops (compost)"
+         "Plops（堆肥）"
         ],
         [
          "Stoney",
-         "Reach Winter (Year 1)",
+         "第 1 年冬季",
          "9,000",
          "Heart Stone"
         ],
         [
          "Rabbicula",
-         "Reach Spring (Year 2)",
+         "第 2 年春季",
          "2,800",
          "待补"
         ]
@@ -34859,34 +34859,34 @@
         [
          "1.1.45",
          "2026-07-21",
-         "Added a photosensitivity warning at startup; fixed Star Gazing signs blocked by black bars on widescreen; fixed the Loveage Gift Exchange soft lock; fixed animals in Luna's shop disappearing after Pumpkin Head's heart event; boosted Weeping Willows respawn in the Howling Marshes; 'Back to the Den' now triggers (retroactive grant one in-game day after all Vampsters returned); fixed escaping the Recover the Moon quest; fixed Bee House / Firefly Sanctuary memory leaks; mouse, Farm Helpers and item-pickup performance; text fixes. More improvements are coming in 1.2."
+         "启动时新增光敏警告；修复宽屏下观星牌被黑边遮挡；修复 Loveage Gift Exchange 软锁；修复 Pumpkin Head 心动事件后 Luna 商店动物消失；提升 Howling Marshes 中垂柳的重生速度；“Back to the Den”现可触发（全部 Vampster 归还后一个游戏日内补发）；修复 Recover the Moon 任务中的逃脱问题；修复 Bee House / Firefly Sanctuary 内存泄漏；鼠标、Farm Helpers 与拾取物品性能；文本修复。更多改进将在 1.2 推出。"
         ],
         [
          "1.1.44",
          "2026-07-16",
-         "Fixed the invisible embroidery table; fixed failing to load after upgrading your house; tree seeds are now plantable in all seasons and show correct seasons; decorations on tables/shelves no longer consume inventory slots; crops no longer grow during rainy nights; fixed a corrupted save from quitting while saving (Steam only)."
+         "修复隐形的刺绣桌；修复升级房屋后加载失败；树苗现可全年种植并正确显示季节；桌子/架子上的装饰不再占用背包格；雨天晚上作物不再生长；修复存档时退出导致的存档损坏（仅 Steam）。"
         ],
         [
          "1.1.41",
          "2026-07-15",
-         "Faster loading; house storage across the whole plot (barns/greenhouses) with Quick Transfer; embroidery unlocks earlier; tree seeds show seasons; 23+ bug fixes (energy on missed net swings, save restoration, crop growth, cutscene triggers, gift responsiveness, house-upgrade inventory losses, Steam Deck controls, gamepad, crafted-item quality)."
+         "加载更快；全地块（谷仓/温室）房屋储物 + 快速转移；刺绣提前解锁；树苗显示季节；23+ 项问题修复（挥网落空的体力、存档恢复、作物生长、过场触发、送礼响应、房屋升级背包丢失、Steam Deck 操作、手柄、制作物品品质）。"
         ],
         [
          "1.1.38",
          "2026-07-10",
-         "Fixed short freezes every 5–20s; fixed stuck slow-walk animation after exiting doors; fixed Nokturna 'new card' soft lock."
+         "修复每 5–20 秒的短暂卡顿；修复出门后慢走动画卡住；修复 Nokturna“新卡”软锁。"
         ],
         [
-         "1.0 (Launch)",
+         "1.0（首发）",
          "2026-07-06/07",
-         "Released on PC (Steam), Switch, Switch 2 and Google Play Games. Sales passed 200,000 by July 26."
+         "登陆 PC（Steam）、Switch、Switch 2 与 Google Play Games。7 月 26 日销量破 20 万。"
         ]
        ]
       },
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "How to update",
+       "heading": "如何更新",
        "body": "",
        "items": [
         "Steam：启动游戏时自动更新。",
@@ -35353,31 +35353,31 @@
        ],
        "rows": [
         [
-         "Controller support",
-         "Full controller support + Gamepad Recommended (official Steam categories)."
+         "手柄支持",
+         "完整手柄支持 + Gamepad Recommended（Steam 官方分类）。"
         ],
         [
-         "Steam Deck controls",
-         "Patch 1.1.41 (2026-07-15) included Steam Deck control fixes."
+         "Steam Deck 操作",
+         "补丁 1.1.41（2026-07-15）包含 Steam Deck 操作修复。"
         ],
         [
-         "Save / Cloud",
-         "Steam Cloud supported."
+         "存档 / 云存档",
+         "支持 Steam 云存档。"
         ],
         [
-         "Performance on Deck",
-         "Community reports not yet collected — 待补."
+         "Deck 上的性能",
+         "社区报告尚未收集——待补。"
         ],
         [
-         "Official Verified status",
-         "待补 (not yet confirmed on the store page)."
+         "官方认证状态",
+         "待补（商店页尚未确认）。"
         ]
        ]
       },
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Steam Deck settings to try",
+       "heading": "值得一试的 Steam Deck 设置",
        "body": "",
        "items": [
         "将帧率限制在 40–60 FPS，获得稳定掌机体验。",
@@ -35766,31 +35766,31 @@
        ],
        "rows": [
         [
-         "PC (Steam)",
+         "PC（Steam）",
          "2026-07-06",
-         "Windows + macOS (no Linux)."
+         "Windows + macOS（不支持 Linux）。"
         ],
         [
          "Nintendo Switch",
          "2026-07-07",
-         "Published by Marvelous (XSEED)."
+         "由 Marvelous（XSEED）发行。"
         ],
         [
          "Nintendo Switch 2",
          "2026-07-07",
-         "Available as 'Moonlight Peaks - Nintendo Switch 2 Edition'."
+         "以“Moonlight Peaks - Nintendo Switch 2 Edition”发售。"
         ],
         [
-         "Google Play Games (Android)",
+         "Google Play Games（Android）",
          "2026-07-07",
-         "PC/Android via Google Play Games."
+         "通过 Google Play Games 在 PC/Android 游玩。"
         ]
        ]
       },
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Console extras",
+       "heading": "主机专属内容",
        "body": "",
        "items": [
         "立绘风格：在 Switch 上可切换两套立绘预设（设置 → 立绘风格）：卡通+写实光影，或动漫风。",
@@ -36209,41 +36209,41 @@
        ],
        "rows": [
         [
-         "OS",
-         "Windows 10 64-bit",
-         "Windows 10 64-bit"
+         "操作系统",
+         "Windows 10 64 位",
+         "Windows 10 64 位"
         ],
         [
-         "Processor",
+         "处理器",
          "Intel i3",
          "Intel i7 / Ryzen 1700+"
         ],
         [
-         "Memory",
-         "6 GB RAM",
-         "16 GB RAM"
+         "内存",
+         "6 GB 内存",
+         "16 GB 内存"
         ],
         [
-         "Graphics",
+         "显卡",
          "Nvidia GeForce GTX 660 2GB",
          "Nvidia GeForce GTX 960+"
         ],
         [
          "DirectX",
-         "Version 10",
-         "Version 10"
+         "版本 10",
+         "版本 10"
         ],
         [
-         "Storage",
-         "8 GB available",
-         "8 GB available"
+         "存储空间",
+         "8 GB 可用空间",
+         "8 GB 可用空间"
         ]
        ]
       },
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Other platforms",
+       "heading": "其他平台",
        "body": "",
        "items": [
         "macOS：支持（Steam 已确认 Mac 版；具体配置待补）。",
@@ -36709,7 +36709,7 @@
       {
        "type": "list",
        "tag": "NOTE",
-       "heading": "Still missing an answer?",
+       "heading": "还有疑问？",
        "body": "",
        "items": [
         "查礼物全表、恋爱指南、钓鱼图鉴与主线流程获取更深细节。",

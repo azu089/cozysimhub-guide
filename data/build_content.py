@@ -757,6 +757,218 @@ for _sp3, _langs3 in _i18n_sec3.items():
                 if len(_merged3) == len(_en3):
                     _pp3.setdefault("i18n", {})[_lg3]["sections"] = _merged3
 
+# --- zh-CN 标题/intro/区块标题翻译覆盖（用户反馈：切换中文仍有英文残留）---
+# content_pages._wt() 把英文 title/metaTitle/metaDescription 直接填入 i18n.zh-CN，
+# 导致 31 个 sovereign-tower 页面 h1 标题、19 个首段、16 个区块标题在 zh-CN 下仍是英文。
+# 游戏专名（角色/地名/食物名，1051 个表格单元）按攻略站惯例保留原文，不在此覆盖。
+ZH_TITLE_OVERRIDES = {
+    "sovereign-tower/walkthrough/act-0": {
+        "title": "第 0 幕：序章流程攻略",
+        "metaTitle": "君王之塔 序章流程：首日朝会与圆桌",
+        "metaDescription": "君王之塔序章怎么玩：开场朝会、第一位骑士与圆桌循环。",
+        "intro": "《君王之塔》开局让你与顾问 Arlin 一同坐上王座，做出最初的决策。这里是第 0 幕序章的分步攻略。",
+    },
+    "sovereign-tower/walkthrough/act-1-gavault": {
+        "title": "第 1 幕：加沃特流程攻略",
+        "metaTitle": "君王之塔 第 1 幕加沃特：招募 Brunhilda",
+        "metaDescription": "第 1 幕加沃特剧情线：走女儿侧、招募 Brunhilda 公主与她的狩猎偏好。",
+        "intro": "第 1 幕的加沃特线通向加沃特公主 Brunhilda。走女儿侧即可招募她，并知道如何更好地指派她。",
+    },
+    "sovereign-tower/walkthrough/act-1-groveshire": {
+        "title": "第 1 幕：格罗夫郡流程攻略",
+        "metaTitle": "君王之塔 第 1 幕格罗夫郡：Angelica 与鹅任务",
+        "metaDescription": "第 1 幕格罗夫郡剧情线：Angelica 的领地、鹅任务线与 Chester 的招募。",
+        "intro": "格罗夫郡线跟随 Angelica 与鹅/野兽任务线，以 Chester 收尾。这里是我们已知的路线。",
+    },
+    "sovereign-tower/walkthrough/beast-hunt": {
+        "title": "野兽狩猎流程攻略",
+        "metaTitle": "君王之塔 野兽狩猎：招募 Ari 与 The Wolf",
+        "metaDescription": "君王之塔野兽狩猎路线：招募 Ari 与 The Wolf、最适合狩猎的骑士与要避免的坑。",
+        "intro": "君王之塔的野兽狩猎连接 Ari、The Wolf 与狩猎任务线。用对骑士，摸清狼路线。",
+    },
+    "sovereign-tower/walkthrough/goose-quest": {
+        "title": "鹅任务流程攻略",
+        "metaTitle": "君王之塔 鹅任务：怎么拿 Chester",
+        "metaDescription": "君王之塔的 Clean Keeper 鹅任务：特殊结局与如何通向 Chester 的招募。",
+        "intro": "Clean Keeper 鹅任务线以 Chester 收尾——属性随机、喜欢一切指派的神秘骑士。这里是已知路线。",
+    },
+    "sovereign-tower/walkthrough/rebellion": {
+        "title": "叛乱流程攻略",
+        "metaTitle": "君王之塔 叛乱线：Epicrate 与布里姆伍德",
+        "metaDescription": "君王之塔叛乱剧情线：布里姆伍德的 Epicrate、革命者特质与平民/贵族平衡。",
+        "intro": "叛乱线跟随 Epicrate 与布里姆伍德。平衡平民与贵族，才能最大化她的革命得分。",
+    },
+    "sovereign-tower/walkthrough/act-2": {
+        "title": "第 2 幕：谋杀调查流程攻略",
+        "metaTitle": "君王之塔 第 2 幕谋杀调查：完整路线",
+        "metaDescription": "第 2 幕谋杀调查是被跳过最多的大支线——first casualty 成就仅 72.3% 达成。这里是完整路线。",
+        "intro": "第 2 幕谋杀调查是君王之塔被跳过最多的大支线——first casualty 成就在 Steam 上只有 72.3% 达成。这里是经过验证的路线：调查凶手、听取证词、回溯到标记的早晨、与 Alwena 对话，然后直面凶手。",
+    },
+    "sovereign-tower/systems/annexes": {
+        "title": "附属建筑与建造指南",
+        "metaTitle": "君王之塔 附属建筑：锻炉与炼金室",
+        "metaDescription": "君王之塔附属建筑：Carina's Forge 锻炉、Witch's Alchemy Room 炼金室，以及建造如何解锁进程。",
+        "intro": "附属建筑是扩展高塔系统的建筑：锻炉处理装备、炼金室制作消耗品——两者都解锁新工具与剧情。",
+    },
+    "sovereign-tower/systems/round-table": {
+        "title": "圆桌系统指南",
+        "metaTitle": "君王之塔 圆桌：任务指派与容量",
+        "metaDescription": "君王之塔圆桌怎么运作：每幕容量、任务指派与紧急招募。",
+        "intro": "圆桌是君王之塔的核心——每 cycle 骑士从这里外出执行任务。这里是系统运作方式。",
+    },
+    "sovereign-tower/systems/quest-outcomes": {
+        "title": "任务结果详解",
+        "metaTitle": "君王之塔 任务结果：阈值与奖励",
+        "metaDescription": "君王之塔任务结果：critical/great/success/failure 阈值、奖励倍率与意外结果（Unexpected Outcome）。",
+        "intro": "君王之塔的每个任务都返回六种结果之一。这里是阈值、奖励与意外结果的触发条件。",
+    },
+    "sovereign-tower/systems/kingdom-map": {
+        "title": "王国地图与地区",
+        "metaTitle": "君王之塔 王国地图：地区与加成",
+        "metaDescription": "君王之塔王国地区：Brizh、格罗夫郡、加沃特、德拉科维奇等——以及基于地区的特质加成。",
+        "intro": "君王之塔的王国横跨多个地区，与每位骑士的家乡相连。部分特质会奖励把骑士派往家乡地区。",
+    },
+    "sovereign-tower/systems/audience": {
+        "title": "朝会（晨间朝堂）指南",
+        "metaTitle": "君王之塔 朝会：请愿与君主风格",
+        "metaDescription": "君王之塔晨间朝堂：请愿、派系变动与骑士反应的君主风格标签。",
+        "intro": "每个 cycle 从晨间朝堂开始。你的回答会推动派系并应用骑士认可或反感的君主风格标签。",
+    },
+    "sovereign-tower/updates": {
+        "title": "发布与更新日志",
+        "metaTitle": "君王之塔 发布与更新日志",
+        "metaDescription": "君王之塔发布信息与本站攻略更新日志：v1.0 发售、促销与 DLC 状态。",
+        "intro": "君王之塔更新日志：发售日期、促销状态、DLC 与下一步核实内容。",
+    },
+    "sovereign-tower/review/system-requirements": {
+        "title": "系统配置要求",
+        "metaTitle": "君王之塔 系统配置：最低与推荐",
+        "metaDescription": "君王之塔系统配置：官方商店页的最低、推荐与 Steam Deck 规格。",
+    },
+    "sovereign-tower/review/overview": {
+        "title": "评测概览",
+        "metaTitle": "君王之塔 评测：Metacritic 86、Steam 90% 好评",
+        "metaDescription": "君王之塔评测概览：Metacritic 86、Steam 90% 好评，评论者与玩家称赞的点。",
+        "intro": "君王之塔发售后获得强劲好评。这里是概览——分数、被称赞之处与适合人群。",
+    },
+    "sovereign-tower/review/release-demo": {
+        "title": "发售与 demo 信息",
+        "metaTitle": "君王之塔 发售、demo 与平台",
+        "metaDescription": "君王之塔发售与 demo 信息：v1.0 日期、demo 可用性、促销与 DLC 状态。",
+        "intro": "君王之塔何时发售？有没有 demo？DLC 情况如何？这里关于可获得性的一切。",
+    },
+    "sovereign-tower/review/soundtrack": {
+        "title": "原声带信息",
+        "metaTitle": "君王之塔 原声带：音乐与作曲家",
+        "metaDescription": "君王之塔原声带状态：关于音乐、作曲家与可获得性的已知信息。",
+        "intro": "君王之塔的音乐为氛围增色不少。这里是目前关于原声带的信息。",
+    },
+    "sovereign-tower/items/overview": {
+        "title": "物品总览",
+        "metaTitle": "君王之塔 物品总览：消耗品与制作装备",
+        "metaDescription": "君王之塔物品总览：消耗品与制作装备系列、获取途径与正在核实的内容。",
+        "intro": "君王之塔物品总览——消耗品与制作装备——以及目前已确认的信息。",
+    },
+    "sovereign-tower/items/consumables": {
+        "title": "消耗品指南",
+        "metaTitle": "君王之塔 消耗品：药水与食物",
+        "metaDescription": "君王之塔消耗品：炼金室出品的药水与食物、效果与最爱菜加成。",
+        "intro": "君王之塔的消耗品来自炼金室。这里是关于药水与食物的已知信息。",
+    },
+    "sovereign-tower/items/crafting-gear": {
+        "title": "制作与装备指南",
+        "metaTitle": "君王之塔 制作装备：锻炉与护甲",
+        "metaDescription": "君王之塔制作与装备：Carina's Forge 锻炉、作为任务血量的护甲与已知配方。",
+        "intro": "君王之塔的制作与装备围绕锻炉展开。护甲是骑士承受任务伤害的血量。",
+    },
+    "sovereign-tower/guides/best-opening": {
+        "title": "最佳开局策略",
+        "metaTitle": "君王之塔 最佳开局：早期派系与骑士",
+        "metaDescription": "君王之塔最佳开局：早期派系平衡、招募 Ari 与 Act 2 前的剧情线优先级。",
+    },
+    "sovereign-tower/guides/controls": {
+        "title": "操作与输入指南",
+        "metaTitle": "君王之塔 操作：手柄与键鼠",
+        "metaDescription": "君王之塔操作：完整手柄支持、键鼠与无需限时输入特性。",
+    },
+    "sovereign-tower/guides/difficulty-tips": {
+        "title": "难度技巧",
+        "metaTitle": "君王之塔 难度技巧：撑过更难 cycle",
+        "metaDescription": "君王之塔难度技巧：把回溯当安全网、均衡阵容、管理菜与护甲。",
+    },
+    "sovereign-tower/guides/knight-loyalty": {
+        "title": "骑士忠诚与好感",
+        "metaTitle": "君王之塔 骑士忠诚：好感与辞职",
+        "metaDescription": "君王之塔骑士忠诚：好感规则、−7 辞职阈值与永不离开的人。",
+    },
+    "sovereign-tower/guides/new-game-plus": {
+        "title": "新游戏+指南",
+        "metaTitle": "君王之塔 新游戏+：继承与结局",
+        "metaDescription": "君王之塔新游戏+：继承什么、为何它是看全所有结局的方式。",
+    },
+    "sovereign-tower/guides/alliances": {
+        "title": "结盟与邻国君主",
+        "metaTitle": "君王之塔 结盟：Cycle 4 通牒与派系立场",
+        "metaDescription": "君王之塔结盟：Cycle 4 通牒、派系立场与结盟如何改变结局。",
+    },
+    "sovereign-tower/guides/beat-dragon-knight": {
+        "title": "击败龙骑士（Cycle 4）",
+        "metaTitle": "君王之塔 Cycle 4 龙骑士：三个选项",
+        "metaDescription": "君王之塔 Cycle 4 龙骑士最后通牒：三个选项及其派系与金币要求。",
+    },
+    "sovereign-tower/guides/sovereign-archetypes": {
+        "title": "君主风格详解",
+        "metaTitle": "君王之塔 君主风格：五种风格",
+        "metaDescription": "君王之塔五种君主风格、骑士各自认可哪种、以及如何运用。",
+    },
+    "sovereign-tower/guides/tower-servants": {
+        "title": "高塔仆从与职员",
+        "metaTitle": "君王之塔 高塔仆从：总管与职员",
+        "metaDescription": "君王之塔的高塔仆从与职员：总管 Alwena 的职责与其余已知信息。",
+    },
+    "sovereign-tower/knights/stats": {
+        "title": "骑士属性详解",
+        "metaTitle": "君王之塔 骑士属性：STR/AGI/CHA/MAG/WIT/LCK",
+        "metaDescription": "君王之塔骑士属性：力量、敏捷、魅力、魔法、智慧与幸运各有什么作用，得分如何运作。",
+    },
+    "sovereign-tower/knights/the-bard": {
+        "title": "吟游诗人（隐藏骑士）",
+        "metaTitle": "君王之塔 吟游诗人：隐藏骑士",
+        "metaDescription": "君王之塔的吟游诗人（Hildegard）：关于隐藏骑士与招募状态的已知信息。",
+    },
+    # 区块标题翻译覆盖（按 页面slug -> {旧英文 heading: 新中文 heading}）
+    "moonlight-peaks": {"sectionHeadings": {"What this hub covers": "本攻略覆盖内容", "Latest updates": "最新更新"}},
+    "moonlight-peaks/how-to-play": {"sectionHeadings": {"Beginner mistakes to avoid": "新手要避免的错误"}},
+    "moonlight-peaks/gifts": {"sectionHeadings": {"Fast friendship tips": "快速好感技巧"}},
+    "moonlight-peaks/romance": {"sectionHeadings": {"Portrait styles (Switch)": "立绘风格（Switch）"}},
+    "moonlight-peaks/fishing": {"sectionHeadings": {"Fishing tips": "钓鱼技巧"}},
+    "moonlight-peaks/flowers": {"sectionHeadings": {"Flower tips": "花朵技巧"}},
+    "moonlight-peaks/spells": {"sectionHeadings": {"Spells worth buying first": "值得先买的咒语"}},
+    "moonlight-peaks/achievements": {"sectionHeadings": {"Tips for 100% completion": "100% 完成度技巧"}},
+    "moonlight-peaks/relationships": {"sectionHeadings": {"Friendship milestones": "好感里程碑"}},
+    "moonlight-peaks/villagers": {"sectionHeadings": {"Shops & services": "商店与服务"}},
+    "moonlight-peaks/updates": {"sectionHeadings": {"How to update": "如何更新"}},
+    "moonlight-peaks/steam-deck": {"sectionHeadings": {"Steam Deck settings to try": "值得一试的 Steam Deck 设置"}},
+    "moonlight-peaks/console": {"sectionHeadings": {"Console extras": "主机专属内容"}},
+    "moonlight-peaks/system-requirements": {"sectionHeadings": {"Other platforms": "其他平台"}},
+    "moonlight-peaks/faq": {"sectionHeadings": {"Still missing an answer?": "还有疑问？"}},
+}
+for _p in d["pages"]:
+    _zh = (_p.get("i18n") or {}).get("zh-CN")
+    if not _zh:
+        continue
+    _ov = ZH_TITLE_OVERRIDES.get(_p["slug"])
+    if not _ov:
+        continue
+    for _k in ("title", "metaTitle", "metaDescription", "intro"):
+        if _ov.get(_k):
+            _zh[_k] = _ov[_k]
+    _rm = _ov.get("sectionHeadings")
+    if _rm:
+        for _s in _zh.get("sections") or []:
+            if _s.get("heading") in _rm:
+                _s["heading"] = _rm[_s["heading"]]
+
 # --- meta 自动补全（ja/ko/fr/de 缺 metaTitle/metaDescription 时从 title/intro 生成并截断）---
 def _clip(s, n):
     s = (s or "").strip()
