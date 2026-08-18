@@ -398,6 +398,7 @@ img { max-width: 100%; height: auto; }
 
 /* ============ 封底 ============ */
 .colophon {
+  grid-column: 1 / -1;
   margin: 44px clamp(14px, 3vw, 38px) 34px; padding: 34px 38px;
   background: linear-gradient(180deg, var(--deep), var(--deep-2));
   color: rgba(237,227,206,0.82); border-radius: 16px; box-shadow: var(--shadow-md);
