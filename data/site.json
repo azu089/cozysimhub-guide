@@ -29,22 +29,28 @@
   "affiliates": {},
   "i18n": {
    "en": {
-    "name": "CozySimHub"
+    "name": "CozySimHub",
+    "description": "Sovereign Tower Chinese guide hub: all 24 knight profiles, hidden knight recruitment, romance secrets, every ending, recipe comparison, quest mechanics and affinity calculators."
    },
    "zh-CN": {
-    "name": "CozySimHub"
+    "name": "CozySimHub",
+    "description": "君王之塔 Sovereign Tower 中文攻略 Hub：24 位骑士全量档案、隐藏骑士招募、恋爱隐藏条件、全结局、菜谱对照、任务机制与好感计算器。"
    },
    "ja": {
-    "name": "CozySimHub"
+    "name": "CozySimHub",
+    "description": "『ソブリンタワー』中文攻略ハブ：24人の騎士全プロフィール、隠し騎士の勧誘、恋愛条件、全エンディング、レシピ比較、クエスト仕組みと好感度計算ツール。"
    },
    "ko": {
-    "name": "CozySimHub"
+    "name": "CozySimHub",
+    "description": "소버린 타워 중문 공략 허브: 24명 기사 전체 프로필, 숨은 기사 모집, 연애 조건, 모든 엔딩, 레시피 비교, 퀘스트 메커니즘과 호감도 계산기."
    },
    "fr": {
-    "name": "CozySimHub"
+    "name": "CozySimHub",
+    "description": "Hub de guides chinois pour Sovereign Tower : profils des 24 chevaliers, recrutement des chevaliers cachés, conditions de romance, toutes les fins, comparaison de recettes, mécaniques de quêtes et calculateurs d'affinité."
    },
    "de": {
-    "name": "CozySimHub"
+    "name": "CozySimHub",
+    "description": "Sovereign Tower chinesischer Guide-Hub: alle 24 Ritter-Profile, versteckte Ritter-Rekrutierung, Romanzen-Bedingungen, alle Enden, Rezeptvergleich, Quest-Mechaniken und Affinitätsrechner."
    }
   }
  },
@@ -676,8 +682,8 @@
        "12",
        "8",
        "8 / 9 / 10 / 0 / 12 / 7",
-       "Brizhian Butter Shortbread，Crêpe",
-       "唯一能挖其他骑士流言的人（一次一个，且只挖你不知道的）。"
+       "Brizhian Butter Shortbread, Crêpe",
+       "The only knight who can dig up other knights' rumours — one at a time, and only ones you don't already know."
       ],
       [
        "Angelica",
@@ -685,8 +691,8 @@
        "1",
        "5",
        "4 / 8 / 3 / 0 / 2 / 7",
-       "Préfou，Crêpe",
-       "君主风格：喜 Kind 恶 Tyrannic；恶 Ghost/Assassination。"
+       "Préfou, Crêpe",
+       "Sovereign style: likes Kind, dislikes Tyrannic; dislikes Ghost/Assassination."
       ],
       [
        "Ari",
@@ -694,8 +700,8 @@
        "8",
        "6",
        "5 / 13 / 8 / 3 / 8 / 6",
-       "Brizhian Butter Shortbread，Crêpe",
-       "永不辞职；坐骑 Columbus 使任务 −4 cycles。"
+       "Brizhian Butter Shortbread, Crêpe",
+       "Never resigns; mount Columbus cuts quests by −4 cycles."
       ],
       [
        "Arron",
@@ -703,8 +709,8 @@
        "3",
        "7",
        "2 / 2 / 3 / 6 / 7 / 8",
-       "Crêpe，Brizhian Butter Shortbread",
-       "剧情可得 Dragon Knight 特质（任意任务小加成，战斗翻倍）。"
+       "Crêpe, Brizhian Butter Shortbread",
+       "Story can grant the Dragon Knight trait (small bonus on any quest, doubled in combat)."
       ],
       [
        "Brunhilda",
@@ -712,17 +718,17 @@
        "1",
        "6",
        "7 / 2 / 6 / 7 / 3 / 0",
-       "Galette-Saucisse，Lion's Taco",
-       "君主风格：喜 Audacious 恶 Wise。"
+       "Galette-Saucisse, Lion's Taco",
+       "Sovereign style: likes Audacious, dislikes Wise."
       ],
       [
        "Chester",
        "Milkford",
        "15",
        "6",
-       "随机（Chester 每次判定重 roll 0–15）",
-       "Galette-Saucisse，Croque-Monsieur，Préfou，Crêpe，Brizhian Butter Shortbread，Lion's Taco",
-       "随机属性 + 全类型好感 = 万能补位工具人。"
+       "Random (Chester rerolls 0–15 every check)",
+       "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco",
+       "Random stats + all-type affinity = a universal fill-in."
       ],
       [
        "Childeric",
@@ -730,8 +736,8 @@
        "6",
        "9",
        "7 / 4 / 4 / 0 / 12 / 4",
-       "Crêpe，Croque-Monsieur",
-       "护甲 9 为全游最高。"
+       "Crêpe, Croque-Monsieur",
+       "Armour 9 is the highest in the game."
       ],
       [
        "Daguez",
@@ -739,8 +745,8 @@
        "1",
        "6",
        "15 / 0 / 0 / 0 / 0 / 9",
-       "Crêpe，Galette-Saucisse，Préfou",
-       "满力量 15；巨剑锁定。"
+       "Crêpe, Galette-Saucisse, Préfou",
+       "Full 15 Strength; greatsword locked."
       ],
       [
        "Dulahan",
@@ -748,8 +754,8 @@
        "1",
        "7",
        "8 / 8 / 0 / 9 / 0 / 0",
-       "全部 6 种",
-       "Goberto 死后才出现（恶魔骑士）。"
+       "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco",
+       "Demon knight; only appears after Goberto dies. Loves all 6 dishes."
       ],
       [
        "Edith",
@@ -757,8 +763,8 @@
        "8",
        "7",
        "7 / 10 / 3 / 12 / 7 / 0",
-       "Croque-Monsieur，Brizhian Butter Shortbread",
-       "MAG 12 并列最高；圣物 Dainself。"
+       "Croque-Monsieur, Brizhian Butter Shortbread",
+       "MAG 12 is tied for the highest; relic Dainself."
       ],
       [
        "Epicrate",
@@ -766,125 +772,125 @@
        "9",
        "6",
        "3 / 3 / 9 / 9 / 12 / 3",
-       "待补",
-       "Brimwood 起义历史人物。"
+       "TBD",
+       "Brimwood uprising revolutionary figure."
       ],
       [
        "Gideon",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "中文资料：第 6 天可招。"
+       "Tower City",
+       "5",
+       "5",
+       "4 / 6 / 8 / 3 / 7 / 2",
+       "Brizhian Butter Shortbread, Crêpe",
+       "Protagonist; candidate at cycle 13. Sovereign style: likes Audacious, dislikes Tyrannic."
       ],
       [
        "Goberto",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+       "Naoned",
+       "1",
+       "7",
+       "8 / 1 / 3 / 0 / 0 / 0",
+       "Lion's Taco, Galette-Saucisse, Brizhian Butter Shortbread",
+       "First proper recruit (cycle 2). The Almor armour line can raise armour 7→17 and grant Perfect Armour."
       ],
       [
        "Gothild",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       ""
+       "Mana Strala",
+       "7",
+       "6",
+       "9 / 3 / 5 / 3 / 9 / 8",
+       "Croque-Monsieur, Brizhian Butter Shortbread",
+       "Bodyguard; joins via the Victoria ambush or the Enberg line."
       ],
       [
        "Gwendan Villador",
-       "待补",
+       "Villador",
        "1",
        "6",
-       "待补",
-       "待补",
-       "恶 Audacious；谋杀案疑凶（跨周目可变）。"
+       "5 / 4 / 8 / 2 / 3 / 1",
+       "Crêpe, Croque-Monsieur",
+       "Dislikes Audacious; murder suspect (varies across runs)."
       ],
       [
        "Ligia",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       ""
+       "Southbay Gate",
+       "6",
+       "5",
+       "3 / 8 / 4 / 10 / 2 / 6",
+       "Préfou, Crêpe",
+       "Scholar; joins via the Southbay line (father survives)."
       ],
       [
        "Oliver",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       ""
+       "Angelor",
+       "6",
+       "7",
+       "2 / 8 / 3 / 3 / 9 / 6",
+       "Galette-Saucisse, Croque-Monsieur",
+       "Office worker; candidate at cycle 19 if spared in the prologue."
       ],
       [
        "Rufus",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "中文资料：第 6 天；与狼同行。"
+       "Belthorn (Groveshire)",
+       "1",
+       "7",
+       "6 / 6 / 1 / 3 / 7 / 1",
+       "Galette-Saucisse, Croque-Monsieur",
+       "The Wolf's curse-lifted human form; lift the curse at Groveshire."
       ],
       [
        "Silgur",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "中文资料：第 7 天。"
+       "Beaconsbury",
+       "1",
+       "5",
+       "3 / 8 / 3 / 0 / 8 / 1",
+       "Galette-Saucisse, Crêpe",
+       "Hunter; joins via the standard Groveshire success."
       ],
       [
        "Tarcus",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       ""
+       "Mavignac (Gavault)",
+       "1",
+       "8",
+       "6 / 3 / 1 / 0 / 10 / 5",
+       "Brizhian Butter Shortbread, Préfou",
+       "Nobles' defender; joins via the Gavault line (mother's side)."
       ],
       [
        "The Wolf",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "中文资料：第 6 天。"
+       "Belthorn (Groveshire)",
+       "1",
+       "5",
+       "3 / 7 / 3 / 3 / 7 / 1",
+       "Galette-Saucisse, Croque-Monsieur",
+       "Tamed by Angelica via the beast route; mount locked."
       ],
       [
        "Ursula",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "中文资料：第 5 天。"
+       "Mossgart",
+       "1",
+       "5",
+       "3 / 4 / 2 / 7 / 7 / 0",
+       "Préfou, Lion's Taco",
+       "Immortal — re-recruitable after death; auto-joins at cycle 5."
       ],
       [
        "Victoria",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       ""
+       "City of Enberg",
+       "13",
+       "7",
+       "13 / 13 / 9 / 13 / 10 / 9",
+       "Croque-Monsieur, Préfou",
+       "Highest starting stats in the game (67 total); joins via the Enberg assassination."
       ],
       [
        "Zolta",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       "待补",
-       ""
+       "Volga Camp",
+       "6",
+       "7",
+       "4 / 5 / 2 / 9 / 2 / 11",
+       "Crêpe, Lion's Taco",
+       "Gambler; joins via the Kutnar derby."
       ]
      ]
     },
@@ -1021,8 +1027,8 @@
          "1",
          "7",
          "8 / 8 / 0 / 9 / 0 / 0",
-         "全部 6 种",
-         "Goberto 死后才出现（恶魔骑士）。"
+         "Galette-Saucisse，Croque-Monsieur，Préfou，Crêpe，Brizhian Butter Shortbread，Lion's Taco",
+         "Goberto 死后才出现（恶魔骑士）；爱全部 6 种菜。"
         ],
         [
          "Edith",
@@ -1039,125 +1045,125 @@
          "9",
          "6",
          "3 / 3 / 9 / 9 / 12 / 3",
-         "待补",
+         "TBD",
          "Brimwood 起义历史人物。"
         ],
         [
          "Gideon",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 6 天可招。"
+         "Tower City",
+         "5",
+         "5",
+         "4 / 6 / 8 / 3 / 7 / 2",
+         "Brizhian Butter Shortbread，Crêpe",
+         "主角骑士；cycle 13 候选人。君主风格：喜 Audacious 恶 Tyrannic。"
         ],
         [
          "Goberto",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+         "Naoned",
+         "1",
+         "7",
+         "8 / 1 / 3 / 0 / 0 / 0",
+         "Lion's Taco，Galette-Saucisse，Brizhian Butter Shortbread",
+         "首位正式招募骑士（cycle 2）。Almor 护甲线可将护甲 7→17 并获得 Perfect Armour。"
         ],
         [
          "Gothild",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Mana Strala",
+         "7",
+         "6",
+         "9 / 3 / 5 / 3 / 9 / 8",
+         "Croque-Monsieur，Brizhian Butter Shortbread",
+         "保镖；经 Victoria 伏击或 Enberg 剧情线加入。"
         ],
         [
          "Gwendan Villador",
-         "待补",
+         "Villador",
          "1",
          "6",
-         "待补",
-         "待补",
+         "5 / 4 / 8 / 2 / 3 / 1",
+         "Crêpe，Croque-Monsieur",
          "恶 Audacious；谋杀案疑凶（跨周目可变）。"
         ],
         [
          "Ligia",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Southbay Gate",
+         "6",
+         "5",
+         "3 / 8 / 4 / 10 / 2 / 6",
+         "Préfou，Crêpe",
+         "学者；经 Southbay 剧情线（父亲存活）加入。"
         ],
         [
          "Oliver",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Angelor",
+         "6",
+         "7",
+         "2 / 8 / 3 / 3 / 9 / 6",
+         "Galette-Saucisse，Croque-Monsieur",
+         "上班族；若序章未被处决，cycle 19 候选人。"
         ],
         [
          "Rufus",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 6 天；与狼同行。"
+         "Belthorn (Groveshire)",
+         "1",
+         "7",
+         "6 / 6 / 1 / 3 / 7 / 1",
+         "Galette-Saucisse，Croque-Monsieur",
+         "The Wolf 解除诅咒后的人形；在 Groveshire 解除诅咒。"
         ],
         [
          "Silgur",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 7 天。"
+         "Beaconsbury",
+         "1",
+         "5",
+         "3 / 8 / 3 / 0 / 8 / 1",
+         "Galette-Saucisse，Crêpe",
+         "猎人；经 Groveshire 标准成功加入。"
         ],
         [
          "Tarcus",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Mavignac (Gavault)",
+         "1",
+         "8",
+         "6 / 3 / 1 / 0 / 10 / 5",
+         "Brizhian Butter Shortbread，Préfou",
+         "贵族捍卫者；经 Gavault 剧情线（母亲侧）加入。"
         ],
         [
          "The Wolf",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 6 天。"
+         "Belthorn (Groveshire)",
+         "1",
+         "5",
+         "3 / 7 / 3 / 3 / 7 / 1",
+         "Galette-Saucisse，Croque-Monsieur",
+         "由 Angelica 走野兽路线驯服；坐骑锁定。"
         ],
         [
          "Ursula",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 5 天。"
+         "Mossgart",
+         "1",
+         "5",
+         "3 / 4 / 2 / 7 / 7 / 0",
+         "Préfou，Lion's Taco",
+         "不死者——死亡后可再招募；cycle 5 自动入朝。"
         ],
         [
          "Victoria",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "City of Enberg",
+         "13",
+         "7",
+         "13 / 13 / 9 / 13 / 10 / 9",
+         "Croque-Monsieur，Préfou",
+         "全游最高起始六维（合计 67）；经 Enberg 暗杀加入。"
         ],
         [
          "Zolta",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Volga Camp",
+         "6",
+         "7",
+         "4 / 5 / 2 / 9 / 2 / 11",
+         "Crêpe，Lion's Taco",
+         "赌徒；经 Kutnar derby 加入。"
         ]
        ]
       },
@@ -1222,8 +1228,8 @@
          "12",
          "8",
          "8 / 9 / 10 / 0 / 12 / 7",
-         "Brizhian Butter Shortbread，Crêpe",
-         "唯一能挖其他骑士流言的人（一次一个，且只挖你不知道的）。"
+         "Brizhian Butter Shortbread, Crêpe",
+         "The only knight who can dig up other knights' rumours — one at a time, and only ones you don't already know."
         ],
         [
          "Angelica",
@@ -1231,8 +1237,8 @@
          "1",
          "5",
          "4 / 8 / 3 / 0 / 2 / 7",
-         "Préfou，Crêpe",
-         "君主风格：喜 Kind 恶 Tyrannic；恶 Ghost/Assassination。"
+         "Préfou, Crêpe",
+         "Sovereign style: likes Kind, dislikes Tyrannic; dislikes Ghost/Assassination."
         ],
         [
          "Ari",
@@ -1240,8 +1246,8 @@
          "8",
          "6",
          "5 / 13 / 8 / 3 / 8 / 6",
-         "Brizhian Butter Shortbread，Crêpe",
-         "永不辞职；坐骑 Columbus 使任务 −4 cycles。"
+         "Brizhian Butter Shortbread, Crêpe",
+         "Never resigns; mount Columbus cuts quests by −4 cycles."
         ],
         [
          "Arron",
@@ -1249,8 +1255,8 @@
          "3",
          "7",
          "2 / 2 / 3 / 6 / 7 / 8",
-         "Crêpe，Brizhian Butter Shortbread",
-         "剧情可得 Dragon Knight 特质（任意任务小加成，战斗翻倍）。"
+         "Crêpe, Brizhian Butter Shortbread",
+         "Story can grant the Dragon Knight trait (small bonus on any quest, doubled in combat)."
         ],
         [
          "Brunhilda",
@@ -1258,17 +1264,17 @@
          "1",
          "6",
          "7 / 2 / 6 / 7 / 3 / 0",
-         "Galette-Saucisse，Lion's Taco",
-         "君主风格：喜 Audacious 恶 Wise。"
+         "Galette-Saucisse, Lion's Taco",
+         "Sovereign style: likes Audacious, dislikes Wise."
         ],
         [
          "Chester",
          "Milkford",
          "15",
          "6",
-         "随机（Chester 每次判定重 roll 0–15）",
-         "Galette-Saucisse，Croque-Monsieur，Préfou，Crêpe，Brizhian Butter Shortbread，Lion's Taco",
-         "随机属性 + 全类型好感 = 万能补位工具人。"
+         "Random (Chester rerolls 0–15 every check)",
+         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco",
+         "Random stats + all-type affinity = a universal fill-in."
         ],
         [
          "Childeric",
@@ -1276,8 +1282,8 @@
          "6",
          "9",
          "7 / 4 / 4 / 0 / 12 / 4",
-         "Crêpe，Croque-Monsieur",
-         "护甲 9 为全游最高。"
+         "Crêpe, Croque-Monsieur",
+         "Armour 9 is the highest in the game."
         ],
         [
          "Daguez",
@@ -1285,8 +1291,8 @@
          "1",
          "6",
          "15 / 0 / 0 / 0 / 0 / 9",
-         "Crêpe，Galette-Saucisse，Préfou",
-         "满力量 15；巨剑锁定。"
+         "Crêpe, Galette-Saucisse, Préfou",
+         "Full 15 Strength; greatsword locked."
         ],
         [
          "Dulahan",
@@ -1294,8 +1300,8 @@
          "1",
          "7",
          "8 / 8 / 0 / 9 / 0 / 0",
-         "全部 6 种",
-         "Goberto 死后才出现（恶魔骑士）。"
+         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco",
+         "Demon knight; only appears after Goberto dies. Loves all 6 dishes."
         ],
         [
          "Edith",
@@ -1303,8 +1309,8 @@
          "8",
          "7",
          "7 / 10 / 3 / 12 / 7 / 0",
-         "Croque-Monsieur，Brizhian Butter Shortbread",
-         "MAG 12 并列最高；圣物 Dainself。"
+         "Croque-Monsieur, Brizhian Butter Shortbread",
+         "MAG 12 is tied for the highest; relic Dainself."
         ],
         [
          "Epicrate",
@@ -1312,125 +1318,125 @@
          "9",
          "6",
          "3 / 3 / 9 / 9 / 12 / 3",
-         "待补",
-         "Brimwood 起义历史人物。"
+         "TBD",
+         "Brimwood uprising revolutionary figure."
         ],
         [
          "Gideon",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 6 天可招。"
+         "Tower City",
+         "5",
+         "5",
+         "4 / 6 / 8 / 3 / 7 / 2",
+         "Brizhian Butter Shortbread, Crêpe",
+         "Protagonist; candidate at cycle 13. Sovereign style: likes Audacious, dislikes Tyrannic."
         ],
         [
          "Goberto",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+         "Naoned",
+         "1",
+         "7",
+         "8 / 1 / 3 / 0 / 0 / 0",
+         "Lion's Taco, Galette-Saucisse, Brizhian Butter Shortbread",
+         "First proper recruit (cycle 2). The Almor armour line can raise armour 7→17 and grant Perfect Armour."
         ],
         [
          "Gothild",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Mana Strala",
+         "7",
+         "6",
+         "9 / 3 / 5 / 3 / 9 / 8",
+         "Croque-Monsieur, Brizhian Butter Shortbread",
+         "Bodyguard; joins via the Victoria ambush or the Enberg line."
         ],
         [
          "Gwendan Villador",
-         "待补",
+         "Villador",
          "1",
          "6",
-         "待补",
-         "待补",
-         "恶 Audacious；谋杀案疑凶（跨周目可变）。"
+         "5 / 4 / 8 / 2 / 3 / 1",
+         "Crêpe, Croque-Monsieur",
+         "Dislikes Audacious; murder suspect (varies across runs)."
         ],
         [
          "Ligia",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Southbay Gate",
+         "6",
+         "5",
+         "3 / 8 / 4 / 10 / 2 / 6",
+         "Préfou, Crêpe",
+         "Scholar; joins via the Southbay line (father survives)."
         ],
         [
          "Oliver",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Angelor",
+         "6",
+         "7",
+         "2 / 8 / 3 / 3 / 9 / 6",
+         "Galette-Saucisse, Croque-Monsieur",
+         "Office worker; candidate at cycle 19 if spared in the prologue."
         ],
         [
          "Rufus",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 6 天；与狼同行。"
+         "Belthorn (Groveshire)",
+         "1",
+         "7",
+         "6 / 6 / 1 / 3 / 7 / 1",
+         "Galette-Saucisse, Croque-Monsieur",
+         "The Wolf's curse-lifted human form; lift the curse at Groveshire."
         ],
         [
          "Silgur",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 7 天。"
+         "Beaconsbury",
+         "1",
+         "5",
+         "3 / 8 / 3 / 0 / 8 / 1",
+         "Galette-Saucisse, Crêpe",
+         "Hunter; joins via the standard Groveshire success."
         ],
         [
          "Tarcus",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Mavignac (Gavault)",
+         "1",
+         "8",
+         "6 / 3 / 1 / 0 / 10 / 5",
+         "Brizhian Butter Shortbread, Préfou",
+         "Nobles' defender; joins via the Gavault line (mother's side)."
         ],
         [
          "The Wolf",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 6 天。"
+         "Belthorn (Groveshire)",
+         "1",
+         "5",
+         "3 / 7 / 3 / 3 / 7 / 1",
+         "Galette-Saucisse, Croque-Monsieur",
+         "Tamed by Angelica via the beast route; mount locked."
         ],
         [
          "Ursula",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 5 天。"
+         "Mossgart",
+         "1",
+         "5",
+         "3 / 4 / 2 / 7 / 7 / 0",
+         "Préfou, Lion's Taco",
+         "Immortal — re-recruitable after death; auto-joins at cycle 5."
         ],
         [
          "Victoria",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "City of Enberg",
+         "13",
+         "7",
+         "13 / 13 / 9 / 13 / 10 / 9",
+         "Croque-Monsieur, Préfou",
+         "Highest starting stats in the game (67 total); joins via the Enberg assassination."
         ],
         [
          "Zolta",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Volga Camp",
+         "6",
+         "7",
+         "4 / 5 / 2 / 9 / 2 / 11",
+         "Crêpe, Lion's Taco",
+         "Gambler; joins via the Kutnar derby."
         ]
        ]
       },
@@ -1482,8 +1488,8 @@
          "12",
          "8",
          "8 / 9 / 10 / 0 / 12 / 7",
-         "Brizhian Butter Shortbread，Crêpe",
-         "唯一能挖其他骑士流言的人（一次一个，且只挖你不知道的）。"
+         "Brizhian Butter Shortbread, Crêpe",
+         "The only knight who can dig up other knights' rumours — one at a time, and only ones you don't already know."
         ],
         [
          "Angelica",
@@ -1491,8 +1497,8 @@
          "1",
          "5",
          "4 / 8 / 3 / 0 / 2 / 7",
-         "Préfou，Crêpe",
-         "君主风格：喜 Kind 恶 Tyrannic；恶 Ghost/Assassination。"
+         "Préfou, Crêpe",
+         "Sovereign style: likes Kind, dislikes Tyrannic; dislikes Ghost/Assassination."
         ],
         [
          "Ari",
@@ -1500,8 +1506,8 @@
          "8",
          "6",
          "5 / 13 / 8 / 3 / 8 / 6",
-         "Brizhian Butter Shortbread，Crêpe",
-         "永不辞职；坐骑 Columbus 使任务 −4 cycles。"
+         "Brizhian Butter Shortbread, Crêpe",
+         "Never resigns; mount Columbus cuts quests by −4 cycles."
         ],
         [
          "Arron",
@@ -1509,8 +1515,8 @@
          "3",
          "7",
          "2 / 2 / 3 / 6 / 7 / 8",
-         "Crêpe，Brizhian Butter Shortbread",
-         "剧情可得 Dragon Knight 特质（任意任务小加成，战斗翻倍）。"
+         "Crêpe, Brizhian Butter Shortbread",
+         "Story can grant the Dragon Knight trait (small bonus on any quest, doubled in combat)."
         ],
         [
          "Brunhilda",
@@ -1518,17 +1524,17 @@
          "1",
          "6",
          "7 / 2 / 6 / 7 / 3 / 0",
-         "Galette-Saucisse，Lion's Taco",
-         "君主风格：喜 Audacious 恶 Wise。"
+         "Galette-Saucisse, Lion's Taco",
+         "Sovereign style: likes Audacious, dislikes Wise."
         ],
         [
          "Chester",
          "Milkford",
          "15",
          "6",
-         "随机（Chester 每次判定重 roll 0–15）",
-         "Galette-Saucisse，Croque-Monsieur，Préfou，Crêpe，Brizhian Butter Shortbread，Lion's Taco",
-         "随机属性 + 全类型好感 = 万能补位工具人。"
+         "Random (Chester rerolls 0–15 every check)",
+         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco",
+         "Random stats + all-type affinity = a universal fill-in."
         ],
         [
          "Childeric",
@@ -1536,8 +1542,8 @@
          "6",
          "9",
          "7 / 4 / 4 / 0 / 12 / 4",
-         "Crêpe，Croque-Monsieur",
-         "护甲 9 为全游最高。"
+         "Crêpe, Croque-Monsieur",
+         "Armour 9 is the highest in the game."
         ],
         [
          "Daguez",
@@ -1545,8 +1551,8 @@
          "1",
          "6",
          "15 / 0 / 0 / 0 / 0 / 9",
-         "Crêpe，Galette-Saucisse，Préfou",
-         "满力量 15；巨剑锁定。"
+         "Crêpe, Galette-Saucisse, Préfou",
+         "Full 15 Strength; greatsword locked."
         ],
         [
          "Dulahan",
@@ -1554,8 +1560,8 @@
          "1",
          "7",
          "8 / 8 / 0 / 9 / 0 / 0",
-         "全部 6 种",
-         "Goberto 死后才出现（恶魔骑士）。"
+         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco",
+         "Demon knight; only appears after Goberto dies. Loves all 6 dishes."
         ],
         [
          "Edith",
@@ -1563,8 +1569,8 @@
          "8",
          "7",
          "7 / 10 / 3 / 12 / 7 / 0",
-         "Croque-Monsieur，Brizhian Butter Shortbread",
-         "MAG 12 并列最高；圣物 Dainself。"
+         "Croque-Monsieur, Brizhian Butter Shortbread",
+         "MAG 12 is tied for the highest; relic Dainself."
         ],
         [
          "Epicrate",
@@ -1572,125 +1578,125 @@
          "9",
          "6",
          "3 / 3 / 9 / 9 / 12 / 3",
-         "待补",
-         "Brimwood 起义历史人物。"
+         "TBD",
+         "Brimwood uprising revolutionary figure."
         ],
         [
          "Gideon",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 6 天可招。"
+         "Tower City",
+         "5",
+         "5",
+         "4 / 6 / 8 / 3 / 7 / 2",
+         "Brizhian Butter Shortbread, Crêpe",
+         "Protagonist; candidate at cycle 13. Sovereign style: likes Audacious, dislikes Tyrannic."
         ],
         [
          "Goberto",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+         "Naoned",
+         "1",
+         "7",
+         "8 / 1 / 3 / 0 / 0 / 0",
+         "Lion's Taco, Galette-Saucisse, Brizhian Butter Shortbread",
+         "First proper recruit (cycle 2). The Almor armour line can raise armour 7→17 and grant Perfect Armour."
         ],
         [
          "Gothild",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Mana Strala",
+         "7",
+         "6",
+         "9 / 3 / 5 / 3 / 9 / 8",
+         "Croque-Monsieur, Brizhian Butter Shortbread",
+         "Bodyguard; joins via the Victoria ambush or the Enberg line."
         ],
         [
          "Gwendan Villador",
-         "待补",
+         "Villador",
          "1",
          "6",
-         "待补",
-         "待补",
-         "恶 Audacious；谋杀案疑凶（跨周目可变）。"
+         "5 / 4 / 8 / 2 / 3 / 1",
+         "Crêpe, Croque-Monsieur",
+         "Dislikes Audacious; murder suspect (varies across runs)."
         ],
         [
          "Ligia",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Southbay Gate",
+         "6",
+         "5",
+         "3 / 8 / 4 / 10 / 2 / 6",
+         "Préfou, Crêpe",
+         "Scholar; joins via the Southbay line (father survives)."
         ],
         [
          "Oliver",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Angelor",
+         "6",
+         "7",
+         "2 / 8 / 3 / 3 / 9 / 6",
+         "Galette-Saucisse, Croque-Monsieur",
+         "Office worker; candidate at cycle 19 if spared in the prologue."
         ],
         [
          "Rufus",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 6 天；与狼同行。"
+         "Belthorn (Groveshire)",
+         "1",
+         "7",
+         "6 / 6 / 1 / 3 / 7 / 1",
+         "Galette-Saucisse, Croque-Monsieur",
+         "The Wolf's curse-lifted human form; lift the curse at Groveshire."
         ],
         [
          "Silgur",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 7 天。"
+         "Beaconsbury",
+         "1",
+         "5",
+         "3 / 8 / 3 / 0 / 8 / 1",
+         "Galette-Saucisse, Crêpe",
+         "Hunter; joins via the standard Groveshire success."
         ],
         [
          "Tarcus",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Mavignac (Gavault)",
+         "1",
+         "8",
+         "6 / 3 / 1 / 0 / 10 / 5",
+         "Brizhian Butter Shortbread, Préfou",
+         "Nobles' defender; joins via the Gavault line (mother's side)."
         ],
         [
          "The Wolf",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 6 天。"
+         "Belthorn (Groveshire)",
+         "1",
+         "5",
+         "3 / 7 / 3 / 3 / 7 / 1",
+         "Galette-Saucisse, Croque-Monsieur",
+         "Tamed by Angelica via the beast route; mount locked."
         ],
         [
          "Ursula",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "中文资料：第 5 天。"
+         "Mossgart",
+         "1",
+         "5",
+         "3 / 4 / 2 / 7 / 7 / 0",
+         "Préfou, Lion's Taco",
+         "Immortal — re-recruitable after death; auto-joins at cycle 5."
         ],
         [
          "Victoria",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "City of Enberg",
+         "13",
+         "7",
+         "13 / 13 / 9 / 13 / 10 / 9",
+         "Croque-Monsieur, Préfou",
+         "Highest starting stats in the game (67 total); joins via the Enberg assassination."
         ],
         [
          "Zolta",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         "待补",
-         ""
+         "Volga Camp",
+         "6",
+         "7",
+         "4 / 5 / 2 / 9 / 2 / 11",
+         "Crêpe, Lion's Taco",
+         "Gambler; joins via the Kutnar derby."
         ]
        ]
       },
@@ -2302,7 +2308,7 @@
      "items": [
       [
        "Can I recruit Dulahan without killing Goberto?",
-       "Per the fan wiki data, Dulahan appears specifically on Goberto's death path. There is no confirmed alternative recruit route yet (待补 if unverified)."
+       "Per the fan wiki data, Dulahan appears specifically on Goberto's death path. There is no confirmed alternative recruit route yet (TBD if unverified)."
       ],
       [
        "Is Alwena missable?",
@@ -2760,22 +2766,22 @@
       [
        "Lady of the Tower (stone statue)",
        "Official selling point — a romanceable stone statue linked to the tower's secrets.",
-       "Verified concept (Steam L0); full steps 待补"
+       "Verified concept (Steam L0); full steps TBD"
       ],
       [
        "Angelica",
        "Opening-story recruit; Kind-Hearted route, likes Kind sovereign style.",
-       "Route confirmed; hidden steps 待补"
+       "Route confirmed; hidden steps TBD"
       ],
       [
        "Arthur (marriage ending)",
        "Community videos show a marriage ending with Arthur.",
-       "Exists (Bilibili L0); exact conditions 待补"
+       "Exists (Bilibili L0); exact conditions TBD"
       ],
       [
        "Gideon / others",
        "Steam community threads ask about 'how to romance the werewolf knight' and secret conditions.",
-       "Community-reported; 待补"
+       "Community-reported; TBD"
       ]
      ]
     },
@@ -2791,11 +2797,11 @@
       ],
       [
        "Can I romance multiple knights?",
-       "Community reports differ per route; some routes appear mutually exclusive (待补 until verified in-game)."
+       "Community reports differ per route; some routes appear mutually exclusive (TBD until verified in-game)."
       ],
       [
        "Does the Arthur marriage ending require specific faction balance?",
-       "Community videos exist but exact prerequisites are unverified — treat as 待补."
+       "Community videos exist but exact prerequisites are unverified — treat as TBD."
       ]
      ]
     }
@@ -3182,24 +3188,24 @@
      ],
      "rows": [
       [
-       "Conquest ending (一周目征服结局)",
+       "Conquest ending (first-run conquest ending)",
        "Community Bilibili video shows a first-run conquest ending.",
-       "Exists (L0 video); conditions 待补"
+       "Exists (L0 video); conditions TBD"
       ],
       [
        "King Slayer resolution",
        "A resolution path involving the King Slayer, covered by fan sites.",
-       "Covered by whisperofthehouse (L0); steps 待补"
+       "Covered by whisperofthehouse (L0); steps TBD"
       ],
       [
        "Hidden / alt ending",
        "Steam community: 'How to get the secret alt ending' (7 replies).",
-       "Community-reported; steps 待补"
+       "Community-reported; steps TBD"
       ],
       [
        "Arthur marriage ending",
        "Marriage ending with Arthur shown in community videos.",
-       "Exists (L0); conditions 待补"
+       "Exists (L0); conditions TBD"
       ],
       [
        "Gwendan murder route",
@@ -3227,7 +3233,7 @@
      "items": [
       [
        "How many endings are there?",
-       "A full verified count is 待补. Community videos confirm at least conquest, King Slayer, hidden/alt and Arthur marriage endings."
+       "A full verified count is TBD. Community videos confirm at least conquest, King Slayer, hidden/alt and Arthur marriage endings."
       ],
       [
        "Can I see every ending in one run?",
@@ -3239,7 +3245,7 @@
       ],
       [
        "Is there a true ending?",
-       "Sovereign Tower has no official 'true ending' label. The closest match is the hidden/alt ending reported by players (Steam community thread), but its exact unlock conditions are still being verified (待补)."
+       "Sovereign Tower has no official 'true ending' label. The closest match is the hidden/alt ending reported by players (Steam community thread), but its exact unlock conditions are still being verified (TBD)."
       ]
      ]
     }
@@ -3665,40 +3671,33 @@
      "heading": "",
      "body": "",
      "headers": [
-      "Dish (EN)",
-      "Dish (中文)",
+      "Dish",
       "Description"
      ],
      "rows": [
       [
        "Galette-Saucisse",
-       "香肠荞麦饼",
-       "香肠荞麦饼——布里兹的街头主食。"
+       "Sausage buckwheat galette — a Brizh street staple."
       ],
       [
        "Croque-Monsieur",
-       "法式三明治",
-       "火腿奶酪烤三明治，经典治愈系。"
+       "Ham & cheese toasted sandwich, the classic comfort."
       ],
       [
        "Préfou",
-       "蒜香面包",
-       "黄油烤蒜香面包——酒馆最爱。"
+       "Garlic bread baked in butter — a tavern favourite."
       ],
       [
        "Crêpe",
-       "可丽饼",
-       "法式薄饼，可甜可咸。"
+       "Thin French pancake, sweet or savoury."
       ],
       [
        "Brizhian Butter Shortbread",
-       "布里兹黄油酥饼",
-       "布里兹的浓郁黄油酥饼。"
+       "Rich buttery shortbread from Brizh."
       ],
       [
        "Lion's Taco",
-       "狮子玉米饼",
-       "馅料十足的豪迈玉米饼。"
+       "A bold taco with a lion's share of filling."
       ]
      ]
     },
@@ -3714,99 +3713,99 @@
      "rows": [
       [
        "Alwena",
-       "Brizhian Butter Shortbread、Crêpe"
+       "Brizhian Butter Shortbread, Crêpe"
       ],
       [
        "Angelica",
-       "Préfou、Crêpe"
+       "Préfou, Crêpe"
       ],
       [
        "Ari",
-       "Brizhian Butter Shortbread、Crêpe"
+       "Brizhian Butter Shortbread, Crêpe"
       ],
       [
        "Arron",
-       "Crêpe、Brizhian Butter Shortbread"
+       "Crêpe, Brizhian Butter Shortbread"
       ],
       [
        "Brunhilda",
-       "Galette-Saucisse、Lion's Taco"
+       "Galette-Saucisse, Lion's Taco"
       ],
       [
        "Chester",
-       "Galette-Saucisse、Croque-Monsieur、Préfou、Crêpe、Brizhian Butter Shortbread、Lion's Taco"
+       "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco"
       ],
       [
        "Childeric",
-       "Crêpe、Croque-Monsieur"
+       "Crêpe, Croque-Monsieur"
       ],
       [
        "Daguez",
-       "Crêpe、Galette-Saucisse、Préfou"
+       "Crêpe, Galette-Saucisse, Préfou"
       ],
       [
        "Dulahan",
-       "全部 6 种"
+       "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco"
       ],
       [
        "Edith",
-       "Croque-Monsieur、Brizhian Butter Shortbread"
+       "Croque-Monsieur, Brizhian Butter Shortbread"
       ],
       [
        "Epicrate",
-       "待补"
+       "TBD"
       ],
       [
        "Gideon",
-       "待补"
+       "Brizhian Butter Shortbread, Crêpe"
       ],
       [
        "Goberto",
-       "待补"
+       "Lion's Taco, Galette-Saucisse, Brizhian Butter Shortbread"
       ],
       [
        "Gothild",
-       "待补"
+       "Croque-Monsieur, Brizhian Butter Shortbread"
       ],
       [
        "Gwendan Villador",
-       "待补"
+       "Crêpe, Croque-Monsieur"
       ],
       [
        "Ligia",
-       "待补"
+       "Préfou, Crêpe"
       ],
       [
        "Oliver",
-       "待补"
+       "Galette-Saucisse, Croque-Monsieur"
       ],
       [
        "Rufus",
-       "待补"
+       "Galette-Saucisse, Croque-Monsieur"
       ],
       [
        "Silgur",
-       "待补"
+       "Galette-Saucisse, Crêpe"
       ],
       [
        "Tarcus",
-       "待补"
+       "Brizhian Butter Shortbread, Préfou"
       ],
       [
        "The Wolf",
-       "待补"
+       "Galette-Saucisse, Croque-Monsieur"
       ],
       [
        "Ursula",
-       "待补"
+       "Préfou, Lion's Taco"
       ],
       [
        "Victoria",
-       "待补"
+       "Croque-Monsieur, Préfou"
       ],
       [
        "Zolta",
-       "待补"
+       "Crêpe, Lion's Taco"
       ]
      ]
     },
@@ -3936,7 +3935,7 @@
         ],
         [
          "Dulahan",
-         "全部 6 种"
+         "Galette-Saucisse、Croque-Monsieur、Préfou、Crêpe、Brizhian Butter Shortbread、Lion's Taco"
         ],
         [
          "Edith",
@@ -3944,59 +3943,59 @@
         ],
         [
          "Epicrate",
-         "待补"
+         "TBD"
         ],
         [
          "Gideon",
-         "待补"
+         "Brizhian Butter Shortbread、Crêpe"
         ],
         [
          "Goberto",
-         "待补"
+         "Lion's Taco、Galette-Saucisse、Brizhian Butter Shortbread"
         ],
         [
          "Gothild",
-         "待补"
+         "Croque-Monsieur、Brizhian Butter Shortbread"
         ],
         [
          "Gwendan Villador",
-         "待补"
+         "Crêpe、Croque-Monsieur"
         ],
         [
          "Ligia",
-         "待补"
+         "Préfou、Crêpe"
         ],
         [
          "Oliver",
-         "待补"
+         "Galette-Saucisse、Croque-Monsieur"
         ],
         [
          "Rufus",
-         "待补"
+         "Galette-Saucisse、Croque-Monsieur"
         ],
         [
          "Silgur",
-         "待补"
+         "Galette-Saucisse、Crêpe"
         ],
         [
          "Tarcus",
-         "待补"
+         "Brizhian Butter Shortbread、Préfou"
         ],
         [
          "The Wolf",
-         "待补"
+         "Galette-Saucisse、Croque-Monsieur"
         ],
         [
          "Ursula",
-         "待补"
+         "Préfou、Lion's Taco"
         ],
         [
          "Victoria",
-         "待补"
+         "Croque-Monsieur、Préfou"
         ],
         [
          "Zolta",
-         "待补"
+         "Crêpe、Lion's Taco"
         ]
        ]
       },
@@ -4636,27 +4635,27 @@
       [
        "Critical Success",
        "+10",
-       "奖励 ×2"
+       "Reward ×2"
       ],
       [
        "Great Success",
        "+5",
-       "奖励 ×1.5"
+       "Reward ×1.5"
       ],
       [
        "Success",
        "0",
-       "奖励 ×1"
+       "Reward ×1"
       ],
       [
        "Major Failure",
        "−5",
-       "无奖励"
+       "No reward"
       ],
       [
        "Critical Failure",
        "−10",
-       "无奖励"
+       "No reward"
       ]
      ]
     },
@@ -6511,7 +6510,7 @@
    "title": "All 75 Achievements",
    "metaTitle": "Sovereign Tower All 75 Achievements: Full List & Roadm…",
    "metaDescription": "Sovereign Tower has 75 Steam achievements. See the highlighted 10, the How Cute route and what the achievement data says about the game's hardest content.",
-   "intro": "Sovereign Tower ships with 75 Steam achievements. The full list is still being verified from Steam Community data (待补), but the highlighted 10 and several important ones are confirmed.",
+   "intro": "Sovereign Tower ships with 75 Steam achievements. The full list is still being verified from Steam Community data (TBD), but the highlighted 10 and several important ones are confirmed.",
    "sections": [
     {
      "type": "list",
@@ -6592,7 +6591,7 @@
       ],
       [
        "Is the full list available?",
-       "The complete 75-achievement table is 待补 (Steam Community is rate-limited; we're verifying via SteamDB/community sources)."
+       "The complete 75-achievement table is TBD (Steam Community is rate-limited; we're verifying via SteamDB/community sources)."
       ]
      ]
     }
@@ -7237,7 +7236,7 @@
       "Liked quest type or condition: +1.33 affinity each. Disliked: −0.75 each.",
       "Favourite meal: +1.5 affinity and +0.5 quest score.",
       "Resignation threshold: −7 for almost everyone; Alwena and Ari never resign (−1500).",
-      "This is a planning aid — actual in-game values may vary (待补 if a rule is unverified)."
+      "This is a planning aid — actual in-game values may vary (TBD if a rule is unverified)."
      ]
     }
    ],
@@ -7694,7 +7693,7 @@
        "Milkford",
        "15",
        "6",
-       "随机（Chester 每次判定重 roll 0–15）"
+       "Random (rerolled 0–15 every check)"
       ],
       [
        "Childeric",
@@ -7733,94 +7732,94 @@
       ],
       [
        "Gideon",
-       "待补",
-       "待补",
-       "待补",
-       "待补"
+       "Tower City",
+       "5",
+       "5",
+       "4 / 6 / 8 / 3 / 7 / 2"
       ],
       [
        "Goberto",
-       "待补",
-       "待补",
-       "待补",
-       "待补"
+       "Naoned",
+       "1",
+       "7",
+       "8 / 1 / 3 / 0 / 0 / 0"
       ],
       [
        "Gothild",
-       "待补",
-       "待补",
-       "待补",
-       "待补"
+       "Mana Strala",
+       "7",
+       "6",
+       "9 / 3 / 5 / 3 / 9 / 8"
       ],
       [
        "Gwendan Villador",
-       "待补",
+       "Villador",
        "1",
        "6",
-       "待补"
+       "5 / 4 / 8 / 2 / 3 / 1"
       ],
       [
        "Ligia",
-       "待补",
-       "待补",
-       "待补",
-       "待补"
+       "Southbay Gate",
+       "6",
+       "5",
+       "3 / 8 / 4 / 10 / 2 / 6"
       ],
       [
        "Oliver",
-       "待补",
-       "待补",
-       "待补",
-       "待补"
+       "Angelor",
+       "6",
+       "7",
+       "2 / 8 / 3 / 3 / 9 / 6"
       ],
       [
        "Rufus",
-       "待补",
-       "待补",
-       "待补",
-       "待补"
+       "Belthorn (Groveshire)",
+       "1",
+       "7",
+       "6 / 6 / 1 / 3 / 7 / 1"
       ],
       [
        "Silgur",
-       "待补",
-       "待补",
-       "待补",
-       "待补"
+       "Beaconsbury",
+       "1",
+       "5",
+       "3 / 8 / 3 / 0 / 8 / 1"
       ],
       [
        "Tarcus",
-       "待补",
-       "待补",
-       "待补",
-       "待补"
+       "Mavignac (Gavault)",
+       "1",
+       "8",
+       "6 / 3 / 1 / 0 / 10 / 5"
       ],
       [
        "The Wolf",
-       "待补",
-       "待补",
-       "待补",
-       "待补"
+       "Belthorn (Groveshire)",
+       "1",
+       "5",
+       "3 / 7 / 3 / 3 / 7 / 1"
       ],
       [
        "Ursula",
-       "待补",
-       "待补",
-       "待补",
-       "待补"
+       "Mossgart",
+       "1",
+       "5",
+       "3 / 4 / 2 / 7 / 7 / 0"
       ],
       [
        "Victoria",
-       "待补",
-       "待补",
-       "待补",
-       "待补"
+       "City of Enberg",
+       "13",
+       "7",
+       "13 / 13 / 9 / 13 / 10 / 9"
       ],
       [
        "Zolta",
-       "待补",
-       "待补",
-       "待补",
-       "待补"
+       "Volga Camp",
+       "6",
+       "7",
+       "4 / 5 / 2 / 9 / 2 / 11"
       ]
      ]
     },
@@ -7955,94 +7954,94 @@
         ],
         [
          "Gideon",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Tower City",
+         "5",
+         "5",
+         "4 / 6 / 8 / 3 / 7 / 2"
         ],
         [
          "Goberto",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Naoned",
+         "1",
+         "7",
+         "8 / 1 / 3 / 0 / 0 / 0"
         ],
         [
          "Gothild",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Mana Strala",
+         "7",
+         "6",
+         "9 / 3 / 5 / 3 / 9 / 8"
         ],
         [
          "Gwendan Villador",
-         "待补",
+         "Villador",
          "1",
          "6",
-         "待补"
+         "5 / 4 / 8 / 2 / 3 / 1"
         ],
         [
          "Ligia",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Southbay Gate",
+         "6",
+         "5",
+         "3 / 8 / 4 / 10 / 2 / 6"
         ],
         [
          "Oliver",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Angelor",
+         "6",
+         "7",
+         "2 / 8 / 3 / 3 / 9 / 6"
         ],
         [
          "Rufus",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Belthorn (Groveshire)",
+         "1",
+         "7",
+         "6 / 6 / 1 / 3 / 7 / 1"
         ],
         [
          "Silgur",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Beaconsbury",
+         "1",
+         "5",
+         "3 / 8 / 3 / 0 / 8 / 1"
         ],
         [
          "Tarcus",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Mavignac (Gavault)",
+         "1",
+         "8",
+         "6 / 3 / 1 / 0 / 10 / 5"
         ],
         [
          "The Wolf",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Belthorn (Groveshire)",
+         "1",
+         "5",
+         "3 / 7 / 3 / 3 / 7 / 1"
         ],
         [
          "Ursula",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Mossgart",
+         "1",
+         "5",
+         "3 / 4 / 2 / 7 / 7 / 0"
         ],
         [
          "Victoria",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "City of Enberg",
+         "13",
+         "7",
+         "13 / 13 / 9 / 13 / 10 / 9"
         ],
         [
          "Zolta",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Volga Camp",
+         "6",
+         "7",
+         "4 / 5 / 2 / 9 / 2 / 11"
         ]
        ]
       },
@@ -8625,23 +8624,23 @@
      "rows": [
       [
        "S",
-       "Daguez, Edith, Childeric, Alwena",
-       "Elite starting stats (15 STR / 12 MAG / 12 WIT), armour 8-9, or unique utility (Alwena's Intendant rumours)."
+       "Victoria, Daguez, Edith, Childeric, Alwena",
+       "Elite starting stats — Victoria has the highest total (67), Daguez 15 STR, Edith 12 MAG, Childeric 12 WIT & armour 9, plus Alwena's Intendant rumours."
       ],
       [
        "A",
-       "Ari, Brunhilda, Epicrate, Dulahan, Chester",
-       "Strong stats or powerful traits: Ari 13 AGI, Dulahan half damage, Chester all-type affinity."
+       "Ari, Brunhilda, Epicrate, Dulahan, Chester, Gothild",
+       "Strong stats or powerful traits: Ari 13 AGI, Gothild 37 total, Dulahan half damage, Chester all-type affinity."
       ],
       [
        "B",
-       "Angelica, Arron, Gwendan, Tarcus, Ursula",
+       "Angelica, Arron, Gwendan, Tarcus, Ursula, Ligia, Oliver, Gideon, Zolta",
        "Solid with story investment; Ursula's Immortal is niche-useful, Arron becomes Dragon Knight."
       ],
       [
        "C",
-       "Goberto, Gothild, Ligia, Oliver, Rufus, Silgur, The Wolf, Victoria, Zolta, others",
-       "Situation-dependent; many gain value through traits or storylines (data incomplete — 待补)."
+       "Goberto, Rufus, Silgur, The Wolf",
+       "Situation-dependent; many gain value through traits or storylines."
       ]
      ]
     },
@@ -8697,23 +8696,23 @@
        "rows": [
         [
          "S",
-         "Daguez、Edith、Childeric、Alwena",
-         "精英起始属性（15 力量 / 12 魔法 / 12 智慧）、护甲 8-9，或独特功能（Alwena 挖流言）。"
+         "Victoria、Daguez、Edith、Childeric、Alwena",
+         "精英起始属性——Victoria 合计最高（67）、Daguez 15 力量、Edith 12 魔法、Childeric 12 智慧与护甲 9，外加 Alwena 挖流言。"
         ],
         [
          "A",
-         "Ari、Brunhilda、Epicrate、Dulahan、Chester",
-         "属性强或特质强：Ari 13 敏捷、Dulahan 受伤减半、Chester 全类型好感。"
+         "Ari、Brunhilda、Epicrate、Dulahan、Chester、Gothild",
+         "属性强或特质强：Ari 13 敏捷、Gothild 合计 37、Dulahan 受伤减半、Chester 全类型好感。"
         ],
         [
          "B",
-         "Angelica、Arron、Gwendan、Tarcus、Ursula",
+         "Angelica、Arron、Gwendan、Tarcus、Ursula、Ligia、Oliver、Gideon、Zolta",
          "投入剧情后扎实：Ursula 的 Immortal 有特殊价值，Arron 可成 Dragon Knight。"
         ],
         [
          "C",
-         "Goberto、Gothild、Ligia、Oliver、Rufus、Silgur、The Wolf、Victoria、Zolta 等",
-         "视情况而定；许多靠特质或剧情增值（数据不全——待补）。"
+         "Goberto、Rufus、Silgur、The Wolf",
+         "视情况而定；许多靠特质或剧情增值。"
         ]
        ]
       },
@@ -9352,99 +9351,99 @@
      "rows": [
       [
        "Alwena",
-       "一次性紧急事件：Act 2 之后，当圆桌可用骑士为 0 时（在册且不在任务中，死亡/辞职者除外）她会自愿加入。无法主动触发，没有第二次机会。永不死亡/永不辞职。"
+       "One-time emergency event: after Act 2, when the Round Table has zero available knights (on the roster and not on a quest, dead/resigned excluded), she volunteers. Cannot be triggered on demand; no second chance. Never dies and never resigns."
       ],
       [
        "Angelica",
-       "开场剧情自动加入。"
+       "Joins automatically during the opening story."
       ],
       [
        "Ari",
-       "花 25 金币召唤（Basalt 兄弟的弟弟）。"
+       "Summoned for 25 gold (the younger of the Basalt brothers)."
       ],
       [
        "Arron",
-       "无候选朝会——通过 Drakovic 剧情线加入。"
+       "No candidacy audience — joins through the Drakovic storyline."
       ],
       [
        "Brunhilda",
-       "Gavault 剧情线女儿侧（county_quest_gavault_2_daughter_side 到结局），无候选朝会。"
+       "Gavault storyline, daughter's side (county_quest_gavault_2_daughter_side to the ending); no candidacy audience."
       ],
       [
        "Chester",
-       "Clean Keeper Goose Part 2 任意特殊结局后出现（奶酪/马/Gwendan 三选一，各付 1 金币）——Chester 才是真正的奖品。"
+       "Appears after any Clean Keeper Goose Part 2 special outcome (cheese / a horse / Gwendan — three choices, 1 gold each). Chester is the real prize."
       ],
       [
        "Childeric",
-       "待补"
+       "TBD"
       ],
       [
        "Daguez",
-       "待补"
+       "TBD"
       ],
       [
        "Dulahan",
-       "Goberto 死后才出现（恶魔骑士）。"
+       "Appears as the demon knight on Goberto's death path."
       ],
       [
        "Edith",
-       "待补"
+       "TBD"
       ],
       [
        "Epicrate",
-       "待补"
+       "TBD"
       ],
       [
        "Gideon",
-       "中文资料：第 6 天可招。"
+       "Appears as a candidacy audience at cycle 13 (Act 2, joins willingly)."
       ],
       [
        "Goberto",
-       "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+       "First proper recruit — candidacy audience at cycle 2."
       ],
       [
        "Gothild",
-       "待补"
+       "Two routes — after the Victoria ambush (quest_victoria_gank), or the Enberg storyline (interrogation court / finale)."
       ],
       [
        "Gwendan Villador",
-       "待补"
+       "Candidacy audience at cycle 3."
       ],
       [
        "Ligia",
-       "待补"
+       "Southbay storyline (the route where her father survives)."
       ],
       [
        "Oliver",
-       "待补"
+       "Candidacy audience at cycle 19 — only if he was not executed in the prologue."
       ],
       [
        "Rufus",
-       "待补"
+       "Mystical Research (Groveshire, requires Scholars satisfaction) or The Wolf affinity-2 dialogue unlock. Same person as The Wolf — his curse-lifted human form."
       ],
       [
        "Silgur",
-       "待补"
+       "Standard Groveshire storyline success (non-werewolf, non-accident branch)."
       ],
       [
        "Tarcus",
-       "待补"
+       "Gavault storyline, mother's side (mutually exclusive with Brunhilda, who takes the daughter's side)."
       ],
       [
        "The Wolf",
-       "待补"
+       "Angelica tames the beast — send Angelica on Almor's Kill the Beast for the special outcome."
       ],
       [
        "Ursula",
-       "待补"
+       "Auto-joins at cycle 5."
       ],
       [
        "Victoria",
-       "待补"
+       "Enberg assassination storyline (no candidacy audience)."
       ],
       [
        "Zolta",
-       "待补"
+       "Kutnar storyline (win the Kutnar derby by cheating)."
       ]
      ]
     },
@@ -9531,7 +9530,7 @@
         ],
         [
          "Dulahan",
-         "Goberto 死后才出现（恶魔骑士）。"
+         "走 Goberto 死亡路线后以恶魔骑士身份出现。"
         ],
         [
          "Edith",
@@ -9543,55 +9542,55 @@
         ],
         [
          "Gideon",
-         "中文资料：第 6 天可招。"
+         "cycle 13 出现候选人（Act 2 自发入朝）。"
         ],
         [
          "Goberto",
-         "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+         "cycle 2 首位正式招募骑士。"
         ],
         [
          "Gothild",
-         "待补"
+         "两路线——Victoria 伏击（quest_victoria_gank）成功后续，或 Enberg 剧情线（审讯朝会/终局）。"
         ],
         [
          "Gwendan Villador",
-         "待补"
+         "cycle 3 候选人。"
         ],
         [
          "Ligia",
-         "待补"
+         "Southbay 剧情线（父亲存活线）。"
         ],
         [
          "Oliver",
-         "待补"
+         "cycle 19 候选人，前提是序章没有处决他。"
         ],
         [
          "Rufus",
-         "待补"
+         "Mystical Research（Groveshire，需 Scholars 满意度）或与 The Wolf 好感 2 对话解锁。与 The Wolf 是同一人——解除诅咒后的人形。"
         ],
         [
          "Silgur",
-         "待补"
+         "Groveshire 剧情线标准成功（非狼人/非意外分支）。"
         ],
         [
          "Tarcus",
-         "待补"
+         "Gavault 剧情线母亲侧（与 Brunhilda 互斥——Brunhilda 走女儿侧）。"
         ],
         [
          "The Wolf",
-         "待补"
+         "Angelica 驯服野兽——Almor「Kill the Beast」派 Angelica 触发特殊结局。"
         ],
         [
          "Ursula",
-         "待补"
+         "cycle 5 自动入朝。"
         ],
         [
          "Victoria",
-         "待补"
+         "Enberg 暗杀剧情线（无候选人朝会）。"
         ],
         [
          "Zolta",
-         "待补"
+         "Kutnar 剧情线（作弊赢得 Kutnar derby）。"
         ]
        ]
       },
@@ -10035,7 +10034,7 @@
      "items": [
       [
        "Is there a cost to rewinding?",
-       "Rewinding is free-form in this game — it is designed as a safety net, not a penalty mechanic (待补 exact limits)."
+       "Rewinding is free-form in this game — it is designed as a safety net, not a penalty mechanic (TBD exact limits)."
       ],
       [
        "Can I rewind forever?",
@@ -10296,27 +10295,27 @@
       [
        "Critical Success",
        "+10",
-       "奖励 ×2"
+       "Reward ×2"
       ],
       [
        "Great Success",
        "+5",
-       "奖励 ×1.5"
+       "Reward ×1.5"
       ],
       [
        "Success",
        "0",
-       "奖励 ×1"
+       "Reward ×1"
       ],
       [
        "Major Failure",
        "−5",
-       "无奖励"
+       "No reward"
       ],
       [
        "Critical Failure",
        "−10",
-       "无奖励"
+       "No reward"
       ]
      ]
     },
@@ -10703,7 +10702,7 @@
      "items": [
       [
        "How long is the prologue?",
-       "It covers the first cycle or two — enough to learn the audience → quest → rewind loop (待补 exact length)."
+       "It covers the first cycle or two — enough to learn the audience → quest → rewind loop (TBD exact length)."
       ],
       [
        "Can I fail the prologue?",
@@ -11297,7 +11296,7 @@
       "The Beast Hunt connects to Ari and The Wolf — both are tied to wolf/beast quest lines.",
       "Ari is a Griffin Rider (mount locked) and a strong Scout; he dislikes Hunt.",
       "The Wolf has the Wolf trait (mount locked) and is Loyal — score scales with party average affinity.",
-      "Beast Hunt routes are still being verified in detail (待补 exact steps)."
+      "Beast Hunt routes are still being verified in detail (TBD exact steps)."
      ]
     },
     {
@@ -11312,7 +11311,7 @@
       ],
       [
        "How do I get The Wolf?",
-       "Reported through the beast/wolf route; exact steps are still being verified (待补)."
+       "Reported through the beast/wolf route; exact steps are still being verified (TBD)."
       ]
      ]
     }
@@ -11508,7 +11507,7 @@
      "items": [
       [
        "How do I start the goose quest?",
-       "It appears as the Clean Keeper Goose line; the Part 2 special outcome triggers Chester (待补 exact trigger)."
+       "It appears as the Clean Keeper Goose line; the Part 2 special outcome triggers Chester (TBD exact trigger)."
       ],
       [
        "Is Chester worth it?",
@@ -11703,7 +11702,7 @@
      "items": [
       [
        "What is the Rebellion?",
-       "A storyline tied to Epicrate and Brimwood; exact branch steps are still being verified (待补)."
+       "A storyline tied to Epicrate and Brimwood; exact branch steps are still being verified (TBD)."
       ],
       [
        "How should I use Epicrate?",
@@ -11923,7 +11922,7 @@
      "items": [
       "Verified route: investigate the murderer → hear the confessions → rewind to the marked morning → talk to Alwena → confront the murderer → ask about voices / manipulated.",
       "Gwendan Villador is the reported suspect, but the murderer varies across runs — the 'who' is not fixed from save to save.",
-      "A death-sentence bug involving Gwendan has been reported; its exact trigger and fix status are pending confirmation (待补).",
+      "A death-sentence bug involving Gwendan has been reported; its exact trigger and fix status are pending confirmation (TBD).",
       "How the murder branch resolves changes who survives and which endings unlock; finishing it unlocks the first casualty achievement (72.3% Steam global rate)."
      ]
     },
@@ -11939,7 +11938,7 @@
       ],
       [
        "Is Gwendan always the murderer?",
-       "No — Gwendan Villador is the reported suspect, but the guilty knight varies across runs; treat any suspect as run-dependent until the exact rules are verified (待补)."
+       "No — Gwendan Villador is the reported suspect, but the guilty knight varies across runs; treat any suspect as run-dependent until the exact rules are verified (TBD)."
       ],
       [
        "What is the first casualty achievement?",
@@ -11947,7 +11946,7 @@
       ],
       [
        "What is the Gwendan death-sentence bug?",
-       "A reported bug that can hand out a death sentence involving Gwendan; exact trigger and fix status are pending confirmation (待补)."
+       "A reported bug that can hand out a death sentence involving Gwendan; exact trigger and fix status are pending confirmation (TBD)."
       ]
      ]
     }
@@ -12370,7 +12369,7 @@
      "items": [
       "Annexes are buildings that add systems to your tower: Carina's Forge repairs and crafts gear, the Witch's Alchemy Room makes consumables.",
       "Building and upgrading annexes unlocks more knights, tools and story.",
-      "Exact annex lists and costs are still being verified (待补)."
+      "Exact annex lists and costs are still being verified (TBD)."
      ]
     },
     {
@@ -12385,7 +12384,7 @@
       ],
       [
        "Which annex first?",
-       "The Forge is the reported priority for keeping knights' armour repaired (待补 exact unlock)."
+       "The Forge is the reported priority for keeping knights' armour repaired (TBD exact unlock)."
       ]
      ]
     }
@@ -12958,7 +12957,7 @@
      "items": [
       "Sovereign Tower's kingdom spans several regions: Brizh, Clovermont/Groveshire, Fort Gavault, Drakovic Castle, Avalon, Almora, Brimwood and more.",
       "Region names come from the knight origins — each knight's homeland is a quest location that can add flavour bonuses (e.g. Alwena's Brizh Connoisseur).",
-      "A full interactive kingdom map is not yet verified (待补)."
+      "A full interactive kingdom map is not yet verified (TBD)."
      ]
     },
     {
@@ -12973,7 +12972,7 @@
       ],
       [
        "Is there a map?",
-       "The in-game kingdom map exists (System: kingdom-map) but exact layout is still being verified (待补)."
+       "The in-game kingdom map exists (System: kingdom-map) but exact layout is still being verified (TBD)."
       ]
      ]
     }
@@ -13348,7 +13347,7 @@
      "items": [
       "Released 2026-08-06 (v1.0, not early access).",
       "Launch sale: 15% off until 2026-08-20 (¥57.80 in CN).",
-      "2 DLCs are attached (appids 4870280 / 4911710) — content still being verified (待补).",
+      "2 DLCs are attached (appids 4870280 / 4911710) — content still being verified (TBD).",
       "This page is the change log for our guides — it updates as we verify new mechanics.",
       "Patch 1.0.8 (Aug 10, 2026): fixed a GODOT loading-screen crash, Gwendan being immortal, Gwendolen mourning twice, and a Ligia questline choice lock — plus more."
      ]
@@ -13365,7 +13364,7 @@
       ],
       [
        "What is in the DLCs?",
-       "Two DLC entries exist on Steam; their contents are still being verified (待补)."
+       "Two DLC entries exist on Steam; their contents are still being verified (TBD)."
       ]
      ]
     }
@@ -14122,7 +14121,7 @@
       "Released 2026-08-06 as a full v1.0 (not early access).",
       "A demo was available before launch (official Demo Trailer exists).",
       "Launch sale: 15% off until 2026-08-20.",
-      "Two DLCs are attached (待补 contents)."
+      "Two DLCs are attached (TBD contents)."
      ]
     },
     {
@@ -14137,7 +14136,7 @@
       ],
       [
        "When is the next update?",
-       "Follow the in-game updates and our update log; patch cadence is still being tracked (待补)."
+       "Follow the in-game updates and our update log; patch cadence is still being tracked (TBD)."
       ]
      ]
     }
@@ -14310,8 +14309,8 @@
      "heading": "Soundtrack status",
      "body": "",
      "items": [
-      "The game's official tags include soundtrack-adjacent qualities; the launch trailer features original music (待补 exact composer/album).",
-      "Soundtrack details (composer, track list, availability on streaming) are still being verified (待补).",
+      "The game's official tags include soundtrack-adjacent qualities; the launch trailer features original music (TBD exact composer/album).",
+      "Soundtrack details (composer, track list, availability on streaming) are still being verified (TBD).",
       "Check the Steam store page and the game's official channels for soundtrack news."
      ]
     },
@@ -14323,11 +14322,11 @@
      "items": [
       [
        "Is there an official soundtrack?",
-       "Not yet confirmed publicly (待补) — check the Steam page and developer channels."
+       "Not yet confirmed publicly (TBD) — check the Steam page and developer channels."
       ],
       [
        "Who composed the music?",
-       "Still being verified (待补)."
+       "Still being verified (TBD)."
       ]
      ]
     }
@@ -14504,7 +14503,7 @@
      "body": "",
      "items": [
       "Sovereign Tower has consumables and crafting gear across the tower's systems (Forge, Alchemy Room).",
-      "Item lists are still being verified in-game (待补) — this overview will grow as we confirm items.",
+      "Item lists are still being verified in-game (TBD) — this overview will grow as we confirm items.",
       "Key item families reported: consumables (potions, food) and crafting gear (weapons, armour materials)."
      ]
     },
@@ -14516,11 +14515,11 @@
      "items": [
       [
        "What items exist in the game?",
-       "Consumables and crafting gear are confirmed families; the full list is still being verified (待补)."
+       "Consumables and crafting gear are confirmed families; the full list is still being verified (TBD)."
       ],
       [
        "Where do I get items?",
-       "The Forge crafts gear and the Alchemy Room makes consumables (exact recipes 待补)."
+       "The Forge crafts gear and the Alchemy Room makes consumables (exact recipes TBD)."
       ]
      ]
     }
@@ -14691,7 +14690,7 @@
      "body": "",
      "items": [
       "The Witch's Alchemy Room makes consumables (potions, food) for quests and recovery.",
-      "Consumable recipes and effects are still being verified (待补).",
+      "Consumable recipes and effects are still being verified (TBD).",
       "Favourite meals give +1.5 affinity and +0.5 quest score — food is the most confirmed consumable family."
      ]
     },
@@ -14703,7 +14702,7 @@
      "items": [
       [
        "What consumables are there?",
-       "Potions and food are reported; the full list is still being verified (待补)."
+       "Potions and food are reported; the full list is still being verified (TBD)."
       ],
       [
        "Are meals consumables?",
@@ -14886,7 +14885,7 @@
      "body": "",
      "items": [
       "Carina's Forge repairs and crafts gear; armour acts as hit points for quest damage.",
-      "Gear crafting recipes and upgrade paths are still being verified (待补).",
+      "Gear crafting recipes and upgrade paths are still being verified (TBD).",
       "Childeric starts with armour 9 (highest) — a strong tank for damage-heavy quests."
      ]
     },
@@ -14898,7 +14897,7 @@
      "items": [
       [
        "How does the Forge work?",
-       "It repairs and crafts gear; exact recipes and slots are still being verified (待补)."
+       "It repairs and crafts gear; exact recipes and slots are still being verified (TBD)."
       ],
       [
        "What does armour do?",
@@ -15284,7 +15283,7 @@
       "Full controller support (Xbox and PlayStation) plus mouse and keyboard.",
       "Official feature: playable without timed input — no pressure to rush decisions.",
       "The game supports save-anytime and Steam Cloud.",
-      "Exact key bindings and controller mapping are still being compiled (待补)."
+      "Exact key bindings and controller mapping are still being compiled (TBD)."
      ]
     },
     {
@@ -15701,7 +15700,7 @@
       ],
       [
        "Can a resigned knight come back?",
-       "Not in the same run — they're struck off the roster (待补 any exception)."
+       "Not in the same run — they're struck off the roster (TBD any exception)."
       ]
      ]
     }
@@ -15884,7 +15883,7 @@
      "heading": "New Game Plus",
      "body": "",
      "items": [
-      "New Game Plus is available after a completed run (per fan sources; exact unlock 待补).",
+      "New Game Plus is available after a completed run (per fan sources; exact unlock TBD).",
       "It carries over progression so you can explore mutually exclusive branches and endings.",
       "Use it to chase endings you locked out in run one (Arthur marriage, hidden endings, other faction outcomes)."
      ]
@@ -15897,7 +15896,7 @@
      "items": [
       [
        "What carries over in NG+?",
-       "Exact carry-over is still being verified (待补)."
+       "Exact carry-over is still being verified (TBD)."
       ],
       [
        "Why play NG+?",
@@ -16081,7 +16080,7 @@
      "items": [
       "The Cycle 4 Dragon Knight ultimatum offers alliance paths: rally the people, ally with nobles, or use mystic forces — each with faction and gold requirements.",
       "Alliances unlock alternate endings and change faction dynamics.",
-      "Exact alliance branches beyond Cycle 4 are still being verified (待补)."
+      "Exact alliance branches beyond Cycle 4 are still being verified (TBD)."
      ]
     },
     {
@@ -16678,9 +16677,9 @@
      "heading": "Tower servants & staff",
      "body": "",
      "items": [
-      "The Tower has servants and staff beyond the knights (reported; exact roster 待补).",
+      "The Tower has servants and staff beyond the knights (reported; exact roster TBD).",
       "Intendant Alwena is the key staff figure — she manages the Tower and reveals knight rumours.",
-      "Tower servants likely include court roles and maintenance staff; exact list is still being verified (待补)."
+      "Tower servants likely include court roles and maintenance staff; exact list is still being verified (TBD)."
      ]
     },
     {
@@ -16691,7 +16690,7 @@
      "items": [
       [
        "Who are the tower servants?",
-       "Reported as support staff; the exact list is still being verified (待补)."
+       "Reported as support staff; the exact list is still being verified (TBD)."
       ],
       [
        "What does the Intendant do?",
@@ -17099,7 +17098,7 @@
      "body": "",
      "items": [
       "The Bard (Hildegard) appears in fan wiki data as a secret knight.",
-      "Exact recruit steps and stats are still being verified (待补).",
+      "Exact recruit steps and stats are still being verified (TBD).",
       "Watch for story events tied to music or performances — musical conditions appear in quest data."
      ]
     },
@@ -17111,11 +17110,11 @@
      "items": [
       [
        "Who is The Bard?",
-       "A secret knight reported in fan wiki data; exact details are still being verified (待补)."
+       "A secret knight reported in fan wiki data; exact details are still being verified (TBD)."
       ],
       [
        "How do I recruit The Bard?",
-       "Recruit steps are not yet confirmed (待补)."
+       "Recruit steps are not yet confirmed (TBD)."
       ]
      ]
     }

@@ -163,19 +163,32 @@ def build_quest_mechanics():
 # ---------- 页面：knights（核心 P0）----------
 def _knight_stats_str(k):
     if k.get("stats") is None:
+        return "TBD" if k["name"] != "Chester" else "Random (Chester rerolls 0–15 every check)"
+    return " / ".join(str(x) for x in k["stats"])
+
+def _knight_stats_str_zh(k):
+    if k.get("stats") is None:
         return "随机（Chester 每次判定重 roll 0–15）" if k["name"] == "Chester" else "待补"
     return " / ".join(str(x) for x in k["stats"])
 
 def _knight_row(k):
+    return [k["name"], k.get("origin") or "TBD", str(k.get("level") or "TBD"), str(k.get("armor") or "TBD"),
+            _knight_stats_str(k), ", ".join(k.get("meals") or ["TBD"]), k.get("note") or ""]
+
+def _knight_row_zh(k):
     return [k["name"], k.get("origin") or "待补", str(k.get("level") or "待补"), str(k.get("armor") or "待补"),
-            _knight_stats_str(k), "，".join(k.get("meals") or ["待补"]), k.get("note") or ""]
+            _knight_stats_str_zh(k), "，".join(k.get("meals") or ["待补"]), k.get("note_zh") or k.get("note") or ""]
 
 def build_knights():
     rows = [_knight_row(k) for k in KNIGHTS]
+    rows_zh = [_knight_row_zh(k) for k in KNIGHTS]
     for name, b in KNIGHTS_BASIC.items():
-        rows.append([name, b.get("origin") or "待补", str(b.get("level") or "待补"), str(b.get("armor") or "待补"),
+        rows.append([name, b.get("origin") or "TBD", str(b.get("level") or "TBD"), str(b.get("armor") or "TBD"),
                      _knight_stats_str({"name": name, "stats": b.get("stats")}),
-                     "，".join(b.get("meals") or ["待补"]), b.get("note") or ""])
+                     ", ".join(b.get("meals") or ["TBD"]), b.get("note") or ""])
+        rows_zh.append([name, b.get("origin") or "待补", str(b.get("level") or "待补"), str(b.get("armor") or "待补"),
+                        _knight_stats_str_zh({"name": name, "stats": b.get("stats")}),
+                        "，".join(b.get("meals") or ["待补"]), b.get("note_zh") or b.get("note") or ""])
     en = {
         "slug": "sovereign-tower/knights",
         "title": "All Knights, Stats & Traits",
@@ -202,7 +215,7 @@ def build_knights():
             "metaDescription": "君王之塔全部 24 位骑士：六维属性（STR/AGI/CHA/MAG/WIT/LCK）、已知与隐藏特质、最爱菜、招募条件与任务偏好完整清单。",
             "intro": "君王之塔的 24 位骑士全部可以招募。每位骑士有六维属性（STR/AGI/CHA/MAG/WIT/LCK，全 0–15）、一组已知特质、从第一天就生效的隐藏特质、最爱菜与任务偏好。这是完整名单。",
             "sections": [
-                table(["骑士", "出身", "等级", "护甲", "六维 (STR/AGI/CHA/MAG/WIT/LCK)", "最爱菜", "备注"], rows),
+                table(["骑士", "出身", "等级", "护甲", "六维 (STR/AGI/CHA/MAG/WIT/LCK)", "最爱菜", "备注"], rows_zh),
                 notes("如何读骑士档案", [
                     "属性 0–15；等级 1–15，每升一级可在任意未满 15 的属性上投 1 点。",
                     "已知特质在招募瞬间可见。隐藏特质从第一天就在数值里生效，但需要通过对话、任务结果或剧情事件解锁显示。",
@@ -242,7 +255,7 @@ def build_secret_knights():
                 "Chester's random stats make him a wildcard: never rely on him for a must-succeed quest, but he never minds what you assign.",
             ]),
             faq_block([
-                ["Can I recruit Dulahan without killing Goberto?", "Per the fan wiki data, Dulahan appears specifically on Goberto's death path. There is no confirmed alternative recruit route yet (待补 if unverified)."],
+                ["Can I recruit Dulahan without killing Goberto?", "Per the fan wiki data, Dulahan appears specifically on Goberto's death path. There is no confirmed alternative recruit route yet (TBD if unverified)."],
                 ["Is Alwena missable?", "Yes — the emergency offer happens only when the Round Table has zero available knights in Act 2 or later, once. If you never hit that state, you never get her."],
                 ["Are there other secret knights?", "The Bard / Hildegard appears in the fan wiki as a secret knight; exact recruit steps are still being verified."],
             ]),
@@ -278,12 +291,16 @@ def build_secret_knights():
 
 # ---------- 页面：recipes ----------
 def build_recipes():
-    rows = [[r["en"], r["zh"], r["desc_zh"]] for r in RECIPES]
-    fav_rows = []
+    en_rows = [[r["en"], r["desc_en"]] for r in RECIPES]
+    zh_rows = [[r["en"], r["zh"], r["desc_zh"]] for r in RECIPES]
+    en_fav_rows = []
+    zh_fav_rows = []
     for k in KNIGHTS:
-        fav_rows.append([k["name"], "、".join(k.get("meals") or ["待补"])])
+        en_fav_rows.append([k["name"], ", ".join(k.get("meals") or ["TBD"])])
+        zh_fav_rows.append([k["name"], "、".join(k.get("meals") or ["待补"])])
     for name, b in KNIGHTS_BASIC.items():
-        fav_rows.append([name, "、".join(b.get("meals") or ["待补"])])
+        en_fav_rows.append([name, ", ".join(b.get("meals") or ["TBD"])])
+        zh_fav_rows.append([name, "、".join(b.get("meals") or ["待补"])])
     en = {
         "slug": "sovereign-tower/recipes",
         "title": "All Recipes & Each Knight's Favorite Meal",
@@ -291,8 +308,8 @@ def build_recipes():
         "metaDescription": "All six Sovereign Tower dishes and which knight loves each meal. Feeding a favourite meal gives +1.5 affinity and +0.5 quest score.",
         "intro": "There are exactly six dishes in Sovereign Tower. Feeding a knight a favourite meal gives +1.5 affinity and +0.5 quest score, and permanently records their taste — so the meal table is worth learning by heart.",
         "sections": [
-            table(["Dish (EN)", "Dish (中文)", "Description"], rows),
-            table(["Knight", "Favorite meals"], fav_rows),
+            table(["Dish", "Description"], en_rows),
+            table(["Knight", "Favorite meals"], en_fav_rows),
             notes("Feeding rules", [
                 "Each knight has 1–2 favourite dishes (Chester and Dulahan love all six).",
                 "A liked meal = +1.5 affinity and +0.5 quest score, permanently recorded.",
@@ -310,8 +327,8 @@ def build_recipes():
             "metaDescription": "君王之塔全部 6 种菜 + 每位骑士最爱菜对照。喂对最爱菜 +1.5 好感 +0.5 任务分。",
             "intro": "君王之塔一共只有 6 种菜。喂骑士最爱菜 +1.5 好感 +0.5 任务分，并永久记录口味——所以这张菜谱表值得记牢。",
             "sections": [
-                table(["菜（英文）", "菜（中文）", "描述"], rows),
-                table(["骑士", "最爱菜"], fav_rows),
+                table(["菜（英文）", "菜（中文）", "描述"], zh_rows),
+                table(["骑士", "最爱菜"], zh_fav_rows),
                 notes("喂菜规则", [
                     "每位骑士有 1–2 个最爱菜（Chester 和 Dulahan 全 6 种都爱）。",
                     "喂对 = +1.5 好感 +0.5 任务分，永久记录。",
@@ -341,15 +358,15 @@ def build_romance():
                 "Assign liked quests (+1.33 each), feed favourite meals (+1.5) and match the knight's liked sovereign archetype to raise affinity safely.",
                 "Romance options appear in dialogue once a knight's story has progressed far enough; pushing affinity without story progress stalls the route."]),
             table(["Route", "Known conditions", "Status"], [
-                ["Lady of the Tower (stone statue)", "Official selling point — a romanceable stone statue linked to the tower's secrets.", "Verified concept (Steam L0); full steps 待补"],
-                ["Angelica", "Opening-story recruit; Kind-Hearted route, likes Kind sovereign style.", "Route confirmed; hidden steps 待补"],
-                ["Arthur (marriage ending)", "Community videos show a marriage ending with Arthur.", "Exists (Bilibili L0); exact conditions 待补"],
-                ["Gideon / others", "Steam community threads ask about 'how to romance the werewolf knight' and secret conditions.", "Community-reported; 待补"],
+                ["Lady of the Tower (stone statue)", "Official selling point — a romanceable stone statue linked to the tower's secrets.", "Verified concept (Steam L0); full steps TBD"],
+                ["Angelica", "Opening-story recruit; Kind-Hearted route, likes Kind sovereign style.", "Route confirmed; hidden steps TBD"],
+                ["Arthur (marriage ending)", "Community videos show a marriage ending with Arthur.", "Exists (Bilibili L0); exact conditions TBD"],
+                ["Gideon / others", "Steam community threads ask about 'how to romance the werewolf knight' and secret conditions.", "Community-reported; TBD"],
             ]),
             faq_block([
                 ["Why isn't my romance progressing?", "The most common cause is stalled affinity or story. Check the knight's affinity isn't stuck, keep liked assignments coming and advance their story via free-time conversations."],
-                ["Can I romance multiple knights?", "Community reports differ per route; some routes appear mutually exclusive (待补 until verified in-game)."],
-                ["Does the Arthur marriage ending require specific faction balance?", "Community videos exist but exact prerequisites are unverified — treat as 待补."],
+                ["Can I romance multiple knights?", "Community reports differ per route; some routes appear mutually exclusive (TBD until verified in-game)."],
+                ["Does the Arthur marriage ending require specific faction balance?", "Community videos exist but exact prerequisites are unverified — treat as TBD."],
             ]),
         ],
         "i18n": {"zh-CN": {
@@ -388,10 +405,10 @@ def build_endings():
         "intro": "Sovereign Tower is a branching game with multiple endings. Some are simple route outcomes; others are hidden behind specific decisions, faction balances or romance lines.",
         "sections": [
             table(["Ending / route", "What's known", "Status"], [
-                ["Conquest ending (一周目征服结局)", "Community Bilibili video shows a first-run conquest ending.", "Exists (L0 video); conditions 待补"],
-                ["King Slayer resolution", "A resolution path involving the King Slayer, covered by fan sites.", "Covered by whisperofthehouse (L0); steps 待补"],
-                ["Hidden / alt ending", "Steam community: 'How to get the secret alt ending' (7 replies).", "Community-reported; steps 待补"],
-                ["Arthur marriage ending", "Marriage ending with Arthur shown in community videos.", "Exists (L0); conditions 待补"],
+                ["Conquest ending (first-run conquest ending)", "Community Bilibili video shows a first-run conquest ending.", "Exists (L0 video); conditions TBD"],
+                ["King Slayer resolution", "A resolution path involving the King Slayer, covered by fan sites.", "Covered by whisperofthehouse (L0); steps TBD"],
+                ["Hidden / alt ending", "Steam community: 'How to get the secret alt ending' (7 replies).", "Community-reported; steps TBD"],
+                ["Arthur marriage ending", "Marriage ending with Arthur shown in community videos.", "Exists (L0); conditions TBD"],
                 ["Gwendan murder route", "The Act 2 murder investigation affects who lives/dies and which endings unlock.", "First casualty achievement 72.3% — most players haven't finished it (L0)"],
             ]),
             notes("How endings branch", [
@@ -399,10 +416,10 @@ def build_endings():
                 "The time-rewind system means you can re-roll decisions within a run, but some branches are mutually exclusive.",
                 "Faction balance at the finale, and which knights survived, both feed into which ending you get."]),
             faq_block([
-                ["How many endings are there?", "A full verified count is 待补. Community videos confirm at least conquest, King Slayer, hidden/alt and Arthur marriage endings."],
+                ["How many endings are there?", "A full verified count is TBD. Community videos confirm at least conquest, King Slayer, hidden/alt and Arthur marriage endings."],
                 ["Can I see every ending in one run?", "No — several routes are mutually exclusive. Use New Game+ and the rewind system to explore branches across runs."],
                 ["Does the Act 2 murder affect endings?", "Yes — the murder investigation (Gwendan's questline) changes who survives and which resolutions unlock; only ~27.7% of players have completed it (achievement rate)."],
-                ["Is there a true ending?", "Sovereign Tower has no official 'true ending' label. The closest match is the hidden/alt ending reported by players (Steam community thread), but its exact unlock conditions are still being verified (待补)."],
+                ["Is there a true ending?", "Sovereign Tower has no official 'true ending' label. The closest match is the hidden/alt ending reported by players (Steam community thread), but its exact unlock conditions are still being verified (TBD)."],
             ]),
         ],
         "i18n": {"zh-CN": {
@@ -445,7 +462,7 @@ def build_achievements():
         "title": "All 75 Achievements",
         "metaTitle": "Sovereign Tower All 75 Achievements: Full List & Roadmap (How Cute Guide)",
         "metaDescription": "Sovereign Tower has 75 Steam achievements. See the highlighted 10, the How Cute route and what the achievement data says about the game's hardest content.",
-        "intro": "Sovereign Tower ships with 75 Steam achievements. The full list is still being verified from Steam Community data (待补), but the highlighted 10 and several important ones are confirmed.",
+        "intro": "Sovereign Tower ships with 75 Steam achievements. The full list is still being verified from Steam Community data (TBD), but the highlighted 10 and several important ones are confirmed.",
         "sections": [
             notes("Key facts", [
                 "75 achievements total (Steam L0); 10 are 'highlighted' (Steam L0).",
@@ -455,7 +472,7 @@ def build_achievements():
             faq_block([
                 ["How do I get How Cute?", "Keep Arron on the kind path (never eat a dragon heart), pick the EMPATHY ROUTE on Moonvale's 3rd mission, then continue into Act III on the empathy route."],
                 ["What's the hardest achievement?", "Per achievement-rate data, the murder-line completion (first casualty, 72.3%) is the most-skipped — a strong candidate."],
-                ["Is the full list available?", "The complete 75-achievement table is 待补 (Steam Community is rate-limited; we're verifying via SteamDB/community sources)."],
+                ["Is the full list available?", "The complete 75-achievement table is TBD (Steam Community is rate-limited; we're verifying via SteamDB/community sources)."],
             ]),
         ],
         "i18n": {"zh-CN": {
@@ -582,7 +599,7 @@ def build_tool_affinity():
                 "Liked quest type or condition: +1.33 affinity each. Disliked: −0.75 each.",
                 "Favourite meal: +1.5 affinity and +0.5 quest score.",
                 "Resignation threshold: −7 for almost everyone; Alwena and Ari never resign (−1500).",
-                "This is a planning aid — actual in-game values may vary (待补 if a rule is unverified)."]),
+                "This is a planning aid — actual in-game values may vary (TBD if a rule is unverified)."]),
         ],
         "i18n": {"zh-CN": {
             "title": "好感计算器",

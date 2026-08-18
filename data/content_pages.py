@@ -3,7 +3,7 @@
 可靠风格：所有嵌套列表用变量，杜绝手写括号错误。"""
 import json
 from pathlib import Path
-from content_data import KNIGHTS, KNIGHTS_BASIC, SCORE_THRESHOLDS
+from content_data import KNIGHTS, KNIGHTS_BASIC, SCORE_THRESHOLDS, SCORE_THRESHOLDS_ZH
 
 ROOT = Path(__file__).parent
 
@@ -16,21 +16,27 @@ def notes(heading, items):
 def faq_block(items):
     return {"type": "faq", "tag": "FAQ", "heading": "FAQ", "body": "", "items": items}
 
-def _stats(k):
+def _stats(k, lang="en"):
     if k.get("stats") is None:
-        return "随机（Chester 每次判定重 roll 0–15）" if k["name"] == "Chester" else "待补"
+        if k["name"] == "Chester":
+            return "Random (rerolled 0–15 every check)" if lang == "en" else "随机（Chester 每次判定重 roll 0–15）"
+        return "TBD" if lang == "en" else "待补"
     return " / ".join(str(x) for x in k["stats"])
 
-def _all_knights_rows():
+def _cell(v, lang):
+    return str(v) if v is not None else ("TBD" if lang == "en" else "待补")
+
+def _all_knights_rows(lang="en"):
     rows = []
     for k in KNIGHTS:
-        rows.append([k["name"], k.get("origin") or "待补", str(k.get("level") or "待补"), str(k.get("armor") or "待补"), _stats(k)])
+        rows.append([k["name"], _cell(k.get("origin"), lang), _cell(k.get("level"), lang), _cell(k.get("armor"), lang), _stats(k, lang)])
     for name, b in KNIGHTS_BASIC.items():
-        rows.append([name, b.get("origin") or "待补", str(b.get("level") or "待补"), str(b.get("armor") or "待补"), _stats({"name": name, "stats": b.get("stats")})])
+        rows.append([name, _cell(b.get("origin"), lang), _cell(b.get("level"), lang), _cell(b.get("armor"), lang), _stats({"name": name, "stats": b.get("stats")}, lang)])
     return rows
 
 def build_knights_roster():
-    rows = _all_knights_rows()
+    en_rows = _all_knights_rows("en")
+    zh_rows = _all_knights_rows("zh")
     en_note = [
         "Stats are 0–15. Level 1–15; each level-up adds one point to a stat below 15.",
         "Chester's stats are fully random, rerolled on every check.",
@@ -51,8 +57,8 @@ def build_knights_roster():
         ["一周目能招满 24 位吗？", "可以——全部可招募，但 Dulahan、Alwena、Arron、Brunhilda 等绑定特定剧情或紧急事件。"],
         ["属性有什么用？", "每个任务要求一种或多种属性；属性压过需求能推动结果走向成功（见任务机制）。"],
     ]
-    en_secs = [table(["Knight", "Origin", "Lv", "Armour", "Stats (STR/AGI/CHA/MAG/WIT/LCK)"], rows), notes("How to read the roster", en_note), faq_block(en_faq)]
-    zh_secs = [table(["骑士", "出身", "等级", "护甲", "六维 (STR/AGI/CHA/MAG/WIT/LCK)"], rows), notes("如何读名单", zh_note), faq_block(zh_faq)]
+    en_secs = [table(["Knight", "Origin", "Lv", "Armour", "Stats (STR/AGI/CHA/MAG/WIT/LCK)"], en_rows), notes("How to read the roster", en_note), faq_block(en_faq)]
+    zh_secs = [table(["骑士", "出身", "等级", "护甲", "六维 (STR/AGI/CHA/MAG/WIT/LCK)"], zh_rows), notes("如何读名单", zh_note), faq_block(zh_faq)]
     return {
         "slug": "sovereign-tower/knights/roster",
         "title": "Knight Roster — All 24 Knights",
@@ -65,10 +71,10 @@ def build_knights_roster():
 
 def build_knights_tier():
     en_rows = [
-        ["S", "Daguez, Edith, Childeric, Alwena", "Elite starting stats (15 STR / 12 MAG / 12 WIT), armour 8-9, or unique utility (Alwena's Intendant rumours)."],
-        ["A", "Ari, Brunhilda, Epicrate, Dulahan, Chester", "Strong stats or powerful traits: Ari 13 AGI, Dulahan half damage, Chester all-type affinity."],
-        ["B", "Angelica, Arron, Gwendan, Tarcus, Ursula", "Solid with story investment; Ursula's Immortal is niche-useful, Arron becomes Dragon Knight."],
-        ["C", "Goberto, Gothild, Ligia, Oliver, Rufus, Silgur, The Wolf, Victoria, Zolta, others", "Situation-dependent; many gain value through traits or storylines (data incomplete — 待补)."],
+        ["S", "Victoria, Daguez, Edith, Childeric, Alwena", "Elite starting stats — Victoria has the highest total (67), Daguez 15 STR, Edith 12 MAG, Childeric 12 WIT & armour 9, plus Alwena's Intendant rumours."],
+        ["A", "Ari, Brunhilda, Epicrate, Dulahan, Chester, Gothild", "Strong stats or powerful traits: Ari 13 AGI, Gothild 37 total, Dulahan half damage, Chester all-type affinity."],
+        ["B", "Angelica, Arron, Gwendan, Tarcus, Ursula, Ligia, Oliver, Gideon, Zolta", "Solid with story investment; Ursula's Immortal is niche-useful, Arron becomes Dragon Knight."],
+        ["C", "Goberto, Rufus, Silgur, The Wolf", "Situation-dependent; many gain value through traits or storylines."],
     ]
     en_note = [
         "This is based on L0 starting stats; hidden traits and storylines can move a knight up.",
@@ -81,10 +87,10 @@ def build_knights_tier():
         ["Do hidden traits change tiers?", "Yes — several hidden traits (Speedster, Dragon Knight, Time Perception) are powerful once revealed."],
     ]
     zh_rows = [
-        ["S", "Daguez、Edith、Childeric、Alwena", "精英起始属性（15 力量 / 12 魔法 / 12 智慧）、护甲 8-9，或独特功能（Alwena 挖流言）。"],
-        ["A", "Ari、Brunhilda、Epicrate、Dulahan、Chester", "属性强或特质强：Ari 13 敏捷、Dulahan 受伤减半、Chester 全类型好感。"],
-        ["B", "Angelica、Arron、Gwendan、Tarcus、Ursula", "投入剧情后扎实：Ursula 的 Immortal 有特殊价值，Arron 可成 Dragon Knight。"],
-        ["C", "Goberto、Gothild、Ligia、Oliver、Rufus、Silgur、The Wolf、Victoria、Zolta 等", "视情况而定；许多靠特质或剧情增值（数据不全——待补）。"],
+        ["S", "Victoria、Daguez、Edith、Childeric、Alwena", "精英起始属性——Victoria 合计最高（67）、Daguez 15 力量、Edith 12 魔法、Childeric 12 智慧与护甲 9，外加 Alwena 挖流言。"],
+        ["A", "Ari、Brunhilda、Epicrate、Dulahan、Chester、Gothild", "属性强或特质强：Ari 13 敏捷、Gothild 合计 37、Dulahan 受伤减半、Chester 全类型好感。"],
+        ["B", "Angelica、Arron、Gwendan、Tarcus、Ursula、Ligia、Oliver、Gideon、Zolta", "投入剧情后扎实：Ursula 的 Immortal 有特殊价值，Arron 可成 Dragon Knight。"],
+        ["C", "Goberto、Rufus、Silgur、The Wolf", "视情况而定；许多靠特质或剧情增值。"],
     ]
     zh_note = [
         "基于 L0 起始属性；隐藏特质与剧情可让骑士上移。",
@@ -148,12 +154,14 @@ def build_guides_factions():
     return {"slug": "sovereign-tower/guides/factions", "title": "Factions Guide: Balance the Five", "metaTitle": "Sovereign Tower Factions Guide — Balance Merchants, Mystics, Scholars, Nobles & People", "metaDescription": "How Sovereign Tower's five factions work: Merchants, Mystics, Scholars, Nobles and People — balance strategies, crisis risks and ending impact.", "intro": "Sovereign Tower asks you to balance five factions: Merchants, Mystics, Scholars, Nobles and People. Each quest and court decision moves them, and a zeroed faction can trigger crisis events.", "sections": en_secs, "i18n": {"zh-CN": {"title": "派系攻略：平衡五大势力", "metaTitle": "君王之塔 派系攻略：平衡商人、秘术师、学者、贵族与平民", "metaDescription": "君王之塔五大派系怎么玩：商人、秘术师、学者、贵族、平民——平衡策略、危机风险与结局影响。", "intro": "君王之塔要求你平衡五大派系：商人、秘术师、学者、贵族、平民。每个任务和朝政决策都会影响它们，归零的派系可能触发危机事件。", "sections": zh_secs}}}
 
 def build_guides_recruit():
-    rows = []
+    en_rows = []
+    zh_rows = []
     for k in KNIGHTS:
-        rows.append([k["name"], k.get("recruit") or "待补"])
+        en_rows.append([k["name"], k.get("recruit") or "TBD"])
+        zh_rows.append([k["name"], k.get("recruit_zh") or "待补"])
     for name, b in KNIGHTS_BASIC.items():
-        note = b.get("note") or ""
-        rows.append([name, note if any(x in note for x in ["招募", "出现", "可招", "加入"]) else "待补"])
+        en_rows.append([name, b.get("recruit") or "TBD"])
+        zh_rows.append([name, b.get("recruit_zh") or "待补"])
     en_note = [
         "Several knights are story-gated: Dulahan (Goberto's death path), Arron (Drakovic storyline), Brunhilda (Gavault daughter side).",
         "Alwena joins only through a one-time emergency offer when the Round Table has zero available knights in Act 2+.",
@@ -174,8 +182,8 @@ def build_guides_recruit():
         ["会错过骑士吗？", "会——Alwena 是一次性机会；剧情骑士在分支关闭前没推进就会错过。"],
         ["最早能招谁？", "Angelica 开场加入；Ari 早期可花 25 金币召唤。"],
     ]
-    en_secs = [table(["Knight", "Recruit condition"], rows), notes("Recruitment tips", en_note), faq_block(en_faq)]
-    zh_secs = [table(["骑士", "招募条件"], rows), notes("招募技巧", zh_note), faq_block(zh_faq)]
+    en_secs = [table(["Knight", "Recruit condition"], en_rows), notes("Recruitment tips", en_note), faq_block(en_faq)]
+    zh_secs = [table(["骑士", "招募条件"], zh_rows), notes("招募技巧", zh_note), faq_block(zh_faq)]
     return {"slug": "sovereign-tower/guides/recruit-knights", "title": "Recruit Every Knight", "metaTitle": "Sovereign Tower: How to Recruit All Knights — Conditions & Windows", "metaDescription": "Recruit all 24 Sovereign Tower knights: recruit conditions, story gates, the Alwena emergency offer and Chester's goose quest prize.", "intro": "All 24 knights are recruitable, but the how varies: some join through the story, some through money, some through death paths or emergencies. Here is every recruit condition we know.", "sections": en_secs, "i18n": {"zh-CN": {"title": "招募全部骑士", "metaTitle": "君王之塔 怎么招募全部骑士：条件与窗口", "metaDescription": "招募君王之塔全部 24 位骑士：招募条件、剧情门槛、Alwena 紧急机会与 Chester 的鹅任务奖品。", "intro": "24 位骑士全部可招募，但方式各异：有的走剧情、有的花钱、有的走死亡线或紧急事件。这里是我们已知的每一条招募条件。", "sections": zh_secs}}}
 
 def build_guides_timerewind():
@@ -190,7 +198,7 @@ def build_guides_timerewind():
         "To fix a faction balance mistake before it snowballs.",
     ]
     en_faq = [
-        ["Is there a cost to rewinding?", "Rewinding is free-form in this game — it is designed as a safety net, not a penalty mechanic (待补 exact limits)."],
+        ["Is there a cost to rewinding?", "Rewinding is free-form in this game — it is designed as a safety net, not a penalty mechanic (TBD exact limits)."],
         ["Can I rewind forever?", "You can rewind to re-roll decisions across cycles; exact limits are still being verified."],
         ["Does rewind change endings?", "Yes — re-rolling key decisions (Dragon Knight ultimatum, murder investigation, Arthur alliance) changes which ending unlocks."],
     ]
@@ -237,7 +245,7 @@ def build_guides_questsuccess():
         ["任务失败会永久损失吗？", "失败只是返回失败结果；可以回溯或下个 cycle 重新指派。真正代价是骑士死亡。"],
     ]
     en_secs = [table(["Score", "Threshold", "Reward"], SCORE_THRESHOLDS), notes("How to push quests to success", en_note), faq_block(en_faq)]
-    zh_secs = [table(["得分", "阈值", "奖励"], SCORE_THRESHOLDS), notes("怎么把任务推向成功", zh_note), faq_block(zh_faq)]
+    zh_secs = [table(["得分", "阈值", "奖励"], SCORE_THRESHOLDS_ZH), notes("怎么把任务推向成功", zh_note), faq_block(zh_faq)]
     return {"slug": "sovereign-tower/guides/quest-success", "title": "Quest Success Strategies", "metaTitle": "Sovereign Tower: How to Succeed at Quests — Score Formula & Strategy", "metaDescription": "Push Sovereign Tower quests to success: stat matching, liked quest stacking, favourite meals and levelling — with the full score thresholds.", "intro": "Quests are the heart of Sovereign Tower. Matching the right knight to the right quest is the difference between critical success and a total wipe.", "sections": en_secs, "i18n": {"zh-CN": {"title": "任务成功策略", "metaTitle": "君王之塔 任务怎么成功：得分公式与策略", "metaDescription": "把君王之塔任务推向成功：属性匹配、叠加喜欢任务、最爱菜与升级——含完整得分阈值。", "intro": "任务是君王之塔的核心。把正确的骑士派到正确的任务，是 Critical Success 和全军覆没的区别。", "sections": zh_secs}}}
 
 def _wt(slug, title, metaT, metaD, intro, en_secs, zh_secs, zh_intro=None):
@@ -250,7 +258,7 @@ def build_walkthrough_act0():
         ["First quest", "Send Angelica on an early quest to learn the Round Table loop: assign, wait, read the outcome."],
     ]
     en_faq = [
-        ["How long is the prologue?", "It covers the first cycle or two — enough to learn the audience → quest → rewind loop (待补 exact length)."],
+        ["How long is the prologue?", "It covers the first cycle or two — enough to learn the audience → quest → rewind loop (TBD exact length)."],
         ["Can I fail the prologue?", "Not permanently — the rewind system lets you re-roll early decisions."],
     ]
     zh_steps = [
@@ -317,11 +325,11 @@ def build_walkthrough_beasthunt():
         "The Beast Hunt connects to Ari and The Wolf — both are tied to wolf/beast quest lines.",
         "Ari is a Griffin Rider (mount locked) and a strong Scout; he dislikes Hunt.",
         "The Wolf has the Wolf trait (mount locked) and is Loyal — score scales with party average affinity.",
-        "Beast Hunt routes are still being verified in detail (待补 exact steps).",
+        "Beast Hunt routes are still being verified in detail (TBD exact steps).",
     ]
     en_faq = [
         ["Which knights are best for beast hunts?", "Goberto, Rufus and Silgur prefer hunts; Angelica dislikes them."],
-        ["How do I get The Wolf?", "Reported through the beast/wolf route; exact steps are still being verified (待补)."],
+        ["How do I get The Wolf?", "Reported through the beast/wolf route; exact steps are still being verified (TBD)."],
     ]
     zh_note = [
         "野兽狩猎连接 Ari 和 The Wolf——两者都与狼/野兽任务线相关。",
@@ -344,7 +352,7 @@ def build_walkthrough_goosequest():
         "The goose route is the only confirmed path to Chester so far.",
     ]
     en_faq = [
-        ["How do I start the goose quest?", "It appears as the Clean Keeper Goose line; the Part 2 special outcome triggers Chester (待补 exact trigger)."],
+        ["How do I start the goose quest?", "It appears as the Clean Keeper Goose line; the Part 2 special outcome triggers Chester (TBD exact trigger)."],
         ["Is Chester worth it?", "Yes — he never minds any assignment (all-type affinity) and his random stats make him a wildcard."],
     ]
     zh_note = [
@@ -367,7 +375,7 @@ def build_walkthrough_rebellion():
         "Her hidden Time Perception gives a score bonus if she already has the quest in another timeline (use rewind to exploit it).",
     ]
     en_faq = [
-        ["What is the Rebellion?", "A storyline tied to Epicrate and Brimwood; exact branch steps are still being verified (待补)."],
+        ["What is the Rebellion?", "A storyline tied to Epicrate and Brimwood; exact branch steps are still being verified (TBD)."],
         ["How should I use Epicrate?", "Keep People and Nobility balanced so her Revolutionar score stays positive."],
     ]
     zh_note = [
@@ -397,14 +405,14 @@ def build_walkthrough_act2():
     en_note = [
         "Verified route: investigate the murderer → hear the confessions → rewind to the marked morning → talk to Alwena → confront the murderer → ask about voices / manipulated.",
         "Gwendan Villador is the reported suspect, but the murderer varies across runs — the 'who' is not fixed from save to save.",
-        "A death-sentence bug involving Gwendan has been reported; its exact trigger and fix status are pending confirmation (待补).",
+        "A death-sentence bug involving Gwendan has been reported; its exact trigger and fix status are pending confirmation (TBD).",
         "How the murder branch resolves changes who survives and which endings unlock; finishing it unlocks the first casualty achievement (72.3% Steam global rate).",
     ]
     en_faq = [
         ["When does the Act 2 murder happen?", "Around Cycle 10–11 in Act 2."],
-        ["Is Gwendan always the murderer?", "No — Gwendan Villador is the reported suspect, but the guilty knight varies across runs; treat any suspect as run-dependent until the exact rules are verified (待补)."],
+        ["Is Gwendan always the murderer?", "No — Gwendan Villador is the reported suspect, but the guilty knight varies across runs; treat any suspect as run-dependent until the exact rules are verified (TBD)."],
         ["What is the first casualty achievement?", "The achievement tied to completing the murder line. Its Steam global achievement rate is 72.3% — the murder investigation is the most-skipped major branch."],
-        ["What is the Gwendan death-sentence bug?", "A reported bug that can hand out a death sentence involving Gwendan; exact trigger and fix status are pending confirmation (待补)."],
+        ["What is the Gwendan death-sentence bug?", "A reported bug that can hand out a death sentence involving Gwendan; exact trigger and fix status are pending confirmation (TBD)."],
     ]
     zh_steps = [
         ["谋杀剧情从哪里开始", "谋杀事件是 Act 2 的剧情线，大约在 Cycle 10–11 触发。"],
@@ -435,11 +443,11 @@ def build_systems_annexes():
     en_note = [
         "Annexes are buildings that add systems to your tower: Carina's Forge repairs and crafts gear, the Witch's Alchemy Room makes consumables.",
         "Building and upgrading annexes unlocks more knights, tools and story.",
-        "Exact annex lists and costs are still being verified (待补).",
+        "Exact annex lists and costs are still being verified (TBD).",
     ]
     en_faq = [
         ["What do annexes do?", "They add systems — the Forge for gear, the Alchemy Room for consumables — and unlock progression."],
-        ["Which annex first?", "The Forge is the reported priority for keeping knights' armour repaired (待补 exact unlock)."],
+        ["Which annex first?", "The Forge is the reported priority for keeping knights' armour repaired (TBD exact unlock)."],
     ]
     zh_note = [
         "Annexes 是为高塔新增系统的建筑：Carina's Forge 锻炉修理/制作装备，Witch's Alchemy Room 炼金室制作消耗品。",
@@ -506,11 +514,11 @@ def build_systems_kingdommap():
     en_note = [
         "Sovereign Tower's kingdom spans several regions: Brizh, Clovermont/Groveshire, Fort Gavault, Drakovic Castle, Avalon, Almora, Brimwood and more.",
         "Region names come from the knight origins — each knight's homeland is a quest location that can add flavour bonuses (e.g. Alwena's Brizh Connoisseur).",
-        "A full interactive kingdom map is not yet verified (待补).",
+        "A full interactive kingdom map is not yet verified (TBD).",
     ]
     en_faq = [
         ["Why do regions matter?", "Some traits give score bonuses by region (e.g. Brizh Connoisseur); matching knights to their homeland quests can help."],
-        ["Is there a map?", "The in-game kingdom map exists (System: kingdom-map) but exact layout is still being verified (待补)."],
+        ["Is there a map?", "The in-game kingdom map exists (System: kingdom-map) but exact layout is still being verified (TBD)."],
     ]
     zh_note = [
         "君王之塔的王国横跨多个地区：Brizh、Clovermont/Groveshire、Fort Gavault、Drakovic Castle、Avalon、Almora、Brimwood 等。",
@@ -552,13 +560,13 @@ def build_updates_log():
     en_note = [
         "Released 2026-08-06 (v1.0, not early access).",
         "Launch sale: 15% off until 2026-08-20 (¥57.80 in CN).",
-        "2 DLCs are attached (appids 4870280 / 4911710) — content still being verified (待补).",
+        "2 DLCs are attached (appids 4870280 / 4911710) — content still being verified (TBD).",
         "This page is the change log for our guides — it updates as we verify new mechanics.",
         "Patch 1.0.8 (Aug 10, 2026): fixed a GODOT loading-screen crash, Gwendan being immortal, Gwendolen mourning twice, and a Ligia questline choice lock — plus more.",
     ]
     en_faq = [
         ["When was Sovereign Tower released?", "2026-08-06, as a full release (not early access)."],
-        ["What is in the DLCs?", "Two DLC entries exist on Steam; their contents are still being verified (待补)."],
+        ["What is in the DLCs?", "Two DLC entries exist on Steam; their contents are still being verified (TBD)."],
     ]
     zh_note = [
         "2026-08-06 发售（v1.0，非抢先体验）。",
@@ -642,11 +650,11 @@ def build_review_releasedemo():
         "Released 2026-08-06 as a full v1.0 (not early access).",
         "A demo was available before launch (official Demo Trailer exists).",
         "Launch sale: 15% off until 2026-08-20.",
-        "Two DLCs are attached (待补 contents).",
+        "Two DLCs are attached (TBD contents).",
     ]
     en_faq = [
         ["Is there a demo?", "Yes — a demo was available pre-launch; check the Steam page for current demo status."],
-        ["When is the next update?", "Follow the in-game updates and our update log; patch cadence is still being tracked (待补)."],
+        ["When is the next update?", "Follow the in-game updates and our update log; patch cadence is still being tracked (TBD)."],
     ]
     zh_note = [
         "2026-08-06 作为完整 v1.0 发售（非抢先体验）。",
@@ -664,13 +672,13 @@ def build_review_releasedemo():
 
 def build_review_soundtrack():
     en_note = [
-        "The game's official tags include soundtrack-adjacent qualities; the launch trailer features original music (待补 exact composer/album).",
-        "Soundtrack details (composer, track list, availability on streaming) are still being verified (待补).",
+        "The game's official tags include soundtrack-adjacent qualities; the launch trailer features original music (TBD exact composer/album).",
+        "Soundtrack details (composer, track list, availability on streaming) are still being verified (TBD).",
         "Check the Steam store page and the game's official channels for soundtrack news.",
     ]
     en_faq = [
-        ["Is there an official soundtrack?", "Not yet confirmed publicly (待补) — check the Steam page and developer channels."],
-        ["Who composed the music?", "Still being verified (待补)."],
+        ["Is there an official soundtrack?", "Not yet confirmed publicly (TBD) — check the Steam page and developer channels."],
+        ["Who composed the music?", "Still being verified (TBD)."],
     ]
     zh_note = [
         "游戏官方标签包含原声相关的品质；启动预告片带有原创音乐（确切作曲人/专辑待补）。",
@@ -688,12 +696,12 @@ def build_review_soundtrack():
 def build_items_overview():
     en_note = [
         "Sovereign Tower has consumables and crafting gear across the tower's systems (Forge, Alchemy Room).",
-        "Item lists are still being verified in-game (待补) — this overview will grow as we confirm items.",
+        "Item lists are still being verified in-game (TBD) — this overview will grow as we confirm items.",
         "Key item families reported: consumables (potions, food) and crafting gear (weapons, armour materials).",
     ]
     en_faq = [
-        ["What items exist in the game?", "Consumables and crafting gear are confirmed families; the full list is still being verified (待补)."],
-        ["Where do I get items?", "The Forge crafts gear and the Alchemy Room makes consumables (exact recipes 待补)."],
+        ["What items exist in the game?", "Consumables and crafting gear are confirmed families; the full list is still being verified (TBD)."],
+        ["Where do I get items?", "The Forge crafts gear and the Alchemy Room makes consumables (exact recipes TBD)."],
     ]
     zh_note = [
         "君王之塔在塔的系统（锻炉、炼金室）里有消耗品和锻造装备。",
@@ -711,11 +719,11 @@ def build_items_overview():
 def build_items_consumables():
     en_note = [
         "The Witch's Alchemy Room makes consumables (potions, food) for quests and recovery.",
-        "Consumable recipes and effects are still being verified (待补).",
+        "Consumable recipes and effects are still being verified (TBD).",
         "Favourite meals give +1.5 affinity and +0.5 quest score — food is the most confirmed consumable family.",
     ]
     en_faq = [
-        ["What consumables are there?", "Potions and food are reported; the full list is still being verified (待补)."],
+        ["What consumables are there?", "Potions and food are reported; the full list is still being verified (TBD)."],
         ["Are meals consumables?", "Yes — the 6 dishes are food consumables; feeding favourites boosts affinity and score."],
     ]
     zh_note = [
@@ -734,11 +742,11 @@ def build_items_consumables():
 def build_items_craftinggear():
     en_note = [
         "Carina's Forge repairs and crafts gear; armour acts as hit points for quest damage.",
-        "Gear crafting recipes and upgrade paths are still being verified (待补).",
+        "Gear crafting recipes and upgrade paths are still being verified (TBD).",
         "Childeric starts with armour 9 (highest) — a strong tank for damage-heavy quests.",
     ]
     en_faq = [
-        ["How does the Forge work?", "It repairs and crafts gear; exact recipes and slots are still being verified (待补)."],
+        ["How does the Forge work?", "It repairs and crafts gear; exact recipes and slots are still being verified (TBD)."],
         ["What does armour do?", "It is the hit points for quest damage — keep knights' armour repaired before risky quests."],
     ]
     zh_note = [
@@ -786,7 +794,7 @@ def build_guides_controls():
         "Full controller support (Xbox and PlayStation) plus mouse and keyboard.",
         "Official feature: playable without timed input — no pressure to rush decisions.",
         "The game supports save-anytime and Steam Cloud.",
-        "Exact key bindings and controller mapping are still being compiled (待补).",
+        "Exact key bindings and controller mapping are still being compiled (TBD).",
     ]
     en_faq = [
         ["Does it support controllers?", "Yes — full controller support for Xbox and PlayStation controllers."],
@@ -840,7 +848,7 @@ def build_guides_knightloyalty():
     ]
     en_faq = [
         ["How do I keep a knight from resigning?", "Keep affinity above −7: assign liked quests, feed favourite meals and match their sovereign style."],
-        ["Can a resigned knight come back?", "Not in the same run — they're struck off the roster (待补 any exception)."],
+        ["Can a resigned knight come back?", "Not in the same run — they're struck off the roster (TBD any exception)."],
     ]
     zh_note = [
         "好感 −10 到 +10；多数骑士在 −7 辞职。",
@@ -858,12 +866,12 @@ def build_guides_knightloyalty():
 
 def build_guides_newgameplus():
     en_note = [
-        "New Game Plus is available after a completed run (per fan sources; exact unlock 待补).",
+        "New Game Plus is available after a completed run (per fan sources; exact unlock TBD).",
         "It carries over progression so you can explore mutually exclusive branches and endings.",
         "Use it to chase endings you locked out in run one (Arthur marriage, hidden endings, other faction outcomes).",
     ]
     en_faq = [
-        ["What carries over in NG+?", "Exact carry-over is still being verified (待补)."],
+        ["What carries over in NG+?", "Exact carry-over is still being verified (TBD)."],
         ["Why play NG+?", "Several routes and endings are mutually exclusive — NG+ is the clean way to see them."],
     ]
     zh_note = [
@@ -883,7 +891,7 @@ def build_guides_alliances():
     en_note = [
         "The Cycle 4 Dragon Knight ultimatum offers alliance paths: rally the people, ally with nobles, or use mystic forces — each with faction and gold requirements.",
         "Alliances unlock alternate endings and change faction dynamics.",
-        "Exact alliance branches beyond Cycle 4 are still being verified (待补).",
+        "Exact alliance branches beyond Cycle 4 are still being verified (TBD).",
     ]
     en_faq = [
         ["How do alliances work?", "Key decisions (e.g. the Cycle 4 ultimatum) let you side with a faction group; each requires specific faction and gold thresholds."],
@@ -956,12 +964,12 @@ def build_guides_archetypes():
 
 def build_guides_towerservants():
     en_note = [
-        "The Tower has servants and staff beyond the knights (reported; exact roster 待补).",
+        "The Tower has servants and staff beyond the knights (reported; exact roster TBD).",
         "Intendant Alwena is the key staff figure — she manages the Tower and reveals knight rumours.",
-        "Tower servants likely include court roles and maintenance staff; exact list is still being verified (待补).",
+        "Tower servants likely include court roles and maintenance staff; exact list is still being verified (TBD).",
     ]
     en_faq = [
-        ["Who are the tower servants?", "Reported as support staff; the exact list is still being verified (待补)."],
+        ["Who are the tower servants?", "Reported as support staff; the exact list is still being verified (TBD)."],
         ["What does the Intendant do?", "Alwena manages the Tower and reveals other knights' hidden traits one at a time."],
     ]
     zh_note = [
@@ -1011,12 +1019,12 @@ def build_knights_stats():
 def build_knights_thebard():
     en_note = [
         "The Bard (Hildegard) appears in fan wiki data as a secret knight.",
-        "Exact recruit steps and stats are still being verified (待补).",
+        "Exact recruit steps and stats are still being verified (TBD).",
         "Watch for story events tied to music or performances — musical conditions appear in quest data.",
     ]
     en_faq = [
-        ["Who is The Bard?", "A secret knight reported in fan wiki data; exact details are still being verified (待补)."],
-        ["How do I recruit The Bard?", "Recruit steps are not yet confirmed (待补)."],
+        ["Who is The Bard?", "A secret knight reported in fan wiki data; exact details are still being verified (TBD)."],
+        ["How do I recruit The Bard?", "Recruit steps are not yet confirmed (TBD)."],
     ]
     zh_note = [
         "The Bard（Hildegard）出现在粉丝 wiki 数据的隐藏骑士里。",

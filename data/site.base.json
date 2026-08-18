@@ -29,22 +29,28 @@
     "affiliates": {},
     "i18n": {
       "en": {
-        "name": "CozySimHub"
+        "name": "CozySimHub",
+        "description": "Sovereign Tower Chinese guide hub: all 24 knight profiles, hidden knight recruitment, romance secrets, every ending, recipe comparison, quest mechanics and affinity calculators."
       },
       "zh-CN": {
-        "name": "CozySimHub"
+        "name": "CozySimHub",
+        "description": "君王之塔 Sovereign Tower 中文攻略 Hub：24 位骑士全量档案、隐藏骑士招募、恋爱隐藏条件、全结局、菜谱对照、任务机制与好感计算器。"
       },
       "ja": {
-        "name": "CozySimHub"
+        "name": "CozySimHub",
+        "description": "『ソブリンタワー』中文攻略ハブ：24人の騎士全プロフィール、隠し騎士の勧誘、恋愛条件、全エンディング、レシピ比較、クエスト仕組みと好感度計算ツール。"
       },
       "ko": {
-        "name": "CozySimHub"
+        "name": "CozySimHub",
+        "description": "소버린 타워 중문 공략 허브: 24명 기사 전체 프로필, 숨은 기사 모집, 연애 조건, 모든 엔딩, 레시피 비교, 퀘스트 메커니즘과 호감도 계산기."
       },
       "fr": {
-        "name": "CozySimHub"
+        "name": "CozySimHub",
+        "description": "Hub de guides chinois pour Sovereign Tower : profils des 24 chevaliers, recrutement des chevaliers cachés, conditions de romance, toutes les fins, comparaison de recettes, mécaniques de quêtes et calculateurs d'affinité."
       },
       "de": {
-        "name": "CozySimHub"
+        "name": "CozySimHub",
+        "description": "Sovereign Tower chinesischer Guide-Hub: alle 24 Ritter-Profile, versteckte Ritter-Rekrutierung, Romanzen-Bedingungen, alle Enden, Rezeptvergleich, Quest-Mechaniken und Affinitätsrechner."
       }
     }
   },
