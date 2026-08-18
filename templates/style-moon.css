@@ -54,7 +54,7 @@
 .moon-cards .char-card[data-soon]{opacity:.75}
 
 /* ---------- 月光封底（映射共享 colophon 深底金线） ---------- */
-.moon-colophon{grid-column:1 / -1;margin:44px 38px 34px;padding:34px 38px;background:linear-gradient(180deg,var(--deep),var(--deep-2));color:rgba(237,227,206,.82);border-radius:16px;box-shadow:var(--shadow-md);display:grid;grid-template-columns:1.2fr 1fr;gap:28px;position:relative;overflow:hidden}
+.moon-colophon{grid-column:2 / -1;margin:44px 38px 34px;padding:34px 38px;background:linear-gradient(180deg,var(--deep),var(--deep-2));color:rgba(237,227,206,.82);border-radius:16px;box-shadow:var(--shadow-md);display:grid;grid-template-columns:1.2fr 1fr;gap:28px;position:relative;overflow:hidden}
 .moon-colophon::before{content:"";position:absolute;inset:9px;border:1px solid rgba(217,182,74,.25);border-radius:10px;pointer-events:none}
 .moon-colophon h3{color:#F5EDDB;font-size:26px;margin-bottom:8px;font-weight:700}
 .moon-colophon p{font-size:13.5px;line-height:1.7}
