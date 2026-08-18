@@ -1228,8 +1228,8 @@
          "12",
          "8",
          "8 / 9 / 10 / 0 / 12 / 7",
-         "Brizhian Butter Shortbread, Crêpe",
-         "The only knight who can dig up other knights' rumours — one at a time, and only ones you don't already know."
+         "Brizhian Butter Shortbread、Crêpe",
+         "他の騎士の噂を掘り出せる唯一の騎士（一度にひとつ、まだ知らないものだけ）。"
         ],
         [
          "Angelica",
@@ -1237,8 +1237,8 @@
          "1",
          "5",
          "4 / 8 / 3 / 0 / 2 / 7",
-         "Préfou, Crêpe",
-         "Sovereign style: likes Kind, dislikes Tyrannic; dislikes Ghost/Assassination."
+         "Préfou、Crêpe",
+         "君主スタイル：Kind を好み Tyrannic を嫌う；Ghost/Assassination も嫌う。"
         ],
         [
          "Ari",
@@ -1246,8 +1246,8 @@
          "8",
          "6",
          "5 / 13 / 8 / 3 / 8 / 6",
-         "Brizhian Butter Shortbread, Crêpe",
-         "Never resigns; mount Columbus cuts quests by −4 cycles."
+         "Brizhian Butter Shortbread、Crêpe",
+         "絶対に辞任しない；騎乗 Columbus でクエストを −4 サイクル短縮。"
         ],
         [
          "Arron",
@@ -1255,8 +1255,8 @@
          "3",
          "7",
          "2 / 2 / 3 / 6 / 7 / 8",
-         "Crêpe, Brizhian Butter Shortbread",
-         "Story can grant the Dragon Knight trait (small bonus on any quest, doubled in combat)."
+         "Crêpe、Brizhian Butter Shortbread",
+         "ストーリーで Dragon Knight 特性を獲得可（全クエストに小ボーナス、戦闘では倍増）。"
         ],
         [
          "Brunhilda",
@@ -1264,17 +1264,17 @@
          "1",
          "6",
          "7 / 2 / 6 / 7 / 3 / 0",
-         "Galette-Saucisse, Lion's Taco",
-         "Sovereign style: likes Audacious, dislikes Wise."
+         "Galette-Saucisse、Lion's Taco",
+         "君主スタイル：Audacious を好み Wise を嫌う。"
         ],
         [
          "Chester",
          "Milkford",
          "15",
          "6",
-         "Random (Chester rerolls 0–15 every check)",
-         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco",
-         "Random stats + all-type affinity = a universal fill-in."
+         "ランダム（Chester は判定ごとに 0–15 を再ロール）",
+         "Galette-Saucisse、Croque-Monsieur、Préfou、Crêpe、Brizhian Butter Shortbread、Lion's Taco",
+         "ランダム属性 + 全タイプ親密度 = 万能の補欠。"
         ],
         [
          "Childeric",
@@ -1282,8 +1282,8 @@
          "6",
          "9",
          "7 / 4 / 4 / 0 / 12 / 4",
-         "Crêpe, Croque-Monsieur",
-         "Armour 9 is the highest in the game."
+         "Crêpe、Croque-Monsieur",
+         "鎧 9 はゲーム内最高値。"
         ],
         [
          "Daguez",
@@ -1291,8 +1291,8 @@
          "1",
          "6",
          "15 / 0 / 0 / 0 / 0 / 9",
-         "Crêpe, Galette-Saucisse, Préfou",
-         "Full 15 Strength; greatsword locked."
+         "Crêpe、Galette-Saucisse、Préfou",
+         "STR 満点 15；大剣は固定。"
         ],
         [
          "Dulahan",
@@ -1300,8 +1300,8 @@
          "1",
          "7",
          "8 / 8 / 0 / 9 / 0 / 0",
-         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco",
-         "Demon knight; only appears after Goberto dies. Loves all 6 dishes."
+         "Galette-Saucisse、Croque-Monsieur、Préfou、Crêpe、Brizhian Butter Shortbread、Lion's Taco",
+         "悪魔騎士；Goberto が死んだ後にのみ出現。全 6 種の料理を好む。"
         ],
         [
          "Edith",
@@ -1309,8 +1309,8 @@
          "8",
          "7",
          "7 / 10 / 3 / 12 / 7 / 0",
-         "Croque-Monsieur, Brizhian Butter Shortbread",
-         "MAG 12 is tied for the highest; relic Dainself."
+         "Croque-Monsieur、Brizhian Butter Shortbread",
+         "MAG 12 は同率最高；聖遺物 Dainself。"
         ],
         [
          "Epicrate",
@@ -1318,8 +1318,8 @@
          "9",
          "6",
          "3 / 3 / 9 / 9 / 12 / 3",
-         "TBD",
-         "Brimwood uprising revolutionary figure."
+         "待補",
+         "Brimwood 蜂起の革命的人物。"
         ],
         [
          "Gideon",
@@ -1327,8 +1327,8 @@
          "5",
          "5",
          "4 / 6 / 8 / 3 / 7 / 2",
-         "Brizhian Butter Shortbread, Crêpe",
-         "Protagonist; candidate at cycle 13. Sovereign style: likes Audacious, dislikes Tyrannic."
+         "Brizhian Butter Shortbread、Crêpe",
+         "主人公格；サイクル 13 の候補。君主スタイル：Audacious を好み Tyrannic を嫌う。"
         ],
         [
          "Goberto",
@@ -1336,8 +1336,8 @@
          "1",
          "7",
          "8 / 1 / 3 / 0 / 0 / 0",
-         "Lion's Taco, Galette-Saucisse, Brizhian Butter Shortbread",
-         "First proper recruit (cycle 2). The Almor armour line can raise armour 7→17 and grant Perfect Armour."
+         "Lion's Taco、Galette-Saucisse、Brizhian Butter Shortbread",
+         "最初の正式採用（サイクル 2）。Almor 防具ラインで防具を 7→17 に上げ、Perfect Armour を獲得可。"
         ],
         [
          "Gothild",
@@ -1345,8 +1345,8 @@
          "7",
          "6",
          "9 / 3 / 5 / 3 / 9 / 8",
-         "Croque-Monsieur, Brizhian Butter Shortbread",
-         "Bodyguard; joins via the Victoria ambush or the Enberg line."
+         "Croque-Monsieur、Brizhian Butter Shortbread",
+         "護衛役；Victoria 伏撃または Enberg ラインで加入。"
         ],
         [
          "Gwendan Villador",
@@ -1354,8 +1354,8 @@
          "1",
          "6",
          "5 / 4 / 8 / 2 / 3 / 1",
-         "Crêpe, Croque-Monsieur",
-         "Dislikes Audacious; murder suspect (varies across runs)."
+         "Crêpe、Croque-Monsieur",
+         "Audacious を嫌う；殺人事件の容疑者（周回ごとに変化）。"
         ],
         [
          "Ligia",
@@ -1363,8 +1363,8 @@
          "6",
          "5",
          "3 / 8 / 4 / 10 / 2 / 6",
-         "Préfou, Crêpe",
-         "Scholar; joins via the Southbay line (father survives)."
+         "Préfou、Crêpe",
+         "学者；Southbay ライン（父生存）で加入。"
         ],
         [
          "Oliver",
@@ -1372,8 +1372,8 @@
          "6",
          "7",
          "2 / 8 / 3 / 3 / 9 / 6",
-         "Galette-Saucisse, Croque-Monsieur",
-         "Office worker; candidate at cycle 19 if spared in the prologue."
+         "Galette-Saucisse、Croque-Monsieur",
+         "会社員；序章で助命された場合サイクル 19 の候補。"
         ],
         [
          "Rufus",
@@ -1381,8 +1381,8 @@
          "1",
          "7",
          "6 / 6 / 1 / 3 / 7 / 1",
-         "Galette-Saucisse, Croque-Monsieur",
-         "The Wolf's curse-lifted human form; lift the curse at Groveshire."
+         "Galette-Saucisse、Croque-Monsieur",
+         "The Wolf の呪いが解けた人間の姿；Groveshire で呪いを解く。"
         ],
         [
          "Silgur",
@@ -1390,8 +1390,8 @@
          "1",
          "5",
          "3 / 8 / 3 / 0 / 8 / 1",
-         "Galette-Saucisse, Crêpe",
-         "Hunter; joins via the standard Groveshire success."
+         "Galette-Saucisse、Crêpe",
+         "狩人；Groveshire 標準成功で加入。"
         ],
         [
          "Tarcus",
@@ -1399,8 +1399,8 @@
          "1",
          "8",
          "6 / 3 / 1 / 0 / 10 / 5",
-         "Brizhian Butter Shortbread, Préfou",
-         "Nobles' defender; joins via the Gavault line (mother's side)."
+         "Brizhian Butter Shortbread、Préfou",
+         "貴族の擁護者；Gavault ライン（母側）で加入。"
         ],
         [
          "The Wolf",
@@ -1408,8 +1408,8 @@
          "1",
          "5",
          "3 / 7 / 3 / 3 / 7 / 1",
-         "Galette-Saucisse, Croque-Monsieur",
-         "Tamed by Angelica via the beast route; mount locked."
+         "Galette-Saucisse、Croque-Monsieur",
+         "Angelica が獣ルートで手なずける；騎乗固定。"
         ],
         [
          "Ursula",
@@ -1417,8 +1417,8 @@
          "1",
          "5",
          "3 / 4 / 2 / 7 / 7 / 0",
-         "Préfou, Lion's Taco",
-         "Immortal — re-recruitable after death; auto-joins at cycle 5."
+         "Préfou、Lion's Taco",
+         "不死——死亡後に再採用可；サイクル 5 に自動加入。"
         ],
         [
          "Victoria",
@@ -1426,8 +1426,8 @@
          "13",
          "7",
          "13 / 13 / 9 / 13 / 10 / 9",
-         "Croque-Monsieur, Préfou",
-         "Highest starting stats in the game (67 total); joins via the Enberg assassination."
+         "Croque-Monsieur、Préfou",
+         "ゲーム内最高の初期ステータス（合計 67）；Enberg 暗殺で加入。"
         ],
         [
          "Zolta",
@@ -1435,8 +1435,8 @@
          "6",
          "7",
          "4 / 5 / 2 / 9 / 2 / 11",
-         "Crêpe, Lion's Taco",
-         "Gambler; joins via the Kutnar derby."
+         "Crêpe、Lion's Taco",
+         "賭博師；Kutnar ダービーで加入。"
         ]
        ]
       },
@@ -1488,8 +1488,8 @@
          "12",
          "8",
          "8 / 9 / 10 / 0 / 12 / 7",
-         "Brizhian Butter Shortbread, Crêpe",
-         "The only knight who can dig up other knights' rumours — one at a time, and only ones you don't already know."
+         "Brizhian Butter Shortbread、Crêpe",
+         "다른 기사의 소문을 캐낼 수 있는 유일한 기사(한 번에 하나, 아직 모르는 것만)."
         ],
         [
          "Angelica",
@@ -1497,8 +1497,8 @@
          "1",
          "5",
          "4 / 8 / 3 / 0 / 2 / 7",
-         "Préfou, Crêpe",
-         "Sovereign style: likes Kind, dislikes Tyrannic; dislikes Ghost/Assassination."
+         "Préfou、Crêpe",
+         "군주 스타일: Kind 선호, Tyrannic 비선호; Ghost/Assassination도 비선호."
         ],
         [
          "Ari",
@@ -1506,8 +1506,8 @@
          "8",
          "6",
          "5 / 13 / 8 / 3 / 8 / 6",
-         "Brizhian Butter Shortbread, Crêpe",
-         "Never resigns; mount Columbus cuts quests by −4 cycles."
+         "Brizhian Butter Shortbread、Crêpe",
+         "절대 사임하지 않음; 탈것 Columbus로 퀘스트를 −4 사이클 단축."
         ],
         [
          "Arron",
@@ -1515,8 +1515,8 @@
          "3",
          "7",
          "2 / 2 / 3 / 6 / 7 / 8",
-         "Crêpe, Brizhian Butter Shortbread",
-         "Story can grant the Dragon Knight trait (small bonus on any quest, doubled in combat)."
+         "Crêpe、Brizhian Butter Shortbread",
+         "스토리로 Dragon Knight 특성 획득 가능(모든 퀘스트 소폭 보너스, 전투에서 2배)."
         ],
         [
          "Brunhilda",
@@ -1524,17 +1524,17 @@
          "1",
          "6",
          "7 / 2 / 6 / 7 / 3 / 0",
-         "Galette-Saucisse, Lion's Taco",
-         "Sovereign style: likes Audacious, dislikes Wise."
+         "Galette-Saucisse、Lion's Taco",
+         "군주 스타일: Audacious 선호, Wise 비선호."
         ],
         [
          "Chester",
          "Milkford",
          "15",
          "6",
-         "Random (Chester rerolls 0–15 every check)",
-         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco",
-         "Random stats + all-type affinity = a universal fill-in."
+         "랜덤（Chester는 판정마다 0–15 재굴림）",
+         "Galette-Saucisse、Croque-Monsieur、Préfou、Crêpe、Brizhian Butter Shortbread、Lion's Taco",
+         "랜덤 스탯 + 전 타입 친밀도 = 만능 보충 요원."
         ],
         [
          "Childeric",
@@ -1542,8 +1542,8 @@
          "6",
          "9",
          "7 / 4 / 4 / 0 / 12 / 4",
-         "Crêpe, Croque-Monsieur",
-         "Armour 9 is the highest in the game."
+         "Crêpe、Croque-Monsieur",
+         "갑옷 9는 게임 내 최고치."
         ],
         [
          "Daguez",
@@ -1551,8 +1551,8 @@
          "1",
          "6",
          "15 / 0 / 0 / 0 / 0 / 9",
-         "Crêpe, Galette-Saucisse, Préfou",
-         "Full 15 Strength; greatsword locked."
+         "Crêpe、Galette-Saucisse、Préfou",
+         "STR 만점 15; 대검 고정."
         ],
         [
          "Dulahan",
@@ -1560,8 +1560,8 @@
          "1",
          "7",
          "8 / 8 / 0 / 9 / 0 / 0",
-         "Galette-Saucisse, Croque-Monsieur, Préfou, Crêpe, Brizhian Butter Shortbread, Lion's Taco",
-         "Demon knight; only appears after Goberto dies. Loves all 6 dishes."
+         "Galette-Saucisse、Croque-Monsieur、Préfou、Crêpe、Brizhian Butter Shortbread、Lion's Taco",
+         "악마 기사; Goberto 사망 후에만 등장. 6가지 요리를 모두 좋아함."
         ],
         [
          "Edith",
@@ -1569,8 +1569,8 @@
          "8",
          "7",
          "7 / 10 / 3 / 12 / 7 / 0",
-         "Croque-Monsieur, Brizhian Butter Shortbread",
-         "MAG 12 is tied for the highest; relic Dainself."
+         "Croque-Monsieur、Brizhian Butter Shortbread",
+         "MAG 12는 공동 최고; 유물 Dainself."
         ],
         [
          "Epicrate",
@@ -1578,8 +1578,8 @@
          "9",
          "6",
          "3 / 3 / 9 / 9 / 12 / 3",
-         "TBD",
-         "Brimwood uprising revolutionary figure."
+         "확인 중",
+         "Brimwood 봉기의 혁명 인물."
         ],
         [
          "Gideon",
@@ -1587,8 +1587,8 @@
          "5",
          "5",
          "4 / 6 / 8 / 3 / 7 / 2",
-         "Brizhian Butter Shortbread, Crêpe",
-         "Protagonist; candidate at cycle 13. Sovereign style: likes Audacious, dislikes Tyrannic."
+         "Brizhian Butter Shortbread、Crêpe",
+         "주인공 격; 사이클 13의 후보. 군주 스타일: Audacious 선호, Tyrannic 비선호."
         ],
         [
          "Goberto",
@@ -1596,8 +1596,8 @@
          "1",
          "7",
          "8 / 1 / 3 / 0 / 0 / 0",
-         "Lion's Taco, Galette-Saucisse, Brizhian Butter Shortbread",
-         "First proper recruit (cycle 2). The Almor armour line can raise armour 7→17 and grant Perfect Armour."
+         "Lion's Taco、Galette-Saucisse、Brizhian Butter Shortbread",
+         "첫 정식 고용(사이클 2). Almor 방어구 라인으로 방어구를 7→17로 올리고 Perfect Armour 획득 가능."
         ],
         [
          "Gothild",
@@ -1605,8 +1605,8 @@
          "7",
          "6",
          "9 / 3 / 5 / 3 / 9 / 8",
-         "Croque-Monsieur, Brizhian Butter Shortbread",
-         "Bodyguard; joins via the Victoria ambush or the Enberg line."
+         "Croque-Monsieur、Brizhian Butter Shortbread",
+         "경호원; Victoria 매복 또는 Enberg 라인으로 합류."
         ],
         [
          "Gwendan Villador",
@@ -1614,8 +1614,8 @@
          "1",
          "6",
          "5 / 4 / 8 / 2 / 3 / 1",
-         "Crêpe, Croque-Monsieur",
-         "Dislikes Audacious; murder suspect (varies across runs)."
+         "Crêpe、Croque-Monsieur",
+         "Audacious 비선호; 살인 사건 용의자(회차마다 다름)."
         ],
         [
          "Ligia",
@@ -1623,8 +1623,8 @@
          "6",
          "5",
          "3 / 8 / 4 / 10 / 2 / 6",
-         "Préfou, Crêpe",
-         "Scholar; joins via the Southbay line (father survives)."
+         "Préfou、Crêpe",
+         "학자; Southbay 라인(아버지 생존)으로 합류."
         ],
         [
          "Oliver",
@@ -1632,8 +1632,8 @@
          "6",
          "7",
          "2 / 8 / 3 / 3 / 9 / 6",
-         "Galette-Saucisse, Croque-Monsieur",
-         "Office worker; candidate at cycle 19 if spared in the prologue."
+         "Galette-Saucisse、Croque-Monsieur",
+         "회사원; 프롤로그에서 살아남으면 사이클 19의 후보."
         ],
         [
          "Rufus",
@@ -1641,8 +1641,8 @@
          "1",
          "7",
          "6 / 6 / 1 / 3 / 7 / 1",
-         "Galette-Saucisse, Croque-Monsieur",
-         "The Wolf's curse-lifted human form; lift the curse at Groveshire."
+         "Galette-Saucisse、Croque-Monsieur",
+         "The Wolf의 저주가 풀린 인간 형태; Groveshire에서 저주 해제."
         ],
         [
          "Silgur",
@@ -1650,8 +1650,8 @@
          "1",
          "5",
          "3 / 8 / 3 / 0 / 8 / 1",
-         "Galette-Saucisse, Crêpe",
-         "Hunter; joins via the standard Groveshire success."
+         "Galette-Saucisse、Crêpe",
+         "사냥꾼; Groveshire 표준 성공으로 합류."
         ],
         [
          "Tarcus",
@@ -1659,8 +1659,8 @@
          "1",
          "8",
          "6 / 3 / 1 / 0 / 10 / 5",
-         "Brizhian Butter Shortbread, Préfou",
-         "Nobles' defender; joins via the Gavault line (mother's side)."
+         "Brizhian Butter Shortbread、Préfou",
+         "귀족의 수호자; Gavault 라인(어머니 쪽)으로 합류."
         ],
         [
          "The Wolf",
@@ -1668,8 +1668,8 @@
          "1",
          "5",
          "3 / 7 / 3 / 3 / 7 / 1",
-         "Galette-Saucisse, Croque-Monsieur",
-         "Tamed by Angelica via the beast route; mount locked."
+         "Galette-Saucisse、Croque-Monsieur",
+         "Angelica가 야수 루트로 길들임; 탈것 고정."
         ],
         [
          "Ursula",
@@ -1677,8 +1677,8 @@
          "1",
          "5",
          "3 / 4 / 2 / 7 / 7 / 0",
-         "Préfou, Lion's Taco",
-         "Immortal — re-recruitable after death; auto-joins at cycle 5."
+         "Préfou、Lion's Taco",
+         "불사 — 사망 후 재고용 가능; 사이클 5에 자동 합류."
         ],
         [
          "Victoria",
@@ -1686,8 +1686,8 @@
          "13",
          "7",
          "13 / 13 / 9 / 13 / 10 / 9",
-         "Croque-Monsieur, Préfou",
-         "Highest starting stats in the game (67 total); joins via the Enberg assassination."
+         "Croque-Monsieur、Préfou",
+         "게임 내 최고 초기 스탯(합계 67); Enberg 암살로 합류."
         ],
         [
          "Zolta",
@@ -1695,8 +1695,8 @@
          "6",
          "7",
          "4 / 5 / 2 / 9 / 2 / 11",
-         "Crêpe, Lion's Taco",
-         "Gambler; joins via the Kutnar derby."
+         "Crêpe、Lion's Taco",
+         "도박꾼; Kutnar 더비로 합류."
         ]
        ]
       },
@@ -8135,7 +8135,7 @@
          "Milkford",
          "15",
          "6",
-         "随机（Chester 每次判定重 roll 0–15）"
+         "ランダム（Chester は判定ごとに 0–15 を再ロール）"
         ],
         [
          "Childeric",
@@ -8174,94 +8174,94 @@
         ],
         [
          "Gideon",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Tower City",
+         "5",
+         "5",
+         "4 / 6 / 8 / 3 / 7 / 2"
         ],
         [
          "Goberto",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Naoned",
+         "1",
+         "7",
+         "8 / 1 / 3 / 0 / 0 / 0"
         ],
         [
          "Gothild",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Mana Strala",
+         "7",
+         "6",
+         "9 / 3 / 5 / 3 / 9 / 8"
         ],
         [
          "Gwendan Villador",
-         "待补",
+         "Villador",
          "1",
          "6",
-         "待补"
+         "5 / 4 / 8 / 2 / 3 / 1"
         ],
         [
          "Ligia",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Southbay Gate",
+         "6",
+         "5",
+         "3 / 8 / 4 / 10 / 2 / 6"
         ],
         [
          "Oliver",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Angelor",
+         "6",
+         "7",
+         "2 / 8 / 3 / 3 / 9 / 6"
         ],
         [
          "Rufus",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Belthorn (Groveshire)",
+         "1",
+         "7",
+         "6 / 6 / 1 / 3 / 7 / 1"
         ],
         [
          "Silgur",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Beaconsbury",
+         "1",
+         "5",
+         "3 / 8 / 3 / 0 / 8 / 1"
         ],
         [
          "Tarcus",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Mavignac (Gavault)",
+         "1",
+         "8",
+         "6 / 3 / 1 / 0 / 10 / 5"
         ],
         [
          "The Wolf",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Belthorn (Groveshire)",
+         "1",
+         "5",
+         "3 / 7 / 3 / 3 / 7 / 1"
         ],
         [
          "Ursula",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Mossgart",
+         "1",
+         "5",
+         "3 / 4 / 2 / 7 / 7 / 0"
         ],
         [
          "Victoria",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "City of Enberg",
+         "13",
+         "7",
+         "13 / 13 / 9 / 13 / 10 / 9"
         ],
         [
          "Zolta",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Volga Camp",
+         "6",
+         "7",
+         "4 / 5 / 2 / 9 / 2 / 11"
         ]
        ]
       },
@@ -8357,7 +8357,7 @@
          "Milkford",
          "15",
          "6",
-         "随机（Chester 每次判定重 roll 0–15）"
+         "랜덤（Chester는 판정마다 0–15 재굴림）"
         ],
         [
          "Childeric",
@@ -8396,94 +8396,94 @@
         ],
         [
          "Gideon",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Tower City",
+         "5",
+         "5",
+         "4 / 6 / 8 / 3 / 7 / 2"
         ],
         [
          "Goberto",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Naoned",
+         "1",
+         "7",
+         "8 / 1 / 3 / 0 / 0 / 0"
         ],
         [
          "Gothild",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Mana Strala",
+         "7",
+         "6",
+         "9 / 3 / 5 / 3 / 9 / 8"
         ],
         [
          "Gwendan Villador",
-         "待补",
+         "Villador",
          "1",
          "6",
-         "待补"
+         "5 / 4 / 8 / 2 / 3 / 1"
         ],
         [
          "Ligia",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Southbay Gate",
+         "6",
+         "5",
+         "3 / 8 / 4 / 10 / 2 / 6"
         ],
         [
          "Oliver",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Angelor",
+         "6",
+         "7",
+         "2 / 8 / 3 / 3 / 9 / 6"
         ],
         [
          "Rufus",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Belthorn (Groveshire)",
+         "1",
+         "7",
+         "6 / 6 / 1 / 3 / 7 / 1"
         ],
         [
          "Silgur",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Beaconsbury",
+         "1",
+         "5",
+         "3 / 8 / 3 / 0 / 8 / 1"
         ],
         [
          "Tarcus",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Mavignac (Gavault)",
+         "1",
+         "8",
+         "6 / 3 / 1 / 0 / 10 / 5"
         ],
         [
          "The Wolf",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Belthorn (Groveshire)",
+         "1",
+         "5",
+         "3 / 7 / 3 / 3 / 7 / 1"
         ],
         [
          "Ursula",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Mossgart",
+         "1",
+         "5",
+         "3 / 4 / 2 / 7 / 7 / 0"
         ],
         [
          "Victoria",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "City of Enberg",
+         "13",
+         "7",
+         "13 / 13 / 9 / 13 / 10 / 9"
         ],
         [
          "Zolta",
-         "待补",
-         "待补",
-         "待补",
-         "待补"
+         "Volga Camp",
+         "6",
+         "7",
+         "4 / 5 / 2 / 9 / 2 / 11"
         ]
        ]
       },
@@ -9643,99 +9643,99 @@
        "rows": [
         [
          "Alwena",
-         "一次性紧急事件：Act 2 之后，当圆桌可用骑士为 0 时（在册且不在任务中，死亡/辞职者除外）她会自愿加入。无法主动触发，没有第二次机会。永不死亡/永不辞职。"
+         "一度きりの緊急イベント：Act 2 以降、円卓の可用騎士が 0 人（在籍かつクエスト中でない者、死亡/辞任者は除外）のとき自発的に加入。任意に発生させられず、二度目のチャンスはない。絶対に死なず、絶対に辞任しない。"
         ],
         [
          "Angelica",
-         "开场剧情自动加入。"
+         "冒頭ストーリーで自動加入。"
         ],
         [
          "Ari",
-         "花 25 金币召唤（Basalt 兄弟的弟弟）。"
+         "25 ゴールドで召喚（Basalt 兄弟の弟）。"
         ],
         [
          "Arron",
-         "无候选朝会——通过 Drakovic 剧情线加入。"
+         "候補朝会なし——Drakovic ストーリーラインで加入。"
         ],
         [
          "Brunhilda",
-         "Gavault 剧情线女儿侧（county_quest_gavault_2_daughter_side 到结局），无候选朝会。"
+         "Gavault ストーリーラインの娘側（county_quest_gavault_2_daughter_side から終局まで）；候補朝会なし。"
         ],
         [
          "Chester",
-         "Clean Keeper Goose Part 2 任意特殊结局后出现（奶酪/马/Gwendan 三选一，各付 1 金币）——Chester 才是真正的奖品。"
+         "Clean Keeper Goose Part 2 の任意の特殊結果（チーズ / 馬 / Gwendan の三択、各 1 ゴールド）後に出現。本当の賞品は Chester。"
         ],
         [
          "Childeric",
-         "待补"
+         "待補"
         ],
         [
          "Daguez",
-         "待补"
+         "待補"
         ],
         [
          "Dulahan",
-         "Goberto 死后才出现（恶魔骑士）。"
+         "Goberto 死亡ルートで悪魔騎士として出現。"
         ],
         [
          "Edith",
-         "待补"
+         "待補"
         ],
         [
          "Epicrate",
-         "待补"
+         "待補"
         ],
         [
          "Gideon",
-         "中文资料：第 6 天可招。"
+         "サイクル 13 に候補朝会で出現（Act 2、自発的に加入）。"
         ],
         [
          "Goberto",
-         "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+         "最初の正式採用——サイクル 2 の候補朝会。"
         ],
         [
          "Gothild",
-         "待补"
+         "二つのルート——Victoria 伏撃（quest_victoria_gank）後、または Enberg ストーリーライン（尋問の法廷 / 終局）。"
         ],
         [
          "Gwendan Villador",
-         "待补"
+         "サイクル 3 の候補朝会。"
         ],
         [
          "Ligia",
-         "待补"
+         "Southbay ストーリーライン（父が生存するルート）。"
         ],
         [
          "Oliver",
-         "待补"
+         "サイクル 19 の候補朝会——序章で処刑されなかった場合のみ。"
         ],
         [
          "Rufus",
-         "待补"
+         "Mystical Research（Groveshire、Scholars 満足度が必要）または The Wolf 親密度 2 の会話で解放。The Wolf と同一人物——呪いが解けた人間の姿。"
         ],
         [
          "Silgur",
-         "待补"
+         "Groveshire ストーリーラインの標準成功（非狼人・非事故分岐）。"
         ],
         [
          "Tarcus",
-         "待补"
+         "Gavault ストーリーラインの母側（娘側を取る Brunhilda と二者択一）。"
         ],
         [
          "The Wolf",
-         "待补"
+         "Angelica が獣を手なずける——Almor の Kill the Beast に Angelica を派遣して特殊結果を出す。"
         ],
         [
          "Ursula",
-         "待补"
+         "サイクル 5 に自動加入。"
         ],
         [
          "Victoria",
-         "待补"
+         "Enberg 暗殺ストーリーライン（候補朝会なし）。"
         ],
         [
          "Zolta",
-         "待补"
+         "Kutnar ストーリーライン（不正で Kutnar ダービーに勝つ）。"
         ]
        ]
       },
@@ -9790,99 +9790,99 @@
        "rows": [
         [
          "Alwena",
-         "一次性紧急事件：Act 2 之后，当圆桌可用骑士为 0 时（在册且不在任务中，死亡/辞职者除外）她会自愿加入。无法主动触发，没有第二次机会。永不死亡/永不辞职。"
+         "일회성 비상 이벤트: Act 2 이후 원탁의 가용 기사가 0명(명부에 있고 퀘스트 중이 아닌 자, 사망/사임자 제외)일 때 자원 입대. 임의로 발생시킬 수 없고 두 번째 기회는 없음. 절대 사망하지 않고 절대 사임하지 않음."
         ],
         [
          "Angelica",
-         "开场剧情自动加入。"
+         "오프닝 스토리에서 자동 합류."
         ],
         [
          "Ari",
-         "花 25 金币召唤（Basalt 兄弟的弟弟）。"
+         "25골드로 소환(Basalt 형제 중 동생)."
         ],
         [
          "Arron",
-         "无候选朝会——通过 Drakovic 剧情线加入。"
+         "후보 조회 없음 — Drakovic 스토리라인으로 합류."
         ],
         [
          "Brunhilda",
-         "Gavault 剧情线女儿侧（county_quest_gavault_2_daughter_side 到结局），无候选朝会。"
+         "Gavault 스토리라인 딸 쪽(county_quest_gavault_2_daughter_side부터 엔딩까지); 후보 조회 없음."
         ],
         [
          "Chester",
-         "Clean Keeper Goose Part 2 任意特殊结局后出现（奶酪/马/Gwendan 三选一，各付 1 金币）——Chester 才是真正的奖品。"
+         "Clean Keeper Goose Part 2의 임의 특수 결과(치즈 / 말 / Gwendan — 3지선다, 각 1골드) 후 등장. 진짜 상품은 Chester."
         ],
         [
          "Childeric",
-         "待补"
+         "확인 중"
         ],
         [
          "Daguez",
-         "待补"
+         "확인 중"
         ],
         [
          "Dulahan",
-         "Goberto 死后才出现（恶魔骑士）。"
+         "Goberto 사망 루트에서 악마 기사로 등장."
         ],
         [
          "Edith",
-         "待补"
+         "확인 중"
         ],
         [
          "Epicrate",
-         "待补"
+         "확인 중"
         ],
         [
          "Gideon",
-         "中文资料：第 6 天可招。"
+         "사이클 13에 후보 조회로 등장(Act 2, 자원 합류)."
         ],
         [
          "Goberto",
-         "中文资料：第 2 天派他战死 → Dulahan 第 4 天出现。"
+         "첫 정식 고용 — 사이클 2의 후보 조회."
         ],
         [
          "Gothild",
-         "待补"
+         "두 루트 — Victoria 매복(quest_victoria_gank) 후, 또는 Enberg 스토리라인(심문 법정 / 피날레)."
         ],
         [
          "Gwendan Villador",
-         "待补"
+         "사이클 3의 후보 조회."
         ],
         [
          "Ligia",
-         "待补"
+         "Southbay 스토리라인(아버지가 생존하는 루트)."
         ],
         [
          "Oliver",
-         "待补"
+         "사이클 19의 후보 조회 — 프롤로그에서 처형되지 않았을 경우에만."
         ],
         [
          "Rufus",
-         "待补"
+         "Mystical Research(Groveshire, Scholars 만족도 필요) 또는 The Wolf 친밀도 2 대화 해금. The Wolf와 동일 인물 — 저주가 풀린 인간 형태."
         ],
         [
          "Silgur",
-         "待补"
+         "Groveshire 스토리라인 표준 성공(비늑대인간·비사고 분기)."
         ],
         [
          "Tarcus",
-         "待补"
+         "Gavault 스토리라인 어머니 쪽(딸 쪽을 택하는 Brunhilda와 상호 배타)."
         ],
         [
          "The Wolf",
-         "待补"
+         "Angelica가 야수를 길들임 — Almor의 Kill the Beast에 Angelica를 보내 특수 결과 발생."
         ],
         [
          "Ursula",
-         "待补"
+         "사이클 5에 자동 합류."
         ],
         [
          "Victoria",
-         "待补"
+         "Enberg 암살 스토리라인(후보 조회 없음)."
         ],
         [
          "Zolta",
-         "待补"
+         "Kutnar 스토리라인(부정 행위로 Kutnar 더비 승리)."
         ]
        ]
       },
@@ -10449,27 +10449,27 @@
         [
          "Critical Success",
          "+10",
-         "奖励 ×2"
+         "報酬 ×2"
         ],
         [
          "Great Success",
          "+5",
-         "奖励 ×1.5"
+         "報酬 ×1.5"
         ],
         [
          "Success",
          "0",
-         "奖励 ×1"
+         "報酬 ×1"
         ],
         [
          "Major Failure",
          "−5",
-         "无奖励"
+         "報酬なし"
         ],
         [
          "Critical Failure",
          "−10",
-         "无奖励"
+         "報酬なし"
         ]
        ]
       },
@@ -10527,27 +10527,27 @@
         [
          "Critical Success",
          "+10",
-         "奖励 ×2"
+         "보상 ×2"
         ],
         [
          "Great Success",
          "+5",
-         "奖励 ×1.5"
+         "보상 ×1.5"
         ],
         [
          "Success",
          "0",
-         "奖励 ×1"
+         "보상 ×1"
         ],
         [
          "Major Failure",
          "−5",
-         "无奖励"
+         "보상 없음"
         ],
         [
          "Critical Failure",
          "−10",
-         "无奖励"
+         "보상 없음"
         ]
        ]
       },

@@ -171,6 +171,16 @@ def _knight_stats_str_zh(k):
         return "随机（Chester 每次判定重 roll 0–15）" if k["name"] == "Chester" else "待补"
     return " / ".join(str(x) for x in k["stats"])
 
+def _knight_stats_str_ja(k):
+    if k.get("stats") is None:
+        return "ランダム（Chester は判定ごとに 0–15 を再ロール）" if k["name"] == "Chester" else "待補"
+    return " / ".join(str(x) for x in k["stats"])
+
+def _knight_stats_str_ko(k):
+    if k.get("stats") is None:
+        return "랜덤（Chester는 판정마다 0–15 재굴림）" if k["name"] == "Chester" else "확인 중"
+    return " / ".join(str(x) for x in k["stats"])
+
 def _knight_row(k):
     return [k["name"], k.get("origin") or "TBD", str(k.get("level") or "TBD"), str(k.get("armor") or "TBD"),
             _knight_stats_str(k), ", ".join(k.get("meals") or ["TBD"]), k.get("note") or ""]
@@ -178,6 +188,16 @@ def _knight_row(k):
 def _knight_row_zh(k):
     return [k["name"], k.get("origin") or "待补", str(k.get("level") or "待补"), str(k.get("armor") or "待补"),
             _knight_stats_str_zh(k), "，".join(k.get("meals") or ["待补"]), k.get("note_zh") or k.get("note") or ""]
+
+def _knight_row_ja(k):
+    return [k["name"], k.get("origin") or "待補", str(k.get("level") or "待補"), str(k.get("armor") or "待補"),
+            _knight_stats_str_ja(k), "、".join(m if m != "TBD" else "待補" for m in (k.get("meals") or ["待補"])),
+            k.get("note_ja") or k.get("note") or ""]
+
+def _knight_row_ko(k):
+    return [k["name"], k.get("origin") or "확인 중", str(k.get("level") or "확인 중"), str(k.get("armor") or "확인 중"),
+            _knight_stats_str_ko(k), "、".join(m if m != "TBD" else "확인 중" for m in (k.get("meals") or ["확인 중"])),
+            k.get("note_ko") or k.get("note") or ""]
 
 def build_knights():
     rows = [_knight_row(k) for k in KNIGHTS]
@@ -683,7 +703,12 @@ for _page in ALL_PAGES:
         if _t.get("table_head") and _page["slug"] == "sovereign-tower/knights":
             _src = [s for s in _page["sections"] if s.get("type") == "table" and s.get("headers") and s["headers"][0] == "Knight"]
             if _src:
-                _secs = [{"type": "table", "tag": "DATA", "heading": "", "body": "", "headers": _t["table_head"], "rows": _src[0]["rows"]}] + _secs
+                _rows = _src[0]["rows"]
+                if _lang == "ja":
+                    _rows = [_knight_row_ja(k) for k in KNIGHTS] + [_knight_row_ja({"name": n, **b}) for n, b in KNIGHTS_BASIC.items()]
+                elif _lang == "ko":
+                    _rows = [_knight_row_ko(k) for k in KNIGHTS] + [_knight_row_ko({"name": n, **b}) for n, b in KNIGHTS_BASIC.items()]
+                _secs = [{"type": "table", "tag": "DATA", "heading": "", "body": "", "headers": _t["table_head"], "rows": _rows}] + _secs
         _page.setdefault("i18n", {})[_lang] = {
             "title": _t.get("title"), "metaTitle": _t.get("metaTitle"), "metaDescription": _t.get("metaDescription"), "intro": _t.get("intro"),
             "sections": _secs,
@@ -773,6 +798,51 @@ for _sp3, _langs3 in _i18n_sec3.items():
                         _merged3.append(_new_by_type[_t3])
                 if len(_merged3) == len(_en3):
                     _pp3.setdefault("i18n", {})[_lg3]["sections"] = _merged3
+
+# --- ja/ko 骑士相关表本地化（recruit_ja/ko、roster Chester 属性、quest-success 奖励列）---
+# 之前的 i18n_sections*.json 对 recruit-knights/roster/quest-success 的表格行硬编码了中文，
+# 这里用 data/content_data.py 的 recruit_ja/recruit_ko 与本地化占位重建，消除中/英回退。
+_REWARD_JA = {"奖励 ×2": "報酬 ×2", "奖励 ×1.5": "報酬 ×1.5", "奖励 ×1": "報酬 ×1", "无奖励": "報酬なし"}
+_REWARD_KO = {"奖励 ×2": "보상 ×2", "奖励 ×1.5": "보상 ×1.5", "奖励 ×1": "보상 ×1", "无奖励": "보상 없음"}
+
+def _ja_ko_recruit(lang, k):
+    _key = "recruit_ja" if lang == "ja" else "recruit_ko"
+    return k.get(_key) or k.get("recruit") or ("待補" if lang == "ja" else "확인 중")
+
+for _ppx in d["pages"]:
+    _slugx = _ppx.get("slug")
+    for _lgx in ("ja", "ko"):
+        _i18nx = (_ppx.get("i18n") or {}).get(_lgx)
+        if not _i18nx:
+            continue
+        for _sx in _i18nx.get("sections") or []:
+            if _sx.get("type") != "table":
+                continue
+            _hdrx = _sx.get("headers") or []
+            # recruit-knights：招募列
+            if _slugx == "sovereign-tower/guides/recruit-knights" and _hdrx[:1] in (["騎士"], ["기사"]):
+                _rowsx = [[_kx["name"], _ja_ko_recruit(_lgx, _kx)] for _kx in KNIGHTS]
+                _rowsx += [[_nmx, _ja_ko_recruit(_lgx, {"name": _nmx, **_bx})] for _nmx, _bx in KNIGHTS_BASIC.items()]
+                _sx["rows"] = _rowsx
+            # roster：重建全部 24 行（原 11-23 行硬编码为中文"待补"，且 Chester 属性为中文回退）
+            elif _slugx == "sovereign-tower/knights/roster" and _hdrx[:1] in (["騎士"], ["기사"]):
+                _phx = "待補" if _lgx == "ja" else "확인 중"
+                _sfx = _knight_stats_str_ja if _lgx == "ja" else _knight_stats_str_ko
+                _rowsx = [[_kx["name"], _kx.get("origin") or _phx,
+                           str(_kx.get("level") if _kx.get("level") is not None else _phx),
+                           str(_kx.get("armor") if _kx.get("armor") is not None else _phx),
+                           _sfx(_kx)] for _kx in KNIGHTS]
+                _rowsx += [[_nmx, _bx.get("origin") or _phx,
+                            str(_bx.get("level") if _bx.get("level") is not None else _phx),
+                            str(_bx.get("armor") if _bx.get("armor") is not None else _phx),
+                            _sfx({"name": _nmx, "stats": _bx.get("stats")})] for _nmx, _bx in KNIGHTS_BASIC.items()]
+                _sx["rows"] = _rowsx
+            # quest-success：得分奖励列（原为中文回退）
+            elif _slugx == "sovereign-tower/guides/quest-success" and _hdrx[:1] in (["結果"], ["결과"]):
+                _mapx = _REWARD_JA if _lgx == "ja" else _REWARD_KO
+                for _rx in _sx.get("rows") or []:
+                    if _rx and len(_rx) >= 3 and _rx[2] in _mapx:
+                        _rx[2] = _mapx[_rx[2]]
 
 # --- zh-CN 标题/intro/区块标题翻译覆盖（用户反馈：切换中文仍有英文残留）---
 # content_pages._wt() 把英文 title/metaTitle/metaDescription 直接填入 i18n.zh-CN，
