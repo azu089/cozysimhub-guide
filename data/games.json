@@ -2,6 +2,7 @@
   "_schema": "CozySimHub category hub game registry — DESIGN-SPEC ui-cozy-category-home-20260817-01 §F.3",
   "_notes": [
     "Add one object per game: cards, game-switch and JSON-LD ItemList are all data-driven (zero template change).",
+    "guideGroups: per-game sidebar/footer chapter data (layout redesign cozy-layout-redesign-20260818-01). The left sidebar and footer key links render ONLY the current game's guideGroups — sandustry pages no longer show Sovereign Tower chapters (P1-03). Group label falls back to .en when the current language is missing.",
     "taglineI18n = first sentence of the game hub page intro (site.json L0 text, not new copy).",
     "badges: spec §A.2 suggested values; where site.json carries a more precise figure the value was aligned and the source recorded in each game's note.",
     "SD badge '97-98% Positive' has no site.json backing -> kept per spec value, marked pending G4 evidence.",
@@ -30,6 +31,11 @@
         { "value": "86", "labelI18n": { "en": "Metacritic", "zh-CN": "Metacritic", "ja": "Metacritic", "ko": "Metacritic", "fr": "Metacritic", "de": "Metacritic" } }
       ],
       "coreLinks": ["sovereign-tower/knights", "sovereign-tower/secret-knights", "sovereign-tower/endings", "sovereign-tower/romance", "sovereign-tower/quest-mechanics"],
+      "guideGroups": [
+        { "labelI18n": { "en": "Core guides", "zh-CN": "核心攻略", "ja": "コア攻略", "ko": "핵심 가이드", "fr": "Guides principaux", "de": "Kern-Guides" }, "slugs": ["sovereign-tower/how-to-play", "sovereign-tower/knights", "sovereign-tower/quest-mechanics"] },
+        { "labelI18n": { "en": "Deep dives", "zh-CN": "深度拆解", "ja": "深掘り", "ko": "심층 분석", "fr": "Analyses", "de": "Tiefe Analysen" }, "slugs": ["sovereign-tower/secret-knights", "sovereign-tower/romance", "sovereign-tower/endings", "sovereign-tower/recipes", "sovereign-tower/achievements"] },
+        { "labelI18n": { "en": "Quick answers", "zh-CN": "快速答案", "ja": "クイック回答", "ko": "빠른 답변", "fr": "Réponses rapides", "de": "Schnelle Antworten" }, "slugs": ["sovereign-tower/tools/quest-matcher", "sovereign-tower/tools/affinity-calc"] }
+      ],
       "languages": ["en", "zh-CN", "ja", "ko", "fr", "de"],
       "latest": [
         { "slug": "sovereign-tower/endings", "date": "2026-08-13" },
@@ -65,6 +71,11 @@
         { "value": "23", "labelI18n": { "en": "Romanceable", "zh-CN": "可恋爱角色", "ja": "恋愛対象", "ko": "연애 가능", "fr": "Romances", "de": "Liebesoptionen" } }
       ],
       "coreLinks": ["moonlight-peaks/achievements", "moonlight-peaks/gifts", "moonlight-peaks/romance", "moonlight-peaks/fishing"],
+      "guideGroups": [
+        { "labelI18n": { "en": "The Ledger", "zh-CN": "数据账页", "ja": "データ帳簿", "ko": "데이터 장부", "fr": "Le registre", "de": "Das Register" }, "slugs": ["moonlight-peaks/characters", "moonlight-peaks/how-to-play", "moonlight-peaks/gifts", "moonlight-peaks/romance", "moonlight-peaks/fishing", "moonlight-peaks/flowers", "moonlight-peaks/tools", "moonlight-peaks/achievements"] },
+        { "labelI18n": { "en": "Deep Dives", "zh-CN": "深潜", "ja": "深掘り", "ko": "심층", "fr": "Analyses", "de": "Tiefe Analysen" }, "slugs": ["moonlight-peaks/spells", "moonlight-peaks/walkthrough", "moonlight-peaks/relationships", "moonlight-peaks/villagers", "moonlight-peaks/potions", "moonlight-peaks/museum", "moonlight-peaks/breeding"] },
+        { "labelI18n": { "en": "Quick Answers", "zh-CN": "快答", "ja": "クイック", "ko": "빠른 답변", "fr": "Réponses rapides", "de": "Schnelle Antworten" }, "slugs": ["moonlight-peaks/updates", "moonlight-peaks/steam-deck", "moonlight-peaks/console", "moonlight-peaks/system-requirements", "moonlight-peaks/faq"] }
+      ],
       "languages": ["en", "zh-CN", "ja", "ko", "fr", "de"],
       "latest": [
         { "slug": "moonlight-peaks/achievements", "date": "2026-08-13" },
@@ -96,6 +107,11 @@
         { "value": "16", "labelI18n": { "en": "Achievements", "zh-CN": "成就", "ko": "도전과제" } }
       ],
       "coreLinks": ["sandustry/getting-started", "sandustry/materials", "sandustry/steam-deck"],
+      "guideGroups": [
+        { "labelI18n": { "en": "Core guides", "zh-CN": "核心攻略", "ja": "コア攻略", "ko": "핵심 가이드", "fr": "Guides principaux", "de": "Kern-Guides" }, "slugs": ["sandustry/getting-started", "sandustry/materials", "sandustry/mechanics"] },
+        { "labelI18n": { "en": "Platform guides", "zh-CN": "平台指南", "ja": "プラットフォーム", "ko": "플랫폼 가이드", "fr": "Guides plateformes", "de": "Plattform-Guides" }, "slugs": ["sandustry/steam-deck", "sandustry/macos", "sandustry/mobile"] },
+        { "labelI18n": { "en": "More guides", "zh-CN": "更多攻略", "ja": "その他の攻略", "ko": "더 많은 가이드", "fr": "Autres guides", "de": "Weitere Guides" }, "slugs": ["sandustry/achievements", "sandustry/faq", "sandustry/updates"] }
+      ],
       "languages": ["en", "ko", "zh-CN"],
       "latest": [
         { "slug": "sandustry/getting-started", "date": "2026-08-13" },

@@ -21,6 +21,14 @@ const GAMES = (() => {
   if (!Array.isArray(raw.games) || !raw.games.length) throw new Error("data/games.json must contain a non-empty games array");
   return raw.games;
 })();
+// 月光章回月相序号：由 games.json 的月光 guideGroups 数据驱动（布局重构后不再硬编码 MOON_GROUPS）
+const MOON_PHASE_BY = (() => {
+  const mp = GAMES.find(g => g.id === "moonlight-peaks");
+  const map = {};
+  let n = 0;
+  for (const gr of (mp && mp.guideGroups) || []) for (const s of gr.slugs) map[s] = 1 + (n++ % 7);
+  return map;
+})();
 const OUT = path.join(ROOT, "public");
 const esc = KIT.esc;
 const ADSENSE_FIXTURE_ENABLED = process.env.NODE_ENV === "test" && process.env.COZY_ADSENSE_FIXTURE === "enabled";
@@ -99,6 +107,9 @@ const ICON = {
   "calc": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h.01M12 19h.01M16 19h.01"/></svg>',
   "goose": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13c0-4 3-7 7-7h5l-2 3h-2v1.5"/><path d="M7 13a4 4 0 0 0 3 6h5a2 2 0 0 0 2-2v-2"/><path d="M14 19h4"/></svg>',
   "search": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg>',
+  "monitor": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>',
+  "phone": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>',
+  "lock": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg>',
   "steam": '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-9.9 11.3l4.9 2a4 4 0 0 1 5.3-.6l3.3-5.7a1.5 1.5 0 1 1 2.5 1.7l-3.5 6a4 4 0 0 1-5 1.6l-3.7-1.5A10 10 0 1 0 12 2zM7 16.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>',
   "wand": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m4 20 12-12M14 6l4 4M16 2l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3z"/></svg>',
   "fist": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 12V8a2 2 0 0 1 4 0v1m0-1V6a2 2 0 0 1 4 0v2m0-1V7a2 2 0 0 1 4 0v6a5 5 0 0 1-5 5h-1a5 5 0 0 1-4-2l-2-2a2 2 0 0 1 0-2z"/></svg>',
@@ -114,26 +125,32 @@ const GAME_ICON = {
 /* ---------- 语言/站点文案 ---------- */
 const NAV_I18N = {
   "en":    { home: "Home", guides: "Guides", ledgers: "The Ledger", tools: "Tools", search: "Search guides…", searchLabel: "Search guides", langLabel: "Language",
+             menu: "Menu", toc: "On this page", related: "Related guides", ad: "Advertisement", unavailable: "Not available in this game's guides",
              p0: "Core guides", p1: "Deep dives", p2: "Quick answers", about: "About", privacy: "Privacy", contact: "Contact",
              footerNote: "Unofficial fan site — game and assets belong to WILD WITS GAMES / Curve Games.",
              footerSource: "Information verified against the official Steam store page, fan wiki data and community reports.", updated: "Updated", amazonTitle: "Game Gear", amazonNote: "As an Amazon Associate we earn from qualifying purchases. Prices and availability may change.", amazon1: "Gaming Keyboard", amazon2: "Gaming Mouse", amazon3: "Headset", amazon4: "Controller", amazon5: "Monitor" },
   "zh-CN": { home: "首页", guides: "攻略", ledgers: "手账", tools: "工具", search: "搜索攻略…", searchLabel: "搜索攻略", langLabel: "语言",
+             menu: "菜单", toc: "本页目录", related: "相关攻略", ad: "广告", unavailable: "该游戏暂无此语言",
              p0: "核心攻略", p1: "深度拆解", p2: "快速答案", about: "关于", privacy: "隐私", contact: "联系",
              footerNote: "非官方粉丝站——游戏及相关资产归 WILD WITS GAMES / Curve Games 所有。",
              footerSource: "信息核对自 Steam 官方商店页、粉丝 wiki 数据与社区报告。", updated: "更新于", amazonTitle: "游戏装备", amazonNote: "作为亚马逊联盟伙伴，我们会从符合条件的购买中获得佣金。价格与库存可能随时变化。", amazon1: "游戏键盘", amazon2: "游戏鼠标", amazon3: "耳机", amazon4: "手柄", amazon5: "显示器" },
   "ja":    { home: "ホーム", guides: "攻略", ledgers: "手帳", tools: "ツール", search: "攻略を検索…", searchLabel: "攻略を検索", langLabel: "言語",
+             menu: "メニュー", toc: "このページの目次", related: "関連ガイド", ad: "広告", unavailable: "このゲームでは利用できません",
              p0: "コア攻略", p1: "深掘り", p2: "クイック回答", about: "このサイト", privacy: "プライバシー", contact: "お問い合わせ",
              footerNote: "非公式ファンサイト。ゲームおよび関連アセットは WILD WITS GAMES / Curve Games に帰属します。",
              footerSource: "情報は Steam 公式ストア・ファン wiki・コミュニティ報告で確認しています。", updated: "更新", amazonTitle: "ゲームギア", amazonNote: "Amazonアソシエイトとして、適格購入から手数料を得ることがあります。価格と在庫は変動します。", amazon1: "ゲーミングキーボード", amazon2: "ゲーミングマウス", amazon3: "ヘッドセット", amazon4: "コントローラー", amazon5: "モニター" },
   "ko":    { home: "홈", guides: "가이드", ledgers: "수첩", tools: "도구", search: "가이드 검색…", searchLabel: "가이드 검색", langLabel: "언어",
+             menu: "메뉴", toc: "이 페이지 목차", related: "관련 가이드", ad: "광고", unavailable: "이 게임에서는 제공되지 않습니다",
              p0: "핵심 가이드", p1: "심층 분석", p2: "빠른 답변", about: "소개", privacy: "개인정보", contact: "문의",
              footerNote: "비공식 팬 사이트. 게임 및 관련 자산은 WILD WITS GAMES / Curve Games에 귀속됩니다.",
              footerSource: "정보는 Steam 공식 스토어, 팬 위키, 커뮤니티 보고로 확인했습니다.", updated: "업데이트", amazonTitle: "게임 장비", amazonNote: "Amazon 어소시에이트로서 적격 구매로부터 수수료를 받습니다. 가격과 재고는 변동될 수 있습니다.", amazon1: "게이밍 키보드", amazon2: "게이밍 마우스", amazon3: "헤드셋", amazon4: "컨트롤러", amazon5: "모니터" },
   "fr":    { home: "Accueil", guides: "Guides", ledgers: "Registre", tools: "Outils", search: "Rechercher des guides…", searchLabel: "Rechercher des guides", langLabel: "Langue",
+             menu: "Menu", toc: "Sur cette page", related: "Guides associés", ad: "Publicité", unavailable: "Non disponible pour ce jeu",
              p0: "Guides principaux", p1: "Analyses", p2: "Réponses rapides", about: "À propos", privacy: "Confidentialité", contact: "Contactez-nous",
              footerNote: "Site de fans non officiel — le jeu et ses ressources appartiennent à WILD WITS GAMES / Curve Games.",
              footerSource: "Informations vérifiées sur la page Steam officielle, les wikis de fans et les rapports de la communauté.", updated: "Mis à jour", amazonTitle: "Équipement de jeu", amazonNote: "En tant que partenaire Amazon, nous touchons une commission sur les achats éligibles. Prix et disponibilité peuvent changer.", amazon1: "Clavier gamer", amazon2: "Souris gamer", amazon3: "Casque", amazon4: "Manette", amazon5: "Écran" },
   "de":    { home: "Start", guides: "Guides", ledgers: "Register", tools: "Werkzeuge", search: "Guides suchen…", searchLabel: "Guides suchen", langLabel: "Sprache",
+             menu: "Menü", toc: "Auf dieser Seite", related: "Verwandte Guides", ad: "Werbung", unavailable: "Für dieses Spiel nicht verfügbar",
              p0: "Kern-Guides", p1: "Tiefe Analysen", p2: "Schnelle Antworten", about: "Über", privacy: "Datenschutz", contact: "Kontakt",
              footerNote: "Inoffizielle Fan-Seite — Spiel und Assets gehören WILD WITS GAMES / Curve Games.",
              footerSource: "Informationen geprüft gegen den offiziellen Steam-Store, Fan-Wikis und Community-Berichte.", updated: "Aktualisiert", amazonTitle: "Gaming-Ausrüstung", amazonNote: "Als Amazon-Partner verdienen wir an qualifizierten Käufen. Preise und Verfügbarkeit können sich ändern.", amazon1: "Gaming-Tastatur", amazon2: "Gaming-Maus", amazon3: "Headset", amazon4: "Controller", amazon5: "Monitor" },
@@ -345,59 +362,179 @@ ${cssLink}
 }
 
 /* ---------- 语言切换器（含 SVG 国旗，修复下拉溢出） ---------- */
-function langSwitcher(lang, slug) {
-  const pl = pageLangsOf(slug);
-  const items = pl.map(l =>
-    `<a href="${linkOf(slug, l)}" class="${l === lang ? "active" : ""}"><span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span></a>`
-  ).join("");
-  return `<details class="lang-dd">
-    <summary aria-label="${navI18n(lang).langLabel}"><span class="flag svg-flag">${flagOf(lang)}</span><span class="lang-name">${LANG_META[lang]?.name || lang}</span><span class="caret">▾</span></summary>
-    <div class="dd-menu dd-lang">${items}</div>
+/* ---------- 顶部导航条 + 左侧栏 + 右栏（cozy-layout-redesign-20260818-01）
+   布局：site-header（品牌 + 游戏下拉 + 全局语言 + 站内搜索 + 隐私）→ shell-body
+   （左：当前游戏指南侧栏 / 右：内容 + 右栏 TOC/相关/广告位）。全部数据驱动自 games.json。 ---------- */
+const gameOf = slug => {
+  if (!slug || slug === "index") return null;
+  return GAMES.find(g => slug === g.id || slug.startsWith(g.id + "/")) || null;
+};
+const regEscape = s => String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const gameGuides = game => {
+  const out = [];
+  for (const gr of (game && game.guideGroups) || []) for (const s of gr.slugs) out.push(s);
+  return out;
+};
+const groupLabel = (grp, lang) => (grp.labelI18n && (grp.labelI18n[lang] || grp.labelI18n.en)) || "";
+const GUIDE_ICON = {
+  "sovereign-tower/how-to-play": "book", "sovereign-tower/knights": "shield", "sovereign-tower/quest-mechanics": "scales",
+  "sovereign-tower/secret-knights": "fist", "sovereign-tower/romance": "heart", "sovereign-tower/endings": "crown",
+  "sovereign-tower/recipes": "chef", "sovereign-tower/achievements": "trophy",
+  "sovereign-tower/tools/quest-matcher": "calc", "sovereign-tower/tools/affinity-calc": "calc",
+  "sandustry/getting-started": "book", "sandustry/materials": "scroll", "sandustry/mechanics": "gear",
+  "sandustry/steam-deck": "monitor", "sandustry/macos": "monitor", "sandustry/mobile": "phone",
+  "sandustry/achievements": "trophy", "sandustry/faq": "scroll", "sandustry/updates": "clock"
+};
+const iconFor = slug => GUIDE_ICON[slug] || "wand";
+
+/* 游戏下拉选择器（点击展开 3 列网格，可扩展几十个 —— 用户方向 ①） */
+function gameDropdown(lang, active) {
+  const c = catI18n(lang);
+  const items = GAMES.map(g => {
+    const name = g.nameI18n[lang] || g.name;
+    const current = (active || "").startsWith(g.id);
+    return `<a class="game-dd-item${current ? " active" : ""}" href="${linkOf(g.hubSlug, lang)}"${current ? ' aria-current="page"' : ""}>
+      <span class="game-dd-ic">${GAME_ICON[g.icon] || ICON.crown}</span>
+      <span class="game-dd-name">${esc(name)}</span>
+    </a>`;
+  }).join("");
+  return `<details class="game-dd">
+    <summary aria-label="${esc(c.switchLabel)}"><span class="dd-label">${esc(c.switchLabel)}</span><span class="caret">▾</span></summary>
+    <div class="dd-menu game-dd-menu" role="group" aria-label="${esc(c.switchLabel)}">${items}</div>
   </details>`;
 }
 
-/* ---------- 圆桌卷宗导航（独立骨架） ---------- */
-const GUIDE_GROUPS = {
-  "en": { p0: ["sovereign-tower/how-to-play", "sovereign-tower/knights", "sovereign-tower/quest-mechanics"], p1: ["sovereign-tower/secret-knights", "sovereign-tower/romance", "sovereign-tower/endings", "sovereign-tower/recipes", "sovereign-tower/achievements"], p2: ["sovereign-tower/tools/quest-matcher", "sovereign-tower/tools/affinity-calc"] }
-};
-function header(lang, active) {
+/* 全局语言切换器：永远显示全部 6 语；当前语言高亮；当前游戏无该语言时置灰 + title 提示 */
+function langDropdown(lang, slug) {
+  const n = navI18n(lang);
+  const pl = pageLangsOf(slug || "index");
+  const items = LANGS.map(l => {
+    const flag = `<span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span>`;
+    if (!pl.includes(l)) {
+      return `<span class="lang-item unavailable" aria-disabled="true" title="${esc(n.unavailable)}">${flag}</span>`;
+    }
+    return `<a href="${linkOf(slug || "index", l)}" class="lang-item${l === lang ? " active" : ""}"${l === lang ? ' aria-current="page"' : ""}>${flag}</a>`;
+  }).join("");
+  return `<details class="lang-dd">
+    <summary aria-label="${esc(n.langLabel)}"><span class="flag svg-flag">${flagOf(lang)}</span><span class="lang-name">${LANG_META[lang]?.name || lang}</span><span class="caret">▾</span></summary>
+    <div class="dd-menu dd-lang" role="group" aria-label="${esc(n.langLabel)}">${items}</div>
+  </details>`;
+}
+
+/* 站内搜索（Google site-search，与其他五站同款） */
+function siteSearchForm(lang) {
+  const n = navI18n(lang);
+  return `<form class="site-search" action="https://www.google.com/search" method="get" target="_blank" rel="noopener" role="search">
+    <input type="search" name="q" placeholder="${esc(n.search)}" aria-label="${esc(n.searchLabel)}" />
+    <input type="hidden" name="as_sitesearch" value="${esc(DATA.site.domain)}" />
+    <span class="search-ic" aria-hidden="true">${ICON.search}</span>
+  </form>`;
+}
+
+/* 隐私按钮（不再 fixed 悬浮 —— 归位顶栏/抽屉，用户方向 ④） */
+function privacyButton(lang) {
+  const t = CONSENT_I18N[lang] || CONSENT_I18N.en;
+  return `<button type="button" class="privacy-settings" data-consent-settings aria-haspopup="dialog" aria-controls="privacy-consent-dialog" aria-expanded="false"><span class="privacy-ic" aria-hidden="true">${ICON.lock}</span>${esc(t.settings)}</button>`;
+}
+
+/* 桌面端顶栏工具组 / 移动端抽屉工具组（同一批组件，按断点显示其一） */
+function headerChrome(lang, slug) {
+  return `<nav class="header-chrome" aria-label="${esc(navI18n(lang).guides)}">
+    ${gameDropdown(lang, slug)}
+    ${langDropdown(lang, slug)}
+    ${siteSearchForm(lang)}
+    ${privacyButton(lang)}
+  </nav>`;
+}
+function drawerChrome(lang, slug) {
+  return `<div class="drawer-chrome">
+    ${gameDropdown(lang, slug)}
+    ${langDropdown(lang, slug)}
+    ${siteSearchForm(lang)}
+    ${privacyButton(lang)}
+  </div>`;
+}
+
+function siteHeader(lang, active) {
   const n = navI18n(lang);
   const c = catI18n(lang);
   const isMoon = (active || "").startsWith("moonlight-peaks");
-  const G = GUIDE_GROUPS.en;
-  const stripRe = isMoon
-    ? /\s*(Moonlight Peaks|Moonlight|月光小镇)\s*/g
-    : /\s*(Sovereign Tower|Sovereign|君王之塔)\s*/g;
+  return `<header class="site-header">
+  <div class="header-inner">
+    <a class="header-brand" href="${linkOf("index", lang)}">
+      <span class="brand-seal">${isMoon ? moonPhaseIcon(7, "brand-moon") : ICON.crown}</span>
+      <span class="brand-name">${esc(siteI18n(lang).name)}<small>${esc(c.brandSub)}</small></span>
+    </a>
+    ${headerChrome(lang, active)}
+    <button class="tome-nav-toggle" type="button" aria-label="${esc(n.menu)}" aria-controls="sovereign-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  </div>
+</header>
+<div class="tome-nav-overlay"></div>`;
+}
+
+/* 侧栏章回：按当前游戏从 games.json guideGroups 取（P1-03 —— sandustry 页只显示沙金指南） */
+function gameChapters(lang, game, active, isMoon) {
+  const variants = [game.name, game.nameI18n && game.nameI18n.en, game.nameI18n && game.nameI18n[lang]]
+    .filter(Boolean).map(regEscape);
+  const stripRe = new RegExp("\\s*(" + variants.join("|") + ")\\s*", "g");
   const link = (slug, label, icon, folio, act) =>
-    `<a href="${linkOf(slug, lang)}" class="${act ? "active" : ""}"><span class="folio-no">${folio}</span><span class="nav-ic">${ICON[icon] || icon || ""}</span><span>${esc(label)}</span></a>`;
-  const chap = (title, slugs) => `<div class="tome-chapter"><b>${esc(title)}</b>${slugs.map((s, i) => {
-    const p = DATA.pages.find(x => x.slug === s);
-    if (!p) return "";
-    const t = pageOf(p, lang).title.replace(stripRe, " ").replace(/\s+/g, " ").trim();
-    const ic = isMoon
-      ? moonPhaseIcon(MOON_PHASE_BY[s] || 4)
-      : (s.includes("knights") ? "shield" : s.includes("romance") ? "heart" : s.includes("recipes") ? "chef" : s.includes("endings") ? "crown" : s.includes("secret") ? "fist" : s.includes("quest") && s.includes("mech") ? "scales" : s.includes("achievement") ? "trophy" : s.includes("tools") ? "calc" : s.includes("how-to-play") ? "book" : "wand");
-    return link(s, t, ic, String(i + 1).padStart(2, "0"), s === active);
-  }).join("")}</div>`;
-  // 月光小镇页：moon-nav 三组（data/deep/quick）映射为 tome-chapter 章节（复用既有 chap 结构）
-  const chapters = active === "index"
-    ? latestNav(lang)
-    : isMoon
-      ? `${chap(moonTxt(lang).data, MOON_GROUPS.data)}${chap(moonTxt(lang).deep, MOON_GROUPS.deep)}${chap(moonTxt(lang).quick, MOON_GROUPS.quick)}`
-      : `${chap(n.p0, G.p0)}${chap(n.p1, G.p1)}${chap(n.p2, G.p2)}`;
-  const langItems = pageLangsOf(active || "index").map(l =>
-    `<a href="${linkOf(active || "index", l)}" class="${l === lang ? "active" : ""}"><span class="flag svg-flag">${flagOf(l)}</span><span class="lang-name">${LANG_META[l]?.name || l}</span></a>`
-  ).join("");
-  return `<aside id="sovereign-navigation" class="tome-nav" aria-label="Ledger index">
-  <a class="tome-brand" href="${linkOf("index", lang)}">
-    <span class="brand-seal">${isMoon ? moonPhaseIcon(7, "brand-moon") : ICON.crown}</span>
-    <span class="brand-name">${esc(siteI18n(lang).name)}<small>${esc(c.brandSub)}</small></span>
-  </a>
-  ${gameSwitch(lang, active)}
-  ${chapters}
-  <div class="tome-lang"><div class="lang-label">${esc(n.langLabel)}</div>${langItems}</div>
-  ${(active || "").startsWith("sandustry") ? `<p class="lang-note">${lang === "zh-CN" ? "可用语言：English · 한국어 · 简体中文" : lang === "ko" ? "가능한 언어: English · 한국어 · 简体中文" : "Available in: English · 한국어 · 简体中文"}</p>` : ""}
+    `<a href="${linkOf(slug, lang)}" class="${act ? "active" : ""}"><span class="folio-no">${folio}</span><span class="nav-ic">${icon || ""}</span><span>${esc(label)}</span></a>`;
+  return (game.guideGroups || []).map(gr => {
+    const items = gr.slugs.map((s, i) => {
+      const p = DATA.pages.find(x => x.slug === s);
+      if (!p) return "";
+      const t = pageOf(p, lang).title.replace(stripRe, " ").replace(/\s+/g, " ").trim();
+      const ic = isMoon ? moonPhaseIcon(MOON_PHASE_BY[s] || 4) : (ICON[iconFor(s)] || "");
+      return link(s, t, ic, String(i + 1).padStart(2, "0"), s === active);
+    }).join("");
+    return `<div class="tome-chapter"><b>${esc(groupLabel(gr, lang))}</b>${items}</div>`;
+  }).join("");
+}
+
+/* 右栏「相关攻略」：当前游戏指南（排除当前页），最多 5 条 + 全部攻略入口 */
+function relatedGuides(lang, game, slug) {
+  const n = navI18n(lang);
+  const links = [];
+  for (const gr of (game && game.guideGroups) || []) {
+    for (const s of gr.slugs) {
+      if (s === slug) continue;
+      const p = DATA.pages.find(x => x.slug === s);
+      if (!p) continue;
+      links.push(`<a href="${linkOf(s, lang)}">${esc(pageOf(p, lang).title)}</a>`);
+      if (links.length >= 5) break;
+    }
+    if (links.length >= 5) break;
+  }
+  if (!links.length || !game) return "";
+  return `<div class="folio-related">
+    <h3>${esc(n.related)}</h3>
+    <nav class="folio-rel" aria-label="${esc(n.related)}">${links.join("")}</nav>
+    <a class="folio-more" href="${linkOf(game.hubSlug, lang)}">${esc(catI18n(lang).allGuides)}</a>
+  </div>`;
+}
+
+/* 左栏：当前游戏指南（游戏页）或最新内容（首页/静态页）；移动端即抽屉本体 */
+function sidebar(lang, active) {
+  const n = navI18n(lang);
+  const game = gameOf(active);
+  const isMoon = (active || "").startsWith("moonlight-peaks");
+  const chapters = (active === "index" || !game) ? latestNav(lang) : gameChapters(lang, game, active, isMoon);
+  const langNote = (active || "").startsWith("sandustry")
+    ? `<p class="lang-note">${lang === "zh-CN" ? "可用语言：English · 한국어 · 简体中文" : lang === "ko" ? "가능한 언어: English · 한국어 · 简体中文" : "Available in: English · 한국어 · 简体中文"}</p>`
+    : "";
+  const gameBar = game
+    ? `<div class="tome-game"><a href="${linkOf(game.hubSlug, lang)}"><span class="tome-game-ic">${GAME_ICON[game.icon] || ICON.crown}</span><span class="tome-game-name">${esc(game.nameI18n[lang] || game.name)}</span></a></div>`
+    : "";
+  return `<aside id="sovereign-navigation" class="tome-nav" aria-label="${esc(n.guides)}">
+  ${drawerChrome(lang, active)}
+  ${gameBar}
+  <nav class="tome-chapters" aria-label="${esc(n.guides)}">${chapters}</nav>
+  ${langNote}
 </aside>`;
+}
+
+function header(lang, active) {
+  return siteHeader(lang, active) + `<div class="shell-body">` + sidebar(lang, active);
 }
 
 const CONSENT_I18N = {
@@ -409,7 +546,7 @@ const CONSENT_I18N = {
   "de": { settings: "Datenschutzeinstellungen", title: "Datenschutzauswahl", intro: "Wählen Sie, ob diese Website optionale Analyse laden darf. Werbedienste sind derzeit deaktiviert.", introOn: "Wählen Sie, ob diese Website optionale Analyse und Werbung laden darf.", analytics: "Analyse", analyticsHelp: "Bei Aktivierung kann Google Analytics 4 IP-Adresse, Geräte- und Browserdaten, besuchte Seite, Referrer, ungefähre Region und Kennungen zur Messung verarbeiten.", ads: "Werbung", adsHelp: "Google-AdSense-Auslieferung und Adsterra sind derzeit deaktiviert; es wird kein Werbeskript geladen. Ein künftiger Anbieterwechsel erfordert eine neue Einwilligungsversion.", adsHelpOn: "Bei Zustimmung können Anzeigen von Adsterra geladen werden. Die Google-AdSense-Auslieferung ist derzeit deaktiviert. Ein künftiger Anbieterwechsel erfordert eine neue Einwilligungsversion.", accept: "Verfügbare Optionen akzeptieren", reject: "Ablehnen", manage: "Optionen verwalten", save: "Auswahl speichern", withdraw: "Optionale Einwilligung widerrufen", close: "Datenschutzauswahl schließen" }
 };
 
-function consentUi(lang) {
+function consentDialog(lang) {
   const t = CONSENT_I18N[lang] || CONSENT_I18N.en;
   const rawAdsterra = String(DATA.site.adsterra || "");
   const adsterraSrc = (rawAdsterra.match(/src="([^"]*\/invoke\.js)"/) || [])[1] || "";
@@ -418,8 +555,7 @@ function consentUi(lang) {
   const cfg = JSON.stringify({ gaId: DATA.site.gaId || "", adsenseSrc: ADSENSE_SCRIPT_SRC, adsterraSrc, adsterraContainer, advertisingAvailable });
   const intro = advertisingAvailable ? (t.introOn || t.intro) : t.intro;
   const adsHelp = advertisingAvailable ? (t.adsHelpOn || t.adsHelp) : t.adsHelp;
-  return `<button type="button" class="privacy-settings" data-consent-settings aria-haspopup="dialog" aria-controls="privacy-consent-dialog" aria-expanded="false">${esc(t.settings)}</button>
-  <dialog id="privacy-consent-dialog" class="consent-dialog" data-consent-dialog aria-labelledby="privacy-consent-title">
+  return `<dialog id="privacy-consent-dialog" class="consent-dialog" data-consent-dialog aria-labelledby="privacy-consent-title">
     <div class="consent-card">
       <button type="button" class="consent-close" data-consent-close aria-label="${esc(t.close)}">×</button>
       <h2 id="privacy-consent-title" tabindex="-1">${esc(t.title)}</h2><p>${esc(intro)}</p>
@@ -440,22 +576,23 @@ function consentUi(lang) {
   <script>
   (function(){
     var cfg=${cfg}, key="cozysimhub-consent-v1", dialog=document.querySelector("[data-consent-dialog]");
-    var settings=document.querySelector("[data-consent-settings]"), opener=null, loaded={analytics:false,adsense:false,adsterra:false};
+    var settingsButtons=document.querySelectorAll("[data-consent-settings]"), settings=settingsButtons[0], opener=null, loaded={analytics:false,adsense:false,adsterra:false};
     function read(){try{var v=JSON.parse(localStorage.getItem(key)||"null");return v&&typeof v.analytics==="boolean"&&typeof v.advertising==="boolean"?v:null;}catch(_){return null;}}
+    function setExpanded(v){settingsButtons.forEach(function(b){b.setAttribute("aria-expanded",v);});}
     function loadAnalytics(){if(loaded.analytics||!cfg.gaId)return;loaded.analytics=true;window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag("js",new Date());gtag("config",cfg.gaId);var s=document.createElement("script");s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id="+encodeURIComponent(cfg.gaId);document.head.appendChild(s);}
-    function loadAdvertising(){var slot=document.getElementById("consent-ad-slot");if(cfg.adsenseSrc&&!loaded.adsense){loaded.adsense=true;var g=document.createElement("script");g.async=true;g.crossOrigin="anonymous";g.src=cfg.adsenseSrc;slot.appendChild(g);}if(cfg.adsterraSrc&&!loaded.adsterra){loaded.adsterra=true;if(cfg.adsterraContainer){var d=document.createElement("div");d.id=cfg.adsterraContainer;slot.appendChild(d);}var a=document.createElement("script");a.async=true;a.setAttribute("data-cfasync","false");a.src=cfg.adsterraSrc;slot.appendChild(a);}}
+    function loadAdvertising(){var slot=document.getElementById("consent-ad-slot");if(cfg.adsenseSrc&&!loaded.adsense){loaded.adsense=true;var g=document.createElement("script");g.async=true;g.crossOrigin="anonymous";g.src=cfg.adsenseSrc;slot.appendChild(g);}if(cfg.adsterraSrc&&!loaded.adsterra){loaded.adsterra=true;if(cfg.adsterraContainer){var d=document.createElement("div");d.id=cfg.adsterraContainer;slot.appendChild(d);}var a=document.createElement("script");a.async=true;a.setAttribute("data-cfasync","false");a.src=cfg.adsterraSrc;slot.appendChild(a);}var rail=document.querySelector("[data-rail-ad]");if(rail){rail.hidden=false;}}
     function apply(v){if(v&&v.analytics)loadAnalytics();if(v&&v.advertising&&cfg.advertisingAvailable)loadAdvertising();}
-    function close(){if(dialog.open)dialog.close();settings.setAttribute("aria-expanded","false");if(opener&&opener.focus)opener.focus();}
-    function open(source){opener=source||document.activeElement;var v=read();dialog.querySelector("[data-consent-analytics]").checked=!!(v&&v.analytics);var advertising=dialog.querySelector("[data-consent-advertising]");advertising.checked=!!(v&&v.advertising&&cfg.advertisingAvailable);advertising.disabled=!cfg.advertisingAvailable;dialog.querySelector("[data-consent-manage]").hidden=true;dialog.querySelector("[data-consent-save]").hidden=true;dialog.querySelector("[data-consent-withdraw]").hidden=!v;settings.setAttribute("aria-expanded","true");dialog.showModal();dialog.querySelector("#privacy-consent-title").focus();}
+    function close(){if(dialog.open)dialog.close();setExpanded(false);if(opener&&opener.focus)opener.focus();}
+    function open(source){opener=source||document.activeElement;var v=read();dialog.querySelector("[data-consent-analytics]").checked=!!(v&&v.analytics);var advertising=dialog.querySelector("[data-consent-advertising]");advertising.checked=!!(v&&v.advertising&&cfg.advertisingAvailable);advertising.disabled=!cfg.advertisingAvailable;dialog.querySelector("[data-consent-manage]").hidden=true;dialog.querySelector("[data-consent-save]").hidden=true;dialog.querySelector("[data-consent-withdraw]").hidden=!v;setExpanded(true);dialog.showModal();dialog.querySelector("#privacy-consent-title").focus();}
     function save(v){v.advertising=!!(v.advertising&&cfg.advertisingAvailable);localStorage.setItem(key,JSON.stringify(v));apply(v);close();}
-    settings.addEventListener("click",function(){open(settings);});
+    settingsButtons.forEach(function(b){b.addEventListener("click",function(){open(b);});});
     dialog.querySelector("[data-consent-close]").addEventListener("click",close);
     dialog.querySelector("[data-consent-accept]").addEventListener("click",function(){save({analytics:true,advertising:cfg.advertisingAvailable});});
     dialog.querySelector("[data-consent-reject]").addEventListener("click",function(){save({analytics:false,advertising:false});});
     dialog.querySelector("[data-consent-manage-open]").addEventListener("click",function(){dialog.querySelector("[data-consent-manage]").hidden=false;dialog.querySelector("[data-consent-save]").hidden=false;});
     dialog.querySelector("[data-consent-save]").addEventListener("click",function(){save({analytics:dialog.querySelector("[data-consent-analytics]").checked,advertising:dialog.querySelector("[data-consent-advertising]").checked});});
     dialog.querySelector("[data-consent-withdraw]").addEventListener("click",function(){save({analytics:false,advertising:false});});
-    dialog.addEventListener("cancel",function(){setTimeout(function(){settings.setAttribute("aria-expanded","false");if(opener&&opener.focus)opener.focus();},0);});
+    dialog.addEventListener("cancel",function(){setTimeout(function(){setExpanded(false);if(opener&&opener.focus)opener.focus();},0);});
     var initial=read();if(initial)apply(initial);else setTimeout(function(){open(settings);},0);
   })();
   </script>`;
@@ -478,25 +615,65 @@ function renderAmazonAffiliate(lang) {
   </div>`;
 }
 
-/* 共享 tome-nav 交互 JS（抽屉开合 + Escape 焦点归还 + reveal + TOC 高亮）：
-   所有页面（含月光页）都走这一份，保证导航行为一致（用户反馈 1）。 */
+/* 共享导航交互 JS（抽屉开合 + 关闭态 inert + 打开态焦点圈闭 + Escape 归还 + reveal + TOC 高亮 + 下拉收起）：
+   所有页面（含月光页）都走这一份，保证导航行为一致（P1-06：Doloc 同款缺陷的回归修复）。 */
 function tomeNavJs() {
   return `<script>
 document.addEventListener('DOMContentLoaded', function(){
   var toggle = document.querySelector('.tome-nav-toggle');
   var nav = document.querySelector('.tome-nav');
   var overlay = document.querySelector('.tome-nav-overlay');
+  var mobile = window.matchMedia('(max-width: 960px)');
   if (toggle && nav && overlay) {
-    function setNavigation(open, returnFocus){nav.classList.toggle('open',open);overlay.classList.toggle('show',open);toggle.setAttribute('aria-expanded',open?'true':'false');if(!open&&returnFocus)toggle.focus();}
+    function focusables(){
+      return Array.prototype.slice.call(nav.querySelectorAll('a[href], button:not([disabled]), summary, input, select, textarea, [tabindex]:not([tabindex="-1"])')).filter(function(el){ return el.offsetWidth > 0 || el.offsetHeight > 0; });
+    }
+    function setNavigation(open, returnFocus){
+      nav.classList.toggle('open', open);
+      overlay.classList.toggle('show', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) {
+        nav.removeAttribute('inert');
+        var els = focusables();
+        if (els.length) els[0].focus();
+      } else {
+        if (mobile.matches) nav.setAttribute('inert', '');
+        if (returnFocus && toggle) toggle.focus();
+      }
+    }
+    function trapKey(e){
+      if (!nav.classList.contains('open') || !mobile.matches) return;
+      var els = focusables();
+      if (!els.length) { e.preventDefault(); return; }
+      var active = document.activeElement;
+      if (e.key === 'Tab') {
+        if (active === els[els.length - 1] && !e.shiftKey) { e.preventDefault(); els[0].focus(); }
+        else if (active === els[0] && e.shiftKey) { e.preventDefault(); els[els.length - 1].focus(); }
+      }
+    }
+    mobile.addEventListener('change', function(m){
+      if (m.matches) { if (!nav.classList.contains('open')) nav.setAttribute('inert', ''); }
+      else { nav.removeAttribute('inert'); nav.classList.remove('open'); overlay.classList.remove('show'); toggle.setAttribute('aria-expanded', 'false'); }
+    });
+    if (mobile.matches) nav.setAttribute('inert', '');
     toggle.addEventListener('click', function(){ setNavigation(!nav.classList.contains('open'), false); });
     overlay.addEventListener('click', function(){ setNavigation(false, true); });
-    document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && nav.classList.contains('open')) { setNavigation(false, true); } });
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape' && nav.classList.contains('open')) { setNavigation(false, true); return; }
+      trapKey(e); /* drawer-focus-trap */
+    });
   }
+  document.addEventListener('click', function(e){
+    document.querySelectorAll('details[open]').forEach(function(d){ if (!d.contains(e.target)) d.open = false; });
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') document.querySelectorAll('details[open]').forEach(function(d){ d.open = false; });
+  });
   var obs = new IntersectionObserver(function(es){
     es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); obs.unobserve(en.target); } });
   }, {threshold:.08});
   document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
-  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.page-folio nav a'));
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.folio-toc a'));
   if (tocLinks.length) {
     var tocTargets = tocLinks.map(function(a){ return document.querySelector(a.getAttribute('href')); });
     var tocObs = new IntersectionObserver(function(es){
@@ -516,7 +693,11 @@ document.addEventListener('DOMContentLoaded', function(){
 function footer(lang, slug) {
   const n = navI18n(lang);
   const c = catI18n(lang);
-  const key = DATA.pages.slice(0, 8).map(p => `<a href="${linkOf(p.slug, lang)}">${esc(pageOf(p, lang).title)}</a>`).join("");
+  const game = gameOf(slug);
+  // P1-03：页脚 key 链接按当前游戏从 games.json 取；首页/静态页用最新内容（跨游戏）
+  const key = game
+    ? gameGuides(game).slice(0, 8).map(s => { const p = DATA.pages.find(x => x.slug === s); return p ? `<a href="${linkOf(s, lang)}">${esc(pageOf(p, lang).title)}</a>` : ""; }).join("")
+    : latestItems(lang, 5).map(({ slug: s }) => { const p = DATA.pages.find(x => x.slug === s); return p ? `<a href="${linkOf(s, lang)}">${esc(pageOf(p, lang).title)}</a>` : ""; }).join("");
   const steamHref = (slug || "").startsWith("sandustry")
     ? "https://store.steampowered.com/app/2764460/Sandustry/"
     : DATA.game.steamUrl;
@@ -540,7 +721,8 @@ function footer(lang, slug) {
 </footer>
 ${KIT.decisionEventsScript()}
 ${tomeNavJs()}
-${consentUi(lang)}`;
+${consentDialog(lang)}
+</div>`;
 }
 /* ---------- Section 渲染（手账组件语言） ---------- */
 function renderSection(s, lang) {
@@ -665,17 +847,6 @@ function latestNav(lang) {
   return `<div class="tome-chapter"><b>${esc(c.secLatest)}</b>${items}</div>`;
 }
 
-/* 游戏切换器（tome-nav 顶部，品牌下方 —— spec §A.3） */
-function gameSwitch(lang, active) {
-  const c = catI18n(lang);
-  const items = GAMES.map(g => {
-    const name = g.nameI18n[lang] || g.name;
-    const current = (active || "").startsWith(g.id);
-    return `<a class="game-switch-item${current ? " active" : ""}" href="${linkOf(g.hubSlug, lang)}"${current ? ' aria-current="page"' : ""}>${GAME_ICON[g.icon] || ICON.crown}<span>${esc(name)}</span></a>`;
-  }).join("");
-  return `<nav class="game-switch" aria-label="${esc(c.switchLabel)}">${items}</nav>`;
-}
-
 /* 游戏卡片（spec §A.2） */
 function gameCard(g, lang) {
   const c = catI18n(lang);
@@ -722,8 +893,7 @@ function renderHome(lang) {
   const t = pageOf(DATA.pages.find(p => p.slug === "index"), lang);
   const c = catI18n(lang);
   const cards = GAMES.map(g => gameCard(g, lang)).join("");
-  const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger" aria-controls="sovereign-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
-<div class="tome-nav-overlay"></div>
+  const body = `<div class="app-main">
 <main class="page-main hub-main">
   <section class="hub-hero">
     <span class="hub-eyebrow reveal">${esc(c.hubEyebrow)}</span>
@@ -746,9 +916,9 @@ function renderHome(lang) {
     <h2 class="hub-section-title">${esc(c.secLatest)}</h2>
     <div class="latest-list">${latestListHtml(lang)}</div>
   </section>
-</main>`;
+</main></div>`;
   const ld = [ldOrganization(), ldItemList(GAMES, lang)];
-  return head(t.metaTitle || t.title, t.metaDescription, ld, "index", lang) + header(lang, "index") + body + footer(lang, "index");
+  return head(t.metaTitle || t.title, t.metaDescription, ld, "index", lang) + header(lang, "index") + body + footer(lang, "index") + "</div></body></html>";
 }
 /* ---------- 普通页 ---------- */
 function renderPage(p, lang) {
@@ -769,7 +939,7 @@ function renderPage(p, lang) {
   const tocItems = tocEntries.join("");
   // 搜索框只在目录足够长（>=5 条）时渲染；短目录（如 Sandustry 0-3 条）不显示，避免占位空洞
   const tocSearchHtml = tocEntries.length >= 5
-    ? `<div class="toc-search"><input type="search" placeholder="${esc(navI18n(lang).search)}" aria-label="${esc(navI18n(lang).searchLabel)}" onkeyup="var q=this.value.toLowerCase();document.querySelectorAll('.page-folio nav a').forEach(function(a){a.style.display=a.textContent.toLowerCase().includes(q)?'':'none';});" /></div>`
+    ? `<div class="toc-search"><input type="search" placeholder="${esc(navI18n(lang).search)}" aria-label="${esc(navI18n(lang).searchLabel)}" onkeyup="var q=this.value.toLowerCase();document.querySelectorAll('.folio-toc a').forEach(function(a){a.style.display=a.textContent.toLowerCase().includes(q)?'':'none';});" /></div>`
     : "";
   const sections = secs.map((s, i) => {
     const withId = { ...s, _tocId: `sec-${i}` };
@@ -778,14 +948,11 @@ function renderPage(p, lang) {
   const imgMap = { "sovereign-tower/how-to-play": "how-to-play", "sovereign-tower/knights": "knights", "sovereign-tower/secret-knights": "secret-knights", "sovereign-tower/romance": "romance", "sovereign-tower/endings": "endings", "sovereign-tower/recipes": "recipes", "sovereign-tower/quest-mechanics": "quest-mechanics", "sovereign-tower/achievements": "achievements" };
   const pageImg = imgMap[p.slug];
   const art = pageImg ? `<img class="page-art reveal" src="/images/${pageImg}-640.jpg" srcset="/images/${pageImg}-640.jpg 640w, /images/${pageImg}-1280.jpg 1280w, /images/${pageImg}.jpg 1600w" sizes="(max-width: 720px) 640px, 1280px" alt="${esc(t.title)}" width="900" height="506" loading="lazy" />` : "";
-  const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger" aria-controls="sovereign-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
-<div class="tome-nav-overlay"></div>
+  const n = navI18n(lang);
+  const game = gameOf(p.slug);
+  const relatedHtml = game ? relatedGuides(lang, game, p.slug) : "";
+  const body = `<div class="app-main">
 <main class="page-main"><div class="page-shell">
-  <aside class="page-folio reveal">
-    <div class="folio-cap">${isTool ? (lang === "zh-CN" ? "工具" : "Tools") : (lang === "zh-CN" ? "章回" : "Folio")}</div>
-    ${tocSearchHtml}
-    <nav>${tocItems}</nav>
-  </aside>
   <article class="page-leaf">
     <div class="page-head reveal">
       <span class="leaf-tag">${isTool ? (lang === "zh-CN" ? "工具" : "Tool") : (lang === "zh-CN" ? "圆桌手账" : "Ledger")}</span>
@@ -795,7 +962,14 @@ function renderPage(p, lang) {
     </div>
     ${sections}
   </article>
-  </div></main>`;
+  <aside class="page-folio reveal">
+    <div class="folio-cap">${esc(n.toc)}</div>
+    ${tocSearchHtml}
+    <nav class="folio-toc" aria-label="${esc(n.toc)}">${tocItems}</nav>
+    ${relatedHtml}
+    <div class="ad-slot" data-rail-ad hidden><span class="ad-label">${esc(n.ad)}</span></div>
+  </aside>
+</div></main></div>`;
   return head(t.metaTitle || t.title, t.metaDescription, ld, p.slug, lang) + header(lang, p.slug) + body + footer(lang, p.slug);
 }
 /* ---------- 静态页（about/privacy/contact） ---------- */
@@ -844,9 +1018,11 @@ function renderStatic(slug, lang) {
     }
   };
   const bodyMap = BODY_I18N[lang] || BODY_I18N.en;
-  const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger" aria-controls="sovereign-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
-<div class="tome-nav-overlay"></div>
-<main class="page-main"><div class="page-shell"><article class="page-leaf"><div class="page-head"><h1>${esc(titleMap[slug])}</h1></div><p>${bodyMap[slug]}</p></article></div></main>`;
+  const body = `<div class="app-main">
+<main class="page-main"><div class="page-static"><article class="page-leaf">
+  <div class="page-head"><h1>${esc(titleMap[slug])}</h1></div>
+  <p>${bodyMap[slug]}</p>
+</article></div></main></div>`;
   const dhi = lang.startsWith("zh") || lang.startsWith("ja") || lang.startsWith("ko") ? 78 : 158;
   const desc = bodyMap[slug].length > dhi ? bodyMap[slug].slice(0, dhi - 1).trimEnd() + "…" : bodyMap[slug];
   return head(titleMap[slug], desc, [], slug, lang) + header(lang, slug) + body + footer(lang, slug);
@@ -930,21 +1106,15 @@ function moonPhaseIcon(n, cls) {
   return `<svg class="moon-phase ${cls || ""}" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="currentColor" opacity="0.18"/><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 3a9 9 0 0 1 0 18c${(pct * 6).toFixed(1)} 0 ${(pct * 9).toFixed(1)}-${(pct * 4).toFixed(1)} 0-${(pct * 4.5).toFixed(1)}z" fill="currentColor" opacity="0.9"/></svg>`;
 }
 
-const MOON_GROUPS = {
-  data: ["moonlight-peaks/characters", "moonlight-peaks/how-to-play", "moonlight-peaks/gifts", "moonlight-peaks/romance", "moonlight-peaks/fishing", "moonlight-peaks/flowers", "moonlight-peaks/tools", "moonlight-peaks/achievements"],
-  deep: ["moonlight-peaks/spells", "moonlight-peaks/walkthrough", "moonlight-peaks/relationships", "moonlight-peaks/villagers", "moonlight-peaks/potions", "moonlight-peaks/museum", "moonlight-peaks/breeding"],
-  quick: ["moonlight-peaks/updates", "moonlight-peaks/steam-deck", "moonlight-peaks/console", "moonlight-peaks/system-requirements", "moonlight-peaks/faq"],
-};
-const MOON_PHASE_BY = {};
-MOON_GROUPS.data.forEach((s, i) => MOON_PHASE_BY[s] = 1 + i);
-MOON_GROUPS.deep.forEach((s, i) => MOON_PHASE_BY[s] = 1 + i);
-MOON_GROUPS.quick.forEach((s, i) => MOON_PHASE_BY[s] = 1 + i);
-
 function moonFooter(lang) {
   const t = moonTxt(lang);
   const n = navI18n(lang);
-  const quick = MOON_GROUPS.quick.concat(MOON_GROUPS.data.slice(0, 3));
-  const links = quick.map(s => { const p = DATA.pages.find(x => x.slug === s); return p ? `<a href="${linkOf(s, lang)}">${esc(pageOf(p, lang).title)}</a>` : ""; }).join("");
+  // P1-03：月光页脚 key 链接按月光 guideGroups 从 games.json 取（不再硬编码 MOON_GROUPS）
+  const mp = GAMES.find(g => g.id === "moonlight-peaks");
+  const links = (mp ? gameGuides(mp).slice(0, 8) : []).map(s => {
+    const p = DATA.pages.find(x => x.slug === s);
+    return p ? `<a href="${linkOf(s, lang)}">${esc(pageOf(p, lang).title)}</a>` : "";
+  }).join("");
   return `<footer class="moon-colophon">
   <div>
     <h3>${esc(t.ledger)}</h3>
@@ -964,7 +1134,8 @@ function moonFooter(lang) {
 </footer>
 ${KIT.decisionEventsScript()}
 ${tomeNavJs()}
-${consentUi(lang)}`;
+${consentDialog(lang)}
+</div>`;
 }
 
 /* 月光页 Section 渲染 */
@@ -1032,13 +1203,27 @@ function renderMoonPage(p, lang) {
   const headArt = isHome
     ? `<div class="moon-hero reveal"><h1>${esc(t.title)}</h1><p class="page-intro">${esc(t.intro || "")}</p></div>`
     : `<div class="moon-page-head reveal"><span class="moon-eyebrow">${esc(moonTxt(lang).ledger)}</span><h1>${esc(t.title)}</h1><p class="page-intro">${esc(t.intro || "")}</p></div>`;
-  const body = `<div class="app-main"><button class="tome-nav-toggle" type="button" aria-label="Toggle ledger" aria-controls="sovereign-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>${lang === "zh-CN" ? "圆桌手账目录" : "Ledger Index"}</button>
-<div class="tome-nav-overlay"></div>
-<main class="moon-main"><div class="moon-ruled">
-  <article class="moon-article">${headArt}${sections}</article>
-</div></main>`;
-  // 主题统一（用户反馈 1/2）：改用共享 header()（tome-nav：game-switch + tome-chapter + 全局 tome-lang），
-  // 不再渲染 moonHeader / moon-lang 独立语言切换器。
+  // 右栏：月光章节 TOC + 相关攻略 + 预留广告位（与共享 page-shell 一致）
+  const n = navI18n(lang);
+  const mp = GAMES.find(g => g.id === "moonlight-peaks");
+  const tocItems = secs.map((s, i) => {
+    if (!s.heading) return "";
+    return `<a href="#sec-${i}"><span class="toc-no">${String(i + 1).padStart(2, "0")}</span><span>${esc(s.heading)}</span></a>`;
+  }).filter(Boolean).join("");
+  const relatedHtml = relatedGuides(lang, mp, p.slug);
+  const body = `<div class="app-main">
+<main class="page-main"><div class="page-shell moon-page-shell">
+  <div class="moon-ruled">
+    <article class="moon-article">${headArt}${sections}</article>
+  </div>
+  <aside class="page-folio reveal">
+    <div class="folio-cap">${esc(n.toc)}</div>
+    <nav class="folio-toc" aria-label="${esc(n.toc)}">${tocItems}</nav>
+    ${relatedHtml}
+    <div class="ad-slot" data-rail-ad hidden><span class="ad-label">${esc(n.ad)}</span></div>
+  </aside>
+</div></main></div>`;
+  // 主题统一（用户反馈 1/2）：共享 header()（site-header + 侧栏），不再渲染 moonHeader / moon-lang 独立语言切换器。
   return head(t.metaTitle || t.title, t.metaDescription, ld, p.slug, lang) + header(lang, p.slug) + body + moonFooter(lang) + MOON_JS + "</div></body></html>";
 }
 
@@ -1447,7 +1632,7 @@ function build() {
   KIT.writeIndexNowKey(OUT, DATA.site.indexNowKey);
   KIT.writeAds(OUT, DATA.site.adsenseId);   // 未配 adsenseId 时不产出空 ads.txt（审计会拦空文件）
   // 404
-  fs.writeFileSync(path.join(OUT, "404.html"), renderStatic("404", DEF) + "</body></html>");
+  fs.writeFileSync(path.join(OUT, "404.html"), renderStatic("404", DEF) + "</div></body></html>");
   console.log(`✓ built ${all.length} files (${LANGS.length} langs, ${DATA.pages.length + 3} pages)`);
 }
 
