@@ -29,10 +29,10 @@ def _materials_table():
         p = m["props"]
         rows.append([
             m["name"],
-            p.get("Density", "待补"),
-            p.get("Matter Type", "待补"),
-            p.get("Obtained From", "待补"),
-            p.get("Processed By", "待补"),
+            p.get("Density", "TBD"),
+            p.get("Matter Type", "TBD"),
+            p.get("Obtained From", "TBD"),
+            p.get("Processed By", "TBD"),
             p.get("Byproducts", "—"),
         ])
     return T(headers, rows, tag="MATERIALS", heading="All Materials")
@@ -51,6 +51,51 @@ def _materials_ko_table():
             p.get("Byproducts", "—"),
         ])
     return T(headers, rows, tag="MATERIALS", heading="모든 재료")
+
+def _materials_ja_table():
+    headers = ["素材", "密度", "種類", "入手元", "加工方法", "副産物"]
+    rows = []
+    for m in MATERIALS:
+        p = m["props"]
+        rows.append([
+            m["name"],
+            p.get("Density", "未定"),
+            p.get("Matter Type", "未定"),
+            p.get("Obtained From", "未定"),
+            p.get("Processed By", "未定"),
+            p.get("Byproducts", "—"),
+        ])
+    return T(headers, rows, tag="MATERIALS", heading="全素材")
+
+def _materials_fr_table():
+    headers = ["Matériau", "Densité", "Type", "Obtenu depuis", "Transformé par", "Sous-produits"]
+    rows = []
+    for m in MATERIALS:
+        p = m["props"]
+        rows.append([
+            m["name"],
+            p.get("Density", "à compléter"),
+            p.get("Matter Type", "à compléter"),
+            p.get("Obtained From", "à compléter"),
+            p.get("Processed By", "à compléter"),
+            p.get("Byproducts", "—"),
+        ])
+    return T(headers, rows, tag="MATERIALS", heading="Tous les matériaux")
+
+def _materials_de_table():
+    headers = ["Material", "Dichte", "Typ", "Erhalten aus", "Verarbeitet durch", "Nebenprodukte"]
+    rows = []
+    for m in MATERIALS:
+        p = m["props"]
+        rows.append([
+            m["name"],
+            p.get("Density", "noch offen"),
+            p.get("Matter Type", "noch offen"),
+            p.get("Obtained From", "noch offen"),
+            p.get("Processed By", "noch offen"),
+            p.get("Byproducts", "—"),
+        ])
+    return T(headers, rows, tag="MATERIALS", heading="Alle Materialien")
 
 # ---------- 首页 ----------
 HOME_EN = {
@@ -309,8 +354,8 @@ def _to_page(en, i18n_map):
         "metaDescription": en.get("metaDescription", ""),
         "intro": en.get("intro", ""),
         "sections": en["sections"],
-        # 语言白名单：en(默认) + ko(主) + zh-CN(条件性)；ja/fr/de 不生成（G2 语言策略）
-        "languages": ["en", "ko", "zh-CN"],
+        # 语言白名单：en(默认) + zh-CN + ja + ko + fr + de（六语言全量，对齐站点全局语言）
+        "languages": ["en", "zh-CN", "ja", "ko", "fr", "de"],
     }
     if page_i18n:
         p["i18n"] = page_i18n
@@ -319,16 +364,16 @@ def _to_page(en, i18n_map):
 def build_sandustry_pages():
     """返回 Sandustry 页面列表，供 build_content.py 追加到 d['pages']。"""
     reg = {
-        "sandustry": (HOME_EN, {"ko": HOME_KO, "zh-CN": HOME_ZH}),
-        "sandustry/getting-started": (GETTING_STARTED_EN, {"ko": GETTING_STARTED_KO, "zh-CN": GETTING_STARTED_ZH}),
-        "sandustry/materials": (MATERIALS_EN, {"ko": MATERIALS_KO, "zh-CN": MATERIALS_ZH}),
-        "sandustry/steam-deck": (STEAM_DECK_EN, {"ko": STEAM_DECK_KO, "zh-CN": STEAM_DECK_ZH}),
-        "sandustry/macos": (MACOS_EN, {"ko": MACOS_KO, "zh-CN": MACOS_ZH}),
-        "sandustry/mobile": (MOBILE_EN, {"ko": MOBILE_KO, "zh-CN": MOBILE_ZH}),
-        "sandustry/achievements": (ACHIEVEMENTS_EN, {"ko": ACHIEVEMENTS_KO, "zh-CN": ACHIEVEMENTS_ZH}),
-        "sandustry/faq": (FAQ_EN, {"ko": FAQ_KO, "zh-CN": FAQ_ZH}),
-        "sandustry/updates": (UPDATES_EN, {"ko": UPDATES_KO, "zh-CN": UPDATES_ZH}),
-        "sandustry/mechanics": (MECHANICS_EN, {"ko": MECHANICS_KO, "zh-CN": MECHANICS_ZH}),
+        "sandustry": (HOME_EN, {"ko": HOME_KO, "zh-CN": HOME_ZH, "ja": HOME_JA, "fr": HOME_FR, "de": HOME_DE}),
+        "sandustry/getting-started": (GETTING_STARTED_EN, {"ko": GETTING_STARTED_KO, "zh-CN": GETTING_STARTED_ZH, "ja": GETTING_STARTED_JA, "fr": GETTING_STARTED_FR, "de": GETTING_STARTED_DE}),
+        "sandustry/materials": (MATERIALS_EN, {"ko": MATERIALS_KO, "zh-CN": MATERIALS_ZH, "ja": MATERIALS_JA, "fr": MATERIALS_FR, "de": MATERIALS_DE}),
+        "sandustry/steam-deck": (STEAM_DECK_EN, {"ko": STEAM_DECK_KO, "zh-CN": STEAM_DECK_ZH, "ja": STEAM_DECK_JA, "fr": STEAM_DECK_FR, "de": STEAM_DECK_DE}),
+        "sandustry/macos": (MACOS_EN, {"ko": MACOS_KO, "zh-CN": MACOS_ZH, "ja": MACOS_JA, "fr": MACOS_FR, "de": MACOS_DE}),
+        "sandustry/mobile": (MOBILE_EN, {"ko": MOBILE_KO, "zh-CN": MOBILE_ZH, "ja": MOBILE_JA, "fr": MOBILE_FR, "de": MOBILE_DE}),
+        "sandustry/achievements": (ACHIEVEMENTS_EN, {"ko": ACHIEVEMENTS_KO, "zh-CN": ACHIEVEMENTS_ZH, "ja": ACHIEVEMENTS_JA, "fr": ACHIEVEMENTS_FR, "de": ACHIEVEMENTS_DE}),
+        "sandustry/faq": (FAQ_EN, {"ko": FAQ_KO, "zh-CN": FAQ_ZH, "ja": FAQ_JA, "fr": FAQ_FR, "de": FAQ_DE}),
+        "sandustry/updates": (UPDATES_EN, {"ko": UPDATES_KO, "zh-CN": UPDATES_ZH, "ja": UPDATES_JA, "fr": UPDATES_FR, "de": UPDATES_DE}),
+        "sandustry/mechanics": (MECHANICS_EN, {"ko": MECHANICS_KO, "zh-CN": MECHANICS_ZH, "ja": MECHANICS_JA, "fr": MECHANICS_FR, "de": MECHANICS_DE}),
     }
     pages = []
     for slug, (en, i18n) in reg.items():
@@ -658,5 +703,515 @@ MECHANICS_ZH = {
             "能量驱动机器；管理生产链以逐步自动化。",
         ]),
         M("来源：官方维基（L0）。数据版本 v0.5.4（2026-08-17）。"),
+    ],
+}
+
+# ---------- ja（日本語）完整 i18n ----------
+HOME_JA = {
+    "slug": "sandustry",
+    "title": "サンダストリー 攻略ハブ",
+    "metaTitle": "サンダストリー攻略：素材・ガイド・パッチログ",
+    "metaDescription": "サンダストリー攻略ハブ：素材、はじめ方、Steam Deck・macOS ガイド、モバイル版の回答、16個の実績と EA パッチログ。",
+    "intro": "サンダストリーは、Lantto Games が開発し Hooded Horse がパブリッシングする、自動化・探索・基地建設のストラテジーゲームです。2026年8月13日より Steam、GOG、Microsoft Store、PC Game Pass で早期アクセス配信中。あらゆるピクセルが資源になります。",
+    "sections": [
+        N("このハブで扱う内容", [
+            {"text": "はじめ方ガイド（日本語＋英語）", "href": "/ja/sandustry/getting-started"},
+            {"text": f"全 {len(MATERIALS)} 種の素材の密度・種類・入手元・加工・物理特性", "href": "/ja/sandustry/materials"},
+            {"text": "メカニクス：研究・ツール・エネルギー・機械", "href": "/ja/sandustry/mechanics"},
+            {"text": "Steam Deck ガイド", "href": "/ja/sandustry/steam-deck"},
+            {"text": "macOS ガイド", "href": "/ja/sandustry/macos"},
+            {"text": "モバイル版の回答：公式モバイル版はなし", "href": "/ja/sandustry/mobile"},
+            {"text": "全 16 個の実績と解除率", "href": "/ja/sandustry/achievements"},
+            {"text": "よくある質問", "href": "/ja/sandustry/faq"},
+            {"text": "EA パッチログとロードマップ（API 連動）", "href": "/ja/sandustry/updates"},
+        ]),
+        M(f"データバージョン: {MATERIALS_VERSION['version']}（{MATERIALS_VERSION['captured']} 取得）。出典: 公式 Wiki (L0) + Steam API (L0)。"),
+    ],
+}
+GETTING_STARTED_JA = {
+    "slug": "sandustry/getting-started",
+    "title": "サンダストリー はじめ方",
+    "metaTitle": "サンダストリー はじめ方：最初の工場と素材",
+    "metaDescription": "サンダストリーのはじめ方ガイド：最初の工場、素材の理解、研究と進行。",
+    "intro": "このガイドでは、最初のシャベルから最初の自動化工場までを案内します。",
+    "sections": [
+        S("最初のステップ", [
+            "シャベル（Shovel）で土（Dirt）を掘りましょう — 土は砂（Sand）の主な供給源です。",
+            "砂を集め、水（Water）で湿った砂（Wet Sand）に変え、金（Gold）へと加工していきます。",
+            "コレクター（Collector）を建設して資源を貯めましょう — 金はコレクターに格納して初めてバンクに計上されます。",
+            "金とフラクサイト（Fluxite）で研究（Research）を解放しましょう — この2つが主な進行用資源です。",
+        ]),
+        N("進行のループ", [
+            "採掘 → 加工（水/火）→ 収集 → 研究 → 機械の建設 → 自動化",
+            "金とフラクサイトが研究を前進させます。各素材の入手元と副産物は素材表をご覧ください。",
+        ]),
+        M("出典: 公式 Wiki (L0)。バージョン v0.5.4。"),
+    ],
+}
+MATERIALS_JA = {
+    "slug": "sandustry/materials",
+    "title": "サンダストリーの全素材",
+    "metaTitle": "サンダストリーの全素材：密度と入手元",
+    "metaDescription": "サンダストリーの全素材：密度、物質の種類、入手元、加工、物理特性。",
+    "intro": f"サンダストリーの全 {len(MATERIALS)} 種の素材。密度・種類・入手元・加工・物理特性（公式 Wiki 出典）。",
+    "sections": [_materials_ja_table(), M("バージョン: v0.5.4。")],
+}
+STEAM_DECK_JA = {
+    "slug": "sandustry/steam-deck",
+    "title": "Steam Deck でサンダストリーをプレイ",
+    "metaTitle": "Steam Deck 版サンダストリー：設定と性能",
+    "metaDescription": "Steam Deck でサンダストリーを動かす：性能、設定、操作のヒント。",
+    "intro": "サンダストリーはネイティブ Linux 対応で、Steam Deck でプレイ可能との報告があります。最適な体験を得る方法を紹介します。",
+    "sections": [
+        N("セットアップ", [
+            "ネイティブ Linux ビルド — Proton は不要です。",
+            "コミュニティ報告（boilingsteam）ではプレイ可能。Valve 公式の互換性評価はまだ公開されていません。",
+            "Steam Input で操作を割り当てましょう — このゲームは完全なコントローラー対応カテゴリを持っていません。",
+        ]),
+        M("出典: L1 コミュニティ報告 + L0 プラットフォーム事実。バージョン v0.5.4。"),
+    ],
+}
+MACOS_JA = {
+    "slug": "sandustry/macos",
+    "title": "macOS でサンダストリーをプレイ",
+    "metaTitle": "macOS 版サンダストリー：ネイティブ対応と不具合",
+    "metaDescription": "サンダストリーの macOS ネイティブ対応、右クリックの不具合と回避策。",
+    "intro": "サンダストリーにはネイティブ macOS 版があります。右クリック操作の不具合がプレイヤーから報告されています — 回避策を紹介します。",
+    "sections": [
+        N("ネイティブ対応", [
+            "公式 macOS ビルド — 変換レイヤーは不要です。",
+            "既知の問題: 一部の場面で右クリック操作が失敗することがあります（コミュニティ報告）。",
+            "回避策: パッチが配信されるまで、キー再割り当てや別の入力をお使いください。",
+        ]),
+        M("出典: L1 コミュニティスレッド + L0 プラットフォーム事実。バージョン v0.5.4。"),
+    ],
+}
+MOBILE_JA = {
+    "slug": "sandustry/mobile",
+    "title": "サンダストリーにモバイル版はある？",
+    "metaTitle": "サンダストリーのモバイル版：なし（偽 APK に注意）",
+    "metaDescription": "サンダストリーに公式モバイル版はありません。偽 APK 配布サイトは詐欺です。",
+    "intro": "いいえ — サンダストリーに公式モバイル版はありません。偽の APK ダウンロードページが出回っています。ダウンロードしないでください。",
+    "sections": [
+        N("公式プラットフォーム", [
+            "Steam、GOG、Microsoft Store、PC Game Pass。",
+            "Android/iOS 版の発表はありません。",
+            "偽の「Sandustry APK」ページは詐欺です — 公式ソースのみ利用してください。",
+        ]),
+        M("出典: L0 公式プラットフォーム + L1 偽ページ観察。"),
+    ],
+}
+ACHIEVEMENTS_JA = {
+    "slug": "sandustry/achievements",
+    "title": "サンダストリーの全実績（16個）",
+    "metaTitle": "サンダストリーの全16実績（解除率）",
+    "metaDescription": "サンダストリーの全16個の実績とグローバル解除率。",
+    "intro": "サンダストリーの全16個の実績と、公式 Steam API によるグローバル解除率。",
+    "sections": [
+        T(["実績", "解除率"], [
+            ["PROMOTION_PROTOCOL", "93.5%"], ["FLUX_IT_UP", "89.3%"], ["GOLD_IN_THE_BIN", "87.8%"],
+            ["ANCIENT_TECHNOLOGY", "80.8%"], ["FIRST_BLOOM", "73.9%"], ["VOID_TOUCHED", "57.5%"],
+            ["CRITTER_CATCHER", "50.9%"], ["FIRST_SPARK", "49.9%"], ["QUARTERMASTER", "42.3%"],
+            ["STRATACORE_SECURED", "28.2%"], ["CONSERVATORY_CURATOR", "26.8%"], ["AURA_EXTRACTOR", "23.7%"],
+            ["FULL_CIRCLE", "19.6%"], ["FINAL_SCHEMATIC", "16.4%"], ["VAULTKEEPER", "10.8%"],
+            ["HELIODYNE_TYCOON", "0.4%"],
+        ]),
+        M("出典: Steam 実績 API (L0)。2026-08-17 取得。"),
+    ],
+}
+FAQ_JA = {
+    "slug": "sandustry/faq",
+    "title": "サンダストリー FAQ",
+    "metaTitle": "サンダストリー FAQ：韓国語・モバイル・マルチ",
+    "metaDescription": "サンダストリーのよくある質問：韓国語対応、モバイル版、マルチプレイ。",
+    "intro": "サンダストリーについてのよくある質問。",
+    "sections": [
+        F([
+            ["サンダストリーは韓国語に対応していますか？", "はい。韓国語（インターフェース＋字幕）を公式にサポートしています。"],
+            ["モバイル版はありますか？", "ありません。偽の APK ダウンロードサイトにご注意ください。公式プラットフォームは Steam、GOG、Microsoft Store、PC Game Pass です。"],
+            ["マルチプレイはありますか？", "ありません。シングルプレイのゲームです。"],
+            ["金（Gold）はどうやって入手しますか？", "金はほとんどの加工の副産物として得られます。コレクター（Collector）ブロックに格納して初めてバンクに計上されます。"],
+        ], heading="よくある質問"),
+    ],
+}
+UPDATES_JA = {
+    "slug": "sandustry/updates",
+    "title": "サンダストリー アップデートとパッチノート",
+    "metaTitle": "サンダストリー パッチノート：v0.5.4 と v0.5.3",
+    "metaDescription": "サンダストリー最新パッチノート：v0.5.4（フィルター編集、Tier 5 修正）、v0.5.3 修正、EA リリース。",
+    "intro": "Lantto Games は早期アクセスのパッチを頻繁に配信しています。このページでは公式 Steam ニュースの最新パッチノートを追跡し、新しいアップデートが配信されるたびに更新されます。",
+    "sections": [
+        T(["バージョン", "日付", "主な内容"], [
+            ["v0.5.4（アップデート #1）", "2026-08-16", "フィルター編集の改善、Tier 5 のソフトロック修正、赤ブロックの一時削除、ズームのキー割り当て"],
+            ["v0.5.3（ホットフィックス）", "2026-08-14", "ログの改善、メモリ最適化、より明確な目標"],
+            ["EA リリース", "2026-08-13", "サンダストリーが Steam、GOG、Microsoft Store、PC Game Pass で早期アクセス開始"],
+        ], heading="パッチ履歴"),
+        N("更新方法", [
+            "Steam：ゲームを起動すると更新が自動でインストールされます。",
+            "GOG / Microsoft Store / PC Game Pass：ストア側のパッチは Steam 版のリリースに後続する場合があります。",
+        ]),
+        M("出典: 公式 Steam ニュース (ISteamNews API, L0)。データバージョン v0.5.4 (2026-08-17)。"),
+    ],
+}
+MECHANICS_JA = {
+    "slug": "sandustry/mechanics",
+    "title": "サンダストリーのメカニクス：研究・ツール・エネルギー",
+    "metaTitle": "サンダストリーのメカニクス：研究とツール",
+    "metaDescription": "サンダストリーのコアメカニクス：研究の進行、ツールの段階、エネルギーと機械。",
+    "intro": "サンダストリーのコアループ：金とフラクサイトによる研究、ツールのアップグレード、エネルギーで動く機械。",
+    "sections": [
+        N("研究", [
+            "金（Gold）とフラクサイト（Fluxite）は主要な進行用資源です — 金は新技術の研究に使われます。",
+            "金はコレクター（Collector）ブロックに格納して初めてバンクに計上されます。",
+        ]),
+        N("ツール", [
+            "ツールには、シャベル、ガン、ロケットランチャー、ドリル、レーザー、ヴォイドガン、グラバー、火炎放射器、クライオブラスター、コララー、バキューム、グラップリングフック、デモリッシャー、マーキー、パイプリムーバーがあります。",
+            "上位のツールは、より速い採掘と加工を解放します。",
+        ]),
+        N("機械とエネルギー", [
+            "機械：コンベアベルト（Mk.2 含む）、ランチャー、フィルター、シェーカー、キネティックプレス、プランターボックス、コレクター、パイプ、ポンプ、液体ベント、フラックスエマネーター、スチームドライヤー、スイーパードローン。",
+            "エネルギーが機械を動かします。生産チェーンを管理して段階的に自動化しましょう。",
+        ]),
+        M("出典: 公式 Wiki (L0)。データバージョン v0.5.4 (2026-08-17)。"),
+    ],
+}
+
+# ---------- fr（Français）完整 i18n ----------
+HOME_FR = {
+    "slug": "sandustry",
+    "title": "Guide Sandustry",
+    "metaTitle": "Guide Sandustry : matériaux, guides et notes de patch",
+    "metaDescription": "Le hub de guides Sandustry : matériaux, prise en main, guides Steam Deck et macOS, réponse mobile, 16 succès et journal des patchs EA.",
+    "intro": "Sandustry est un jeu de stratégie d'automatisation, d'exploration et de construction de base développé par Lantto Games et édité par Hooded Horse. En accès anticipé depuis le 13 août 2026 sur Steam, GOG, Microsoft Store et PC Game Pass ; chaque pixel est une ressource.",
+    "sections": [
+        N("Ce que couvre ce hub", [
+            {"text": "Prise en main (français + anglais)", "href": "/fr/sandustry/getting-started"},
+            {"text": f"Les {len(MATERIALS)} matériaux : densité, type, source, transformation et physique", "href": "/fr/sandustry/materials"},
+            {"text": "Mécaniques : recherche, outils, énergie et machines", "href": "/fr/sandustry/mechanics"},
+            {"text": "Guide Steam Deck", "href": "/fr/sandustry/steam-deck"},
+            {"text": "Guide macOS", "href": "/fr/sandustry/macos"},
+            {"text": "Réponse mobile : aucune version mobile officielle", "href": "/fr/sandustry/mobile"},
+            {"text": "Les 16 succès avec leurs taux de déblocage", "href": "/fr/sandustry/achievements"},
+            {"text": "FAQ", "href": "/fr/sandustry/faq"},
+            {"text": "Journal des patchs EA et feuille de route (via API)", "href": "/fr/sandustry/updates"},
+        ]),
+        M(f"Version des données : {MATERIALS_VERSION['version']} (capturées le {MATERIALS_VERSION['captured']}). Sources : wiki officiel (L0) + API Steam (L0)."),
+    ],
+}
+GETTING_STARTED_FR = {
+    "slug": "sandustry/getting-started",
+    "title": "Débuter sur Sandustry",
+    "metaTitle": "Débuter sur Sandustry : première usine et matériaux",
+    "metaDescription": "Guide de prise en main de Sandustry : première usine, comprendre les matériaux, recherche et progression.",
+    "intro": "Ce guide vous mène de votre première pelle à votre première usine automatisée dans Sandustry.",
+    "sections": [
+        S("Premiers pas", [
+            "Commencez par miner de la terre (Dirt) avec votre pelle (Shovel) — la terre est la principale source de sable (Sand).",
+            "Récupérez le sable et laissez l'eau (Water) le transformer en sable mouillé (Wet Sand) ; progressez vers l'or (Gold).",
+            "Construisez un collecteur (Collector) pour stocker les ressources — l'or doit être rangé dans des blocs Collector pour compter dans votre banque.",
+            "Débloquez la recherche (Research) avec l'or et la fluxite (Fluxite) — ce sont les deux principales ressources de progression.",
+        ]),
+        N("Boucle de progression", [
+            "Miner → transformer (eau/feu) → collecter → rechercher → construire des machines → automatiser.",
+            "L'or et la fluxite font avancer la recherche ; consultez le tableau des matériaux pour chaque source et sous-produit.",
+        ]),
+        M("Source : wiki officiel (L0). Version v0.5.4."),
+    ],
+}
+MATERIALS_FR = {
+    "slug": "sandustry/materials",
+    "title": "Tous les matériaux de Sandustry",
+    "metaTitle": "Tous les matériaux de Sandustry : densité et sources",
+    "metaDescription": "Chaque matériau de Sandustry avec densité, type de matière, source, transformation et physique.",
+    "intro": f"Les {len(MATERIALS)} matériaux de Sandustry, avec densité, type, source, transformation et physique tirés du wiki officiel.",
+    "sections": [_materials_fr_table(), M("Version : v0.5.4.")],
+}
+STEAM_DECK_FR = {
+    "slug": "sandustry/steam-deck",
+    "title": "Sandustry sur Steam Deck",
+    "metaTitle": "Sandustry sur Steam Deck : réglages et performances",
+    "metaDescription": "Jouer à Sandustry sur Steam Deck : performances, réglages et conseils de contrôles.",
+    "intro": "Sandustry bénéficie d'un support Linux natif et serait jouable sur Steam Deck. Voici comment obtenir la meilleure expérience.",
+    "sections": [
+        N("Configuration", [
+            "Build Linux natif — aucun Proton requis.",
+            "Jouable selon les retours de la communauté (boilingsteam) ; l'évaluation officielle de compatibilité Valve n'est pas encore publiée.",
+            "Utilisez Steam Input pour mapper les contrôles — le jeu n'a pas de catégorie de prise en charge complète de la manette.",
+        ]),
+        M("Source : retours communautaires L1 + faits de plateforme L0. Version v0.5.4."),
+    ],
+}
+MACOS_FR = {
+    "slug": "sandustry/macos",
+    "title": "Sandustry sur macOS",
+    "metaTitle": "Sandustry sur macOS : support natif et bug",
+    "metaDescription": "Le support macOS natif de Sandustry, le bug de clic droit et les solutions de contournement.",
+    "intro": "Sandustry dispose d'une version macOS native. Un bug d'interaction au clic droit a été signalé par les joueurs — voici la solution.",
+    "sections": [
+        N("Support natif", [
+            "Build macOS officiel — aucune couche de traduction.",
+            "Problème connu : les interactions au clic droit peuvent échouer dans certains contextes (retours communautaires).",
+            "Contournement : rebindez ou utilisez une autre entrée jusqu'à ce qu'un correctif sorte.",
+        ]),
+        M("Source : fils communautaires L1 + faits de plateforme L0. Version v0.5.4."),
+    ],
+}
+MOBILE_FR = {
+    "slug": "sandustry/mobile",
+    "title": "Sandustry est-il disponible sur mobile ?",
+    "metaTitle": "Sandustry sur mobile ? Non (avertissement faux APK)",
+    "metaDescription": "Sandustry n'a aucune version mobile officielle. Les sites de téléchargement d'APK contrefaits sont des arnaques.",
+    "intro": "Non — Sandustry n'a aucune version mobile officielle. De fausses pages de téléchargement d'APK circulent ; ne les téléchargez pas.",
+    "sections": [
+        N("Plateformes officielles", [
+            "Steam, GOG, Microsoft Store et PC Game Pass.",
+            "Aucune version Android/iOS annoncée.",
+            "Les fausses pages « Sandustry APK » sont des arnaques — sources officielles uniquement.",
+        ]),
+        M("Source : plateformes officielles L0 + observation de fausses pages L1."),
+    ],
+}
+ACHIEVEMENTS_FR = {
+    "slug": "sandustry/achievements",
+    "title": "Tous les succès Sandustry (16)",
+    "metaTitle": "Les 16 succès Sandustry (taux)",
+    "metaDescription": "Les 16 succès Sandustry et leurs taux de déblocage mondiaux.",
+    "intro": "Les 16 succès Sandustry avec leurs taux de déblocage mondiaux issus de l'API Steam officielle.",
+    "sections": [
+        T(["Succès", "Taux de déblocage"], [
+            ["PROMOTION_PROTOCOL", "93.5%"], ["FLUX_IT_UP", "89.3%"], ["GOLD_IN_THE_BIN", "87.8%"],
+            ["ANCIENT_TECHNOLOGY", "80.8%"], ["FIRST_BLOOM", "73.9%"], ["VOID_TOUCHED", "57.5%"],
+            ["CRITTER_CATCHER", "50.9%"], ["FIRST_SPARK", "49.9%"], ["QUARTERMASTER", "42.3%"],
+            ["STRATACORE_SECURED", "28.2%"], ["CONSERVATORY_CURATOR", "26.8%"], ["AURA_EXTRACTOR", "23.7%"],
+            ["FULL_CIRCLE", "19.6%"], ["FINAL_SCHEMATIC", "16.4%"], ["VAULTKEEPER", "10.8%"],
+            ["HELIODYNE_TYCOON", "0.4%"],
+        ]),
+        M("Source : API des succès Steam (L0). Capturé le 2026-08-17."),
+    ],
+}
+FAQ_FR = {
+    "slug": "sandustry/faq",
+    "title": "FAQ Sandustry",
+    "metaTitle": "FAQ Sandustry : coréen, mobile, multijoueur",
+    "metaDescription": "Questions fréquentes sur Sandustry : support coréen, version mobile, multijoueur.",
+    "intro": "Questions fréquemment posées sur Sandustry.",
+    "sections": [
+        F([
+            ["Sandustry prend-il en charge le coréen ?", "Oui. Le coréen (interface + sous-titres) est officiellement pris en charge."],
+            ["Y a-t-il une version mobile ?", "Non. Méfiez-vous des faux sites de téléchargement d'APK. Plateformes officielles : Steam, GOG, Microsoft Store, PC Game Pass."],
+            ["Y a-t-il du multijoueur ?", "Non. C'est un jeu solo."],
+            ["Comment obtenir de l'or (Gold) ?", "L'or est un sous-produit de la plupart des transformations. Il doit être rangé dans des blocs Collector pour compter dans votre banque."],
+        ], heading="Questions fréquentes"),
+    ],
+}
+UPDATES_FR = {
+    "slug": "sandustry/updates",
+    "title": "Mises à jour et notes de patch Sandustry",
+    "metaTitle": "Notes de patch Sandustry : v0.5.4 et v0.5.3",
+    "metaDescription": "Les dernières notes de patch Sandustry : v0.5.4 (filtres, corrections Tier 5), le correctif v0.5.3 et le lancement EA.",
+    "intro": "Lantto Games publie de fréquents correctifs d'accès anticipé. Cette page suit les dernières notes de patch des actualités Steam officielles ; elle est mise à jour à chaque nouvelle mise à jour.",
+    "sections": [
+        T(["Version", "Date", "Points clés"], [
+            ["v0.5.4 (Mise à jour n°1)", "2026-08-16", "Meilleure édition des filtres, corrections de blocage du Tier 5, retrait temporaire des blocs rouges, raccourcis de zoom"],
+            ["v0.5.3 (Correctif)", "2026-08-14", "Meilleurs journaux, optimisations mémoire, objectifs plus clairs"],
+            ["Lancement EA", "2026-08-13", "Sandustry entre en accès anticipé sur Steam, GOG, Microsoft Store et PC Game Pass"],
+        ], heading="Historique des patchs"),
+        N("Comment mettre à jour", [
+            "Steam : les mises à jour s'installent automatiquement au lancement du jeu.",
+            "GOG / Microsoft Store / PC Game Pass : les correctifs côté boutique peuvent suivre la sortie Steam.",
+        ]),
+        M("Source : actualités Steam officielles (API ISteamNews, L0). Version des données v0.5.4 (2026-08-17)."),
+    ],
+}
+MECHANICS_FR = {
+    "slug": "sandustry/mechanics",
+    "title": "Mécaniques de Sandustry : recherche, outils, énergie",
+    "metaTitle": "Mécaniques de Sandustry : recherche et outils",
+    "metaDescription": "Les mécaniques de base de Sandustry : progression de la recherche, niveaux d'outils, énergie et machines.",
+    "intro": "Les boucles centrales de Sandustry : la recherche avec l'or et la fluxite, les améliorations d'outils et les machines alimentées en énergie.",
+    "sections": [
+        N("Recherche", [
+            "L'or (Gold) et la fluxite (Fluxite) sont les deux principales ressources de progression — l'or sert à rechercher de nouvelles technologies.",
+            "L'or ne compte dans votre banque que lorsqu'il est rangé dans des blocs Collector.",
+        ]),
+        N("Outils", [
+            "Les outils comprennent la pelle (Shovel), le pistolet (Gun), le lance-roquettes (Rocket Launcher), la perceuse (Drill), le laser (Laser), le pistolet du vide (Void Gun), le grappin (Grabber), le lance-flammes (Flamethrower), le cryoblaster (Cryoblaster), le corraller (Corraller), l'aspirateur (Vacuum), le grappin (Grappling Hook), le démolisseur (Demolisher), le marquee (Marquee) et le retire-tuyau (Pipe Remover).",
+            "Les outils de niveau supérieur débloquent une extraction et une transformation plus rapides.",
+        ]),
+        N("Machines et énergie", [
+            "Machines : tapis roulant (Conveyor Belt, et Mk.2), lanceur (Launcher), filtre (Filter), secoueur (Shaker), presse cinétique (Kinetic Press), bac à planter (Planter Box), collecteur (Collector), tuyau (Pipe), pompe (Pump), évent à liquide (Liquid Vent), émanateur de flux (Flux Emanator), séchoir à vapeur (Steam Dryer), drone balayeur (Sweeper Drone).",
+            "L'énergie alimente les machines ; gérez les chaînes de production pour automatiser progressivement.",
+        ]),
+        M("Source : wiki officiel (L0). Version des données v0.5.4 (2026-08-17)."),
+    ],
+}
+
+# ---------- de（Deutsch）完整 i18n ----------
+HOME_DE = {
+    "slug": "sandustry",
+    "title": "Sandustry-Guide-Hub",
+    "metaTitle": "Sandustry-Guide: Materialien, Guides & Patch-Protokoll",
+    "metaDescription": "Sandustry-Guide-Hub: Materialien, Einstieg, Steam-Deck- und macOS-Guides, Mobile-Antwort, 16 Erfolge und EA-Patch-Protokoll.",
+    "intro": "Sandustry ist ein Automations-, Erkundungs- und Basisbau-Strategiespiel von Lantto Games, veröffentlicht von Hooded Horse. Seit dem 13. August 2026 im Early Access auf Steam, GOG, Microsoft Store und PC Game Pass; jeder Pixel ist eine Ressource.",
+    "sections": [
+        N("Was dieser Hub abdeckt", [
+            {"text": "Einstieg (Deutsch + Englisch)", "href": "/de/sandustry/getting-started"},
+            {"text": f"Alle {len(MATERIALS)} Materialien mit Dichte, Typ, Quelle, Verarbeitung und Physik", "href": "/de/sandustry/materials"},
+            {"text": "Mechanik: Forschung, Werkzeuge, Energie und Maschinen", "href": "/de/sandustry/mechanics"},
+            {"text": "Steam-Deck-Guide", "href": "/de/sandustry/steam-deck"},
+            {"text": "macOS-Guide", "href": "/de/sandustry/macos"},
+            {"text": "Mobile-Antwort: keine offizielle Mobile-Version", "href": "/de/sandustry/mobile"},
+            {"text": "Alle 16 Erfolge mit Freischaltraten", "href": "/de/sandustry/achievements"},
+            {"text": "FAQ", "href": "/de/sandustry/faq"},
+            {"text": "EA-Patch-Protokoll & Roadmap (API-basiert)", "href": "/de/sandustry/updates"},
+        ]),
+        M(f"Datenversion: {MATERIALS_VERSION['version']} (erfasst am {MATERIALS_VERSION['captured']}). Quellen: offizielles Wiki (L0) + Steam-API (L0)."),
+    ],
+}
+GETTING_STARTED_DE = {
+    "slug": "sandustry/getting-started",
+    "title": "Sandustry-Einstieg",
+    "metaTitle": "Sandustry-Einstieg: erste Fabrik & Materialien",
+    "metaDescription": "Sandustry-Einstiegsguide: erste Fabrik, Materialien verstehen, Forschung und Fortschritt.",
+    "intro": "Dieser Guide bringt dich von deiner ersten Schaufel bis zu deiner ersten automatisierten Fabrik in Sandustry.",
+    "sections": [
+        S("Erste Schritte", [
+            "Grabe zuerst Erde (Dirt) mit deiner Schaufel (Shovel) — Erde ist die Hauptquelle für Sand.",
+            "Sammle Sand und lass Wasser (Water) ihn zu nassem Sand (Wet Sand) machen; arbeite dich zu Gold vor.",
+            "Baue einen Sammler (Collector), um Ressourcen zu lagern — Gold muss in Collector-Blöcken liegen, um auf dein Konto zu zählen.",
+            "Schalte die Forschung (Research) mit Gold und Fluxit (Fluxite) frei — das sind die zwei wichtigsten Fortschrittsmaterialien.",
+        ]),
+        N("Fortschritts-Schleife", [
+            "Abbauen → verarbeiten (Wasser/Feuer) → sammeln → forschen → Maschinen bauen → automatisieren.",
+            "Gold und Fluxit treiben die Forschung an; sieh dir die Materialtabelle für jede Quelle und jedes Nebenprodukt an.",
+        ]),
+        M("Quelle: offizielles Wiki (L0). Version v0.5.4."),
+    ],
+}
+MATERIALS_DE = {
+    "slug": "sandustry/materials",
+    "title": "Alle Sandustry-Materialien",
+    "metaTitle": "Alle Sandustry-Materialien: Dichte & Quellen",
+    "metaDescription": "Jedes Sandustry-Material mit Dichte, Materietyp, Quelle, Verarbeitung und Physik.",
+    "intro": f"Alle {len(MATERIALS)} Materialien in Sandustry, mit Dichte, Typ, Quelle, Verarbeitung und Physik aus dem offiziellen Wiki.",
+    "sections": [_materials_de_table(), M("Version: v0.5.4.")],
+}
+STEAM_DECK_DE = {
+    "slug": "sandustry/steam-deck",
+    "title": "Sandustry auf dem Steam Deck",
+    "metaTitle": "Sandustry auf dem Steam Deck: Einstellungen & Leistung",
+    "metaDescription": "Sandustry auf dem Steam Deck spielen: Leistung, Einstellungen und Steuerungs-Tipps.",
+    "intro": "Sandustry unterstützt Linux nativ und ist Berichten zufolge auf dem Steam Deck spielbar. So holst du das beste Erlebnis heraus.",
+    "sections": [
+        N("Einrichtung", [
+            "Nativer Linux-Build — kein Proton nötig.",
+            "Laut Community-Berichten (boilingsteam) spielbar; die offizielle Valve-Kompatibilitätsbewertung ist noch nicht veröffentlicht.",
+            "Nutze Steam Input zum Belegen der Steuerung — das Spiel hat keine Kategorie für vollständige Controller-Unterstützung.",
+        ]),
+        M("Quelle: L1-Community-Berichte + L0-Plattformfakten. Version v0.5.4."),
+    ],
+}
+MACOS_DE = {
+    "slug": "sandustry/macos",
+    "title": "Sandustry auf macOS",
+    "metaTitle": "Sandustry auf macOS: nativer Support & Bug",
+    "metaDescription": "Nativer macOS-Support für Sandustry, der Rechtsklick-Bug und Workarounds.",
+    "intro": "Sandustry hat eine native macOS-Version. Spieler melden einen Rechtsklick-Interaktionsbug — hier ist der Workaround.",
+    "sections": [
+        N("Nativer Support", [
+            "Offizieller macOS-Build — keine Übersetzungsschicht.",
+            "Bekanntes Problem: Rechtsklick-Interaktionen können in manchen Kontexten fehlschlagen (Community-Berichte).",
+            "Workaround: Belege die Taste neu oder nutze eine alternative Eingabe, bis ein Patch erscheint.",
+        ]),
+        M("Quelle: L1-Community-Threads + L0-Plattformfakten. Version v0.5.4."),
+    ],
+}
+MOBILE_DE = {
+    "slug": "sandustry/mobile",
+    "title": "Gibt es Sandustry für Mobilgeräte?",
+    "metaTitle": "Sandustry für Mobilgeräte? Nein (Warnung vor Fake-APKs)",
+    "metaDescription": "Sandustry hat keine offizielle Mobile-Version. Fake-APK-Downloadseiten sind Betrug.",
+    "intro": "Nein — Sandustry hat keine offizielle Mobile-Version. Gefälschte APK-Downloadseiten kursieren; lade nichts von ihnen herunter.",
+    "sections": [
+        N("Offizielle Plattformen", [
+            "Steam, GOG, Microsoft Store und PC Game Pass.",
+            "Keine Android-/iOS-Version angekündigt.",
+            "Gefälschte „Sandustry-APK“-Seiten sind Betrug — nur offizielle Quellen nutzen.",
+        ]),
+        M("Quelle: L0-offizielle Plattformen + L1-Beobachtung von Fake-Seiten."),
+    ],
+}
+ACHIEVEMENTS_DE = {
+    "slug": "sandustry/achievements",
+    "title": "Alle Sandustry-Erfolge (16)",
+    "metaTitle": "Alle 16 Sandustry-Erfolge (Raten)",
+    "metaDescription": "Alle 16 Sandustry-Erfolge und ihre globalen Freischaltraten.",
+    "intro": "Alle 16 Sandustry-Erfolge mit globalen Freischaltraten aus der offiziellen Steam-API.",
+    "sections": [
+        T(["Erfolg", "Freischaltrate"], [
+            ["PROMOTION_PROTOCOL", "93.5%"], ["FLUX_IT_UP", "89.3%"], ["GOLD_IN_THE_BIN", "87.8%"],
+            ["ANCIENT_TECHNOLOGY", "80.8%"], ["FIRST_BLOOM", "73.9%"], ["VOID_TOUCHED", "57.5%"],
+            ["CRITTER_CATCHER", "50.9%"], ["FIRST_SPARK", "49.9%"], ["QUARTERMASTER", "42.3%"],
+            ["STRATACORE_SECURED", "28.2%"], ["CONSERVATORY_CURATOR", "26.8%"], ["AURA_EXTRACTOR", "23.7%"],
+            ["FULL_CIRCLE", "19.6%"], ["FINAL_SCHEMATIC", "16.4%"], ["VAULTKEEPER", "10.8%"],
+            ["HELIODYNE_TYCOON", "0.4%"],
+        ]),
+        M("Quelle: Steam-Erfolge-API (L0). Erfasst am 2026-08-17."),
+    ],
+}
+FAQ_DE = {
+    "slug": "sandustry/faq",
+    "title": "Sandustry-FAQ",
+    "metaTitle": "Sandustry-FAQ: Koreanisch, Mobile, Multiplayer",
+    "metaDescription": "Häufig gestellte Fragen zu Sandustry: Koreanisch-Support, Mobile-Version, Multiplayer.",
+    "intro": "Häufig gestellte Fragen zu Sandustry.",
+    "sections": [
+        F([
+            ["Unterstützt Sandustry Koreanisch?", "Ja. Koreanisch (Oberfläche + Untertitel) wird offiziell unterstützt."],
+            ["Gibt es eine Mobile-Version?", "Nein. Vorsicht vor gefälschten APK-Downloadseiten. Offizielle Plattformen: Steam, GOG, Microsoft Store, PC Game Pass."],
+            ["Gibt es Multiplayer?", "Nein. Es ist ein Einzelspieler-Spiel."],
+            ["Wie bekomme ich Gold?", "Gold ist ein Nebenprodukt der meisten Verarbeitungsprozesse. Es muss in Collector-Blöcken gelagert werden, um auf dein Konto zu zählen."],
+        ], heading="Häufig gestellte Fragen"),
+    ],
+}
+UPDATES_DE = {
+    "slug": "sandustry/updates",
+    "title": "Sandustry-Updates & Patch-Notes",
+    "metaTitle": "Sandustry-Patch-Notes: v0.5.4 & v0.5.3",
+    "metaDescription": "Die neuesten Sandustry-Patch-Notes: v0.5.4 (Filter-Bearbeitung, Tier-5-Fixes), v0.5.3-Hotfix und der EA-Start — aktualisiert mit jedem neuen Patch.",
+    "intro": "Lantto Games veröffentlicht regelmäßig Early-Access-Patches. Diese Seite verfolgt die neuesten Patch-Notes aus den offiziellen Steam-News und wird bei jedem neuen Update aktualisiert.",
+    "sections": [
+        T(["Version", "Datum", "Highlights"], [
+            ["v0.5.4 (Update #1)", "2026-08-16", "Bessere Filter-Bearbeitung, Tier-5-Softlock-Fixes, vorübergehende Entfernung roter Blöcke, Zoom-Tastenbelegungen"],
+            ["v0.5.3 (Hotfix)", "2026-08-14", "Besseres Logging, Speicher-Optimierungen, klarere Ziele"],
+            ["EA-Start", "2026-08-13", "Sandustry startet in den Early Access auf Steam, GOG, Microsoft Store und PC Game Pass"],
+        ], heading="Patch-Verlauf"),
+        N("So aktualisierst du", [
+            "Steam: Updates werden beim Spielstart automatisch installiert.",
+            "GOG / Microsoft Store / PC Game Pass: Store-seitige Patches können der Steam-Veröffentlichung folgen.",
+        ]),
+        M("Quelle: offizielle Steam-News (ISteamNews-API, L0). Datenversion v0.5.4 (2026-08-17)."),
+    ],
+}
+MECHANICS_DE = {
+    "slug": "sandustry/mechanics",
+    "title": "Sandustry-Mechanik: Forschung, Werkzeuge, Energie",
+    "metaTitle": "Sandustry-Mechanik: Forschung & Werkzeuge",
+    "metaDescription": "Sandustry-Kernmechaniken: Forschungsfortschritt, Werkzeugstufen, Energie und Maschinen.",
+    "intro": "Die Kernschleifen von Sandustry: Forschung mit Gold und Fluxit, Werkzeug-Upgrades und energiebetriebene Maschinen.",
+    "sections": [
+        N("Forschung", [
+            "Gold und Fluxit sind die zwei wichtigsten Fortschrittsmaterialien — Gold wird zum Erforschen neuer Technologien verwendet.",
+            "Gold zählt nur dann auf dein Konto, wenn es in Collector-Blöcken gelagert wird.",
+        ]),
+        N("Werkzeuge", [
+            "Zu den Werkzeugen gehören Schaufel (Shovel), Gun, Raketenwerfer (Rocket Launcher), Bohrer (Drill), Laser, Void Gun, Grabber, Flammenwerfer (Flamethrower), Cryoblaster, Corraller, Vacuum, Grappling Hook, Demolisher, Marquee und Pipe Remover.",
+            "Höherstufige Werkzeuge schalten schnelleres Abbauen und Verarbeiten frei.",
+        ]),
+        N("Maschinen & Energie", [
+            "Maschinen: Förderband (Conveyor Belt, und Mk.2), Launcher, Filter, Shaker, Kinetic Press, Planter Box, Collector, Pipe, Pump, Liquid Vent, Flux Emanator, Steam Dryer, Sweeper Drone.",
+            "Energie treibt die Maschinen an; verwalte Produktionsketten, um Schritt für Schritt zu automatisieren.",
+        ]),
+        M("Quelle: offizielles Wiki (L0). Datenversion v0.5.4 (2026-08-17)."),
     ],
 }

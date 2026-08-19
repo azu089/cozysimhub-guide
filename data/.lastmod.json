@@ -12,939 +12,1059 @@
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/": {
-    "hash": "5578d34e3d6896196133f9a414fc26b8",
+    "hash": "8d0c5e321d38a199c053bdc25b9f2594",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/about": {
-    "hash": "fe53a75fd2b7a6896be99a89709cf0a7",
+    "hash": "552360eac96fd79519381554ae29a4ed",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/contact": {
-    "hash": "b0b5ad990f4dcc10d835735cbce256f8",
+    "hash": "93fb88cfd8f9c7d8fc33fcdeb4368e86",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks": {
-    "hash": "f78ede7e03a41723d78d0377074d2438",
+    "hash": "a4d049449e77911bc49151fb83bab2eb",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/achievements": {
-    "hash": "f504a080db944c31a61a190935ec86b4",
+    "hash": "83e7d896ec41feca65457cde333899a0",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/breeding": {
-    "hash": "b368aa5bb59cc92030c17f35e6714bc7",
+    "hash": "3e30c469e7219af5c6711007d5601199",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/characters": {
-    "hash": "1a962b595af18ea07191622a86b20ce7",
+    "hash": "1792f0b93fc364b4e9be7c3d0795c86b",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/console": {
-    "hash": "bee6a60472c093d998d27e2de2f80101",
+    "hash": "cd6f63903b17ad13b9b572c233ebf562",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/faq": {
-    "hash": "a803c820f23330da5e614039a521408d",
+    "hash": "7aaa96e04dab598592e682ed881a2104",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/fishing": {
-    "hash": "eb85e1822c94117aa05c636e4d86a408",
+    "hash": "d0130253ec642c705949395dc1ff7833",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/flowers": {
-    "hash": "2bfc1c333a1fe09ef1fedee6dffbb3b8",
+    "hash": "2e9aec64cbc08275896e492ae31e9be0",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/gifts": {
-    "hash": "442bc66d0b65a13764fce8072ec3192e",
+    "hash": "56bb41ae70b31f36210fb958b293e954",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/how-to-play": {
-    "hash": "d2bb7e28964dca2a52d72dccbba0df34",
+    "hash": "1a26ffe9e2d3cfc2d3597eb2e2a6fff2",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/museum": {
-    "hash": "1a50cdef026b7dbb4114b37dd2b8314e",
+    "hash": "765bf7a7f94d4c7e88f4fac31d44b876",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/potions": {
-    "hash": "54549e6af138630d18e023351f6d8d7a",
+    "hash": "94f74c578339ffcaac90d692fd70181f",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/relationships": {
-    "hash": "b921e322efda54f0e54fc83082720f35",
+    "hash": "b078c1519b8f8ba423540267bb44e40d",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/romance": {
-    "hash": "d5eec79bc9fcc975c6609e58d89980d6",
+    "hash": "a323ec895eb9d5384b0dfd5554d2af65",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/romance/evan": {
-    "hash": "442db890f762d5785d2b86769533008c",
+    "hash": "99db4169cdb74b81454c18b5b1ff8c46",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/romance/fiona": {
-    "hash": "7de29c2b9a2710cec48bcd30fa67e9fa",
+    "hash": "8cd259cf5953befbba60ebc3a78e9f4b",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/romance/luna": {
-    "hash": "a898a6b15bdd389b90d4376c0316ce65",
+    "hash": "b9405720fd29602acfd2a64e96432c2c",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/romance/noel": {
-    "hash": "1217e70044641b24ffe673153e85f184",
+    "hash": "7755be1c60526a9e5991047f25ba228c",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/romance/orlock": {
-    "hash": "fdfc418c74c80eaa5e4e49e8ddb3d25f",
+    "hash": "05e13017dc5716b1caaee9a63c70b9c1",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/romance/sabrina": {
-    "hash": "f0181087bd6c9cfe9d1804109e360086",
+    "hash": "59ff7b3e207f59fa8ad67220e46df891",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/spells": {
-    "hash": "3050176d440cab935dafe4d1425fa732",
+    "hash": "48eb83a35490d9b0d8d6746ffa6f164b",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/steam-deck": {
-    "hash": "8d279a96776ea90d23545bd6bc2c1fe4",
+    "hash": "535e211532cd21d77e43e68c0e39f632",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/system-requirements": {
-    "hash": "a05555ee538abab52e3ee4c236dca35c",
+    "hash": "81327c359f33a9ac43edec353d520011",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/tools": {
-    "hash": "dbb0b9f95b70b3fb0ec08bfdb1732d66",
+    "hash": "9d21dfd5ab1ccd019036f92b21744ace",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/updates": {
-    "hash": "f59c04cedaedb8163a97b577391677d7",
+    "hash": "c63742c68367c6e810c36228ed67afab",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/villagers": {
-    "hash": "f84288a3417a93dff298029fa7a26aab",
+    "hash": "fee25edea3c2f5ecf9c630a9d1963dc2",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/moonlight-peaks/walkthrough": {
-    "hash": "c337519fd2a09bdf1b56d78983d801d7",
+    "hash": "f59ebdda14ff66e72f87a5730269d075",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/privacy": {
-    "hash": "2207b33ee18fdcd5edae8486edeb3a71",
+    "hash": "dfc09c7c0955f51e22d4474a7c54209b",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/de/sandustry": {
+    "hash": "ed002555573653cb575c88d29ef781b0",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/de/sandustry/achievements": {
+    "hash": "2ca70955c71ae2748da79ff78b972d13",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/de/sandustry/faq": {
+    "hash": "dbba30f2398bf69cf9e603106aeb5d50",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/de/sandustry/getting-started": {
+    "hash": "4d7390fc123c478365c95e2c8cf7ebb8",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/de/sandustry/macos": {
+    "hash": "a6f8957e46a9e6925ed49828d8725178",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/de/sandustry/materials": {
+    "hash": "40f8e99bbc41849ebda91a21ec75c7ff",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/de/sandustry/mechanics": {
+    "hash": "7a04cbd0aae41d4eb1f516332eb0295e",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/de/sandustry/mobile": {
+    "hash": "5541790026da11ac3e99c33d37df5938",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/de/sandustry/steam-deck": {
+    "hash": "b22ff0fad5eacc7838cc61163a1a6ebb",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/de/sandustry/updates": {
+    "hash": "89fc85d7572e18fc79099803013d3137",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/achievements": {
-    "hash": "0b93ae76bffce6495e4f91b399ccab02",
+    "hash": "8ba2ceb84c02da7549ae04d98d24c18d",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/endings": {
-    "hash": "f6ba7af388a7636b960585646344dfad",
+    "hash": "d622741acd96f90e8b96d33d894e58bc",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/guides/alliances": {
-    "hash": "2b6e77212441cfcde0a837f0609bbe4a",
+    "hash": "7c070948e3cb1da221d2ed4f3f072ec6",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/guides/beat-dragon-knight": {
-    "hash": "084d670543039aab8447ac52d6318fa8",
+    "hash": "2c0100bda2fe3c4b18e572f572b0359e",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/guides/best-opening": {
-    "hash": "eac2cb97f11b3b32f5bf931dc8dcf3fb",
+    "hash": "f036e33b5f94d102f5d30ae15a32b613",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/guides/controls": {
-    "hash": "2cdfc8468be90a441cbd771ab70b0597",
+    "hash": "9559395a70c64b9d76d3791a806d2798",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/guides/difficulty-tips": {
-    "hash": "364d0ce1667190954aed6b763cc47316",
+    "hash": "e3488fbab2ba4325bed769eb8796f5ee",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/guides/factions": {
-    "hash": "b109ad756b5a0ba424e9e8f802679186",
+    "hash": "b4672275a6fa8608ad93583f67468fa9",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/guides/knight-loyalty": {
-    "hash": "cacf1eee0528298a7b295a3aed7d6050",
+    "hash": "1a583960799f830c626aa78c13c8d369",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/guides/new-game-plus": {
-    "hash": "86c1f7ab12cd197c04e19742df16c210",
+    "hash": "cfd47f83a1c6238390f8916c51ba2197",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/guides/quest-success": {
-    "hash": "52b4afe2a1f22caea71f0bb9f39679e2",
+    "hash": "05dec317b7157beb1cd6047eb10d993b",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/guides/recruit-knights": {
-    "hash": "c2c3c5f8d750433b816282df3bc9895a",
+    "hash": "34b2b8144f82122097ca6522e98d8462",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/guides/sovereign-archetypes": {
-    "hash": "77f15fe0bb997166142b716388b9eefe",
+    "hash": "f0c0bf7d2d810b9e46712f833576fd00",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/guides/time-rewind": {
-    "hash": "62ea5aed9a39f28a734fa99041d1bafc",
+    "hash": "ca0fb89b0da4eb0a182f53642555e45b",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/guides/tower-servants": {
-    "hash": "dc7d1a0f4a9288e326a78609a6896309",
+    "hash": "ba0cb0968df9bd2bf4bf93e3e61cf237",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/how-to-play": {
-    "hash": "579a0eea4252dd21d3e4970bbd8ce644",
+    "hash": "7b38c593cf450575f1dedccfa494800f",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/items/consumables": {
-    "hash": "ed397e8f7203aee292dcf2a1cadd0d0d",
+    "hash": "a5ea53d3033223d7efc050e68e9ef07c",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/items/crafting-gear": {
-    "hash": "4b19ece02df40ed08123d86d33f1d062",
+    "hash": "e83f9f4f419f94d3421b9edaffffd49e",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/items/overview": {
-    "hash": "43b4545cb0af3db6e3683de9b472be34",
+    "hash": "b3aa8a0424d4089ceea1197dfb6f5896",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/knights": {
-    "hash": "51d23724fc466f61424debdd27be6abe",
+    "hash": "267ceb344a5391231e42790a4cc4f3a4",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/knights/roster": {
-    "hash": "0fd40db4523368a232d9fb86f9588338",
+    "hash": "b603911b68e24e295fbe50940f392f0d",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/knights/stats": {
-    "hash": "095d2aed43509c1ad85846e09fb332c6",
+    "hash": "f8b4a6563261d8de3e7bdb7657125865",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/knights/the-bard": {
-    "hash": "c4d3691216269d1ae4e7425acc430a19",
+    "hash": "47587591f430c098ec8b8763ec2b4054",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/knights/tier-list": {
-    "hash": "10193cdcc5dd4619256fbca3ff8d59b6",
+    "hash": "207ca678ef451497fe181507246c90ac",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/quest-mechanics": {
-    "hash": "bf5ea10325a722713f750e0160d4fe64",
+    "hash": "d9561256458a8797cce807d39cba8ae3",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/recipes": {
-    "hash": "2b73dc08e4e540ed673fd34e93349d90",
+    "hash": "3b38b640582d04a47ea5c603e1712e5d",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/review/overview": {
-    "hash": "c4ac25972b737f5667c30c7480d2b916",
+    "hash": "3f02755d002e79d41548db08f9221bb3",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/review/release-demo": {
-    "hash": "9444ffe37a46f4675c42cb2525c95039",
+    "hash": "8f2d37ca2bb811b0cb32c68a4a1b9e28",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/review/soundtrack": {
-    "hash": "d969b3dc316995b81c8f450e20cec6bb",
+    "hash": "32a5df354939567be7cf31cf738df390",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/review/system-requirements": {
-    "hash": "a418314cd1076b8ed26db6c2c5b78ab1",
+    "hash": "ba66eb4c6568bbddce6babf0b234c3a1",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/romance": {
-    "hash": "c90dd6362b60eb2fdad01acac2e87f3d",
+    "hash": "3340a8f2cdca418dd06121448d5bf296",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/secret-knights": {
-    "hash": "b6205179851043d6bd9e48bcec8e010d",
+    "hash": "3434ead58ca6624cfc77151a67f03dce",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/systems/annexes": {
-    "hash": "1f7b2241bbbbb79ad4f7d724788bb879",
+    "hash": "da79fa24d0cfdd8ca7491d16bffba149",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/systems/audience": {
-    "hash": "53296352d40d15d28351bd6bebf63dcf",
+    "hash": "6271f9d5abc6d30c9a3ad3fdfe31bf97",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/systems/kingdom-map": {
-    "hash": "0ce3fd14bcca1283366b4c2a61404596",
+    "hash": "acee4676686d6125cb64d816ae5cd452",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/systems/quest-outcomes": {
-    "hash": "6ca1f167835a83d4dd1487a52c070d51",
+    "hash": "d10e997926900fdaf1ad7ece21cdede0",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/systems/round-table": {
-    "hash": "fd97442fe1c4bdddb40c3ccfa4f5b1eb",
+    "hash": "a453748450d582f06516c52e0f11f693",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/tools/affinity-calc": {
-    "hash": "ca48cf959c217ac2d21eb2588e4b4281",
+    "hash": "800211ea9f1519f85b3fc756db2f14bb",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/tools/quest-matcher": {
-    "hash": "d6d5f98e65bd39babc1164eb722bc738",
+    "hash": "6d5f296334117017657ebcda40c46d18",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/updates": {
-    "hash": "7efbac17d95b5e58a58bf148361b25c2",
+    "hash": "b2aa911d609a891b9e52ff5538e585c9",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/walkthrough/act-0": {
-    "hash": "146da04c3e03549c9345f066cb64896c",
+    "hash": "2e41f394140785c554f736df84eb4e38",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/walkthrough/act-1-gavault": {
-    "hash": "481653a462c327d7c35e26ab959dada8",
+    "hash": "efe397dabfcbc30c24140fa861a5baf4",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/walkthrough/act-1-groveshire": {
-    "hash": "cc81b2242a10e9523628fe5346e169dd",
+    "hash": "8cc2d3fe13b43a01dd5c1c55160a4446",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/walkthrough/act-2": {
-    "hash": "fca1fd6ccd06774f7799fab0b98cf53e",
+    "hash": "63d111d022e40239ecdd7874aea4a5ee",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/walkthrough/beast-hunt": {
-    "hash": "93069c38ab589ee9fde75174cca948e4",
+    "hash": "162c2e423795b0f32e3fae0f0ac6b794",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/walkthrough/goose-quest": {
-    "hash": "9ae3bf93f9d89d4cf76d3b6b8097e3c4",
+    "hash": "2ca8fd19cdc00dade1542730ae36aea8",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/de/sovereign-tower/walkthrough/rebellion": {
-    "hash": "a5826c0d25fb3aa3768eb82d6022c1af",
+    "hash": "7e02bd026b413eb51b840875edd39bb4",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/": {
-    "hash": "d143a2dd3500f66e24fdbdc5d46ade95",
+    "hash": "6f2958f0b9085b8603ad0efac592f9a0",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/about": {
-    "hash": "21a5765a4456dbb6cfb32259a37114b8",
+    "hash": "3d911642104be6f4a2fccbb30a921f2f",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/contact": {
-    "hash": "6636cb8270e05fbd0bea36c819319668",
+    "hash": "07a19cb235f0fc99c1aa8c008931735b",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks": {
-    "hash": "26af09c5dd0c92a293dded3f81e6713b",
+    "hash": "3bc2f65906e925f928f3a402d443cfd9",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/achievements": {
-    "hash": "a8339d4c4e20a27ec5c5c89640fdddea",
+    "hash": "9f46667f774dcb3cbf03b3ee0fa712ed",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/breeding": {
-    "hash": "fd5786e0e37e3000cacc441691d7a603",
+    "hash": "b70d00cf0b77e88026eb83986e4bd677",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/characters": {
-    "hash": "c29387a4c116ffe7c1fb09a4999b6558",
+    "hash": "7be1f220628dc9f337dc2a5fde355346",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/console": {
-    "hash": "cd3e3d9e8c47799549d675e1f26917db",
+    "hash": "768ac5707e793687d7c6debca55853c3",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/faq": {
-    "hash": "82aa5fdbad1a50901b89bc9df2d8ca92",
+    "hash": "2361026689c8fcf4c41fcfbef40a803b",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/fishing": {
-    "hash": "e8512f8c212d0c81325ad634269181f6",
+    "hash": "c51d6430f136cb4797afe2ef4bccfbab",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/flowers": {
-    "hash": "176f035533d480217b4f3a44fc103ae8",
+    "hash": "5872783c5275a03c3d4d1a422e1e3b85",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/gifts": {
-    "hash": "906aaafbdceb3daddfb0ba80cde3a036",
+    "hash": "9e392c42117e26d1221157747c157976",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/how-to-play": {
-    "hash": "0b5f18e0ed6847915deb9ca5ce18d2e1",
+    "hash": "16ca7935ac1a61b194eb0efe431d0853",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/museum": {
-    "hash": "7227406bc9e0f571cdb635f8f0503e0c",
+    "hash": "41034ac8c5af97c67aa1c0adb6a401c5",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/potions": {
-    "hash": "dea30e4e7b9367817c9018a83a2ad15a",
+    "hash": "b0f1319b40d0f010b8e41ab6f8e8364b",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/relationships": {
-    "hash": "6a4039b9df92c07c3dd839f6b4dfff02",
+    "hash": "14b0edfa24c3bae2e377cfd833b8bdd1",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/romance": {
-    "hash": "7647a6fa82e1ef09b436165087b111d4",
+    "hash": "cf2a0f197dd072f9884deff35f4e7249",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/romance/evan": {
-    "hash": "1b05a0e000a48f78369016d3d450c0dc",
+    "hash": "be4b952d9963e0147a8df7b5c6ab66af",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/romance/fiona": {
-    "hash": "b1e9a4c1a369818c97525ab81d61229e",
+    "hash": "54fdf92a73b3fe5a52eedb23ea9693ce",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/romance/luna": {
-    "hash": "369ed9ea06424a643a1a506f9cda9fc5",
+    "hash": "476aea7ab31e4698bb6f8b424db1cd60",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/romance/noel": {
-    "hash": "47aa05f1a3a7d19e07c5d6502546f121",
+    "hash": "6ac44fb40661f73634915413590d6450",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/romance/orlock": {
-    "hash": "25cf0ffc7d84efe4088d6cd2d222f987",
+    "hash": "625e9ff48774bbd06cb9a33085942a9c",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/romance/sabrina": {
-    "hash": "f43dbcbfca5e1505c2993391b1cf5734",
+    "hash": "70b72fce6079feb68ea370aaea7ed016",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/spells": {
-    "hash": "0cdc904e2de70df3afad795ce0ac1310",
+    "hash": "ebf3470abeb30ba0d6d4685ba34c35fd",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/steam-deck": {
-    "hash": "23f9d5440dd48bf418aa425dc3465cc4",
+    "hash": "e14e9221842770b26a3159530534d8f0",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/system-requirements": {
-    "hash": "b88cbf3b25f6758e9e5a10c2d46ab95a",
+    "hash": "61695709369c26003c49a482abd7bc6b",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/tools": {
-    "hash": "da7cb08bc8a993baca19d487806a496f",
+    "hash": "4153cb08dac3bd4958b577b73b958f77",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/updates": {
-    "hash": "c1d2e01771b3a7d98a048b235e054b8a",
+    "hash": "3d655dc50518239db3931e2c2dc73b43",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/villagers": {
-    "hash": "a830673754a1133472810c096fdf975c",
+    "hash": "6ed683fc9e5144ff0d5a690041c61ef0",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/moonlight-peaks/walkthrough": {
-    "hash": "1400ad3ea3359088b04daf86b9431303",
+    "hash": "b793baa0827d63844730b6f5bf3ac0c7",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/privacy": {
-    "hash": "aa9fa76ffbab2568c81af64888be3585",
+    "hash": "29dfa542ff5078362b68620a406dee86",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/fr/sandustry": {
+    "hash": "b0bc386dffe0cb093c5c04e9fe8b880b",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/fr/sandustry/achievements": {
+    "hash": "fb607e6a2f16bcfcc97b2f69ed45ee95",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/fr/sandustry/faq": {
+    "hash": "ead1530cbc2e8db724ddab43587dfa8f",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/fr/sandustry/getting-started": {
+    "hash": "0bf66c280980b0bf5fb9994e2e1a2f87",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/fr/sandustry/macos": {
+    "hash": "181b06ae3a93ea7d49eaabd2f15fb595",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/fr/sandustry/materials": {
+    "hash": "7493e9c04754a37bc5dd9c0959a71e42",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/fr/sandustry/mechanics": {
+    "hash": "9e3486435a1977c8426d70ec08906011",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/fr/sandustry/mobile": {
+    "hash": "c1c4a062a5c269704cc0b7bb5e453b74",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/fr/sandustry/steam-deck": {
+    "hash": "ca6887e3eba38f82bee09c1741f2add9",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/fr/sandustry/updates": {
+    "hash": "1bb05294b11ca3684d3a13f15dcef71d",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/achievements": {
-    "hash": "0fea7640f10913f0b75e4f313c7c993c",
+    "hash": "4032f9ad087dc755c72d95ffa5eaccf4",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/endings": {
-    "hash": "8947bacd70bcccfe6db5f1a90487060c",
+    "hash": "cb38c3c53f17bfe1c4cc4eb5a0d83fc9",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/guides/alliances": {
-    "hash": "ff9981dab5dfa13a786521710e8b761c",
+    "hash": "f3befcec41e318f9cf5322e7004978a0",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/guides/beat-dragon-knight": {
-    "hash": "9c5f5eb9b8da41500977ce5cb53f1383",
+    "hash": "f626484e19f80c1c21570828c0ba66c1",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/guides/best-opening": {
-    "hash": "4f8c1c29d7049354bacac7df0e44e00a",
+    "hash": "42a6a4a7ab1395fdae81b9b4bd984850",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/guides/controls": {
-    "hash": "a8805548a64daa7afd51137f8e31b434",
+    "hash": "30adbf961dd6b7e54af06c67a05e47db",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/guides/difficulty-tips": {
-    "hash": "37aa2d766bfd42d2723819ae39ba6b8d",
+    "hash": "982bb97c3150346f139c30de3d341992",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/guides/factions": {
-    "hash": "08d8aabe4afe4c95376fdac1480d2ca9",
+    "hash": "ba3461671d5a7d828860fe60ead1900d",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/guides/knight-loyalty": {
-    "hash": "f1c5714a823bfee363bfa89e0f48c0ef",
+    "hash": "5817cd6b79e28282b9f0f472dd67eb7a",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/guides/new-game-plus": {
-    "hash": "26b4e2a7c35253f79e704559de668d84",
+    "hash": "52733d38591026d5b3b202ece26c62df",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/guides/quest-success": {
-    "hash": "0e79bc163928a2e1b8d4a8714ddf6ad7",
+    "hash": "2dddbcad68d86fe99e4a6f1e419f6ff1",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/guides/recruit-knights": {
-    "hash": "5a22ff302d66ca0b78d8d779bd9dee88",
+    "hash": "8e7b3449022dd3f2fa751d912c0075e6",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/guides/sovereign-archetypes": {
-    "hash": "69ba2973bd5e26f6bf72891c8076ef84",
+    "hash": "6241f6ffbbd42c1329935dee8a6fb1e4",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/guides/time-rewind": {
-    "hash": "b428e23d0c51b00f6fea21a74814a56c",
+    "hash": "f3d9ccd34d785ead59dae3c19712a38e",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/guides/tower-servants": {
-    "hash": "a4d78e8444290c84b7b22febdb89a1df",
+    "hash": "9940356534eb16cd9578072655b1ced4",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/how-to-play": {
-    "hash": "32ebf811102455678cbd672f89f97345",
+    "hash": "b41bdce41dad0c222f67204523815092",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/items/consumables": {
-    "hash": "d73042128ec561b47af4d35afd0f5080",
+    "hash": "dc57b47c17f26be3d8255e68bbd52a36",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/items/crafting-gear": {
-    "hash": "1ff2c0e4fd1061cd3bfce201d155921f",
+    "hash": "211567a926097d6090c3f6be86a3e2b7",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/items/overview": {
-    "hash": "99507e17eccf3c4a63861e447870294a",
+    "hash": "a59b8424d909cecd889099507747321a",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/knights": {
-    "hash": "84e1ba0494600e25ec2659820894735b",
+    "hash": "25f88f1c6eca824c560b906142024244",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/knights/roster": {
-    "hash": "f186dc013a683473c43028d3abc579b8",
+    "hash": "913a4c9164a46e9b01a961d6deaf4daa",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/knights/stats": {
-    "hash": "c80a098813d67c4cfd214db273a8037d",
+    "hash": "04811f9c746961170e9016381b51016f",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/knights/the-bard": {
-    "hash": "1635fa32d62d5641a0872e706c746678",
+    "hash": "06e479874db941ebfbf0197c3d6830ad",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/knights/tier-list": {
-    "hash": "c279827d1ab7f30f0008a5a95a214ae2",
+    "hash": "62369f31b89c17abef502ff64abdf8a2",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/quest-mechanics": {
-    "hash": "9d426cc3ea9a683755ec20954bebb08c",
+    "hash": "5a7658398dec5ec958804612a3a6e9dc",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/recipes": {
-    "hash": "7987846cd60479b31ff2fe68fcbc4d6c",
+    "hash": "1bdd87fe220b005402e3450beb564014",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/review/overview": {
-    "hash": "c0262cc59db3102ce18ac348afea2d01",
+    "hash": "f03695e8a9fdb1bfcfb4a3bb8f70078c",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/review/release-demo": {
-    "hash": "e665b3eac78a4ae09eb52523f2c5f37f",
+    "hash": "83075afdb692ac853fb3f0c3c91b3ae7",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/review/soundtrack": {
-    "hash": "58aa4cb29b396783f424fcb8da8a28ad",
+    "hash": "1ee768fbfbaaf77f9361472f92c78baa",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/review/system-requirements": {
-    "hash": "97cf446c538b4a083d4aebad00199c60",
+    "hash": "45fc04ef83f4dc80ced53c3cc9499701",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/romance": {
-    "hash": "3d25b302693994a6345e23682d950e07",
+    "hash": "92c630af40390e7a07497aada3f8a01c",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/secret-knights": {
-    "hash": "3890b297eeba4a02e4a99d8a42e8fd2c",
+    "hash": "1f298bc6e3de46e0c9d2f62a0feded41",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/systems/annexes": {
-    "hash": "b19c042b32b50eeab6125f9e1d9e5455",
+    "hash": "d03f0ab5caab515fd0590c79ff5cd13e",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/systems/audience": {
-    "hash": "53b47bb7c311bc0caacc873935abf148",
+    "hash": "7559f27d743642c3f00514e1cef25347",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/systems/kingdom-map": {
-    "hash": "ef46241f41c1cd7e28a58b2d9684edf9",
+    "hash": "fa7e02df10080488154555da20ce62a5",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/systems/quest-outcomes": {
-    "hash": "51cf9bd1a7ba1f9c90c82b46bd675288",
+    "hash": "7568f9ea770a0fe63de2ec094f2af18a",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/systems/round-table": {
-    "hash": "7ce1022656ba6008595816ad14b0a09e",
+    "hash": "fb509142ac928118fa4ff762cf80f350",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/tools/affinity-calc": {
-    "hash": "d710577b5d59c62beddd3f0223010ddc",
+    "hash": "574ebab255c583c136a4ece540d03c52",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/tools/quest-matcher": {
-    "hash": "336b0a8997bf8578b563e4af3e5426ba",
+    "hash": "244b26f160a42470edfc0d6f3a365770",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/updates": {
-    "hash": "b4d451228fad3a45f4bd839a13abf3fb",
+    "hash": "2b277bea34dc4ee200c578e54bc4ceda",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/walkthrough/act-0": {
-    "hash": "4b787bea5c7e035d2474784f5ce90ebd",
+    "hash": "f416a2db785c201656efa53d731af69a",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/walkthrough/act-1-gavault": {
-    "hash": "0031ba4158ff905eadcc62f4ed46a22b",
+    "hash": "3b5955ae7fede7a8d6cf298fd0f780bd",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/walkthrough/act-1-groveshire": {
-    "hash": "81a37f7a34caef6d0ba879fe8e6748f9",
+    "hash": "e33b114e5b0ec8432190208a3dc0ba78",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/walkthrough/act-2": {
-    "hash": "0cc4c07003155d0c9cbeb040a419e49e",
+    "hash": "bebc1bf0889cdbee0599311393a38e33",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/walkthrough/beast-hunt": {
-    "hash": "34173a3b3590b323f3e69e9d1d193d91",
+    "hash": "83472cddbedf30eb78b72c6ede6fbf43",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/walkthrough/goose-quest": {
-    "hash": "2446f29fa9531752125fe808aa843574",
+    "hash": "24f66e0f11fcde06b52869b56efad144",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/fr/sovereign-tower/walkthrough/rebellion": {
-    "hash": "4ac837df67e0a7a722f87a7774ac0db4",
+    "hash": "2f9a3ab62b6c29275f97228c44fee13c",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/": {
-    "hash": "6f2995850a0fafeac77edf2e537359a4",
+    "hash": "46cd96d8db78ee6fdf429f0ed50da109",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/about": {
-    "hash": "7a7f520597ab875825c8c85b99fe39ac",
+    "hash": "50a8b00012e24622da13b018597d8928",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/contact": {
-    "hash": "f04f16777ed6f22c57f9dedf3ffc3878",
+    "hash": "34c2e332bf7a432da7afa132dae2cc7a",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks": {
-    "hash": "6a5c01ced4e22b5f07d07b475a866223",
+    "hash": "291390e01dcab92c96038ec0406da9ea",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/achievements": {
-    "hash": "28fa97a8554246c549f7d60f8b5de124",
+    "hash": "933a3726529faeeb8e77e82559a3d701",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/breeding": {
-    "hash": "de63d69faeaca20d481f825c16278925",
+    "hash": "0fbf6f2358121dd75faebd6c33d27dcb",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/characters": {
-    "hash": "9eeb7392a3878ebcf844e90c8434e4f2",
+    "hash": "420a4a05ab5b15c6949fa1e1ddc8a7c1",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/console": {
-    "hash": "15533e38f79fea8a6b20e6f4fe26cda8",
+    "hash": "6ea7d7f0dc50f95de38c80f8e7f7127b",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/faq": {
-    "hash": "e05620eb390d09e6e71a9a05d4af2d68",
+    "hash": "b47fa00e56eafac3fff67d59fcc65a87",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/fishing": {
-    "hash": "83eab618b443769210f604bf2add2035",
+    "hash": "eda7f6cef45a36c14256fadcf015b83c",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/flowers": {
-    "hash": "4c648748747bbdd083f935a303474581",
+    "hash": "8f7bec9976cc523bb70ae23815060a21",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/gifts": {
-    "hash": "485ebdca4e14b347ca6ea2f1c49ef24b",
+    "hash": "38dd46454b10f77fdcefe295d90e2b30",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/how-to-play": {
-    "hash": "4ad70b65486e704e0bc88bb382729b7f",
+    "hash": "c05579fa148e7031077af0c52d9c856d",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/museum": {
-    "hash": "237cbb25e918b96322b035439376d307",
+    "hash": "2b526fded739a4d0d0274ca5b5c709d0",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/potions": {
-    "hash": "dea3bd0e4b27a10ffcfca86425d707f8",
+    "hash": "523e1599cefad0ff1c2032e1396c04b5",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/relationships": {
-    "hash": "0b0645f159c740aad5a8e06728a13b75",
+    "hash": "ee0825509ab10a8b44c54fda61076bfa",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/romance": {
-    "hash": "5694ab26fd07e867831857b960b7ff33",
+    "hash": "7feea7adafa2f924db6c3b96d27005a5",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/romance/evan": {
-    "hash": "a8e2d59b991e3b2ce7636a5a15441c83",
+    "hash": "fe70bde0536c74d64db0225ca1223f28",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/romance/fiona": {
-    "hash": "45636e607794f7cdacd3a77e156b8474",
+    "hash": "d74fde2396124918eb66683b47c134cf",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/romance/luna": {
-    "hash": "537a7c0ab7ff5db94335b151e581e225",
+    "hash": "d98c280c25c4060719a111718ada10ff",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/romance/noel": {
-    "hash": "6b13547d1c4f705cd402f78fc60f408f",
+    "hash": "8488f47134c7581bba1f7846308e6dcf",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/romance/orlock": {
-    "hash": "a74be6cdf4ff51842c9c23f65bd80def",
+    "hash": "3d550b6609fe55c43ab2d426b80a85cf",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/romance/sabrina": {
-    "hash": "e64756a59f6da0fd99e0e811e54b857e",
+    "hash": "ccbf79817d7a55a3f05a4861c324c3ef",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/spells": {
-    "hash": "079bfe3f0253620d0cb0cf86084c7aa7",
+    "hash": "aecb0b2e34dc44ad6d3d08154cb4f9ad",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/steam-deck": {
-    "hash": "d6ae4c50287713e257357f63837d3607",
+    "hash": "254cbc8af9eaaba352f838c8f02bf6d1",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/system-requirements": {
-    "hash": "6f651453e1bcc10c3672d11e2a804a20",
+    "hash": "201a92a0b91ae2c5a47fed0ffceb1529",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/tools": {
-    "hash": "3889757bb727876b3386ebbc49228948",
+    "hash": "168e6d4809012657e153fab2325b9005",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/updates": {
-    "hash": "ac0b0d0529abf7913872ee9899155fed",
+    "hash": "2cf9dc57043005c2025bde0639e0645d",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/villagers": {
-    "hash": "3b906abf508b72d7c134c9b0fd5d4321",
+    "hash": "5349419f426015e368d45c7f6ef5b6a0",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/moonlight-peaks/walkthrough": {
-    "hash": "cdb9ce22c80704143d5cc943eff347c6",
+    "hash": "d6ac2a9284e9b0feebeebe94b1befe80",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/privacy": {
-    "hash": "8857ca2cdf1209b2f42d311f6f0ca044",
+    "hash": "9278f5ae7b73f03148b04d2dcd564db4",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/ja/sandustry": {
+    "hash": "b14e1be8ad676bf536e5d824f54f8212",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/ja/sandustry/achievements": {
+    "hash": "0b4533a52d1a0e392d5d8c9c331c6cc9",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/ja/sandustry/faq": {
+    "hash": "13f4a495a02aea8118479fb5c55ea0a3",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/ja/sandustry/getting-started": {
+    "hash": "a02341c7a431e1ccd9994a7321e2a9f3",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/ja/sandustry/macos": {
+    "hash": "d7dcd5ab4a8a15ffea8376337dd24615",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/ja/sandustry/materials": {
+    "hash": "1865c3fa7f7ae8a95e5b5b9afb70fb42",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/ja/sandustry/mechanics": {
+    "hash": "2d78b960d4985b072d355c38426d5f6e",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/ja/sandustry/mobile": {
+    "hash": "0dddeb5795a0668f95ef10c2d8ee43dd",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/ja/sandustry/steam-deck": {
+    "hash": "ebc9dcfa30882fbb3580c9e941d04760",
+    "date": "2026-08-13"
+  },
+  "https://cozysimhub.com/ja/sandustry/updates": {
+    "hash": "e5f7e2a6fe3dfa05997708533cbd61bf",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/achievements": {
-    "hash": "ae53a3ce59b0289f156b3b8dcee54b15",
+    "hash": "dd95df678f6ede8a141b598e0bdcae03",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/endings": {
-    "hash": "0c8aec26bee884a88af2d17891223742",
+    "hash": "89eb05a2bc6e387ec31fac4765215d71",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/guides/alliances": {
-    "hash": "0f8decbf8595ba0d3586e4ea6f645ce2",
+    "hash": "506a8329d0a6f85caa009d2410237643",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/guides/beat-dragon-knight": {
-    "hash": "f2f4ed0016454d2df510f0f80d936fc1",
+    "hash": "9ae166cc441673f4fd4ea38cfa3458f0",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/guides/best-opening": {
-    "hash": "e87ddde6b8cba3e56ffe98228d97236c",
+    "hash": "d36c5ed086af9298b2cfadf42ad2a886",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/guides/controls": {
-    "hash": "58bccd23d0c05b2617958dda78af35f5",
+    "hash": "a725caa0baf22e719be6f79370ae1ad6",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/guides/difficulty-tips": {
-    "hash": "8d8bdb17404f3769d1df3d266892ce34",
+    "hash": "2bcd519ae622e29b4e15dbd178165523",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/guides/factions": {
-    "hash": "2ef3891b073901137a49f2661f40dff6",
+    "hash": "db0f292b65fe487a0dc49a69be68ef0d",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/guides/knight-loyalty": {
-    "hash": "2ebe74426d47c1a874578c13a713893f",
+    "hash": "87d6bb99e97330e466da3175c07ce5bf",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/guides/new-game-plus": {
-    "hash": "e9b051cf7cc2465a5ea7d6a8b86a2da8",
+    "hash": "eb081718c4b656770f693a70b3ed346c",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/guides/quest-success": {
-    "hash": "3f33f59c296150525ff6e02200dcf538",
+    "hash": "adb2d386fa6e9cbbc60078b9ba567c1f",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/guides/recruit-knights": {
-    "hash": "49ad647ce4e87a181234059732624d76",
+    "hash": "4a43d62e178cc31ae0ddb2e90cc49fe6",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/guides/sovereign-archetypes": {
-    "hash": "a47f1267307fd1874768de3ccaf4de5a",
+    "hash": "d4cca841b7f74ec14a8a34475dd42ccd",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/guides/time-rewind": {
-    "hash": "e0b831a156425c2913073786f68afd6a",
+    "hash": "b4d27485372068e16bbe94f6e3e98889",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/guides/tower-servants": {
-    "hash": "338d04b076e28a5614cb52cfe992f767",
+    "hash": "68be6f5f5c5cce4367dc4015cda60369",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/how-to-play": {
-    "hash": "566ae97cb102d9bf5e0625b996d013de",
+    "hash": "4c2f47950941f6ce1a22e9ab6e51f900",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/items/consumables": {
-    "hash": "1f2ce02ebd86ce6a704baffb8371c1fb",
+    "hash": "6c1bd80ed15a94c9ceb56d7d52f5fd2d",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/items/crafting-gear": {
-    "hash": "5379a5bdd2ee3e4ea57e1f92ccbf5da0",
+    "hash": "60e9a7f1f022c97b936845de94fc4d63",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/items/overview": {
-    "hash": "ce2996ee854dc98c8e47b1b82e23a197",
+    "hash": "50d90806863dacae74ba5b8de26eb189",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/knights": {
-    "hash": "96ebd18d6114ad0100ae80410c3d07fb",
+    "hash": "14e913d7758cde470cbb08afbaca8514",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/knights/roster": {
-    "hash": "c94879f6d8cb1ca189711b663f9fdb78",
+    "hash": "495ae493393402ab6b2ef2636da9315e",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/knights/stats": {
-    "hash": "6f977883b1fc97193f73ecf4ffd9c678",
+    "hash": "0cd61e725fe1577fda0008d6afbc6074",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/knights/the-bard": {
-    "hash": "d789172427e059d1da6b03da99eef300",
+    "hash": "bfed30bcd4185d9b496866ad259cc9ed",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/knights/tier-list": {
-    "hash": "d8eccf72234456e6f0c1b0c7593bad42",
+    "hash": "0745555b091fc104e45dc5f2d54be094",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/quest-mechanics": {
-    "hash": "3337b37400de8b3bdc723f792430c828",
+    "hash": "a4e79c30e31e9651e796ffec2f5f856c",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/recipes": {
-    "hash": "4b1e24ffd3d78c9e6cbf88945e5f0b76",
+    "hash": "3a191a103cfe96e01075889054f30df2",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/review/overview": {
-    "hash": "a0fb2917f91ccd437984a2a8eb7362a1",
+    "hash": "9cbe4069df70791d18828a2819e86e82",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/review/release-demo": {
-    "hash": "182a7d94df95ddbacc0422abfcf9b0ba",
+    "hash": "215069e1182e9c2124f83e286a1fdb62",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/review/soundtrack": {
-    "hash": "8400c0f779415aef3048a019531c647c",
+    "hash": "9d3ad5aa9287862c17484f0fee108aa5",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/review/system-requirements": {
-    "hash": "73043eff689298266a6ceedb29d40208",
+    "hash": "e332d35d64bcc8f7b5eb867dfbe29eaa",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/romance": {
-    "hash": "d25fefaa893663266c339073e430c732",
+    "hash": "65c55416b7b28f4f65cd768983106186",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/secret-knights": {
-    "hash": "d75f28104440ef8b87513082984ab386",
+    "hash": "15862c11d6f2db43460c7fa50e030734",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/systems/annexes": {
-    "hash": "1ec69598d691133b9d8283403ba3f6fd",
+    "hash": "7acb300a64bf730f683be3762b6f9129",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/systems/audience": {
-    "hash": "7514494765ba8c9b8fc5a68465ca39a4",
+    "hash": "9db8ec24c4622a2e5882721c5c8a703e",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/systems/kingdom-map": {
-    "hash": "7362592f1ab96ceaf930cee64e374257",
+    "hash": "b7541f656e45d9e8e9fc3d3e3693421c",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/systems/quest-outcomes": {
-    "hash": "a85d963ec6be197015cd63a4e98f31bf",
+    "hash": "2d57f5a0ac82bdb1215f9b67b76c5b39",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/systems/round-table": {
-    "hash": "cea3fe7b3d330bb27ec0a068464fde51",
+    "hash": "ce8d366e51d3944402f007025efc32a6",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/tools/affinity-calc": {
-    "hash": "be24506043fdda1ef29b6c76c517af5c",
+    "hash": "bdeb332f95d8b1ce7daff99b0f523658",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/tools/quest-matcher": {
-    "hash": "8af89d4e5b360332f3f340e34bc93ac7",
+    "hash": "005b0fe2acb2e500ac16f534105dd2a3",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/updates": {
-    "hash": "b07b188aca1a1115e24eb602c0320ee2",
+    "hash": "bd7cb1daf6de018c2da916da89103811",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/walkthrough/act-0": {
-    "hash": "0dd6ed0de299dd4338ff47177c52a1b4",
+    "hash": "3eafd31bffc99ef89e41c8dad56af1d2",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/walkthrough/act-1-gavault": {
-    "hash": "bb46dd92750de5eb85b8c3b858939102",
+    "hash": "857e634f7da7cd619b61c35f797ed8c3",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/walkthrough/act-1-groveshire": {
-    "hash": "03e18f3e9845c750967ef9801f33ec59",
+    "hash": "0b0b3596128b7506144b1a17ebcc371d",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/walkthrough/act-2": {
-    "hash": "08a83489a0d84097d6ecfc158f0cf540",
+    "hash": "9a0bf1551993ad80a180db1af8485086",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/walkthrough/beast-hunt": {
-    "hash": "bbf80ee8a3305f3cee466441ccc63406",
+    "hash": "f1c9619ae51c367025286e47aae8b0e2",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/walkthrough/goose-quest": {
-    "hash": "f51080fcff1561ac178b34ea00e5fad3",
+    "hash": "daf9c3ae5a5f981d140e93b4ca1792e5",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ja/sovereign-tower/walkthrough/rebellion": {
-    "hash": "884d6bbee18229914becab5793596255",
+    "hash": "0481377f6f863091ff63dd46b7a02f7e",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ko/": {
@@ -1072,43 +1192,43 @@
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ko/sandustry": {
-    "hash": "c031bb0311c3c79a47fb154fb32c3899",
+    "hash": "ec0d11fca3827fd8e6cc8b8936c5b9bc",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ko/sandustry/achievements": {
-    "hash": "228215a93631c82e10f67ef3dcd40e16",
+    "hash": "7f73d49864ffe74c77e152de5bd1e0bf",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ko/sandustry/faq": {
-    "hash": "6e8ee29d5b3e5f99c7c58eb5de189176",
+    "hash": "0ff4448f0da4f6aadc05d2ff9e6f00d2",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ko/sandustry/getting-started": {
-    "hash": "48e922afdb96f5748ec7980836f2e55e",
+    "hash": "4ddd1fab9b62a87033652f452ee68e3a",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ko/sandustry/macos": {
-    "hash": "febae8c647f76bd4a227117c95a9f366",
+    "hash": "8faf073c560e183409672433eed65748",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ko/sandustry/materials": {
-    "hash": "67a0c209c6fb92d8a566f3c46c3668b0",
+    "hash": "a14e69386947ecb4d7db406a5cbe4965",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ko/sandustry/mechanics": {
-    "hash": "ff5935284bac7c9af7ba995bc023944d",
+    "hash": "70a2c5047b40d1918ba76583185b3b2a",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ko/sandustry/mobile": {
-    "hash": "f5c70a10cda3e88744acfaf781c43912",
+    "hash": "2fdb130de81888af0adb2d3bc3682d12",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ko/sandustry/steam-deck": {
-    "hash": "6ff16b61074adf3959a205a6adda24ac",
+    "hash": "e25693ed7a877f4a31c1c6044c0fd280",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ko/sandustry/updates": {
-    "hash": "58924a43657b7d351929b34161734d76",
+    "hash": "e78b1d52d47724e2d469d90215c1359e",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/ko/sovereign-tower/achievements": {
@@ -1412,43 +1532,43 @@
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/sandustry": {
-    "hash": "fb458fc5a2201eacbb521d02ad2142ad",
+    "hash": "c8dba663081f9d04e831c01645cd710c",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/sandustry/achievements": {
-    "hash": "e5f2a718991d6ab381d072e24ac28a40",
+    "hash": "d2ad24b3fedede8ff7bad63dd45545a2",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/sandustry/faq": {
-    "hash": "7f685cddad57abe88f8b021805651dba",
+    "hash": "fbebc485527ab8030d91092a5b4f5aee",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/sandustry/getting-started": {
-    "hash": "92e82a121152ef6082fc1704c16edbe3",
+    "hash": "e08f6a27027aee02c3902b1f9bf5ad3b",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/sandustry/macos": {
-    "hash": "86da846ed93d6e7f923a5eefdfd21178",
+    "hash": "e2def696973b15b47d3126e991ca8355",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/sandustry/materials": {
-    "hash": "1b1cfd7e4ec9fb331ce9e0aad2577a34",
+    "hash": "fb942ae6d1a96d0df79d829f6ad5529f",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/sandustry/mechanics": {
-    "hash": "8ac9a1b1feaeb7cd588f3bbcfa42b11b",
+    "hash": "272e79a72267db57caa0c1fc5414da7d",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/sandustry/mobile": {
-    "hash": "5e86b1af20e1f2c4e84a689192808cd3",
+    "hash": "10678ffef07545776be705c2df45ded9",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/sandustry/steam-deck": {
-    "hash": "5d3b191f429add043aa40782b6d5c1b8",
+    "hash": "88971deea41a42abeca7a58e001af01d",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/sandustry/updates": {
-    "hash": "15183a8c811ba137161948879aa61cdd",
+    "hash": "dade6f6f5259c061b96f88cae4ee3a9a",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/sovereign-tower/achievements": {
@@ -1764,43 +1884,43 @@
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/zh-CN/sandustry": {
-    "hash": "9575dcc61a043fcf71048fb4443cb202",
+    "hash": "266e43b2d99aea078923d9a8ac396b0e",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/zh-CN/sandustry/achievements": {
-    "hash": "12b964dde5f90a6c3ab43700c84d7183",
+    "hash": "286d916636c6fff68807eb60aaf3a980",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/zh-CN/sandustry/faq": {
-    "hash": "288f0f4d49417e6554a649de48c26179",
+    "hash": "72902a1d771ef068ab811704e53d3890",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/zh-CN/sandustry/getting-started": {
-    "hash": "1a98a38cdc2a154998059af2276c56bf",
+    "hash": "714d3ce158a33a54d23ecf3beae00bff",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/zh-CN/sandustry/macos": {
-    "hash": "0bbaa90b4065cb9c60cee570edfd3e8f",
+    "hash": "17f1564cd29f9db5fca2f2be06686897",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/zh-CN/sandustry/materials": {
-    "hash": "50e40680dc993a1beb8e98c7cc52ead2",
+    "hash": "9469adbe85704cd82bef0fde22ee191c",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/zh-CN/sandustry/mechanics": {
-    "hash": "68c725846324eb65dda25fdef0fbf327",
+    "hash": "0f3e77f884b8692712cb76a5f35c9f0f",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/zh-CN/sandustry/mobile": {
-    "hash": "c28111845f9112d163f89d1651ed144d",
+    "hash": "8f4e9f03b5f37ec41854a1072faf20df",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/zh-CN/sandustry/steam-deck": {
-    "hash": "1701368eca142bbe75c5fcd87d8a5ea7",
+    "hash": "021502b1c89b131186956146d8aad440",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/zh-CN/sandustry/updates": {
-    "hash": "a821fdabad4a290ee6ba93e7bbadfdc0",
+    "hash": "7a782cf089af933ec0f9276468d90c23",
     "date": "2026-08-13"
   },
   "https://cozysimhub.com/zh-CN/sovereign-tower/achievements": {

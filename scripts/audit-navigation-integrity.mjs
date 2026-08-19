@@ -74,7 +74,7 @@ function inspect(html, relative) {
   for (const name of ALL_LANG_NAMES) if (!html.includes(`<span class="lang-name">${name}</span>`)) failures.push("lang-list-incomplete");
   // 沙金工业 3 语白名单：可用语言为链接，其余置灰（unavailable ×2 份：顶栏 + 抽屉）
   const unavailableCount = (html.match(/class="lang-item unavailable"/g) || []).length;
-  if (game === "sandustry" && unavailableCount < 6) failures.push("lang-unavailable-markers");
+  if (game === "sandustry" && unavailableCount > 0) failures.push("lang-unavailable-unexpected");
   if (game !== "sandustry" && unavailableCount > 0) failures.push("lang-unavailable-unexpected");
   // 抽屉（P1-06）：id + toggle aria + 关闭态 inert + 打开态焦点圈闭 + Escape 归还
   if (!html.includes('id="sovereign-navigation" class="tome-nav"')) failures.push("sovereign-nav-id");
@@ -112,7 +112,7 @@ function inspect(html, relative) {
   return failures;
 }
 
-assert.equal(htmlFiles.length, 499, "generated HTML inventory changed");
+assert.equal(htmlFiles.length, 529, "generated HTML inventory changed");
 for (const file of htmlFiles) {
   const relative = path.relative(publicDir, file);
   assert.deepEqual(inspect(fs.readFileSync(file, "utf8"), relative), [], `navigation contract failed in ${relative}`);
@@ -150,7 +150,6 @@ const faults = [
   [knights.replaceAll("data-rail-ad", "data-broken-rail"), "sovereign-tower/knights.html", "rail-ad-slot-missing"],
   [sandustry.replace('<nav class="tome-chapters"', '<nav class="tome-chapters"><a href="/sovereign-tower/knights">intruder</a>'), "sandustry/materials.html", "sidebar-cross-game"],
   [sandustry.replaceAll("/sandustry/", "/sovereign-tower/"), "sandustry/materials.html", "footer-cross-game"],
-  [sandustry.replaceAll('class="lang-item unavailable"', 'class="lang-item"'), "sandustry/materials.html", "lang-unavailable-markers"],
   [moon.replace('<div class="moon-ruled">', '<div class="moon-ruled"><nav class="moon-nav"></nav>'), "moonlight-peaks/achievements.html", "moon-chrome-remnant"],
 ];
 for (const [html, relative, expected] of faults)
