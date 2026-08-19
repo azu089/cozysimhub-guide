@@ -754,6 +754,37 @@ for _page in ALL_PAGES:
 # --- ja/ko sections 翻译合并（data/i18n_sections.json）---
 import json as _j3
 _i18n_sec = _j3.loads((ROOT / "i18n_sections.json").read_text(encoding="utf8"))
+# 补全 quest-mechanics 缺失的「クエスト条件」表（21 行）——原 i18n_sections.json 漏掉此表，
+# 导致下方 i18n_sections3 合并时 5 张表全被同一张 11 行「クエストタイプ」表覆盖（诊断 §4.3）。
+_QUEST_COND_JA = [
+    ["Flying Creature", "飛行クリーチャー"], ["Water", "水中"], ["Cute Creature", "かわいい生き物"],
+    ["Climbing", "登攀"], ["Woods", "森"], ["Crowd", "群衆"], ["Cave", "洞窟"],
+    ["Ghost", "幽霊"], ["Track", "追跡"], ["Big Creature", "大型クリーチャー"],
+    ["Magic Ritual", "魔法儀式"], ["Heavy Lifting", "重量運搬"], ["Investigation", "調査"],
+    ["Help", "支援"], ["At Night", "夜間"], ["Musical", "音楽"], ["Unethical", "非倫理的"],
+    ["Dragon", "ドラゴン"], ["Need Flying Mount", "飛行騎乗が必要"], ["Intimidation", "威圧"],
+    ["People Involved", "人員関与"],
+]
+_QUEST_COND_KO = [
+    ["Flying Creature", "비행 생물"], ["Water", "물"], ["Cute Creature", "귀여운 생물"],
+    ["Climbing", "등반"], ["Woods", "숲"], ["Crowd", "군중"], ["Cave", "동굴"],
+    ["Ghost", "유령"], ["Track", "추적"], ["Big Creature", "대형 생물"],
+    ["Magic Ritual", "마법 의식"], ["Heavy Lifting", "중량 운반"], ["Investigation", "조사"],
+    ["Help", "도움"], ["At Night", "야간"], ["Musical", "음악"], ["Unethical", "비윤리적"],
+    ["Dragon", "드래곤"], ["Need Flying Mount", "비행 탈것 필요"], ["Intimidation", "위협"],
+    ["People Involved", "사람 관련"],
+]
+_qm_qc = _i18n_sec.setdefault("sovereign-tower/quest-mechanics", {})
+for _lg, _qc_rows, _qc_head in (
+    ("ja", _QUEST_COND_JA, "クエスト条件"),
+    ("ko", _QUEST_COND_KO, "퀘스트 조건"),
+):
+    if _lg not in _qm_qc:
+        continue
+    _qc_table = {"type": "table", "tag": "DATA", "heading": "", "body": "",
+                 "headers": [_qc_head, ""], "rows": _qc_rows}
+    _qm_secs = _qm_qc[_lg]
+    _qm_qc[_lg] = _qm_secs[:-1] + [_qc_table] + _qm_secs[-1:]
 for _sp, _langs in _i18n_sec.items():
     for _pp in d["pages"]:
         if _pp.get("slug") != _sp: continue
@@ -784,18 +815,31 @@ for _sp3, _langs3 in _i18n_sec3.items():
             if _lg3 in ("fr", "de"):
                 _pp3.setdefault("i18n", {})[_lg3]["sections"] = _secs3
             else:
-                # ja/ko：按 EN sections 顺序补全（保留已有翻译，缺失的用新翻译）
+                # ja/ko：按 EN sections 顺序 + 类型对齐补全（保留已有翻译，缺失的用新翻译）。
+                # 修复：原 _cur_by_type/_new_by_type 用 dict 按 type 去重，多张 table/list
+                # 会被最后一张覆盖（quest-mechanics 5 张表全变 11 行「クエストタイプ」的根因）。
                 _en3 = _pp3.get("sections") or []
                 _cur3 = _pp3.get("i18n", {}).get(_lg3, {}).get("sections") or []
                 _merged3 = []
-                _new_by_type = {_s.get("type"): _s for _s in _secs3}
-                _cur_by_type = {_s.get("type"): _s for _s in _cur3}
+                _cur_used = [False] * len(_cur3)
+                _new_used = [False] * len(_secs3)
                 for _es3 in _en3:
                     _t3 = _es3.get("type")
-                    if _t3 in _cur_by_type:
-                        _merged3.append(_cur_by_type[_t3])
-                    elif _t3 in _new_by_type:
-                        _merged3.append(_new_by_type[_t3])
+                    _placed = None
+                    for _j, _cs in enumerate(_cur3):
+                        if not _cur_used[_j] and _cs.get("type") == _t3:
+                            _placed = _cs
+                            _cur_used[_j] = True
+                            break
+                    if _placed is None:
+                        for _j, _ns in enumerate(_secs3):
+                            if not _new_used[_j] and _ns.get("type") == _t3:
+                                _placed = _ns
+                                _new_used[_j] = True
+                                break
+                    if _placed is None:
+                        break
+                    _merged3.append(_placed)
                 if len(_merged3) == len(_en3):
                     _pp3.setdefault("i18n", {})[_lg3]["sections"] = _merged3
 
@@ -843,6 +887,109 @@ for _ppx in d["pages"]:
                 for _rx in _sx.get("rows") or []:
                     if _rx and len(_rx) >= 3 and _rx[2] in _mapx:
                         _rx[2] = _mapx[_rx[2]]
+
+# --- ja/ko 表格/标题修复（用户反馈：切换日语/韩语仍有英文/中文；诊断 §4.3 + 批次 4）---
+# 范围：recipes sec#0 3列→2列（去"中文"列）+ sec#1 11→24行；system-requirements / knights-stats
+#       空表补 3/6 行；10 个 guide 页首段标题 + knights/stats list 标题；待补→未定/확인 중（下方统一）。
+def _ja_meals(k):
+    return "、".join(m if m != "TBD" else "未定" for m in (k.get("meals") or ["未定"]))
+
+def _ko_meals(k):
+    return "、".join(m if m != "TBD" else "확인 중" for m in (k.get("meals") or ["확인 중"]))
+
+_SYSREQ_JA = [
+    ["最小", "Windows 10 / i5-4670K / 4GB RAM / GT 1030 2GB / DX12 / 3GB"],
+    ["推奨", "Windows 11 / i5-9600K / 8GB RAM / GTX 1060 6GB / DX12 / 3GB"],
+    ["Linux / Steam Deck", "SteamOS 3.8.10 / Zen2 4c8t / 4-8GB / RDNA2 8CU (Deck Verified)"],
+]
+_SYSREQ_KO = [
+    ["최소", "Windows 10 / i5-4670K / 4GB RAM / GT 1030 2GB / DX12 / 3GB"],
+    ["권장", "Windows 11 / i5-9600K / 8GB RAM / GTX 1060 6GB / DX12 / 3GB"],
+    ["Linux / Steam Deck", "SteamOS 3.8.10 / Zen2 4c8t / 4-8GB / RDNA2 8CU (Deck Verified)"],
+]
+_STATS_JA = [
+    ["筋力", "戦闘、狩猟、重労働のための生の身体能力。"],
+    ["敏捷", "速度、器用さ、機動性——斥候や決闘者が頼る。"],
+    ["魅力", "説得と社会的存在感——外交や公開クエスト。"],
+    ["魔力", "魔術的適性——儀式や魔法クエスト。"],
+    ["知性", "知能、知覚、推理——調査や捜査。"],
+    ["幸運", "運——小さなボーナスとより良い結果。"],
+]
+_STATS_KO = [
+    ["근력", "전투, 사냥, 중노동을 위한 순수 신체 능력."],
+    ["민첩", "속도, 손재주, 기동성 — 정찰과 결투가 의존."],
+    ["매력", "설득과 사회적 존재감 — 외교와 공개 퀘스트."],
+    ["마법", "비전 적성 — 의식과 마법 퀘스트."],
+    ["지혜", "지능, 지각, 추론 — 조사와 수사."],
+    ["행운", "운 — 작은 보너스와 더 나은 결과."],
+]
+_GUIDE_HEAD_JA = {
+    "sovereign-tower/guides/best-opening": "序盤の最善手",
+    "sovereign-tower/guides/controls": "操作と入力",
+    "sovereign-tower/guides/difficulty-tips": "難易度のコツ",
+    "sovereign-tower/guides/knight-loyalty": "騎士の忠誠と好感度",
+    "sovereign-tower/guides/new-game-plus": "ニューゲームプラス",
+    "sovereign-tower/guides/alliances": "同盟とライバル君主",
+    "sovereign-tower/guides/beat-dragon-knight": "竜騎士の最後通牒（Cycle 4）",
+    "sovereign-tower/guides/sovereign-archetypes": "君主の原型",
+    "sovereign-tower/guides/tower-servants": "塔の従者とスタッフ",
+    "sovereign-tower/knights/the-bard": "吟遊詩人（Hildegard）",
+}
+_GUIDE_HEAD_KO = {
+    "sovereign-tower/guides/best-opening": "최적의 초반 수",
+    "sovereign-tower/guides/controls": "조작과 입력",
+    "sovereign-tower/guides/difficulty-tips": "난이도 팁",
+    "sovereign-tower/guides/knight-loyalty": "기사의 충성과 호감도",
+    "sovereign-tower/guides/new-game-plus": "뉴 게임 플러스",
+    "sovereign-tower/guides/alliances": "동맹과 라이벌 군주",
+    "sovereign-tower/guides/beat-dragon-knight": "용기사의 최후통첩(사이클 4)",
+    "sovereign-tower/guides/sovereign-archetypes": "군주 원형",
+    "sovereign-tower/guides/tower-servants": "탑의 하인과 스태프",
+    "sovereign-tower/knights/the-bard": "음유시인(Hildegard)",
+}
+
+for _pp in d["pages"]:
+    _slug = _pp.get("slug")
+    for _lg in ("ja", "ko"):
+        _ix = (_pp.get("i18n") or {}).get(_lg)
+        if not _ix:
+            continue
+        _secs = _ix.get("sections") or []
+        if _slug == "sovereign-tower/recipes":
+            _head0 = ["料理", "説明"] if _lg == "ja" else ["요리", "설명"]
+            _meals_fn = _ja_meals if _lg == "ja" else _ko_meals
+            _tables = [s for s in _secs if s.get("type") == "table"]
+            if len(_tables) >= 2:
+                # sec#0：去掉"中文"列（3列→2列）
+                _tables[0]["headers"] = _head0
+                _tables[0]["rows"] = [[r[0], r[2]] for r in _tables[0]["rows"] if len(r) >= 3]
+                # sec#1：补全 24 行（原仅 11 行）
+                _rows1 = [[_k["name"], _meals_fn(_k)] for _k in KNIGHTS]
+                _rows1 += [[_n, _meals_fn({"name": _n, **_b})] for _n, _b in KNIGHTS_BASIC.items()]
+                _tables[1]["rows"] = _rows1
+        elif _slug == "sovereign-tower/review/system-requirements":
+            # 原 ja/ko 用 list 代替了表格；恢复 en 形状的 3 行表（保留已译 FAQ）
+            _head = ["", "必要要件"] if _lg == "ja" else ["", "요구 사양"]
+            _rows = _SYSREQ_JA if _lg == "ja" else _SYSREQ_KO
+            _faqs = [s for s in _secs if s.get("type") == "faq"]
+            _ix["sections"] = [{"type": "table", "tag": "DATA", "heading": "", "body": "", "headers": _head, "rows": _rows}] + _faqs
+        elif _slug == "sovereign-tower/knights/stats":
+            # 原 ja/ko 为 list('')+faq；恢复 en 形状：table(6行)+list(标题)，并修正"FAQ"错标
+            _head = ["ステータス", "効果"] if _lg == "ja" else ["스탯", "효과"]
+            _rows = _STATS_JA if _lg == "ja" else _STATS_KO
+            _how = "ステータスの仕組み" if _lg == "ja" else "스탯의 작동 방식"
+            _items = []
+            for _s in _secs:
+                if _s.get("type") == "list":
+                    _items = _s.get("items") or []
+                    break
+            _ix["sections"] = [
+                {"type": "table", "tag": "DATA", "heading": "", "body": "", "headers": _head, "rows": _rows},
+                {"type": "list", "tag": "NOTE", "heading": _how, "body": "", "items": _items},
+            ]
+        _gh = (_GUIDE_HEAD_JA if _lg == "ja" else _GUIDE_HEAD_KO).get(_slug)
+        if _gh and _secs and (_secs[0].get("heading") or "") == "":
+            _secs[0]["heading"] = _gh
 
 # --- fr/de 本地化修复（用户反馈：切换法语/德语仍显示英文/中文）---
 # 范围：knights 表头 5→7 + 最后两列按 en 重译；8 张空表补 76 行；recipes 对齐 en（2 列 / 24 行）；
@@ -1185,6 +1332,29 @@ for _pp in d["pages"]:
                 _ix[_k] = _ix[_k].replace("待补", _ph)
         if _ix.get("sections") is not None:
             _ix["sections"] = _frde_no_zh(_ix["sections"], _lg)
+
+# 5) ja/ko 占位符统一：残留中文"待补"/"待補" → 未定 / 확인 중（递归替换）
+def _jako_no_cn(node, lang):
+    _ph = "未定" if lang == "ja" else "확인 중"
+    if isinstance(node, str):
+        return node.replace("待補", _ph).replace("待补", _ph)
+    if isinstance(node, list):
+        return [_jako_no_cn(x, lang) for x in node]
+    if isinstance(node, dict):
+        return {_k: _jako_no_cn(_v, lang) for _k, _v in node.items()}
+    return node
+
+for _pp in d["pages"]:
+    for _lg in ("ja", "ko"):
+        _ix = (_pp.get("i18n") or {}).get(_lg)
+        if not _ix:
+            continue
+        _ph = "未定" if _lg == "ja" else "확인 중"
+        for _k in ("title", "metaTitle", "metaDescription", "intro"):
+            if isinstance(_ix.get(_k), str):
+                _ix[_k] = _ix[_k].replace("待補", _ph).replace("待补", _ph)
+        if _ix.get("sections") is not None:
+            _ix["sections"] = _jako_no_cn(_ix["sections"], _lg)
 
 # --- zh-CN 标题/intro/区块标题翻译覆盖（用户反馈：切换中文仍有英文残留）---
 # content_pages._wt() 把英文 title/metaTitle/metaDescription 直接填入 i18n.zh-CN，
